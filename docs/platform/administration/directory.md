@@ -2,6 +2,11 @@
 
 Um Active Directory, ou outro servidor LDAP, de onde a plataforma **lê** equipamentos e pessoas, em vez de depender de ficheiros exportados à mão.
 
+```{video} 353-integracoes
+```
+
+O vídeo mostra as quatro integrações: os sistemas externos, o MISP, os feeds RSS e o diretório.
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Integrações › Integração com diretório

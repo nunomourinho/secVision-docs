@@ -1932,6 +1932,330 @@
    }
   ]
  },
+ "351-administracao-da-plataforma": {
+  "titulo": "A administração da plataforma",
+  "pagina": "platform/administration/coverage-rules",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 250.1,
+  "resumo": "Três ecrãs de quem administra a plataforma: que níveis de sistemas contam para a cobertura, os tipos de documento e o modelo Word do SGSI, e onde se vê a versão instalada e o que mudou.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 17.0,
+    "titulo": "Porquê"
+   },
+   {
+    "t": 41.57,
+    "titulo": "A cobertura"
+   },
+   {
+    "t": 95.39,
+    "titulo": "Os tipos de documento"
+   },
+   {
+    "t": 133.0,
+    "titulo": "O modelo Word"
+   },
+   {
+    "t": 183.63,
+    "titulo": "A versão"
+   },
+   {
+    "t": 214.84,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "352-anonimizacao-de-ia": {
+  "titulo": "A anonimização dos pedidos de IA",
+  "pagina": "platform/administration/ai-anonymisation",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 234.3,
+  "resumo": "Como a plataforma tira os dados pessoais e os dados da infraestrutura de tudo o que sai para um serviço de IA, onde fica a prova disso, e como se experimenta com um texto real antes de confiar.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 21.3,
+    "titulo": "O conceito"
+   },
+   {
+    "t": 63.21,
+    "titulo": "O registo de saídas"
+   },
+   {
+    "t": 96.46,
+    "titulo": "A bancada de ensaio"
+   },
+   {
+    "t": 129.81,
+    "titulo": "O resultado"
+   },
+   {
+    "t": 160.32,
+    "titulo": "As exceções e a volta"
+   },
+   {
+    "t": 196.49,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "353-integracoes": {
+  "titulo": "As integrações",
+  "pagina": "platform/administration/external-systems",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 261.3,
+  "resumo": "As ferramentas de fora com que a plataforma conversa: onde mais os sistemas estão registados, o MISP para enriquecer os indicadores de ameaça, as fontes de notícias de segurança e o diretório de onde se leem equipamentos e pessoas.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 16.47,
+    "titulo": "Antes de abrir o ecrã"
+   },
+   {
+    "t": 41.56,
+    "titulo": "Sistemas externos"
+   },
+   {
+    "t": 72.34,
+    "titulo": "O MISP"
+   },
+   {
+    "t": 116.93,
+    "titulo": "Os feeds RSS"
+   },
+   {
+    "t": 152.34,
+    "titulo": "O diretório"
+   },
+   {
+    "t": 196.28,
+    "titulo": "Testar"
+   },
+   {
+    "t": 225.86,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "354-o-sgsi-por-inteiro": {
+  "titulo": "O SGSI por inteiro",
+  "pagina": "platform/protect-and-detect/isms-structure",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 237.1,
+  "resumo": "Os outros ecrãs do menu SGSI: a árvore que liga todos os documentos, as fichas de controlo, as evidências, a cobertura por controlo — o que está a descoberto — e o arquivo, com a diferença entre arquivar e apagar.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 17.77,
+    "titulo": "O conceito"
+   },
+   {
+    "t": 50.72,
+    "titulo": "A árvore"
+   },
+   {
+    "t": 80.75,
+    "titulo": "Os controlos"
+   },
+   {
+    "t": 111.5,
+    "titulo": "As evidências"
+   },
+   {
+    "t": 136.85,
+    "titulo": "A cobertura"
+   },
+   {
+    "t": 165.71,
+    "titulo": "O arquivo"
+   },
+   {
+    "t": 204.0,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "355-importar-contratos-publicos": {
+  "titulo": "Importar contratos públicos",
+  "pagina": "platform/risk/contract-explorer",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 253.6,
+  "resumo": "Os contratos públicos da organização, a partir dos ficheiros exportados do portal BASE: escolher a própria entidade, filtrar, marcar os que interessam e gravá-los — para depois os ligar aos sistemas e aos fornecedores.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 18.99,
+    "titulo": "Porquê"
+   },
+   {
+    "t": 37.02,
+    "titulo": "Antes de começar"
+   },
+   {
+    "t": 65.44,
+    "titulo": "As entidades"
+   },
+   {
+    "t": 84.71,
+    "titulo": "Escolher as nossas"
+   },
+   {
+    "t": 110.5,
+    "titulo": "Os contratos"
+   },
+   {
+    "t": 137.65,
+    "titulo": "Escolher os contratos"
+   },
+   {
+    "t": 173.66,
+    "titulo": "Gravar"
+   },
+   {
+    "t": 197.12,
+    "titulo": "Depois de importar"
+   },
+   {
+    "t": 215.79,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "356-indicadores-de-compromisso": {
+  "titulo": "Os indicadores de compromisso",
+  "pagina": "platform/protect-and-detect/ioc",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 273.9,
+  "resumo": "Os endereços e domínios maliciosos que a organização bloqueia ou vigia: importar um boletim, gerir a lista e a validade de cada um, publicar os ficheiros para as firewalls, e proteger os próprios sistemas de um bloqueio por engano.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 16.38,
+    "titulo": "O conceito"
+   },
+   {
+    "t": 53.35,
+    "titulo": "Os cinco separadores"
+   },
+   {
+    "t": 72.59,
+    "titulo": "Importar"
+   },
+   {
+    "t": 109.25,
+    "titulo": "O resultado"
+   },
+   {
+    "t": 125.73,
+    "titulo": "Gerir a lista"
+   },
+   {
+    "t": 161.92,
+    "titulo": "Os ficheiros das firewalls"
+   },
+   {
+    "t": 189.39,
+    "titulo": "Proteger os nossos sistemas"
+   },
+   {
+    "t": 220.98,
+    "titulo": "As configurações"
+   },
+   {
+    "t": 236.46,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "357-feeds-de-seguranca": {
+  "titulo": "Os feeds de segurança",
+  "pagina": "platform/protect-and-detect/security-feeds",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 159.8,
+  "resumo": "Os alertas de segurança de todas as fontes num só sítio: pesquisar, filtrar por fonte, arquivar o que não interessa e passar a um relatório de recomendações o que pede ação.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 15.66,
+    "titulo": "O conceito"
+   },
+   {
+    "t": 38.79,
+    "titulo": "Os artigos"
+   },
+   {
+    "t": 63.52,
+    "titulo": "O que fazer a um artigo"
+   },
+   {
+    "t": 93.64,
+    "titulo": "O relatório"
+   },
+   {
+    "t": 127.61,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "358-wazuh-cheat-sheet": {
+  "titulo": "A Wazuh Cheat Sheet",
+  "pagina": "platform/protect-and-detect/wazuh-cheat-sheet",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 184.2,
+  "resumo": "A referência rápida do Wazuh dentro da plataforma: os comandos com botão de copiar, onde está cada ficheiro, como nasce um alerta, os sete passos para uma regra nova e o que fazer quando algo falha.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 18.44,
+    "titulo": "O conceito"
+   },
+   {
+    "t": 41.26,
+    "titulo": "Os comandos"
+   },
+   {
+    "t": 72.88,
+    "titulo": "Regras e decoders"
+   },
+   {
+    "t": 125.22,
+    "titulo": "Quando algo falha"
+   },
+   {
+    "t": 140.07,
+    "titulo": "Procurar"
+   },
+   {
+    "t": 152.63,
+    "titulo": "Resumo"
+   }
+  ]
+ },
  "401-o-primeiro-ano": {
   "titulo": "O primeiro ano em sete passos",
   "pagina": "journey/first-year",

@@ -2,6 +2,11 @@
 
 As ferramentas onde os sistemas do catálogo também estão registados (GLPI, Zabbix, ServiceNow), cada uma com a sua cor.
 
+```{video} 353-integracoes
+```
+
+O vídeo mostra as quatro integrações: os sistemas externos, o MISP, os feeds RSS e o diretório.
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Integrações › Sistemas Externos

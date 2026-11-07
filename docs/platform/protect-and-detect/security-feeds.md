@@ -2,6 +2,9 @@
 
 As notícias e os alertas de cibersegurança das fontes configuradas, num só sítio: ler, arquivar o que não interessa e passar a um relatório de recomendações o que interessa.
 
+```{video} 357-feeds-de-seguranca
+```
+
 ## Onde fica no menu
 
 **Menu:** Detetar › IOC & Intelligence › Feeds de Segurança

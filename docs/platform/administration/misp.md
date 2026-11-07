@@ -2,6 +2,11 @@
 
 A ligação ao MISP, a plataforma de partilha de informação sobre ameaças, para enriquecer os indicadores de compromisso com eventos, nível de ameaça e etiquetas.
 
+```{video} 353-integracoes
+```
+
+O vídeo mostra as quatro integrações: os sistemas externos, o MISP, os feeds RSS e o diretório.
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Integrações › Integração MISP

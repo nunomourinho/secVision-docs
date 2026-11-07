@@ -2,6 +2,9 @@
 
 Os outros ecrãs do menu SGSI, além das políticas, dos procedimentos e dos planos: a árvore que liga tudo, as fichas de controlo, as evidências, a cobertura por controlo e o arquivo.
 
+```{video} 354-o-sgsi-por-inteiro
+```
+
 ## Onde fica no menu
 
 **Menu:** Governar › SGSI › Árvore do SGSI

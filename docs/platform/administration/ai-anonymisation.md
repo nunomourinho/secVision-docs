@@ -2,6 +2,9 @@
 
 O registo de tudo o que saiu da plataforma para um serviço de IA, e uma bancada para ver, antes de confiar, o que sairia de um texto real.
 
+```{video} 352-anonimizacao-de-ia
+```
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Anonimização de IA

@@ -2,6 +2,11 @@
 
 Duas configurações do editor de documentos do SGSI: as listas de tipos que ele oferece e o modelo Word de cada categoria.
 
+```{video} 351-administracao-da-plataforma
+```
+
+O vídeo mostra os três ecrãs da administração: a cobertura, os documentos do SGSI e a versão.
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Documentos SGSI

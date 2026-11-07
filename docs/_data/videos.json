@@ -465,5 +465,53 @@
     "youtube": "3ty5WyeiZy0",
     "privacidade": "unlisted",
     "legendas": "gravadas"
+  },
+  "351-administracao-da-plataforma": {
+    "titulo": "SecVision — A administração da plataforma",
+    "youtube": "MPk93xaKLh4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "352-anonimizacao-de-ia": {
+    "titulo": "SecVision — A anonimização dos pedidos de IA",
+    "youtube": "F5lOyAt-qos",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "353-integracoes": {
+    "titulo": "SecVision — As integrações",
+    "youtube": "Vg7qD0332Zk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "354-o-sgsi-por-inteiro": {
+    "titulo": "SecVision — O SGSI por inteiro",
+    "youtube": "YpSAWXzS2fc",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "355-importar-contratos-publicos": {
+    "titulo": "SecVision — Importar contratos públicos",
+    "youtube": "3bWVBJ_n2dQ",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "356-indicadores-de-compromisso": {
+    "titulo": "SecVision — Os indicadores de compromisso",
+    "youtube": "t5cSqkiB0ws",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "357-feeds-de-seguranca": {
+    "titulo": "SecVision — Os feeds de segurança",
+    "youtube": "ALuCIX4t92M",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "358-wazuh-cheat-sheet": {
+    "titulo": "SecVision — A Wazuh Cheat Sheet",
+    "youtube": "YVSv-Ayfvns",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   }
 }

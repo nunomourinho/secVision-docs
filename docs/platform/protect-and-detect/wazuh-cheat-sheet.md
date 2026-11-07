@@ -2,6 +2,9 @@
 
 A referência rápida de comandos, ficheiros e configurações do Wazuh, para quando uma regra gerada pela plataforma precisa de ser mexida à mão.
 
+```{video} 358-wazuh-cheat-sheet
+```
+
 ## Onde fica no menu
 
 **Menu:** Proteger › SOC › Wazuh Cheat Sheet

@@ -2,10 +2,8 @@
 
 Os indicadores de compromisso (endereços IP, gamas e domínios maliciosos) que a organização bloqueia ou vigia, e os ficheiros que as firewalls e o SIEM vão buscar.
 
-```{video} 334-detecao-e-ameacas
+```{video} 356-indicadores-de-compromisso
 ```
-
-O vídeo acima é o da deteção e das ameaças, e mostra este ecrã de passagem. Esta página percorre-o separador a separador.
 
 ## Onde fica no menu
 

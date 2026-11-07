@@ -2,6 +2,9 @@
 
 O explorador de contratos públicos: carregar os ficheiros exportados do BASE.gov, escolher a própria entidade e importar os contratos que interessam.
 
+```{video} 355-importar-contratos-publicos
+```
+
 ## Onde fica no menu
 
 **Menu:** Identificar › Fornecedores e Contratos › Importar contratos

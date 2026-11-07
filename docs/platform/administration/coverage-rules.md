@@ -2,7 +2,12 @@
 
 Os níveis do catálogo de segurança que **não** entram nos indicadores de cobertura nem na fila de GAP.
 
-Os sistemas do catálogo têm um nível, de N1 (crítico) a N4 (secundário). A taxa de cobertura e a lista de GAP, que são os sistemas sem monitorização, contam por omissão os três primeiros. Este ecrã decide quais ficam de fora. É só para administradores e não tem vídeo próprio.
+```{video} 351-administracao-da-plataforma
+```
+
+O vídeo mostra os três ecrãs da administração: a cobertura, os documentos do SGSI e a versão.
+
+Os sistemas do catálogo têm um nível, de N1 (crítico) a N4 (secundário). A taxa de cobertura e a lista de GAP, que são os sistemas sem monitorização, contam por omissão os três primeiros. Este ecrã decide quais ficam de fora. É só para administradores.
 
 ## Onde fica no menu
 

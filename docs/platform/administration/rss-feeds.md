@@ -2,6 +2,11 @@
 
 As fontes de notícias e alertas de cibersegurança que a plataforma lê, e de quanto em quanto tempo.
 
+```{video} 353-integracoes
+```
+
+O vídeo mostra as quatro integrações: os sistemas externos, o MISP, os feeds RSS e o diretório.
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Integrações › Feeds RSS

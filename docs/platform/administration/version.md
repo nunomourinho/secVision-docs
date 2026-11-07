@@ -2,6 +2,11 @@
 
 O que está instalado e o que mudou, com cada alteração explicada para quem não programa.
 
+```{video} 351-administracao-da-plataforma
+```
+
+O vídeo mostra os três ecrãs da administração: a cobertura, os documentos do SGSI e a versão.
+
 ## Onde fica no menu
 
 **Menu:** Governar › Administração do sistema › Versão e novidades
