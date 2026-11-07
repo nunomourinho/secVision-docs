@@ -1,0 +1,24 @@
+/* Manual do SecVision — cores do design system v1.1 (secVision/design/tokens.json):
+   azul de ação #2563EB, texto de ligação #1D4ED8, ardósia #0F172A. */
+.wy-side-nav-search, .wy-nav-top { background: #0F172A; }
+.wy-side-nav-search .wy-dropdown > a img.logo, .wy-side-nav-search > a img.logo { max-width: 220px; }
+.wy-nav-side { background: #0F172A; }
+.wy-menu-vertical header, .wy-menu-vertical p.caption { color: #60A5FA; }
+.rst-content a, .rst-content a:visited { color: #1D4ED8; }
+.rst-content .admonition.tip, .rst-content .admonition.note { background: #EFF6FF; }
+.rst-content .admonition.tip .admonition-title, .rst-content .admonition.note .admonition-title { background: #2563EB; }
+
+/* Leitor de vídeo responsivo (16:9) */
+.sv-video { position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 0 0 24px; }
+.sv-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 4px; }
+
+/* Capturas de ecrã: moldura discreta, legenda em itálico */
+.rst-content figure img, .rst-content .figure img { border: 1px solid #CBD5E1; border-radius: 4px; }
+.rst-content figure figcaption, .rst-content .figure .caption { font-style: italic; color: #475569; }
+/* A lista numerada logo a seguir a uma captura explica os números desenhados nela */
+.rst-content figure + ol { margin-top: -8px; }
+
+/* Tabelas: o tema força «white-space: nowrap» nas células; deixar o texto partir */
+.wy-table-responsive table td, .wy-table-responsive table th { white-space: normal; vertical-align: top; }
+.wy-table-responsive table { width: 100%; }
+.wy-table-responsive table td:first-child { min-width: 9em; }

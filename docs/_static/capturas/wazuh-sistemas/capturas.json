@@ -1,0 +1,170 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "INVENTÁRIO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Catálogo de Segurança"
+   }
+  ]
+ },
+ {
+  "imagem": "catalogo-1.jpg",
+  "marca": "catalogo",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "O agente de cada sistema",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "desassociar-1.jpg",
+  "marca": "desassociar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "desassociar-2.jpg",
+  "marca": "desassociar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "servidor-002 ↔ agente servidor-002",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "Remover associação",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "desassociar-3.jpg",
+  "marca": "desassociar",
+  "itens": []
+ },
+ {
+  "imagem": "gap-1.jpg",
+  "marca": "gap",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Mais um sistema sem monitorização",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Em GAP desde agora",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "wazuh-1.jpg",
+  "marca": "wazuh",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "No Wazuh, continua ativo",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Um agente que o catálogo não tem",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "associar-1.jpg",
+  "marca": "associar",
+  "itens": []
+ },
+ {
+  "imagem": "associar-2.jpg",
+  "marca": "associar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "associar-3.jpg",
+  "marca": "associar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Só os agentes ainda sem sistema",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "servidor-002",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "associar-4.jpg",
+  "marca": "associar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Associar Agente",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "associar-5.jpg",
+  "marca": "associar",
+  "itens": []
+ },
+ {
+  "imagem": "resultado-1.jpg",
+  "marca": "resultado",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Monitorizado outra vez",
+    "valor": null
+   }
+  ]
+ }
+]

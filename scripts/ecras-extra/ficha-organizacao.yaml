@@ -1,0 +1,70 @@
+# Vídeo 305 — Ficha da organização: tradução para passos do roteiro roteiros/ficha-organizacao.py
+# (o único ecrã da formação gravado com um .py próprio). Só para as capturas do manual.
+passos:
+  - abrir: /organizacao
+    esperar: 'text=/campos do registo do/'
+  - marca: abrir
+  - marca: cartao
+  - destacar: 'text=/campos do registo do/'
+    rotulo: Os dez campos do registo
+  - destacar: 'text=/Na ficha inteira/'
+    rotulo: A ficha inteira
+  - destacar: 'button:has-text("Confirmar que os dados estão certos")'
+    rotulo: Confirmar que os dados estão certos (art. 11.º do Regulamento)
+  - marca: editar
+  - clicar: 'button:has-text("Editar")'
+  - esperar: '#org-nome'
+  - marca: identificacao
+  - destacar: '#org-nome'
+    rotulo: Nome
+  - destacar: '#org-nif'
+    rotulo: NIF
+  - destacar: '#org-natureza_juridica'
+    rotulo: Natureza jurídica
+  - marca: qualificacao
+  - destacar: '#org-tipo_entidade'
+    rotulo: Qualificação (art. 6.º)
+  - destacar: '#org-grupo_publico'
+    rotulo: Grupo (art. 7.º)
+  - marca: setor
+  - destacar: '#org-setor'
+    rotulo: Setor (Anexos I e II)
+  - destacar: '#org-subsetor'
+    rotulo: Subsetor
+  - marca: contactos
+  - destacar: '#org-morada'
+    rotulo: Morada
+  - destacar: '#org-email'
+    rotulo: Correio eletrónico
+  - destacar: '#org-telefone'
+    rotulo: Telefone
+  - marca: gamas
+  - destacar: '#org-gamas_ip'
+    rotulo: Gamas de endereços IP (art. 35.º)
+  - clicar: 'text=/preencher a partir do inventário de redes/'
+  - destacar: '#org-estados_membros'
+    rotulo: Estados-Membros
+  - marca: dimensao
+  - destacar: '#org-n_trabalhadores'
+    rotulo: Trabalhadores
+  - destacar: '#org-volume_negocios'
+    rotulo: Volume de negócios
+  - destacar: '#org-balanco_anual'
+    rotulo: Balanço anual
+  - marca: contexto
+  - destacar: '#org-missao'
+    rotulo: Missão
+  - destacar: '#org-estrategia'
+    rotulo: Estratégia
+  - destacar: '#org-contexto_interno'
+    rotulo: Contexto interno
+  - destacar: '#org-contexto_externo'
+    rotulo: Contexto externo
+  - marca: confirmar
+  - rolar: topo
+  - clicar: 'button:has-text("Confirmar que os dados estão certos")'
+  - pausa: 2
+  - marca: word
+  - clicar: 'button:has-text("Word")'
+  - pausa: 2
+  - tecla: Escape

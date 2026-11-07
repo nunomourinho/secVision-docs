@@ -1,0 +1,52 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "RISCO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Aceitações e exceções"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "O estado vem da data",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "projetos-1.jpg",
+  "marca": "projetos",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Plataforma de ensino a distância em nuvem",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "projetos-2.jpg",
+  "marca": "projetos",
+  "itens": []
+ }
+]

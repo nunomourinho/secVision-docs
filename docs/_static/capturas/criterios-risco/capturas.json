@@ -1,0 +1,76 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "RISCO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Critérios e apetite"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Bandas e matriz",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-2.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Limiares de decisão",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-3.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Uma versão aprovada não se altera",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "catalogo-1.jpg",
+  "marca": "catalogo",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Modelos de risco1938",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "catalogo-2.jpg",
+  "marca": "catalogo",
+  "itens": []
+ }
+]

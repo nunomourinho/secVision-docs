@@ -1,0 +1,113 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "RISCO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Registo de risco"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "A matriz",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Assistente",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "risco-1.jpg",
+  "marca": "risco",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Editar",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "risco-2.jpg",
+  "marca": "risco",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Título",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Ativo",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Dono do risco",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Ameaça do catálogo",
+    "valor": null
+   },
+   {
+    "n": 5,
+    "tipo": "ver",
+    "rotulo": "Vulnerabilidade do catálogo",
+    "valor": null
+   },
+   {
+    "n": 6,
+    "tipo": "ver",
+    "rotulo": "Ameaça",
+    "valor": null
+   },
+   {
+    "n": 7,
+    "tipo": "ver",
+    "rotulo": "Vulnerabilidade",
+    "valor": null
+   },
+   {
+    "n": 8,
+    "tipo": "ver",
+    "rotulo": "Probabilidade",
+    "valor": null
+   },
+   {
+    "n": 9,
+    "tipo": "ver",
+    "rotulo": "Impacto",
+    "valor": null
+   }
+  ]
+ }
+]

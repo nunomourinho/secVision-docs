@@ -1,0 +1,52 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "GRC — CONFORMIDADE"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Declaração de Aplicabilidade"
+   }
+  ]
+ },
+ {
+  "imagem": "norma-1.jpg",
+  "marca": "norma",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Filtrar por grupo do Anexo IV",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "norma-2.jpg",
+  "marca": "norma",
+  "itens": []
+ },
+ {
+  "imagem": "norma-3.jpg",
+  "marca": "norma",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Exportar",
+    "valor": null
+   }
+  ]
+ }
+]

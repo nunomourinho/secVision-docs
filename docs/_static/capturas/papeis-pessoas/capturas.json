@@ -1,0 +1,136 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "ORGANIZAÇÃO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Papéis e responsabilidades"
+   }
+  ]
+ },
+ {
+  "imagem": "numeros-1.jpg",
+  "marca": "numeros",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Papéis ativos",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Atribuições em vigor",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Estatutários sem titular",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Quem já saiu",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "lacunas-1.jpg",
+  "marca": "lacunas",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Não exigidos a esta entidade",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Ainda no papel depois de sair",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "papel-1.jpg",
+  "marca": "papel",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Estatutário",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "papel-2.jpg",
+  "marca": "papel",
+  "itens": []
+ },
+ {
+  "imagem": "papel-3.jpg",
+  "marca": "papel",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Quem exerce, desde quando, por que ato",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "pessoas-1.jpg",
+  "marca": "pessoas",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Importar do diretório",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "pessoa-1.jpg",
+  "marca": "pessoa",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Inês Santos",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "pessoa-2.jpg",
+  "marca": "pessoa",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "O que fica sem titular",
+    "valor": null
+   }
+  ]
+ }
+]
