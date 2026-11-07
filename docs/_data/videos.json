@@ -1,1 +1,64 @@
-{}
+{
+  "_canal": {
+    "id": "UCw8XyjdoLD-oThFzfbj8bYQ",
+    "titulo": "SecVision"
+  },
+  "_playlist": "PLCikQBjXMcHo",
+  "01-antes-de-instalar": {
+    "titulo": "SecVision — Antes de instalar",
+    "youtube": "NfYNUjLoayI",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "02-obter-ubuntu-server": {
+    "titulo": "SecVision — Obter o Ubuntu Server",
+    "youtube": "WpZ-1fEMFSQ",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "03-instalar-ubuntu-server": {
+    "titulo": "SecVision — Instalar o Ubuntu Server",
+    "youtube": "4n_g-jQRQSk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "04-instalar-nativo": {
+    "titulo": "SecVision — Instalar em modo nativo",
+    "youtube": "w3rIUhviElo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "05-instalar-docker": {
+    "titulo": "SecVision — Instalar em modo Docker",
+    "youtube": "8hyo2c_6shA",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "06-primeiro-acesso": {
+    "titulo": "SecVision — O primeiro acesso",
+    "youtube": "L-gOtKY4tFE",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "07-ambiente-de-testes": {
+    "titulo": "SecVision — O ambiente de testes",
+    "youtube": "uRrZ0TCpYQ8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "101-ciberseguranca-e-gestao": {
+    "titulo": "SecVision — A cibersegurança é um tema de gestão",
+    "youtube": "QT7jJTzhlBQ",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "102-informacao-e-ativos": {
+    "titulo": "SecVision — Informação, ativos e as três propriedades",
+    "youtube": "Cp59Gr1G0-s",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "103-risco": {
+    "titulo": "SecVision — O que é o risco"
+  }
+}
