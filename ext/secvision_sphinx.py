@@ -40,7 +40,8 @@ class VideoDirective(Directive):
         info = dados.get(vid, {})
         yt = info.get('youtube')
         t = TEXTOS[lang]
-        if env.app.builder.format != 'html':
+        # o EPUB também é «html» para o Sphinx, mas os leitores de EPUB não tocam iframes
+        if env.app.builder.format != 'html' or env.app.builder.name.startswith('epub'):
             # PDF/EPUB: sem leitor — uma ligação para o vídeo, ou nada enquanto não existir
             if not yt:
                 return []
