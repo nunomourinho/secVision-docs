@@ -1,0 +1,58 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "ADMINISTRAÇÃO DO SISTEMA"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Integrações"
+   },
+   {
+    "n": 4,
+    "tipo": "clicar",
+    "rotulo": "Feeds RSS"
+   }
+  ]
+ },
+ {
+  "imagem": "feeds-1.jpg",
+  "marca": "feeds",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "A frequência de atualização",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Guardar",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Atualizar agora",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Adicionar um feed",
+    "valor": null
+   }
+  ]
+ }
+]

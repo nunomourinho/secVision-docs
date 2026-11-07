@@ -1,0 +1,35 @@
+# Página nova (sem vídeo): Governar › SGSI › Árvore, Controlos, Cobertura por controlo, Evidências, Arquivo.
+passos:
+  - abrir: /sgsi/tree
+    esperar: 'text=Árvore de Conformidade'
+  - marca: arvore
+  - destacar: 'text=Árvore de Conformidade'
+    rotulo: A árvore de conformidade
+  - abrir: /sgsi/controls
+    esperar: 'h2:has-text("Controlos"), h1:has-text("Controlos"), h3:has-text("Controlos")'
+  - marca: controlos
+  - destacar: 'button:has-text("NOVO")'
+    rotulo: Novo documento
+  - destacar: 'button:has-text("ARQUIVADOS")'
+    rotulo: Arquivados
+  - abrir: /sgsi/cobertura
+    esperar: 'text=Cobertura por controlo'
+  - marca: cobertura
+  - destacar: 'label:has-text("só os que estão a descoberto")'
+    rotulo: Só os que estão a descoberto
+  - destacar: 'h2:has-text("Controlos"), h3:has-text("Controlos")'
+    rotulo: Controlos aplicáveis sem documento
+  - destacar: 'h2:has-text("Documentos do SGSI"), h3:has-text("Documentos do SGSI")'
+    rotulo: Documentos que não cobrem controlo nenhum
+  - abrir: /sgsi/evidences
+    esperar: 'button:has-text("NOVO")'
+  - marca: evidencias
+  - destacar: 'button:has-text("NOVO")'
+    rotulo: Nova evidência
+  - abrir: /sgsi/arquivo
+    esperar: 'text=Arquivo do SGSI'
+  - marca: arquivo
+  - destacar: 'button:has-text("Restaurar")'
+    rotulo: Restaurar
+  - destacar: 'button:has-text("Política de Segurança da Informação")'
+    rotulo: Um documento arquivado

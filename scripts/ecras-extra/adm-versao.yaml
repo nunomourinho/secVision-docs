@@ -1,0 +1,14 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Versão e novidades.
+utilizador: admin
+passos:
+  - abrir: /admin/versao
+    esperar: 'text=Versão instalada'
+  - marca: versao
+  - destacar: 'text=Versão instalada'
+    rotulo: Versão instalada
+  - destacar: 'text=Histórico de alterações'
+    rotulo: Histórico de alterações
+  - destacar: 'button:has-text("Funcionalidades")'
+    rotulo: Filtrar por tipo
+  - destacar: 'button:has-text("Tudo (incluindo internas)")'
+    rotulo: Tudo, incluindo as internas

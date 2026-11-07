@@ -1,0 +1,29 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Integrações › Integração com diretório.
+utilizador: admin
+passos:
+  - abrir: /admin/diretorio
+    esperar: 'text=Integração com diretório'
+  - marca: ligacoes
+  - destacar: 'button:has-text("AD de testes")'
+    rotulo: Uma ligação declarada
+  - destacar: 'button:has-text("Nova ligação")'
+    rotulo: Nova ligação
+  - marca: ficha
+  - clicar: 'button:has-text("AD de testes")'
+  - pausa: 2
+  - destacar: 'text=Método de ligação'
+    rotulo: Método de ligação (LDAPS ou StartTLS)
+  - destacar: 'text=Servidor'
+    rotulo: Servidor e porta
+  - destacar: 'text=Base de procura (base DN)'
+    rotulo: Base de procura
+  - destacar: 'text=Sub-árvore dos computadores'
+    rotulo: Sub-árvore dos computadores (opcional)
+  - destacar: 'text=Sub-árvore das pessoas'
+    rotulo: Sub-árvore das pessoas (opcional)
+  - destacar: 'text=Conta de serviço (bind DN)'
+    rotulo: Conta de serviço, só de consulta
+  - rolar: 'button:has-text("Testar ligação")'
+  - marca: testar
+  - destacar: 'button:has-text("Testar ligação")'
+    rotulo: Testar ligação

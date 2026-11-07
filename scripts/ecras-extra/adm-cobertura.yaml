@@ -1,0 +1,14 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Cobertura.
+utilizador: admin
+passos:
+  - abrir: /admin/cobertura
+    esperar: 'text=Níveis Excluídos da Cobertura'
+  - marca: niveis
+  - destacar: 'label:has-text("N1 — Crítico")'
+    rotulo: N1 — Crítico
+  - destacar: 'label:has-text("N2 — Estratégico")'
+    rotulo: N2 — Estratégico
+  - destacar: 'label:has-text("N3 — Operacional")'
+    rotulo: N3 — Operacional
+  - destacar: 'label:has-text("N4 — Secundário")'
+    rotulo: N4 — Secundário, excluído por omissão

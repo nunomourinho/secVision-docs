@@ -1,0 +1,10 @@
+# Página nova (sem vídeo): Identificar › Fornecedores e Contratos › Importar contratos.
+utilizador: admin
+passos:
+  - abrir: /contratos
+    esperar: 'text=Carregar Entidades'
+  - marca: entidades
+  - destacar: 'text=1. Carregar Entidades'
+    rotulo: Passo 1 — carregar as entidades
+  - destacar: 'text=Importar entidades.json'
+    rotulo: Importar entidades.json

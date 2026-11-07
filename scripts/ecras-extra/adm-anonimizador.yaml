@@ -1,0 +1,29 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Anonimização de IA.
+utilizador: admin
+passos:
+  - abrir: /admin/anonimizador
+    esperar: 'text=Registo de saídas para IA'
+  - marca: registo
+  - destacar: 'button:has-text("Registo de saídas")'
+    rotulo: Registo de saídas
+  - destacar: 'label:has-text("De")'
+    rotulo: O período
+  - destacar: 'label:has-text("Fluxo")'
+    rotulo: O fluxo de IA
+  - destacar: 'button:has-text("CSV")'
+    rotulo: Exportar (CSV, XLSX, DOCX)
+  - destacar: 'text=QUE CATEGORIAS SAÍRAM'
+    rotulo: Que categorias saíram
+  - marca: bancada
+  - clicar: 'button:has-text("Bancada de ensaio")'
+  - pausa: 2
+  - destacar: 'text=As quatro camadas estão de pé'
+    rotulo: As quatro camadas, e se estão de pé
+  - destacar: 'button:has-text("Verificar camadas")'
+    rotulo: Verificar camadas
+  - destacar: 'text=1 · TEXTO ORIGINAL'
+    rotulo: O texto a ensaiar
+  - destacar: 'button:has-text("Mascarar")'
+    rotulo: Mascarar
+  - destacar: 'text=AS MINHAS LISTAS DE TERMOS'
+    rotulo: As minhas listas de termos

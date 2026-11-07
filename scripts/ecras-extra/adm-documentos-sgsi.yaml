@@ -1,0 +1,24 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Documentos SGSI.
+utilizador: admin
+passos:
+  - abrir: /admin/sgsi
+    esperar: 'text=Tipos de Documentos SGSI'
+  - marca: tipos
+  - destacar: 'h2:has-text("Tipos de Documentos SGSI"), h3:has-text("Tipos de Documentos SGSI")'
+    rotulo: Os tipos de documento, por categoria
+  - destacar: 'h3:has-text("Política"), h4:has-text("Política")'
+    rotulo: Uma categoria e os seus tipos
+  - rolar: 'text=Modelos Word dos documentos'
+  - marca: modelos
+  - destacar: 'text=Modelos Word dos documentos'
+    rotulo: Os modelos Word, um por categoria
+  - destacar: 'button:has-text("Descarregar o modelo de exemplo")'
+    rotulo: Descarregar o modelo de exemplo
+  - destacar: 'button:has-text("Experimentar num documento")'
+    rotulo: Experimentar num documento
+  - destacar: 'text=Carregar modelo'
+    rotulo: Carregar o modelo da instituição
+  - rolar: 'text=Marcas que pode usar no modelo'
+  - marca: marcas
+  - destacar: 'text=Marcas que pode usar no modelo'
+    rotulo: As marcas que o modelo pode usar

@@ -1,0 +1,117 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "ADMINISTRAÇÃO DO SISTEMA"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Integrações"
+   },
+   {
+    "n": 4,
+    "tipo": "clicar",
+    "rotulo": "Integração com diretório"
+   }
+  ]
+ },
+ {
+  "imagem": "ligacoes-1.jpg",
+  "marca": "ligacoes",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Uma ligação declarada",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Nova ligação",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "ficha-1.jpg",
+  "marca": "ficha",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "AD de testes (Samba 4)",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "ficha-2.jpg",
+  "marca": "ficha",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Método de ligação (LDAPS ou StartTLS)",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Servidor e porta",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Base de procura",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Sub-árvore dos computadores (opcional)",
+    "valor": null
+   },
+   {
+    "n": 5,
+    "tipo": "ver",
+    "rotulo": "Sub-árvore das pessoas (opcional)",
+    "valor": null
+   },
+   {
+    "n": 6,
+    "tipo": "ver",
+    "rotulo": "Conta de serviço, só de consulta",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "ficha-3.jpg",
+  "marca": "ficha",
+  "itens": []
+ },
+ {
+  "imagem": "testar-1.jpg",
+  "marca": "testar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Testar ligação",
+    "valor": null
+   }
+  ]
+ }
+]

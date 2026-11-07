@@ -1,0 +1,12 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Integrações › Sistemas Externos.
+utilizador: admin
+passos:
+  - abrir: /admin/external
+    esperar: 'text=Sistemas Externos'
+  - marca: lista
+  - destacar: 'label:has-text("Nome")'
+    rotulo: Nome
+  - destacar: 'label:has-text("Cor")'
+    rotulo: Cor
+  - destacar: 'button:has-text("Adicionar")'
+    rotulo: Adicionar

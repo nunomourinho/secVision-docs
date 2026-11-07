@@ -1,0 +1,23 @@
+# Página nova (sem vídeo): Proteger › SOC › Wazuh Cheat Sheet.
+utilizador: admin
+passos:
+  - abrir: /wazuh-cheatsheet
+    esperar: 'text=Wazuh Cheat Sheet'
+  - marca: separadores
+  - destacar: 'button:has-text("Comandos")'
+    rotulo: Comandos
+  - destacar: 'button:has-text("Ficheiros")'
+    rotulo: Ficheiros
+  - destacar: 'button:has-text("Integrações")'
+    rotulo: Integrações
+  - destacar: 'button:has-text("Regras & Decoders")'
+    rotulo: Regras & Decoders
+  - destacar: 'button:has-text("Boas Práticas")'
+    rotulo: Boas Práticas
+  - destacar: 'button:has-text("Troubleshooting")'
+    rotulo: Troubleshooting
+  - destacar: 'button:has-text("Copiar")'
+    rotulo: Copiar o comando
+  - marca: regras
+  - clicar: 'button:has-text("Regras & Decoders")'
+  - pausa: 2

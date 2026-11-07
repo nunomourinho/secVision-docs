@@ -6,8 +6,12 @@ O SGSI documental, a formação, os agentes Wazuh, a deteção e a segurança do
 :maxdepth: 1
 
 isms-documents
+isms-structure
 training-and-awareness
 agents-and-surface
+wazuh-cheat-sheet
 detection-and-threats
+ioc
+security-feeds
 software-security
 ```

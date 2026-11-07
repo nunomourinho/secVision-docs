@@ -1,0 +1,22 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Integrações › Integração MISP.
+utilizador: admin
+passos:
+  - abrir: /admin/misp
+    esperar: 'text=Integração MISP'
+  - marca: ligacao
+  - destacar: 'text=Módulo MISP activo'
+    rotulo: Módulo MISP activo
+  - destacar: 'label:has-text("URL do MISP")'
+    rotulo: URL do MISP
+  - destacar: 'label:has-text("Chave de API")'
+    rotulo: Chave de API
+  - destacar: 'text=Verificar certificado SSL'
+    rotulo: Verificar certificado SSL
+  - destacar: 'text=Enriquecimento automático diário'
+    rotulo: Enriquecimento automático diário
+  - destacar: 'button:has-text("Guardar configuração")'
+    rotulo: Guardar configuração
+  - destacar: 'button:has-text("Testar ligação")'
+    rotulo: Testar ligação
+  - destacar: 'button:has-text("Enriquecer todos os IoCs")'
+    rotulo: Enriquecer todos os IoCs

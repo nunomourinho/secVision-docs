@@ -1,0 +1,15 @@
+# Página nova (sem vídeo): Detetar › IOC & Intelligence › Feeds de Segurança.
+passos:
+  - abrir: /feeds-seguranca
+    esperar: 'text=Feeds de Segurança'
+  - marca: artigos
+  - destacar: 'input[placeholder^="Pesquisar por título"]'
+    rotulo: Pesquisar
+  - destacar: 'select'
+    rotulo: Filtrar por feed
+  - destacar: 'label:has-text("Mostrar arquivados")'
+    rotulo: Mostrar arquivados
+  - destacar: '[title="Adicionar a um relatório de recomendações"]'
+    rotulo: Adicionar a um relatório de recomendações
+  - destacar: '[title^="Arquivar"]'
+    rotulo: Arquivar

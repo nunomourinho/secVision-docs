@@ -9,5 +9,6 @@ risk-criteria
 risk-register
 risk-treatment
 acceptances-and-projects
+contract-explorer
 suppliers
 ```

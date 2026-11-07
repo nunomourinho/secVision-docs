@@ -1,0 +1,14 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Integrações › Feeds RSS.
+utilizador: admin
+passos:
+  - abrir: /admin/rss
+    esperar: 'text=Feeds RSS'
+  - marca: feeds
+  - destacar: 'label:has-text("A cada")'
+    rotulo: A frequência de atualização
+  - destacar: 'button:has-text("Guardar")'
+    rotulo: Guardar
+  - destacar: 'button:has-text("Atualizar agora")'
+    rotulo: Atualizar agora
+  - destacar: 'button:has-text("Adicionar")'
+    rotulo: Adicionar um feed

@@ -58,6 +58,23 @@ python -X utf8 scripts/capturar_ecras.py --secvision ../secVision            # t
 python -X utf8 scripts/capturar_ecras.py --secvision ../secVision registo-risco
 ```
 
+## A ajuda dentro do SecVision
+
+O botão «?» de cada ecrã do SecVision abre a página deste manual que explica esse ecrã, com o vídeo,
+o texto e as capturas. O conteúdo vai **empacotado** na aplicação, porque a plataforma corre em redes
+fechadas: só o vídeo precisa de Internet. Depois de mudar o manual, volte a gerá-lo:
+
+```bash
+python -X utf8 scripts/exportar_ajuda.py --destino ../secVision/frontend/public/ajuda
+```
+
+O script compila o manual com o builder JSON do Sphinx e escreve `indice.json`, uma página por
+ficheiro e as imagens em WebP. Recusa terminar se uma ligação entre páginas apontar para uma página
+que não foi exportada. A correspondência ecrã → página está em
+`secVision/frontend/src/config/ajuda-rotas.js`, e `secVision/testes/test-ajuda-rotas.mjs` falha quando um
+item do menu não tem página, ou quando a página ou a âncora deixaram de existir. **Um ecrã novo no menu
+precisa de uma página aqui.**
+
 ## Compilar localmente
 
 ```bash

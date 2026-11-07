@@ -30,6 +30,7 @@ dados são inventados. Ver {doc}`/installation/test-environment`.
 :maxdepth: 2
 
 getting-started/index
+administration/index
 organisation/index
 inventory/index
 compliance/index

@@ -1,0 +1,70 @@
+# Página nova: Detetar › IOC & Intelligence › Indicadores de Compromisso, um separador de cada vez.
+utilizador: admin
+passos:
+  - abrir: /ioc
+    esperar: 'text=Gestão de Indicadores de Compromisso'
+  - marca: separadores
+  - destacar: 'main button:text-is("Importar")'
+    rotulo: Importar
+  - destacar: 'main button:text-is("Gestão")'
+    rotulo: Gestão
+  - destacar: 'main button:text-is("Feeds")'
+    rotulo: Feeds
+  - destacar: 'main button:text-is("Whitelist")'
+    rotulo: Whitelist
+  - destacar: 'main button:text-is("Configurações")'
+    rotulo: Configurações
+  - clicar: 'main button:text-is("Importar")'
+  - marca: importar
+  - destacar: 'text=Formatos suportados'
+    rotulo: Os formatos aceites
+  - destacar: 'label:has-text("Descrição")'
+    rotulo: Descrição (obrigatória)
+  - destacar: 'text=Importar ficheiro (.csv / .txt)'
+    rotulo: Importar ficheiro
+  - destacar: 'label:text-is("Indicadores")'
+    rotulo: Os indicadores, colados
+  - rolar: 'text=Bloqueio de Emergência'
+  - marca: emergencia
+  - destacar: 'text=Bloqueio de Emergência'
+    rotulo: Bloqueio de Emergência
+  - destacar: 'label:has-text("Indicadores de emergência")'
+    rotulo: Os indicadores de emergência
+  - marca: gestao
+  - clicar: 'main button:text-is("Gestão")'
+  - destacar: 'text=IPs a Bloquear'
+    rotulo: As contagens, por tipo e ação
+  - destacar: 'input[placeholder^="Pesquisar valor"]'
+    rotulo: Os filtros
+  - destacar: 'text=Selecionar:'
+    rotulo: Seleção em massa
+  - destacar: 'th:has-text("Ações")'
+    rotulo: Emergência, editar, apagar
+  - marca: feeds
+  - clicar: 'main button:text-is("Feeds")'
+  - destacar: 'text=URL BASE DOS FEEDS'
+    rotulo: O endereço base dos feeds
+  - destacar: 'text=enderecos_ip_a_bloquear.txt'
+    rotulo: Um ficheiro de feed
+  - destacar: 'button:has-text("Copiar URL")'
+    rotulo: Copiar o endereço
+  - marca: whitelist
+  - clicar: 'main button:text-is("Whitelist")'
+  - destacar: 'text=Catálogo de segurança (automático)'
+    rotulo: Do catálogo de segurança, automática
+  - destacar: 'button:has-text("Resolver domínios")'
+    rotulo: Resolver domínios
+  - rolar: 'text=Whitelist manual'
+  - marca: whitelist-manual
+  - destacar: 'text=Whitelist manual'
+    rotulo: A whitelist manual
+  - destacar: 'input[placeholder^="IP ou domínio"]'
+    rotulo: IP ou domínio
+  - marca: configuracoes
+  - clicar: 'main button:text-is("Configurações")'
+  - destacar: 'text=Prazo de validade padrão'
+    rotulo: Prazo de validade padrão
+  - destacar: 'text=TTL dos IPs resolvidos'
+    rotulo: Validade dos IPs resolvidos por DNS
+  - destacar: 'main >> text=URL base dos feeds'
+    rotulo: URL base dos feeds
