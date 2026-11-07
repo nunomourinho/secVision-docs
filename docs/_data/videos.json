@@ -59,6 +59,411 @@
     "legendas": "gravadas"
   },
   "103-risco": {
-    "titulo": "SecVision — O que é o risco"
+    "titulo": "SecVision — O que é o risco",
+    "youtube": "vttsuhvoRMM",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "104-controlos-e-sgsi": {
+    "titulo": "SecVision — Controlos, medidas e o sistema de gestão",
+    "youtube": "D4R_j0O5_qk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "105-normas-e-referenciais": {
+    "titulo": "SecVision — Normas e quadros de referência",
+    "youtube": "RFB0v_Jlhcc",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "106-iso-27001-por-dentro": {
+    "titulo": "SecVision — A ISO/IEC 27001 por dentro",
+    "youtube": "YzaaMXYnGgw",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "201-da-nis2-ao-dl-125": {
+    "titulo": "SecVision — Da NIS 2 ao DL 125/2025 e ao Regulamento 756/2026",
+    "youtube": "w2mK0ZWGEHY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "202-quem-esta-abrangido": {
+    "titulo": "SecVision — Quem está abrangido",
+    "youtube": "vaxFVYawdbw",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "203-autoidentificacao-e-qualificacao": {
+    "titulo": "SecVision — Autoidentificação e qualificação",
+    "youtube": "nBeu5YR65Fg",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "204-registo-e-atualizacao": {
+    "titulo": "SecVision — O registo, e mantê-lo atualizado",
+    "youtube": "hwmv_Wfn2wk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "205-responsavel-e-ponto-de-contacto": {
+    "titulo": "SecVision — Responsável de cibersegurança e ponto de contacto",
+    "youtube": "zNAwVcbGOIo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "206-deveres-dos-orgaos-de-gestao": {
+    "titulo": "SecVision — Os deveres dos órgãos de gestão",
+    "youtube": "FhDQGu8OiNs",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "207-gestao-de-riscos-e-matriz": {
+    "titulo": "SecVision — Gestão de riscos e a Matriz de Risco",
+    "youtube": "NeZmaw6p5g8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "208-publicas-relevantes-anexo-iv": {
+    "titulo": "SecVision — Entidades públicas relevantes — o Anexo IV",
+    "youtube": "3Ui9Fqm4Uxw",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "209-anexo-iv-medidas-organizacionais": {
+    "titulo": "SecVision — Anexo IV — as medidas organizacionais",
+    "youtube": "Pjs8OyaJEhA",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "210-anexo-iv-medidas-tecnologicas-e-humanas": {
+    "titulo": "SecVision — Anexo IV — as medidas tecnológicas e humanas",
+    "youtube": "WzoskPKC6IA",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "211-essenciais-e-importantes-anexo-iii": {
+    "titulo": "SecVision — Entidades essenciais e importantes — o Anexo III",
+    "youtube": "m0rgU7HqnJw",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "212-anexo-iii-por-funcao": {
+    "titulo": "SecVision — Anexo III — medidas e critérios, função a função",
+    "youtube": "kB-w7RjUC0E",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "213-o-qnrcs": {
+    "titulo": "SecVision — O QNRCS — o Anexo I",
+    "youtube": "IWvf_udnF2g",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "214-incidentes-notificar-a-tempo": {
+    "titulo": "SecVision — Incidentes — notificar a tempo",
+    "youtube": "ObVFwcnS2BY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "215-relatorio-fornecedores-risco-residual": {
+    "titulo": "SecVision — Relatório anual, fornecedores e risco residual",
+    "youtube": "COy9XBJbQC4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "216-a-certificacao": {
+    "titulo": "SecVision — A certificação",
+    "youtube": "hACfglXSd0Q",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "217-supervisao-e-sancoes": {
+    "titulo": "SecVision — Supervisão e sanções",
+    "youtube": "awhC70bsJd4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "301-primeiro-acesso-e-seguranca": {
+    "titulo": "SecVision — Primeiro acesso e segurança da plataforma",
+    "youtube": "ujyQCfKmW98",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "302-contas-papeis-e-modo": {
+    "titulo": "SecVision — Contas, papéis e modo do sistema",
+    "youtube": "o1hR00c12rc",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "305-ficha-da-organizacao": {
+    "titulo": "SecVision — A Ficha da organização",
+    "youtube": "AtRF33EPpvo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "306-papeis-e-pessoas": {
+    "titulo": "SecVision — Papéis, responsabilidades e pessoas",
+    "youtube": "exojjALl1Oc",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "307-partes-interessadas": {
+    "titulo": "SecVision — Partes interessadas e requisitos",
+    "youtube": "c4MJXDVi-xA",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "308-autoridades-e-notificacoes": {
+    "titulo": "SecVision — Autoridades, designações e notificações",
+    "youtube": "_xbcy6Zkfmw",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "309-acordos-e-contratos": {
+    "titulo": "SecVision — Acordos e contratos",
+    "youtube": "h4_cpr6la98",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "310-protecao-de-dados": {
+    "titulo": "SecVision — Proteção de dados pessoais",
+    "youtube": "jeTuVOtiNO4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "311-importar-o-parque": {
+    "titulo": "SecVision — Importar o parque",
+    "youtube": "QQOMnkTlMqk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "312-ver-o-parque": {
+    "titulo": "SecVision — Ver o parque",
+    "youtube": "TNJ5Kf5kkho",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "313-catalogo-de-seguranca": {
+    "titulo": "SecVision — O catálogo de segurança e a cobertura",
+    "youtube": "edhuBf43hB8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "314-ativos-de-informacao": {
+    "titulo": "SecVision — Ativos de informação",
+    "youtube": "WXdvS-UXLyY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "315-grupos-e-organograma": {
+    "titulo": "SecVision — Grupos, unidades e organograma",
+    "youtube": "LPjsWEOZNWM",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "317-processos-e-servicos": {
+    "titulo": "SecVision — Processos e serviços",
+    "youtube": "GkDvcyNmeFU",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "318-as-normas": {
+    "titulo": "SecVision — As normas e os regulamentos",
+    "youtube": "QSwArzwjVKA",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "319-ambito-do-sgsi": {
+    "titulo": "SecVision — O âmbito do sistema de gestão",
+    "youtube": "8e72zdF8MGI",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "320-declaracao-de-aplicabilidade": {
+    "titulo": "SecVision — A Declaração de Aplicabilidade",
+    "youtube": "lDZ42Agv4PE",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "321-mapeamento-e-ferramentas": {
+    "titulo": "SecVision — Mapeamento entre referenciais e cobertura por ferramenta",
+    "youtube": "C8bnHoV9uhU",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "323-criterios-de-risco": {
+    "titulo": "SecVision — Critérios de risco e catálogo de ameaças",
+    "youtube": "hm9-HJtLgFk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "325-registo-de-risco": {
+    "titulo": "SecVision — O registo de risco",
+    "youtube": "nlhJ-CP5gus",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "326-tratamento-do-risco": {
+    "titulo": "SecVision — Tratar o risco e relatar à direção",
+    "youtube": "X3O-7Br0Os8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "327-aceitacoes-e-projetos": {
+    "titulo": "SecVision — Aceitações, exceções e projetos",
+    "youtube": "8wtZlwBOd0s",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "329-fornecedores": {
+    "titulo": "SecVision — Fornecedores e contratos públicos",
+    "youtube": "0hRxtNWaMic",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "330-documentos-do-sgsi": {
+    "titulo": "SecVision — As políticas e os procedimentos do SGSI",
+    "youtube": "8-eAhy15ALU",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "331-formacao-e-sensibilizacao": {
+    "titulo": "SecVision — Formação e sensibilização",
+    "youtube": "jfElarjOi0E",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "332-agentes-e-superficie": {
+    "titulo": "SecVision — Fechar os GAP e ver o que está exposto",
+    "youtube": "uLT_zTh5SJI",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "334-detecao-e-ameacas": {
+    "titulo": "SecVision — Deteção e inteligência de ameaças",
+    "youtube": "B7l6-ynoPk4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "336-seguranca-do-software": {
+    "titulo": "SecVision — Segurança do software e da configuração",
+    "youtube": "H8cwm-OUPII",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "337-evidencias": {
+    "titulo": "SecVision — Evidências e prova automática",
+    "youtube": "o2K3avz_KYU",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "338-controlos-e-indicadores": {
+    "titulo": "SecVision — Os meus controlos, indicadores e objetivos",
+    "youtube": "lAYUIi1sJjE",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "340-painel-e-diagnosticos": {
+    "titulo": "SecVision — O painel de conformidade e os diagnósticos",
+    "youtube": "xYzKWGB-qQ4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "342-auditoria-interna": {
+    "titulo": "SecVision — A auditoria interna",
+    "youtube": "pzVwC_Xk5mk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "343-nao-conformidades-e-trilha": {
+    "titulo": "SecVision — Não conformidades e trilha de auditoria",
+    "youtube": "jn8slDdXtXo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "344-revisao-pela-gestao": {
+    "titulo": "SecVision — A revisão pela gestão",
+    "youtube": "cxOpzzJKlZ4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "346-dossier-e-certificacao": {
+    "titulo": "SecVision — O dossier de auditoria e a certificação",
+    "youtube": "Gz95ZhVsZHs",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "401-o-primeiro-ano": {
+    "titulo": "SecVision — O primeiro ano em sete passos",
+    "youtube": "4NrVZHNN3Xs",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "402-autoavaliacao-ao-plano": {
+    "titulo": "SecVision — Da autoavaliação ao plano",
+    "youtube": "5BOe07lijz0",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "404-o-que-conta-como-prova": {
+    "titulo": "SecVision — O que conta como prova",
+    "youtube": "4_kcTeyXn0Q",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "407-o-que-a-plataforma-poupa": {
+    "titulo": "SecVision — O que a plataforma poupa — e o que não",
+    "youtube": "Z-bBst3oNAU",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "501-o-wazuh-e-o-secvision": {
+    "titulo": "SecVision — O Wazuh e o SecVision",
+    "youtube": "QGZLcBTtV_M",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "502-instalar-os-agentes": {
+    "titulo": "SecVision — Instalar os agentes do Wazuh",
+    "youtube": "_urdmPk0qy0",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "503-o-explorer": {
+    "titulo": "SecVision — O Explorer — uma máquina por dentro",
+    "youtube": "i7a8bx6wvRc",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "504-sistemas-e-agentes": {
+    "titulo": "SecVision — Ligar os sistemas aos agentes",
+    "youtube": "-aPsi5LW_s8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "505-pesquisa-software-e-cve": {
+    "titulo": "SecVision — Quem tem este software, ou esta CVE",
+    "youtube": "ognXp6HZfq0",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "506-falsos-positivos": {
+    "titulo": "SecVision — Falsos positivos no Wazuh",
+    "youtube": "G8tv1S_xqC8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "507-regras-de-detecao": {
+    "titulo": "SecVision — Regras de deteção no Wazuh",
+    "youtube": "dLMvN0_X7To",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "508-classificar-e-studio": {
+    "titulo": "SecVision — Classificar alertas e ensaiar regras",
+    "youtube": "3ty5WyeiZy0",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   }
 }
