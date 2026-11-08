@@ -1,6 +1,6 @@
 # A organização e as obrigações
 
-Quem é a organização, quem faz o quê, a quem deve contas e o que acordou com terceiros.
+Identificação da organização, atribuições, obrigações perante terceiros e acordos celebrados.
 
 ```{toctree}
 :maxdepth: 1

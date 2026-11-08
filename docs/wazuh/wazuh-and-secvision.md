@@ -1,294 +1,293 @@
 # O Wazuh e o SecVision
 
-O que é o Wazuh — agentes, gestor, Indexer — e o que o SecVision faz com ele: as credenciais, a ligação, os agentes com os nomes das máquinas, o estado do servidor, e o catálogo de sistemas ligado à monitorização. Gravado num Wazuh a sério, o do ambiente de testes.
+Componentes do Wazuh (agentes, gestor e Indexer) e respetiva utilização pelo SecVision: credenciais, ligação, agentes com os nomes das máquinas, estado do servidor e associação do catálogo de sistemas à monitorização. As gravações foram feitas num Wazuh real, o do ambiente de testes.
 
 ```{video} 501-o-wazuh-e-o-secvision
 ```
 
-Este é o primeiro página do módulo sobre o Wazuh. Vamos ver o que é, como funciona por dentro, e o que o SecVision faz com ele: que dados lê, que ecrãs usa, e o que nunca faz sozinho.
+Esta é a primeira página do módulo sobre o Wazuh. Descreve o Wazuh, o seu funcionamento interno e a utilização que o SecVision lhe dá: os dados lidos, os ecrãs utilizados e as operações que nunca são executadas automaticamente.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Detetar › Soc › Wazuh Explorer
+**Detetar** > **SOC** > **Wazuh Explorer**
 
 ```{figure} /_static/capturas/wazuh-ligacao/menu.jpg
-:alt: Menu lateral: Detetar › Soc › Wazuh Explorer
+:alt: Menu lateral: Detetar > SOC > Wazuh Explorer
 
-O caminho no menu lateral: Detetar › Soc › Wazuh Explorer.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Detetar**.
-2. Dentro dele, abra **Soc**.
-3. Clique em **Wazuh Explorer**: abre o ecrã desta página.
+## Conceito
 
-## O conceito
+O Wazuh é uma plataforma de monitorização de segurança de código aberto. Cada máquina executa um agente: um programa que lê os registos do sistema, inventaria o software instalado e monitoriza a configuração.
 
-O Wazuh é uma plataforma de monitorização de segurança, de código aberto. Em cada máquina corre um agente: um programa pequeno que lê os registos do sistema, faz o inventário do software instalado e vigia a configuração.
+Os agentes enviam os dados para o gestor, que aplica milhares de regras e determina o que constitui um alerta. Os resultados são guardados no Indexer, uma base de dados de pesquisa: alertas, arquivo de todos os eventos, inventário de cada máquina e vulnerabilidades conhecidas do software instalado.
 
-Os agentes enviam tudo para o gestor. O gestor aplica milhares de regras, e é ele que decide o que é um alerta. O que sai fica no Indexer, uma base de dados de pesquisa: os alertas, os arquivos de todos os eventos, o inventário de cada máquina e as vulnerabilidades conhecidas do software que lá está.
-
-**O que é o Wazuh**
+**Componentes do Wazuh**
 
 Agentes
-: um programa pequeno em cada máquina — registos, inventário de software, configuração
+: programa instalado em cada máquina: registos, inventário de software e configuração
 
 Gestor
-: recebe tudo, aplica as regras e decide o que é um alerta
+: recebe os dados, aplica as regras e determina o que constitui um alerta
 
 Indexer
-: guarda os alertas, os arquivos, o inventário e as vulnerabilidades
+: guarda os alertas, o arquivo, o inventário e as vulnerabilidades
 
 Painel
-: o ecrã do próprio Wazuh, para quem trabalha no centro de operações
+: interface do próprio Wazuh, destinada às equipas do centro de operações
 
 ```{figure} /_static/img/501-o-wazuh-e-o-secvision/01.jpg
 :alt: O que é o Wazuh
 
-O que é o Wazuh.
+Componentes do Wazuh.
 ```
 
-O SecVision não substitui o Wazuh. Lê o que ele sabe e põe-no ao lado do catálogo: que máquinas estão monitorizadas, que software têm, que vulnerabilidades. É isso que transforma uma lista de sistemas numa visão do risco.
+O SecVision não substitui o Wazuh. Lê a informação do Wazuh e apresenta-a em conjunto com o catálogo: máquinas monitorizadas, software instalado e vulnerabilidades. Esta combinação transforma uma lista de sistemas numa visão do risco.
 
-E há uma coisa que escreve: as regras de falso positivo e de deteção. Escreve-as só quando um administrador manda, com cópia de segurança antes, validação, e reversão automática se o gestor não as aceitar. Cada uma destas partes tem o seu página neste módulo.
+O SecVision escreve no Wazuh apenas as regras de falso positivo e de deteção, sempre por decisão de um administrador, com cópia de segurança prévia, validação e reversão automática se o gestor não as aceitar. Cada uma destas funcionalidades tem uma página própria neste módulo.
 
-**O que o SecVision faz com o Wazuh**
+**Utilização do Wazuh pelo SecVision**
 
-- Lê: os agentes, o inventário, as vulnerabilidades e o estado do servidor.
-- Liga cada sistema do catálogo ao seu agente — e o que não tem agente fica em GAP.
+- Leitura: agentes, inventário, vulnerabilidades e estado do servidor.
+- Associação de cada sistema do catálogo ao respetivo agente; os sistemas sem agente ficam em GAP.
 - Pesquisa por software e por CVE, para os relatórios de recomendações.
-- Escreve regras de falso positivo e de deteção, só quando um administrador manda.
+- Escrita de regras de falso positivo e de deteção, apenas por decisão de um administrador.
 
-## A ligação
+## Ligação
 
-**Menu:** Detetar › SOC › Wazuh Explorer
+A ligação é configurada no Wazuh Explorer, no SecVision, e exige dois endereços: o da API do gestor, utilizado para consultar os agentes e aplicar regras, e o do Indexer, onde se encontram as vulnerabilidades. Cada endereço tem um utilizador e uma palavra-passe próprios.
 
-A ligação faz-se no Wazuh Explorer, do lado do SecVision. Pede duas moradas: a da API do gestor, por onde se pergunta pelos agentes e se aplicam regras, e a do Indexer, onde estão as vulnerabilidades. Cada uma com o seu utilizador e palavra-passe.
-
-As palavras-passe ficam cifradas na base de dados, e nunca voltam ao ecrã: o campo mostra só que existe uma. O utilizador da API precisa de poder ler os agentes e as regras; para aplicar regras, também de as escrever e de reiniciar o gestor.
+As palavras-passe são guardadas encriptadas na base de dados e não voltam a ser apresentadas; o campo indica apenas a sua existência. O utilizador da API necessita de permissão de leitura dos agentes e das regras e, para a aplicação de regras, de permissão de escrita e de reinício do gestor.
 
 ```{figure} /_static/capturas/wazuh-ligacao/credenciais-1.jpg
-:alt: Detetar › SOC › Wazuh Explorer
+:alt: Detetar > SOC > Wazuh Explorer
 
-O ecrã em Detetar › SOC › Wazuh Explorer (1 de 2).
+Ecrã **Detetar** > **SOC** > **Wazuh Explorer** (1 de 2).
 ```
 
-1. Clique em **Configuração da API Wazuh**.
+1. Separador **Configuração da API Wazuh:** Apresenta os campos da ligação.
 
 ```{figure} /_static/capturas/wazuh-ligacao/credenciais-2.jpg
-:alt: Detetar › SOC › Wazuh Explorer
+:alt: Detetar > SOC > Wazuh Explorer
 
-O ecrã em Detetar › SOC › Wazuh Explorer (2 de 2).
+Ecrã **Detetar** > **SOC** > **Wazuh Explorer** (2 de 2).
 ```
 
-1. **API do gestor**
-2. **Indexer — as vulnerabilidades**
-3. **Cifrada — nunca volta ao ecrã**
+No ecrã, encontra os seguintes elementos:
 
-## Os agentes
+1. **API do gestor:** Endereço, utilizador e palavra-passe.
+2. **Indexer:** Endereço, utilizador e palavra-passe, para as vulnerabilidades.
+3. **Palavra-passe:** Guardada encriptada e não apresentada novamente.
 
-**Menu:** Wazuh Explorer › Ligar ao Wazuh
+## Agentes
 
-Ligar ao Wazuh traz a lista dos agentes. No separador Explorador API pode perguntar-se à API do gestor diretamente, e a resposta mostra-os todos: neste ambiente de testes, cada máquina Linux do catálogo tem um agente com o nome dela, o servidor 002, a base de dados 003, o equipamento de rede 005 e o serviço 007, e o sistema operativo que cada uma corre.
+**Wazuh Explorer** > **Ligar ao Wazuh**
 
-E há um agente sem máquina nenhuma, de propósito: o agente sem sistema. É o caso de uma máquina que alguém ligou ao Wazuh e que ninguém registou no catálogo, e a plataforma tem de o mostrar à parte.
+O botão **Ligar ao Wazuh** obtém a lista dos agentes. No separador **Explorador API**, é possível consultar diretamente a API do gestor. Neste ambiente de testes, cada máquina Linux do catálogo tem um agente com o respetivo nome (servidor 002, base de dados 003, equipamento de rede 005 e serviço 007) e o sistema operativo correspondente.
+
+Existe também, deliberadamente, um agente sem máquina associada: o agente sem sistema. Representa uma máquina ligada ao Wazuh mas não registada no catálogo, que a plataforma apresenta separadamente.
 
 ```{figure} /_static/capturas/wazuh-ligacao/agentes-1.jpg
-:alt: Wazuh Explorer › Ligar ao Wazuh
+:alt: Wazuh Explorer > Ligar ao Wazuh
 
-O ecrã em Wazuh Explorer › Ligar ao Wazuh (1 de 5).
+Ecrã **Wazuh Explorer** > **Ligar ao Wazuh** (1 de 5).
 ```
 
 1. Clique em **Ligar ao Wazuh**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/agentes-2.jpg
-:alt: Wazuh Explorer › Ligar ao Wazuh
+:alt: Wazuh Explorer > Ligar ao Wazuh
 
-O ecrã em Wazuh Explorer › Ligar ao Wazuh (2 de 5).
+Ecrã **Wazuh Explorer** > **Ligar ao Wazuh** (2 de 5).
 ```
 
 1. Clique em **Explorador API**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/agentes-3.jpg
-:alt: Wazuh Explorer › Ligar ao Wazuh
+:alt: Wazuh Explorer > Ligar ao Wazuh
 
-O ecrã em Wazuh Explorer › Ligar ao Wazuh (3 de 5).
+Ecrã **Wazuh Explorer** > **Ligar ao Wazuh** (3 de 5).
 ```
 
-1. Escreva «/agents?select=name,status,os.name» no campo **/agents?limit=10**.
+1. Introduza «/agents?select=name,status,os.name» no campo **/agents?limit=10**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/agentes-4.jpg
-:alt: Wazuh Explorer › Ligar ao Wazuh
+:alt: Wazuh Explorer > Ligar ao Wazuh
 
-O ecrã em Wazuh Explorer › Ligar ao Wazuh (4 de 5).
+Ecrã **Wazuh Explorer** > **Ligar ao Wazuh** (4 de 5).
 ```
 
-1. **Um agente por máquina, com o nome dela**
+1. **Agentes:** Um agente por máquina, com o respetivo nome.
 
 ```{figure} /_static/capturas/wazuh-ligacao/agentes_wazuh-1.jpg
-:alt: Wazuh Explorer › Ligar ao Wazuh
+:alt: Wazuh Explorer > Ligar ao Wazuh
 
-O ecrã em Wazuh Explorer › Ligar ao Wazuh (5 de 5).
+Ecrã **Wazuh Explorer** > **Ligar ao Wazuh** (5 de 5).
 ```
 
-1. **Os mesmos agentes, no painel do Wazuh**
-2. **base-de-dados-003 — Debian 12**
+**Wazuh** > **Endpoints** > **Agents**
 
-**Menu:** Wazuh › Endpoints › Agents
+No painel do Wazuh, são apresentados os mesmos agentes, com o mesmo nome, endereço e sistema operativo, todos ativos. A base de dados 003 é um Debian 12, conforme indicado no catálogo do SecVision.
 
-E do lado do Wazuh, no painel dele, os mesmos agentes: o mesmo nome, o mesmo endereço, o mesmo sistema operativo, e ativos. A base de dados 003 é um Debian 12, tal como o catálogo do SecVision diz.
-
-O SecVision não guarda uma cópia destes dados: pergunta ao Wazuh de cada vez. O que um mostra, o outro mostra também.
+O SecVision não guarda uma cópia destes dados: consulta o Wazuh em cada pedido, pelo que a informação é idêntica nos dois sistemas.
 
 ```{figure} /_static/capturas/wazuh-ligacao/agentes_wazuh-1.jpg
-:alt: Wazuh › Endpoints › Agents
+:alt: Wazuh > Endpoints > Agents
 
-O ecrã em Wazuh › Endpoints › Agents.
+Ecrã **Wazuh** > **Endpoints** > **Agents**.
 ```
 
-1. **Os mesmos agentes, no painel do Wazuh**
-2. **base-de-dados-003 — Debian 12**
+No ecrã, encontra os seguintes elementos:
 
-## O servidor
+1. **Agentes no painel do Wazuh:** Os mesmos agentes apresentados no SecVision.
+2. **base-de-dados-003:** Debian 12.
 
-**Menu:** Wazuh Explorer › Servidor Wazuh
+## Servidor
 
-O separador do servidor mostra a versão do gestor e o estado de cada um dos seus serviços. Aqui a saúde está a vermelho: seis dos dezasseis serviços estão parados. Um serviço parado é o primeiro sítio onde olhar quando os alertas deixam de chegar.
+**Wazuh Explorer** > **Servidor Wazuh**
 
-Mas estes seis são funções que esta instalação não usa: o envio de alertas por correio, o syslog, as integrações, os relatórios, o cluster e a monitorização sem agente. Em Configurar monitorização tiram-se da conta, e a saúde passa a verde. É esta lista que a plataforma confirma quando aplica uma regra e o gestor reinicia.
+O separador do servidor apresenta a versão do gestor e o estado de cada serviço. Neste exemplo, o indicador de saúde está a vermelho: seis dos dezasseis serviços estão parados. Um serviço parado é o primeiro elemento a verificar quando os alertas deixam de ser recebidos.
+
+Os seis serviços parados correspondem a funções não utilizadas nesta instalação: envio de alertas por correio, syslog, integrações, relatórios, cluster e monitorização sem agente. Em **Configurar monitorização**, estes serviços são excluídos da contagem, e o indicador passa a verde. Esta lista é verificada pela plataforma quando aplica uma regra e o gestor é reiniciado.
+
+**Como excluir serviços da monitorização:** Siga os passos indicados nas capturas seguintes.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-1.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (1 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (1 de 12).
 ```
 
 1. Clique em **Servidor Wazuh**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-2.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (2 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (2 de 12).
 ```
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-3.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (3 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (3 de 12).
 ```
 
 1. Clique em **Configurar monitorização**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-4.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (4 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (4 de 12).
 ```
 
 1. Clique em **wazuh-agentlessd**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-5.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (5 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (5 de 12).
 ```
 
 1. Clique em **wazuh-csyslogd**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-6.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (6 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (6 de 12).
 ```
 
 1. Clique em **wazuh-integratord**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-7.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (7 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (7 de 12).
 ```
 
 1. Clique em **wazuh-maild**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-8.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (8 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (8 de 12).
 ```
 
 1. Clique em **wazuh-reportd**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-9.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (9 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (9 de 12).
 ```
 
 1. Clique em **wazuh-clusterd**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-10.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (10 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (10 de 12).
 ```
 
 1. Clique em **Guardar**.
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-11.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (11 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (11 de 12).
 ```
 
 ```{figure} /_static/capturas/wazuh-ligacao/servidor-12.jpg
-:alt: Wazuh Explorer › Servidor Wazuh
+:alt: Wazuh Explorer > Servidor Wazuh
 
-O ecrã em Wazuh Explorer › Servidor Wazuh (12 de 12).
+Ecrã **Wazuh Explorer** > **Servidor Wazuh** (12 de 12).
 ```
 
-## O catálogo
+## Catálogo
 
-**Menu:** Identificar › Sistemas
+**Identificar** > **Sistemas**
 
-No catálogo de sistemas vê-se o resultado. As máquinas com agente estão monitorizadas, com o nome do agente ao lado. As máquinas Windows deste ambiente não têm agente, e estão em GAP: em âmbito, mas sem monitorização.
+O catálogo de sistemas apresenta o resultado: as máquinas com agente estão monitorizadas, com o nome do agente indicado. As máquinas Windows deste ambiente não têm agente e estão em GAP (incluídas no âmbito, mas sem monitorização).
 
-A associação faz-se aqui, sistema a sistema, ou desfaz-se. Desassociar um agente põe o sistema em GAP com a data desse momento, e é essa data que conta os dias em GAP na fila de integração.
+A associação é feita neste ecrã, sistema a sistema, e pode ser desfeita. A desassociação de um agente coloca o sistema em GAP com a data desse momento, a partir da qual são contados os dias em GAP na fila de integração.
 
 ```{figure} /_static/capturas/wazuh-ligacao/sistemas-1.jpg
-:alt: Identificar › Sistemas
+:alt: Identificar > Sistemas
 
-O ecrã em Identificar › Sistemas (1 de 2).
+Ecrã **Identificar** > **Sistemas** (1 de 2).
 ```
 
 ```{figure} /_static/capturas/wazuh-ligacao/sistemas-2.jpg
-:alt: Identificar › Sistemas
+:alt: Identificar > Sistemas
 
-O ecrã em Identificar › Sistemas (2 de 2).
+Ecrã **Identificar** > **Sistemas** (2 de 2).
 ```
 
-1. **O agente de cada sistema**
-2. **Monitorizado ou GAP**
+No ecrã, encontra os seguintes elementos:
 
-## O ambiente de testes
+1. **Agente:** Agente associado a cada sistema.
+2. **Estado:** Monitorizado ou GAP.
 
-Tudo o que vimos é real. O ambiente de testes tem um Wazuh próprio, instalado sozinho quando se cria o ambiente, sempre na última versão publicada. Os agentes são máquinas a sério, com software a sério, e vulnerabilidades a sério.
+## Ambiente de testes
 
-E o ambiente de testes fala com este Wazuh e com mais nenhum. Se alguém lá escrever a morada do Wazuh de produção, a plataforma recusa antes de abrir a ligação, para uma regra de ensaio nunca reiniciar o gestor verdadeiro.
+Todos os dados apresentados são reais. O ambiente de testes dispõe de um Wazuh próprio, instalado automaticamente na criação do ambiente, sempre na versão mais recente publicada. Os agentes são máquinas reais, com software e vulnerabilidades reais.
+
+O ambiente de testes comunica exclusivamente com este Wazuh. Se for introduzido o endereço do Wazuh de produção, a plataforma recusa a ligação antes de a estabelecer, para que uma regra de ensaio nunca reinicie o gestor de produção.
 
 **O Wazuh do ambiente de testes**
 
-- Um Wazuh a sério, em Docker, sempre na última versão publicada.
-- Um agente por cada máquina Linux do catálogo, com o nome e o sistema que o catálogo diz.
-- O ambiente de testes fala com este Wazuh e com mais nenhum: o de produção é recusado.
+- Um Wazuh real, em Docker, sempre na versão mais recente publicada.
+- Um agente por cada máquina Linux do catálogo, com o nome e o sistema indicados no catálogo.
+- O ambiente de testes comunica exclusivamente com este Wazuh; a ligação ao de produção é recusada.
 
 ## Resumo
 
-Na conformidade, isto serve a medida de registos e monitorização do Anexo IV: a plataforma mostra, com factos, que sistemas estão monitorizados e quais não estão.
+No âmbito da conformidade, esta funcionalidade responde à medida de registos e monitorização do Anexo IV: a plataforma demonstra, com dados, os sistemas monitorizados e os não monitorizados.
 
-E com honestidade, o que não faz: não instala agentes, gera os scripts e quem os corre é uma pessoa; e não substitui o painel do Wazuh, nem quem analisa os alertas no dia a dia.
+A plataforma não instala agentes (gera os scripts, executados por um operador) e não substitui o painel do Wazuh nem o trabalho de análise diária dos alertas.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
-- No Anexo IV, serve a medida de registos e monitorização (T.RAR): mostra o que está monitorizado e o que não está.
-- Não instala agentes: gera os scripts, e quem os corre é uma pessoa.
-- Não substitui o painel do Wazuh, nem o trabalho de quem analisa os alertas.
+- No Anexo IV, responde à medida de registos e monitorização (T.RAR): identifica os sistemas monitorizados e os não monitorizados.
+- Não instala agentes: gera os scripts, executados por um operador.
+- Não substitui o painel do Wazuh nem o trabalho de análise dos alertas.

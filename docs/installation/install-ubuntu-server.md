@@ -1,35 +1,35 @@
 # Instalar o Ubuntu Server
 
-O instalador do Ubuntu Server 24.04 do princípio ao fim: idioma e teclado, rede, discos com LVM (e o espaço todo para o sistema), utilizador, servidor SSH, a instalação, o primeiro arranque e as primeiras tarefas de um servidor novo.
+O instalador do Ubuntu Server 24.04 do início ao fim: idioma e teclado, rede, discos com LVM (com todo o espaço atribuído ao sistema), utilizador, servidor SSH, instalação, primeiro arranque e primeiras tarefas num servidor novo.
 
 ```{video} 03-instalar-ubuntu-server
 ```
 
-Com a imagem do Ubuntu Server confirmada, arrancamos o servidor por ela e instalamos o sistema. Aqui é uma máquina virtual, mas os ecrãs são exatamente os mesmos de um servidor físico arrancado por uma pen.
+Com a imagem do Ubuntu Server verificada, o servidor é arrancado a partir dela para instalar o sistema. Este exemplo utiliza uma máquina virtual, mas os ecrãs são os mesmos de um servidor físico arrancado a partir de uma pen.
 
 ## Primeiros ecrãs
 
-O servidor arrancou pela imagem e carregou o instalador. Daqui em diante, tudo se faz com o teclado: as setas para escolher, o Enter para confirmar.
+Depois do arranque, é carregado o instalador. A navegação é feita com o teclado: as setas para selecionar e o Enter para confirmar.
 
-Primeiro, o idioma do instalador. Ficamos com o inglês: é o que aparece em qualquer guia e nas mensagens de erro que se procuram na internet. A língua não muda nada do que o servidor faz.
+O primeiro ecrã define o idioma do instalador. Recomenda-se manter o inglês, utilizado na generalidade dos guias e nas mensagens de erro pesquisadas na internet. O idioma não altera o funcionamento do servidor.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/01.jpg
 :alt: Idioma — English
 
-Idioma — English.
+Idioma: English.
 ```
 
-O teclado, esse sim, tem de ser o nosso: abrimos a lista, escolhemos Portuguese, e confirmamos.
+O teclado deve corresponder ao teclado utilizado: abra a lista, selecione **Portuguese** e confirme.
 
-É importante: com o teclado errado, os símbolos das palavras-passe saem trocados, e depois não se consegue entrar.
+Com o teclado incorreto, os símbolos das palavras-passe são introduzidos de forma errada, o que impede o início de sessão posterior.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/02.jpg
 :alt: Teclado — Portuguese
 
-Teclado — Portuguese.
+Teclado: Portuguese.
 ```
 
-O tipo de instalação: o Ubuntu Server normal, que já vem marcado. A versão mínima é para sistemas onde ninguém entra, e não é o nosso caso.
+No tipo de instalação, mantenha a opção **Ubuntu Server**, selecionada por omissão. A versão mínima destina-se a sistemas sem acesso interativo.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/03.jpg
 :alt: Ubuntu Server
@@ -39,9 +39,9 @@ Ubuntu Server.
 
 ## Rede
 
-A rede. O instalador encontrou a placa de rede e recebeu um endereço automaticamente, por DHCP.
+O instalador deteta a placa de rede e obtém um endereço automaticamente, por DHCP.
 
-Num servidor de produção, convém um endereço fixo, para todos os utilizadores o encontrarem sempre no mesmo sítio. Pode configurá-lo aqui, na placa de rede, ou pedir ao serviço de informática uma reserva no DHCP. No laboratório, fica como está.
+Num servidor de produção, recomenda-se um endereço fixo, para que os utilizadores acedam sempre ao mesmo endereço. Este endereço pode ser configurado neste ecrã, na placa de rede, ou através de uma reserva no DHCP, pedida à equipa de informática. No laboratório, a configuração mantém-se.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/04.jpg
 :alt: Rede
@@ -49,7 +49,7 @@ Num servidor de produção, convém um endereço fixo, para todos os utilizadore
 Rede.
 ```
 
-Se a rede da organização obrigar a usar um proxy para chegar à internet, é aqui que se indica. Não é o caso.
+Se a rede da organização exigir um proxy para aceder à internet, indique-o neste ecrã. Neste exemplo, não é utilizado.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/05.jpg
 :alt: Proxy e mirror
@@ -57,17 +57,17 @@ Se a rede da organização obrigar a usar um proxy para chegar à internet, é a
 Proxy e mirror.
 ```
 
-O mirror é o servidor de onde vêm os pacotes e as atualizações. O instalador escolheu o português e testou-o: passed tests, passou nos testes.
+O *mirror* é o servidor de onde são obtidos os pacotes e as atualizações. O instalador seleciona o *mirror* português e testa-o; a indicação **passed tests** confirma que o teste foi concluído com sucesso.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/06.jpg
 :alt: O mirror português
 
-O mirror português.
+O *mirror* português.
 ```
 
 ## Discos
 
-Os discos. Usamos o disco inteiro, organizado com LVM — uma camada que permite, mais tarde, aumentar o espaço sem reinstalar. É a opção que já vem marcada.
+Utilize o disco inteiro, organizado com LVM, uma camada que permite aumentar o espaço posteriormente sem reinstalar. Esta opção está selecionada por omissão.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/07.jpg
 :alt: Disco inteiro, com LVM
@@ -75,37 +75,37 @@ Os discos. Usamos o disco inteiro, organizado com LVM — uma camada que permite
 Disco inteiro, com LVM.
 ```
 
-Repare no resumo: o sistema, a barra, fica só com dezanove gigabytes, e os outros dezanove ficam livres. É assim por omissão no Ubuntu.
+No resumo, o sistema (`/`) fica apenas com dezanove gigabytes, e os restantes dezanove ficam livres. Esta é a configuração por omissão do Ubuntu.
 
-Para o SecVision, com as imagens dos contentores, as evidências e as cópias de segurança, queremos o espaço todo. Por isso editamos o volume ubuntu-lv.
+O SecVision necessita de todo o espaço disponível para as imagens dos contentores, as evidências e as cópias de segurança. Para isso, edite o volume **ubuntu-lv**.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/08.jpg
 :alt: O / só com metade do disco
 
-O / só com metade do disco.
+O `/` apenas com metade do disco.
 ```
 
-No campo do tamanho, apagamos o valor e escrevemos o máximo que o instalador indica entre parênteses. Save, para guardar.
+No campo do tamanho, apague o valor e introduza o máximo indicado entre parênteses. Clique em **Save** para guardar.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/09.jpg
 :alt: Alargar o volume ao máximo
 
-Alargar o volume ao máximo.
+Expansão do volume ao máximo.
 ```
 
-Agora a barra tem o espaço todo. Done, e o instalador avisa: o que estiver no disco vai ser apagado. Confirmamos com Continue.
+O sistema passa a dispor de todo o espaço. Selecione **Done**; o instalador avisa que o conteúdo do disco será apagado. Confirme com **Continue**.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/10.jpg
 :alt: Confirmar — o disco vai ser apagado
 
-Confirmar — o disco vai ser apagado.
+Confirmação: o disco será apagado.
 ```
 
 ## Utilizador e acesso
 
-O perfil. O nosso nome, o nome do servidor — secvision, é por ele que a máquina se apresenta na rede —, o nome do utilizador, secv, e a palavra-passe, duas vezes.
+No perfil, indique o nome, o nome do servidor (**secvision**, o nome com que a máquina se identifica na rede), o nome do utilizador (**secv**) e a palavra-passe, duas vezes.
 
-Este utilizador vai ter permissão de sudo. Escolha uma palavra-passe forte e guarde-a num cofre de palavras-passe: é a chave do servidor.
+Este utilizador terá permissão de `sudo`. Escolha uma palavra-passe forte e guarde-a num cofre de palavras-passe, uma vez que dá acesso ao servidor.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/11.jpg
 :alt: O servidor e o utilizador
@@ -113,15 +113,15 @@ Este utilizador vai ter permissão de sudo. Escolha uma palavra-passe forte e gu
 O servidor e o utilizador.
 ```
 
-O Ubuntu Pro é uma subscrição opcional da Canonical. Saltamos, com Skip for now: pode ativar-se mais tarde.
+O Ubuntu Pro é uma subscrição opcional da Canonical. Selecione **Skip for now**; a subscrição pode ser ativada mais tarde.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/12.jpg
 :alt: Ubuntu Pro — Skip for now
 
-Ubuntu Pro — Skip for now.
+Ubuntu Pro: Skip for now.
 ```
 
-Este é importante: marcamos Install OpenSSH server, com a barra de espaços. É o que permite administrar o servidor a partir do nosso computador, sem estar à frente dele.
+Assinale **Install OpenSSH server** com a barra de espaços. Esta opção permite administrar o servidor remotamente, a partir de outro computador.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/13.jpg
 :alt: Install OpenSSH server
@@ -129,47 +129,47 @@ Este é importante: marcamos Install OpenSSH server, com a barra de espaços. É
 Install OpenSSH server.
 ```
 
-A lista de snaps fica toda por marcar.
+Não assinale nenhum *snap* da lista.
 
-Em particular, não instale o Docker por aqui: o instalador do SecVision põe a versão aprovada, do repositório oficial, e uma segunda instalação só iria atrapalhar.
+Em particular, não instale o Docker neste ecrã: o instalador do SecVision instala a versão aprovada, a partir do repositório oficial, e uma segunda instalação causaria conflitos.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/14.jpg
 :alt: Nenhum snap
 
-Nenhum snap.
+Nenhum *snap*.
 ```
 
-## A instalação
+## Instalação
 
-Começa a instalação. O instalador prepara os discos, copia o sistema, instala o arranque e o servidor SSH, e descarrega as atualizações de segurança que já saíram.
+O instalador prepara os discos, copia o sistema, instala o arranque e o servidor SSH e transfere as atualizações de segurança já publicadas.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/15.jpg
 :alt: A instalar o sistema
 
-A instalar o sistema.
+Instalação do sistema.
 ```
 
-Installation complete. Escolhemos Reboot Now, para reiniciar já no sistema instalado.
+Quando surgir **Installation complete**, selecione **Reboot Now** para reiniciar no sistema instalado.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/16.jpg
 :alt: Installation complete — Reboot Now
 
-Installation complete — Reboot Now.
+Installation complete: Reboot Now.
 ```
 
-O instalador pede para retirar o suporte de instalação — a pen, ou o ISO da máquina virtual — e carregar em Enter.
+O instalador pede para retirar o suporte de instalação (a pen ou o ISO da máquina virtual) e premir Enter.
 
-As linhas a vermelho, FAILED, são normais neste momento: o sistema tenta desmontar a imagem que está precisamente a ser retirada.
+As linhas a vermelho com **FAILED** são normais neste momento: o sistema tenta desmontar a imagem que está a ser retirada.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/17.jpg
 :alt: Retirar o suporte
 
-Retirar o suporte.
+Remoção do suporte de instalação.
 ```
 
 ## Primeiro arranque
 
-O servidor arranca pela primeira vez do disco, e acaba no pedido de login: secvision login.
+O servidor arranca pela primeira vez a partir do disco e apresenta o pedido de início de sessão: **secvision login**.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/18.jpg
 :alt: O primeiro arranque
@@ -177,17 +177,19 @@ O servidor arranca pela primeira vez do disco, e acaba no pedido de login: secvi
 O primeiro arranque.
 ```
 
-Entramos com o utilizador secv e a palavra-passe. Como no terminal do Windows, a palavra-passe não aparece enquanto se escreve.
+Inicie sessão com o utilizador **secv** e a respetiva palavra-passe. Tal como no terminal do Windows, a palavra-passe não é apresentada durante a introdução.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/19.jpg
 :alt: Primeiro login
 
-Primeiro login.
+Primeiro início de sessão.
 ```
 
-Três verificações. O ip mostra o endereço do servidor na rede — é o que vai usar para chegar a ele. O df mostra a barra com os trinta e oito gigabytes que lhe demos.
+Efetue três verificações:
 
-E o fuso horário: o servidor vem em UTC. Mudamo-lo para Lisboa com o timedatectl, para que as datas e as horas no SecVision batam certo com as nossas.
+- `ip`: apresenta o endereço do servidor na rede, utilizado para lhe aceder.
+- `df`: confirma que o sistema (`/`) dispõe dos trinta e oito gigabytes atribuídos.
+- Fuso horário: o servidor é instalado em UTC. Altere-o para Lisboa com o `timedatectl`, para que as datas e horas do SecVision correspondam à hora local.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/20.jpg
 :alt: Endereço, disco e fuso horário
@@ -195,12 +197,12 @@ E o fuso horário: o servidor vem em UTC. Mudamo-lo para Lisboa com o timedatect
 Endereço, disco e fuso horário.
 ```
 
-Por fim, pomos o sistema em dia: sudo apt update, para saber o que há de novo, e full-upgrade, para instalar tudo. É uma boa prática antes de instalar qualquer aplicação num servidor novo.
+Por fim, atualize o sistema: `sudo apt update`, para obter a lista de atualizações, e `full-upgrade`, para as instalar. Esta prática é recomendada antes de instalar qualquer aplicação num servidor novo.
 
 ```{figure} /_static/img/03-instalar-ubuntu-server/21.jpg
 :alt: Atualizar o sistema
 
-Atualizar o sistema.
+Atualização do sistema.
 ```
 
 O servidor está instalado, atualizado e acessível por SSH.
@@ -213,10 +215,10 @@ Servidor pronto.
 
 ## Resumo
 
-A partir daqui, já não é preciso estar à frente do servidor. No Windows, abre-se o PowerShell e escreve-se ssh, o utilizador, uma arroba, e o endereço do servidor. Os comandos das próximas páginas escrevem-se nessa sessão.
+A partir deste ponto, não é necessário aceder fisicamente ao servidor. No Windows, abra o PowerShell e introduza `ssh`, seguido do utilizador, de uma arroba e do endereço do servidor. Os comandos das páginas seguintes são introduzidos nessa sessão.
 
-**A partir daqui, pelo SSH**
+**Acesso por SSH**
 
-- No Windows, abre-se o PowerShell e escreve-se: ssh secv@ seguido do endereço do servidor.
-- Os comandos das próximas páginas escrevem-se nessa sessão, como se estivéssemos à frente do servidor.
-- Guarde o endereço, o utilizador e a palavra-passe: vão ser precisos sempre que mexer no servidor.
+- No Windows, abra o PowerShell e introduza: ssh secv@ seguido do endereço do servidor.
+- Os comandos das páginas seguintes são introduzidos nessa sessão, com o mesmo efeito do que no próprio servidor.
+- Guarde o endereço, o utilizador e a palavra-passe, necessários para qualquer intervenção no servidor.

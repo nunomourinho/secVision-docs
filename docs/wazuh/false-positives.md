@@ -1,109 +1,109 @@
 # Falsos positivos no Wazuh
 
-O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado e a resposta real com as etiquetas repostas, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.
+Definição de falso positivo e motivo da reclassificação em alternativa à eliminação; um alerta real do Wazuh de testes, o pedido anonimizado à IA e a resposta real com as etiquetas repostas, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.
 
 ```{video} 506-falsos-positivos
 ```
 
-Um centro de operações que recebe mil alertas por dia, e em que novecentos são sempre os mesmos e inofensivos, deixa de olhar para os alertas. Nesta página vemos como se cala esse ruído no Wazuh, sem esconder o que importa.
+Um centro de operações que recebe mil alertas por dia, dos quais novecentos são recorrentes e inofensivos, deixa de analisar os alertas com atenção. Esta página descreve a supressão desse ruído no Wazuh, sem ocultar os alertas relevantes.
 
-## O conceito
+## Conceito
 
-Um falso positivo é um alerta certo sobre uma coisa inofensiva. A regra fez o que devia: viu uma tentativa de entrar com um utilizador que não existe. O contexto é que a desmente: é o scanner interno, a testar contas, todos os dias.
+Um falso positivo é um alerta correto sobre um evento inofensivo. A regra funcionou como previsto (por exemplo, detetou uma tentativa de acesso com um utilizador inexistente), mas o contexto invalida o alerta: trata-se do scanner interno, que testa contas diariamente.
 
-A regra original não se apaga, porque apanha ataques verdadeiros. Cria-se uma regra-filha, que herda da mãe e que só se aplica àquele caso, com o nível baixo. O evento continua nos arquivos, para a auditoria, mas deixa de ser alerta. E quanto mais estreita, melhor: um endereço, uma conta, uma máquina, nunca a regra toda.
+A regra original não é eliminada, uma vez que deteta ataques reais. É criada uma regra-filha, que herda da regra original e se aplica apenas a esse caso, com nível baixo. O evento mantém-se no arquivo, para efeitos de auditoria, mas deixa de gerar alerta. A regra deve ser tão restrita quanto possível: um endereço, uma conta ou uma máquina, e nunca a regra completa.
 
-**O que é um falso positivo**
+**Definição de falso positivo**
 
-- Um alerta certo sobre uma coisa inofensiva: a regra fez o que devia, o contexto é que a desmente.
-- Não se apaga a regra original: cria-se uma regra-filha, só para aquele caso.
-- A regra-filha herda da mãe (if_sid) e baixa o nível: o evento fica nos arquivos, mas deixa de ser alerta.
-- Quanto mais estreita, melhor: um endereço, um utilizador, uma máquina — nunca a regra toda.
+- Um alerta correto sobre um evento inofensivo: a regra funcionou como previsto, mas o contexto invalida o alerta.
+- A regra original não é eliminada: é criada uma regra-filha, apenas para esse caso.
+- A regra-filha herda da regra original (if_sid) e reduz o nível: o evento mantém-se no arquivo, mas deixa de gerar alerta.
+- A regra deve ser tão restrita quanto possível: um endereço, um utilizador, uma máquina, e nunca a regra completa.
 
-## Antes de abrir o ecrã
+## Informação a solicitar
 
-Antes de abrir o ecrã, três coisas. O alerta, e a razão por que se acha que é falso, de quem os analisa. A confirmação de que aquela origem é legítima, do responsável pelo sistema. E a aprovação do responsável de cibersegurança: uma regra de falso positivo é uma decisão de não ver, e tem dono.
+Antes de abrir o ecrã, são necessários três elementos: o alerta e a fundamentação da sua classificação como falso, fornecidos pela equipa de análise; a confirmação da legitimidade da origem, pelo responsável do sistema; e a aprovação do responsável de cibersegurança, uma vez que uma regra de falso positivo constitui uma decisão de supressão com responsável identificado.
 
-A aplicação no gestor só a faz um administrador do SecVision, porque reinicia o Wazuh.
+A aplicação no gestor só pode ser efetuada por um administrador do SecVision, uma vez que implica o reinício do Wazuh.
 
-**O que pedir a quem**
+**Responsáveis**
 
-| Informação | Quem a tem |
+| Informação | Responsável |
 |---|---|
-| O alerta, em JSON, e porque se acha que é falso | quem analisa os alertas |
-| A confirmação de que a origem é legítima (o scanner, o serviço) | o responsável pelo sistema |
-| A aprovação para mexer nas regras do gestor | o responsável de cibersegurança |
-| Aplicar no gestor | um administrador do SecVision |
+| Alerta, em JSON, e fundamentação da classificação como falso | equipa de análise de alertas |
+| Confirmação da legitimidade da origem (scanner, serviço) | responsável do sistema |
+| Aprovação da alteração das regras do gestor | responsável de cibersegurança |
+| Aplicação no gestor | administrador do SecVision |
 
 ## No Wazuh
 
-**Menu:** Wazuh › Threat Hunting › Events
+**Wazuh** > **Threat Hunting** > **Events**
 
-Tudo começa no Wazuh, no painel onde quem analisa os alertas trabalha. Em Threat Hunting, nos eventos, procura-se a regra 5710 numa máquina do ambiente de testes, a base de dados 003: alguém tenta entrar com uma conta que não existe, de dois em dois minutos, sempre do mesmo endereço.
+O processo começa no painel do Wazuh utilizado pela equipa de análise. Em **Threat Hunting**, nos eventos, é pesquisada a regra 5710 numa máquina do ambiente de testes, a base de dados 003: uma tentativa de acesso com uma conta inexistente, a cada dois minutos, sempre a partir do mesmo endereço.
 
-Abre-se o alerta, e no separador JSON está o documento inteiro, tal como o Wazuh o guarda. O botão de copiar põe-no na área de transferência. É isto que se leva para o SecVision.
+No separador **JSON** do alerta encontra-se o documento completo, tal como guardado pelo Wazuh. O botão de cópia coloca-o na área de transferência, para utilização no SecVision.
 
 ```{figure} /_static/capturas/wazuh-fp/wazuh-1.jpg
-:alt: Wazuh › Threat Hunting › Events
+:alt: Wazuh > Threat Hunting > Events
 
-O ecrã em Wazuh › Threat Hunting › Events (1 de 3).
+Ecrã **Wazuh** > **Threat Hunting** > **Events** (1 de 3).
 ```
 
-1. Escreva «rule.id : 5710 and agent.name : "base-de-dados-003"» no campo **Start typing to search and filter the wazuh-discover-search-**.
+1. Introduza «rule.id : 5710 and agent.name : "base-de-dados-003"» no campo de pesquisa **Start typing to search and filter the wazuh-discover-search-**.
 
 ```{figure} /_static/capturas/wazuh-fp/wazuh-2.jpg
-:alt: Wazuh › Threat Hunting › Events
+:alt: Wazuh > Threat Hunting > Events
 
-O ecrã em Wazuh › Threat Hunting › Events (2 de 3).
+Ecrã **Wazuh** > **Threat Hunting** > **Events** (2 de 3).
 ```
 
 ```{figure} /_static/capturas/wazuh-fp/wazuh-3.jpg
-:alt: Wazuh › Threat Hunting › Events
+:alt: Wazuh > Threat Hunting > Events
 
-O ecrã em Wazuh › Threat Hunting › Events (3 de 3).
+Ecrã **Wazuh** > **Threat Hunting** > **Events** (3 de 3).
 ```
 
-1. **De 2 em 2 minutos, sempre o mesmo**
+1. **Periodicidade:** A cada dois minutos, sempre a partir da mesma origem.
 
-## O alerta
+## Alerta
 
-**Menu:** Proteger › SOC › Falsos Positivos
+**Proteger** > **SOC** > **Falsos Positivos**
 
-No SecVision, em Falsos Positivos, cola-se o alerta na primeira caixa. É o mesmo documento, sem mexer em nada.
+No ecrã **Falsos Positivos** do SecVision, o alerta é colado na primeira caixa, sem alterações.
 
-O ecrã lê o alerta e mostra o essencial: a regra que disparou, a 5710, o nível, a máquina e a origem. E quantas vezes essa regra já disparou, contadas nos arquivos do Wazuh. Um número alto e sempre da mesma origem é o primeiro sinal de um falso positivo.
+O ecrã lê o alerta e apresenta os elementos essenciais: a regra que disparou (5710), o nível, a máquina e a origem, bem como o número de disparos da regra registados no arquivo do Wazuh. Um número elevado, sempre a partir da mesma origem, é o primeiro indício de um falso positivo.
 
 ```{figure} /_static/img/506-falsos-positivos/02.jpg
-:alt: Proteger › SOC › Falsos Positivos
+:alt: Proteger > SOC > Falsos Positivos
 
-O ecrã em Proteger › SOC › Falsos Positivos.
+Ecrã **Proteger** > **SOC** > **Falsos Positivos**.
 ```
 
-## A IA
+## Pedido à IA
 
-**Menu:** Falsos Positivos › Gerar prompt para IA
+**Falsos Positivos** > **Gerar prompt para IA**
 
-Escrever a regra pode pedir-se a uma IA. O botão prepara o pedido com o alerta, e copia-se para o levar ao serviço de IA da organização.
+A redação da regra pode ser pedida a um serviço de IA. O botão prepara o pedido com o alerta, que é copiado para o serviço de IA da organização.
 
-E o pedido sai anonimizado: os endereços, os nomes das máquinas e das contas são trocados por etiquetas antes de saírem daqui, e repostos quando a resposta volta. Este botão mostra o que foi trocado.
+O pedido é anonimizado: os endereços e os nomes das máquinas e das contas são substituídos por etiquetas antes do envio e repostos na resposta. O botão apresenta as substituições efetuadas.
 
 ```{figure} /_static/img/506-falsos-positivos/03.jpg
-:alt: Falsos Positivos › Gerar prompt para IA
+:alt: Falsos Positivos > Gerar prompt para IA
 
-O ecrã em Falsos Positivos › Gerar prompt para IA.
+Ecrã **Falsos Positivos** > **Gerar prompt para IA**.
 ```
 
 ### No assistente de IA
 
-Agora, fora da plataforma: o assistente de inteligência artificial. Cola-se o pedido e envia-se. O que vai: o endereço de origem é `[IP_1]`, a máquina é `[SISTEMA_1]`, a conta é `[UTILIZADOR_1]`. Mais nada sai daqui.
+Fora da plataforma, o pedido é colado no assistente de inteligência artificial e enviado. O endereço de origem é enviado como `[IP_1]`, a máquina como `[SISTEMA_1]` e a conta como `[UTILIZADOR_1]`; não é enviada qualquer outra informação.
 
 ```{figure} /_static/img/506-falsos-positivos/04.jpg
 :alt: O pedido pseudonimizado, colado no assistente de IA
 
-O pedido, colado no assistente de IA. A janela é desenhada para o vídeo; o pedido é o que a plataforma copiou, e foi processado de verdade por um modelo de IA.
+O pedido colado no assistente de IA. A janela foi criada para o vídeo; o pedido é o copiado pela plataforma e foi processado por um modelo de IA real.
 ```
 
-A resposta chega: uma regra XML, filha da regra que disparou, só para aquele sistema, aquela conta e aquela origem. E com as mesmas etiquetas: o modelo nunca soube o endereço verdadeiro. Copia-se a resposta.
+A resposta contém uma regra XML, filha da regra que disparou, restrita àquele sistema, àquela conta e àquela origem, com as mesmas etiquetas: o modelo não teve acesso ao endereço real. A resposta é então copiada.
 
 ```{figure} /_static/img/506-falsos-positivos/05.jpg
 :alt: A resposta do assistente, ainda com as etiquetas
@@ -111,11 +111,11 @@ A resposta chega: uma regra XML, filha da regra que disparou, só para aquele si
 A resposta real do modelo, ainda com as etiquetas.
 ```
 
-## A regra
+## Regra
 
-De volta à plataforma, a resposta cola-se na segunda caixa, ainda com as etiquetas. Validar a sintaxe faz primeiro a troca ao contrário: com o cofre do pedido, cada etiqueta volta a ser o valor real, e o ecrã diz quantas foram repostas. Só depois se verifica o XML.
+Na plataforma, a resposta é colada na segunda caixa, ainda com as etiquetas. O botão de validação da sintaxe efetua primeiro a substituição inversa: com o registo do pedido, cada etiqueta é substituída pelo valor real, e o ecrã indica o número de substituições. Em seguida, o XML é verificado.
 
-É esta troca que torna a regra útil: uma regra com a etiqueta `[IP_1]` no lugar do endereço não corresponderia a tráfego nenhum. O número e o nível que a regra traz não importam: quem os atribui é a plataforma, ao aplicar.
+Esta substituição é indispensável: uma regra com a etiqueta `[IP_1]` em vez do endereço não corresponderia a nenhum tráfego. O número e o nível indicados na regra são irrelevantes, uma vez que são atribuídos pela plataforma na aplicação.
 
 ```{figure} /_static/img/506-falsos-positivos/06.jpg
 :alt: A resposta colada, com as etiquetas repostas e a sintaxe válida
@@ -123,90 +123,86 @@ De volta à plataforma, a resposta cola-se na segunda caixa, ainda com as etique
 A resposta colada: «10 etiqueta(s) reposta(s) com os valores reais», e a sintaxe válida.
 ```
 
-## Aplicar
+## Aplicação
 
-**Menu:** Falsos Positivos › Aplicar ao Wazuh
+**Falsos Positivos** > **Aplicar ao Wazuh**
 
-Testar permissões confirma, antes de mexer em nada, que as credenciais podem ler e escrever regras e reiniciar o gestor.
+O botão **Testar permissões** confirma, antes de qualquer alteração, que as credenciais permitem ler e escrever regras e reiniciar o gestor.
 
 ```{figure} /_static/img/506-falsos-positivos/07.jpg
-:alt: Falsos Positivos › Aplicar ao Wazuh
+:alt: Falsos Positivos > Aplicar ao Wazuh
 
-O ecrã em Falsos Positivos › Aplicar ao Wazuh.
+Ecrã **Falsos Positivos** > **Aplicar ao Wazuh**.
 ```
 
-**Menu:** Falsos Positivos › Aplicar ao Wazuh
+O botão **Aplicar** executa as seguintes operações, por ordem, apresentando cada passo no ecrã: cópia de segurança do ficheiro de regras, escrita da regra, validação da configuração pelo gestor, reinício e confirmação da reposição dos serviços.
 
-Aplicar faz tudo por ordem, e cada passo aparece no ecrã: uma cópia de segurança do ficheiro de regras, a escrita da regra, a validação da configuração pelo próprio gestor, o reinício, e a confirmação de que os serviços voltaram.
-
-Se o gestor recusar a regra, ou não voltar depois do reinício, a plataforma repõe o ficheiro como estava e diz porquê. Nunca deixa o gestor com uma regra a meio.
+Se o gestor recusar a regra ou não for reposto após o reinício, a plataforma repõe o ficheiro original e indica o motivo. O gestor nunca fica com uma regra parcialmente aplicada.
 
 ```{figure} /_static/img/506-falsos-positivos/08.jpg
-:alt: Falsos Positivos › Aplicar ao Wazuh
+:alt: Falsos Positivos > Aplicar ao Wazuh
 
-O ecrã em Falsos Positivos › Aplicar ao Wazuh.
+Ecrã **Falsos Positivos** > **Aplicar ao Wazuh**.
 ```
 
-**Menu:** Falsos Positivos › Aplicar ao Wazuh
-
-No fim, o passo que mais importa: o logtest. O gestor recebe a linha do alerta original e responde que regra dispara agora. Responde a nossa, com o nível baixo: o falso positivo deixou de ser alerta.
+O passo final é o logtest: o gestor recebe a linha do alerta original e indica a regra que passa a disparar. A resposta identifica a nova regra, com nível baixo, o que confirma que o falso positivo deixou de gerar alerta.
 
 ```{figure} /_static/img/506-falsos-positivos/09.jpg
-:alt: Falsos Positivos › Aplicar ao Wazuh
+:alt: Falsos Positivos > Aplicar ao Wazuh
 
-O ecrã em Falsos Positivos › Aplicar ao Wazuh.
+Ecrã **Falsos Positivos** > **Aplicar ao Wazuh**.
 ```
 
-## No Wazuh
+## Regra no Wazuh
 
-**Menu:** Wazuh › Server management › Rules
+**Wazuh** > **Server management** > **Rules**
 
-E do lado do Wazuh? Nas regras do gestor, filtrando as regras personalizadas, aparece o ficheiro que o SecVision gere, com a regra nova, o número que lhe foi atribuído e o nível um.
+Nas regras do gestor, com o filtro das regras personalizadas, é apresentado o ficheiro gerido pelo SecVision, com a nova regra, o número atribuído e o nível um.
 
-O SecVision escreve sempre no seu próprio ficheiro, e só nesse. As regras de origem do Wazuh e as regras locais da equipa ficam como estavam.
+O SecVision escreve exclusivamente no seu próprio ficheiro. As regras de origem do Wazuh e as regras locais da equipa não são alteradas.
 
 ```{figure} /_static/img/506-falsos-positivos/10.jpg
-:alt: Wazuh › Server management › Rules
+:alt: Wazuh > Server management > Rules
 
-O ecrã em Wazuh › Server management › Rules.
+Ecrã **Wazuh** > **Server management** > **Rules**.
 ```
 
-## O histórico
+## Histórico
 
-**Menu:** Falsos Positivos › Histórico
+**Falsos Positivos** > **Histórico**
 
-No histórico fica cada regra: quem a criou, quando foi aplicada, o número que recebeu e o estado. Daqui edita-se e volta a aplicar-se, ou remove-se do gestor.
+O histórico regista cada regra: autor, data de aplicação, número atribuído e estado. A partir deste ecrã, a regra pode ser editada e aplicada novamente, ou removida do gestor.
 
-E a contagem de disparos de cada regra aplicada mostra se ela está a apanhar o que devia. Uma regra de falso positivo que nunca dispara é uma regra a mais; uma que dispara demasiado pode estar a esconder um ataque.
+A contagem de disparos de cada regra aplicada permite verificar a sua eficácia. Uma regra de falso positivo que nunca dispara é desnecessária; uma regra que dispara com demasiada frequência pode estar a ocultar um ataque.
 
 ```{figure} /_static/img/506-falsos-positivos/11.jpg
-:alt: Falsos Positivos › Histórico
+:alt: Falsos Positivos > Histórico
 
-O ecrã em Falsos Positivos › Histórico.
+Ecrã **Falsos Positivos** > **Histórico**.
 ```
 
-## No Wazuh
+## Verificação no Wazuh
 
-**Menu:** Wazuh › Threat Hunting › Events
+**Wazuh** > **Threat Hunting** > **Events**
 
-Cinco minutos depois, a mesma pesquisa no Wazuh. A máquina continua a tentar entrar, de dois em dois minutos, mas o último alerta é de antes da regra: desde então, nenhum.
+Cinco minutos depois, a mesma pesquisa no Wazuh confirma que a máquina continua a tentar o acesso a cada dois minutos, mas o último alerta é anterior à regra.
 
-Os eventos não se perderam: estão nos arquivos, com a regra nova. Só deixaram de ser alertas, que era o que se queria.
+Os eventos não foram perdidos: estão no arquivo, associados à nova regra, mas deixaram de gerar alertas.
 
 ```{figure} /_static/img/506-falsos-positivos/12.jpg
-:alt: Wazuh › Threat Hunting › Events
+:alt: Wazuh > Threat Hunting > Events
 
-O ecrã em Wazuh › Threat Hunting › Events.
+Ecrã **Wazuh** > **Threat Hunting** > **Events**.
 ```
 
 ## Resumo
 
-A plataforma trata do trabalho delicado: o pedido anonimizado, a validação, a aplicação com cópia de segurança e reversão, e a confirmação pelo logtest.
+A plataforma executa as operações sensíveis: pedido anonimizado, validação, aplicação com cópia de segurança e reversão, e confirmação pelo logtest.
 
-O que não faz é decidir que um alerta é falso. Essa decisão é de quem analisa os alertas, aprovada por quem responde pela cibersegurança, e fica escrita no histórico.
+A plataforma não decide que um alerta é falso. Essa decisão compete à equipa de análise, com aprovação do responsável de cibersegurança, e fica registada no histórico.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
-- Lê o alerta, prepara o pedido à IA anonimizado, valida, aplica com cópia de segurança e reverte se falhar.
-- Confirma pelo logtest que a regra nova é a que dispara.
-- Não decide se um alerta é falso: isso é de quem analisa, com a aprovação de quem responde.
+- Lê o alerta, prepara o pedido anonimizado à IA, valida, aplica com cópia de segurança e reverte em caso de falha.
+- Confirma pelo logtest que a nova regra é a que dispara.
+- Não decide se um alerta é falso: a decisão compete à equipa de análise, com aprovação do responsável de cibersegurança.

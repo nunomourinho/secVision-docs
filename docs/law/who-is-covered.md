@@ -1,45 +1,47 @@
 # Quem está abrangido
 
-As três perguntas para saber se a organização está abrangida, e em que qualificação: entidade essencial, importante ou pública relevante do Grupo A ou B.
+As três questões que determinam se a organização está abrangida e qual a sua qualificação: entidade essencial, importante ou pública relevante do Grupo A ou B.
 
 ```{video} 202-quem-esta-abrangido
 ```
 
-Antes de qualquer medida, há uma pergunta: a minha organização está abrangida pela lei, e em que qualificação? A resposta decide tudo o resto — as medidas, os prazos e até o valor das coimas.
+A primeira questão a responder é se a organização está abrangida pela lei e com que qualificação. Esta resposta determina as medidas aplicáveis, os prazos e o valor das coimas.
 
-## O âmbito
+## Âmbito
 
-A lei aplica-se, primeiro, às empresas privadas dos setores dos Anexos I e II do decreto-lei — energia, transportes, saúde, banca, infraestruturas digitais, e muitos outros — desde que sejam médias empresas ou maiores. Algumas, como as de comunicações eletrónicas, ficam abrangidas seja qual for a dimensão.
+A lei aplica-se às empresas privadas dos setores dos Anexos I e II do decreto-lei (energia, transportes, saúde, banca, infraestruturas digitais, entre outros), desde que sejam médias empresas ou de dimensão superior. Algumas entidades, como as de comunicações eletrónicas, estão abrangidas independentemente da dimensão.
 
-Aplica-se também à Administração Pública: direta, indireta e autónoma, e às entidades administrativas independentes. E aplica-se, expressamente, às instituições de ensino superior — como o nosso politécnico.
+A lei aplica-se também à Administração Pública (direta, indireta e autónoma) e às entidades administrativas independentes, bem como, expressamente, às instituições de ensino superior, como o politécnico dos exemplos.
 
-**Quem entra no âmbito**
+**Entidades no âmbito**
 
-| Quem | Condição | Base legal |
+| Entidades | Condição | Base legal |
 |---|---|---|
-| Privadas dos Anexos I e II | médias empresas ou maiores, que prestem serviços na União | art. 3.º, n.º 1 |
+| Privadas dos Anexos I e II | médias empresas ou de dimensão superior, que prestem serviços na União | art. 3.º, n.º 1 |
 | Algumas, de qualquer dimensão | comunicações eletrónicas, serviços de confiança, DNS, prestador único de um serviço essencial… | art. 3.º, n.º 2 |
 | Administração Pública | direta, indireta, autónoma, entidades administrativas independentes | art. 3.º, n.º 3 |
 | Ensino superior | todas as instituições | art. 3.º, n.º 6 |
 
 ```{tip}
-Ficam de fora, só quanto a essas redes, as de comando e controlo das Forças Armadas, das polícias e dos serviços de informações (art. 3.º, n.º 7).
+Estão excluídas, apenas quanto a essas redes, as redes de comando e controlo das Forças Armadas, das polícias e dos serviços de informações (art. 3.º, n.º 7).
 ```
 
-## As qualificações
+## Qualificações
 
-Dentro do âmbito, há três qualificações. Entidades essenciais: as maiores dos setores do Anexo I, e algumas por natureza, seja qual for a dimensão. Entidades importantes: as restantes dos Anexos I e II.
+Dentro do âmbito, existem três qualificações:
 
-E entidades públicas relevantes: as entidades públicas que não sejam essenciais nem importantes. É aqui que cabe a grande maioria dos serviços públicos e das instituições de ensino superior.
+- **Entidades essenciais:** As de maior dimensão dos setores do Anexo I e algumas entidades por natureza, independentemente da dimensão.
+- **Entidades importantes:** As restantes dos Anexos I e II.
+- **Entidades públicas relevantes:** As entidades públicas que não sejam essenciais nem importantes. Esta qualificação abrange a grande maioria dos serviços públicos e das instituições de ensino superior.
 
 Entidade essencial
-: as maiores dos setores do Anexo I, e algumas por natureza (art. 6.º, n.º 1)
+: as de maior dimensão dos setores do Anexo I, e algumas por natureza (art. 6.º, n.º 1)
 
 Entidade importante
 : as restantes dos Anexos I e II (art. 6.º, n.º 2)
 
 Entidade pública relevante — Grupo A ou B
-: as públicas que não sejam essenciais nem importantes (art. 7.º, n.º 1)
+: as entidades públicas que não sejam essenciais nem importantes (art. 7.º, n.º 1)
 
 ```{figure} /_static/img/202-quem-esta-abrangido/01.jpg
 :alt: As qualificações
@@ -47,9 +49,9 @@ Entidade pública relevante — Grupo A ou B
 As qualificações.
 ```
 
-As entidades públicas relevantes dividem-se em dois grupos, sobretudo pelo número de trabalhadores. Na administração direta, o Grupo A começa nos duzentos e cinquenta; na indireta e na autónoma, é preciso ter mais de duzentos e cinquenta. O Grupo B vai de setenta e cinco a duzentos e quarenta e nove.
+As entidades públicas relevantes dividem-se em dois grupos, sobretudo em função do número de trabalhadores. Na administração direta, o Grupo A começa nos duzentos e cinquenta trabalhadores; na indireta e na autónoma, exige mais de duzentos e cinquenta. O Grupo B abrange entre setenta e cinco e duzentos e quarenta e nove.
 
-As entidades administrativas independentes e os serviços dos órgãos de soberania são sempre Grupo A. O nosso politécnico, com mil duzentos e quarenta trabalhadores, é Grupo A.
+As entidades administrativas independentes e os serviços dos órgãos de soberania pertencem sempre ao Grupo A. O politécnico dos exemplos, com mil duzentos e quarenta trabalhadores, pertence ao Grupo A.
 
 **Grupo A e Grupo B**
 
@@ -61,36 +63,36 @@ As entidades administrativas independentes e os serviços dos órgãos de sobera
 | Entidades administrativas independentes, órgãos de soberania (serviços) | sempre | — |
 
 ```{tip}
-Art. 7.º, n.os 2 e 3, do DL. Abaixo de 75 trabalhadores, uma entidade pública não fica em nenhum dos grupos.
+Art. 7.º, n.os 2 e 3, do DL. Abaixo de 75 trabalhadores, uma entidade pública não pertence a nenhum dos grupos.
 ```
 
-E se a entidade cabe em mais do que uma? Aplica-se a mais exigente, por esta ordem: essencial, importante, pública relevante do Grupo A, e por fim do Grupo B.
+Se a entidade preencher os critérios de mais do que uma qualificação, aplica-se a mais exigente, pela seguinte ordem: essencial, importante, pública relevante do Grupo A e pública relevante do Grupo B.
 
-Uma entidade pública pode até ser essencial — por exemplo, se a sua missão for gerir infraestruturas de tecnologias de informação para outros serviços. E atenção: a qualificação não se presume. É o CNCS que a decide e notifica, depois da autoidentificação, como vimos em {doc}`/law/self-identification`.
+Uma entidade pública pode ser essencial; por exemplo, se a sua missão for gerir infraestruturas de tecnologias de informação para outros serviços. A qualificação não se presume: é decidida e notificada pelo CNCS após a autoidentificação, descrita em {doc}`/law/self-identification`.
 
-**Quando cabe em mais do que uma**
+**Entidades com mais do que uma qualificação possível**
 
-- Aplica-se a qualificação mais exigente, por esta ordem: essencial, importante, pública relevante do Grupo A, do Grupo B (art. 9.º, n.º 1).
-- Uma entidade pública pode ser essencial: por exemplo, se prestar serviços de infraestruturas de TIC (art. 6.º, n.º 1).
-- A qualificação não se presume: é o CNCS que a decide e notifica — {doc}`/law/self-identification`.
+- Aplica-se a qualificação mais exigente, pela seguinte ordem: essencial, importante, pública relevante do Grupo A, do Grupo B (art. 9.º, n.º 1).
+- Uma entidade pública pode ser essencial; por exemplo, se prestar serviços de infraestruturas de TIC (art. 6.º, n.º 1).
+- A qualificação não se presume: é decidida e notificada pelo CNCS ({doc}`/law/self-identification`).
 
-## Na sua organização
+## Informação a solicitar
 
-Para responder com segurança, peça ao jurídico a natureza jurídica e o tipo de administração; aos recursos humanos, o número de trabalhadores do quadro de pessoal, com a data; à direção, os serviços que presta; e, numa entidade empresarial, às finanças, o volume de negócios e o balanço.
+Para determinar a qualificação, solicite ao serviço jurídico a natureza jurídica e o tipo de administração; aos recursos humanos, o número de trabalhadores do quadro de pessoal, com a respetiva data; à direção, os serviços prestados; e, numa entidade empresarial, aos serviços financeiros, o volume de negócios e o balanço.
 
-**O que pedir a quem**
+**Responsáveis**
 
-| A quem | O quê |
+| Responsável | Informação |
 |---|---|
-| Jurídico | a natureza jurídica e o tipo de administração (direta, indireta, autónoma); a lei orgânica |
-| Recursos humanos | o número de trabalhadores no quadro de pessoal, numa data |
-| Direção | os serviços que presta, e se algum deles é prestado a outras entidades públicas |
-| Finanças | para entidades empresariais: volume de negócios e balanço |
+| Serviço jurídico | natureza jurídica e tipo de administração (direta, indireta, autónoma); lei orgânica |
+| Recursos humanos | número de trabalhadores no quadro de pessoal, numa data |
+| Direção | serviços prestados, incluindo os prestados a outras entidades públicas |
+| Serviços financeiros | para entidades empresariais: volume de negócios e balanço |
 
-Na plataforma, a qualificação e o grupo registam-se na Ficha da organização, e decidem que medidas mínimas se põem em âmbito. Mas a plataforma não qualifica ninguém: regista a qualificação que o CNCS notificou.
+Na plataforma, a qualificação e o grupo são registados na Ficha da organização e determinam as medidas mínimas propostas para o âmbito. A plataforma não atribui a qualificação: regista a qualificação notificada pelo CNCS.
 
-**Onde isto entra na plataforma**
+**Correspondência na plataforma**
 
-- A Ficha da organização regista a qualificação e o grupo que o CNCS notificou ({doc}`/platform/organisation/organisation-profile`).
-- A qualificação decide que anexo de medidas mínimas a plataforma propõe pôr em âmbito.
-- A plataforma não decide a qualificação: regista a que o CNCS notificou.
+- A Ficha da organização regista a qualificação e o grupo notificados pelo CNCS ({doc}`/platform/organisation/organisation-profile`).
+- A qualificação determina o anexo de medidas mínimas que a plataforma propõe incluir no âmbito.
+- A plataforma não atribui a qualificação: regista a qualificação notificada pelo CNCS.

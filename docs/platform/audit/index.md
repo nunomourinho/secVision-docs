@@ -1,6 +1,6 @@
 # Auditoria e melhoria
 
-Auditorias internas, não conformidades, revisão pela gestão e o dossier de certificação.
+Auditorias internas, não conformidades, revisão pela gestão e dossier de certificação.
 
 ```{toctree}
 :maxdepth: 1

@@ -1,30 +1,25 @@
 # Anonimização de IA
 
-O registo de tudo o que saiu da plataforma para um serviço de IA, e uma bancada para ver, antes de confiar, o que sairia de um texto real.
+Registo de todos os pedidos enviados da plataforma para serviços de IA e bancada de ensaio para verificar, com um texto real, o conteúdo que seria enviado.
 
 ```{video} 352-anonimizacao-de-ia
 ```
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Administração do sistema › Anonimização de IA
+**Governar** > **Administração do sistema** > **Anonimização de IA**
 
 ```{figure} /_static/capturas/adm-anonimizador/menu.jpg
-:alt: Menu lateral: Governar › Administração do sistema › Anonimização de IA
+:alt: Menu lateral: Governar > Administração do sistema > Anonimização de IA
 
-O caminho no menu lateral: Governar › Administração do sistema › Anonimização de IA.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Administração do sistema**.
-3. Clique em **Anonimização de IA**: abre o ecrã desta página.
+## Funcionamento
 
+Os assistentes de IA da plataforma (falsos positivos, regras de deteção, conformidade, documentos) geram um *prompt* que o utilizador cola no serviço de IA que utiliza. Antes do envio, endereços, nomes e identificadores são substituídos por etiquetas (`[IP_1]`, `[PESSOA_1]`), que são repostas na resposta. **A anonimização não pode ser desativada** e nenhum caminho da API devolve o texto original. Este ecrã permite verificar o funcionamento da anonimização.
 
-## Porquê
-
-Os assistentes de IA da plataforma (falsos positivos, regras de deteção, conformidade, documentos) montam um *prompt* que uma pessoa cola no serviço de IA que usa. À saída, endereços, nomes e identificadores são trocados por etiquetas (`[IP_1]`, `[PESSOA_1]`) e repostos na resposta. **Não há interruptor para desligar isto**, e não existe nenhum caminho na API que devolva o texto original. Este ecrã é a prova de que funciona.
-
-## O registo de saídas
+## Registo de saídas
 
 ```{figure} /_static/capturas/adm-anonimizador/registo-1.jpg
 :alt: O registo de saídas para IA, com os filtros e as contagens
@@ -32,53 +27,55 @@ Os assistentes de IA da plataforma (falsos positivos, regras de deteção, confo
 O registo de saídas para IA, com os filtros e as contagens.
 ```
 
-1. **Registo de saídas**
-2. **O período**
-3. **O fluxo de IA**
-4. **Exportar (CSV, XLSX, DOCX)**
-5. **Que categorias saíram**
+No ecrã, encontra os seguintes elementos:
 
+1. **Registo de saídas:** Lista dos *prompts* enviados.
+2. **Período:** Filtro por intervalo de datas.
+3. **Fluxo de IA:** Filtro por assistente de origem.
+4. Botão **Exportar:** Exporta o registo em CSV, XLSX ou DOCX.
+5. **Categorias:** Contagem dos valores substituídos, por categoria.
 
-Cada linha é um *prompt* que saiu: quando, quem, por que fluxo, e quantos valores de cada categoria foram substituídos. Exporta-se para CSV, XLSX ou DOCX, e é isso que se mostra a um auditor.
+Cada linha corresponde a um *prompt* enviado e indica a data, o utilizador, o fluxo e o número de valores substituídos por categoria. A exportação em CSV, XLSX ou DOCX serve de evidência para auditoria.
 
-## A bancada de ensaio
+## Bancada de ensaio
 
 ```{figure} /_static/capturas/adm-anonimizador/bancada-2.jpg
 :alt: A bancada de ensaio: o estado das camadas e o texto a experimentar
 
-A bancada de ensaio: o estado das camadas e o texto a experimentar.
+A bancada de ensaio: o estado das camadas e o texto a ensaiar.
 ```
 
-1. **As quatro camadas, e se estão de pé**
-2. **Verificar camadas**
-3. **O texto a ensaiar**
-4. **Mascarar**
-5. **As minhas listas de termos**
+No ecrã, encontra os seguintes elementos:
 
+1. **Camadas:** Estado das quatro camadas de anonimização.
+2. Botão **Verificar camadas:** Verifica a disponibilidade de cada camada.
+3. **Texto a ensaiar:** Campo para colar o texto de teste.
+4. Botão **Mascarar:** Apresenta o texto que seria enviado.
+5. **As minhas listas de termos:** Termos que o utilizador define como sempre visíveis ou sempre mascarados.
 
-Cole um alerta real ou um excerto de um documento e clique em **Mascarar**. A bancada mostra exatamente o que sairia: a tabela de conversão (`[IP_1]` é aquele endereço), o que ficou em claro e porquê, e a camada que apanhou cada coisa. Nas listas de termos, cada pessoa decide o que deixa sempre em claro e o que mascara sempre, só para os seus *prompts*.
+**Como ensaiar:** Cole um alerta real ou um excerto de um documento e clique em **Mascarar**. A bancada apresenta o texto que seria enviado, a tabela de conversão (por exemplo, a que endereço corresponde `[IP_1]`), os valores mantidos em claro e o respetivo motivo, e a camada que detetou cada valor. As listas de termos aplicam-se apenas aos *prompts* do próprio utilizador.
 
-**O painel das camadas é o que se verifica quando alguma coisa não funciona.** Diz «as quatro camadas estão de pé» ou nomeia a que falta. Uma camada obrigatória em falta significa que **não é produzido nenhum prompt** em toda a plataforma: é esse o motivo de um erro 503 nos assistentes de IA, e não um simples aviso.
+**Diagnóstico:** O painel das camadas indica se as quatro camadas estão disponíveis ou identifica a camada em falta. Se faltar uma camada obrigatória, **nenhum *prompt* é gerado** em toda a plataforma; é essa a causa de um erro 503 nos assistentes de IA.
 
-## Ida e volta: um pedido real
+## Exemplo completo de um pedido
 
-No vídeo, a bancada faz o percurso inteiro de um pedido, com um modelo de IA a sério do outro lado.
+O vídeo apresenta o ciclo completo de um pedido, processado por um modelo de IA real.
 
 ```{figure} /_static/img/352-anonimizacao-de-ia/05.jpg
 :alt: Copiar o que sairia da plataforma
 
-Copiar o que sairia: o texto já pseudonimizado, e só esse.
+Cópia do texto que seria enviado, já pseudonimizado.
 ```
 
-Cola-se o texto num assistente de IA. Máquinas, pessoa, telefones, endereço e contribuinte vão todos em etiquetas. Só o correio da pessoa vai em claro, porque é de um domínio de documentação e foi deixado assim de propósito, como a bancada já tinha avisado.
+O texto é colado num assistente de IA. Máquinas, pessoa, telefones, endereço e número de contribuinte seguem como etiquetas. Apenas o correio eletrónico da pessoa segue em claro, por pertencer a um domínio de documentação configurado como exceção, conforme indicado previamente pela bancada.
 
 ```{figure} /_static/img/352-anonimizacao-de-ia/06.jpg
 :alt: O pedido pseudonimizado, colado no assistente de IA
 
-O pedido, colado no assistente de IA. A janela é desenhada para o vídeo; o pedido e a resposta são reais, processados por um modelo de IA.
+O pedido colado no assistente de IA. A janela foi criada para o vídeo; o pedido e a resposta são reais, processados por um modelo de IA.
 ```
 
-A resposta analisa o alerta e propõe passos, falando sempre pelas etiquetas: `[IP_1]`, `[PESSOA_1]`. E até repara no correio que foi em claro, e recomenda mascará-lo. Copia-se a resposta.
+A resposta analisa o alerta e propõe passos, referindo-se sempre às etiquetas (`[IP_1]`, `[PESSOA_1]`). A resposta identifica também o correio eletrónico enviado em claro e recomenda mascará-lo. A resposta é então copiada.
 
 ```{figure} /_static/img/352-anonimizacao-de-ia/07.jpg
 :alt: A resposta do assistente, com as etiquetas
@@ -86,7 +83,7 @@ A resposta analisa o alerta e propõe passos, falando sempre pelas etiquetas: `[
 A resposta real do modelo, ainda com as etiquetas.
 ```
 
-De volta à bancada, cola-se a resposta na **reversão**, ainda com as etiquetas, e clica-se em **Reverter**. A mesma resposta aparece com os valores reais no sítio: o endereço, as máquinas, a pessoa, o telefone. É o mesmo passo que os assistentes da plataforma (falsos positivos, regras de deteção, classificação de alertas, documentos do SGSI) fazem sozinhos quando se cola a resposta.
+Na bancada, cole a resposta no campo de **reversão** e clique em **Reverter**. A resposta é apresentada com os valores reais repostos: endereço, máquinas, pessoa e telefone. Os assistentes da plataforma (falsos positivos, regras de deteção, classificação de alertas, documentos do SGSI) executam este passo automaticamente quando a resposta é colada.
 
 ```{figure} /_static/img/352-anonimizacao-de-ia/08.jpg
 :alt: A reversão da resposta, com os valores reais
@@ -95,11 +92,11 @@ A reversão: a resposta com os valores reais repostos.
 ```
 
 ```{note}
-**Dois prazos diferentes.** O mapa que permite repor os valores originais expira aos 30 dias. A linha do registo dura um ano, porque «4 endereços IP» mais uma data é prova de auditoria sem dado pessoal nenhum.
+**Prazos de conservação.** O mapa que permite repor os valores originais expira ao fim de 30 dias. A linha do registo é conservada durante um ano, uma vez que a contagem (por exemplo, «4 endereços IP») e a data constituem evidência de auditoria sem dados pessoais.
 ```
 
 ## Resumo
 
-- O registo de saídas é a prova do que saiu para serviços de IA.
-- A bancada mostra o que sairia, antes de confiar, e repõe os valores reais numa resposta.
-- Sem as camadas obrigatórias, nenhum *prompt* é produzido.
+- O registo de saídas documenta os pedidos enviados para serviços de IA.
+- A bancada apresenta o texto que seria enviado e repõe os valores reais numa resposta.
+- Sem as camadas obrigatórias, nenhum *prompt* é gerado.

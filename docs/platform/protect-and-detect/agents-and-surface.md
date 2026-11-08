@@ -1,88 +1,82 @@
-# Fechar os GAP e ver o que está exposto
+# Correção dos GAP e superfície exposta
 
-A fila de integração dos sistemas em GAP e o gerador dos scripts do agente de monitorização; e a superfície exposta, por fora e por dentro, com as vulnerabilidades em exploração e os equipamentos fora do catálogo.
+A fila de integração dos sistemas em GAP e o gerador de scripts do agente de monitorização; a superfície exposta, externa e interna, com as vulnerabilidades em exploração e os equipamentos fora do catálogo.
 
 ```{video} 332-agentes-e-superficie
 ```
 
-No página do catálogo vimos os sistemas em GAP: em âmbito, mas sem monitorização. Nesta página vemos como se fecham, e como se descobre o que está exposto, por fora e por dentro.
+A página do catálogo apresenta os sistemas em GAP: incluídos no âmbito, mas sem monitorização. Esta página descreve a correção dessas lacunas e a identificação da superfície exposta, externa e interna.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Proteger › Instalar agente wazuh › Instalar agente Wazuh
+**Proteger** > **Instalar agente Wazuh**
 
 ```{figure} /_static/capturas/agentes-superficie/menu.jpg
-:alt: Menu lateral: Proteger › Instalar agente wazuh › Instalar agente Wazuh
+:alt: Menu lateral: Proteger > Instalar agente Wazuh
 
-O caminho no menu lateral: Proteger › Instalar agente wazuh › Instalar agente Wazuh.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Proteger**.
-2. Dentro dele, abra **Instalar agente wazuh**.
-3. Clique em **Instalar agente Wazuh**: abre o ecrã desta página.
+## Fila de integração
 
-## A fila
-
-**Menu:** Proteger › Instalar agente Wazuh
-
-No menu Proteger, Instalar agente Wazuh — o Wazuh é a plataforma de monitorização de segurança de código aberto que o SecVision usa. A fila de integração não se ordena à mão: primeiro a criticidade, depois a exposição, depois os dias em GAP. Um sistema crítico exposto à Internet vem antes de um operacional interno.
+O Wazuh é a plataforma de monitorização de segurança de código aberto utilizada pelo SecVision. A fila de integração é ordenada automaticamente pela criticidade, pela exposição e pelos dias em GAP: um sistema crítico exposto à Internet precede um sistema operacional interno.
 
 ```{figure} /_static/capturas/agentes-superficie/abrir-1.jpg
-:alt: Proteger › Instalar agente Wazuh
+:alt: Proteger > Instalar agente Wazuh
 
-O ecrã em Proteger › Instalar agente Wazuh.
+Ecrã **Proteger** > **Instalar agente Wazuh**.
 ```
 
-1. **Criticidade, exposição, dias em GAP**
+1. **Ordenação:** Criticidade, exposição e dias em GAP.
 
-## O script
+## Gerador de scripts
 
-**Menu:** Proteger › SOC › Wazuh Agent Builder
+**Proteger** > **SOC** > **Wazuh Agent Builder**
 
-O gerador de scripts pede onde está o gestor, os portos e a versão do agente, e as políticas de confiança zero — cada uma com o efeito escrito ao lado. Sai um script por sistema operativo.
+O gerador de scripts solicita a localização do gestor, as portas, a versão do agente e as políticas de confiança zero, cada uma com o respetivo efeito descrito. É gerado um script por sistema operativo.
 
-A plataforma não instala nada sozinha: gera o script, e quem o corre é uma pessoa, com as credenciais da máquina. Instalado o agente e confirmada a ligação, o sistema passa a monitorizado, e a cobertura sobe.
+A plataforma não instala o agente: gera o script, que é executado por um operador com as credenciais da máquina. Após a instalação do agente e a confirmação da ligação, o sistema passa a monitorizado e a cobertura aumenta.
 
 ```{figure} /_static/capturas/agentes-superficie/builder-1.jpg
-:alt: Proteger › SOC › Wazuh Agent Builder
+:alt: Proteger > SOC > Wazuh Agent Builder
 
-O ecrã em Proteger › SOC › Wazuh Agent Builder (1 de 2).
+Ecrã **Proteger** > **SOC** > **Wazuh Agent Builder** (1 de 2).
 ```
 
 ```{figure} /_static/capturas/agentes-superficie/builder-2.jpg
-:alt: Proteger › SOC › Wazuh Agent Builder
+:alt: Proteger > SOC > Wazuh Agent Builder
 
-O ecrã em Proteger › SOC › Wazuh Agent Builder (2 de 2).
+Ecrã **Proteger** > **SOC** > **Wazuh Agent Builder** (2 de 2).
 ```
 
-## A superfície
+## Superfície exposta
 
-**Menu:** Identificar › Inventário › Superfície Int. e Ext.
+**Identificar** > **Inventário** > **Superfície Int. e Ext.**
 
-A superfície interna mostra o que o varrimento da rede encontrou. Neste ambiente de testes ainda não se varreu nenhuma rede, e o ecrã diz onde se faz: no Inventário de Redes, com o botão do varrimento. Numa instalação real, as portas aparecem classificadas por risco: Telnet, FTP ou VNC são críticos; o acesso remoto ao ambiente de trabalho ou as bases de dados abertas são elevados.
+A superfície interna apresenta os resultados do varrimento da rede. Neste ambiente de testes, nenhuma rede foi ainda varrida, e o ecrã indica o local onde o varrimento é iniciado: o Inventário de Redes, com o botão do varrimento. Numa instalação real, as portas são classificadas por risco: Telnet, FTP ou VNC são críticas; o acesso remoto ao ambiente de trabalho ou as bases de dados expostas são elevados.
 
-E nos dois ecrãs aparecem os equipamentos fora do catálogo: endereços que respondem e não estão associados a nenhum sistema do catálogo. O botão Catalogar devolve-os ao catálogo, em vez de os deixar numa lista à parte.
+Os dois ecrãs apresentam também os equipamentos fora do catálogo: endereços ativos não associados a nenhum sistema do catálogo. O botão **Catalogar** integra-os no catálogo.
 
 ```{figure} /_static/capturas/agentes-superficie/superficie-1.jpg
-:alt: Identificar › Inventário › Superfície Int. e Ext.
+:alt: Identificar > Inventário > Superfície Int. e Ext.
 
-O ecrã em Identificar › Inventário › Superfície Int. e Ext (1 de 2).
+Ecrã **Identificar** > **Inventário** > **Superfície Int. e Ext.** (1 de 2).
 ```
 
 ```{figure} /_static/capturas/agentes-superficie/superficie-2.jpg
-:alt: Identificar › Inventário › Superfície Int. e Ext.
+:alt: Identificar > Inventário > Superfície Int. e Ext.
 
-O ecrã em Identificar › Inventário › Superfície Int. e Ext (2 de 2).
+Ecrã **Identificar** > **Inventário** > **Superfície Int. e Ext.** (2 de 2).
 ```
 
 ## Resumo
 
-É aqui que o risco ganha factos: quando um sistema tem uma vulnerabilidade em exploração, a probabilidade sugerida no registo de risco sobe ao topo da escala.
+Estes dados fundamentam a apreciação do risco: quando um sistema tem uma vulnerabilidade em exploração, a probabilidade sugerida no registo de risco passa para o nível máximo da escala.
 
-E uma nota sobre o ambiente de testes: tem um Wazuh próprio, com um agente em cada máquina Linux do catálogo, e fala com esse e com mais nenhum. O de produção é recusado, para um ensaio nunca lhe tocar. O módulo sobre o Wazuh mostra-o por dentro.
+O ambiente de testes dispõe de um Wazuh próprio, com um agente em cada máquina Linux do catálogo, e comunica exclusivamente com este. A ligação ao Wazuh de produção é recusada, para impedir que um ensaio o afete. O módulo sobre o Wazuh descreve-o em detalhe.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
-- No Anexo IV: proteção perimetral (T.PPL), antivírus (T.PPT), registos (T.RAR) — e o inventário dos ativos acessíveis pela Internet.
-- A probabilidade sugerida no registo de risco sobe ao topo quando um sistema tem uma vulnerabilidade em exploração.
-- No ambiente de testes, a plataforma fala com um Wazuh próprio, de testes, e recusa o de produção.
+- No Anexo IV: proteção perimetral (T.PPL), antivírus (T.PPT), registos (T.RAR) e inventário dos ativos acessíveis pela Internet.
+- A probabilidade sugerida no registo de risco passa para o nível máximo quando um sistema tem uma vulnerabilidade em exploração.
+- No ambiente de testes, a plataforma comunica com um Wazuh de testes próprio e recusa a ligação ao de produção.

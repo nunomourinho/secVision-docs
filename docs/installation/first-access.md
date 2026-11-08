@@ -1,27 +1,27 @@
 # O primeiro acesso
 
-Entrar pela primeira vez com a conta inicial, trocar a palavra-passe e ativar o segundo fator com uma aplicação autenticadora — e o que muda nas entradas seguintes.
+Primeiro início de sessão com a conta inicial, alteração da palavra-passe e ativação do segundo fator com uma aplicação autenticadora, e o procedimento nos inícios de sessão seguintes.
 
 ```{video} 06-primeiro-acesso
 ```
 
-A plataforma está instalada. Nesta página entramos pela primeira vez. Vamos trocar a palavra-passe inicial e ativar o segundo fator de autenticação — dois passos que a plataforma exige antes de mostrar o que quer que seja.
+Com a plataforma instalada, esta página descreve o primeiro início de sessão: a alteração da palavra-passe inicial e a ativação do segundo fator de autenticação. A plataforma exige estes dois passos antes de apresentar qualquer conteúdo.
 
-## Porquê
+## Requisitos de segurança
 
-Porquê? A palavra-passe inicial é a mesma em todas as instalações, e está escrita no manual. Por isso a primeira coisa a fazer é trocá-la.
+A palavra-passe inicial é igual em todas as instalações e consta do manual, pelo que deve ser alterada no primeiro acesso.
 
-E o segundo fator junta à palavra-passe uma coisa que só a pessoa tem: o telemóvel, ou uma chave de segurança. Assim, quem descobrir a palavra-passe, sozinha, não consegue entrar.
+O segundo fator acrescenta à palavra-passe um elemento que só o utilizador possui (o telemóvel ou uma chave de segurança). Desta forma, o conhecimento da palavra-passe, por si só, não permite o acesso.
 
-**Porquê dois passos obrigatórios**
+**Motivos dos dois passos obrigatórios**
 
-- A palavra-passe inicial, ChangeMe123!, é igual em todas as instalações — toda a gente a conhece.
-- O segundo fator junta à palavra-passe algo que só o utilizador tem: o telemóvel ou uma chave de segurança.
-- Quem descobrir a palavra-passe, sem o segundo fator, não entra.
+- A palavra-passe inicial, ChangeMe123!, é igual em todas as instalações e é pública.
+- O segundo fator acrescenta à palavra-passe um elemento que só o utilizador possui: o telemóvel ou uma chave de segurança.
+- Sem o segundo fator, a palavra-passe não é suficiente para iniciar sessão.
 
-## Entrar com a conta inicial
+## Início de sessão com a conta inicial
 
-No browser, abrimos o endereço que o instalador indicou — aqui, no laboratório, localhost, porta 8080; num servidor, é o nome ou o endereço dele, a partir de qualquer computador da rede. Aparece a página de entrada. Escrevemos o utilizador, admin, e a palavra-passe inicial.
+No browser, abra o endereço indicado pelo instalador. No laboratório, o endereço é localhost, porta 8080; num servidor, utilize o nome ou o endereço do servidor, a partir de qualquer computador da rede. Na página de entrada, introduza o utilizador **admin** e a palavra-passe inicial.
 
 ```{figure} /_static/img/06-primeiro-acesso/01.jpg
 :alt: A página de entrada
@@ -29,51 +29,54 @@ No browser, abrimos o endereço que o instalador indicou — aqui, no laboratór
 A página de entrada.
 ```
 
-## A palavra-passe nova
+## Nova palavra-passe
 
-Em vez de entrar, a plataforma pede logo uma palavra-passe nova. Repare na lista de regras por baixo: pelo menos doze caracteres, maiúsculas e minúsculas, um número e um símbolo. Cada regra fica verde quando é cumprida.
+A plataforma solicita de imediato uma nova palavra-passe. A lista de regras apresentada exige pelo menos doze caracteres, maiúsculas e minúsculas, um número e um símbolo. Cada regra fica a verde quando é cumprida.
 
-Escreve-se a palavra-passe duas vezes, para evitar enganos. Guarde-a já num cofre de palavras-passe. A plataforma também não deixa repetir as últimas três que usou.
+Introduza a palavra-passe duas vezes, para evitar erros, e guarde-a num cofre de palavras-passe. Não é possível reutilizar as três últimas palavras-passe.
 
 ```{figure} /_static/img/06-primeiro-acesso/02.jpg
 :alt: Definir a palavra-passe nova
 
-Definir a palavra-passe nova.
+Definição da nova palavra-passe.
 ```
 
-Com todas as regras a verde, o botão fica ativo. Definimos a palavra-passe e continuamos.
+Quando todas as regras estiverem a verde, o botão fica ativo. Defina a palavra-passe e continue.
 
 ```{figure} /_static/img/06-primeiro-acesso/03.jpg
 :alt: Confirmar
 
-Confirmar.
+Confirmação.
 ```
 
-## O segundo fator
+## Segundo fator
 
-Agora o segundo fator. Há duas opções. Uma aplicação autenticadora no telemóvel — o Google Authenticator, o Microsoft Authenticator ou outra. Ou uma chave de segurança física, como uma YubiKey, ou o Windows Hello.
+Estão disponíveis duas opções:
 
-A aplicação no telemóvel é a mais comum e não custa nada. É essa que escolhemos.
+- **Aplicação autenticadora** no telemóvel: Google Authenticator, Microsoft Authenticator ou equivalente. É a opção mais comum e não tem custos.
+- **Chave de segurança física**, como uma YubiKey, ou o Windows Hello.
+
+Este exemplo utiliza a aplicação autenticadora.
 
 ```{figure} /_static/img/06-primeiro-acesso/04.jpg
 :alt: Escolher o segundo fator
 
-Escolher o segundo fator.
+Escolha do segundo fator.
 ```
 
-Aparece um código QR. No telemóvel, abre-se a aplicação autenticadora, escolhe-se acrescentar uma conta, e aponta-se a câmara para este quadrado. Por baixo está o mesmo segredo em texto, para o caso de a câmara não o conseguir ler.
+É apresentado um código QR. No telemóvel, abra a aplicação autenticadora, selecione a opção para adicionar uma conta e aponte a câmara para o código. O mesmo segredo é apresentado em texto, para os casos em que a câmara não consiga ler o código.
 
-Este segredo é o que liga o telemóvel à conta, por isso nunca se partilha. Mostramo-lo aqui sem receio porque esta instalação é de laboratório e vai ser apagada.
+Este segredo associa o telemóvel à conta e não deve ser partilhado. É apresentado neste manual porque se trata de uma instalação de laboratório, que será eliminada.
 
 ```{figure} /_static/img/06-primeiro-acesso/05.jpg
 :alt: Ler o código QR com o telemóvel
 
-Ler o código QR com o telemóvel.
+Leitura do código QR com o telemóvel.
 ```
 
-A aplicação mostra agora um código de seis dígitos, que muda a cada trinta segundos. Escrevemos o código que estiver no ecrã nesse momento e confirmamos. Nesta gravação, o código foi calculado a partir do mesmo segredo, tal como a aplicação do telemóvel o calcula.
+A aplicação apresenta um código de seis dígitos, renovado a cada trinta segundos. Introduza o código apresentado nesse momento e confirme. Nesta gravação, o código foi calculado a partir do mesmo segredo, pelo mesmo método utilizado pela aplicação do telemóvel.
 
-Se o código for recusado, o mais provável é a hora do telemóvel estar errada — estes códigos dependem do relógio. Acerte a hora automaticamente, e tente o código seguinte.
+Se o código for recusado, a causa mais provável é a hora do telemóvel estar incorreta, uma vez que estes códigos dependem do relógio. Ative o acerto automático da hora e introduza o código seguinte.
 
 ```{figure} /_static/img/06-primeiro-acesso/06.jpg
 :alt: O código de seis dígitos
@@ -81,29 +84,29 @@ Se o código for recusado, o mais provável é a hora do telemóvel estar errada
 O código de seis dígitos.
 ```
 
-## Dentro
+## Painel inicial
 
-Entrámos. Este é o painel da plataforma. Ainda está vazio — normal, numa instalação acabada de fazer: os dados chegam quando se importa o inventário e se configura a organização.
+Após a confirmação, é apresentado o painel da plataforma. Numa instalação nova, o painel está vazio; os dados surgem após a importação do inventário e a configuração da organização.
 
 ```{figure} /_static/img/06-primeiro-acesso/07.jpg
 :alt: Dentro da plataforma
 
-Dentro da plataforma.
+O painel da plataforma.
 ```
 
-## As entradas seguintes
+## Inícios de sessão seguintes
 
-Vejamos agora como é uma entrada normal. Saímos, no botão do canto, e voltamos a entrar, desta vez com a palavra-passe nova.
+Para verificar um início de sessão normal, termine a sessão no botão do canto e inicie sessão novamente com a nova palavra-passe.
 
 ```{figure} /_static/img/06-primeiro-acesso/08.jpg
 :alt: Sair e voltar a entrar
 
-Sair e voltar a entrar.
+Terminar sessão e iniciar novamente.
 ```
 
-Depois da palavra-passe, a plataforma pede o código da aplicação autenticadora. É assim em todas as entradas: palavra-passe, e logo a seguir o código do telemóvel.
+Após a palavra-passe, a plataforma solicita o código da aplicação autenticadora. Este procedimento aplica-se a todos os inícios de sessão.
 
-Se perder o telemóvel, não tente contornar: um administrador pode repor o segundo fator da sua conta, e da próxima vez que entrar ativa-o de novo.
+Em caso de perda do telemóvel, um administrador pode repor o segundo fator da conta; no início de sessão seguinte, o utilizador volta a ativá-lo.
 
 ```{figure} /_static/img/06-primeiro-acesso/09.jpg
 :alt: A palavra-passe e o código

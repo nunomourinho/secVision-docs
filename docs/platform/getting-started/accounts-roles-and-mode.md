@@ -1,95 +1,91 @@
 # Contas, papéis e modo do sistema
 
-Uma conta por pessoa, com o papel certo — visualizador, operador, administrador —, a revisão periódica de acessos com finalidade declarada, e o modo que distingue produção de ensaio.
+Uma conta por pessoa, com o papel adequado (visualizador, operador ou administrador), a revisão periódica de acessos com finalidade declarada e o modo que distingue produção de ensaio.
 
 ```{video} 302-contas-papeis-e-modo
 ```
 
-Depois do primeiro acesso, criam-se as contas de quem vai trabalhar no sistema de gestão. Nesta página vemos os utilizadores, os papéis e permissões, e o modo do sistema.
+Após o primeiro acesso, são criadas as contas dos utilizadores do sistema de gestão. Esta página descreve os utilizadores, os papéis e permissões e o modo do sistema.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Administração do sistema › Utilizadores
+**Governar** > **Administração do sistema** > **Utilizadores**
 
 ```{figure} /_static/capturas/contas-modo/menu.jpg
-:alt: Menu lateral: Governar › Administração do sistema › Utilizadores
+:alt: Menu lateral: Governar > Administração do sistema > Utilizadores
 
-O caminho no menu lateral: Governar › Administração do sistema › Utilizadores.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Administração do sistema**.
-3. Clique em **Utilizadores**: abre o ecrã desta página.
+## Papéis
 
-## Os papéis
+Existem três papéis. O visualizador consulta informação. O operador cria e altera os registos do sistema de gestão. O administrador tem as mesmas permissões e gere também a plataforma e as integrações.
 
-Há três papéis. O visualizador lê. O operador cria e altera os registos do sistema de gestão. O administrador faz isso e ainda administra a plataforma e as integrações.
-
-E um auditor externo não tem conta, nem deve ter: a conta que conduz uma auditoria e o nome do auditor são campos separados, de propósito.
+Os auditores externos não necessitam de conta. A conta que conduz a auditoria e o nome do auditor são registados em campos distintos.
 
 **Três papéis**
 
-| Papel | Pode |
+| Papel | Permissões |
 |---|---|
-| Visualizador | ler o que lhe é permitido |
+| Visualizador | consultar a informação autorizada |
 | Operador | criar e alterar os registos do sistema de gestão |
-| Administrador | o anterior, mais a administração da plataforma e as integrações |
+| Administrador | as do operador, mais a administração da plataforma e das integrações |
 
 ```{tip}
-As contas são as que se atribuem como responsável de controlo, dono de risco ou de não conformidade. O auditor externo não tem conta.
+As contas são atribuídas como responsável de controlo, dono de risco ou responsável de não conformidade. O auditor externo não tem conta.
 ```
 
-## Os utilizadores
+## Utilizadores
 
-**Menu:** Governar › Administração do sistema › Utilizadores
-
-No menu Governar, Administração do sistema, Utilizadores. Uma conta por pessoa, cada uma a passar pelo mesmo primeiro acesso em três tempos. Os filtros procuram por papel, estado, segundo fator, e acesso: quem nunca entrou, quem não entra há mais de noventa dias, quem está bloqueado.
-
-O botão Exportar produz a revisão de acessos: quem tem acesso a quê, para o dono de cada área validar por escrito. A finalidade e o destinatário são obrigatórios, e ficam no ficheiro e na trilha — porque o ficheiro leva nomes e endereços, e sai da proteção da plataforma.
+Cada pessoa tem uma conta própria. Todas as contas novas seguem o mesmo processo de primeiro acesso, em três passos: palavra-passe inicial, nova palavra-passe e segundo fator.
 
 ```{figure} /_static/capturas/contas-modo/abrir-1.jpg
-:alt: Governar › Administração do sistema › Utilizadores
+:alt: Governar > Administração do sistema > Utilizadores
 
-O ecrã em Governar › Administração do sistema › Utilizadores.
+Ecrã **Governar** > **Administração do sistema** > **Utilizadores**.
 ```
 
-1. **Nunca entrou, sem acesso, bloqueado**
-2. **A revisão de acessos**
+No ecrã, encontra os seguintes elementos:
+
+1. **Filtros de acesso:** Identificam as contas que nunca iniciaram sessão, sem acesso há mais de 90 dias ou bloqueadas. Também é possível filtrar por papel, estado e segundo fator.
+2. Botão **Exportar:** Gera o relatório de revisão de acessos.
+
+**Exportação e Revisão de Acessos:** O botão **Exportar** gera um relatório de revisão de acessos, destinado à validação formal pelos responsáveis de área. É obrigatório indicar a finalidade e o destinatário; estes dados ficam registados no ficheiro e na trilha de auditoria para garantir a segurança dos dados exportados.
 
 ## Permissões
 
-**Menu:** Administração do sistema › Roles & Permissões
+**Administração do sistema** > **Roles & Permissões**
 
-No ecrã de permissões, cada papel tem as suas permissões por menu. É aqui que se afina o que cada papel vê.
+Neste ecrã, cada papel tem permissões definidas por menu, que determinam os ecrãs visíveis para esse papel.
 
 ```{figure} /_static/capturas/contas-modo/roles-1.jpg
-:alt: Administração do sistema › Roles & Permissões
+:alt: Administração do sistema > Roles & Permissões
 
-O ecrã em Administração do sistema › Roles & Permissões.
+Ecrã **Administração do sistema** > **Roles & Permissões**.
 ```
 
-## O modo
+## Modo do sistema
 
-**Menu:** Administração do sistema › Modo do Sistema
+**Administração do sistema** > **Modo do Sistema**
 
-E o Modo do Sistema: produção ou testes. Uma instalação de testes mostra uma faixa âmbar em todos os ecrãs, como a que vê no topo destas gravações.
+O **Modo do Sistema** define se a instalação é de produção ou de testes. Uma instalação de testes apresenta uma faixa âmbar em todos os ecrãs, visível no topo destas gravações.
 
-Existe para uma coisa: ninguém registar prova real numa instalação de ensaio a pensar que é a verdadeira.
+Esta indicação evita o registo de evidências reais numa instalação de ensaio.
 
 ```{figure} /_static/capturas/contas-modo/modo-1.jpg
-:alt: Administração do sistema › Modo do Sistema
+:alt: Administração do sistema > Modo do Sistema
 
-O ecrã em Administração do sistema › Modo do Sistema.
+Ecrã **Administração do sistema** > **Modo do Sistema**.
 ```
 
-1. **A faixa âmbar**
+1. **Faixa âmbar:** Identifica uma instalação de testes.
 
 ## Resumo
 
-Peça à direção e aos recursos humanos quem vai trabalhar no sistema, e com que papel. A cada dono de área, a validação periódica dos acessos, por escrito. E marque como testes qualquer instalação que não seja a de produção.
+Solicite à direção e aos recursos humanos a lista de utilizadores do sistema e o respetivo papel. Peça a cada responsável de área a validação periódica e por escrito dos acessos. Marque como instalação de testes qualquer instalação que não seja a de produção.
 
-**O que pedir a quem**
+**Responsáveis**
 
-- À direção e aos recursos humanos: quem vai trabalhar no sistema de gestão, e com que papel.
-- A cada dono de área: validar a revisão de acessos, por escrito, periodicamente.
-- À informática: marcar como testes qualquer instalação que não seja a de produção.
+- Direção e recursos humanos: utilizadores do sistema de gestão e respetivo papel.
+- Responsáveis de área: validação periódica e por escrito da revisão de acessos.
+- Equipa de informática: marcação como testes de todas as instalações que não sejam de produção.

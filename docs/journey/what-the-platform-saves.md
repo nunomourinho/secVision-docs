@@ -1,47 +1,49 @@
-# O que a plataforma poupa — e o que não
+# O que a plataforma automatiza e o que não automatiza
 
-Um balanço honesto: o que a plataforma faz sozinha, o que organiza e conta, e o que continua a ser trabalho e decisão da organização — com os limites desta versão ditos em voz alta.
+Balanço das funcionalidades: o que a plataforma executa automaticamente, o que organiza e contabiliza, e o que continua a caber à organização, com as limitações desta versão.
 
 ```{video} 407-o-que-a-plataforma-poupa
 ```
 
-Chegamos ao fim da formação. Antes de terminar, um balanço honesto: o que a plataforma poupa, e o que continua a ser trabalho da sua organização.
+A formação termina com um balanço do trabalho que a plataforma automatiza e do trabalho que continua a caber à organização.
 
-## O balanço
+## Balanço
 
-Há três tipos de trabalho. O que a plataforma faz sozinha: recolher prova, medir indicadores todos os dias, contar prazos, guardar a trilha. O que organiza e conta: a Declaração, o risco, as lacunas, o dossier — e diz sempre o que falta.
+Existem três tipos de trabalho:
 
-E o que não faz: decidir, aprovar, implementar as medidas, e comunicar com o CNCS. Isso é trabalho da organização, e é bom que seja: um sistema de gestão que se decidisse sozinho não seria da organização.
+- **Executado automaticamente pela plataforma:** Recolha de evidências, medição diária de indicadores, contagem de prazos e registo da trilha de auditoria.
+- **Organizado e contabilizado pela plataforma:** Declaração de Aplicabilidade, risco, lacunas e dossier, com indicação permanente dos elementos em falta.
+- **Da responsabilidade da organização:** Decidir, aprovar, implementar as medidas e comunicar com o CNCS. Um sistema de gestão que decidisse automaticamente deixaria de pertencer à organização.
 
 **Três tipos de trabalho**
 
-| A plataforma | Exemplos |
+| Plataforma | Exemplos |
 |---|---|
-| Faz sozinha | prova automática, indicadores diários, prazos contados, a trilha de auditoria |
-| Organiza e conta | a Declaração, o risco, as lacunas, o dossier — e diz o que falta |
-| Não faz | decidir, aprovar, implementar as medidas, comunicar ao CNCS |
+| Executa automaticamente | evidências automáticas, indicadores diários, contagem de prazos, trilha de auditoria |
+| Organiza e contabiliza | Declaração de Aplicabilidade, risco, lacunas, dossier, com indicação do que falta |
+| Não executa | decidir, aprovar, implementar as medidas, comunicar ao CNCS |
 
-E os limites desta versão, que dissemos ao longo da formação. A plataforma não submete nada ao CNCS. Não tem o ciclo de vida dos incidentes. Não gera o relatório anual. Não calcula o nível de conformidade pela Matriz de Risco.
+Limitações desta versão, indicadas ao longo da formação: a plataforma não submete dados ao CNCS, não gere o ciclo de vida dos incidentes, não gera o relatório anual e não calcula o nível de conformidade pela Matriz de Risco.
 
-E os módulos de responder e recuperar estão vazios: a gestão de incidentes e a recuperação provam-se, por agora, com evidência carregada à mão. É melhor sabê-lo antes do que descobri-lo numa auditoria.
+Os módulos Responder e Recuperar estão vazios: a gestão de incidentes e a recuperação são demonstradas, nesta versão, com evidência carregada manualmente.
 
 ```{important}
-**Os limites desta versão — ditos, não escondidos**
+**Limitações desta versão**
 
-- Não submete nada ao CNCS: registo, autoidentificação e notificações fazem-se na plataforma do CNCS.
-- Não tem o ciclo de vida dos incidentes: uma notificação é uma linha, com o seu relógio.
+- Não submete dados ao CNCS: o registo, a autoidentificação e as notificações são efetuados na plataforma do CNCS.
+- Não gere o ciclo de vida dos incidentes: uma notificação é um registo com o respetivo prazo.
 - Não gera o relatório anual; acompanha o prazo.
-- Não calcula o nível de conformidade pela Matriz de Risco: regista o que o CNCS notificou.
-- Os módulos Responder e Recuperar estão vazios: provam-se por evidência manual.
+- Não calcula o nível de conformidade pela Matriz de Risco: regista o nível notificado pelo CNCS.
+- Os módulos Responder e Recuperar estão vazios: são demonstrados por evidência manual.
 ```
 
-## Para terminar
+## Conclusão
 
-Se levar só quatro ideias: a cibersegurança é um tema de gestão. A lei portuguesa diz o que se cumpre, e a qualificação diz quanto. Um controlo é uma regra aplicada, com prova. E a plataforma poupa o trabalho de juntar e contar — o de fazer continua a ser seu.
+Ideias principais da formação: a cibersegurança é um tema de gestão; a lei portuguesa define o que se cumpre e a qualificação define a extensão; um controlo é uma regra aplicada, com evidência; e a plataforma automatiza a recolha e a contabilização, mas a execução continua a caber à organização.
 
-**O que leva desta formação**
+**Ideias principais**
 
 - A cibersegurança é um tema de gestão: a direção decide, aprova e responde.
-- A lei portuguesa diz o que se cumpre; a qualificação diz quanto.
-- Um controlo é uma regra aplicada com prova — e a prova datada não se fabrica na véspera.
-- A plataforma poupa o trabalho de juntar e contar; o trabalho de fazer continua a ser da organização.
+- A lei portuguesa define o que se cumpre; a qualificação define a extensão.
+- Um controlo é uma regra aplicada com evidência, e a evidência datada não pode ser produzida retroativamente.
+- A plataforma automatiza a recolha e a contabilização; a execução continua a caber à organização.

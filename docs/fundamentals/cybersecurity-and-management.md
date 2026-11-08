@@ -1,85 +1,85 @@
 # A cibersegurança é um tema de gestão
 
-Porque é que a lei põe a direção a responder pela cibersegurança, o que isso muda numa organização pública, e como está organizada esta formação.
+Fundamentos da responsabilidade da direção pela cibersegurança, impacto numa organização pública e organização desta formação.
 
 ```{video} 101-ciberseguranca-e-gestao
 ```
 
-Bem-vindo à formação do SecVision. É para quem trabalha numa organização que passou a ter obrigações de cibersegurança — e que não é, nem tem de ser, especialista em informática, em segurança ou em direito. Vamos explicar tudo, desde o princípio.
+A formação do SecVision destina-se a profissionais de organizações com obrigações de cibersegurança que não são especialistas em informática, segurança ou direito. Os conceitos são explicados desde o início.
 
-Começamos por uma ideia que muda a forma de olhar para o tema: a cibersegurança deixou de ser um assunto só da informática. Passou a ser um assunto de gestão — e a lei diz isso por escrito.
+O ponto de partida é o seguinte: a cibersegurança deixou de ser um assunto exclusivo da informática e passou a ser um tema de gestão, conforme estabelecido na lei.
 
-## O que mudou
+## Enquadramento legal
 
-Até há pouco tempo, a segurança informática era tratada pela informática, com os meios que houvesse. Raramente chegava à mesa da direção — a não ser depois de um incidente grave.
+Até recentemente, a segurança informática era tratada pela equipa de informática, com os meios disponíveis, e raramente era discutida ao nível da direção, exceto após um incidente grave.
 
-Com o Decreto-Lei cento e vinte e cinco de dois mil e vinte e cinco, que transpõe a diretiva europeia conhecida por NIS 2, e com o Regulamento setecentos e cinquenta e seis de dois mil e vinte e seis do Centro Nacional de Cibersegurança, isto mudou. A lei identifica quem está abrangido, define medidas obrigatórias, prazos, e sanções para quem não cumpre.
+O Decreto-Lei n.º 125/2025, que transpõe a diretiva europeia NIS 2, e o Regulamento n.º 756/2026 do Centro Nacional de Cibersegurança alteraram este enquadramento. A lei identifica as entidades abrangidas, define medidas obrigatórias e prazos e prevê sanções em caso de incumprimento.
 
-E diz expressamente que se aplica às instituições de ensino superior — como o Instituto Politécnico de Vila Nova, a organização que vai acompanhar toda esta formação.
+A lei aplica-se expressamente às instituições de ensino superior, como o Instituto Politécnico de Vila Nova, a organização utilizada nos exemplos desta formação.
 
 **Antes e depois da nova lei**
 
-- Antes: a segurança era tratada pela informática, com os meios que houvesse, e raramente chegava à direção.
-- Agora: a lei identifica as entidades abrangidas, define medidas obrigatórias e prazos, e prevê sanções.
+- Antes: a segurança era tratada pela informática, com os meios disponíveis, e raramente chegava à direção.
+- Atualmente: a lei identifica as entidades abrangidas, define medidas obrigatórias e prazos e prevê sanções.
 - As instituições de ensino superior estão expressamente abrangidas (art. 3.º, n.º 6, do DL).
-- A lei portuguesa é o DL 125/2025, que transpõe a diretiva europeia NIS 2, e o Regulamento 756/2026 do CNCS.
+- A lei portuguesa é composta pelo DL 125/2025, que transpõe a diretiva europeia NIS 2, e pelo Regulamento 756/2026 do CNCS.
 
-Porque é que é um tema de gestão? Primeiro, porque a pergunta central — quanto risco aceitamos, e quanto investimos para o reduzir — é uma decisão de gestão. A informática pode dizer quanto custa; não deve ser ela a decidir se se paga.
+A cibersegurança é um tema de gestão por três motivos:
 
-Segundo, porque as medidas mexem com toda a organização: com as pessoas, com as compras, com os contratos de fornecedores, com as regras internas. Muitas delas nem são tecnológicas: são políticas, responsabilidades atribuídas, formação.
-
-E terceiro, porque sem o apoio da direção, a informática não consegue impor regras ao resto da organização. Uma política de palavras-passe que a direção não assina é uma sugestão.
+1. A questão central (o nível de risco aceite e o investimento para o reduzir) é uma decisão de gestão. A informática pode estimar o custo, mas não lhe cabe decidir o investimento.
+2. As medidas afetam toda a organização: pessoas, compras, contratos com fornecedores e regras internas. Muitas não são tecnológicas, mas sim políticas, atribuição de responsabilidades e formação.
+3. Sem o apoio da direção, a informática não tem meios para impor regras ao resto da organização. Uma política de palavras-passe não assinada pela direção tem apenas valor de recomendação.
 
 **Porque é um tema de gestão**
 
-- Decidir quanto risco se aceita, e quanto se investe para o reduzir, é uma decisão de gestão.
-- As medidas mexem com toda a organização: pessoas, compras, fornecedores, contratos, regras internas.
-- Muitas medidas são organizacionais ou humanas, não tecnológicas: políticas, responsabilidades, formação.
-- Sem apoio da direção, a informática não consegue impor regras ao resto da organização.
+- Decidir o nível de risco aceite e o investimento para o reduzir é uma decisão de gestão.
+- As medidas afetam toda a organização: pessoas, compras, fornecedores, contratos e regras internas.
+- Muitas medidas são organizacionais ou humanas, não tecnológicas: políticas, responsabilidades e formação.
+- Sem o apoio da direção, a informática não tem meios para impor regras ao resto da organização.
 
 ## A direção na lei
 
-O que pede a lei à direção? Para as entidades essenciais e importantes, o artigo vigésimo quinto é muito claro: os órgãos de gestão aprovam as medidas de gestão dos riscos, supervisionam a sua aplicação, e asseguram formação regular em cibersegurança.
+Para as entidades essenciais e importantes, o artigo 25.º estabelece que os órgãos de gestão aprovam as medidas de gestão dos riscos, supervisionam a sua aplicação e asseguram formação regular em cibersegurança.
 
-E acrescenta duas coisas que pesam: os titulares desses órgãos podem responder pessoalmente, por ação ou omissão, com dolo ou culpa grave. E estas responsabilidades só se podem delegar num dos próprios titulares do órgão — não se passam para o técnico de informática.
+O mesmo artigo acrescenta que os titulares desses órgãos podem ser pessoalmente responsabilizados, por ação ou omissão, com dolo ou culpa grave, e que estas responsabilidades só podem ser delegadas num dos titulares do próprio órgão, não podendo ser transferidas para a equipa técnica.
 
-Para as entidades públicas relevantes, como o nosso politécnico, a lei remete para as medidas que o CNCS estabelece no Regulamento, proporcionais ao grupo. E entre elas, no Grupo A, está por exemplo uma Política de Cibersegurança — que, naturalmente, é a direção que aprova.
+Para as entidades públicas relevantes, como o politécnico dos exemplos, a lei remete para as medidas definidas pelo CNCS no Regulamento, proporcionais ao grupo. No Grupo A, estas medidas incluem, por exemplo, uma Política de Cibersegurança, aprovada pela direção.
 
-**O que a lei pede à direção**
+**Obrigações da direção**
 
-| Tipo de entidade | O que a lei diz | Base legal |
+| Tipo de entidade | Disposição legal | Base legal |
 |---|---|---|
 | Essenciais e importantes | os órgãos de gestão aprovam as medidas de gestão dos riscos, supervisionam a sua aplicação e asseguram formação regular | art. 25.º, n.º 1, do DL |
-| Essenciais e importantes | os titulares podem responder por ação ou omissão, com dolo ou culpa grave | art. 25.º, n.º 2, do DL |
-| Essenciais e importantes | estas responsabilidades só se delegam num dos próprios titulares do órgão | art. 25.º, n.º 3, do DL |
-| Públicas relevantes | cumprem as medidas que o CNCS estabelece em regulamento, proporcionais ao grupo | art. 33.º do DL |
+| Essenciais e importantes | os titulares podem ser responsabilizados por ação ou omissão, com dolo ou culpa grave | art. 25.º, n.º 2, do DL |
+| Essenciais e importantes | estas responsabilidades só podem ser delegadas num dos titulares do próprio órgão | art. 25.º, n.º 3, do DL |
+| Públicas relevantes | cumprem as medidas definidas pelo CNCS em regulamento, proporcionais ao grupo | art. 33.º do DL |
 
 ```{tip}
-Para as públicas relevantes do Grupo A, o Anexo IV do Regulamento inclui, por exemplo, uma Política de Cibersegurança (O.PSI) — que é a direção que aprova.
+Para as entidades públicas relevantes do Grupo A, o Anexo IV do Regulamento inclui, por exemplo, uma Política de Cibersegurança (O.PSI), aprovada pela direção.
 ```
 
-Um aviso importante, logo no início: a conformidade não é um projeto que se faz uma vez e se arruma. Não se compra nem se instala. É uma prática: tem responsáveis, registos, e revisões periódicas.
+A conformidade não é um projeto pontual. Não se adquire nem se instala: é uma prática contínua, com responsáveis, registos e revisões periódicas.
 
-E o objetivo não é dizer que se está seguro. É poder demonstrar, a quem fiscaliza, três coisas: o que se decidiu, o que se fez, e o que ainda falta e porquê. Toda esta formação é sobre isso.
+O objetivo não é declarar que a organização está segura, mas sim demonstrar, perante a entidade fiscalizadora, três elementos: as decisões tomadas, as medidas aplicadas e as medidas em falta, com a respetiva justificação. Esta formação incide sobre estes três elementos.
 
 ```{important}
-**Não é um projeto, é uma prática**
+**Uma prática contínua**
 
-- A conformidade não se compra nem se instala: vive-se, com responsáveis, registos e revisões.
-- Não acaba: as ameaças mudam, a organização muda, e a lei pede atualização permanente.
-- O que conta é poder demonstrar — a quem fiscaliza — o que se decidiu, o que se fez e o que falta.
+- A conformidade não se adquire nem se instala: exige responsáveis, registos e revisões.
+- Não tem fim: as ameaças e a organização mudam, e a lei exige atualização permanente.
+- O essencial é demonstrar, perante a entidade fiscalizadora, as decisões tomadas, as medidas aplicadas e as medidas em falta.
 ```
 
-## O percurso
+## Estrutura da formação
 
-A formação tem quatro módulos. No primeiro, os fundamentos: os conceitos que toda a lei e todas as normas usam — risco, controlos, sistema de gestão. No segundo, a lei e o papel do CNCS, passo a passo.
+A formação tem quatro módulos. O primeiro apresenta os fundamentos: os conceitos utilizados pela lei e pelas normas (risco, controlos e sistema de gestão). O segundo descreve a lei e o papel do CNCS, passo a passo.
 
-No terceiro, a plataforma SecVision, ecrã a ecrã, pela ordem em que o trabalho se faz. E no quarto, o percurso completo: do primeiro diagnóstico até à certificação. Cada página diz também que informação tem de pedir, e a quem, dentro da sua organização.
+O terceiro apresenta a plataforma SecVision, ecrã a ecrã, pela ordem em que o trabalho é realizado. O quarto descreve o percurso completo, do primeiro diagnóstico à certificação. Cada página indica também a informação a solicitar e o respetivo responsável na organização.
 
-**Como está organizada esta formação**
+**Estrutura da formação**
 
 A — Fundamentos
-: os conceitos que toda a lei e todas as normas usam
+: os conceitos utilizados pela lei e pelas normas
 
 B — A lei e o CNCS
 : o DL 125/2025 e o Regulamento 756/2026, passo a passo
@@ -93,13 +93,13 @@ D — O percurso
 ```{figure} /_static/img/101-ciberseguranca-e-gestao/01.jpg
 :alt: Como está organizada esta formação
 
-Como está organizada esta formação.
+Estrutura da formação.
 ```
 
-Três perguntas para fazer já, na sua organização. À direção: quem patrocina este tema, e quem a representa nas decisões de cibersegurança. Ao serviço jurídico: se a entidade já foi qualificada pelo CNCS, e em que categoria. E à informática: quem trata hoje da segurança, e com que meios.
+Recomenda-se colocar de imediato três questões na organização: à direção, quem patrocina este tema e quem a representa nas decisões de cibersegurança; ao serviço jurídico, se a entidade já foi qualificada pelo CNCS e em que categoria; à informática, quem trata atualmente da segurança e com que meios.
 
-**O que pedir a quem — já hoje**
+**Informação a solicitar**
 
-- À direção: quem patrocina o tema, e quem a representa nas decisões de cibersegurança.
-- Ao serviço jurídico: se a entidade já foi qualificada pelo CNCS, e em que categoria.
-- À informática: quem trata hoje da segurança, e com que meios.
+- Direção: patrocinador do tema e representante nas decisões de cibersegurança.
+- Serviço jurídico: qualificação da entidade pelo CNCS e respetiva categoria.
+- Informática: responsável atual pela segurança e meios disponíveis.

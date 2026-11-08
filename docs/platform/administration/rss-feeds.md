@@ -1,29 +1,23 @@
 # Feeds RSS
 
-As fontes de notícias e alertas de cibersegurança que a plataforma lê, e de quanto em quanto tempo.
+Fontes de notícias e alertas de cibersegurança lidas pela plataforma e respetiva frequência de atualização.
 
 ```{video} 353-integracoes
 ```
 
-O vídeo mostra as quatro integrações: os sistemas externos, o MISP, os feeds RSS e o diretório.
+O vídeo apresenta as quatro integrações: sistemas externos, MISP, feeds RSS e diretório.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Administração do sistema › Integrações › Feeds RSS
+**Governar** > **Administração do sistema** > **Integrações** > **Feeds RSS**
 
 ```{figure} /_static/capturas/adm-rss/menu.jpg
-:alt: Menu lateral: Governar › Administração do sistema › Integrações › Feeds RSS
+:alt: Menu lateral: Governar > Administração do sistema > Integrações > Feeds RSS
 
-O caminho no menu lateral: Governar › Administração do sistema › Integrações › Feeds RSS.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Administração do sistema**.
-3. Dentro dele, abra **Integrações**.
-4. Clique em **Feeds RSS**: abre o ecrã desta página.
-
-
-## O ecrã
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/adm-rss/feeds-1.jpg
 :alt: A frequência de atualização e a lista de feeds
@@ -31,21 +25,22 @@ O caminho no menu lateral: Governar › Administração do sistema › Integraç
 A frequência de atualização e a lista de feeds.
 ```
 
-1. **A frequência de atualização**
-2. **Guardar**
-3. **Atualizar agora**
-4. **Adicionar um feed**
+A interface apresenta os seguintes elementos:
 
+1. **Frequência de atualização:** Permite definir o intervalo (de 1 a 24 horas).
+2. Botão **Guardar:** Regista as alterações efetuadas.
+3. Botão **Atualizar agora:** Lê imediatamente todos os feeds configurados.
+4. Botão **Adicionar um feed:** Permite configurar uma nova fonte.
 
-Escolha a frequência de atualização (de 1 a 24 horas) e clique em **Guardar**. **Atualizar agora** lê todos os feeds de imediato. **Adicionar** acrescenta uma fonte nova.
+**Como configurar:** Selecione a frequência de atualização pretendida e clique em **Guardar**.
 
-Um feed com artigos **não se apaga**: desativa-se. Apagar levaria o arquivo de artigos com ele.
+Não é possível eliminar feeds que já tenham artigos associados. Para deixar de receber notícias dessa fonte sem perder o histórico, deve desativar o feed.
 
 ```{important}
-**Escolha as fontes com critério.** Uma recomendação de segurança não validada pode causar mais danos do que a ameaça que pretende mitigar, e a responsabilidade por essa recomendação é de quem a insere no sistema. Prefira CSIRTs e autoridades (CNCS, CERT.PT, CISA, ENISA, NCSC) e os próprios fabricantes; verifique o historial e a data de atualização da fonte; desconfie de agregadores sem curadoria e de blogues anónimos. Na dúvida, deixe de fora.
+**Seleção de fontes.** Uma recomendação de segurança não validada pode causar mais danos do que a ameaça que pretende mitigar, e a responsabilidade pela recomendação é de quem a introduz no sistema. Dê preferência a CSIRT e autoridades (CNCS, CERT.PT, CISA, ENISA, NCSC) e aos próprios fabricantes; verifique o historial e a data de atualização da fonte; evite agregadores sem curadoria e blogues anónimos. Em caso de dúvida, não adicione a fonte.
 ```
 
 ## Resumo
 
 - Os feeds alimentam o ecrã {doc}`/platform/protect-and-detect/security-feeds`.
-- Um feed com artigos desativa-se, não se apaga.
+- Os feeds com artigos associados podem ser desativados, mas não eliminados.

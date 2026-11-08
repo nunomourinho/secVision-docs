@@ -1,6 +1,6 @@
 # Primeiros passos
 
-O primeiro acesso, a segurança da própria plataforma, as contas, os papéis e o modo do sistema.
+Primeiro acesso, segurança da própria plataforma, contas, papéis e modo do sistema.
 
 ```{toctree}
 :maxdepth: 1

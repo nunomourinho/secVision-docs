@@ -1,28 +1,23 @@
 # Versão e novidades
 
-O que está instalado e o que mudou, com cada alteração explicada para quem não programa.
+Versão instalada e histórico de alterações, com cada alteração descrita em linguagem não técnica.
 
 ```{video} 351-administracao-da-plataforma
 ```
 
-O vídeo mostra os três ecrãs da administração: a cobertura, os documentos do SGSI e a versão.
+O vídeo apresenta os três ecrãs da administração: cobertura, documentos do SGSI e versão.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Administração do sistema › Versão e novidades
+**Governar** > **Administração do sistema** > **Versão e novidades**
 
 ```{figure} /_static/capturas/adm-versao/menu.jpg
-:alt: Menu lateral: Governar › Administração do sistema › Versão e novidades
+:alt: Menu lateral: Governar > Administração do sistema > Versão e novidades
 
-O caminho no menu lateral: Governar › Administração do sistema › Versão e novidades.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Administração do sistema**.
-3. Clique em **Versão e novidades**: abre o ecrã desta página.
-
-
-## O ecrã
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/adm-versao/versao-1.jpg
 :alt: A versão instalada e o histórico de alterações
@@ -30,20 +25,17 @@ O caminho no menu lateral: Governar › Administração do sistema › Versão e
 A versão instalada e o histórico de alterações.
 ```
 
-1. **Versão instalada**
-2. **Histórico de alterações**
-3. **Filtrar por tipo**
-4. **Tudo, incluindo as internas**
+No ecrã, encontra os seguintes elementos:
 
-
-- **Versão instalada.** Numa instalação por pacote: a versão, o *commit* e a data do pacote. Numa instalação a partir do repositório: o *commit* em curso e a sua data.
-- **Histórico de alterações.** Uma entrada por alteração, da mais recente para a mais antiga, agrupadas por dia, com o tipo (nova funcionalidade, correção, segurança, desempenho) e três partes: **o que mudou**, **porque era preciso** e **em que ajuda**.
-- Os filtros escolhem o tipo. **Tudo (incluindo internas)** mostra também as alterações de documentação, testes e manutenção, escondidas por omissão.
+1. **Versão instalada:** Numa instalação por pacote, indica a versão, o *commit* e a data do pacote. Numa instalação a partir do repositório, indica o *commit* atual e a respetiva data.
+2. **Histórico de alterações:** Uma entrada por alteração, da mais recente para a mais antiga, agrupadas por dia. Cada entrada indica o tipo (nova funcionalidade, correção, segurança, desempenho) e três campos: **o que mudou**, **porque era preciso** e **em que ajuda**.
+3. **Filtrar por tipo:** Apresenta apenas as alterações do tipo selecionado.
+4. **Tudo (incluindo internas):** Inclui também as alterações de documentação, testes e manutenção, ocultas por omissão.
 
 ```{note}
-**Só aqui, e só para administradores.** Nenhum ecrã antes do *login* diz a versão: é a primeira coisa que quem ataca procura. Pela mesma razão o histórico fica fechado: dizer o que foi corrigido é dizer o que esteve vulnerável até essa data.
+**Acesso restrito a administradores.** A versão não é apresentada em nenhum ecrã anterior ao início de sessão, para não facilitar o reconhecimento por atacantes. Pelo mesmo motivo, o histórico é reservado: a lista de correções revela as vulnerabilidades existentes até cada data.
 ```
 
 ## Resumo
 
-- A versão e o histórico só se veem aqui, como administrador.
+- A versão e o histórico estão disponíveis apenas neste ecrã, para administradores.

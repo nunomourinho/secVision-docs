@@ -1,93 +1,87 @@
 # O catálogo de segurança e a cobertura
 
-Os sistemas que a instituição opera, com o nível de criticidade de N1 a N4, se estão em âmbito e se têm monitorização — e a taxa de cobertura que daí sai, no ponto de situação.
+Os sistemas operados pela instituição, com o nível de criticidade (N1 a N4), a inclusão no âmbito e o estado de monitorização, e a taxa de cobertura resultante, apresentada no ponto de situação.
 
 ```{video} 313-catalogo-de-seguranca
 ```
 
-O inventário diz que equipamentos existem. O catálogo de segurança diz que sistemas a instituição opera, quão críticos são, e se têm monitorização de segurança. Daí sai a cobertura.
+O inventário identifica os equipamentos existentes. O catálogo de segurança identifica os sistemas operados pela instituição, o respetivo nível de criticidade e o estado da monitorização de segurança, a partir dos quais é calculada a cobertura.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Inventário › Catálogo de Segurança
+**Identificar** > **Inventário** > **Catálogo de Segurança**
 
 ```{figure} /_static/capturas/catalogo/menu.jpg
-:alt: Menu lateral: Identificar › Inventário › Catálogo de Segurança
+:alt: Menu lateral: Identificar > Inventário > Catálogo de Segurança
 
-O caminho no menu lateral: Identificar › Inventário › Catálogo de Segurança.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Inventário**.
-3. Clique em **Catálogo de Segurança**: abre o ecrã desta página.
+## Níveis
 
-## Os níveis
+Cada sistema tem um nível: N1 crítico, N2 estratégico, N3 operacional e N4 secundário. A cobertura considera os três primeiros níveis; o N4 está excluído por omissão.
 
-Cada sistema tem um nível: N1 crítico, N2 estratégico, N3 operacional, N4 secundário. A cobertura conta os três primeiros; o N4 fica de fora por omissão.
-
-E cada sistema está monitorizado, ou em GAP — em âmbito, mas sem monitorização de segurança ativa. Os dias em GAP contam-se desde a transição, no momento da leitura; nunca se gravam.
+Cada sistema está monitorizado ou em GAP (incluído no âmbito, mas sem monitorização de segurança ativa). Os dias em GAP são calculados desde a transição, no momento da consulta, e não são gravados.
 
 **Os quatro níveis**
 
-| Nível | Quer dizer | Conta para a cobertura |
+| Nível | Significado | Incluído na cobertura |
 |---|---|---|
-| N1 | crítico — sem ele a missão para | sim |
+| N1 | crítico: a sua falha interrompe a missão | sim |
 | N2 | estratégico | sim |
 | N3 | operacional | sim |
 | N4 | secundário | não, por omissão |
 
 ```{tip}
-A exclusão do N4 configura-se em Administração › Cobertura. Um sistema em GAP é um sistema em âmbito sem monitorização ativa.
+A exclusão do N4 é configurada em **Administração** > **Cobertura**. Um sistema em GAP é um sistema incluído no âmbito sem monitorização ativa.
 ```
 
-## O catálogo
-
-**Menu:** Identificar › Inventário › Catálogo de Segurança
-
-No menu Identificar, Inventário, Catálogo de Segurança. Os filtros escolhem por nível, por estado, pela rede, e por uma coisa importante: se o sistema já tem um ativo de informação ligado.
-
-Um sistema sem nenhum ativo de informação aparece a âmbar. Não quer dizer risco zero: quer dizer que ninguém apreciou ainda o risco do que lá está. É o assunto da próxima página.
+## Catálogo
 
 ```{figure} /_static/capturas/catalogo/abrir-1.jpg
-:alt: Identificar › Inventário › Catálogo de Segurança
+:alt: Identificar > Inventário > Catálogo de Segurança
 
-O ecrã em Identificar › Inventário › Catálogo de Segurança.
+Ecrã **Identificar** > **Inventário** > **Catálogo de Segurança**.
 ```
 
-1. **Nível**
-2. **Monitorizado ou GAP**
-3. **Com ou sem ativo de informação**
+No ecrã, encontra os seguintes filtros, a par do filtro por rede:
 
-## O ponto de situação
+1. **Nível:** De N1 a N4.
+2. **Estado:** Monitorizado ou GAP.
+3. **Ativo de informação:** Sistemas com ou sem ativo de informação associado.
 
-**Menu:** Identificar › Inventário › Visão Geral
+Um sistema sem ativo de informação associado é apresentado a âmbar. Esta indicação não significa risco nulo, mas sim que o risco da informação que suporta ainda não foi apreciado. Este tema é descrito na página seguinte.
 
-A Visão Geral é a leitura de toda esta fase. Quatro números: sistemas em âmbito, com monitorização, em GAP, e a taxa de cobertura global. Por baixo, a cobertura por camada, de N1 a N4, e os sistemas em GAP por sistema operativo e por tipo.
+## Ponto de situação
 
-É isso que transforma «temos sistemas em GAP» em, por exemplo, «são todos servidores do mesmo tipo, e fecham-se da mesma maneira». Enquanto houver sistemas em GAP, um aviso leva direito ao ecrã onde se instala o agente de monitorização.
+**Identificar** > **Inventário** > **Visão Geral**
+
+A Visão Geral apresenta o resumo desta fase em quatro indicadores: sistemas no âmbito, sistemas monitorizados, sistemas em GAP e taxa de cobertura global. São também apresentadas a cobertura por camada (N1 a N4) e os sistemas em GAP por sistema operativo e por tipo.
+
+Esta informação permite, por exemplo, identificar que os sistemas em GAP são servidores do mesmo tipo, que podem ser corrigidos da mesma forma. Enquanto existirem sistemas em GAP, é apresentado um aviso com ligação ao ecrã de instalação do agente de monitorização.
 
 ```{figure} /_static/capturas/catalogo/dashboard-1.jpg
-:alt: Identificar › Inventário › Visão Geral
+:alt: Identificar > Inventário > Visão Geral
 
-O ecrã em Identificar › Inventário › Visão Geral (1 de 2).
+Ecrã **Identificar** > **Inventário** > **Visão Geral** (1 de 2).
 ```
 
-1. **Direito ao instalador do agente**
+1. **Aviso de sistemas em GAP:** Ligação direta ao instalador do agente.
 
 ```{figure} /_static/capturas/catalogo/dashboard-2.jpg
-:alt: Identificar › Inventário › Visão Geral
+:alt: Identificar > Inventário > Visão Geral
 
-O ecrã em Identificar › Inventário › Visão Geral (2 de 2).
+Ecrã **Identificar** > **Inventário** > **Visão Geral** (2 de 2).
 ```
 
 ## Resumo
 
-O nível de cada sistema é uma decisão de negócio, não técnica: pergunte à direção e aos donos dos serviços. Que sistemas estão monitorizados, pergunte à informática.
+O nível de cada sistema é uma decisão de negócio e não técnica, pelo que deve ser definido com a direção e os donos dos serviços. A identificação dos sistemas monitorizados deve ser solicitada à equipa de informática.
 
-E a taxa de cobertura diz sempre, em rodapé, que níveis ficaram de fora. Uma taxa sem o denominador à vista não se leva a uma reunião.
+A taxa de cobertura indica sempre, em rodapé, os níveis excluídos, uma vez que uma taxa sem o denominador visível não é adequada para apresentação.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- À direção e aos donos dos serviços: o nível de cada sistema — é uma decisão de negócio, não técnica.
-- À informática: que sistemas têm monitorização de segurança ativa.
-- A taxa diz sempre que níveis exclui: uma taxa sem denominador à vista não se leva a uma reunião.
+- Direção e donos dos serviços: nível de cada sistema, uma decisão de negócio e não técnica.
+- Equipa de informática: sistemas com monitorização de segurança ativa.
+- A taxa indica sempre os níveis excluídos: uma taxa sem o denominador visível não é adequada para apresentação.

@@ -1,21 +1,21 @@
 # Os deveres dos órgãos de gestão
 
-O que o art. 25.º do DL pede à direção — aprovar, supervisionar, assegurar a formação — e porque é que a responsabilidade não se delega; e o que muda para as entidades públicas relevantes.
+Os deveres da direção previstos no art. 25.º do DL (aprovar, supervisionar e assegurar a formação), o regime de não delegação da responsabilidade e as especificidades das entidades públicas relevantes.
 
 ```{video} 206-deveres-dos-orgaos-de-gestao
 ```
 
-A grande mudança desta lei é pôr a direção a responder pela cibersegurança. Nesta página lemos, com calma, o que o artigo 25.º pede aos órgãos de gestão, e o que acontece quando não se cumpre.
+A principal alteração introduzida por esta lei é a responsabilização da direção pela cibersegurança. Esta página analisa os deveres que o artigo 25.º atribui aos órgãos de gestão e as consequências do seu incumprimento.
 
 ## O artigo 25.º
 
-Os órgãos de gestão das entidades essenciais e importantes têm quatro deveres. Aprovar as medidas de gestão dos riscos. Supervisionar a sua aplicação. Assegurar o cumprimento do que o CNCS determinar.
+Os órgãos de gestão das entidades essenciais e importantes têm quatro deveres: aprovar as medidas de gestão dos riscos, supervisionar a sua aplicação, assegurar o cumprimento das determinações do CNCS e assegurar formação em cibersegurança com periodicidade regular.
 
-E assegurar formação em cibersegurança, com periodicidade regular. Repare no verbo: a direção não executa as medidas — aprova-as, acompanha-as, e garante que existem meios e formação.
+A direção não executa as medidas: aprova-as, acompanha a sua aplicação e garante a existência de meios e de formação.
 
-**O que a lei pede à direção**
+**Deveres da direção**
 
-| Dever | Em concreto | Base legal |
+| Dever | Conteúdo | Base legal |
 |---|---|---|
 | Aprovar | as medidas de gestão dos riscos de cibersegurança | art. 25.º, n.º 1, a) |
 | Supervisionar | a aplicação dessas medidas | art. 25.º, n.º 1, b) |
@@ -26,49 +26,49 @@ E assegurar formação em cibersegurança, com periodicidade regular. Repare no 
 O art. 25.º dirige-se às entidades essenciais e importantes.
 ```
 
-## A responsabilidade
+## Responsabilidade
 
-Os titulares dos órgãos de gestão podem responder pessoalmente, por ação ou por omissão, quando haja dolo ou culpa grave. E esta responsabilidade não se delega, a não ser num dos próprios membros do órgão.
+Os titulares dos órgãos de gestão podem ser pessoalmente responsabilizados, por ação ou omissão, em caso de dolo ou culpa grave. Esta responsabilidade só pode ser delegada num dos membros do próprio órgão.
 
-Ou seja: o presidente pode atribuir o pelouro a um vice-presidente, mas não pode passá-lo para o diretor de informática. E entre as sanções acessórias previstas está a interdição temporária dos titulares dos órgãos de gestão.
+Por exemplo, o presidente pode atribuir o pelouro a um vice-presidente, mas não ao diretor de informática. Entre as sanções acessórias previstas encontra-se a interdição temporária dos titulares dos órgãos de gestão.
 
 ```{important}
-**Responder, e não delegar**
+**Responsabilidade não delegável**
 
-- Os titulares podem responder por ação ou omissão, com dolo ou culpa grave (art. 25.º, n.º 2).
-- A responsabilidade não se delega, exceto num dos próprios titulares do órgão (art. 25.º, n.º 3).
+- Os titulares podem ser responsabilizados por ação ou omissão, com dolo ou culpa grave (art. 25.º, n.º 2).
+- A responsabilidade só pode ser delegada num dos titulares do próprio órgão (art. 25.º, n.º 3).
 - Uma das sanções acessórias possíveis é a interdição temporária dos titulares dos órgãos de gestão (art. 67.º).
 ```
 
-## Públicas relevantes
+## Entidades públicas relevantes
 
-E nas entidades públicas relevantes? O artigo 25.º não se lhes dirige; o que cumprem são as medidas do Anexo IV, por força do artigo 33.º. Mas o efeito é parecido: no Grupo A, a Política de Cibersegurança tem de ser aprovada, e quem aprova é a direção.
+O artigo 25.º não se aplica às entidades públicas relevantes, que cumprem as medidas do Anexo IV por força do artigo 33.º. O efeito é, contudo, semelhante: no Grupo A, a Política de Cibersegurança tem de ser aprovada pela direção.
 
-E a sensibilização e formação é medida dos dois grupos. Numa organização pública, a formação começa por quem decide: uma direção que não percebe o risco não aprova os meios para o tratar.
+A sensibilização e formação é uma medida comum aos dois grupos. Numa organização pública, a formação deve começar pelos decisores, uma vez que a aprovação de meios depende da compreensão do risco pela direção.
 
 **Nas entidades públicas relevantes**
 
-- O art. 25.º fala das essenciais e importantes; as públicas relevantes cumprem as medidas do Anexo IV (art. 33.º).
-- O Anexo IV põe a direção no centro: a Política de Cibersegurança é aprovada por ela (O.PSI, Grupo A).
-- A formação e sensibilização é medida dos dois grupos — começa por quem decide.
-- As coimas das públicas relevantes são próprias, por grupo (art. 61.º e art. 62.º) — {doc}`/law/supervision-and-penalties`.
+- O art. 25.º dirige-se às entidades essenciais e importantes; as públicas relevantes cumprem as medidas do Anexo IV (art. 33.º).
+- O Anexo IV atribui um papel central à direção: a Política de Cibersegurança é aprovada por ela (O.PSI, Grupo A).
+- A formação e sensibilização é uma medida dos dois grupos e deve começar pelos decisores.
+- As coimas das entidades públicas relevantes são próprias, por grupo (art. 61.º e art. 62.º); ver {doc}`/law/supervision-and-penalties`.
 
-Como se prova que a direção cumpriu? Com papéis datados: atas ou despachos que aprovam a política e as medidas; relatos periódicos do responsável, com as decisões que deles saíram; e presenças na formação.
+O cumprimento dos deveres da direção é demonstrado através de registos datados: atas ou despachos de aprovação da política e das medidas; relatos periódicos do responsável, com as decisões tomadas; e registos de presença na formação.
 
-E com uma revisão pela gestão, pelo menos uma vez por ano, onde a direção olha para os resultados e decide o que muda. Sem esses registos, a resposta «a direção estava a par» não se demonstra.
+É também demonstrado pela revisão pela gestão, realizada pelo menos uma vez por ano, na qual a direção analisa os resultados e decide as alterações. Sem estes registos, não é possível demonstrar que a direção acompanhou o tema.
 
-**Como se prova que a direção cumpriu**
+**Evidências do cumprimento pela direção**
 
-- Atas ou despachos que aprovam a política, as medidas e o plano de tratamento do risco.
-- Relatos periódicos do responsável à direção, com as decisões que deles saíram.
-- Registos de presença na formação dos membros da direção.
+- Atas ou despachos de aprovação da política, das medidas e do plano de tratamento do risco.
+- Relatos periódicos do responsável à direção, com as decisões tomadas.
+- Registos de presença dos membros da direção na formação.
 - Uma revisão pela gestão, pelo menos anual, com conclusões e ações.
 
-Na plataforma, cada documento tem fluxo de aprovação e versão assinada; o risco tem um relato próprio para a direção; a formação mostra quem está em atraso; e a revisão pela gestão junta as entradas que a norma pede. É assim que a direção deixa rasto do que decidiu.
+Na plataforma, cada documento tem um fluxo de aprovação e uma versão assinada; o risco tem um relato próprio para a direção; a formação identifica os colaboradores em atraso; e a revisão pela gestão reúne as entradas exigidas pela norma. Estes registos documentam as decisões da direção.
 
-**Onde isto entra na plataforma**
+**Correspondência na plataforma**
 
 - Aprovação de documentos do SGSI, com fluxo e versão assinada ({doc}`/platform/protect-and-detect/isms-documents`).
-- Relato do risco à gestão, e a aprovação do plano de tratamento pelo dono do risco ({doc}`/platform/risk/risk-treatment`).
-- Formação e sensibilização, com quem está em atraso ({doc}`/platform/protect-and-detect/training-and-awareness`).
-- Revisão pela gestão, com as entradas que a norma pede ({doc}`/platform/audit/management-review`).
+- Relato do risco à gestão e aprovação do plano de tratamento pelo dono do risco ({doc}`/platform/risk/risk-treatment`).
+- Formação e sensibilização, com identificação dos colaboradores em atraso ({doc}`/platform/protect-and-detect/training-and-awareness`).
+- Revisão pela gestão, com as entradas exigidas pela norma ({doc}`/platform/audit/management-review`).

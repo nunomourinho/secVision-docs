@@ -1,7 +1,7 @@
 # Módulo D — O percurso até à conformidade e à certificação
 
-Tudo junto num percurso: o primeiro ano em sete passos, a autoavaliação e o plano, o que conta
-como prova, e o que a plataforma poupa, e o que continua a ser trabalho da organização.
+O percurso completo: o primeiro ano em sete passos, a autoavaliação e o plano, os requisitos de uma
+evidência, e o trabalho que a plataforma automatiza e o que continua a caber à organização.
 
 ```{toctree}
 :maxdepth: 1

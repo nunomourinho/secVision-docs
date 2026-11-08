@@ -1,11 +1,11 @@
 # Instalação
 
-A série de instalação, do zero até à plataforma a funcionar: o que preparar, obter e instalar
-o Ubuntu Server, instalar o SecVision num dos dois modos (nativo ou Docker), o primeiro acesso e o
-ambiente de testes.
+Série de instalação, desde a preparação até à plataforma em funcionamento: requisitos, obtenção e
+instalação do Ubuntu Server, instalação do SecVision num dos dois modos (nativo ou Docker), primeiro
+acesso e ambiente de testes.
 
-Siga as páginas pela ordem. Os comandos estão escritos tal como se escrevem no terminal, e cada
-pergunta do instalador tem a resposta que foi dada na instalação de demonstração.
+Siga as páginas pela ordem indicada. Os comandos são apresentados tal como devem ser introduzidos no
+terminal, e cada pergunta do instalador inclui a resposta dada na instalação de demonstração.
 
 ```{toctree}
 :maxdepth: 1

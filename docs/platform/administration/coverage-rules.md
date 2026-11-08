@@ -1,34 +1,29 @@
-# Cobertura: que níveis contam
+# Cobertura: níveis incluídos
 
-Os níveis do catálogo de segurança que **não** entram nos indicadores de cobertura nem na fila de GAP.
+Configuração dos níveis do catálogo de segurança que **não** entram nos indicadores de cobertura nem na lista de GAP.
 
 ```{video} 351-administracao-da-plataforma
 ```
 
-O vídeo mostra os três ecrãs da administração: a cobertura, os documentos do SGSI e a versão.
+O vídeo apresenta os três ecrãs da administração: cobertura, documentos do SGSI e versão.
 
-Os sistemas do catálogo têm um nível, de N1 (crítico) a N4 (secundário). A taxa de cobertura e a lista de GAP, que são os sistemas sem monitorização, contam por omissão os três primeiros. Este ecrã decide quais ficam de fora. É só para administradores.
+Cada sistema do catálogo tem um nível, de N1 (crítico) a N4 (secundário). Por omissão, a taxa de cobertura e a lista de GAP (sistemas sem monitorização) consideram os três primeiros níveis. Este ecrã define os níveis excluídos e está disponível apenas para administradores.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Administração do sistema › Cobertura
+**Governar** > **Administração do sistema** > **Cobertura**
 
 ```{figure} /_static/capturas/adm-cobertura/menu.jpg
-:alt: Menu lateral: Governar › Administração do sistema › Cobertura
+:alt: Menu lateral: Governar > Administração do sistema > Cobertura
 
-O caminho no menu lateral: Governar › Administração do sistema › Cobertura.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Administração do sistema**.
-3. Clique em **Cobertura**: abre o ecrã desta página.
+## Critério de exclusão
 
+Um indicador de cobertura só é útil se o seu âmbito for conhecido. Os postos de trabalho e os equipamentos terminais (N4) são numerosos e mudam com frequência; se fossem incluídos, a taxa refletiria a rotação do parque e não a proteção dos sistemas relevantes. Por este motivo, o N4 está excluído por omissão.
 
-## Porquê
-
-Um indicador de cobertura só diz alguma coisa se toda a gente souber o que conta. Os postos de trabalho e os equipamentos terminais (N4) são muitos e mudam todas as semanas: com eles, a taxa mediria a rotação do parque e não a proteção do que importa. Por isso o N4 está excluído por omissão.
-
-## O ecrã
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/adm-cobertura/niveis-1.jpg
 :alt: Os quatro níveis, cada um com o seu interruptor
@@ -36,27 +31,28 @@ Um indicador de cobertura só diz alguma coisa se toda a gente souber o que cont
 Os quatro níveis, cada um com o seu interruptor.
 ```
 
-1. **N1 — Crítico**
-2. **N2 — Estratégico**
-3. **N3 — Operacional**
-4. **N4 — Secundário, excluído por omissão**
+No ecrã, encontra os seguintes elementos:
 
+1. **N1 — Crítico:** Interruptor de exclusão do nível 1.
+2. **N2 — Estratégico:** Interruptor de exclusão do nível 2.
+3. **N3 — Operacional:** Interruptor de exclusão do nível 3.
+4. **N4 — Secundário:** Interruptor de exclusão do nível 4, ativo por omissão.
 
-| Nível | O que costuma ser |
+| Nível | Exemplos habituais |
 |---|---|
 | N1 — Crítico | servidores de produção, armazenamento crítico |
 | N2 — Estratégico | firewalls, switches core, VOIP |
 | N3 — Operacional | switches de acesso, infraestrutura Wi-Fi |
 | N4 — Secundário | restantes sistemas, equipamentos terminais |
 
-Marque os níveis que **não** devem contar. A taxa de cobertura do painel e a página GAP passam a filtrar sozinhas.
+**Como configurar:** Assinale os níveis que **não** devem ser contabilizados. A taxa de cobertura do painel e a página GAP passam a aplicar o filtro automaticamente.
 
 ```{important}
-Excluir N1 ou N2 esconde sistemas críticos da análise, e o ecrã avisa quando o faz. Se o fizer, tenha uma razão que possa explicar a um auditor.
+A exclusão de N1 ou N2 retira sistemas críticos da análise, e o ecrã apresenta um aviso nesse caso. Esta opção deve ser fundamentada e justificável perante um auditor.
 ```
 
 ## Resumo
 
-- Escolhe que níveis ficam fora da taxa de cobertura e da fila de GAP.
-- Por omissão, só o N4 fica de fora.
+- Define os níveis excluídos da taxa de cobertura e da lista de GAP.
+- Por omissão, apenas o N4 é excluído.
 - Ver também {doc}`/platform/inventory/security-catalogue`.

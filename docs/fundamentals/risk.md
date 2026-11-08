@@ -1,88 +1,89 @@
 # O que é o risco
 
-Ameaça, vulnerabilidade, impacto e probabilidade; risco inerente e residual; o apetite pelo risco como decisão de gestão — e porque é que o risco nunca vai a zero.
+Ameaça, vulnerabilidade, impacto e probabilidade; risco inerente e residual; o apetite pelo risco como decisão de gestão; e o motivo pelo qual o risco nunca é nulo.
 
 ```{video} 103-risco
 ```
 
-Toda a lei de cibersegurança assenta numa palavra: risco. O decreto-lei obriga as entidades a gerir os riscos; as normas pedem uma apreciação de risco; o auditor vai perguntar pelo registo de riscos. Nesta página, explicamos o que a palavra quer dizer — devagar, e com um exemplo.
+A legislação de cibersegurança assenta no conceito de risco. O decreto-lei obriga as entidades a gerir os riscos, as normas exigem uma apreciação de risco e o auditor solicita o registo de riscos. Esta página explica o conceito, com um exemplo.
 
-Vamos usar sempre a mesma organização, ao longo de toda a formação: o Instituto Politécnico de Vila Nova. É inventado, mas é parecido com muitos serviços públicos reais: mil e duzentas pessoas, estudantes, serviços académicos, um serviço de correio eletrónico, uma rede.
+Os exemplos utilizam sempre a mesma organização: o Instituto Politécnico de Vila Nova. Trata-se de uma organização fictícia, semelhante a muitos serviços públicos reais, com mil e duzentas pessoas, estudantes, serviços académicos, um serviço de correio eletrónico e uma rede.
 
-## Uma sensação ou uma quantidade
+## Uma perceção ou uma quantidade
 
-Na conversa de todos os dias, risco é uma sensação. Dizemos que atravessar fora da passadeira é arriscado, e cada pessoa tem a sua opinião.
+Na linguagem comum, o risco é uma perceção: a avaliação de que atravessar fora da passadeira é arriscado varia de pessoa para pessoa.
 
-Na gestão da segurança da informação, risco é uma quantidade. Estima-se, compara-se, e decide-se sobre ela. E a regra de ouro é esta: duas pessoas diferentes, com os mesmos dados e os mesmos critérios, devem chegar ao mesmo valor. Se não chegam, os critérios não estão bem escritos.
+Na gestão da segurança da informação, o risco é uma quantidade, que se estima, compara e sobre a qual se decide. O princípio fundamental é o seguinte: duas pessoas diferentes, com os mesmos dados e os mesmos critérios, devem obter o mesmo valor. Caso contrário, os critérios não estão corretamente definidos.
 
-**No dia a dia, risco é uma sensação**
+**Perceção e quantidade**
 
-- Na conversa de todos os dias: «isto é arriscado» — uma impressão, que varia de pessoa para pessoa.
-- Na gestão da segurança: uma quantidade, que se estima, se compara e se decide.
-- Duas pessoas diferentes, com os mesmos dados, devem chegar ao mesmo valor.
+- Na linguagem comum: «isto é arriscado», uma impressão que varia de pessoa para pessoa.
+- Na gestão da segurança: uma quantidade, que se estima, compara e sobre a qual se decide.
+- Duas pessoas diferentes, com os mesmos dados, devem obter o mesmo valor.
 
-## As peças
+## Componentes do risco
 
-Um risco tem sempre quatro peças. Primeiro, um ativo: algo que tem valor. Na segurança da informação, o ativo principal é a própria informação — e depois os sistemas e as pessoas que a tratam.
+Um risco tem sempre quatro componentes:
 
-Segundo, uma ameaça: o que pode causar dano. Pode ser um atacante, mas também um incêndio, uma falha de energia, ou um simples erro de quem trabalha connosco.
+- **Ativo:** Elemento com valor. Na segurança da informação, o ativo principal é a própria informação, seguida dos sistemas e das pessoas que a tratam.
+- **Ameaça:** Causa potencial de dano. Pode ser um atacante, mas também um incêndio, uma falha de energia ou um erro humano.
+- **Vulnerabilidade:** Fraqueza explorada pela ameaça; por exemplo, uma palavra-passe fraca, um servidor desatualizado ou uma cópia de segurança nunca testada.
+- **Impacto:** Perda resultante da concretização do risco.
 
-Terceiro, uma vulnerabilidade: a fraqueza que a ameaça aproveita. Uma palavra-passe fraca, um servidor por atualizar, uma cópia de segurança que nunca foi testada. E quarto, o impacto: o que se perde se a coisa acontecer.
+Os três primeiros componentes têm de coexistir. Uma vulnerabilidade num computador desligado, sem dados e guardado num armário, não gera um risco relevante, porque não existe um ativo com valor nem um caminho para a ameaça.
 
-As três primeiras são necessárias ao mesmo tempo. Uma vulnerabilidade num computador desligado, sem dados, num armário, não gera risco relevante: falta o ativo com valor e falta o caminho para a ameaça chegar lá.
-
-**As peças de um risco**
+**Componentes de um risco**
 
 Ativo
-: aquilo que tem valor — a informação, e os sistemas e pessoas que a tratam
+: elemento com valor: a informação e os sistemas e pessoas que a tratam
 
 Ameaça
-: o que pode causar dano — um atacante, um incêndio, um erro humano
+: causa potencial de dano: um atacante, um incêndio, um erro humano
 
 Vulnerabilidade
-: a fraqueza que a ameaça aproveita — uma palavra-passe fraca, um sistema por atualizar
+: fraqueza explorada pela ameaça: uma palavra-passe fraca, um sistema desatualizado
 
 Impacto
-: o que se perde se acontecer — dinheiro, serviço, confiança, cumprimento da lei
+: perda resultante: financeira, de serviço, de confiança ou de cumprimento legal
 
 ```{figure} /_static/img/103-risco/01.jpg
 :alt: As peças de um risco
 
-As peças de um risco.
+Componentes de um risco.
 ```
 
-Vejamos no Politécnico. O ativo é o correio eletrónico de toda a instituição, que guarda dados de estudantes e de pessoal. A ameaça é um ataque de ransomware: um programa malicioso que cifra os servidores e pede um resgate para os devolver.
+No Politécnico, o ativo é o correio eletrónico de toda a instituição, que contém dados de estudantes e de pessoal. A ameaça é um ataque de ransomware: um programa malicioso que encripta os servidores e exige um resgate.
 
-A vulnerabilidade: as contas de correio não têm segundo fator de autenticação, e as cópias de segurança estão guardadas no mesmo servidor — o ataque cifra-as também. O impacto: uma semana sem correio, dados pessoais possivelmente expostos, e notificações obrigatórias à CNPD e ao CNCS.
+A vulnerabilidade consiste em contas de correio sem segundo fator de autenticação e em cópias de segurança guardadas no mesmo servidor, que o ataque também encripta. O impacto é uma semana sem correio, a possível exposição de dados pessoais e as notificações obrigatórias à CNPD e ao CNCS.
 
-**No Politécnico de Vila Nova**
+**Exemplo: Politécnico de Vila Nova**
 
 - Ativo: o correio eletrónico de toda a instituição, com os dados de estudantes e de pessoal.
-- Ameaça: um ataque de ransomware, que cifra os servidores e pede resgate.
-- Vulnerabilidade: contas sem segundo fator de autenticação, e cópias guardadas no mesmo servidor.
-- Impacto: uma semana sem correio, dados pessoais expostos, notificações à CNPD e ao CNCS.
+- Ameaça: um ataque de ransomware, que encripta os servidores e exige um resgate.
+- Vulnerabilidade: contas sem segundo fator de autenticação e cópias guardadas no mesmo servidor.
+- Impacto: uma semana sem correio, dados pessoais expostos e notificações à CNPD e ao CNCS.
 
-## Medir
+## Medição
 
-Para comparar riscos, mede-se cada um com duas perguntas. Qual é a probabilidade de a ameaça explorar a vulnerabilidade? E qual seria o impacto? Cada resposta dá-se numa escala definida — por exemplo, de um a cinco — e o risco é o produto das duas.
+Para comparar riscos, cada risco é medido com duas questões: qual a probabilidade de a ameaça explorar a vulnerabilidade, e qual seria o impacto. Cada resposta é dada numa escala definida (por exemplo, de um a cinco) e o risco corresponde ao produto das duas.
 
-O impacto avalia-se separadamente para as três propriedades da informação: confidencialidade, integridade e disponibilidade. Uma fuga de dados e uma paragem de serviço não têm o mesmo perfil. No Politécnico, o ransomware é grave nas três: os dados podem sair, podem ser alterados, e o serviço para.
+O impacto é avaliado separadamente para as três propriedades da informação: confidencialidade, integridade e disponibilidade, uma vez que uma fuga de dados e uma interrupção de serviço têm perfis diferentes. No Politécnico, o ransomware tem impacto grave nas três: os dados podem ser exfiltrados e alterados, e o serviço é interrompido.
 
 **Risco = probabilidade × impacto**
 
-- Probabilidade: quão provável é que a ameaça explore a vulnerabilidade, numa escala definida (por exemplo, de 1 a 5).
-- Impacto: quão grave seria, na mesma escala — avaliado em confidencialidade, integridade e disponibilidade.
-- O produto dá um número que permite comparar riscos muito diferentes entre si.
+- Probabilidade: possibilidade de a ameaça explorar a vulnerabilidade, numa escala definida (por exemplo, de 1 a 5).
+- Impacto: gravidade das consequências, na mesma escala, avaliada em confidencialidade, integridade e disponibilidade.
+- O produto resulta num valor que permite comparar riscos de natureza muito diferente.
 
 ```{tip}
-Os níveis da escala e o que cada um quer dizer escrevem-se nos critérios de risco — {doc}`/platform/risk/risk-criteria`.
+Os níveis da escala e o respetivo significado são definidos nos critérios de risco ({doc}`/platform/risk/risk-criteria`).
 ```
 
-É assim que se costuma desenhar: uma matriz, com o impacto num eixo e a probabilidade no outro. Cada risco cai numa casa. Um risco de impacto muito grave e probabilidade quase certa é crítico; um de impacto insignificante e probabilidade rara é baixo.
+A representação habitual é uma matriz, com o impacto num eixo e a probabilidade no outro, em que cada risco ocupa uma célula. Um risco com impacto muito grave e probabilidade quase certa é crítico; um risco com impacto insignificante e probabilidade rara é baixo.
 
-Os limites — a partir de que valor um risco é alto — não vêm de nenhuma lei: são decisão de cada organização, e escrevem-se nos critérios de risco. Mas, uma vez escritos, aplicam-se a todos os riscos da mesma maneira.
+Os limites (por exemplo, o valor a partir do qual um risco é alto) não são definidos por lei: são decididos por cada organização e registados nos critérios de risco. Uma vez definidos, aplicam-se a todos os riscos da mesma forma.
 
-**Uma matriz de risco simples**
+**Exemplo de matriz de risco**
 
 | Impacto ↓  ·  Probabilidade → | 1 Rara | 3 Possível | 5 Quase certa |
 |---|---|---|---|
@@ -91,54 +92,54 @@ Os limites — a partir de que valor um risco é alto — não vêm de nenhuma l
 | 1 Insignificante | 1 · baixo | 3 · baixo | 5 · médio |
 
 ```{tip}
-Exemplo de ilustração. Os limites entre baixo, médio, alto e crítico são decisão de cada organização.
+Exemplo ilustrativo. Os limites entre baixo, médio, alto e crítico são definidos por cada organização.
 ```
 
-## Inerente e residual
+## Risco inerente e residual
 
-Há duas medidas do mesmo risco. O risco inerente é o que existiria se não houvesse controlo nenhum — um número teórico, que serve para comparar. O risco residual é o que sobra depois dos controlos que estão realmente a funcionar. É o residual que interessa às decisões.
+O mesmo risco tem duas medidas. O risco inerente é o risco que existiria na ausência de qualquer controlo: um valor teórico, utilizado para comparação. O risco residual é o risco que subsiste após a aplicação dos controlos efetivamente em funcionamento. As decisões baseiam-se no risco residual.
 
-No Politécnico, se se ativar o segundo fator em todas as contas e as cópias passarem para um sítio separado e testado, a probabilidade de o ransomware ter sucesso desce muito. O risco inerente continua alto; o residual passa a médio ou baixo.
+No Politécnico, a ativação do segundo fator em todas as contas e a transferência das cópias de segurança para um local separado e testado reduzem significativamente a probabilidade de sucesso do ransomware. O risco inerente mantém-se alto; o residual passa a médio ou baixo.
 
-E depois há o apetite pelo risco: quanto risco residual a organização aceita, de forma consciente. Isto não é uma decisão técnica — é da direção. A informática diz quanto custa baixar um risco; a direção decide se paga, ou se aceita o que sobra, e assina essa decisão.
+O apetite pelo risco define o nível de risco residual que a organização aceita de forma consciente. Esta decisão não é técnica, mas sim da direção: a equipa de informática indica o custo de reduzir um risco, e a direção decide se aprova o investimento ou se aceita o risco residual, formalizando a decisão por escrito.
 
-**Inerente, residual, e o que se aceita**
+**Risco inerente, residual e aceitação**
 
-- Risco inerente: o que existiria sem controlo nenhum. Serve para comparar.
-- Risco residual: o que sobra depois dos controlos que estão realmente implementados. É este que decide.
-- Apetite pelo risco: quanto risco residual a organização aceita, conscientemente. É uma decisão de gestão.
+- Risco inerente: o risco que existiria sem qualquer controlo. Utilizado para comparação.
+- Risco residual: o risco que subsiste após os controlos efetivamente implementados. É a base das decisões.
+- Apetite pelo risco: o nível de risco residual que a organização aceita de forma consciente. É uma decisão de gestão.
 
-Um aviso que quase nenhum manual dá: o risco nunca vai a zero. E tentar pô-lo a zero é má gestão, porque se gasta num risco pequeno o dinheiro que faltava para um grande.
+O risco nunca é nulo. A tentativa de eliminar totalmente um risco constitui má gestão, porque consome num risco reduzido recursos necessários para um risco elevado.
 
-Por isso, a pergunta certa nunca é «estamos seguros?». É: «que riscos aceitámos, e sabemo-lo?». Um risco aceite tem um dono, uma data e uma justificação escrita. Um risco de que ninguém se lembrou não está aceite — está apenas por gerir.
+A questão adequada não é «a organização está segura?», mas sim «que riscos foram aceites, e esta aceitação é conhecida?». Um risco aceite tem um responsável, uma data e uma justificação escrita. Um risco não identificado não está aceite: está por gerir.
 
 ```{important}
-**O risco nunca vai a zero**
+**O risco nunca é nulo**
 
-- Tentar pôr um risco a zero é má gestão: gasta-se num risco pequeno o que faltava para um grande.
-- A pergunta certa não é «estamos seguros?», mas «que riscos aceitámos — e sabemo-lo?»
-- Um risco aceite tem dono, data e justificação escrita. Um risco ignorado não é um risco aceite.
+- A tentativa de eliminar totalmente um risco constitui má gestão: consome num risco reduzido os recursos necessários para um risco elevado.
+- A questão adequada não é «a organização está segura?», mas «que riscos foram aceites, e esta aceitação é conhecida?»
+- Um risco aceite tem responsável, data e justificação escrita. Um risco ignorado não é um risco aceite.
 ```
 
-## Na sua organização
+## Informação a solicitar
 
-Para começar a trabalhar o risco na sua organização, há informação que tem de pedir a pessoas diferentes. À direção, o apetite pelo risco e quem tem autoridade para aceitar o quê. Aos responsáveis de cada serviço, que informação é crítica e quanto custa perdê-la durante um dia.
+A gestão do risco exige informação de diferentes responsáveis. À direção, o apetite pelo risco e a autoridade para aceitar cada tipo de risco. Aos responsáveis de serviço, a informação crítica e o custo da sua indisponibilidade durante um dia.
 
-À informática, as vulnerabilidades que se conhecem e — com honestidade — os controlos que estão mesmo a funcionar, não os que estão no papel. E ao encarregado de proteção de dados, onde há dados pessoais e de que tipo. Ninguém tem a resposta toda sozinho.
+À equipa de informática, as vulnerabilidades conhecidas e os controlos efetivamente em funcionamento, e não apenas os documentados. Ao encarregado de proteção de dados, a localização e o tipo de dados pessoais. Nenhum destes responsáveis dispõe, isoladamente, de toda a informação.
 
-**O que pedir a quem**
+**Responsáveis**
 
-- À direção: o apetite pelo risco, e quem decide aceitar o quê.
-- Aos responsáveis de cada serviço: que informação e que sistemas são críticos, e o que custa perdê-los um dia.
-- À informática: as vulnerabilidades conhecidas e os controlos que estão mesmo a funcionar.
-- Ao encarregado de proteção de dados: onde há dados pessoais, e de que categorias.
+- Direção: apetite pelo risco e autoridade para aceitar cada tipo de risco.
+- Responsáveis de serviço: informação e sistemas críticos, e custo da sua indisponibilidade durante um dia.
+- Equipa de informática: vulnerabilidades conhecidas e controlos efetivamente em funcionamento.
+- Encarregado de proteção de dados: localização e categorias dos dados pessoais.
 
-Na plataforma, tudo isto tem lugar. Os critérios e o apetite escrevem-se em Critérios e apetite. Cada risco vai para o Registo de risco, com o ativo, a ameaça, a probabilidade e o impacto nas três propriedades. Vamos fazê-lo, ecrã a ecrã, nas páginas do módulo da plataforma.
+Na plataforma, os critérios e o apetite são definidos em **Critérios e apetite**. Cada risco é registado no **Registo de risco**, com o ativo, a ameaça, a probabilidade e o impacto nas três propriedades. As páginas do módulo da plataforma descrevem estes ecrãs.
 
-E a plataforma não guarda o risco inerente como um número escrito à mão: calcula-o sempre a partir da probabilidade e do impacto. Assim, ninguém o pode alterar sem alterar também o que o justifica.
+A plataforma não guarda o risco inerente como um valor introduzido manualmente: calcula-o sempre a partir da probabilidade e do impacto. Desta forma, o valor não pode ser alterado sem alterar também a respetiva fundamentação.
 
-**Onde isto entra na plataforma**
+**Correspondência na plataforma**
 
-- Os critérios e o apetite escrevem-se em Identificar › Risco › Critérios e apetite ({doc}`/platform/risk/risk-criteria`).
-- Cada risco, com ativo, ameaça, probabilidade e impacto C/I/A, vai para o Registo de risco ({doc}`/platform/risk/risk-register`).
-- O inerente calcula-se sozinho, e o residual sai dos controlos ligados ao risco.
+- Os critérios e o apetite são definidos em **Identificar** > **Risco** > **Critérios e apetite** ({doc}`/platform/risk/risk-criteria`).
+- Cada risco, com ativo, ameaça, probabilidade e impacto C/I/A, é registado no Registo de risco ({doc}`/platform/risk/risk-register`).
+- O risco inerente é calculado automaticamente, e o residual resulta dos controlos associados ao risco.
