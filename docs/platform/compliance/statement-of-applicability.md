@@ -1,65 +1,59 @@
 # A Declaração de Aplicabilidade
 
-Controlo a controlo: aplicável ou não, porquê, de onde vem, quem responde, em que estado está e quando se revê — e o número declarado de conformidade que daí sai.
+Registo controlo a controlo: aplicabilidade, justificação, origem, responsável, estado e data de revisão, e a percentagem de conformidade declarada resultante.
 
 ```{video} 320-declaracao-de-aplicabilidade
 ```
 
-em {doc}`/fundamentals/iso-27001-inside` vimos o que é a Declaração de Aplicabilidade. Agora fazemo-la: para cada controlo de cada norma em âmbito, uma decisão escrita.
+A página {doc}`/fundamentals/iso-27001-inside` define a Declaração de Aplicabilidade. Esta página descreve a sua elaboração: uma decisão escrita para cada controlo de cada norma no âmbito.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Grc — conformidade › Declaração de Aplicabilidade
+**Governar** > **GRC — Conformidade** > **Declaração de Aplicabilidade**
 
 ```{figure} /_static/capturas/soa/menu.jpg
-:alt: Menu lateral: Governar › Grc — conformidade › Declaração de Aplicabilidade
+:alt: Menu lateral: Governar > GRC — Conformidade > Declaração de Aplicabilidade
 
-O caminho no menu lateral: Governar › Grc — conformidade › Declaração de Aplicabilidade.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Grc — conformidade**.
-3. Clique em **Declaração de Aplicabilidade**: abre o ecrã desta página.
+## Campos
 
-## Os campos
+Para cada controlo, são registados a aplicabilidade e a respetiva justificação, a origem (risco, lei, contrato ou boa prática), o responsável, o estado, a maturidade e a data da próxima revisão.
 
-Para cada controlo: aplicável ou não, com justificação; a origem — risco, lei, contrato, ou boa prática —; o responsável; o estado; a maturidade; e a data da próxima revisão.
+A origem «risco» exige a identificação do risco. As restantes origens são justificação suficiente: um controlo exigido por lei é aplicável independentemente de um risco.
 
-A origem «risco» obriga a apontar o risco. As outras justificam-se sozinhas: um controlo exigido por lei não precisa de um risco para ser aplicável.
+**Campos de cada controlo**
 
-**Os campos de cada controlo**
-
-| Campo | O que diz |
+| Campo | Descrição |
 |---|---|
-| Aplicável | sim ou não — o «não» tem de ser justificado |
-| Justificação | o que o auditor lê quando um controlo é excluído |
-| Origem | porque é aplicável: risco, legal, contratual, boa prática |
-| Responsável | quem responde por ele |
+| Aplicável | sim ou não; a resposta negativa tem de ser justificada |
+| Justificação | texto analisado pelo auditor quando um controlo é excluído |
+| Origem | motivo da aplicabilidade: risco, legal, contratual, boa prática |
+| Responsável | responsável pelo controlo |
 | Estado | não iniciado, em curso, implementado |
-| Maturidade | de 1 a 5 — quão assente está |
-| Próxima revisão | uma data — um controlo sem revisão marcada nunca se revê |
+| Maturidade | de 1 a 5: grau de consolidação |
+| Próxima revisão | data obrigatória; sem data, o controlo não é revisto |
 
 ```{tip}
-A ISO/IEC 27001 pede a Declaração no tratamento do risco; um certificado entregue ao CNCS leva-a (art. 27.º, n.º 5).
+A ISO/IEC 27001 exige a Declaração no tratamento do risco; um certificado entregue ao CNCS é acompanhado da Declaração (art. 27.º, n.º 5).
 ```
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Governar › GRC — Conformidade › Declaração de Aplicabilidade
-
-No menu Governar, GRC, Conformidade, Declaração de Aplicabilidade. Uma declaração por cada norma em âmbito, com quantos controlos são aplicáveis e quantos excluídos.
+É apresentada uma declaração por cada norma no âmbito, com o número de controlos aplicáveis e excluídos.
 
 ```{figure} /_static/img/320-declaracao-de-aplicabilidade/01.jpg
-:alt: Governar › GRC — Conformidade › Declaração de Aplicabilidade
+:alt: Governar > GRC — Conformidade > Declaração de Aplicabilidade
 
-O ecrã em Governar › GRC — Conformidade › Declaração de Aplicabilidade.
+Ecrã **Governar** > **GRC — Conformidade** > **Declaração de Aplicabilidade**.
 ```
 
-## Uma declaração
+## Declaração de uma norma
 
-Abrimos as medidas das entidades públicas relevantes. Cada linha é uma medida, com a decisão, o estado e o responsável. Exporta-se para folha de cálculo.
+Na declaração de uma norma (neste exemplo, as medidas das entidades públicas relevantes), cada linha corresponde a uma medida, com a decisão, o estado e o responsável.
 
-E um controlo pode estar implementado no centro de dados e por iniciar numa escola. O detalhe por grupo cria linhas por unidade, que refinam a linha global sem lhe mexer. A percentagem declarada de conformidade sai daqui, e alimenta o painel.
+Um controlo pode estar implementado no centro de dados e por iniciar numa escola. O detalhe por grupo cria linhas por unidade, que detalham a linha global sem a alterar. A percentagem de conformidade declarada resulta deste ecrã e alimenta o painel.
 
 ```{figure} /_static/capturas/soa/norma-1.jpg
 :alt: As medidas do Anexo IV, uma a uma
@@ -67,7 +61,7 @@ E um controlo pode estar implementado no centro de dados e por iniciar numa esco
 As medidas do Anexo IV, uma a uma (1 de 3).
 ```
 
-1. **Filtrar por grupo do Anexo IV**
+1. **Filtro por grupo do Anexo IV:** Apresenta as medidas do grupo selecionado.
 
 ```{figure} /_static/capturas/soa/norma-2.jpg
 :alt: As medidas do Anexo IV, uma a uma
@@ -81,15 +75,15 @@ As medidas do Anexo IV, uma a uma (2 de 3).
 As medidas do Anexo IV, uma a uma (3 de 3).
 ```
 
-1. **Exportar**
+1. Botão **Exportar:** Exporta a declaração para folha de cálculo.
 
 ## Resumo
 
-A cada responsável, peça o estado real do seu controlo — e a prova, que vem na página das evidências. A plataforma guarda versões da Declaração: a que se entrega numa auditoria fica fixada, e não muda com o trabalho do dia seguinte.
+Solicite a cada responsável o estado real do respetivo controlo e a evidência correspondente, descrita na página das evidências. A plataforma guarda versões da Declaração: a versão entregue numa auditoria fica fixada e não é alterada pelo trabalho posterior.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- A cada responsável: o estado real do seu controlo, com a prova que o sustenta ({doc}`/platform/monitoring/evidence`).
-- Ao jurídico: a origem legal ou contratual de cada controlo aplicável.
-- A herança: um controlo implementado numa norma pode contar noutra, pelo mapeamento ({doc}`/platform/compliance/mapping-and-tools`).
-- A Declaração guarda versões: a que se entrega numa auditoria fica fixada.
+- Responsáveis dos controlos: estado real de cada controlo, com a evidência correspondente ({doc}`/platform/monitoring/evidence`).
+- Serviço jurídico: origem legal ou contratual de cada controlo aplicável.
+- Herança: um controlo implementado numa norma pode ser contabilizado noutra, através do mapeamento ({doc}`/platform/compliance/mapping-and-tools`).
+- A Declaração guarda versões: a versão entregue numa auditoria fica fixada.

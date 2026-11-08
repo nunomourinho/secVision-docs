@@ -1,6 +1,6 @@
 # Risco
 
-Da régua de risco ao registo, ao tratamento, às aceitações e aos fornecedores.
+Dos critérios de risco ao registo, ao tratamento, às aceitações e aos fornecedores.
 
 ```{toctree}
 :maxdepth: 1

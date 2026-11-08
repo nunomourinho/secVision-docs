@@ -1,82 +1,76 @@
 # A auditoria interna
 
-Planear, abrir a lista de verificação do guião da norma, responder pergunta a pergunta — no ecrã ou em papel, com um auditor sem conta — e fechar com conclusões; e a diferença para um diagnóstico.
+Planeamento, abertura da lista de verificação a partir do guião da norma, resposta pergunta a pergunta (no ecrã ou em papel, com um auditor sem conta) e encerramento com conclusões, bem como a distinção face a um diagnóstico.
 
 ```{video} 342-auditoria-interna
 ```
 
-Começa a fase de verificar. A primeira peça é a auditoria interna: a organização verifica-se a si própria, antes de um auditor externo o fazer. Sem ela, não há certificação.
+A fase de verificação começa pela auditoria interna, em que a organização se avalia antes de uma auditoria externa. A auditoria interna é um requisito da certificação.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Auditoria e melhoria › Auditorias internas
+**Governar** > **Auditoria e Melhoria** > **Auditorias internas**
 
 ```{figure} /_static/capturas/auditorias/menu.jpg
-:alt: Menu lateral: Governar › Auditoria e melhoria › Auditorias internas
+:alt: Menu lateral: Governar > Auditoria e Melhoria > Auditorias internas
 
-O caminho no menu lateral: Governar › Auditoria e melhoria › Auditorias internas.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Auditoria e melhoria**.
-3. Clique em **Auditorias internas**: abre o ecrã desta página.
+## Etapas
 
-## Os passos
+A auditoria é planeada com objetivo, critérios, auditor e datas. Na abertura, a lista de verificação é gerada a partir do guião da norma, com uma linha por pergunta. Cada pergunta recebe uma resposta (conforme, não conforme maior ou menor, observação ou não aplicável), acompanhada de evidência.
 
-Planeia-se com objetivo e critérios, auditor e datas. Ao abrir, a lista de verificação gera-se do guião da norma: uma linha por pergunta. Responde-se a cada uma: conforme, não conforme — maior ou menor —, observação, ou não aplicável, com prova.
+A lista de verificação pode ser utilizada em papel, num PDF preenchível, nas visitas às instalações ou por um auditor externo sem conta. Na importação, as respostas que divergem das registadas no ecrã surgem desmarcadas. A auditoria só pode ser encerrada com todas as perguntas verificadas e as conclusões registadas.
 
-A lista de verificação pode ir em papel, num PDF preenchível, para quem anda pelas instalações ou para um auditor externo sem conta. Ao voltar, as respostas que colidem com as do ecrã chegam desmarcadas. E só se fecha com tudo verificado e as conclusões escritas.
+**Etapas de uma auditoria**
 
-**Os passos de uma auditoria**
-
-| Passo | O que se faz |
+| Etapa | Descrição |
 |---|---|
 | Planear | referência, objetivo, critérios, auditor, datas, finalidade e unidade auditada |
-| Abrir | gera a lista de verificação — uma linha por pergunta do guião da norma |
-| Responder | conforme, não conforme (maior ou menor), observação, não aplicável — com prova |
-| Levar em papel | PDF preenchível, para quem anda pelas instalações e não tem conta |
-| Fechar | zero perguntas por verificar, e as conclusões escritas |
+| Abrir | gera a lista de verificação, com uma linha por pergunta do guião da norma |
+| Responder | conforme, não conforme (maior ou menor), observação, não aplicável, com evidência |
+| Utilizar em papel | PDF preenchível, para visitas às instalações e auditores sem conta |
+| Encerrar | sem perguntas por verificar e com as conclusões registadas |
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Governar › Auditoria e Melhoria › Auditorias internas
-
-No menu Governar, Auditoria e Melhoria, Auditorias internas. Cada auditoria tem uma finalidade: conformidade, que só aceita normas em âmbito e pergunta pelos controlos aplicáveis; ou diagnóstico, que mede a distância a uma norma que se pondera adotar.
+Cada auditoria tem uma finalidade: conformidade, que aceita apenas normas no âmbito e incide sobre os controlos aplicáveis, ou diagnóstico, que mede a distância a uma norma cuja adoção está em análise.
 
 ```{figure} /_static/capturas/auditorias/abrir-1.jpg
-:alt: Governar › Auditoria e Melhoria › Auditorias internas
+:alt: Governar > Auditoria e Melhoria > Auditorias internas
 
-O ecrã em Governar › Auditoria e Melhoria › Auditorias internas.
+Ecrã **Governar** > **Auditoria e Melhoria** > **Auditorias internas**.
 ```
 
-1. **Conformidade ou diagnóstico**
+1. **Finalidade:** Conformidade ou diagnóstico.
 
-## Uma auditoria
+## Ficha da auditoria
 
-Abrimos uma auditoria. A lista de verificação com as perguntas, o estado de cada uma, e a prova anexada. Uma auditoria pode ter uma unidade: escolher um laboratório recorta a lista de verificação pela aplicabilidade desse laboratório.
+A ficha apresenta a lista de verificação com as perguntas, o estado de cada uma e a evidência anexada. Uma auditoria pode incidir sobre uma unidade: a seleção de um laboratório restringe a lista de verificação aos controlos aplicáveis a esse laboratório.
 
-E uma regra: nenhum número de um diagnóstico chega à conformidade declarada, e um achado de diagnóstico não vira não conformidade — não verifica um requisito adotado.
+Os valores de um diagnóstico não são contabilizados na conformidade declarada, e uma constatação de diagnóstico não dá origem a uma não conformidade, uma vez que não verifica um requisito adotado.
 
 ```{figure} /_static/capturas/auditorias/auditoria-1.jpg
 :alt: Uma auditoria, aberta
 
-Uma auditoria, aberta (1 de 2).
+Ficha de uma auditoria (1 de 2).
 ```
 
-1. Clique em **Auditoria interna às medidas do Anexo IV**.
+1. Selecione a auditoria (neste exemplo, **Auditoria interna às medidas do Anexo IV**).
 
 ```{figure} /_static/capturas/auditorias/auditoria-2.jpg
 :alt: Uma auditoria, aberta
 
-Uma auditoria, aberta (2 de 2).
+Ficha de uma auditoria (2 de 2).
 ```
 
 ## Resumo
 
-Designe um auditor interno com independência sobre o que audita, e combine com os responsáveis a prova e as entrevistas. Uma nota: só entram na lista de verificação os controlos com pergunta no guião, e a plataforma diz que normas, por isso, não se podem auditar.
+Designe um auditor interno independente relativamente ao objeto da auditoria e acorde com os responsáveis a evidência e as entrevistas. Apenas os controlos com pergunta no guião são incluídos na lista de verificação, e a plataforma identifica as normas que, por este motivo, não podem ser auditadas.
 
-**O que pedir a quem**
+**Informação a solicitar**
 
-- Um auditor interno com independência sobre o que audita — o papel existe no catálogo.
-- Aos responsáveis dos controlos: a prova à mão, e disponibilidade para a entrevista.
-- Só entram na lista de verificação os controlos que fazem uma pergunta; a plataforma diz que normas não se podem auditar.
+- Auditor interno independente relativamente ao objeto da auditoria (o papel existe no catálogo).
+- Responsáveis dos controlos: evidência disponível e disponibilidade para a entrevista.
+- Apenas os controlos com pergunta no guião são incluídos na lista de verificação; a plataforma identifica as normas que não podem ser auditadas.

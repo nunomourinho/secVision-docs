@@ -1,101 +1,95 @@
 # Processos e serviços
 
-O que a organização faz: cada processo com dono, tipo e criticidade, os serviços críticos de que dependem partes externas, e as dependências de ativos, sistemas e fornecedores.
+As atividades da organização: cada processo com dono, tipo e criticidade, os serviços críticos de que dependem partes externas e as dependências de ativos, sistemas e fornecedores.
 
 ```{video} 317-processos-e-servicos
 ```
 
-Fechamos a fase do inventário com o que a organização faz: os processos e os serviços. É aqui que a missão se liga à tecnologia — se este sistema parar, que serviço para?
+A fase do inventário termina com os processos e serviços da organização. Este registo relaciona a missão com a tecnologia, permitindo identificar o serviço afetado pela interrupção de cada sistema.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Organização › Processos e serviços
+**Governar** > **Organização** > **Processos e serviços**
 
 ```{figure} /_static/capturas/processos/menu.jpg
-:alt: Menu lateral: Governar › Organização › Processos e serviços
+:alt: Menu lateral: Governar > Organização > Processos e serviços
 
-O caminho no menu lateral: Governar › Organização › Processos e serviços.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Organização**.
-3. Clique em **Processos e serviços**: abre o ecrã desta página.
+## Finalidade
 
-## Porquê
+No Grupo A, o Anexo IV exige a identificação das funções ou atividades críticas e dos sistemas de que dependem. O QNRCS exige igualmente a identificação dos serviços críticos de que dependem partes externas e das respetivas dependências.
 
-No Grupo A, o Anexo IV pede que se identifiquem as funções ou atividades críticas, e de que sistemas dependem. O QNRCS pede o mesmo: os serviços críticos de que dependem partes externas, e as dependências.
+A continuidade do negócio exige, para cada processo crítico, o tempo máximo de interrupção e a perda de dados admissível. Estes valores resultam de uma análise de impacto no negócio e não devem ser estimados sem essa análise.
 
-E a continuidade do negócio pede, para cada processo crítico, quanto tempo pode parar e quantos dados se podem perder. Esses valores não se inventam: saem de uma análise de impacto no negócio.
+**Finalidade**
 
-**Para que serve**
+- No Grupo A, o Anexo IV exige as funções ou atividades críticas e as respetivas dependências das TIC (O.ID).
+- O QNRCS exige os serviços críticos de que dependem partes externas (GR.CO-4) e as dependências (GR.CO-6).
+- A continuidade exige, por processo, o tempo máximo de interrupção (RTO e RPO), determinado numa análise de impacto.
 
-- No Grupo A, o Anexo IV pede as funções ou atividades críticas e as suas dependências das TIC (O.ID).
-- O QNRCS pede os serviços críticos de que dependem partes externas (GR.CO-4) e as dependências (GR.CO-6).
-- A continuidade pede, por processo, quanto tempo pode parar — o RTO e o RPO — determinados numa análise de impacto.
+## Informação a solicitar
 
-## Antes de abrir o ecrã
+Solicite à direção e aos responsáveis dos serviços a lista de processos, os respetivos donos e os processos críticos para entidades externas. Solicite à equipa de informática e ao serviço de compras os sistemas e os fornecedores de que cada processo depende.
 
-Peça à direção e aos responsáveis dos serviços a lista de processos e os seus donos, e quais são críticos para quem está de fora. À informática e às compras, os sistemas e os fornecedores de que cada um depende.
+**Responsáveis**
 
-**O que pedir a quem**
-
-| Informação | Quem a tem |
+| Informação | Responsável |
 |---|---|
-| Os processos da organização e os seus donos | direção; responsáveis dos serviços |
-| Que serviços são críticos para quem está fora | direção |
-| Os sistemas e fornecedores de que cada processo depende | informática; compras |
-| Quanto tempo cada processo pode parar | dono do processo — numa análise de impacto |
+| Processos da organização e respetivos donos | direção; responsáveis dos serviços |
+| Serviços críticos para entidades externas | direção |
+| Sistemas e fornecedores de que cada processo depende | equipa de informática; serviço de compras |
+| Tempo máximo de interrupção de cada processo | dono do processo, numa análise de impacto |
 
-## O ecrã
-
-**Menu:** Governar › Organização › Processos e serviços
-
-No menu Governar, Organização, Processos e serviços. No topo, quatro lacunas que se carregam: os serviços críticos, os processos sem dono, os críticos sem tempo de recuperação definido, e os que não têm risco apreciado.
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/processos/abrir-1.jpg
-:alt: Governar › Organização › Processos e serviços
+:alt: Governar > Organização > Processos e serviços
 
-O ecrã em Governar › Organização › Processos e serviços.
+Ecrã **Governar** > **Organização** > **Processos e serviços**.
 ```
 
-1. **Serviços críticos**
-2. **Sem dono**
-3. **Críticos sem tempo de recuperação**
+No topo, são apresentados quatro indicadores de lacunas, que filtram a lista quando selecionados (o quarto identifica os processos sem risco apreciado). No ecrã, encontra os seguintes elementos:
 
-## Um processo
+1. **Serviços críticos.**
+2. **Sem dono.**
+3. **Críticos sem tempo de recuperação.**
 
-Abrimos as Inscrições e matrículas. O processo tem dono, tipo e criticidade, e está marcado como serviço crítico de que dependem partes externas — os estudantes.
+## Ficha do processo
 
-Por baixo, as três caixas de dependências: ativos de informação, sistemas do catálogo, e fornecedores. Procuram, acrescentam e removem. E o tempo máximo de paragem e os objetivos de recuperação ficam vazios até uma análise de impacto os determinar: inventá-los é pior do que não os ter.
+A ficha de um processo (neste exemplo, Inscrições e matrículas) indica o dono, o tipo e a criticidade, e assinala se se trata de um serviço crítico de que dependem partes externas (neste caso, os estudantes).
+
+Seguem-se três áreas de dependências: ativos de informação, sistemas do catálogo e fornecedores, com funções de pesquisa, adição e remoção. O tempo máximo de interrupção e os objetivos de recuperação mantêm-se vazios até serem determinados numa análise de impacto; valores estimados sem análise são menos fiáveis do que a sua ausência.
 
 ```{figure} /_static/capturas/processos/processo-1.jpg
 :alt: Um processo — e as suas dependências
 
-Um processo — e as suas dependências (1 de 3).
+Um processo e as respetivas dependências (1 de 3).
 ```
 
-1. Clique em **P-002**.
+1. Selecione o processo (neste exemplo, **P-002**).
 
 ```{figure} /_static/capturas/processos/processo-2.jpg
 :alt: Um processo — e as suas dependências
 
-Um processo — e as suas dependências (2 de 3).
+Um processo e as respetivas dependências (2 de 3).
 ```
 
 ```{figure} /_static/capturas/processos/processo-3.jpg
 :alt: Um processo — e as suas dependências
 
-Um processo — e as suas dependências (3 de 3).
+Um processo e as respetivas dependências (3 de 3).
 ```
 
 ## Resumo
 
-O relatório de criticidade junta tudo numa página para a direção. E a plataforma pode propor processos com inteligência artificial, a partir do que já está registado — sempre para revisão.
+O relatório de criticidade reúne a informação numa página destinada à direção. A plataforma pode também propor processos com inteligência artificial, a partir dos dados já registados, sempre sujeitos a revisão.
 
-O que não faz é a análise de impacto no negócio: guarda os seus resultados, quando existirem.
+A plataforma não realiza a análise de impacto no negócio: regista os respetivos resultados, quando existam.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
-- O relatório de criticidade junta os processos, a criticidade, as dependências e o risco.
-- Propor com IA sugere processos a partir do que já está registado — nada entra sem revisão.
-- Não faz a análise de impacto no negócio: guarda os seus resultados.
+- O relatório de criticidade reúne os processos, a criticidade, as dependências e o risco.
+- A opção **Propor com IA** sugere processos a partir dos dados registados, sempre sujeitos a revisão.
+- Não realiza a análise de impacto no negócio: regista os respetivos resultados.

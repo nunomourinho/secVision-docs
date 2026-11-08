@@ -1,42 +1,47 @@
-# O que conta como prova
+# Requisitos de uma evidência
 
-O que um auditor aceita como prova — datada, verificável, ligada ao controlo e à data — e o que não aceita; com exemplos das medidas do Anexo IV.
+Critérios de aceitação de uma evidência pelo auditor (datada, verificável e associada ao controlo e à data) e exemplos de evidências não aceites, com base nas medidas do Anexo IV.
 
 ```{video} 404-o-que-conta-como-prova
 ```
 
-Numa auditoria, o que não se prova não existe. Nesta página vemos o que conta como prova, e o que não conta.
+Numa auditoria, uma medida não demonstrada é considerada inexistente. Esta página descreve os requisitos de uma evidência válida.
 
-## A prova
+## Evidência
 
-Uma afirmação não é prova. «Fazemos cópias todas as noites» não prova nada; o registo de um restauro que funcionou, com data, prova. A fatura do antivírus não prova a cobertura; o relatório da consola, com os postos cobertos numa data, prova.
+Uma afirmação não constitui evidência. A declaração «são feitas cópias todas as noites» não demonstra a medida; o registo datado de um restauro bem-sucedido demonstra-a. A fatura do antivírus não demonstra a cobertura; o relatório da consola, com os postos cobertos numa data, demonstra-a.
 
-Uma política em rascunho não prova a medida; a política aprovada, com a versão assinada, prova. E na formação, o que conta são as presenças, por pessoa — não o programa da sessão.
+Uma política em rascunho não demonstra a medida; a política aprovada, com a versão assinada, demonstra-a. Na formação, a evidência são os registos de presença por pessoa, e não o programa da sessão.
 
-**Prova boa e prova fraca**
+**Evidência válida e evidência insuficiente**
 
-| Medida | Prova fraca | Prova boa |
+| Medida | Evidência insuficiente | Evidência válida |
 |---|---|---|
-| T.CS Cópias de segurança | «fazemos cópias todas as noites» | o registo de um restauro que funcionou, com data |
-| O.PSI Política | um documento em rascunho | a política aprovada, com a versão assinada |
-| T.PPT Antivírus | a fatura da licença | o relatório da consola: postos cobertos, numa data |
-| Formação e sensibilização | o programa da sessão | as presenças, por pessoa, com a data |
-| O.GAP Gestão de acessos | «os pedidos fazem-se por email» | os pedidos e as aprovações registados |
+| T.CS Cópias de segurança | «são feitas cópias todas as noites» | registo datado de um restauro bem-sucedido |
+| O.PSI Política | documento em rascunho | política aprovada, com a versão assinada |
+| T.PPT Antivírus | fatura da licença | relatório da consola: postos cobertos, numa data |
+| Formação e sensibilização | programa da sessão | presenças, por pessoa, com data |
+| O.GAP Gestão de acessos | «os pedidos são feitos por email» | pedidos e aprovações registados |
 
-Prova boa tem quatro qualidades. É datada, e tem validade. É verificável: alguém de fora consegue confirmá-la. Está ligada a um controlo — prova de quê, e para quem. E está viva: renova-se antes de caducar.
+Uma evidência válida tem quatro características:
 
-Os critérios de verificação do Anexo IV dizem, medida a medida, que prova se espera. Leia-os antes de começar: poupa trabalho feito na direção errada.
+- **Datada:** Indica a data e tem um prazo de validade.
+- **Verificável:** Pode ser confirmada por terceiros.
+- **Associada:** Está ligada a um controlo e, se aplicável, a um grupo.
+- **Atualizada:** É renovada antes de caducar; a recolha automática facilita este requisito.
 
-**As quatro qualidades da prova**
+Os critérios de verificação do Anexo IV indicam, medida a medida, a evidência esperada. Recomenda-se a sua leitura antes de iniciar o trabalho, para evitar esforço mal direcionado.
 
-- Datada: diz quando — e tem validade.
-- Verificável: alguém de fora consegue confirmar.
-- Ligada: a um controlo, e se for o caso a um grupo — prova para quem, e de quê.
-- Viva: renova-se antes de caducar; a recolha automática ajuda.
+**As quatro características da evidência**
 
-Na plataforma, a prova vive nas evidências, com validade, e muita dela recolhe-se sozinha. O painel mostra o que está sem prova, e o dossier mostra-o ao auditor — antes que ele o encontre.
+- Datada: indica a data e tem prazo de validade.
+- Verificável: pode ser confirmada por terceiros.
+- Associada: a um controlo e, se aplicável, a um grupo.
+- Atualizada: renovada antes de caducar; a recolha automática facilita este requisito.
 
-**Onde isto se faz**
+Na plataforma, as evidências são registadas com prazo de validade, e muitas são recolhidas automaticamente. O painel identifica os controlos sem evidência, e o dossier apresenta-os ao auditor.
 
-- Evidências com validade, e a recolha automática dos dezassete recolectores ({doc}`/platform/monitoring/evidence`).
-- O painel mostra os controlos sem prova; o dossier mostra-os ao auditor ({doc}`/platform/monitoring/dashboard-and-diagnostics` e {doc}`/platform/audit/audit-dossier-and-certification`).
+**Correspondência na plataforma**
+
+- Evidências com prazo de validade e recolha automática pelos dezassete recolectores ({doc}`/platform/monitoring/evidence`).
+- O painel identifica os controlos sem evidência; o dossier apresenta-os ao auditor ({doc}`/platform/monitoring/dashboard-and-diagnostics` e {doc}`/platform/audit/audit-dossier-and-certification`).

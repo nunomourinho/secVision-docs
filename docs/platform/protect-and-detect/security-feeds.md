@@ -1,30 +1,25 @@
 # Feeds de segurança
 
-As notícias e os alertas de cibersegurança das fontes configuradas, num só sítio: ler, arquivar o que não interessa e passar a um relatório de recomendações o que interessa.
+Centralização das notícias e alertas de cibersegurança das fontes configuradas: leitura, arquivo dos artigos não relevantes e encaminhamento dos relevantes para um relatório de recomendações.
 
 ```{video} 357-feeds-de-seguranca
 ```
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Detetar › IOC & Intelligence › Feeds de Segurança
+**Detetar** > **IOC & Intelligence** > **Feeds de Segurança**
 
 ```{figure} /_static/capturas/feeds-seguranca/menu.jpg
-:alt: Menu lateral: Detetar › IOC & Intelligence › Feeds de Segurança
+:alt: Menu lateral: Detetar > IOC & Intelligence > Feeds de Segurança
 
-O caminho no menu lateral: Detetar › IOC & Intelligence › Feeds de Segurança.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Detetar**.
-2. Dentro dele, abra **IOC & Intelligence**.
-3. Clique em **Feeds de Segurança**: abre o ecrã desta página.
+## Fontes
 
+Os artigos provêm dos feeds RSS configurados pelo administrador em {doc}`/platform/administration/rss-feeds`, como o CERT.PT, a CISA, o SANS ISC e outras fontes adicionadas.
 
-## O que entra
-
-Os feeds RSS configurados pelo administrador em {doc}`/platform/administration/rss-feeds`: o CERT.PT, a CISA, o SANS ISC e o que mais se acrescentar.
-
-## O ecrã
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/feeds-seguranca/artigos-1.jpg
 :alt: Os artigos, com a pesquisa, o filtro por feed e as ações de cada artigo
@@ -32,17 +27,15 @@ Os feeds RSS configurados pelo administrador em {doc}`/platform/administration/r
 Os artigos, com a pesquisa, o filtro por feed e as ações de cada artigo.
 ```
 
-1. **Pesquisar**
-2. **Filtrar por feed**
-3. **Mostrar arquivados**
-4. **Adicionar a um relatório de recomendações**
-5. **Arquivar**
+No ecrã, encontra os seguintes elementos:
 
-
-- **Arquivar** tira o artigo da sua lista. Só da sua: os colegas continuam a vê-lo. **Mostrar arquivados** trá-los de volta.
-- **Adicionar a um relatório de recomendações** junta o artigo a um relatório novo ou a um que já existe. É aí que se escrevem as recomendações de mitigação e se associam aos sistemas do catálogo afetados ({doc}`/wazuh/software-and-cve-search`).
+1. **Pesquisar:** Pesquisa nos artigos.
+2. **Filtrar por feed:** Apresenta apenas os artigos de uma fonte.
+3. Opção **Mostrar arquivados:** Apresenta novamente os artigos arquivados.
+4. Botão **Adicionar a um relatório de recomendações:** Associa o artigo a um relatório novo ou existente, onde são redigidas as recomendações de mitigação e associados os sistemas do catálogo afetados ({doc}`/wazuh/software-and-cve-search`).
+5. Botão **Arquivar:** Retira o artigo da lista do utilizador; os restantes utilizadores continuam a visualizá-lo.
 
 ## Resumo
 
-- Um sítio para ler os alertas de todas as fontes.
-- O que interessa passa a um relatório de recomendações, ligado aos sistemas afetados.
+- Centraliza a leitura dos alertas de todas as fontes.
+- Os artigos relevantes são encaminhados para um relatório de recomendações, associado aos sistemas afetados.

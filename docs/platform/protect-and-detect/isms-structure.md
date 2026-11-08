@@ -1,30 +1,23 @@
 # A árvore, os controlos, a cobertura e o arquivo do SGSI
 
-Os outros ecrãs do menu SGSI, além das políticas, dos procedimentos e dos planos: a árvore que liga tudo, as fichas de controlo, as evidências, a cobertura por controlo e o arquivo.
+Os restantes ecrãs do menu SGSI, para além das políticas, dos procedimentos e dos planos: a árvore de documentação, as fichas de controlo, as evidências, a cobertura por controlo e o arquivo.
 
 ```{video} 354-o-sgsi-por-inteiro
 ```
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › SGSI › Árvore do SGSI
+**Governar** > **SGSI** > **Árvore do SGSI**
 
 ```{figure} /_static/capturas/sgsi-estrutura/menu.jpg
-:alt: Menu lateral: Governar › SGSI › Árvore do SGSI
+:alt: Menu lateral: Governar > SGSI > Árvore do SGSI
 
-O caminho no menu lateral: Governar › SGSI › Árvore do SGSI.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **SGSI**.
-3. Clique em **Árvore do SGSI**: abre o ecrã desta página.
+Os ecrãs desta página pertencem ao mesmo módulo, **Governar** > **SGSI**, e utilizam o editor descrito em {doc}`isms-documents`.
 
-
-Os ecrãs desta página estão todos no mesmo módulo, **Governar › SGSI**, e partilham o editor descrito em {doc}`isms-documents`.
-
-## A árvore do SGSI
-
-**Menu:** Governar › SGSI › Árvore do SGSI
+## Árvore do SGSI
 
 ```{figure} /_static/capturas/sgsi-estrutura/arvore-1.jpg
 :alt: A árvore de conformidade do SGSI
@@ -32,56 +25,57 @@ Os ecrãs desta página estão todos no mesmo módulo, **Governar › SGSI**, e 
 A árvore de conformidade do SGSI.
 ```
 
-1. **A árvore de conformidade**
+1. **Árvore de conformidade:** Vista hierárquica da documentação.
 
+A árvore apresenta toda a documentação do SGSI numa vista hierárquica: as políticas no nível superior e, abaixo, os procedimentos, os planos, os controlos e as evidências que delas dependem. Permite localizar um documento e identificar o seu fundamento.
 
-Toda a documentação do SGSI numa só vista hierárquica: as políticas em cima, e por baixo os procedimentos, os planos, os controlos e as evidências que delas dependem. É o índice que se usa a toda a hora para saber onde está um documento e o que o justifica.
+Um documento arquivado é apresentado esbatido e com a indicação **arquivado**. Não é ocultado, para preservar a hierarquia e evitar que os documentos que o citam fiquem sem referência.
 
-Um documento arquivado aparece esbatido e com o selo **arquivado**. Não é escondido de propósito: se desaparecesse, a hierarquia partia-se por baixo dele e os documentos que o citam ficavam órfãos no ecrã.
+## Controlos
 
-## Os controlos
-
-**Menu:** Governar › SGSI › Controlos
+**Governar** > **SGSI** > **Controlos**
 
 ```{figure} /_static/capturas/sgsi-estrutura/controlos-1.jpg
 :alt: A categoria Controlos, com o botão para criar e o dos arquivados
 
-A categoria Controlos, com o botão para criar e o dos arquivados.
+A categoria Controlos, com os botões de criação e de arquivados.
 ```
 
-1. **Novo documento**
-2. **Arquivados**
+No ecrã, encontra os seguintes elementos:
 
+1. Botão **Novo documento:** Cria uma ficha de controlo.
+2. Botão **Arquivados:** Apresenta as fichas arquivadas.
 
-As fichas de controlo descrevem como cada controlo está implementado na organização. Criam-se e editam-se como os outros documentos, no mesmo editor.
+As fichas de controlo descrevem a implementação de cada controlo na organização e são criadas e editadas no mesmo editor dos restantes documentos.
 
-Uma ficha de controlo **não governa** o controlo, descreve-o. Por isso, nesta categoria, o bloco de ligação a controlos explica porque não se liga, em vez de oferecer a ligação. Quem governa um controlo é uma política ou um procedimento.
+Uma ficha de controlo descreve o controlo, mas **não o governa**. Por este motivo, nesta categoria, o bloco de ligação a controlos apresenta essa explicação em vez da opção de ligação. Um controlo é governado por uma política ou por um procedimento.
 
-## A cobertura por controlo
+## Cobertura por controlo
 
-**Menu:** Governar › SGSI › Cobertura por controlo
+**Governar** > **SGSI** > **Cobertura por controlo**
 
 ```{figure} /_static/capturas/sgsi-estrutura/cobertura-1.jpg
 :alt: A cobertura documental, pelos dois lados
 
-A cobertura documental, pelos dois lados.
+A cobertura documental, nas duas perspetivas.
 ```
 
-1. **Só os que estão a descoberto**
-2. **Controlos aplicáveis sem documento**
-3. **Documentos que não cobrem controlo nenhum**
+No ecrã, encontra os seguintes elementos:
 
+1. Opção **só os que estão a descoberto:** Apresenta apenas as lacunas.
+2. **Controlos aplicáveis sem documento:** Controlos não governados por nenhum documento.
+3. **Documentos sem controlo:** Documentos que não cobrem nenhum controlo.
 
-As duas perguntas que um auditor faz logo:
+Este ecrã responde às duas primeiras questões de um auditor:
 
-- que controlos aplicáveis **não têm documento nenhum** que os governe;
-- que documentos **não cobrem controlo nenhum**.
+- os controlos aplicáveis **sem nenhum documento** que os governe;
+- os documentos que **não cobrem nenhum controlo**.
 
-A caixa **só os que estão a descoberto** deixa só o que falta. A ligação que esta página mostra é a mesma que se faz na página de cada documento: o mesmo facto, visto pelo lado do controlo.
+A associação apresentada neste ecrã é a mesma efetuada na página de cada documento, vista na perspetiva do controlo.
 
-## As evidências
+## Evidências
 
-**Menu:** Governar › SGSI › Evidências
+**Governar** > **SGSI** > **Evidências**
 
 ```{figure} /_static/capturas/sgsi-estrutura/evidencias-1.jpg
 :alt: A categoria Evidências
@@ -89,14 +83,13 @@ A caixa **só os que estão a descoberto** deixa só o que falta. A ligação qu
 A categoria Evidências.
 ```
 
-1. **Nova evidência**
+1. Botão **Nova evidência:** Cria um documento de evidência.
 
+Esta categoria contém os documentos que demonstram a aplicação de uma medida: relatórios, atas e registos. Uma evidência é **uma prova datada com prazo de validade**, pelo que não governa controlos, e o editor apresenta essa explicação em vez da opção de ligação. As evidências contabilizadas para a conformidade, recolhidas por controlo e com validade, são descritas em {doc}`/platform/monitoring/evidence`.
 
-Os documentos que provam que uma medida está aplicada: um relatório, uma ata, um registo. Uma evidência é **prova datada que caduca**, por isso não governa controlos, e o editor diz porquê em vez de oferecer a ligação. As provas que contam para a conformidade, recolhidas por controlo e com validade, estão em {doc}`/platform/monitoring/evidence`.
+## Arquivo
 
-## O arquivo
-
-**Menu:** Governar › SGSI › Arquivo
+**Governar** > **SGSI** > **Arquivo**
 
 ```{figure} /_static/capturas/sgsi-estrutura/arquivo-1.jpg
 :alt: O arquivo, com os documentos de todas as categorias
@@ -104,23 +97,24 @@ Os documentos que provam que uma medida está aplicada: um relatório, uma ata, 
 O arquivo, com os documentos de todas as categorias.
 ```
 
-1. **Restaurar**
-2. **Um documento arquivado**
+No ecrã, encontra os seguintes elementos:
 
+1. Botão **Restaurar:** Repõe o documento em vigor.
+2. **Documento arquivado:** Cada linha corresponde a um documento arquivado, com os botões **Restaurar** e **Apagar definitivamente**.
 
-Tudo o que foi arquivado, nas cinco categorias, com **Restaurar** e **Apagar definitivamente** em cada linha. É o sítio para a pergunta «o que é que já não está em vigor?».
+O arquivo reúne os documentos arquivados das cinco categorias e permite identificar os documentos que deixaram de estar em vigor.
 
-**Arquivar não é apagar.** Um documento arquivado sai das listas, do dossier do auditor e da cobertura documental, e passa a só-leitura; as versões, os anexos e as ligações a controlos ficam intactos e voltam com ele. Arquiva-se na página do próprio documento, no botão **Arquivar**.
+**O arquivo não elimina documentos.** Um documento arquivado deixa de constar das listas, do dossier do auditor e da cobertura documental e passa a modo de leitura; as versões, os anexos e as ligações a controlos são preservados e repostos com o documento. O arquivo é efetuado na página do documento, no botão **Arquivar**.
 
-**Apagar só se faz aqui, e só ao que já está arquivado.** A eliminação pede duas confirmações. A primeira diz o que se perde: todas as versões, os anexos (cópias assinadas incluídas) e as ligações aos controlos. A segunda obriga a **escrever o título do documento**.
+**A eliminação só é possível neste ecrã e apenas para documentos arquivados.** A eliminação exige duas confirmações: a primeira indica os elementos que serão perdidos (todas as versões, os anexos, incluindo as cópias assinadas, e as ligações aos controlos); a segunda exige a **introdução do título do documento**.
 
 ```{tip}
-**Na dúvida, deixe-o arquivado.** Um documento arquivado não estorva. Apagar só se justifica para o que nunca devia ter sido criado, como um duplicado ou um engano: uma política que esteve em vigor é história do SGSI, e um auditor vai preferir vê-la arquivada.
+**Em caso de dúvida, mantenha o documento arquivado.** A eliminação justifica-se apenas para documentos criados por engano, como duplicados. Uma política que esteve em vigor faz parte do histórico do SGSI, e um auditor prefere consultá-la arquivada.
 ```
 
 ## Resumo
 
-- A árvore mostra toda a documentação do SGSI e o que depende de quê.
-- Fichas de controlo e evidências não governam controlos; políticas e procedimentos governam.
-- A cobertura por controlo mostra o que está a descoberto, pelos dois lados.
-- Arquivar guarda tudo; apagar só no arquivo, com o título escrito.
+- A árvore apresenta toda a documentação do SGSI e as respetivas dependências.
+- As fichas de controlo e as evidências não governam controlos; as políticas e os procedimentos governam.
+- A cobertura por controlo identifica as lacunas, nas duas perspetivas.
+- O arquivo preserva todos os dados; a eliminação só é possível no arquivo, com introdução do título.

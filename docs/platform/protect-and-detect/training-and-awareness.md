@@ -1,80 +1,74 @@
 # Formação e sensibilização
 
-A formação registada por pessoa, e não por sessão: o acolhimento, as reciclagens com validade, e quem está em falta — com a lista nominal reservada a quem a pode ver.
+Registo da formação por pessoa, e não por sessão: acolhimento, reciclagens com validade e identificação das pessoas em falta, com a lista nominal reservada aos utilizadores autorizados.
 
 ```{video} 331-formacao-e-sensibilizacao
 ```
 
-A formação é uma das medidas que mais se esquece de provar. Nesta página vemos como a plataforma a regista: por pessoa, com validade, e com quem está em falta.
+A formação é uma das medidas cuja evidência é mais frequentemente omitida. Esta página descreve o seu registo na plataforma: por pessoa, com validade e com identificação das pessoas em falta.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Proteger › Pessoas › Formação e sensibilização
+**Proteger** > **Pessoas** > **Formação e sensibilização**
 
 ```{figure} /_static/capturas/formacao/menu.jpg
-:alt: Menu lateral: Proteger › Pessoas › Formação e sensibilização
+:alt: Menu lateral: Proteger > Pessoas > Formação e sensibilização
 
-O caminho no menu lateral: Proteger › Pessoas › Formação e sensibilização.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Proteger**.
-2. Dentro dele, abra **Pessoas**.
-3. Clique em **Formação e sensibilização**: abre o ecrã desta página.
+## Finalidade
 
-## Porquê
+O Anexo IV exige sensibilização e formação em cibersegurança; no Grupo A, com um plano e exercícios periódicos de phishing. A ISO 27001 exige o registo por colaborador, e não por sessão, sendo esta uma das não conformidades mais frequentes em auditoria.
 
-O Anexo IV pede sensibilização e formação em cibersegurança; no Grupo A, com um plano, e com exercícios periódicos de phishing. A ISO 27001 pede o registo por colaborador, não por sessão — e é das primeiras não conformidades em auditorias reais.
+**Finalidade**
 
-**Para que serve**
+- O Anexo IV exige ações de sensibilização ou formação; no Grupo A, um plano de formação e exercícios de phishing (H.EC).
+- A ISO/IEC 27001 exige o registo por colaborador, sendo esta uma das não conformidades mais comuns.
+- Nas entidades essenciais e importantes, a direção assegura formação regular (art. 25.º do DL).
 
-- O Anexo IV pede ações de sensibilização ou formação; no Grupo A, um plano de formação, e exercícios de phishing (H.EC).
-- A ISO/IEC 27001 pede o registo por colaborador — uma das não conformidades mais comuns.
-- Nas essenciais e importantes, a direção assegura formação regular (art. 25.º do DL).
+## Configuração do ecrã
 
-## O ecrã
+São registadas a formação de acolhimento e as reciclagens, cada uma com validade. A data de entrada de cada pessoa, no registo de pessoal, determina o início da contagem do prazo de acolhimento.
 
-**Menu:** Proteger › Pessoas › Formação e sensibilização
-
-No menu Proteger, Pessoas, Formação e sensibilização. Regista-se a formação de acolhimento e as reciclagens, cada uma com validade. A data de entrada de cada pessoa, no registo de pessoal, é de onde conta o prazo do acolhimento.
-
-O estado sai por pessoa: sem formação inicial, formação caducada, a caducar, ou em dia. E, se os grupos tiverem pessoas atribuídas, a mesma medida por área. A lista com os nomes de quem está em atraso só a vê quem tem papel de operador: dizer que alguém não cumpriu é um dado sobre essa pessoa.
+O estado é apresentado por pessoa (sem formação inicial, formação caducada, a caducar ou em dia) e, se os grupos tiverem pessoas atribuídas, por área. A lista nominal das pessoas em atraso está disponível apenas para utilizadores com papel de operador, uma vez que a indicação de incumprimento constitui um dado pessoal.
 
 ```{figure} /_static/capturas/formacao/abrir-1.jpg
-:alt: Proteger › Pessoas › Formação e sensibilização
+:alt: Proteger > Pessoas > Formação e sensibilização
 
-O ecrã em Proteger › Pessoas › Formação e sensibilização (1 de 4).
+Ecrã **Proteger** > **Pessoas** > **Formação e sensibilização** (1 de 4).
 ```
 
-1. Clique em **Formações**.
+1. Separador **Formações:** Apresenta as formações registadas.
 
 ```{figure} /_static/capturas/formacao/abrir-2.jpg
-:alt: Proteger › Pessoas › Formação e sensibilização
+:alt: Proteger > Pessoas > Formação e sensibilização
 
-O ecrã em Proteger › Pessoas › Formação e sensibilização (2 de 4).
+Ecrã **Proteger** > **Pessoas** > **Formação e sensibilização** (2 de 4).
 ```
 
-1. Clique em **Pessoas**.
+1. Separador **Pessoas:** Apresenta o estado de cada pessoa.
 
 ```{figure} /_static/capturas/formacao/abrir-3.jpg
-:alt: Proteger › Pessoas › Formação e sensibilização
+:alt: Proteger > Pessoas > Formação e sensibilização
 
-O ecrã em Proteger › Pessoas › Formação e sensibilização (3 de 4).
+Ecrã **Proteger** > **Pessoas** > **Formação e sensibilização** (3 de 4).
 ```
 
-1. Clique em **Lacunas**.
+1. Separador **Lacunas:** Apresenta as pessoas em falta.
 
 ```{figure} /_static/capturas/formacao/abrir-4.jpg
-:alt: Proteger › Pessoas › Formação e sensibilização
+:alt: Proteger > Pessoas > Formação e sensibilização
 
-O ecrã em Proteger › Pessoas › Formação e sensibilização (4 de 4).
+Ecrã **Proteger** > **Pessoas** > **Formação e sensibilização** (4 de 4).
 ```
 
 ## Resumo
 
-Peça aos recursos humanos as entradas, as saídas e as presenças; à direção, o plano anual. A plataforma mede quem está em dia — mas não dá a formação, nem envia os exercícios de phishing: regista-os.
+Solicite aos recursos humanos as entradas, as saídas e as presenças, e à direção o plano anual. A plataforma mede o cumprimento, mas não ministra a formação nem envia os exercícios de phishing: regista-os.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- Aos recursos humanos: as entradas e saídas, e as presenças nas formações.
-- À direção: o plano anual de formação, começando por ela própria.
-- A plataforma mede quem está em dia; não dá a formação nem envia exercícios de phishing.
+- Recursos humanos: entradas, saídas e presenças nas formações.
+- Direção: plano anual de formação, começando pelos próprios membros.
+- A plataforma mede o cumprimento; não ministra a formação nem envia exercícios de phishing.

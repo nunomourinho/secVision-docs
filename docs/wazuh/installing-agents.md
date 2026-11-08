@@ -1,173 +1,167 @@
 # Instalar os agentes do Wazuh
 
-O que o agente faz numa máquina e porque se instala endurecido; o gerador de scripts do SecVision (gestor, portas, versão, políticas de confiança zero), a fila dos sistemas em GAP, e o assistente do próprio Wazuh, lado a lado; e onde a máquina aparece depois de instalada.
+Função do agente numa máquina e motivo da instalação endurecida; o gerador de scripts do SecVision (gestor, portas, versão e políticas de confiança zero), a fila dos sistemas em GAP e o assistente do próprio Wazuh, em comparação; e a apresentação da máquina após a instalação.
 
 ```{video} 502-instalar-os-agentes
 ```
 
-No página anterior vimos máquinas monitorizadas e máquinas em GAP. Neste vemos como se fecha um GAP: instalando o agente do Wazuh, com o script que o SecVision gera, e o que o próprio Wazuh oferece.
+A página anterior apresenta as máquinas monitorizadas e as máquinas em GAP. Esta página descreve a correção de um GAP através da instalação do agente do Wazuh, com o script gerado pelo SecVision, e as opções disponibilizadas pelo próprio Wazuh.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Proteger › Soc › Wazuh Agent Builder
+**Proteger** > **SOC** > **Wazuh Agent Builder**
 
 ```{figure} /_static/capturas/wazuh-agentes/menu.jpg
-:alt: Menu lateral: Proteger › Soc › Wazuh Agent Builder
+:alt: Menu lateral: Proteger > SOC > Wazuh Agent Builder
 
-O caminho no menu lateral: Proteger › Soc › Wazuh Agent Builder.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Proteger**.
-2. Dentro dele, abra **Soc**.
-3. Clique em **Wazuh Agent Builder**: abre o ecrã desta página.
+## Conceito
 
-## O conceito
+O agente é executado com privilégios elevados em todas as máquinas. Estes privilégios permitem-lhe ler os registos e o inventário, mas tornam-no um risco se estiver mal configurado.
 
-O agente corre com privilégios elevados em todas as máquinas. É o que lhe permite ler os registos e o inventário, e é também o que o torna perigoso se estiver mal configurado.
+Por omissão, o gestor pode ordenar ao agente a execução de comandos, a alteração da configuração ou a atualização automática, pelo que o comprometimento do gestor compromete todas as máquinas. A instalação de confiança zero elimina este risco: o agente apenas envia dados, não recebe ordens e comunica exclusivamente com o gestor.
 
-Por omissão, o gestor pode mandar o agente executar comandos, mudar a sua configuração, ou atualizá-lo sozinho. Quem tomar o gestor toma todas as máquinas. A instalação de confiança zero corta isso: o agente só envia dados, não recebe ordens, e só fala com o gestor.
+**Motivo da instalação endurecida**
 
-**Porque é que o agente se instala endurecido**
+- O agente é executado com privilégios elevados em cada máquina e constitui um ponto de entrada se estiver mal configurado.
+- Por omissão, o gestor pode ordenar ao agente a execução de comandos e a atualização automática.
+- Confiança zero: o agente apenas envia dados, não recebe ordens e comunica exclusivamente com o gestor.
 
-- O agente corre com privilégios elevados em cada máquina: é uma porta de entrada, se for mal configurado.
-- Por omissão, o gestor pode mandar o agente executar comandos e atualizar-se sozinho.
-- Confiança zero: o agente só envia dados, não recebe ordens, e só fala com o gestor.
+## Gerador de scripts
 
-## O gerador
-
-**Menu:** Proteger › SOC › Wazuh Agent Builder
-
-No Wazuh Agent Builder diz-se onde está o gestor: o endereço, aqui um de exemplo, e as duas portas, a 1514 para os eventos e a 1515 para o registo do agente.
-
-E a versão do agente. Tem de ser a do gestor, ou mais antiga: um agente mais novo do que o gestor não se liga. O gestor deste ambiente está na 4.14.10, e é essa que se escreve. A configuração fica guardada sozinha.
+No Wazuh Agent Builder, é indicada a localização do gestor e a versão do agente. A versão tem de ser igual ou anterior à do gestor, uma vez que um agente mais recente não estabelece ligação. O gestor deste ambiente está na versão 4.14.10. A configuração é guardada automaticamente.
 
 ```{figure} /_static/capturas/wazuh-agentes/builder-1.jpg
-:alt: Proteger › SOC › Wazuh Agent Builder
+:alt: Proteger > SOC > Wazuh Agent Builder
 
-O ecrã em Proteger › SOC › Wazuh Agent Builder.
+Ecrã **Proteger** > **SOC** > **Wazuh Agent Builder**.
 ```
 
-1. **O endereço do gestor**
-2. **1514 eventos · 1515 registo**
-3. Escreva «4.14.10» neste campo.
-4. **A versão do gestor, ou mais antiga**
+No ecrã, encontra os seguintes elementos:
 
-**Menu:** Wazuh Agent Builder › Políticas Zero-Trust
+1. **Endereço do gestor:** Neste exemplo, um endereço ilustrativo.
+2. **Portas:** 1514 para os eventos e 1515 para o registo do agente.
+3. **Versão do agente:** Introduza «4.14.10» neste campo.
+4. **Aviso de versão:** A versão deve ser igual ou anterior à do gestor.
 
-Em baixo, as políticas de confiança zero, cada uma com o efeito escrito ao lado: bloquear os comandos remotos, desligar as atualizações pelo gestor e as respostas ativas, blindar as permissões dos ficheiros do agente, e a firewall do agente, que só o deixa falar com o gestor.
+**Wazuh Agent Builder** > **Políticas Zero-Trust**
 
-Sai um script por sistema operativo: Windows, as versões antigas de Windows Server, e Linux. O script descarrega o pacote oficial do Wazuh, instala-o, e aplica as políticas escolhidas.
+As políticas de confiança zero são apresentadas com o respetivo efeito: bloqueio dos comandos remotos, desativação das atualizações pelo gestor e das respostas ativas, restrição das permissões dos ficheiros do agente e firewall do agente, que restringe a comunicação ao gestor.
+
+É gerado um script por sistema operativo: Windows, versões antigas do Windows Server e Linux. O script transfere o pacote oficial do Wazuh, instala-o e aplica as políticas selecionadas.
 
 ```{figure} /_static/capturas/wazuh-agentes/zerotrust-1.jpg
-:alt: Wazuh Agent Builder › Políticas Zero-Trust
+:alt: Wazuh Agent Builder > Políticas Zero-Trust
 
-O ecrã em Wazuh Agent Builder › Políticas Zero-Trust (1 de 3).
+Ecrã **Wazuh Agent Builder** > **Políticas Zero-Trust** (1 de 3).
 ```
 
-1. **O gestor não manda executar nada**
+1. **Bloqueio de comandos remotos:** O gestor não pode ordenar a execução de comandos.
 
 ```{figure} /_static/capturas/wazuh-agentes/zerotrust-2.jpg
-:alt: Wazuh Agent Builder › Políticas Zero-Trust
+:alt: Wazuh Agent Builder > Políticas Zero-Trust
 
-O ecrã em Wazuh Agent Builder › Políticas Zero-Trust (2 de 3).
+Ecrã **Wazuh Agent Builder** > **Políticas Zero-Trust** (2 de 3).
 ```
 
-1. **Só fala com o gestor**
+1. **Firewall do agente:** Restringe a comunicação ao gestor.
 2. Clique em **Linux — Debian/Ubuntu/RHEL (.sh)**.
 
 ```{figure} /_static/capturas/wazuh-agentes/zerotrust-3.jpg
-:alt: Wazuh Agent Builder › Políticas Zero-Trust
+:alt: Wazuh Agent Builder > Políticas Zero-Trust
 
-O ecrã em Wazuh Agent Builder › Políticas Zero-Trust (3 de 3).
+Ecrã **Wazuh Agent Builder** > **Políticas Zero-Trust** (3 de 3).
 ```
 
-1. **Um script por sistema operativo**
+1. **Script:** Um script por sistema operativo.
 
-## A fila
+## Fila de integração
 
-**Menu:** Proteger › Instalar agente Wazuh
+**Proteger** > **Instalar agente Wazuh**
 
-A fila de integração mostra os sistemas em âmbito sem agente, por ordem: primeiro a criticidade, depois a exposição, depois os dias em GAP. Neste ambiente são três máquinas Windows.
+A fila de integração apresenta os sistemas incluídos no âmbito sem agente, ordenados pela criticidade, pela exposição e pelos dias em GAP. Neste ambiente, são três máquinas Windows.
 
-Iniciar Integração abre o script já escolhido para o sistema operativo que o catálogo diz, com os valores do gerador. É este que se entrega a quem administra a máquina, com as credenciais dela: a plataforma não instala nada sozinha.
+O botão **Iniciar Integração** abre o script correspondente ao sistema operativo indicado no catálogo, com os valores do gerador. Este script é entregue ao administrador da máquina, que o executa com as respetivas credenciais; a plataforma não instala o agente.
 
 ```{figure} /_static/capturas/wazuh-agentes/fila-1.jpg
-:alt: Proteger › Instalar agente Wazuh
+:alt: Proteger > Instalar agente Wazuh
 
-O ecrã em Proteger › Instalar agente Wazuh (1 de 3).
+Ecrã **Proteger** > **Instalar agente Wazuh** (1 de 3).
 ```
 
 ```{figure} /_static/capturas/wazuh-agentes/fila-2.jpg
-:alt: Proteger › Instalar agente Wazuh
+:alt: Proteger > Instalar agente Wazuh
 
-O ecrã em Proteger › Instalar agente Wazuh (2 de 3).
+Ecrã **Proteger** > **Instalar agente Wazuh** (2 de 3).
 ```
 
-1. **Criticidade, exposição, dias em GAP**
+1. **Ordenação:** Criticidade, exposição e dias em GAP.
 2. Clique em **Iniciar Integração**.
 
 ```{figure} /_static/capturas/wazuh-agentes/fila-3.jpg
-:alt: Proteger › Instalar agente Wazuh
+:alt: Proteger > Instalar agente Wazuh
 
-O ecrã em Proteger › Instalar agente Wazuh (3 de 3).
+Ecrã **Proteger** > **Instalar agente Wazuh** (3 de 3).
 ```
 
-1. **O sistema operativo do catálogo**
+1. **Sistema operativo:** Selecionado a partir do catálogo.
 
-## No Wazuh
+## Assistente do Wazuh
 
-**Menu:** Wazuh › Endpoints › Deploy new agent
+**Wazuh** > **Endpoints** > **Deploy new agent**
 
-O próprio Wazuh também tem um assistente, no painel dele: escolhe-se o pacote, aqui Debian, e o endereço do gestor, e ele dá o comando de instalação, com a mesma versão.
+O painel do Wazuh dispõe também de um assistente: após a seleção do pacote (neste exemplo, Debian) e do endereço do gestor, é apresentado o comando de instalação, com a mesma versão.
 
-A diferença está no que vem depois. O comando do Wazuh instala o agente com a configuração de origem; o script do SecVision instala o mesmo pacote oficial e endurece-o. Os dois servem, mas só um fecha as portas que o agente abre por omissão.
+A diferença reside na configuração aplicada. O comando do Wazuh instala o agente com a configuração de origem; o script do SecVision instala o mesmo pacote oficial e aplica o endurecimento. Ambos são funcionais, mas apenas o segundo elimina os riscos da configuração por omissão.
 
 ```{figure} /_static/capturas/wazuh-agentes/wazuh_deploy-1.jpg
-:alt: Wazuh › Endpoints › Deploy new agent
+:alt: Wazuh > Endpoints > Deploy new agent
 
-O ecrã em Wazuh › Endpoints › Deploy new agent (1 de 3).
+Ecrã **Wazuh** > **Endpoints** > **Deploy new agent** (1 de 3).
 ```
 
 1. Clique em **DEB amd64**.
 
 ```{figure} /_static/capturas/wazuh-agentes/wazuh_deploy-2.jpg
-:alt: Wazuh › Endpoints › Deploy new agent
+:alt: Wazuh > Endpoints > Deploy new agent
 
-O ecrã em Wazuh › Endpoints › Deploy new agent (2 de 3).
+Ecrã **Wazuh** > **Endpoints** > **Deploy new agent** (2 de 3).
 ```
 
-1. Escreva «10.0.0.50» no campo **Server address**.
+1. Introduza «10.0.0.50» no campo **Server address**.
 
 ```{figure} /_static/capturas/wazuh-agentes/wazuh_deploy-3.jpg
-:alt: Wazuh › Endpoints › Deploy new agent
+:alt: Wazuh > Endpoints > Deploy new agent
 
-O ecrã em Wazuh › Endpoints › Deploy new agent (3 de 3).
+Ecrã **Wazuh** > **Endpoints** > **Deploy new agent** (3 de 3).
 ```
 
-1. **O comando do próprio Wazuh**
+1. **Comando de instalação:** Gerado pelo próprio Wazuh.
 
-**Menu:** Wazuh › Endpoints › Agents
+**Wazuh** > **Endpoints** > **Agents**
 
-Corrido o script, a máquina aparece aqui, na lista de agentes do Wazuh, ativa. Os agentes deste ambiente de testes foram instalados com o mesmo pacote oficial, um por máquina Linux do catálogo.
+Após a execução do script, a máquina é apresentada como ativa na lista de agentes do Wazuh. Os agentes deste ambiente de testes foram instalados com o mesmo pacote oficial, um por máquina Linux do catálogo.
 
-Falta o último passo, que é do SecVision: associar o agente ao sistema do catálogo. É o que tira o sistema do GAP, e tem o seu próprio página.
+O último passo é efetuado no SecVision: a associação do agente ao sistema do catálogo, que retira o sistema do estado GAP e é descrita numa página própria.
 
 ```{figure} /_static/capturas/wazuh-agentes/wazuh_agentes-1.jpg
-:alt: Wazuh › Endpoints › Agents
+:alt: Wazuh > Endpoints > Agents
 
-O ecrã em Wazuh › Endpoints › Agents.
+Ecrã **Wazuh** > **Endpoints** > **Agents**.
 ```
 
-1. **Depois de instalado, aparece aqui**
+1. **Agente instalado:** Apresentado na lista após a instalação.
 
 ## Resumo
 
-A plataforma gera o script certo para cada máquina e diz por que ordem se instalam.
+A plataforma gera o script adequado a cada máquina e define a ordem de instalação.
 
-E não instala nada sozinha. Uma ferramenta de gestão com credenciais de administrador em todas as máquinas seria, ela própria, o maior risco da organização.
+A plataforma não instala agentes, uma vez que uma ferramenta de gestão com credenciais de administrador em todas as máquinas constituiria, em si mesma, o maior risco da organização.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
 - Gera o script de cada sistema operativo, com o gestor, a versão e as políticas de confiança zero.
-- Ordena os sistemas em GAP pela criticidade, a exposição e os dias sem monitorização.
-- Não instala nada: quem corre o script é uma pessoa, com as credenciais da máquina.
+- Ordena os sistemas em GAP pela criticidade, pela exposição e pelos dias sem monitorização.
+- Não instala agentes: o script é executado por um operador, com as credenciais da máquina.

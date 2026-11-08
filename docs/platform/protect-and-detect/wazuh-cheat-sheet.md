@@ -1,28 +1,23 @@
 # Wazuh Cheat Sheet
 
-A referência rápida de comandos, ficheiros e configurações do Wazuh, para quando uma regra gerada pela plataforma precisa de ser mexida à mão.
+Referência rápida de comandos, ficheiros e configurações do Wazuh, para os casos em que uma regra gerada pela plataforma necessita de ajuste manual.
 
 ```{video} 358-wazuh-cheat-sheet
 ```
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Proteger › SOC › Wazuh Cheat Sheet
+**Proteger** > **SOC** > **Wazuh Cheat Sheet**
 
 ```{figure} /_static/capturas/wazuh-cheatsheet/menu.jpg
-:alt: Menu lateral: Proteger › SOC › Wazuh Cheat Sheet
+:alt: Menu lateral: Proteger > SOC > Wazuh Cheat Sheet
 
-O caminho no menu lateral: Proteger › SOC › Wazuh Cheat Sheet.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Proteger**.
-2. Dentro dele, abra **SOC**.
-3. Clique em **Wazuh Cheat Sheet**: abre o ecrã desta página.
+Este ecrã não constitui um passo obrigatório do SGSI. Destina-se às intervenções diretas no Wazuh: teste de uma regra, consulta de um ficheiro de configuração ou reinício do gestor.
 
-
-Não é um passo obrigatório do SGSI. Está aqui porque é onde se trabalha quando é preciso ir ao próprio Wazuh: testar uma regra, ver um ficheiro de configuração, reiniciar o gestor.
-
-## O ecrã
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/wazuh-cheatsheet/separadores-1.jpg
 :alt: Os separadores da cheat sheet e o botão de copiar
@@ -30,35 +25,25 @@ Não é um passo obrigatório do SGSI. Está aqui porque é onde se trabalha qua
 Os separadores da cheat sheet e o botão de copiar.
 ```
 
-1. **Comandos**
-2. **Ficheiros**
-3. **Integrações**
-4. **Regras & Decoders**
-5. **Boas Práticas**
-6. **Troubleshooting**
-7. **Copiar o comando**
+No ecrã, encontra os seguintes elementos:
 
-
-Cada separador agrupa um tema:
-
-- **Comandos:** gestor, agente, *indexer* e *dashboard*, o reinício completo do *stack*, testar regras com o `wazuh-logtest`, validar a configuração, *cluster*, FIM, *rootcheck* e estatísticas;
-- **Ficheiros:** onde está cada configuração;
-- **Integrações:** a API do Wazuh, como testar a ligação e obter o *token*;
-- **Regras & Decoders:** o fluxo de processamento, a estrutura de decoders e regras, e exemplos comentados;
-- **Boas Práticas** e **Troubleshooting**.
-
-Cada comando tem o seu botão **Copiar**.
+1. Separador **Comandos:** Gestor, agente, *indexer* e *dashboard*, reinício completo do *stack*, teste de regras com o `wazuh-logtest`, validação da configuração, *cluster*, FIM, *rootcheck* e estatísticas.
+2. Separador **Ficheiros:** Localização de cada configuração.
+3. Separador **Integrações:** API do Wazuh, teste da ligação e obtenção do *token*.
+4. Separador **Regras & Decoders:** Fluxo de processamento, estrutura de decoders e regras e exemplos comentados.
+5. Separador **Boas Práticas.**
+6. Separador **Troubleshooting.**
+7. Botão **Copiar:** Copia o comando correspondente; cada comando tem o seu botão.
 
 ## Regras e decoders
 
 ```{figure} /_static/capturas/wazuh-cheatsheet/regras-2.jpg
 :alt: O separador Regras & Decoders
 
-O separador Regras & Decoders.
+O separador **Regras & Decoders**.
 ```
 
-
-O fluxo recomendado para uma regra nova:
+Fluxo recomendado para uma nova regra:
 
 1. Obter um *log* bruto real.
 2. Criar o *decoder*, que extrai os campos do *log* (`srcip`, `username`, `action`…).
@@ -68,13 +53,13 @@ O fluxo recomendado para uma regra nova:
 6. Validar o XML com o `xmllint`.
 7. Reiniciar o gestor e confirmar os alertas.
 
-Ao lado está a tabela dos níveis de severidade, de 0 (ignorar, nunca gera alerta) a 12 ou mais (ataques confirmados).
+O separador inclui também a tabela dos níveis de severidade, de 0 (ignorar, nunca gera alerta) a 12 ou superior (ataques confirmados).
 
 ```{important}
-**Nunca edite `/var/ossec/ruleset/`:** esses ficheiros são substituídos nas atualizações. As regras e os decoders próprios vão sempre para `/var/ossec/etc/rules/` e `/var/ossec/etc/decoders/`.
+**Não edite `/var/ossec/ruleset/`:** estes ficheiros são substituídos nas atualizações. As regras e os decoders próprios devem ser guardados em `/var/ossec/etc/rules/` e `/var/ossec/etc/decoders/`.
 ```
 
 ## Resumo
 
-- A referência dos comandos e ficheiros do Wazuh, com um botão para copiar cada um.
-- Para mexer em regras, ver também {doc}`/wazuh/detection-rules` e {doc}`/wazuh/ai-classification-and-studio`.
+- Referência dos comandos e ficheiros do Wazuh, com um botão para copiar cada comando.
+- Para a edição de regras, ver também {doc}`/wazuh/detection-rules` e {doc}`/wazuh/ai-classification-and-studio`.

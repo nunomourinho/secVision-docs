@@ -1,52 +1,62 @@
 # Primeiro acesso e segurança da plataforma
 
-O primeiro acesso em três tempos — senha inicial, senha nova, segundo fator — e as três decisões sobre a segurança da própria plataforma que se tomam antes de escrever a primeira política.
+O primeiro acesso em três passos (palavra-passe inicial, nova palavra-passe e segundo fator) e as três decisões sobre a segurança da própria plataforma, a tomar antes de redigir a primeira política.
 
 ```{video} 301-primeiro-acesso-e-seguranca
 ```
 
-Começamos o módulo da plataforma pela porta de entrada: o primeiro acesso. E por uma pergunta que um auditor faz assim que percebe que o sistema de gestão vive aqui: e a segurança da própria ferramenta?
+O módulo da plataforma começa pelo primeiro acesso e pela questão que um auditor coloca quando verifica que o sistema de gestão está suportado nesta ferramenta: qual é a segurança da própria ferramenta?
 
 ## Primeiro acesso
 
-O primeiro acesso tem três tempos, e não se saltam. Entra-se com a senha inicial; a plataforma obriga a mudá-la, com regras de complexidade; e obriga a inscrever um segundo fator — uma aplicação autenticadora, ou uma chave física. Sem os dois passos, não se chega a página nenhuma.
+O primeiro acesso é composto por três passos obrigatórios:
 
-Faça isto primeiro, antes de criar o que quer que seja: a senha inicial está escrita na documentação pública do produto. {doc}`/installation/first-access` mostra estes três tempos, ecrã a ecrã.
+1. Iniciar sessão com a palavra-passe inicial.
+2. Definir uma nova palavra-passe, de acordo com as regras de complexidade.
+3. Registar um segundo fator de autenticação (aplicação autenticadora ou chave de segurança física).
 
-**O primeiro acesso, em três tempos**
+O acesso às restantes páginas só fica disponível após a conclusão dos passos 2 e 3.
 
-1 — A senha inicial
-: admin e a senha de instalação — a plataforma responde que tem de mudar
+Conclua o primeiro acesso antes de qualquer outra configuração: a palavra-passe inicial consta da documentação pública do produto. A página {doc}`/installation/first-access` apresenta estes três passos, ecrã a ecrã.
 
-2 — Uma senha nova
-: com política de complexidade, e sem repetir as três últimas
+**O primeiro acesso em três passos**
 
-3 — O segundo fator
-: uma aplicação autenticadora, ou uma chave física ou biometria
+1 — Palavra-passe inicial
+: utilizador admin e palavra-passe de instalação; a plataforma solicita a alteração
+
+2 — Nova palavra-passe
+: sujeita à política de complexidade, sem repetir as três últimas
+
+3 — Segundo fator
+: aplicação autenticadora, chave física ou biometria
 
 ```{figure} /_static/img/301-primeiro-acesso-e-seguranca/01.jpg
-:alt: O primeiro acesso, em três tempos
+:alt: O primeiro acesso em três passos
 
-O primeiro acesso, em três tempos.
+O primeiro acesso em três passos.
 ```
 
-## A segurança da plataforma
+## Segurança da plataforma
 
-Antes de alguém escrever a primeira política, decidem-se três coisas, fora da aplicação. Se a plataforma fica atrás de HTTPS: o instalador serve HTTP, e sem cifra no transporte as chaves físicas não funcionam. Quem alcança a máquina na rede. E onde ficam as cópias de segurança, que levam segredos.
+Antes de redigir a primeira política, devem ser tomadas três decisões fora da aplicação:
 
-O que a plataforma faz sozinha está descrito no guia do administrador: política de senhas, segundo fator obrigatório, bloqueio ao fim de cinco tentativas, trilha que não se apaga, e cifra das colunas sensíveis na base de dados.
+- **HTTPS:** O instalador disponibiliza a plataforma em HTTP. Sem encriptação no transporte, as chaves de segurança físicas não funcionam.
+- **Acesso de rede:** Definição dos equipamentos que podem aceder à máquina.
+- **Cópias de segurança:** Local de armazenamento das cópias, que contêm segredos.
 
-**A segurança da própria plataforma — três decisões**
+As proteções aplicadas automaticamente pela plataforma estão descritas no guia do administrador: política de palavras-passe, segundo fator obrigatório, bloqueio ao fim de cinco tentativas, trilha de auditoria não eliminável e encriptação das colunas sensíveis na base de dados.
 
-- HTTPS: o instalador serve HTTP; sem cifra no transporte não há cookies seguros, e as chaves físicas não funcionam.
-- Quem alcança a máquina: o porto da aplicação, e o porto das listas de indicadores, que não pede autenticação.
-- Onde ficam as cópias de segurança — que levam segredos lá dentro.
+**Segurança da própria plataforma: três decisões**
+
+- HTTPS: o instalador disponibiliza a plataforma em HTTP; sem encriptação no transporte, os cookies seguros e as chaves físicas não funcionam.
+- Acesso à máquina: a porta da aplicação e a porta das listas de indicadores, que não exige autenticação.
+- Local das cópias de segurança, que contêm segredos.
 
 ## Resumo
 
-Peça à informática o certificado, as regras de acesso na rede e o destino das cópias. E registe a decisão: é a primeira coisa que um auditor pergunta, e não ter resposta é um mau começo.
+Solicite à equipa de informática o certificado, as regras de acesso na rede e o destino das cópias de segurança, e registe a decisão tomada. Esta decisão é um dos primeiros elementos verificados numa auditoria.
 
-**O que pedir a quem**
+**Responsáveis**
 
-- À informática: o certificado HTTPS, as regras de firewall, e o destino das cópias de segurança.
-- Ao responsável: registar a decisão sobre a segurança da plataforma — é a prova de que se pensou nela.
+- Equipa de informática: certificado HTTPS, regras de firewall e destino das cópias de segurança.
+- Responsável de segurança: registo da decisão sobre a segurança da plataforma, como evidência de que foi avaliada.

@@ -1,77 +1,77 @@
 # Normas e quadros de referência
 
-De onde vêm as listas de controlos: ISO/IEC 27001 e 27002, QNRCS, NIST CSF. E três palavras que se confundem — conformidade, certificação e acreditação — com o que a lei portuguesa faz com elas.
+Origem das listas de controlos (ISO/IEC 27001 e 27002, QNRCS, NIST CSF) e distinção entre conformidade, certificação e acreditação, com o respetivo enquadramento na lei portuguesa.
 
 ```{video} 105-normas-e-referenciais
 ```
 
-Ninguém tem de inventar a sua lista de controlos. Há documentos que reúnem a experiência de milhares de organizações: as normas e os quadros de referência. Nesta página vemos os principais, e três palavras que toda a gente confunde.
+As listas de controlos não têm de ser criadas de raiz. As normas e os quadros de referência reúnem a experiência de milhares de organizações. Esta página apresenta os principais referenciais e três termos frequentemente confundidos.
 
-## Os referenciais
+## Referenciais
 
-A ISO/IEC 27001 é a norma internacional com os requisitos de um sistema de gestão da segurança da informação — e é a que se certifica. A ISO/IEC 27002 é a companheira: explica como aplicar cada controlo, mas não se certifica.
+A ISO/IEC 27001 é a norma internacional que define os requisitos de um sistema de gestão da segurança da informação e é a norma objeto de certificação. A ISO/IEC 27002 é complementar: descreve a aplicação de cada controlo, mas não é certificável.
 
-O QNRCS é o Quadro Nacional de Referência para a Cibersegurança, do Centro Nacional de Cibersegurança — é dele que saem as medidas mínimas da lei portuguesa. E o NIST CSF, americano, organiza tudo em seis funções: governar, identificar, proteger, detetar, responder e recuperar. Os menus da plataforma seguem exatamente essas seis funções.
+O QNRCS é o Quadro Nacional de Referência para a Cibersegurança, do Centro Nacional de Cibersegurança, e é a origem das medidas mínimas da lei portuguesa. O NIST CSF, norte-americano, organiza os controlos em seis funções: governar, identificar, proteger, detetar, responder e recuperar. Os menus da plataforma seguem estas seis funções.
 
-**Os referenciais que vai encontrar**
+**Principais referenciais**
 
-| Referencial | O que é | De quem |
+| Referencial | Descrição | Entidade |
 |---|---|---|
-| ISO/IEC 27001 | requisitos de um sistema de gestão da segurança da informação; é a que se certifica | ISO e IEC, internacional |
-| ISO/IEC 27002 | orientações para aplicar cada controlo; não se certifica | ISO e IEC, internacional |
+| ISO/IEC 27001 | requisitos de um sistema de gestão da segurança da informação; é a norma certificável | ISO e IEC, internacional |
+| ISO/IEC 27002 | orientações para a aplicação de cada controlo; não é certificável | ISO e IEC, internacional |
 | QNRCS | Quadro Nacional de Referência para a Cibersegurança: objetivos, categorias e controlos | CNCS, Portugal |
-| NIST CSF | seis funções — governar, identificar, proteger, detetar, responder, recuperar | NIST, Estados Unidos |
+| NIST CSF | seis funções: governar, identificar, proteger, detetar, responder, recuperar | NIST, Estados Unidos |
 
 ```{tip}
 Os menus do SecVision estão organizados pelas seis funções do NIST CSF.
 ```
 
-Uma distinção importante: uma lei obriga. O Decreto-Lei 125 de 2025 e o Regulamento 756 de 2026 aplicam-se a quem está abrangido, quer queira quer não. Uma norma é voluntária: adota-se porque se quer, ou porque alguém a pede.
+Uma lei é obrigatória: o Decreto-Lei n.º 125/2025 e o Regulamento n.º 756/2026 aplicam-se a todas as entidades abrangidas. Uma norma é voluntária: é adotada por decisão própria ou por exigência de terceiros.
 
-Mas cruzam-se. Como vamos ver, a lei portuguesa reconhece a certificação numa norma como uma forma de demonstrar que se cumprem as medidas obrigatórias.
+Os dois instrumentos cruzam-se: a lei portuguesa reconhece a certificação numa norma como forma de demonstrar o cumprimento das medidas obrigatórias.
 
-**Uma lei não é uma norma**
+**Lei e norma**
 
-- Uma lei obriga: o DL 125/2025 e o Regulamento 756/2026 aplicam-se a quem está abrangido, queira ou não.
-- Uma norma é voluntária: adota-se porque se quer, ou porque um cliente ou a lei a reconhece.
-- Muitas vezes cruzam-se: a lei portuguesa reconhece a ISO/IEC 27001 como uma forma de provar o cumprimento.
+- Uma lei é obrigatória: o DL 125/2025 e o Regulamento 756/2026 aplicam-se a todas as entidades abrangidas.
+- Uma norma é voluntária: é adotada por decisão própria, ou por exigência de um cliente ou da lei.
+- Os dois instrumentos cruzam-se: a lei portuguesa reconhece a ISO/IEC 27001 como forma de demonstrar o cumprimento.
 
-## Conformidade, certificação, acreditação
+## Conformidade, certificação e acreditação
 
-Três palavras. Conformidade: cumprir os requisitos — da lei, de uma norma, de um contrato. É a própria organização que a procura, e pode avaliá-la sozinha.
+- **Conformidade:** Cumprimento dos requisitos de uma lei, norma ou contrato. É procurada pela própria organização, que a pode avaliar internamente.
+- **Certificação:** Um organismo de certificação independente audita a organização e atesta, por escrito, o cumprimento de uma norma.
+- **Acreditação:** Um organismo nacional (em Portugal, o Instituto Português de Acreditação) reconhece a competência e a imparcialidade do organismo de certificação. O certificador certifica a organização; o IPAC acredita o certificador.
 
-Certificação: um terceiro independente, o organismo de certificação, audita a organização e atesta, por escrito, que cumpre uma norma. E acreditação: um organismo nacional — em Portugal, o Instituto Português de Acreditação — reconhece que esse certificador é competente e imparcial. Quem certifica a organização é o certificador; quem acredita o certificador é o IPAC.
+**Três termos frequentemente confundidos**
 
-**Três palavras que se confundem**
-
-| Palavra | Quer dizer | Quem |
+| Termo | Significado | Entidade |
 |---|---|---|
-| Conformidade | cumprir os requisitos — a lei, uma norma, um contrato | a própria organização |
-| Certificação | um terceiro independente audita e atesta, por escrito, que se cumpre uma norma | um organismo de certificação |
-| Acreditação | um organismo nacional reconhece que esse certificador é competente e imparcial | em Portugal, o IPAC |
+| Conformidade | cumprimento dos requisitos de uma lei, norma ou contrato | a própria organização |
+| Certificação | auditoria e atestação escrita, por terceiro independente, do cumprimento de uma norma | um organismo de certificação |
+| Acreditação | reconhecimento da competência e imparcialidade do certificador por um organismo nacional | em Portugal, o IPAC |
 
-## Na lei portuguesa
+## Enquadramento na lei portuguesa
 
-O Decreto-Lei permite ao CNCS exigir certificação às entidades abrangidas — é o artigo 34.º. E o Regulamento, no artigo 27.º, diz que um certificado emitido por um organismo de certificação acreditado dá presunção de cumprimento das medidas de cibersegurança.
+O Decreto-Lei permite ao CNCS exigir a certificação às entidades abrangidas (artigo 34.º). O Regulamento, no artigo 27.º, estabelece que um certificado emitido por um organismo de certificação acreditado confere presunção de cumprimento das medidas de cibersegurança.
 
-Os esquemas reconhecidos são o esquema de certificação do QNRCS; a ISO/IEC 27001, desde que o âmbito abranja todos os sistemas dos serviços abrangidos pela lei; e, só para as entidades públicas relevantes, o Selo Digital. Quando o certificado é ISO 27001, entrega-se com a Declaração de Aplicabilidade.
+Os esquemas reconhecidos são o esquema de certificação do QNRCS; a ISO/IEC 27001, desde que o âmbito abranja todos os sistemas dos serviços abrangidos pela lei; e, apenas para as entidades públicas relevantes, o Selo Digital. Um certificado ISO 27001 é entregue com a Declaração de Aplicabilidade.
 
-Repare na condição do âmbito: um certificado ISO 27001 que cobre só o departamento de informática não chega. Voltamos a tudo isto, com pormenor, no módulo da lei.
+A condição do âmbito é determinante: um certificado ISO 27001 limitado ao departamento de informática não é suficiente. O módulo da lei desenvolve estes temas.
 
-**O que a lei faz com a certificação**
+**Certificação na lei**
 
-- O CNCS pode exigir certificação às entidades abrangidas (art. 34.º, n.º 1, do DL 125/2025).
-- Um certificado de um organismo acreditado dá presunção de cumprimento das medidas (art. 27.º, n.os 1 e 2, do Regulamento).
-- Esquemas reconhecidos: EC QNRCS, ISO/IEC 27001 com âmbito completo, e — só para as públicas relevantes — o Selo Digital, DNP TS 4577-1 (art. 27.º, n.º 3).
-- Um certificado ISO/IEC 27001 entregue ao CNCS leva a Declaração de Aplicabilidade (art. 27.º, n.º 5).
+- O CNCS pode exigir a certificação às entidades abrangidas (art. 34.º, n.º 1, do DL 125/2025).
+- Um certificado de um organismo acreditado confere presunção de cumprimento das medidas (art. 27.º, n.os 1 e 2, do Regulamento).
+- Esquemas reconhecidos: EC QNRCS, ISO/IEC 27001 com âmbito completo e, apenas para as entidades públicas relevantes, o Selo Digital, DNP TS 4577-1 (art. 27.º, n.º 3).
+- Um certificado ISO/IEC 27001 entregue ao CNCS é acompanhado da Declaração de Aplicabilidade (art. 27.º, n.º 5).
 
-Na plataforma, as normas instaladas leem-se com o texto e as remissões, escolhem-se as que estão em âmbito, e um mapeamento entre referenciais permite que um controlo cumprido conte para várias normas ao mesmo tempo.
+Na plataforma, é possível consultar as normas instaladas, com o texto e as remissões, selecionar as normas em âmbito e utilizar um mapeamento entre referenciais, que permite que um controlo cumprido seja contabilizado em várias normas.
 
-Uma nota: o texto das normas ISO é vendido sob licença. A plataforma só o mostra se a organização o comprou e instalou. A lei portuguesa e o QNRCS são públicos, e vêm incluídos.
+O texto das normas ISO é comercializado sob licença, pelo que a plataforma só o apresenta se a organização o tiver adquirido e instalado. A lei portuguesa e o QNRCS são públicos e estão incluídos.
 
-**Onde isto entra na plataforma**
+**Correspondência na plataforma**
 
 - Todas as normas instaladas, com o texto, os comentários e as remissões ({doc}`/platform/compliance/standards`).
 - As normas em âmbito e a Declaração de Aplicabilidade ({doc}`/platform/compliance/isms-scope` e {doc}`/platform/compliance/statement-of-applicability`).
-- O mapeamento entre referenciais: um controlo cumprido conta para várias normas ({doc}`/platform/compliance/mapping-and-tools`).
-- As normas ISO são licenciadas: a plataforma só mostra o texto que a organização comprou e instalou.
+- O mapeamento entre referenciais: um controlo cumprido é contabilizado em várias normas ({doc}`/platform/compliance/mapping-and-tools`).
+- As normas ISO são licenciadas: a plataforma só apresenta o texto adquirido e instalado pela organização.

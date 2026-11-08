@@ -1,6 +1,6 @@
 # Inventário
 
-O parque informático e a informação que nele vive: importar, ver, catalogar e agrupar.
+O parque informático e a informação que suporta: importação, consulta, catalogação e agrupamento.
 
 ```{toctree}
 :maxdepth: 1

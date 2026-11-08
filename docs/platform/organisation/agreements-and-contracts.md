@@ -1,102 +1,98 @@
 # Acordos e contratos
 
-O registo centralizado dos contratos, NDA e acordos de subcontratação de dados, com as cláusulas de segurança como campos — para se poderem contar — e os prazos de denúncia à vista.
+Registo centralizado dos contratos, acordos de confidencialidade e acordos de subcontratação de dados, com as cláusulas de segurança registadas como campos (para permitir a sua contagem) e os prazos de denúncia visíveis.
 
 ```{video} 309-acordos-e-contratos
 ```
 
-Os fornecedores têm acesso aos sistemas, tratam dados, e às vezes são a porta de entrada de um ataque. O que os obriga é o contrato. Nesta página registamos os acordos, e o que cada um diz sobre segurança.
+Os fornecedores acedem aos sistemas, tratam dados e podem constituir a porta de entrada de um ataque. As suas obrigações decorrem do contrato. Esta página descreve o registo dos acordos e das respetivas cláusulas de segurança.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Obrigações e terceiros › Acordos e contratos
+**Governar** > **Obrigações e terceiros** > **Acordos e contratos**
 
 ```{figure} /_static/capturas/acordos/menu.jpg
-:alt: Menu lateral: Governar › Obrigações e terceiros › Acordos e contratos
+:alt: Menu lateral: Governar > Obrigações e terceiros > Acordos e contratos
 
-O caminho no menu lateral: Governar › Obrigações e terceiros › Acordos e contratos.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Obrigações e terceiros**.
-3. Clique em **Acordos e contratos**: abre o ecrã desta página.
+## Finalidade
 
-## Porquê
+Este ecrã responde aos controlos da ISO 27001 sobre fornecedores e serviços em nuvem, ao registo centralizado dos acordos de confidencialidade e ao artigo 28.º do Regulamento Geral sobre a Proteção de Dados, que exige contrato com quem trata dados por conta da organização.
 
-Este ecrã serve os controlos da ISO 27001 sobre fornecedores e serviços em nuvem, e o registo centralizado dos acordos de confidencialidade. E serve o artigo 28.º do Regulamento Geral sobre a Proteção de Dados: quem trata dados por conta da organização tem de ter contrato.
+**Finalidade**
 
-**Para que serve**
+- Controlos 5.20 e 5.23 da ISO/IEC 27001: cláusulas de segurança nos acordos com fornecedores e nos serviços em nuvem.
+- Controlo 6.6: registo centralizado dos acordos de confidencialidade e dos respetivos prazos.
+- Art. 28.º do RGPD: contrato com quem trata dados pessoais por conta da organização.
+- Nas entidades públicas relevantes, a política de segurança de fornecedores (O.PSF, Grupo A).
 
-- Os controlos 5.20 e 5.23 da ISO/IEC 27001: cláusulas de segurança nos acordos com fornecedores e nos serviços em nuvem.
-- O controlo 6.6: um registo centralizado dos acordos de confidencialidade e dos seus prazos.
-- O art. 28.º do RGPD: contrato com quem trata dados pessoais por conta da organização.
-- Nas públicas relevantes, a política de segurança de fornecedores (O.PSF, Grupo A).
+## Informação a solicitar
 
-## Antes de abrir o ecrã
+Solicite ao serviço de compras e ao serviço jurídico os contratos em vigor, com as datas e o aviso prévio, e a análise do clausulado: existência de cláusulas de segurança, direito de auditoria e prazo de notificação de incidentes.
 
-Peça às compras e ao jurídico os contratos em vigor, com as datas e o aviso prévio, e — o mais trabalhoso — a leitura do clausulado: há cláusulas de segurança? Direito de auditoria? Prazo para notificar um incidente?
+**Responsáveis**
 
-**O que pedir a quem**
-
-| Informação | Quem a tem |
+| Informação | Responsável |
 |---|---|
-| Contratos em vigor, com datas e aviso prévio | compras; jurídico |
-| Cláusulas de segurança, auditoria, notificação de incidentes, saída | jurídico — lendo o clausulado |
+| Contratos em vigor, com datas e aviso prévio | serviço de compras; serviço jurídico |
+| Cláusulas de segurança, auditoria, notificação de incidentes e saída | serviço jurídico, com base no clausulado |
 | Contratos que envolvem dados pessoais | encarregado de proteção de dados |
 | Acordos de confidencialidade assinados | recursos humanos |
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Governar › Obrigações e terceiros › Acordos e contratos
+São apresentados cinco indicadores, cada um com filtro: acordos em vigor, a expirar nos próximos noventa dias, sem cláusulas de segurança, sem direito de auditoria e com tratamento de dados pessoais sem o contrato de subcontratação do artigo 28.º do RGPD.
 
-No menu Governar, Obrigações e terceiros, Acordos e contratos. Cinco números, e cada um filtra a lista: em vigor, a expirar nos próximos noventa dias, sem cláusulas de segurança, sem direito de auditoria, e os que tratam dados pessoais sem o contrato de subcontratação do artigo 28.º do RGPD.
-
-O aviso prévio alarga o horizonte: um contrato com cento e oitenta dias de aviso aparece cento e oitenta dias antes. E um contrato com renovação automática que ninguém denuncia renova-se sozinho — por isso a lista o diz em letras.
+O aviso prévio alarga o horizonte do alerta: um contrato com cento e oitenta dias de aviso prévio é assinalado cento e oitenta dias antes. Um contrato com renovação automática renova-se se não for denunciado, pelo que a lista o indica expressamente.
 
 ```{figure} /_static/capturas/acordos/abrir-1.jpg
-:alt: Governar › Obrigações e terceiros › Acordos e contratos
+:alt: Governar > Obrigações e terceiros > Acordos e contratos
 
-O ecrã em Governar › Obrigações e terceiros › Acordos e contratos.
+Ecrã **Governar** > **Obrigações e terceiros** > **Acordos e contratos**.
 ```
 
-1. **A expirar — com o aviso prévio**
-2. **Sem cláusulas de segurança**
-3. **Sem direito de auditoria**
+No ecrã, encontra os seguintes elementos:
 
-## Um acordo
+1. **A expirar:** Acordos a expirar, considerando o aviso prévio.
+2. **Sem cláusulas de segurança.**
+3. **Sem direito de auditoria.**
 
-Abrimos um acordo. As cláusulas são campos: tem cláusulas de segurança; direito de auditoria contratado; prazo para notificar um incidente, em horas; cláusula de saída e portabilidade; e se envolve dados pessoais, e se os transfere para fora da União.
+## Ficha do acordo
 
-São campos e não texto por uma razão prática: só assim se consegue contar quantos fornecedores críticos estão obrigados a comunicar um incidente, e em quantas horas. E ligue os processos que o acordo suporta: é a resposta a «o que deixa de funcionar se este contrato cessar».
+As cláusulas são registadas como campos: cláusulas de segurança, direito de auditoria, prazo de notificação de incidentes (em horas), cláusula de saída e portabilidade, envolvimento de dados pessoais e transferência para fora da União.
+
+O registo em campos, e não em texto livre, permite contabilizar, por exemplo, os fornecedores críticos obrigados a comunicar um incidente e o respetivo prazo. Associe também os processos suportados pelo acordo, para identificar o impacto da cessação do contrato.
 
 ```{figure} /_static/capturas/acordos/acordo-1.jpg
 :alt: As cláusulas, como campos
 
-As cláusulas, como campos (1 de 3).
+As cláusulas como campos (1 de 3).
 ```
 
-1. Clique em **AC-001**.
+1. Selecione o acordo (neste exemplo, **AC-001**).
 
 ```{figure} /_static/capturas/acordos/acordo-2.jpg
 :alt: As cláusulas, como campos
 
-As cláusulas, como campos (2 de 3).
+As cláusulas como campos (2 de 3).
 ```
 
 ```{figure} /_static/capturas/acordos/acordo-3.jpg
 :alt: As cláusulas, como campos
 
-As cláusulas, como campos (3 de 3).
+As cláusulas como campos (3 de 3).
 ```
 
 ## Resumo
 
-A plataforma conta e filtra pelos campos, e avisa dos prazos. Pode converter contratos públicos importados do portal BASE em acordos — mas esses nascem sem cláusulas marcadas, de propósito: o portal publica valores e adjudicatários, não o que está escrito no contrato.
+A plataforma contabiliza e filtra os acordos pelos campos e alerta para os prazos. Permite converter contratos públicos importados do portal BASE em acordos; estes acordos são criados sem cláusulas assinaladas, uma vez que o portal publica valores e adjudicatários, mas não o conteúdo do contrato.
 
-As cláusulas marcam-se depois de alguém ler o contrato. Marcá-las sem ler tornava o painel falso.
+As cláusulas são assinaladas após a leitura do contrato. A sua marcação sem leitura prévia tornaria os indicadores do painel incorretos.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
-- Conta e filtra os acordos pelas cláusulas que faltam, e avisa dos prazos de denúncia.
-- Converte contratos públicos do portal BASE em acordos — sem cláusulas marcadas.
-- Não lê o clausulado: as cláusulas marcam-se depois de alguém ler o contrato.
+- Contabiliza e filtra os acordos pelas cláusulas em falta e alerta para os prazos de denúncia.
+- Converte contratos públicos do portal BASE em acordos, sem cláusulas assinaladas.
+- Não analisa o clausulado: as cláusulas são assinaladas após a leitura do contrato.

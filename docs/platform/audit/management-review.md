@@ -1,67 +1,61 @@
 # A revisão pela gestão
 
-A direção revê o sistema de gestão: a plataforma monta oito das nove entradas que a norma exige, regista as decisões, e a ata fecha congelada, como estava no dia.
+Revisão do sistema de gestão pela direção: a plataforma prepara oito das nove entradas exigidas pela norma, regista as decisões e fixa a ata no encerramento, com os dados dessa data.
 
 ```{video} 344-revisao-pela-gestao
 ```
 
-A última peça do ciclo é a revisão pela gestão: a direção olha para o sistema de gestão e decide. É o que a norma exige, e é o que leva a segurança ao sítio onde as decisões se tomam.
+A revisão pela gestão conclui o ciclo: a direção analisa o sistema de gestão e toma decisões. É um requisito da norma e assegura que a segurança é tratada ao nível de decisão adequado.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Auditoria e melhoria › Revisão pela gestão
+**Governar** > **Auditoria e Melhoria** > **Revisão pela gestão**
 
 ```{figure} /_static/capturas/revisao/menu.jpg
-:alt: Menu lateral: Governar › Auditoria e melhoria › Revisão pela gestão
+:alt: Menu lateral: Governar > Auditoria e Melhoria > Revisão pela gestão
 
-O caminho no menu lateral: Governar › Auditoria e melhoria › Revisão pela gestão.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Auditoria e melhoria**.
-3. Clique em **Revisão pela gestão**: abre o ecrã desta página.
+## Entradas
 
-## As entradas
+A norma enumera as entradas da revisão: estado das ações das revisões anteriores, alterações de contexto, necessidades das partes interessadas, desempenho (não conformidades, auditorias e objetivos), risco e oportunidades de melhoria.
 
-A norma enumera as entradas da revisão: o estado das ações anteriores, as mudanças de contexto, as necessidades das partes interessadas, o desempenho — não conformidades, auditorias, objetivos —, o risco, e as oportunidades de melhoria.
+A plataforma prepara oito das nove entradas a partir dos dados registados: ficha da organização, partes interessadas, auditorias e indicadores. A entrada restante, a opinião das partes interessadas, é redigida por quem preside à revisão.
 
-A plataforma monta oito das nove a partir do que já está registado: a ficha da organização, as partes interessadas, as auditorias, os indicadores. A que fica, a opinião das partes interessadas, escreve-a quem preside.
+**Entradas da revisão**
 
-**As entradas da revisão**
+- Estado das ações das revisões anteriores; alterações de contexto; necessidades das partes interessadas.
+- Desempenho: não conformidades, monitorização, auditorias e objetivos.
+- Opinião das partes interessadas, resultados da apreciação de risco e oportunidades de melhoria.
+- A plataforma prepara oito das nove; a opinião das partes interessadas é redigida por quem preside.
 
-- O estado das ações das revisões anteriores; as mudanças de contexto; as necessidades das partes interessadas.
-- O desempenho: não conformidades, monitorização, auditorias, objetivos.
-- A opinião das partes interessadas, os resultados da apreciação de risco, as oportunidades de melhoria.
-- A plataforma monta oito das nove; a opinião das partes interessadas escreve-a quem preside.
+## Configuração do ecrã
 
-## O ecrã
+A revisão é aberta, as decisões e as ações resultantes são registadas e a ata assinada é anexada.
 
-**Menu:** Governar › Auditoria e Melhoria › Revisão pela gestão
-
-No menu Governar, Auditoria e Melhoria, Revisão pela gestão. Abre-se a revisão, regista-se as decisões e as ações que delas saem, e anexa-se a ata assinada.
-
-Enquanto está agendada, as entradas montam-se ao vivo; quando a ata fecha, ficam congeladas como estavam. É por isso que uma ata fechada não muda quando o painel muda no dia seguinte — e é o que a torna um documento, e não um ecrã.
+Enquanto a revisão está agendada, as entradas são atualizadas em tempo real; após o encerramento da ata, ficam fixadas. Por este motivo, uma ata encerrada não é afetada pelas alterações posteriores do painel, o que lhe confere valor documental.
 
 ```{figure} /_static/capturas/revisao/abrir-1.jpg
-:alt: Governar › Auditoria e Melhoria › Revisão pela gestão
+:alt: Governar > Auditoria e Melhoria > Revisão pela gestão
 
-O ecrã em Governar › Auditoria e Melhoria › Revisão pela gestão (1 de 2).
+Ecrã **Governar** > **Auditoria e Melhoria** > **Revisão pela gestão** (1 de 2).
 ```
 
-1. Clique em **2026/02**.
+1. Selecione a revisão (neste exemplo, **2026/02**).
 
 ```{figure} /_static/capturas/revisao/abrir-2.jpg
-:alt: Governar › Auditoria e Melhoria › Revisão pela gestão
+:alt: Governar > Auditoria e Melhoria > Revisão pela gestão
 
-O ecrã em Governar › Auditoria e Melhoria › Revisão pela gestão (2 de 2).
+Ecrã **Governar** > **Auditoria e Melhoria** > **Revisão pela gestão** (2 de 2).
 ```
 
 ## Resumo
 
-Peça à direção uma data na agenda, pelo menos uma vez por ano, e as decisões por escrito. Uma ata a que falte uma entrada obrigatória é um achado de auditoria — e ninguém dá por isso até ao dia da visita.
+Solicite à direção o agendamento da revisão, pelo menos uma vez por ano, e o registo escrito das decisões. Uma ata sem uma entrada obrigatória constitui uma constatação de auditoria, normalmente detetada apenas durante a visita.
 
-**O que pedir a quem**
+**Informação a solicitar**
 
-- À direção: uma data na agenda, pelo menos uma vez por ano — e as decisões, por escrito.
-- A quem preside: a opinião das partes interessadas, e o que mudou desde a última revisão.
-- Uma ata a que falte uma entrada obrigatória é achado de auditoria.
+- Direção: agendamento da revisão, pelo menos uma vez por ano, e registo escrito das decisões.
+- Presidente da revisão: opinião das partes interessadas e alterações desde a última revisão.
+- Uma ata sem uma entrada obrigatória constitui uma constatação de auditoria.

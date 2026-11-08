@@ -1,29 +1,23 @@
 # Integração MISP
 
-A ligação ao MISP, a plataforma de partilha de informação sobre ameaças, para enriquecer os indicadores de compromisso com eventos, nível de ameaça e etiquetas.
+Ligação ao MISP, a plataforma de partilha de informação sobre ameaças, para enriquecer os indicadores de compromisso com eventos, nível de ameaça e etiquetas.
 
 ```{video} 353-integracoes
 ```
 
-O vídeo mostra as quatro integrações: os sistemas externos, o MISP, os feeds RSS e o diretório.
+O vídeo apresenta as quatro integrações: sistemas externos, MISP, feeds RSS e diretório.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Administração do sistema › Integrações › Integração MISP
+**Governar** > **Administração do sistema** > **Integrações** > **Integração MISP**
 
 ```{figure} /_static/capturas/adm-misp/menu.jpg
-:alt: Menu lateral: Governar › Administração do sistema › Integrações › Integração MISP
+:alt: Menu lateral: Governar > Administração do sistema > Integrações > Integração MISP
 
-O caminho no menu lateral: Governar › Administração do sistema › Integrações › Integração MISP.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Administração do sistema**.
-3. Dentro dele, abra **Integrações**.
-4. Clique em **Integração MISP**: abre o ecrã desta página.
-
-
-## O ecrã
+## Configuração do ecrã
 
 ```{figure} /_static/capturas/adm-misp/ligacao-1.jpg
 :alt: A configuração da ligação ao MISP
@@ -31,20 +25,21 @@ O caminho no menu lateral: Governar › Administração do sistema › Integraç
 A configuração da ligação ao MISP.
 ```
 
+No ecrã, encontra os seguintes elementos:
 
-O que cada número faz:
+1. **Módulo MISP activo:** Quando desativado, todas as funcionalidades MISP deixam de ser apresentadas na aplicação.
+2. **URL do MISP:** Endereço da instância.
+3. **Chave de API:** Depois de guardada, deixa de ser apresentada. Para a substituir, apague o campo e introduza a nova chave.
+4. **Verificar certificado SSL:** Deve ser desativado **apenas** em ambientes de ensaio com certificados autoassinados.
+5. **Enriquecimento automático diário:** Ativa a execução diária e define a hora (5h por omissão).
+6. Botão **Guardar configuração:** Regista as alterações efetuadas.
+7. Botão **Testar ligação:** Guarda a configuração e pede a versão ao MISP, confirmando a validade da chave.
+8. Botão **Enriquecer todos os IoCs:** Consulta imediatamente o MISP para todos os indicadores ativos e regista, para cada um, o número de eventos, o nível de ameaça e as etiquetas.
 
-1. **Módulo MISP activo.** Desligado, tudo o que é MISP desaparece da aplicação.
-2. **URL do MISP:** o endereço da instância.
-3. **Chave de API.** Uma vez guardada, deixa de ser mostrada; para a trocar, apague o campo e escreva a nova.
-4. **Verificar certificado SSL.** Desligue **apenas** em ambientes de ensaio com certificados auto-assinados.
-5. **Enriquecimento automático diário**, e a hora a que corre (5h por omissão).
-6. **Guardar configuração.**
-7. **Testar ligação** grava primeiro e depois pergunta a versão ao MISP. É o botão que diz se a chave está boa.
-8. **Enriquecer todos os IoCs** consulta já o MISP para todos os indicadores ativos e guarda o número de eventos, o nível de ameaça e as etiquetas de cada um.
+**Como configurar:** Ative o módulo, indique o endereço e a chave de API, clique em **Guardar configuração** e confirme a ligação com **Testar ligação**.
 
 ## Resumo
 
-- O MISP enriquece os IPs e domínios dos indicadores de compromisso.
-- A chave não volta a ser mostrada depois de guardada.
+- O MISP enriquece os endereços IP e os domínios dos indicadores de compromisso.
+- A chave não volta a ser apresentada depois de guardada.
 - Ver também {doc}`/platform/protect-and-detect/ioc`.

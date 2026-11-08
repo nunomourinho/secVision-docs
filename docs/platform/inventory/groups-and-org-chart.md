@@ -1,94 +1,90 @@
 # Grupos, unidades e organograma
 
-Como se arruma a organização: grupos de pessoas, bens e serviços, unidades orgânicas com governo central ou delegado, e o organograma que junta unidades, papéis e pessoas.
+Organização da instituição: grupos de pessoas, bens e serviços, unidades orgânicas com governo central ou delegado, e o organograma que reúne unidades, papéis e pessoas.
 
 ```{video} 315-grupos-e-organograma
 ```
 
-Uma instituição não é um bloco: tem escolas, departamentos, laboratórios, serviços. Nesta página vemos como a plataforma arruma a organização em grupos e unidades, e o organograma que junta tudo.
+Uma instituição é composta por escolas, departamentos, laboratórios e serviços. Esta página descreve a organização da instituição na plataforma, em grupos e unidades, e o organograma que os reúne.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Inventário › Grupos de ativos
+**Identificar** > **Inventário** > **Grupos de ativos**
 
 ```{figure} /_static/capturas/grupos-organograma/menu.jpg
-:alt: Menu lateral: Identificar › Inventário › Grupos de ativos
+:alt: Menu lateral: Identificar > Inventário > Grupos de ativos
 
-O caminho no menu lateral: Identificar › Inventário › Grupos de ativos.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Inventário**.
-3. Clique em **Grupos de ativos**: abre o ecrã desta página.
+## Famílias de grupos
 
-## As famílias
+Os grupos dividem-se em quatro famílias: pessoas, bens, serviços e unidades orgânicas. Uma unidade orgânica tem, adicionalmente, uma posição na hierarquia (escola, departamento, laboratório) e um modelo de governo.
 
-Os grupos têm quatro famílias: pessoas, bens, serviços, e unidades orgânicas. Uma unidade tem, além do resto, um lugar na hierarquia — escola, departamento, laboratório — e um governo.
-
-Governo central quer dizer que a organização trata do risco e dos controlos. Delegado quer dizer que a unidade os trata à parte, com responsável próprio. Mas a responsabilidade perante terceiros continua a ser da instituição.
+O governo central significa que o risco e os controlos são geridos pela organização. O governo delegado significa que a unidade os gere separadamente, com responsável próprio. A responsabilidade perante terceiros mantém-se, em ambos os casos, na instituição.
 
 **As quatro famílias de grupos**
 
-| Família | Para quê |
+| Família | Exemplos |
 |---|---|
 | Pessoas | «Direção Financeira», «Docentes» |
 | Bens | «Centro de dados», «Postos de trabalho» |
 | Serviços | «Serviços expostos à Internet» |
-| Unidade orgânica | a parte da casa que se governa a si própria — com governo central ou delegado |
+| Unidade orgânica | parte da instituição com governo próprio, central ou delegado |
 
-## Os grupos
+## Grupos
 
-**Menu:** Identificar › Inventário › Grupos de ativos
+Os grupos são apresentados por família. Os membros de cada grupo são ativos de informação e pessoas do registo de pessoal.
 
-No menu Identificar, Inventário, Grupos de ativos. Os grupos aparecem arrumados por família. Os membros de cada um são ativos de informação e pessoas do registo de pessoal.
-
-Os grupos servem para três coisas: refinar a Declaração de Aplicabilidade por grupo, dar âmbito à prova, e ser o sujeito de uma auditoria. Sem grupo, uma prova vale para toda a organização.
+Os grupos têm três finalidades: detalhar a Declaração de Aplicabilidade por grupo, delimitar o âmbito de uma evidência e constituir o objeto de uma auditoria. Uma evidência sem grupo aplica-se a toda a organização.
 
 ```{figure} /_static/capturas/grupos-organograma/abrir-1.jpg
-:alt: Identificar › Inventário › Grupos de ativos
+:alt: Identificar > Inventário > Grupos de ativos
 
-O ecrã em Identificar › Inventário › Grupos de ativos (1 de 2).
+Ecrã **Identificar** > **Inventário** > **Grupos de ativos** (1 de 2).
 ```
 
-1. **Unidades orgânicas**
+1. **Unidades orgânicas:** Grupos da família de unidades orgânicas.
 
 ```{figure} /_static/capturas/grupos-organograma/abrir-2.jpg
-:alt: Identificar › Inventário › Grupos de ativos
+:alt: Identificar > Inventário > Grupos de ativos
 
-O ecrã em Identificar › Inventário › Grupos de ativos (2 de 2).
+Ecrã **Identificar** > **Inventário** > **Grupos de ativos** (2 de 2).
 ```
 
-## O organograma
+## Organograma
 
-**Menu:** Governar › Organização › Organograma
+**Governar** > **Organização** > **Organograma**
 
-O Organograma junta três coisas que já existiam: a árvore de unidades, os papéis atribuídos em cada uma, e as pessoas. E é daqui que a estrutura se altera: criar uma unidade por baixo de outra, designar alguém num papel nessa unidade, ou terminar um mandato.
+O Organograma reúne três elementos já existentes: a árvore de unidades, os papéis atribuídos em cada unidade e as pessoas. A estrutura é também alterada neste ecrã: criação de uma unidade subordinada, designação de uma pessoa para um papel numa unidade ou encerramento de um mandato.
 
-Responde a duas perguntas que não têm resposta noutro lado: as unidades com governo próprio e ninguém designado, e as que ficaram sem lugar na árvore. Exporta-se para os programas habituais de diagramas, e sem dados pessoais por omissão.
+O organograma identifica as unidades com governo próprio sem responsável designado e as unidades sem posição na árvore. Pode ser exportado para os programas de diagramas habituais, sem dados pessoais por omissão.
 
 ```{figure} /_static/capturas/grupos-organograma/organograma-1.jpg
-:alt: Governar › Organização › Organograma
+:alt: Governar > Organização > Organograma
 
-O ecrã em Governar › Organização › Organograma (1 de 2).
+Ecrã **Governar** > **Organização** > **Organograma** (1 de 2).
 ```
 
-1. **A estrutura altera-se daqui**
-2. **Com nomes — um ato deliberado**
+No ecrã, encontra os seguintes elementos:
+
+1. **Edição da estrutura:** Criação de unidades, designações e encerramento de mandatos.
+2. Opção **Com nomes:** Inclui os dados pessoais na exportação.
 
 ```{figure} /_static/capturas/grupos-organograma/organograma-2.jpg
-:alt: Governar › Organização › Organograma
+:alt: Governar > Organização > Organograma
 
-O ecrã em Governar › Organização › Organograma (2 de 2).
+Ecrã **Governar** > **Organização** > **Organograma** (2 de 2).
 ```
 
 ## Resumo
 
-Peça a estrutura orgânica à secretaria-geral, e quem pertence a cada unidade aos recursos humanos. À direção, que unidades se governam a si próprias.
+Solicite à secretaria-geral a estrutura orgânica, aos recursos humanos a composição de cada unidade e à direção a identificação das unidades com governo próprio.
 
-E exportar o organograma com nomes é um ato deliberado: fica na trilha de auditoria, e o ficheiro tem o aviso no próprio nome.
+A exportação do organograma com nomes fica registada na trilha de auditoria, e o nome do ficheiro inclui o respetivo aviso.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- À secretaria-geral e aos recursos humanos: a estrutura orgânica e quem pertence a cada unidade.
-- À direção: que unidades têm governo próprio — e quem responde por elas.
-- Exportar com dados pessoais é deliberado, fica na trilha de auditoria, e o ficheiro di-lo no nome.
+- Secretaria-geral e recursos humanos: estrutura orgânica e composição de cada unidade.
+- Direção: unidades com governo próprio e respetivos responsáveis.
+- A exportação com dados pessoais fica registada na trilha de auditoria, e o nome do ficheiro inclui o aviso.

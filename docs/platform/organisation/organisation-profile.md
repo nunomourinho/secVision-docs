@@ -1,103 +1,93 @@
 # A Ficha da organização
 
-O primeiro registo a preencher: quem é a entidade, os contactos, a dimensão e o contexto — os dados que a lei manda inscrever na plataforma do CNCS, e o que a plataforma faz com eles.
+Primeiro registo a preencher: identificação da entidade, contactos, dimensão e contexto. Inclui os dados que a lei exige inscrever na plataforma do CNCS e a utilização que a plataforma lhes dá.
 
 ```{video} 305-ficha-da-organizacao
 ```
 
-Começamos a usar a plataforma pelo princípio: a Ficha da organização. É aqui que se escreve quem é a entidade — o nome, os contactos, a dimensão e o contexto em que trabalha. Parece burocracia, mas é a base de tudo o resto, e é também o que a lei manda comunicar ao CNCS.
+A utilização da plataforma começa pela Ficha da organização, onde são registados o nome, os contactos, a dimensão e o contexto da entidade. Esta informação é a base de todo o trabalho seguinte e corresponde aos dados que a lei exige comunicar ao CNCS.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Organização › Ficha da organização
+**Governar** > **Organização** > **Ficha da organização**
 
 ```{figure} /_static/capturas/ficha-organizacao/menu.jpg
-:alt: Menu lateral: Governar › Organização › Ficha da organização
+:alt: Menu lateral: Governar > Organização > Ficha da organização
 
-O caminho no menu lateral: Governar › Organização › Ficha da organização.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Organização**.
-3. Clique em **Ficha da organização**: abre o ecrã desta página.
+## Finalidade
 
-## Porquê
+A ficha tem três finalidades:
 
-A ficha serve três propósitos. Primeiro, o dever de registo: o artigo trigésimo quinto do decreto-lei manda inscrever na plataforma do CNCS o nome, o número de contribuinte, o endereço e os contactos — incluindo as gamas de endereços IP e os telefones —, o setor e os Estados-Membros onde a entidade presta serviços.
+1. **Dever de registo:** O artigo 35.º do decreto-lei exige a inscrição, na plataforma do CNCS, do nome, do número de contribuinte, do endereço e dos contactos (incluindo as gamas de endereços IP e os telefones), do setor e dos Estados-Membros onde a entidade presta serviços.
+2. **Atualização dos dados:** O Regulamento exige que os dados estejam permanentemente atualizados, e o decreto-lei fixa um prazo de trinta dias úteis para comunicar qualquer alteração.
+3. **Contexto da organização:** Missão, estratégia e fatores internos e externos, ponto de partida de qualquer sistema de gestão da segurança da informação.
 
-Segundo, manter esses dados certos. O Regulamento exige que estejam permanentemente atualizados, e o decreto-lei dá trinta dias úteis para comunicar qualquer alteração. Terceiro, o contexto da organização — missão, estratégia, o que a influencia por dentro e por fora —, que é o ponto de partida de qualquer sistema de gestão da segurança da informação.
+**Finalidades**
 
-**Para que serve**
+- Dever de registo: nome, NIF, endereço e contactos, gamas de endereços IP, setor e Estados-Membros (art. 35.º do DL).
+- Dados da autoidentificação na plataforma do CNCS (art. 8.º do Regulamento); ver {doc}`/law/self-identification`.
+- Atualização permanente dos dados (art. 11.º do Regulamento); as alterações são comunicadas em 30 dias úteis (art. 35.º do DL).
+- Contexto da organização: missão, estratégia e questões internas e externas, base do sistema de gestão.
 
-- O dever de registo: nome, NIF, endereço e contactos, gamas de endereços IP, setor e Estados-Membros (art. 35.º do DL).
-- Os dados da autoidentificação na plataforma do CNCS (art. 8.º do Regulamento) — {doc}`/law/self-identification`.
-- Manter tudo permanentemente atualizado (art. 11.º do Regulamento); alterações comunicam-se em 30 dias úteis (art. 35.º do DL).
-- O contexto da organização: missão, estratégia e as questões internas e externas — base do sistema de gestão.
+## Informação a solicitar
 
-## Antes de abrir o ecrã
+Reúna a informação antes de abrir o ecrã, uma vez que está dispersa pela organização: dados administrativos (serviços administrativos e financeiros), qualificação (responsável pela autoidentificação no CNCS), gamas de endereços IP (equipa de informática) e número de trabalhadores (recursos humanos).
 
-Antes de abrir o ecrã, reúna a informação, porque está espalhada. Os dados administrativos, com os serviços administrativos e financeiros. A qualificação, com quem acompanhou a autoidentificação no CNCS. As gamas de endereços IP, com a informática. O número de trabalhadores, com os recursos humanos.
+A missão, a visão, a estratégia e o contexto são fornecidos pela direção. Estes textos existem habitualmente no plano estratégico ou no plano de atividades, de onde devem ser copiados.
 
-E a missão, a visão, a estratégia e o contexto, com a direção. Não invente: estes textos quase sempre já existem, no plano estratégico ou no plano de atividades. Copie-os de lá.
+**Responsáveis**
 
-**O que pedir a quem**
-
-| Informação | Quem a tem |
+| Informação | Responsável |
 |---|---|
 | Nome, NIF, natureza jurídica, morada | serviços administrativos e financeiros |
-| Qualificação dada pelo CNCS, setor e subsetor | quem acompanhou a autoidentificação; serviço jurídico |
-| Gamas de endereços IP | informática (redes) |
+| Qualificação atribuída pelo CNCS, setor e subsetor | responsável pela autoidentificação; serviço jurídico |
+| Gamas de endereços IP | equipa de informática (redes) |
 | Número de trabalhadores | recursos humanos |
 | Volume de negócios e balanço | serviços financeiros |
-| Missão, visão, estratégia e contexto | direção — o plano estratégico e o plano de atividades |
+| Missão, visão, estratégia e contexto | direção: plano estratégico e plano de atividades |
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Governar › Organização › Ficha da organização
-
-No menu Governar, Organização, Ficha da organização. A ficha abre em leitura: mostra o que está preenchido, sem caixas de edição. Quem só consulta fica sempre assim; quem tem o papel de operador pode editar.
+A ficha abre em modo de leitura, apresentando os dados preenchidos sem campos de edição. Os utilizadores com papel de visualizador mantêm sempre este modo; os utilizadores com papel de operador podem editar.
 
 ```{figure} /_static/img/305-ficha-da-organizacao/01.jpg
-:alt: Governar › Organização › Ficha da organização
+:alt: Governar > Organização > Ficha da organização
 
-O ecrã em Governar › Organização › Ficha da organização.
+Ecrã **Governar** > **Organização** > **Ficha da organização**.
 ```
-
-O cartão do topo dá dois números, e convém não os confundir. O primeiro conta os dez campos que o artigo oitavo do Regulamento manda inscrever no registo do CNCS: é uma lista fechada, e é o que se comunica à autoridade. O segundo conta a ficha inteira — vinte e três campos —, que é todo o trabalho por fazer.
-
-Por baixo, a data da última confirmação. Aqui diz que ninguém confirma os dados há mais de um ano. O botão Confirmar que os dados estão certos regista essa verificação: é a prova de que a entidade cumpre o dever de os manter atualizados.
 
 ```{figure} /_static/capturas/ficha-organizacao/cartao-1.jpg
 :alt: Dois números, e não são o mesmo
 
-Dois números, e não são o mesmo.
+Os dois indicadores de preenchimento.
 ```
 
-1. **Os dez campos do registo**
-2. **A ficha inteira**
-3. **Confirmar que os dados estão certos (art. 11.º do Regulamento)**
+No ecrã, encontra os seguintes elementos:
 
-Passamos a Editar. Os campos do registo levam, ao lado do nome, a marca do art. 8.º do Regulamento, para se saber quais são sem os contar de cabeça.
+1. **Campos do registo:** Contagem dos dez campos que o artigo 8.º do Regulamento exige inscrever no registo do CNCS. É uma lista fechada e corresponde aos dados comunicados à autoridade.
+2. **Ficha completa:** Contagem dos vinte e três campos da ficha, que representam todo o trabalho de preenchimento.
+3. Botão **Confirmar que os dados estão certos (art. 11.º do Regulamento):** Regista a data da verificação dos dados, como evidência do dever de atualização. A data da última confirmação é apresentada junto ao botão.
 
 ```{figure} /_static/capturas/ficha-organizacao/editar-1.jpg
 :alt: Editar
 
-Editar (1 de 2).
+Edição (1 de 2).
 ```
 
-1. Clique em **Editar**.
+1. Botão **Editar:** Ativa o modo de edição.
 
 ```{figure} /_static/capturas/ficha-organizacao/editar-2.jpg
 :alt: Editar
 
-Editar (2 de 2).
+Edição (2 de 2).
 ```
 
+No modo de edição, os campos do registo apresentam, junto ao nome, a indicação do art. 8.º do Regulamento.
+
 ## Identificação
-
-A identificação: o nome da entidade, exatamente como aparece nos documentos oficiais; o número de identificação fiscal; e a natureza jurídica — aqui, pessoa coletiva de direito público.
-
-O NIF não é validado de propósito: uma entidade estrangeira tem outro formato. Confira-o duas vezes — é por ele que o CNCS identifica a entidade.
 
 ```{figure} /_static/capturas/ficha-organizacao/identificacao-1.jpg
 :alt: Identificação
@@ -105,13 +95,11 @@ O NIF não é validado de propósito: uma entidade estrangeira tem outro formato
 Identificação.
 ```
 
-1. **Nome**
-2. **NIF**
-3. **Natureza jurídica**
+No ecrã, encontra os seguintes elementos:
 
-A qualificação: entidade essencial, importante, pública relevante, ou ainda por qualificar. Escreve-se aqui a que o CNCS notificou na decisão final — nunca uma que a entidade presuma. Enquanto a decisão não chegar, fica por qualificar.
-
-Numa entidade pública relevante aparece logo a seguir o grupo: A ou B, também como o CNCS o indicou. É o grupo que decide que medidas do Anexo IV se aplicam. O nosso politécnico, com mil duzentos e quarenta trabalhadores, é do Grupo A. Noutra qualificação, este campo nem aparece.
+1. **Nome:** Nome da entidade, tal como consta dos documentos oficiais.
+2. **NIF:** Número de identificação fiscal. O NIF não é validado, para permitir os formatos de entidades estrangeiras; confirme-o com cuidado, uma vez que é o identificador utilizado pelo CNCS.
+3. **Natureza jurídica:** Por exemplo, pessoa coletiva de direito público.
 
 ```{figure} /_static/capturas/ficha-organizacao/qualificacao-1.jpg
 :alt: A qualificação e o grupo
@@ -119,10 +107,8 @@ Numa entidade pública relevante aparece logo a seguir o grupo: A ou B, também 
 A qualificação e o grupo.
 ```
 
-1. **Qualificação (art. 6.º)**
-2. **Grupo (art. 7.º)**
-
-O setor e o subsetor, como vêm nos anexos do decreto-lei: aqui, administração pública e ensino superior. As palavras sublinhadas na ajuda abrem o texto da lei sem sair da ficha.
+1. **Qualificação (art. 6.º):** Entidade essencial, importante, pública relevante ou por qualificar. Registe a qualificação notificada pelo CNCS na decisão final, e nunca uma qualificação presumida. Até à decisão, mantenha «por qualificar».
+2. **Grupo (art. 7.º):** Apresentado apenas para as entidades públicas relevantes: Grupo A ou B, conforme indicado pelo CNCS. O grupo determina as medidas do Anexo IV aplicáveis. O politécnico dos exemplos, com mil duzentos e quarenta trabalhadores, pertence ao Grupo A.
 
 ```{figure} /_static/capturas/ficha-organizacao/setor-1.jpg
 :alt: Setor e subsetor
@@ -130,12 +116,12 @@ O setor e o subsetor, como vêm nos anexos do decreto-lei: aqui, administração
 Setor e subsetor.
 ```
 
-1. **Setor (Anexos I e II)**
-2. **Subsetor**
+1. **Setor (Anexos I e II):** Conforme os anexos do decreto-lei; neste exemplo, administração pública.
+2. **Subsetor:** Neste exemplo, ensino superior.
+
+As palavras sublinhadas na ajuda abrem o texto da lei sem sair da ficha.
 
 ## Contactos
-
-O endereço e os contactos: morada, código postal, localidade, país, correio eletrónico e telefone. Use contactos institucionais, que não dependam de uma pessoa: um endereço geral, não o de alguém que pode sair da organização.
 
 ```{figure} /_static/capturas/ficha-organizacao/contactos-1.jpg
 :alt: Endereço e contactos
@@ -143,13 +129,11 @@ O endereço e os contactos: morada, código postal, localidade, país, correio e
 Endereço e contactos.
 ```
 
-1. **Morada**
-2. **Correio eletrónico**
-3. **Telefone**
+No ecrã, encontra os seguintes elementos:
 
-As gamas de endereços IP: os blocos de endereços que a organização usa na internet e na rede interna, um por linha. O artigo trigésimo quinto pede-as por escrito, para o registo.
-
-Não é preciso escrevê-las de memória: o botão preencher a partir do inventário de redes vai buscá-las ao inventário, e acrescenta só as que faltam. Repare que só propõe — é preciso carregar em Guardar. Mais abaixo, os Estados-Membros onde a entidade presta serviços, se os houver.
+1. **Morada:** Inclui também o código postal, a localidade e o país.
+2. **Correio eletrónico:** Utilize um endereço institucional geral, que não dependa de uma pessoa.
+3. **Telefone:** Utilize um contacto institucional.
 
 ```{figure} /_static/capturas/ficha-organizacao/gamas-1.jpg
 :alt: As gamas de endereços IP
@@ -157,8 +141,8 @@ Não é preciso escrevê-las de memória: o botão preencher a partir do invent�
 As gamas de endereços IP (1 de 2).
 ```
 
-1. **Gamas de endereços IP (art. 35.º)**
-2. Clique em **preencher a partir do inventário de redes**.
+1. **Gamas de endereços IP (art. 35.º):** Blocos de endereços utilizados pela organização na Internet e na rede interna, um por linha.
+2. Botão **preencher a partir do inventário de redes:** Obtém as gamas do inventário e acrescenta apenas as que faltam. O botão apresenta uma proposta; para a registar, clique em **Guardar**.
 
 ```{figure} /_static/capturas/ficha-organizacao/gamas-2.jpg
 :alt: As gamas de endereços IP
@@ -166,13 +150,9 @@ As gamas de endereços IP (1 de 2).
 As gamas de endereços IP (2 de 2).
 ```
 
-1. **Estados-Membros**
+1. **Estados-Membros:** Estados-Membros onde a entidade presta serviços, se aplicável.
 
 ## Dimensão
-
-A dimensão: o número de trabalhadores, o volume de negócios anual e o balanço. Para uma empresa privada, é a dimensão que, com o setor, decide se é essencial ou importante. Para uma entidade pública, o número de trabalhadores decide o grupo.
-
-E a adesão ao serviço público de notificações eletrónicas, que também se comunica na autoidentificação.
 
 ```{figure} /_static/capturas/ficha-organizacao/dimensao-1.jpg
 :alt: Dimensão
@@ -180,15 +160,15 @@ E a adesão ao serviço público de notificações eletrónicas, que também se 
 Dimensão.
 ```
 
-1. **Trabalhadores**
-2. **Volume de negócios**
-3. **Balanço anual**
+No ecrã, encontra os seguintes elementos:
+
+1. **Trabalhadores:** Numa entidade pública, o número de trabalhadores determina o grupo.
+2. **Volume de negócios:** Numa empresa privada, a dimensão determina, com o setor, a qualificação como essencial ou importante.
+3. **Balanço anual.**
+
+Nesta secção é também registada a adesão ao serviço público de notificações eletrónicas, comunicada na autoidentificação.
 
 ## Contexto
-
-Por fim, o contexto: missão, visão, estratégia, e as questões internas e externas que influenciam a segurança da informação. Internas, como a estrutura, os recursos e a cultura. Externas, como a lei, a tecnologia e o setor.
-
-Na norma ISO 27001, é a cláusula 4.1, o contexto da organização. E serve depois na revisão pela gestão, onde a direção tem de olhar para o que mudou neste contexto — sem ter de o escrever de novo de memória.
 
 ```{figure} /_static/capturas/ficha-organizacao/contexto-1.jpg
 :alt: Missão, estratégia e contexto
@@ -196,16 +176,20 @@ Na norma ISO 27001, é a cláusula 4.1, o contexto da organização. E serve dep
 Missão, estratégia e contexto.
 ```
 
-1. **Missão**
-2. **Estratégia**
-3. **Contexto interno**
-4. **Contexto externo**
+No ecrã, encontra os seguintes elementos:
 
-## Manter atualizado
+1. **Missão.**
+2. **Estratégia.**
+3. **Contexto interno:** Por exemplo, estrutura, recursos e cultura.
+4. **Contexto externo:** Por exemplo, legislação, tecnologia e setor.
 
-Revista a ficha, carregamos em Confirmar que os dados estão certos. Se houver alterações por gravar, o botão grava-as primeiro, e depois regista a data da confirmação.
+Estes campos correspondem à cláusula 4.1 da ISO 27001 (contexto da organização) e são utilizados na revisão pela gestão, em que a direção analisa as alterações do contexto.
 
-Faça-o periodicamente — por exemplo, a cada trimestre — e sempre que algo mudar. Lembre-se: uma alteração aos dados do registo tem de chegar ao CNCS em trinta dias úteis.
+## Atualização
+
+**Como confirmar:** Após a revisão da ficha, clique em **Confirmar que os dados estão certos**. Se existirem alterações por gravar, o botão grava-as e regista em seguida a data da confirmação.
+
+Confirme os dados periodicamente (por exemplo, trimestralmente) e sempre que ocorrer uma alteração. As alterações aos dados do registo devem ser comunicadas ao CNCS no prazo de trinta dias úteis.
 
 ```{figure} /_static/capturas/ficha-organizacao/confirmar-1.jpg
 :alt: Confirmar que os dados estão certos
@@ -213,7 +197,7 @@ Faça-o periodicamente — por exemplo, a cada trimestre — e sempre que algo m
 Confirmar que os dados estão certos (1 de 2).
 ```
 
-1. Clique em **Confirmar que os dados estão certos**.
+1. Botão **Confirmar que os dados estão certos.**
 
 ```{figure} /_static/capturas/ficha-organizacao/confirmar-2.jpg
 :alt: Confirmar que os dados estão certos
@@ -221,9 +205,9 @@ Confirmar que os dados estão certos (1 de 2).
 Confirmar que os dados estão certos (2 de 2).
 ```
 
-O botão Word exporta a ficha para um documento, escolhendo os campos. É útil para levar a uma reunião, ou para reaproveitar noutro sistema de gestão.
+**Exportação para Word:** O botão **Word** exporta a ficha para um documento, com seleção dos campos, para utilização em reuniões ou noutro sistema de gestão.
 
-Repare que as gamas de endereços IP não se exportam: estão trancadas, com a razão escrita. São o mapa da rede da organização, e um documento Word circula. Pedem-se para comunicar ao CNCS, não para andarem em anexos.
+As gamas de endereços IP não podem ser exportadas, e o motivo é indicado no ecrã: constituem o mapa da rede da organização e não devem circular em documentos Word. Destinam-se apenas à comunicação ao CNCS.
 
 ```{figure} /_static/capturas/ficha-organizacao/word-1.jpg
 :alt: Exportar para Word
@@ -231,13 +215,15 @@ Repare que as gamas de endereços IP não se exportam: estão trancadas, com a r
 Exportar para Word (1 de 2).
 ```
 
-1. Clique em **Word**.
+1. Botão **Word:** Abre a seleção de campos a exportar.
 
 ```{figure} /_static/capturas/ficha-organizacao/word-2.jpg
 :alt: Exportar para Word
 
 Exportar para Word (2 de 2).
 ```
+
+Campos disponíveis na exportação:
 
 1. **Nome da entidade**
 2. **NIF**
@@ -252,17 +238,17 @@ Exportar para Word (2 de 2).
 11. **País**
 12. **Correio eletrónico**
 13. **Telefone**
-14. **Gamas de endereços IP**
+14. **Gamas de endereços IP** (bloqueado)
 15. **Estados-Membros onde presta serviços**
 
 ## Resumo
 
-O que faz a plataforma com a ficha? Usa o nome e os contactos onde forem precisos — nos inquéritos a fornecedores, no dossier do auditor, nos documentos. E ensina ao anonimizador os dados da entidade, para os esconder sempre que alguém os escreva num pedido à inteligência artificial.
+A plataforma utiliza o nome e os contactos nos inquéritos a fornecedores, no dossier do auditor e nos documentos. Fornece também ao anonimizador os dados da entidade, para que sejam mascarados sempre que forem incluídos num pedido a um serviço de inteligência artificial.
 
-E o que não faz: não comunica nada ao CNCS. O registo e as alterações fazem-se na plataforma do CNCS. A ficha é onde a organização guarda os dados certos, para os entregar quando for preciso.
+A plataforma não comunica dados ao CNCS: o registo e as alterações são efetuados na plataforma do CNCS. A ficha permite guardar os dados corretos, para entrega quando necessário.
 
-**O que a plataforma faz com a ficha — e o que não faz**
+**Funcionalidades e limitações**
 
-- Usa o nome e os contactos nos inquéritos a fornecedores, no dossier do auditor e nos documentos.
-- Ensina ao anonimizador o nome, o NIF, a morada e as gamas IP, para os mascarar nos pedidos à IA.
-- Não comunica nada ao CNCS: o registo e as alterações fazem-se na plataforma do CNCS.
+- Utiliza o nome e os contactos nos inquéritos a fornecedores, no dossier do auditor e nos documentos.
+- Fornece ao anonimizador o nome, o NIF, a morada e as gamas IP, para os mascarar nos pedidos à IA.
+- Não comunica dados ao CNCS: o registo e as alterações são efetuados na plataforma do CNCS.

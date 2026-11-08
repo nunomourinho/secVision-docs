@@ -1,92 +1,94 @@
-# Incidentes — notificar a tempo
+# Incidentes — notificação atempada
 
-Quando um incidente é significativo, as três notificações ao CNCS e os seus prazos — 24 horas, 24 horas após o fim do impacto, 30 dias úteis —, a regra das duas horas, e o relógio diferente da proteção de dados.
+Critérios para classificar um incidente como significativo, as três notificações ao CNCS e os respetivos prazos (24 horas, 24 horas após o fim do impacto e 30 dias úteis), a regra das duas horas e o prazo distinto aplicável à proteção de dados.
 
 ```{video} 214-incidentes-notificar-a-tempo
 ```
 
-Este é o dever com os prazos mais curtos de toda a lei. Quando acontece um incidente significativo, a organização tem de o notificar ao CNCS, em três momentos, cada um com o seu relógio. E aplica-se a todas: essenciais, importantes e públicas relevantes.
+Este é o dever com os prazos mais curtos de toda a lei. Perante um incidente significativo, a organização tem de o notificar ao CNCS em três momentos, cada um com o seu prazo. O dever aplica-se a todas as entidades: essenciais, importantes e públicas relevantes.
 
-## Significativo
+## Incidente significativo
 
-Nem todo o incidente se notifica: só os significativos. Um incidente é significativo quando causa, ou pode causar, perturbações graves dos serviços ou perdas financeiras à entidade, ou quando afeta outras pessoas com danos consideráveis.
+Apenas os incidentes significativos são notificados. Um incidente é significativo quando causa, ou pode causar, perturbações graves dos serviços ou perdas financeiras à entidade, ou quando afeta terceiros com danos consideráveis.
 
-Para decidir, pondera-se o número de utilizadores afetados, o total de utilizadores do serviço, a duração, a gravidade e o impacto económico e social. E o CNCS pode fixar limiares mais precisos por instrução técnica.
+Na avaliação, são ponderados o número de utilizadores afetados, o total de utilizadores do serviço, a duração, a gravidade e o impacto económico e social. O CNCS pode fixar limiares mais precisos por instrução técnica.
 
-**Quando é significativo**
+**Critérios de incidente significativo**
 
 - Causa, ou pode causar, perturbações graves dos serviços ou perdas financeiras à entidade (art. 2.º).
-- Ou afeta, ou pode afetar, outras pessoas, com danos consideráveis.
-- Pondera-se: utilizadores afetados, total de utilizadores, duração, gravidade e impacto económico e social (art. 40.º, n.º 3).
+- Ou afeta, ou pode afetar, terceiros, com danos consideráveis.
+- São ponderados: utilizadores afetados, total de utilizadores, duração, gravidade e impacto económico e social (art. 40.º, n.º 3).
 - O CNCS densifica os limiares por instrução técnica.
 
-## Os prazos
+## Prazos
 
-A primeira, a notificação inicial: até vinte e quatro horas depois de concluir que existe, ou pode vir a existir, um incidente significativo. Quando necessário, atualiza-se até às setenta e duas horas.
+1. **Notificação inicial:** Até vinte e quatro horas após a conclusão de que existe, ou pode vir a existir, um incidente significativo. Quando necessário, é atualizada até às setenta e duas horas.
+2. **Notificação do fim do impacto:** Até vinte e quatro horas após o fim do impacto.
+3. **Relatório final:** Trinta dias úteis a contar da notificação do fim do impacto, e não do início do incidente.
 
-A segunda, a notificação do fim do impacto: até vinte e quatro horas depois de o impacto terminar. E a terceira, o relatório final: trinta dias úteis a contar da notificação do fim do impacto — não do início do incidente.
-
-E uma regra que poupa trabalho: se o incidente for resolvido nas duas horas a seguir à deteção, basta a notificação do fim do impacto.
+Se o incidente for resolvido nas duas horas seguintes à deteção, basta a notificação do fim do impacto.
 
 **As três notificações**
 
-| Notificação | Prazo | A contar de | Base legal |
+| Notificação | Prazo | Início da contagem | Base legal |
 |---|---|---|---|
-| Inicial | até 24 horas | concluir que existe, ou pode vir a existir, um incidente significativo | art. 42.º, n.º 1 |
-| Atualização da inicial | até 72 horas | a mesma verificação — quando necessário | art. 42.º, n.º 3 |
+| Inicial | até 24 horas | conclusão de que existe, ou pode vir a existir, um incidente significativo | art. 42.º, n.º 1 |
+| Atualização da inicial | até 72 horas | a mesma verificação, quando necessário | art. 42.º, n.º 3 |
 | Fim do impacto significativo | até 24 horas | o fim do impacto | art. 43.º, n.º 1 |
 | Relatório final | 30 dias úteis | a notificação do fim do impacto | art. 44.º, n.º 1 |
 
 ```{tip}
-Resolvido em duas horas após a deteção: basta a notificação do fim do impacto (art. 41.º, n.º 2).
+Incidente resolvido em duas horas após a deteção: basta a notificação do fim do impacto (art. 41.º, n.º 2).
 ```
 
-Alguns pormenores. Notificar não gera responsabilidade acrescida — a lei di-lo expressamente. Se o incidente ainda durar quando chega o prazo do relatório final, o CNCS pode pedir relatórios intercalares, semanais.
+A lei estabelece expressamente que a notificação não gera responsabilidade acrescida. Se o incidente ainda estiver em curso no termo do prazo do relatório final, o CNCS pode solicitar relatórios intercalares semanais.
 
-Se a plataforma do CNCS estiver em baixo, ou se o próprio incidente a impedir de lá chegar, notifica-se por correio eletrónico ou por telefone. E atenção: os alertas da plataforma não dispensam ninguém de contar os prazos. Não notificar é tratado como infração grave.
+Se a plataforma do CNCS estiver indisponível, ou se o próprio incidente impedir o acesso, a notificação é feita por correio eletrónico ou por telefone. Os alertas da plataforma não dispensam o controlo dos prazos, e a falta de notificação é tratada como infração grave.
 
-**Pormenores que contam**
+**Disposições complementares**
 
-- Notificar não gera responsabilidade acrescida (art. 40.º, n.º 2).
-- Se o incidente ainda durar no fim do prazo do relatório final: relatório intercalar, semanal, a pedido (art. 44.º, n.º 3).
-- Sem a plataforma do CNCS: correio eletrónico ou telefone, a título excecional (art. 20.º, n.º 4, do Regulamento).
-- Os alertas automáticos da plataforma não dispensam cumprir os prazos (art. 22.º, n.º 4, do Regulamento).
-- A falta de notificação presume-se infração grave na medida da coima (art. 66.º, n.º 3).
+- A notificação não gera responsabilidade acrescida (art. 40.º, n.º 2).
+- Incidente em curso no termo do prazo do relatório final: relatório intercalar semanal, a pedido (art. 44.º, n.º 3).
+- Sem acesso à plataforma do CNCS: correio eletrónico ou telefone, a título excecional (art. 20.º, n.º 4, do Regulamento).
+- Os alertas automáticos da plataforma não dispensam o cumprimento dos prazos (art. 22.º, n.º 4, do Regulamento).
+- A falta de notificação presume-se infração grave na determinação da coima (art. 66.º, n.º 3).
 
-E um aviso importante: a proteção de dados é outro relógio. Se o incidente envolve dados pessoais, a violação notifica-se à Comissão Nacional de Proteção de Dados em setenta e duas horas, pelo Regulamento Geral sobre a Proteção de Dados.
+## Proteção de dados
 
-A notificação ao CNCS não substitui essa, nem a participação ao Ministério Público ou à Polícia Judiciária quando há crime. Um único ataque de ransomware pode pôr os três relógios a correr ao mesmo tempo.
+A proteção de dados tem um prazo próprio. Se o incidente envolver dados pessoais, a violação é notificada à Comissão Nacional de Proteção de Dados no prazo de setenta e duas horas, nos termos do Regulamento Geral sobre a Proteção de Dados.
+
+A notificação ao CNCS não substitui esta notificação, nem a participação ao Ministério Público ou à Polícia Judiciária em caso de crime. Um único ataque de ransomware pode iniciar os três prazos em simultâneo.
 
 ```{important}
-**A proteção de dados é outro relógio**
+**Prazo distinto para a proteção de dados**
 
-- Uma violação de dados pessoais notifica-se à CNPD em 72 horas (art. 33.º do RGPD).
-- A notificação ao CNCS não substitui as outras: CNPD, Ministério Público, Polícia Judiciária (art. 40.º, n.º 5).
-- O mesmo incidente pode pôr a correr três relógios ao mesmo tempo.
+- Uma violação de dados pessoais é notificada à CNPD em 72 horas (art. 33.º do RGPD).
+- A notificação ao CNCS não substitui as restantes: CNPD, Ministério Público, Polícia Judiciária (art. 40.º, n.º 5).
+- O mesmo incidente pode iniciar três prazos em simultâneo.
 ```
 
-## Na sua organização
+## Preparação
 
-Tudo isto prepara-se antes do incidente. A direção define quem decide que é significativo e quem assina. O ponto de contacto testa o acesso à plataforma do CNCS. A informática define como se registam as horas da deteção e do fim do impacto — é delas que contam os prazos.
+Estes procedimentos devem ser preparados antes de qualquer incidente. A direção define quem decide a classificação como significativo e quem assina. O ponto de contacto testa o acesso à plataforma do CNCS. A equipa de informática define o registo das horas de deteção e de fim do impacto, que determinam os prazos.
 
-O encarregado de proteção de dados tem o procedimento para a CNPD, e o jurídico sabe quando participar ao Ministério Público.
+O encarregado de proteção de dados dispõe do procedimento para a CNPD, e o serviço jurídico define os casos de participação ao Ministério Público.
 
-**O que pedir a quem**
+**Responsáveis**
 
-| A quem | O quê — antes do incidente |
+| Responsável | Preparação prévia |
 |---|---|
-| Direção | quem decide que o incidente é significativo, e quem assina a notificação |
-| Ponto de contacto | acesso à plataforma do CNCS testado, e o contacto alternativo |
-| Informática | como se regista a hora da deteção e a do fim do impacto |
-| Encarregado de proteção de dados | o procedimento paralelo para a CNPD |
-| Jurídico | quando participar ao Ministério Público |
+| Direção | decisão sobre a classificação como significativo e assinatura da notificação |
+| Ponto de contacto | acesso à plataforma do CNCS testado e contacto alternativo |
+| Equipa de informática | registo da hora de deteção e da hora de fim do impacto |
+| Encarregado de proteção de dados | procedimento paralelo para a CNPD |
+| Serviço jurídico | casos de participação ao Ministério Público |
 
-Na plataforma, cada notificação regista-se com o prazo contado, e com o estado: dentro ou fora do prazo. As violações de dados pessoais têm o seu próprio relógio de setenta e duas horas.
+Na plataforma, cada notificação é registada com o prazo calculado e o estado (dentro ou fora do prazo). As violações de dados pessoais têm o seu próprio prazo de setenta e duas horas.
 
-O que a plataforma não faz, e dizemo-lo claramente: não submete nada ao CNCS, e não gere o ciclo de vida do incidente. Guarda o que se comunicou, e conta os prazos.
+A plataforma não submete notificações ao CNCS nem gere o ciclo de vida do incidente: regista as comunicações efetuadas e calcula os prazos.
 
-**Onde isto entra na plataforma**
+**Correspondência na plataforma**
 
-- Autoridades e notificações: cada notificação registada, com o prazo contado e o estado — dentro ou fora do prazo ({doc}`/platform/organisation/authorities-and-notifications`).
-- Proteção de dados: as violações e o relógio das 72 horas ({doc}`/platform/organisation/data-protection`).
-- A plataforma não submete nada ao CNCS nem tem ciclo de vida de incidentes: guarda o que se comunicou, e conta os prazos.
+- Autoridades e notificações: cada notificação registada, com o prazo calculado e o estado, dentro ou fora do prazo ({doc}`/platform/organisation/authorities-and-notifications`).
+- Proteção de dados: as violações e o prazo de 72 horas ({doc}`/platform/organisation/data-protection`).
+- A plataforma não submete notificações ao CNCS nem gere o ciclo de vida de incidentes: regista as comunicações e calcula os prazos.

@@ -1,63 +1,59 @@
 # Importar contratos públicos
 
-O explorador de contratos públicos: carregar os ficheiros exportados do BASE.gov, escolher a própria entidade e importar os contratos que interessam.
+O explorador de contratos públicos: carregamento dos ficheiros exportados do BASE.gov, seleção da própria entidade e importação dos contratos relevantes.
 
 ```{video} 355-importar-contratos-publicos
 ```
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Fornecedores e Contratos › Importar contratos
+**Identificar** > **Fornecedores e Contratos** > **Importar contratos**
 
 ```{figure} /_static/capturas/contratos-explorador/menu.jpg
-:alt: Menu lateral: Identificar › Fornecedores e Contratos › Importar contratos
+:alt: Menu lateral: Identificar > Fornecedores e Contratos > Importar contratos
 
-O caminho no menu lateral: Identificar › Fornecedores e Contratos › Importar contratos.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Fornecedores e Contratos**.
-3. Clique em **Importar contratos**: abre o ecrã desta página.
+**Esta importação deve preceder o registo de fornecedores.** As entidades com contratos públicos devem começar por este ecrã, reduzindo o registo manual: os fornecedores podem depois ser propostos a partir dos contratos ({doc}`suppliers`).
 
+## Ficheiros de entrada
 
-**Faz-se antes do registo de fornecedores, não depois.** Quem tem contratos públicos começa por aqui e escreve menos meia lista à mão: os fornecedores podem depois ser propostos a partir dos contratos ({doc}`suppliers`).
-
-## O que entra
-
-Ficheiros JSON exportados do **BASE.gov**, o portal dos contratos públicos. São de dois tipos: um `entidades.json` com a lista de entidades adjudicantes, e um ou mais ficheiros de contratos, anúncios ou modificações.
+São importados ficheiros JSON exportados do **BASE.gov**, o portal dos contratos públicos, de dois tipos: um ficheiro `entidades.json` com a lista de entidades adjudicantes e um ou mais ficheiros de contratos, anúncios ou modificações.
 
 ```{note}
-**A plataforma não vai ao BASE.gov buscar nada.** Não há nenhuma ligação para fora: os ficheiros são exportados de lá por quem os tem e carregados aqui. Não há botão «sincronizar».
+**A plataforma não estabelece ligação ao BASE.gov.** Não existe ligação externa: os ficheiros são exportados do portal e carregados manualmente. Não existe opção de sincronização.
 ```
 
-## Os três passos
+## Procedimento
 
 ```{figure} /_static/capturas/contratos-explorador/entidades-1.jpg
 :alt: O primeiro passo: carregar as entidades
 
-O primeiro passo: carregar as entidades.
+Primeiro passo: carregamento das entidades.
 ```
 
-1. **Passo 1 — carregar as entidades**
-2. **Importar entidades.json**
+No ecrã, encontra os seguintes elementos:
 
+1. **Passo 1:** Carregamento das entidades.
+2. Botão **Importar entidades.json:** Carrega o ficheiro de entidades.
 
-O ecrã anda pelos três passos sozinho.
+O ecrã avança automaticamente pelos três passos:
 
-1. **Carregar entidades:** o `entidades.json`.
-2. **Selecionar as entidades alvo**, normalmente só a própria instituição e os organismos que dela dependem. É este passo que define o filtro: o cartão «arquivos processados» mostra sempre **lidos** e **extraídos**, e a diferença entre os dois é o que ficou de fora por não ser destas entidades.
-3. **Carregar os dados e escolher:** filtrar por texto, adjudicatário, valor, data ou categoria técnica, marcar os que interessam e **importar para a base de dados**.
+1. **Carregar entidades:** Carregue o ficheiro `entidades.json`.
+2. **Selecionar as entidades alvo:** Normalmente, apenas a própria instituição e os organismos dela dependentes. Este passo define o filtro: o cartão «arquivos processados» indica sempre os registos **lidos** e **extraídos**, e a diferença corresponde aos registos excluídos por não pertencerem às entidades selecionadas.
+3. **Carregar os dados e selecionar:** Filtre por texto, adjudicatário, valor, data ou categoria técnica, assinale os registos pretendidos e clique em **importar para a base de dados**.
 
-A etiqueta técnica é adivinhada da descrição e dos códigos CPV, e só tem dois valores: **Software** e **Hardware**. O que não cai em nenhum fica sem etiqueta: não é uma terceira categoria, é a ausência de palpite. A marca **Eco** vem do próprio registo.
+A categoria técnica é inferida da descrição e dos códigos CPV e tem apenas dois valores: **Software** e **Hardware**. Os registos que não correspondem a nenhum ficam sem categoria; esta ausência não constitui uma terceira categoria. A indicação **Eco** provém do próprio registo.
 
-## O que sai
+## Resultado
 
-Os registos escolhidos, gravados. **Só os escolhidos**: o que fica no *browser* não é gravado em lado nenhum, e «Recomeçar» deita fora tudo o que ainda não foi importado. Reimportar o mesmo ficheiro não duplica nada: a chave é a referência mais o tipo, e o ecrã diz quantos entraram e quantos foram ignorados por já lá estarem.
+São gravados **apenas os registos selecionados**: os dados carregados no browser não são guardados, e a opção **Recomeçar** descarta todos os dados ainda não importados. A reimportação do mesmo ficheiro não gera duplicados: a chave é a referência e o tipo, e o ecrã indica o número de registos importados e ignorados por já existirem.
 
-Os contratos gravados associam-se depois a sistemas do catálogo em **Governar › Contratos › Importados**. É essa associação que responde à pergunta que uma auditoria faz sempre: *este servidor está coberto por que contrato, e até quando?* Ver {doc}`suppliers`.
+Os contratos gravados são posteriormente associados a sistemas do catálogo em **Governar** > **Contratos** > **Importados**. Esta associação responde a uma questão habitual nas auditorias: *qual o contrato que cobre este servidor, e até quando?* Ver {doc}`suppliers`.
 
 ## Resumo
 
-- Os ficheiros vêm do BASE.gov, exportados à mão; a plataforma não se liga a nada.
-- Entidades primeiro, depois os contratos; só os escolhidos são gravados.
-- Reimportar não duplica.
+- Os ficheiros são exportados manualmente do BASE.gov; a plataforma não estabelece ligações externas.
+- As entidades são carregadas primeiro, seguidas dos contratos; apenas os registos selecionados são gravados.
+- A reimportação não gera duplicados.

@@ -1,30 +1,28 @@
 # O ambiente de testes
 
-Montar, ao lado da produção, uma segunda instalação cheia de dados inventados, para aprender e experimentar sem tocar em nada real — e entrar nela.
+Criação, ao lado da produção, de uma segunda instalação com dados fictícios, para formação e experimentação sem afetar dados reais, e acesso a essa instalação.
 
 ```{video} 07-ambiente-de-testes
 ```
 
-A plataforma está instalada e protegida, mas ainda vazia. Antes de lhe confiar dados reais, vale a pena ter um sítio onde se possa experimentar à vontade. É isso que montamos agora: o ambiente de testes.
+A plataforma está instalada e protegida, mas ainda não tem dados. Antes de introduzir dados reais, recomenda-se dispor de um ambiente para experimentação: o ambiente de testes.
 
-## O que é
+## Descrição
 
-O ambiente de testes é uma segunda instalação, na mesma máquina, ao lado da produção. A produção continua na porta 8080; os testes ficam na 8090.
+O ambiente de testes é uma segunda instalação na mesma máquina, independente da produção. A produção mantém-se na porta 8080; os testes utilizam a porta 8090.
 
-E são mesmo separados: outra base de dados, outro serviço, outras pastas. Os dados são inventados — uma organização fictícia, com sistemas, riscos e cinquenta mil pessoas. Tudo o que tocaria num sistema externo, como o servidor Wazuh, é recusado aqui, de propósito.
+Os dois ambientes são totalmente separados: base de dados, serviço e pastas próprios. Os dados são fictícios: uma organização inventada, com sistemas, riscos e cinquenta mil pessoas. As operações que afetariam sistemas externos, como o servidor Wazuh, não estão disponíveis neste ambiente.
 
-**Produção e testes, lado a lado**
+**Produção e testes**
 
-- Produção: porta 8080, a base de dados verdadeira, os dados da organização.
-- Testes: porta 8090, outra base de dados, outro serviço, outras pastas — nada é partilhado.
-- Os dados de teste são inventados: uma organização fictícia, com sistemas, riscos e 50 000 pessoas.
-- O que mexe em sistemas externos, como o Wazuh, fica recusado no ambiente de testes.
+- Produção: porta 8080, base de dados real, dados da organização.
+- Testes: porta 8090, base de dados, serviço e pastas próprios, sem qualquer partilha.
+- Os dados de teste são fictícios: uma organização inventada, com sistemas, riscos e 50 000 pessoas.
+- As operações sobre sistemas externos, como o Wazuh, não estão disponíveis no ambiente de testes.
 
 ## Criar o ambiente
 
-Na pasta da instalação, basta um comando: sudo bash bin/ambiente-teste.sh criar. Pede o sudo porque cria uma base de dados e configura o servidor web.
-
-Escreva:
+Na pasta da instalação, execute o comando seguinte. O comando requer `sudo` porque cria uma base de dados e configura o servidor web.
 
 ```bash
 sudo bash bin/ambiente-teste.sh criar
@@ -33,22 +31,22 @@ sudo bash bin/ambiente-teste.sh criar
 ```{figure} /_static/img/07-ambiente-de-testes/01.jpg
 :alt: Um só comando
 
-Um só comando.
+O comando de criação.
 ```
 
-Primeiro, cria uma base de dados nova, com um utilizador que só tem acesso a ela, e escreve o ficheiro de configuração do ambiente de testes, com segredos próprios — diferentes dos da produção. Depois aplica as migrações, que são as instruções que criam as tabelas.
+O script cria uma nova base de dados, com um utilizador com acesso exclusivo a essa base, e gera o ficheiro de configuração do ambiente de testes, com segredos próprios, distintos dos da produção. Em seguida, aplica as migrações, que criam as tabelas.
 
-São mais de cem migrações, aplicadas pela mesma ordem que numa atualização. Por isso este ambiente também serve para ensaiar uma atualização antes de a fazer a sério.
+São aplicadas mais de cem migrações, pela mesma ordem de uma atualização. Por este motivo, o ambiente de testes permite também ensaiar uma atualização antes de a aplicar em produção.
 
 ```{figure} /_static/img/07-ambiente-de-testes/02.jpg
 :alt: Uma base de dados só para os testes
 
-Uma base de dados só para os testes.
+Base de dados exclusiva do ambiente de testes.
 ```
 
-## Os dados de teste
+## Dados de teste
 
-A seguir semeia a conta admin, tal como na produção, prepara pastas de ficheiros próprias — cópias separadas das da produção — e começa a gerar os dados.
+O script cria a conta admin, como na produção, prepara pastas de ficheiros próprias, separadas das da produção, e inicia a geração dos dados.
 
 ```{figure} /_static/img/07-ambiente-de-testes/03.jpg
 :alt: A conta inicial, as pastas e os dados
@@ -56,51 +54,49 @@ A seguir semeia a conta admin, tal como na produção, prepara pastas de ficheir
 A conta inicial, as pastas e os dados.
 ```
 
-Para se poder experimentar a ligação ao Active Directory, o script levanta um Samba de ensaio num contentor e semeia-o com cinquenta mil pessoas. É a etapa mais demorada.
-
-Aqui pode ir buscar um café. Depois, o gerador preenche a organização fictícia: sistemas, ativos, riscos, documentos, auditorias.
+Para permitir o ensaio da ligação ao Active Directory, o script cria um servidor Samba de ensaio num contentor, com cinquenta mil pessoas. Esta é a etapa mais demorada. Em seguida, o gerador preenche a organização fictícia: sistemas, ativos, riscos, documentos e auditorias.
 
 ```{figure} /_static/img/07-ambiente-de-testes/04.jpg
 :alt: Um Active Directory de ensaio com 50 000 pessoas
 
-Um Active Directory de ensaio com 50 000 pessoas.
+Active Directory de ensaio com 50 000 pessoas.
 ```
 
-## Como entrar
+## Credenciais de acesso
 
-No fim, o script diz como se entra. A conta admin, com a palavra-passe inicial, passa pelos mesmos dois passos da página anterior. Os utilizadores gerados já estão prontos: todos com a palavra-passe Teste123!, e o mesmo segredo de segundo fator.
+No final, o script indica as credenciais de acesso. A conta admin, com a palavra-passe inicial, segue os mesmos dois passos descritos na página anterior. Os utilizadores gerados estão prontos a utilizar: todos têm a palavra-passe Teste123! e o mesmo segredo de segundo fator.
 
-Acrescenta-se esse segredo uma vez à aplicação autenticadora, e serve para todos. É prático, e só é aceitável porque estes utilizadores são inventados e o ambiente é de testes.
+Basta adicionar esse segredo uma vez à aplicação autenticadora para aceder com qualquer utilizador. Esta configuração só é aceitável porque os utilizadores são fictícios e o ambiente é de testes.
 
 ```{figure} /_static/img/07-ambiente-de-testes/05.jpg
 :alt: Como entrar
 
-Como entrar.
+Credenciais de acesso.
 ```
 
-Por fim, arranca o serviço do ambiente de testes e configura o servidor web na porta 8090. Quando aparece «ambiente de teste pronto», está feito.
+Por fim, o script inicia o serviço do ambiente de testes e configura o servidor web na porta 8090. A mensagem «ambiente de teste pronto» indica que a criação foi concluída.
 
 ```{figure} /_static/img/07-ambiente-de-testes/06.jpg
 :alt: Arrancar o serviço e o servidor web
 
-Arrancar o serviço e o servidor web.
+Arranque do serviço e do servidor web.
 ```
 
-Para confirmar, o mesmo script tem a opção estado. Mostra a base de dados, quantos registos tem cada tabela, e se o serviço e o servidor web estão a responder.
+Para confirmar o estado, utilize a opção `estado` do mesmo script. São apresentados a base de dados, o número de registos de cada tabela e o estado do serviço e do servidor web.
 
-Este comando é útil mais tarde: se alguma coisa no ambiente de testes não abrir, é por aqui que se começa.
+Se alguma página do ambiente de testes não abrir, este comando é o primeiro passo do diagnóstico.
 
 ```{figure} /_static/img/07-ambiente-de-testes/07.jpg
 :alt: Confirmar o que está de pé
 
-Confirmar o que está de pé.
+Confirmação dos serviços em funcionamento.
 ```
 
-## Entrar nos testes
+## Acesso ao ambiente de testes
 
-No browser, abrimos o mesmo endereço, mas com a porta 8090. Repare na faixa amarela no topo, AMBIENTE DE TESTES, e na moldura amarela à volta da página. Aparecem em todas as páginas, incluindo esta de entrada, para nunca se confundir com a produção.
+No browser, abra o mesmo endereço com a porta 8090. A faixa amarela no topo, **AMBIENTE DE TESTES**, e a moldura amarela em redor da página são apresentadas em todas as páginas, incluindo a de entrada, para distinguir este ambiente da produção.
 
-Entramos com um dos utilizadores gerados, um operador, e a palavra-passe partilhada.
+Inicie sessão com um dos utilizadores gerados (por exemplo, um operador) e a palavra-passe partilhada.
 
 ```{figure} /_static/img/07-ambiente-de-testes/08.jpg
 :alt: A porta 8090 e a faixa amarela
@@ -108,7 +104,7 @@ Entramos com um dos utilizadores gerados, um operador, e a palavra-passe partilh
 A porta 8090 e a faixa amarela.
 ```
 
-Pede o código de segundo fator, como sempre. Escrevemos o código que a aplicação mostra para o segredo partilhado.
+É solicitado o código de segundo fator. Introduza o código apresentado pela aplicação para o segredo partilhado.
 
 ```{figure} /_static/img/07-ambiente-de-testes/09.jpg
 :alt: O código partilhado
@@ -116,19 +112,17 @@ Pede o código de segundo fator, como sempre. Escrevemos o código que a aplica�
 O código partilhado.
 ```
 
-## Explorar
+## Exploração
 
-E aqui está a diferença: o painel já está cheio. Sistemas por nível, cobertura, sistemas sem monitorização. É assim que fica a plataforma quando está a ser usada a sério.
+Ao contrário da produção, o painel já apresenta dados: sistemas por nível, cobertura e sistemas sem monitorização, tal como numa plataforma em utilização.
 
 ```{figure} /_static/img/07-ambiente-de-testes/10.jpg
 :alt: Um painel cheio de dados
 
-Um painel cheio de dados.
+Painel com dados.
 ```
 
-O catálogo de segurança, com os sistemas da organização fictícia.
-
-Pode editar, apagar, importar ficheiros — nada disto toca na produção.
+O catálogo de segurança apresenta os sistemas da organização fictícia. É possível editar, apagar e importar ficheiros sem qualquer efeito na produção.
 
 ```{figure} /_static/img/07-ambiente-de-testes/11.jpg
 :alt: O catálogo de segurança
@@ -136,7 +130,7 @@ Pode editar, apagar, importar ficheiros — nada disto toca na produção.
 O catálogo de segurança.
 ```
 
-E a gestão de risco, já com riscos avaliados. É um bom sítio para aprender cada módulo antes de o usar com os dados reais.
+A gestão de risco apresenta riscos já avaliados. O ambiente de testes é adequado para aprender cada módulo antes de o utilizar com dados reais.
 
 ```{figure} /_static/img/07-ambiente-de-testes/12.jpg
 :alt: A gestão de risco
@@ -146,12 +140,10 @@ A gestão de risco.
 
 ## Resumo
 
-Três comandos para guardar. Estado, para ver o que está de pé. Recriar, para deitar tudo abaixo e começar de novo com dados frescos — útil depois de muitas experiências. E apagar, para desmontar o ambiente de testes por completo.
+Três comandos de referência: `estado`, para verificar os serviços em funcionamento; `recriar`, para eliminar o ambiente e criá-lo novamente com dados novos (útil após várias experiências); e `apagar`, para remover o ambiente de testes por completo. Nenhum dos três afeta a produção.
 
-Em nenhum dos três a produção é tocada.
+**Comandos de referência**
 
-**Comandos para guardar**
-
-- sudo bash bin/ambiente-teste.sh estado — o que está de pé
-- sudo bash bin/ambiente-teste.sh recriar — deita abaixo e cria de novo, com dados frescos
-- sudo bash bin/ambiente-teste.sh apagar — desmonta tudo; a produção não é tocada
+- sudo bash bin/ambiente-teste.sh estado — verifica os serviços em funcionamento
+- sudo bash bin/ambiente-teste.sh recriar — elimina e cria novamente o ambiente, com dados novos
+- sudo bash bin/ambiente-teste.sh apagar — remove o ambiente por completo; a produção não é afetada

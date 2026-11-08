@@ -1,6 +1,6 @@
 # Prova e acompanhamento
 
-As evidências, os controlos de cada responsável, os indicadores, o painel e os diagnósticos.
+Evidências, controlos de cada responsável, indicadores, painel e diagnósticos.
 
 ```{toctree}
 :maxdepth: 1

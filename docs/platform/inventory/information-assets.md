@@ -1,65 +1,59 @@
 # Ativos de informação
 
-Do servidor à informação: cada ativo com tipo, classificação, confidencialidade, integridade e disponibilidade, dono e os sistemas em que assenta — e a árvore do que está dentro de quê.
+Do servidor à informação: cada ativo com tipo, classificação, confidencialidade, integridade e disponibilidade, dono e sistemas de suporte, e a árvore de contenção.
 
 ```{video} 314-ativos-de-informacao
 ```
 
-Um servidor é um bem. O que o risco aprecia é a informação que assenta nele: os dados dos estudantes, as matrículas, os vencimentos. Nesta página registamos os ativos de informação, como vimos em conceito em {doc}`/fundamentals/information-and-assets`.
+Um servidor é um bem; a apreciação de risco incide sobre a informação que suporta (dados dos estudantes, matrículas, vencimentos). Esta página descreve o registo dos ativos de informação, cujo conceito é apresentado em {doc}`/fundamentals/information-and-assets`.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Inventário › Ativos de informação
+**Identificar** > **Inventário** > **Ativos de informação**
 
 ```{figure} /_static/capturas/ativos-informacao/menu.jpg
-:alt: Menu lateral: Identificar › Inventário › Ativos de informação
+:alt: Menu lateral: Identificar > Inventário > Ativos de informação
 
-O caminho no menu lateral: Identificar › Inventário › Ativos de informação.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Inventário**.
-3. Clique em **Ativos de informação**: abre o ecrã desta página.
+## Campos
 
-## Os campos
+Cada ativo tem um tipo, uma classificação e três valores: confidencialidade, integridade e disponibilidade. Tem também um dono, o responsável do serviço, e os sistemas de suporte; por exemplo, um serviço de correio pode depender de três servidores.
 
-Cada ativo tem um tipo, uma classificação, e os três valores — confidencialidade, integridade e disponibilidade. Tem um dono, que é o responsável do serviço, e os sistemas em que assenta: um serviço de correio pode assentar em três servidores.
+Pode ainda ter um tipo de catálogo: o código MONARC equivalente (um método público de análise de risco), que disponibiliza modelos de ameaças e vulnerabilidades.
 
-E pode ter um tipo de catálogo, o código MONARC equivalente — um método público de análise de risco —, que traz modelos de ameaças e vulnerabilidades prontos a usar.
+**Campos de um ativo**
 
-**Os campos de um ativo**
-
-| Campo | O que é |
+| Campo | Descrição |
 |---|---|
 | Tipo | processo, base de dados, aplicação, suporte, pessoa-chave, serviço |
-| Classificação | público, interno, confidencial, restrito — no Grupo A, pelo processo de classificação (O.PCF) |
-| C, I, A | quanto valem a confidencialidade, a integridade e a disponibilidade |
-| Dono | quem responde por ele — o responsável do serviço, não a informática |
-| Sistemas | em que sistemas do catálogo assenta — vários, não um |
-| Tipo do catálogo | o código MONARC equivalente, que traz modelos de risco prontos |
+| Classificação | público, interno, confidencial, restrito; no Grupo A, de acordo com o processo de classificação (O.PCF) |
+| C, I, A | valor da confidencialidade, da integridade e da disponibilidade |
+| Dono | responsável pelo ativo: o responsável do serviço, e não a equipa de informática |
+| Sistemas | sistemas do catálogo que suportam o ativo (podem ser vários) |
+| Tipo do catálogo | código MONARC equivalente, com modelos de risco |
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Identificar › Inventário › Ativos de informação
-
-No menu Identificar, Inventário, Ativos de informação. Filtra-se por tipo, classificação e grupo. Cada ativo tem três botões: Editar, Apreciar riscos, que leva ao registo de risco, e Contenção.
-
-O número de riscos de cada ativo aparece na própria linha, e abre o registo de risco já filtrado.
+A lista pode ser filtrada por tipo, classificação e grupo. O número de riscos de cada ativo é apresentado na respetiva linha e abre o registo de risco já filtrado.
 
 ```{figure} /_static/capturas/ativos-informacao/abrir-1.jpg
-:alt: Identificar › Inventário › Ativos de informação
+:alt: Identificar > Inventário > Ativos de informação
 
-O ecrã em Identificar › Inventário › Ativos de informação.
+Ecrã **Identificar** > **Inventário** > **Ativos de informação**.
 ```
 
-1. **Apreciar riscos**
-2. **Contenção**
+Cada ativo tem os botões **Editar**, **Apreciar riscos** e **Contenção**. No ecrã, encontra os seguintes elementos:
 
-## A árvore
+1. Botão **Apreciar riscos:** Abre o registo de risco do ativo.
+2. Botão **Contenção:** Define os contentores do ativo.
 
-O separador Árvore de contenção mostra o que está dentro de quê: campus, edifício, sala, servidor. Um equipamento pode estar em vários contentores ao mesmo tempo — uma sala e um circuito elétrico.
+## Árvore de contenção
 
-Para cada nó, um emblema conta os riscos dos contentores acima que ainda não desceram até ele. Se a sala tem risco de inundação, os servidores lá dentro herdam-no. A pesquisa não corta ramos: abre o caminho até ao que procura.
+O separador **Árvore de contenção** apresenta a hierarquia de contenção: campus, edifício, sala, servidor. Um equipamento pode pertencer a vários contentores em simultâneo; por exemplo, uma sala e um circuito elétrico.
+
+Em cada nó, um emblema indica o número de riscos dos contentores superiores ainda não propagados até esse nó. Por exemplo, se a sala tiver risco de inundação, os servidores nela instalados herdam esse risco. A pesquisa não oculta ramos: expande o caminho até ao elemento procurado.
 
 ```{figure} /_static/capturas/ativos-informacao/arvore-1.jpg
 :alt: A árvore de contenção
@@ -67,7 +61,7 @@ Para cada nó, um emblema conta os riscos dos contentores acima que ainda não d
 A árvore de contenção (1 de 2).
 ```
 
-1. Clique em **Árvore de contenção**.
+1. Separador **Árvore de contenção:** Apresenta a hierarquia de contenção.
 
 ```{figure} /_static/capturas/ativos-informacao/arvore-2.jpg
 :alt: A árvore de contenção
@@ -77,10 +71,10 @@ A árvore de contenção (2 de 2).
 
 ## Resumo
 
-A cada responsável de serviço, pergunte que informação usa e quanto valem as três propriedades. À informática, em que sistemas assenta. E um sistema sem ativo ligado fica a âmbar no catálogo, até alguém apreciar o risco do que lá está.
+Solicite a cada responsável de serviço a informação utilizada e o valor das três propriedades, e à equipa de informática os sistemas de suporte. Um sistema sem ativo associado é apresentado a âmbar no catálogo até à apreciação do risco da informação que suporta.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- A cada responsável de serviço: a informação que usa, e quanto valem C, I e A.
-- À informática: em que sistemas assenta cada ativo.
-- Um sistema sem ativo ligado fica a âmbar no catálogo: por apreciar, não risco zero.
+- Responsáveis de serviço: informação utilizada e valor de C, I e A.
+- Equipa de informática: sistemas de suporte de cada ativo.
+- Um sistema sem ativo associado é apresentado a âmbar no catálogo: risco por apreciar, e não risco nulo.

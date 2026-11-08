@@ -1,21 +1,21 @@
 # Instalar em modo nativo
 
-A instalação completa em modo nativo, num Ubuntu 24.04 acabado de instalar: obter o código, correr o instalador, responder às perguntas, esperar pelo fim e confirmar que a plataforma está a funcionar.
+Instalação completa em modo nativo, num Ubuntu 24.04 recém-instalado: obtenção do código, execução do instalador, respostas às perguntas, conclusão e verificação do funcionamento da plataforma.
 
 ```{video} 04-instalar-nativo
 ```
 
-Nesta página instalamos o SecVision em modo nativo, numa máquina Ubuntu 24.04 acabada de instalar, sem nada lá dentro. Vai ver tudo o que acontece, tal como acontece.
+Esta página descreve a instalação do SecVision em modo nativo, numa máquina Ubuntu 24.04 recém-instalada e sem outro software, com todas as etapas apresentadas tal como ocorrem.
 
-A gravação foi feita numa máquina de laboratório, um Ubuntu no WSL. No seu servidor, os comandos e as perguntas são exatamente os mesmos; muda só o endereço com que se chega à plataforma.
+A gravação foi feita numa máquina de laboratório, um Ubuntu no WSL. Num servidor, os comandos e as perguntas são os mesmos; apenas o endereço de acesso à plataforma é diferente.
 
-## Confirmar a máquina
+## Verificação da máquina
 
-Abrimos o terminal no servidor. Antes de mais, confirmamos onde estamos. O comando whoami diz-nos com que utilizador entrámos: secv, um utilizador normal, com permissão de sudo.
+Abra o terminal no servidor e confirme a máquina de destino. O comando `whoami` indica o utilizador com sessão iniciada: **secv**, um utilizador normal com permissão de `sudo`.
 
-E o lsb_release mostra o sistema: Ubuntu 24.04, a versão de suporte prolongado. É boa prática começar sempre assim — evita instalar na máquina errada.
+O comando `lsb_release` indica o sistema: Ubuntu 24.04, a versão de suporte prolongado. Esta verificação evita a instalação na máquina errada.
 
-Escreva:
+Introduza:
 
 ```bash
 whoami
@@ -25,16 +25,16 @@ lsb_release -d
 ```{figure} /_static/img/04-instalar-nativo/01.jpg
 :alt: Onde estamos
 
-Onde estamos.
+Verificação da máquina.
 ```
 
-## Obter o código
+## Obtenção do código
 
-Agora trazemos o código do SecVision para o servidor, com o comando git clone. O git é a ferramenta que guarda o código e o histórico de todas as versões.
+Copie o código do SecVision para o servidor com o comando `git clone`. O git é a ferramenta que guarda o código e o histórico de todas as versões.
 
-O endereço depende de onde o repositório está alojado. Aqui é o do nosso laboratório; no seu caso, será o endereço que a sua organização lhe indicar. A cópia fica numa pasta chamada secvision.
+O endereço depende do local onde o repositório está alojado. Neste exemplo, é utilizado o endereço do laboratório; numa instalação real, utilize o endereço indicado pela organização. A cópia é criada numa pasta chamada **secvision**.
 
-Escreva:
+Introduza:
 
 ```bash
 git clone <endereço-do-repositório> secvision
@@ -43,12 +43,12 @@ git clone <endereço-do-repositório> secvision
 ```{figure} /_static/img/04-instalar-nativo/02.jpg
 :alt: git clone
 
-Git clone.
+`git clone`.
 ```
 
-Entramos na pasta com cd, e listamos o que lá está com ls. Não é preciso conhecer tudo: o backend e o frontend são as duas partes da aplicação, a pasta documentacao é o manual, e o setup.sh é o instalador. É ele que vamos correr.
+Entre na pasta com `cd` e liste o conteúdo com `ls`. As pastas **backend** e **frontend** são as duas partes da aplicação, a pasta **documentacao** contém o manual e o ficheiro **setup.sh** é o instalador.
 
-Escreva:
+Introduza:
 
 ```bash
 cd secvision
@@ -61,27 +61,27 @@ ls
 A pasta do SecVision.
 ```
 
-## O instalador
+## Instalador
 
-Corremos o instalador com bash setup.sh. A primeira coisa que ele faz é pedir permissões de administrador — por isso aparece o pedido de palavra-passe do sudo. Escrevemos a palavra-passe do nosso utilizador; repare que não aparece nada enquanto escrevemos. Enter, e seguimos.
+Execute o instalador com `bash setup.sh`. O instalador começa por pedir permissões de administrador, pelo que é solicitada a palavra-passe do `sudo`. Introduza a palavra-passe do utilizador (não são apresentados caracteres) e prima Enter.
 
-Escreva:
+Introduza:
 
 ```bash
 bash setup.sh
 ```
 
-O que se respondeu a cada pergunta do instalador nesta instalação:
+Respostas dadas às perguntas do instalador nesta instalação:
 
 | Pergunta do instalador | Resposta |
 |---|---|
-| [sudo] password for secv | (a palavra-passe do seu utilizador) |
+| [sudo] password for secv | (a palavra-passe do utilizador) |
 | Opção [1/2] | `2` |
-| Password root do MySQL | (a palavra-passe root da base de dados que escolher) |
-| Confirme a password root | (a palavra-passe root da base de dados que escolher) |
+| Password root do MySQL | (a palavra-passe root da base de dados escolhida) |
+| Confirme a password root | (a palavra-passe root da base de dados escolhida) |
 | Utilizador da aplicação | Enter (aceita o valor proposto) |
-| Password da aplicação | (a palavra-passe da aplicação que escolher) |
-| Confirme a password da aplicação | (a palavra-passe da aplicação que escolher) |
+| Password da aplicação | (a palavra-passe da aplicação escolhida) |
+| Confirme a password da aplicação | (a palavra-passe da aplicação escolhida) |
 | Mostrar segredos | `n` |
 | WebAuthn RP Name | `SecVision` |
 | Domínio / RP ID | `localhost` |
@@ -94,56 +94,38 @@ O que se respondeu a cada pergunta do instalador nesta instalação:
 | Prima Enter | Enter (aceita o valor proposto) |
 | (S/n) | `s` |
 | (s/N) | `n` |
-| Modo de instalação | `menu-modo` |
-| Passo 1/5 — Detecção do sistema | `deteccao` |
-| Instalar MariaDB automaticamente | `pergunta-mariadb` |
-| Instalar nginx automaticamente | `pergunta-nginx` |
-| Instalar a base Docker aprovada | `pergunta-docker` |
-| Instalar Node.js 22 | `pergunta-node` |
-| Instalar PM2 automaticamente | `pergunta-pm2` |
-| A instalar semgrep | `ferramentas` |
-| A construir a imagem do Presidio | `presidio` |
-| Presidio a responder | `presidio-ok` |
-| Configuração segura da aplicação | `assistente` |
-| Configuração da Base de Dados | `assistente-bd` |
-| Segredos de Segurança | `assistente-segredos` |
-| Configuração da Aplicação | `assistente-aplicacao` |
-| Revisão e Confirmação | `assistente-revisao` |
-| Construção da aplicação | `construcao` |
-| Configuração de serviços e lançamento | `servicos` |
-| Instalação concluída | `concluida` |
 
 ```{figure} /_static/img/04-instalar-nativo/04.jpg
 :alt: bash setup.sh
 
-Bash setup.sh.
+`bash setup.sh`.
 ```
 
-Surge a primeira pergunta: o modo de instalação. Escrevemos dois, para o modo nativo. Repare na nota do instalador: deteta que está num ambiente WSL e recomenda o modo nativo. Num servidor Ubuntu, essa nota não aparece.
+A primeira pergunta é o modo de instalação. Introduza **2**, para o modo nativo. O instalador deteta o ambiente WSL e recomenda o modo nativo; num servidor Ubuntu, esta nota não é apresentada.
 
-Se carregasse só em Enter, sem escrever nada, ficaria o modo Docker — é esse o que vemos na página seguinte.
+Premir Enter sem introduzir nenhum valor seleciona o modo Docker, descrito na página seguinte.
 
 ```{figure} /_static/img/04-instalar-nativo/05.jpg
 :alt: Escolher o modo — 2, nativo
 
-Escolher o modo — 2, nativo.
+Escolha do modo: 2, nativo.
 ```
 
 ## Pré-requisitos
 
-O instalador verifica o que já existe na máquina e, para cada programa que falta, pede autorização antes de o instalar. Primeiro, a base de dados MariaDB, onde fica guardada toda a informação. Respondemos s, de sim.
+O instalador verifica o software existente na máquina e, para cada programa em falta, solicita autorização antes de o instalar. Primeiro, a base de dados MariaDB, onde é guardada toda a informação. Responda **s** (sim).
 
-Depois, o nginx: o servidor web, que entrega as páginas ao browser. Também sim. Cada resposta lança a instalação desse programa a partir dos repositórios oficiais do Ubuntu.
+Em seguida, o nginx, o servidor web que disponibiliza as páginas ao browser. Responda também **s**. Cada resposta inicia a instalação do programa a partir dos repositórios oficiais do Ubuntu.
 
 ```{figure} /_static/img/04-instalar-nativo/06.jpg
 :alt: Instalar o que falta — MariaDB e nginx
 
-Instalar o que falta — MariaDB e nginx.
+Instalação dos programas em falta: MariaDB e nginx.
 ```
 
-A seguir, o Docker. Mesmo no modo nativo, é preciso para uma peça: o Presidio, que protege os dados pessoais antes de qualquer texto seguir para uma inteligência artificial. O instalador põe a versão aprovada, a partir do repositório oficial do Docker.
+Segue-se o Docker. Mesmo no modo nativo, o Docker é necessário para o Presidio, que protege os dados pessoais antes do envio de qualquer texto para um serviço de inteligência artificial. O instalador instala a versão aprovada, a partir do repositório oficial do Docker.
 
-E o Node.js, na versão 22: é o motor que corre a aplicação. O instalador obtém-no do repositório NodeSource e, no fim, confirma a versão que ficou instalada.
+Em seguida, o Node.js 22, que executa a aplicação. O instalador obtém-no do repositório NodeSource e, no final, confirma a versão instalada.
 
 ```{figure} /_static/img/04-instalar-nativo/07.jpg
 :alt: Docker e Node.js 22
@@ -151,7 +133,7 @@ E o Node.js, na versão 22: é o motor que corre a aplicação. O instalador obt
 Docker e Node.js 22.
 ```
 
-Por último, o PM2: é ele que mantém a aplicação sempre a correr, e a volta a arrancar se o servidor reiniciar. Depois, sem perguntar, o instalador acrescenta as ferramentas de análise que a plataforma usa — como o nmap e o semgrep.
+Por último, o PM2, que mantém a aplicação em execução e a reinicia após um reinício do servidor. Em seguida, o instalador acrescenta, sem solicitar confirmação, as ferramentas de análise utilizadas pela plataforma, como o nmap e o semgrep.
 
 ```{figure} /_static/img/04-instalar-nativo/08.jpg
 :alt: PM2 e ferramentas de análise
@@ -159,19 +141,19 @@ Por último, o PM2: é ele que mantém a aplicação sempre a correr, e a volta 
 PM2 e ferramentas de análise.
 ```
 
-Agora vem a etapa mais demorada: preparar o Presidio, com o modelo de língua portuguesa. São perto de dois gigabytes a descarregar, e só acontece da primeira vez.
+A etapa mais demorada é a preparação do Presidio, com o modelo de língua portuguesa. São transferidos cerca de dois gigabytes, apenas na primeira instalação.
 
-Quando termina, o instalador não se fica pelo «arrancou»: pede-lhe que analise uma frase de ensaio, e só diz que está pronto quando o Presidio responde a sério.
+No final, o instalador verifica o funcionamento do Presidio com a análise de uma frase de teste. A instalação só é dada como concluída quando o serviço devolve uma resposta válida.
 
 ```{figure} /_static/img/04-instalar-nativo/09.jpg
 :alt: Presidio — o guardião dos dados pessoais
 
-Presidio — o guardião dos dados pessoais.
+Presidio: proteção dos dados pessoais.
 ```
 
-## O assistente
+## Assistente de configuração
 
-Os programas estão instalados. Entra agora o assistente de configuração, que faz cinco perguntas e escreve o ficheiro de configuração da plataforma. Primeiro, confirma os pré-requisitos.
+Com os programas instalados, é iniciado o assistente de configuração, que coloca cinco perguntas e cria o ficheiro de configuração da plataforma. O assistente começa por confirmar os pré-requisitos.
 
 ```{figure} /_static/img/04-instalar-nativo/10.jpg
 :alt: O assistente de configuração
@@ -179,27 +161,27 @@ Os programas estão instalados. Entra agora o assistente de configuração, que 
 O assistente de configuração.
 ```
 
-A base de dados. Pede a palavra-passe do administrador da base, duas vezes, para confirmar. Depois o nome do utilizador da aplicação — carregamos em Enter para aceitar o que propõe — e a palavra-passe dele, com pelo menos doze caracteres, também duas vezes.
+**Base de dados:** Introduza a palavra-passe do administrador da base de dados, duas vezes. Em seguida, prima Enter para aceitar o nome proposto para o utilizador da aplicação e introduza a respetiva palavra-passe, com pelo menos doze caracteres, também duas vezes.
 
-Nenhuma palavra-passe aparece no ecrã, e o assistente avisa disso antes de começar. Se as duas não coincidirem, volta a perguntar.
+As palavras-passe não são apresentadas no ecrã, conforme indicado pelo assistente. Se as duas entradas não coincidirem, a pergunta é repetida.
 
 ```{figure} /_static/img/04-instalar-nativo/11.jpg
 :alt: Base de dados — duas palavras-passe
 
-Base de dados — duas palavras-passe.
+Base de dados: duas palavras-passe.
 ```
 
-Os segredos de segurança são as chaves que protegem as sessões de quem entra na plataforma. Não precisamos de inventar nenhum: o assistente gera-os ao acaso. Só pergunta se os queremos ver no ecrã — respondemos que não.
+**Segredos de segurança:** São as chaves que protegem as sessões dos utilizadores da plataforma. O assistente gera-os aleatoriamente e pergunta apenas se devem ser apresentados no ecrã. Responda **n**.
 
 ```{figure} /_static/img/04-instalar-nativo/12.jpg
 :alt: Os segredos — gerados sozinhos
 
-Os segredos — gerados sozinhos.
+Segredos gerados automaticamente.
 ```
 
-Agora, a aplicação. Um nome, que aparece nas aplicações autenticadoras: SecVision. Depois o endereço pelo qual o browser vai chegar à plataforma. Aqui, nesta máquina de laboratório, é localhost; num servidor da sua rede, será o nome desse servidor.
+**Aplicação:** Indique o nome apresentado nas aplicações autenticadoras (**SecVision**) e o endereço de acesso à plataforma no browser. Nesta máquina de laboratório, o endereço é **localhost**; num servidor da rede, utilize o nome do servidor.
 
-A porta fica em 8080. Como não é a porta habitual, o assistente propõe-se a acertar o endereço completo — respondemos que sim. O limite de tamanho dos ficheiros enviados fica nos cinquenta megabytes propostos.
+A porta é a **8080**. Por não ser a porta habitual, o assistente propõe corrigir o endereço completo; responda **s**. O limite de tamanho dos ficheiros enviados mantém-se nos cinquenta megabytes propostos.
 
 ```{figure} /_static/img/04-instalar-nativo/13.jpg
 :alt: Endereço e porta
@@ -207,27 +189,27 @@ A porta fica em 8080. Como não é a porta habitual, o assistente propõe-se a a
 Endereço e porta.
 ```
 
-O assistente mostra o resumo do que vai gravar. Confirmamos, e ele escreve o ficheiro de configuração, só legível pelo nosso utilizador.
+O assistente apresenta o resumo da configuração. Após a confirmação, é criado o ficheiro de configuração, legível apenas pelo utilizador.
 
 ```{figure} /_static/img/04-instalar-nativo/14.jpg
 :alt: Rever e gravar
 
-Rever e gravar.
+Revisão e gravação.
 ```
 
 ## Construção e arranque
 
-O instalador constrói a aplicação: descarrega as bibliotecas de que ela depende e prepara as páginas que o browser vai mostrar. É outra espera.
+O instalador constrói a aplicação: transfere as bibliotecas necessárias e prepara as páginas apresentadas no browser. Esta etapa também é demorada.
 
 ```{figure} /_static/img/04-instalar-nativo/15.jpg
 :alt: Construir a aplicação
 
-Construir a aplicação.
+Construção da aplicação.
 ```
 
-A última fase põe tudo a funcionar. Cria a base de dados e as suas tabelas — cada linha com um visto é uma parte da estrutura aplicada. Configura o nginx, arranca a aplicação com o PM2 e regista as tarefas que correm sozinhas todas as noites.
+A última fase coloca a plataforma em funcionamento. São criadas a base de dados e as respetivas tabelas (cada linha com um visto corresponde a uma parte da estrutura aplicada), configurado o nginx, iniciada a aplicação com o PM2 e registadas as tarefas executadas automaticamente todas as noites.
 
-No fim, espera que a aplicação responda, cria a conta de administrador inicial e confirma que a proteção dos dados pessoais ficou configurada.
+No final, o instalador aguarda a resposta da aplicação, cria a conta de administrador inicial e confirma a configuração da proteção dos dados pessoais.
 
 ```{figure} /_static/img/04-instalar-nativo/16.jpg
 :alt: Base de dados, nginx, PM2 e tarefas agendadas
@@ -237,9 +219,9 @@ Base de dados, nginx, PM2 e tarefas agendadas.
 
 ## Resumo
 
-Instalação concluída. O resumo mostra o endereço da plataforma e a conta inicial: admin, com a palavra-passe ChangeMe123!. Anote-as — vamos usá-las já na página do primeiro acesso.
+Com a instalação concluída, o resumo apresenta o endereço da plataforma e a conta inicial: **admin**, com a palavra-passe **ChangeMe123!**. Anote estes dados, necessários para o primeiro acesso.
 
-E «normas carregadas: vinte e quatro» é o número certo: são as normas e a legislação que vêm com a plataforma. As normas ISO compram-se à parte, e quem as tiver instala-as depois.
+A indicação «normas carregadas: vinte e quatro» corresponde ao número esperado: as normas e a legislação incluídas na plataforma. As normas ISO são adquiridas separadamente e instaladas posteriormente.
 
 ```{figure} /_static/img/04-instalar-nativo/17.jpg
 :alt: Instalação concluída
@@ -247,11 +229,11 @@ E «normas carregadas: vinte e quatro» é o número certo: são as normas e a l
 Instalação concluída.
 ```
 
-## Confirmar que funciona
+## Verificação do funcionamento
 
-Vamos confirmar com os nossos olhos. O pm2 status mostra a aplicação, secinventory-api, no estado online. Se aparecesse errored, ou a coluna dos reinícios estivesse sempre a subir, era sinal de problema.
+O comando `pm2 status` apresenta a aplicação **secinventory-api** no estado **online**. Os estados **errored**, ou um número de reinícios em crescimento constante, indicam um problema.
 
-Escreva:
+Introduza:
 
 ```bash
 pm2 status
@@ -260,14 +242,14 @@ pm2 status
 ```{figure} /_static/img/04-instalar-nativo/18.jpg
 :alt: pm2 status
 
-Pm2 status.
+`pm2 status`.
 ```
 
-Por fim, perguntamos à própria aplicação se está bem: responde status ok, em ambiente de produção. E o nginx, na porta 8080, responde com o código 200 — quer dizer que a página está a ser servida.
+Por fim, consulte o estado da aplicação: a resposta **status ok**, em ambiente de produção, confirma o funcionamento. O nginx, na porta 8080, responde com o código 200, o que indica que a página está a ser disponibilizada.
 
-A instalação está feita e confirmada. Se algum passo tivesse falhado, o registo completo está no ficheiro setup-install.log, dentro da pasta do SecVision.
+A instalação está concluída e verificada. Em caso de falha num dos passos, o registo completo encontra-se no ficheiro **setup-install.log**, na pasta do SecVision.
 
-Escreva:
+Introduza:
 
 ```bash
 curl -s http://localhost:4000/api/health; echo

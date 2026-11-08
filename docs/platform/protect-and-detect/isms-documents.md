@@ -1,81 +1,77 @@
 # As políticas e os procedimentos do SGSI
 
-Escrever as políticas e os procedimentos, ligá-los aos controlos que governam, aprová-los com versão assinada, exportá-los para Word com a imagem da casa, e arquivar em vez de apagar.
+Redação das políticas e dos procedimentos, associação aos controlos que governam, aprovação com versão assinada, exportação para Word com a imagem institucional e arquivo em alternativa à eliminação.
 
 ```{video} 330-documentos-do-sgsi
 ```
 
-Começa a fase de implementar. O primeiro trabalho é escrever: as políticas, os procedimentos e os planos do sistema de gestão. E ligar cada documento aos controlos que governa.
+A fase de implementação começa pela redação das políticas, dos procedimentos e dos planos do sistema de gestão, e pela associação de cada documento aos controlos que governa.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Governar › Sgsi › Políticas
+**Governar** > **SGSI** > **Políticas**
 
 ```{figure} /_static/capturas/sgsi-documentos/menu.jpg
-:alt: Menu lateral: Governar › Sgsi › Políticas
+:alt: Menu lateral: Governar > SGSI > Políticas
 
-O caminho no menu lateral: Governar › Sgsi › Políticas.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Governar**.
-2. Dentro dele, abra **Sgsi**.
-3. Clique em **Políticas**: abre o ecrã desta página.
+## Finalidade
 
-## Porquê
+No Grupo A, o Anexo IV exige quatro políticas aprovadas: cibersegurança, acessos, utilização aceitável e palavras-passe. A ISO 27001 exige igualmente políticas aprovadas pela direção e comunicadas.
 
-No Grupo A, o Anexo IV pede quatro políticas aprovadas: a de cibersegurança, a de acessos, a de utilização aceitável e a de palavras-passe. A ISO 27001 pede o mesmo: políticas aprovadas pela direção e comunicadas.
+Um documento não constitui evidência. A política governa o controlo enquanto estiver em vigor; a evidência do funcionamento do controlo é um elemento distinto e datado, descrito na fase seguinte.
 
-E uma distinção que poupa confusão: um documento não é evidência. A política governa o controlo enquanto existir; a prova de que o controlo funciona é outra coisa, datada, que vemos na fase seguinte.
+**Finalidade**
 
-**Para que serve**
+- No Grupo A, o Anexo IV exige políticas aprovadas: cibersegurança, acessos, utilização aceitável e palavras-passe (O.PSI, O.PAP, O.PUA, O.PP).
+- A ISO/IEC 27001 exige políticas aprovadas pela direção e comunicadas (controlo 5.1).
+- Um documento não constitui evidência: uma política governa um controlo enquanto estiver em vigor; a evidência é datada e tem prazo de validade.
 
-- No Grupo A, o Anexo IV pede políticas aprovadas: cibersegurança, acessos, utilização aceitável, palavras-passe (O.PSI, O.PAP, O.PUA, O.PP).
-- A ISO/IEC 27001 pede políticas aprovadas pela direção e comunicadas (controlo 5.1).
-- Um documento não é evidência: uma política governa um controlo enquanto existir; a prova é datada e caduca.
+## Documentos
 
-## Os documentos
+Existem categorias para políticas, procedimentos, planos e controlos, inicialmente vazias: todos os documentos são redigidos pela organização, e não são disponibilizados documentos de exemplo.
 
-**Menu:** Governar › SGSI › Políticas
-
-No menu Governar, SGSI, Políticas. Há categorias para políticas, procedimentos, planos e controlos, e começam vazias: o que estiver aqui foi escrito por alguém da casa. Não há documentos de exemplo.
-
-A Árvore do SGSI mostra a hierarquia entre documentos, e a Cobertura por controlo responde a duas perguntas que um auditor faz logo: que controlos aplicáveis não têm documento nenhum, e que documentos não cobrem controlo nenhum.
+A **Árvore do SGSI** apresenta a hierarquia entre documentos, e a **Cobertura por controlo** responde a duas questões frequentes em auditoria: os controlos aplicáveis sem documento e os documentos sem controlo associado.
 
 ```{figure} /_static/capturas/sgsi-documentos/abrir-1.jpg
-:alt: Governar › SGSI › Políticas
+:alt: Governar > SGSI > Políticas
 
-O ecrã em Governar › SGSI › Políticas.
+Ecrã **Governar** > **SGSI** > **Políticas**.
 ```
 
-1. **Começam vazias — escreve a casa**
+1. **Categorias:** Inicialmente vazias; os documentos são redigidos pela organização.
 
-## Um documento
+## Ficha do documento
 
-Abrimos uma política. O corpo escreve-se no editor; por baixo, os controlos que ela governa, com um botão para ligar mais. No menu de ações: fluxo de aprovação, versões, anexar a versão assinada, e exportar para Word com o modelo da instituição.
+O corpo do documento é redigido no editor; em baixo, são apresentados os controlos que o documento governa, com um botão para adicionar outros. O menu de ações inclui o fluxo de aprovação, as versões, o anexo da versão assinada e a exportação para Word com o modelo da instituição.
 
-O revisor corrige no Word, e o documento corrigido volta a entrar: a plataforma mostra o que vai mudar e diz o que não coube. E um documento que deixou de estar em vigor arquiva-se, não se apaga: um auditor prefere vê-lo arquivado a ouvir que foi apagado.
+As correções do revisor no Word podem ser importadas: a plataforma apresenta as alterações e indica o conteúdo que não pôde ser importado. Um documento que deixe de estar em vigor é arquivado e não eliminado, uma vez que o auditor prefere consultá-lo arquivado.
 
 ```{figure} /_static/capturas/sgsi-documentos/documento-1.jpg
 :alt: Um documento
 
-Um documento (1 de 2).
+Ficha de um documento (1 de 2).
 ```
 
-1. **Falta a versão assinada**
-2. Clique em **Mais acções sobre este documento**.
+No ecrã, encontra os seguintes elementos:
+
+1. **Falta a versão assinada:** Aviso de que a versão assinada ainda não foi anexada.
+2. Botão **Mais acções sobre este documento:** Abre o menu de ações.
 
 ```{figure} /_static/capturas/sgsi-documentos/documento-2.jpg
 :alt: Um documento
 
-Um documento (2 de 2).
+Ficha de um documento (2 de 2).
 ```
 
 ## Resumo
 
-A direção aprova as políticas; os responsáveis dos controlos escrevem os procedimentos. E o carrinho, no cabeçalho, junta controlos e textos de referência para pedir um rascunho à inteligência artificial — que entra sempre para revisão.
+As políticas são aprovadas pela direção, e os procedimentos são redigidos pelos responsáveis dos controlos. O carrinho, no cabeçalho, reúne controlos e textos de referência para pedir um rascunho a um serviço de inteligência artificial, sempre sujeito a revisão.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- À direção: aprovar as políticas — com a versão assinada guardada.
-- Aos responsáveis dos controlos: os procedimentos do seu trabalho.
-- O carrinho junta controlos e textos de referência para escrever um documento com IA — tudo para revisão.
+- Direção: aprovação das políticas, com a versão assinada guardada.
+- Responsáveis dos controlos: procedimentos da respetiva área.
+- O carrinho reúne controlos e textos de referência para redigir um documento com IA, sempre sujeito a revisão.

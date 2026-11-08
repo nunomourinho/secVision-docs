@@ -1,58 +1,52 @@
-# Tratar o risco e relatar à direção
+# Tratamento do risco e relato à direção
 
-O plano de tratamento e a sua aprovação pelo dono do risco, a revisão periódica, a retenção com prazo, o relatório de risco à direção que pede decisões, e os cenários estratégicos.
+O plano de tratamento e a sua aprovação pelo dono do risco, a revisão periódica, a retenção com prazo, o relatório de risco à direção com as decisões pedidas e os cenários estratégicos.
 
 ```{video} 326-tratamento-do-risco
 ```
 
-Um risco que não se aceita trata-se. Nesta página vemos o plano de tratamento, como se aprova e revê, e o relatório que leva à direção as decisões que só ela pode tomar.
+Um risco não aceite é tratado. Esta página descreve o plano de tratamento, a sua aprovação e revisão, e o relatório que apresenta à direção as decisões da sua exclusiva competência.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Risco › Plano de tratamento
+**Identificar** > **Risco** > **Plano de tratamento**
 
 ```{figure} /_static/capturas/tratamento-risco/menu.jpg
-:alt: Menu lateral: Identificar › Risco › Plano de tratamento
+:alt: Menu lateral: Identificar > Risco > Plano de tratamento
 
-O caminho no menu lateral: Identificar › Risco › Plano de tratamento.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Risco**.
-3. Clique em **Plano de tratamento**: abre o ecrã desta página.
+## Ciclo de tratamento
 
-## O ciclo
+O plano é composto por ações, cada uma com descrição, responsável e prazo. É aprovado pelo dono do risco, e a aprovação caduca automaticamente se o plano for alterado: a alteração de um prazo ou a adição de uma ação constituem um novo plano.
 
-O plano tem ações com o quê, quem e prazo. Aprova-o o dono do risco, e a aprovação caduca sozinha se o plano mudar — alterar um prazo ou acrescentar uma ação faz dele outro plano.
+A periodicidade da revisão depende da banda: um risco crítico é revisto com maior frequência do que um risco baixo, de acordo com os critérios aprovados. A retenção de um risco acima do limiar é admissível, desde que identifique o decisor, o prazo e o compromisso de tratamento. Uma retenção sem prazo não é válida.
 
-A revisão periódica vem da banda: um risco crítico revê-se mais vezes do que um baixo, como os critérios aprovaram. E reter um risco acima do limiar é legítimo — com quem decidiu, até quando, e o compromisso de lá chegar. Sem prazo não é retenção: é esquecimento.
+**Ciclo de tratamento**
 
-**O ciclo de tratamento**
+- Ações com descrição, responsável e prazo, associadas ao risco a que respondem.
+- O plano é aprovado pelo dono do risco, e a aprovação caduca quando o plano é alterado.
+- A periodicidade da revisão depende da banda do risco: o risco crítico é revisto com maior frequência.
+- A retenção de um risco acima do limiar exige a identificação do decisor, do prazo e do compromisso assumido.
 
-- Ações com o quê, quem e prazo, ligadas ao risco a que respondem.
-- O plano aprova-o o dono do risco — e a aprovação caduca quando o plano muda.
-- A revisão periódica vem da banda do risco: o crítico revê-se mais vezes.
-- Reter um risco acima do limiar exige quem decidiu, até quando, e o que se compromete a fazer.
+## Plano de tratamento
 
-## O plano
+Cada ação indica o risco a que responde, o responsável, o prazo e, quando executada por um fornecedor, a cláusula contratual que o obriga.
 
-**Menu:** Identificar › Risco › Plano de tratamento
-
-No menu Identificar, Risco, Plano de tratamento. Cada ação com o risco a que responde, o responsável, o prazo, e — quando é um fornecedor que a executa — a cláusula do contrato que o obriga.
-
-O progresso das ações aparece também na Declaração de Aplicabilidade, junto do controlo que implementam.
+O progresso das ações é também apresentado na Declaração de Aplicabilidade, junto do controlo que implementam.
 
 ```{figure} /_static/capturas/tratamento-risco/abrir-1.jpg
-:alt: Identificar › Risco › Plano de tratamento
+:alt: Identificar > Risco > Plano de tratamento
 
-O ecrã em Identificar › Risco › Plano de tratamento.
+Ecrã **Identificar** > **Risco** > **Plano de tratamento**.
 ```
 
-## O relato
+## Relato à gestão
 
-No separador Relato à gestão, o relatório de risco para a direção. Termina numa secção chamada decisões pedidas: que riscos estão acima do limiar, quem tem de decidir sobre cada um, e porquê. Um relatório útil apoia a decisão, em vez de descrever atividade.
+O separador **Relato à gestão** contém o relatório de risco para a direção. O relatório termina com a secção «Decisões pedidas», que identifica os riscos acima do limiar, o decisor de cada um e o respetivo fundamento. O relatório destina-se a apoiar a decisão, e não a descrever atividade.
 
-Enquanto é rascunho, recalcula-se. Ao emitir, congela: fica o que se disse à direção naquele dia. Um relatório emitido não se altera nem se apaga; corrige-se emitindo outro.
+Enquanto rascunho, o relatório é recalculado. Após a emissão, fica fixado, registando a informação apresentada à direção nessa data. Um relatório emitido não pode ser alterado nem eliminado; as correções são feitas através da emissão de um novo relatório.
 
 ```{figure} /_static/capturas/tratamento-risco/relato-1.jpg
 :alt: Relato à gestão
@@ -60,7 +54,7 @@ Enquanto é rascunho, recalcula-se. Ao emitir, congela: fica o que se disse à d
 Relato à gestão (1 de 2).
 ```
 
-1. Clique em **Relato à gestão**.
+1. Separador **Relato à gestão:** Apresenta o relatório de risco.
 
 ```{figure} /_static/capturas/tratamento-risco/relato-2.jpg
 :alt: Relato à gestão
@@ -68,11 +62,11 @@ Relato à gestão (1 de 2).
 Relato à gestão (2 de 2).
 ```
 
-## Cenários
+## Cenários estratégicos
 
-E há uma segunda forma de encontrar risco: os cenários estratégicos. Em vez de partir do ativo, parte de quem quer fazer mal, que situação procura e que proveito tira — um grupo criminoso que quer extorquir a instituição, por exemplo.
+Os cenários estratégicos constituem uma segunda forma de identificação do risco. Em vez de partirem do ativo, partem da fonte de ameaça, do objetivo pretendido e do benefício obtido; por exemplo, um grupo criminoso que pretende extorquir a instituição.
 
-Os cenários contam à parte, com código próprio, e não mexem na matriz. Quando um cenário se detalha ao nível de um ativo, o risco que daí nasce aponta para o cenário que o originou.
+Os cenários são contabilizados separadamente, com código próprio, e não alteram a matriz. Quando um cenário é detalhado ao nível de um ativo, o risco resultante referencia o cenário de origem.
 
 ```{figure} /_static/capturas/tratamento-risco/cenarios-1.jpg
 :alt: Cenários estratégicos
@@ -80,7 +74,7 @@ Os cenários contam à parte, com código próprio, e não mexem na matriz. Quan
 Cenários estratégicos (1 de 2).
 ```
 
-1. Clique em **Cenários estratégicos**.
+1. Separador **Cenários estratégicos:** Apresenta os cenários registados.
 
 ```{figure} /_static/capturas/tratamento-risco/cenarios-2.jpg
 :alt: Cenários estratégicos
@@ -90,10 +84,10 @@ Cenários estratégicos (2 de 2).
 
 ## Resumo
 
-Cada dono aprova o seu plano e revê o seu risco; a direção decide o que o relatório lhe pede. E o que ficar para trás — uma retenção caducada, um plano por aprovar, um risco por rever — aparece como candidato a não conformidade, para alguém decidir.
+Cada dono aprova o respetivo plano e revê o respetivo risco; a direção toma as decisões pedidas no relatório. As situações pendentes (retenções caducadas, planos por aprovar, riscos por rever) são apresentadas como candidatas a não conformidade, para decisão.
 
-**O que pedir a quem — e o que a plataforma faz**
+**Informação a solicitar e funcionalidades**
 
-- A cada dono de risco: aprovar o plano, e rever o risco quando chega a data.
-- À direção: as decisões pedidas no relatório.
-- Prazos passados, planos por aprovar e riscos por rever aparecem como candidatos a não conformidade — por propor.
+- Dono de cada risco: aprovação do plano e revisão do risco na data prevista.
+- Direção: decisões pedidas no relatório.
+- Prazos ultrapassados, planos por aprovar e riscos por rever são apresentados como candidatos a não conformidade, para proposta.

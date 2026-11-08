@@ -1,6 +1,6 @@
 # Proteger e detetar
 
-O SGSI documental, a formação, os agentes Wazuh, a deteção e a segurança do software.
+A documentação do SGSI, a formação, os agentes Wazuh, a deteção e a segurança do software.
 
 ```{toctree}
 :maxdepth: 1

@@ -1,74 +1,78 @@
 # Anexo IV — as medidas organizacionais
 
-As doze medidas organizacionais do Anexo IV, uma a uma: o que pede cada uma, a quem, e que prova se espera — primeiro as do Grupo B, depois as que só o Grupo A cumpre.
+As doze medidas organizacionais do Anexo IV, uma a uma: requisito, entidades abrangidas e evidência esperada, começando pelas medidas dos dois grupos e terminando nas exclusivas do Grupo A.
 
 ```{video} 209-anexo-iv-medidas-organizacionais
 ```
 
-As medidas organizacionais são as que menos dependem da informática: regras, responsabilidades e processos. São doze no Anexo IV. Começamos pelas que cabem aos dois grupos, e acabamos nas que só o Grupo A cumpre.
+As medidas organizacionais são as que menos dependem da informática: regras, responsabilidades e processos. O Anexo IV inclui doze. Esta página apresenta primeiro as medidas aplicáveis aos dois grupos e, em seguida, as exclusivas do Grupo A.
 
 ## Grupos A e B
 
-Cinco medidas organizacionais cabem aos dois grupos. O ponto de contacto para incidentes: uma pessoa que responde a pedidos externos e, se for preciso, fora de horas. A gestão de acessos: dar, alterar e retirar um acesso sempre com pedido e aprovação.
+Cinco medidas organizacionais aplicam-se aos dois grupos:
 
-O inventário: no Grupo B, os ativos críticos e as dependências entre eles; no Grupo A, todos os ativos. Os equipamentos: registar a quem se entregou cada computador e quando foi recolhido — e, no Grupo A, separar os dispositivos pessoais dos da entidade.
+- **Ponto de contacto para incidentes:** Uma pessoa que responde a pedidos externos e, se necessário, fora do horário de expediente.
+- **Gestão de acessos:** A atribuição, alteração e remoção de acessos exigem sempre pedido e aprovação.
+- **Inventário:** No Grupo B, os ativos críticos e as respetivas dependências; no Grupo A, todos os ativos.
+- **Equipamentos:** Registo da atribuição e da recolha de cada computador; no Grupo A, também a separação entre dispositivos pessoais e da entidade.
+- **Fornecedores:** No Grupo B, identificação dos fornecedores com acesso aos sistemas e respetivos contactos para incidentes; no Grupo A, uma política de segurança de fornecedores, com avaliação do risco e critérios de aceitação.
 
-E os fornecedores: no Grupo B, saber quais têm acesso aos sistemas, e como contactá-los num incidente. No Grupo A, ter uma política de segurança de fornecedores, com avaliação do risco e critérios de aceitação.
+**Medidas dos dois grupos**
 
-**As dos dois grupos**
-
-| Medida | O que pede | Grupo A acrescenta |
+| Medida | Requisito | Acréscimo para o Grupo A |
 |---|---|---|
-| O.CRI Ponto de contacto para incidentes | uma pessoa que responde a pedidos externos e, se preciso, fora de horas | — |
-| O.GAP Gestão de acessos | pedido e aprovação para dar, alterar e retirar acessos | — |
-| O.IAC Inventário de ativos | ativos críticos e as dependências, atualizados | todos os ativos, não só os críticos |
-| O.GEC Equipamentos | registo de atribuição e recolha dos equipamentos | separar dispositivos pessoais dos da entidade |
-| O.PSF Fornecedores | lista dos fornecedores com acesso aos sistemas, com contacto para incidentes | uma política de segurança de fornecedores, com avaliação do risco |
+| O.CRI Ponto de contacto para incidentes | uma pessoa que responde a pedidos externos e, se necessário, fora do horário | — |
+| O.GAP Gestão de acessos | pedido e aprovação para atribuir, alterar e remover acessos | — |
+| O.IAC Inventário de ativos | ativos críticos e respetivas dependências, atualizados | todos os ativos, e não apenas os críticos |
+| O.GEC Equipamentos | registo de atribuição e recolha dos equipamentos | separação entre dispositivos pessoais e da entidade |
+| O.PSF Fornecedores | lista dos fornecedores com acesso aos sistemas, com contacto para incidentes | política de segurança de fornecedores, com avaliação do risco |
 
-## Só Grupo A
+## Exclusivas do Grupo A
 
-Só no Grupo A, quatro políticas. A Política de Cibersegurança, que é o compromisso da entidade e é aprovada pela direção. A política de acessos e permissões. A política de utilização aceitável, que diz a todo o pessoal como usar os equipamentos e a informação. E a política de palavra-passe.
+O Grupo A tem quatro políticas exclusivas: a Política de Cibersegurança, que formaliza o compromisso da entidade e é aprovada pela direção; a política de acessos e permissões; a política de utilização aceitável, que define as regras de utilização dos equipamentos e da informação por todo o pessoal; e a política de palavra-passe.
 
-Note o padrão do critério de verificação: não basta o documento. Pede-se política aprovada e implementada — ou, na utilização aceitável, disponível a todo o pessoal.
+O critério de verificação segue um padrão: o documento não é suficiente. É exigida uma política aprovada e implementada ou, no caso da utilização aceitável, disponível a todo o pessoal.
 
-**As que só o Grupo A cumpre — as políticas**
+**Medidas exclusivas do Grupo A: políticas**
 
-| Medida | O que pede |
+| Medida | Requisito |
 |---|---|
-| O.PSI Política de Cibersegurança | o compromisso da entidade com a cibersegurança — aprovada e implementada |
+| O.PSI Política de Cibersegurança | compromisso da entidade com a cibersegurança, aprovado e implementado |
 | O.PAP Política de acessos e permissões | definida e implementada |
-| O.PUA Política de utilização aceitável | regras de uso seguro dos ativos, disponível a todo o pessoal |
-| O.PP Política de palavra-passe | como se gerem as palavras-passe |
+| O.PUA Política de utilização aceitável | regras de utilização segura dos ativos, disponível a todo o pessoal |
+| O.PP Política de palavra-passe | regras de gestão das palavras-passe |
 
-E três processos. A classificação da informação: decidir níveis de sensibilidade, como vimos em {doc}`/fundamentals/information-and-assets`. A gestão da mudança organizacional: quando alguém entra, muda de funções ou sai, as contas e os acessos acompanham — combinado com os recursos humanos.
+O Grupo A tem ainda três processos exclusivos:
 
-E a identificação das funções críticas, e de que sistemas dependem. É esta medida que liga a missão da organização à informática: se o sistema de matrículas parar, que função crítica para?
+- **Classificação da informação:** Definição de níveis de sensibilidade, conforme descrito em {doc}`/fundamentals/information-and-assets`.
+- **Gestão da mudança organizacional:** As contas e os acessos acompanham as entradas, as mudanças de funções e as saídas de pessoal, em articulação com os recursos humanos.
+- **Identificação das funções críticas** e dos sistemas de que dependem. Esta medida relaciona a missão da organização com a informática; por exemplo, identifica a função crítica afetada por uma interrupção do sistema de matrículas.
 
-**As que só o Grupo A cumpre — os processos**
+**Medidas exclusivas do Grupo A: processos**
 
-| Medida | O que pede |
+| Medida | Requisito |
 |---|---|
 | O.PCF Classificação da informação | critérios e níveis de sensibilidade dos dados |
-| O.GMO Mudança organizacional | entradas, alterações e saídas de pessoal refletidas nas TIC, em sintonia com os recursos humanos |
-| O.ID Funções críticas | as funções ou atividades críticas, e as suas dependências das TIC |
+| O.GMO Mudança organizacional | entradas, alterações e saídas de pessoal refletidas nas TIC, em articulação com os recursos humanos |
+| O.ID Funções críticas | funções ou atividades críticas e respetivas dependências das TIC |
 
-## Na sua organização
+## Informação a solicitar
 
-Estas medidas atravessam a organização. A direção aprova as políticas e diz quais são as funções críticas. Os recursos humanos avisam das entradas e saídas. As compras sabem que fornecedores têm acesso. E o encarregado de proteção de dados ajuda a classificar a informação.
+Estas medidas envolvem toda a organização. A direção aprova as políticas e identifica as funções críticas. Os recursos humanos comunicam as entradas e saídas. O serviço de compras identifica os fornecedores com acesso. O encarregado de proteção de dados contribui para a classificação da informação.
 
-**O que pedir a quem**
+**Responsáveis**
 
-| A quem | O quê |
+| Responsável | Informação |
 |---|---|
-| Direção | aprovação das políticas; a lista das funções críticas |
+| Direção | aprovação das políticas; lista das funções críticas |
 | Recursos humanos | aviso de entradas, mudanças e saídas, com data (O.GMO) |
-| Compras | fornecedores com acesso aos sistemas e os seus contactos (O.PSF) |
-| Informática | inventário, registo de equipamentos, pedidos de acesso |
+| Serviço de compras | fornecedores com acesso aos sistemas e respetivos contactos (O.PSF) |
+| Equipa de informática | inventário, registo de equipamentos, pedidos de acesso |
 | Encarregado de proteção de dados | contributo para a classificação da informação (O.PCF) |
 
-Na plataforma, as políticas vivem no SGSI, com aprovação e versão assinada; o inventário e os ativos de informação guardam as dependências; os fornecedores têm registo próprio; e os processos críticos ligam-se aos ativos de que dependem.
+Na plataforma, as políticas são geridas no SGSI, com aprovação e versão assinada; o inventário e os ativos de informação registam as dependências; os fornecedores têm um registo próprio; e os processos críticos são associados aos ativos de que dependem.
 
-**Onde isto entra na plataforma**
+**Correspondência na plataforma**
 
 - Políticas no SGSI, com aprovação e versão assinada ({doc}`/platform/protect-and-detect/isms-documents`).
 - Inventário e ativos de informação, com dependências ({doc}`/platform/inventory/import` a {doc}`/platform/inventory/information-assets`).

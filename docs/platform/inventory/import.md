@@ -1,69 +1,59 @@
 # Importar o parque
 
-O primeiro passo do inventário: trazer as exportações do Active Directory, do DNS e do DHCP, e deixar a plataforma correlacioná-las num inventário único do parque técnico.
+Primeiro passo do inventário: importação das exportações do Active Directory, do DNS e do DHCP e respetiva correlação num inventário único do parque técnico.
 
 ```{video} 311-importar-o-parque
 ```
 
-Começa a segunda fase: saber o que se tem. Não há sistema de gestão sem inventário — não se protege o que não se sabe que existe. O primeiro passo é trazer o parque técnico para a plataforma.
+A segunda fase do trabalho consiste em conhecer os ativos existentes. Não existe sistema de gestão sem inventário, uma vez que não é possível proteger ativos desconhecidos. O primeiro passo é a importação do parque técnico para a plataforma.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Inventário › Importar Dados
+**Identificar** > **Inventário** > **Importar Dados**
 
 ```{figure} /_static/capturas/importar/menu.jpg
-:alt: Menu lateral: Identificar › Inventário › Importar Dados
+:alt: Menu lateral: Identificar > Inventário > Importar Dados
 
-O caminho no menu lateral: Identificar › Inventário › Importar Dados.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Inventário**.
-3. Clique em **Importar Dados**: abre o ecrã desta página.
+## Finalidade
 
-## Porquê
+A ISO 27001 exige um inventário dos ativos. O Anexo IV do Regulamento exige-o igualmente: no Grupo B, os ativos críticos e as respetivas dependências; no Grupo A, todos os ativos. O Regulamento exige ainda, separadamente, a lista dos ativos acessíveis pela Internet.
 
-A norma ISO 27001 pede um inventário dos ativos. O Anexo IV do Regulamento pede-o também: no Grupo B, os ativos críticos e as dependências; no Grupo A, todos os ativos. E o Regulamento pede, à parte, a lista dos ativos acessíveis pela Internet.
+**Finalidade**
 
-**Para que serve**
+- A ISO/IEC 27001 exige um inventário da informação e dos ativos associados (controlo 5.9).
+- O Anexo IV exige o inventário dos ativos críticos, com as dependências, e, no Grupo A, de todos os ativos (O.IAC).
+- O Regulamento exige ainda a lista dos ativos acessíveis pela Internet (art. 32.º).
 
-- A ISO/IEC 27001 pede um inventário da informação e dos ativos associados (controlo 5.9).
-- O Anexo IV pede o inventário dos ativos críticos, com as dependências — e no Grupo A, de todos os ativos (O.IAC).
-- O Regulamento pede ainda a lista dos ativos acessíveis pela Internet (art. 32.º).
+## Informação a solicitar
 
-## Antes de abrir o ecrã
+Solicite à equipa de informática três exportações em CSV: os computadores do Active Directory, os registos do DNS e as concessões do DHCP. Cada fonte abrange uma parte do parque; em conjunto, abrangem a quase totalidade.
 
-Peça à informática três exportações em CSV: os computadores do Active Directory, os registos do DNS e as concessões do DHCP. Cada fonte vê uma parte do parque; juntas, veem quase tudo.
+**Responsáveis**
 
-**O que pedir a quem**
-
-| Exportação | Quem a faz | O que traz |
+| Exportação | Responsável | Conteúdo |
 |---|---|---|
-| Active Directory — computadores | informática (administração de sistemas) | os computadores do domínio |
-| DNS — registos de nome | informática (redes) | nomes e endereços |
-| DHCP — concessões | informática (redes) | os equipamentos que pediram endereço |
+| Active Directory — computadores | equipa de informática (administração de sistemas) | computadores do domínio |
+| DNS — registos de nome | equipa de informática (redes) | nomes e endereços |
+| DHCP — concessões | equipa de informática (redes) | equipamentos que solicitaram endereço |
 
 ```{tip}
-Em CSV. O leitor deteta sozinho o separador e repara os caminhos LDAP partidos pelas vírgulas.
+Em formato CSV. O leitor deteta automaticamente o separador e reconstitui os caminhos LDAP divididos pelas vírgulas.
 ```
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Identificar › Inventário › Importar Dados
-
-No menu Identificar, Inventário, Importar Dados. Carregam-se os três ficheiros. O leitor deteta sozinho se o separador é ponto e vírgula ou vírgula, lida com campos entre aspas, e volta a juntar os caminhos do diretório que as vírgulas partiram ao meio.
+O leitor deteta automaticamente o separador (ponto e vírgula ou vírgula), trata os campos entre aspas e reconstitui os caminhos do diretório divididos pelas vírgulas.
 
 ```{figure} /_static/capturas/importar/abrir-1.jpg
-:alt: Identificar › Inventário › Importar Dados
+:alt: Identificar > Inventário > Importar Dados
 
-O ecrã em Identificar › Inventário › Importar Dados.
+Ecrã **Identificar** > **Inventário** > **Importar Dados**.
 ```
 
-1. **Os três ficheiros**
-
-Processar e Correlacionar junta as três fontes pelo nome do equipamento. Uma concessão do DHCP sem nome aproveitável entra pelo endereço IP, em vez de se perder.
-
-Atenção à caixa Substituir dados existentes: apaga as importações anteriores. Para acrescentar, deixe-a desmarcada. E lembre-se: o que sai daqui é o parque técnico, não o inventário final. Os ativos de informação, que são o que o risco aprecia, criam-se mais à frente.
+1. **Ficheiros:** Campos para carregar as três exportações.
 
 ```{figure} /_static/capturas/importar/carregar-1.jpg
 :alt: Processar e correlacionar
@@ -71,15 +61,21 @@ Atenção à caixa Substituir dados existentes: apaga as importações anteriore
 Processar e correlacionar.
 ```
 
-1. **Processar e correlacionar**
-2. **Apaga as importações anteriores**
+No ecrã, encontra os seguintes elementos:
+
+1. Botão **Processar e Correlacionar:** Associa as três fontes pelo nome do equipamento. Uma concessão do DHCP sem nome utilizável é associada pelo endereço IP.
+2. Opção **Substituir dados existentes:** Elimina as importações anteriores. Para acrescentar dados, mantenha a opção desmarcada.
+
+**Como importar:** Carregue os três ficheiros e clique em **Processar e Correlacionar**.
+
+O resultado corresponde ao parque técnico e não ao inventário final. Os ativos de informação, objeto da apreciação de risco, são criados numa fase posterior.
 
 ## Resumo
 
-A plataforma correlaciona as fontes e, havendo uma ligação ao diretório, pode atualizar os computadores todas as noites. O que não faz é inventar: o inventário é um espelho das fontes, e o que estiver errado corrige-se na origem e reimporta-se.
+A plataforma correlaciona as fontes e, existindo uma ligação ao diretório, pode atualizar os computadores diariamente. O inventário reflete as fontes: os dados incorretos são corrigidos na origem e importados novamente.
 
-**O que a plataforma faz — e o que não faz**
+**Funcionalidades e limitações**
 
-- Correlaciona as três fontes num inventário único, pelo nome e, à falta dele, pelo endereço.
-- Pode sincronizar os computadores com o diretório todas as noites, havendo ligação declarada.
-- Não inventa o que não vem nas fontes: o inventário é um espelho, corrige-se na origem.
+- Correlaciona as três fontes num inventário único, pelo nome ou, na sua falta, pelo endereço.
+- Pode sincronizar diariamente os computadores com o diretório, se existir uma ligação configurada.
+- Não acrescenta dados inexistentes nas fontes: o inventário reflete a origem, onde as correções devem ser feitas.

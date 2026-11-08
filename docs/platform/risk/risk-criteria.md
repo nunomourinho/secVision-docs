@@ -1,101 +1,98 @@
 # Critérios de risco e catálogo de ameaças
 
-A régua do risco: a escala, as bandas e o que se aceita, as células que a aritmética erra, os limiares de decisão — aprovados antes de apreciar. E o catálogo de ameaças que vem com a plataforma.
+Referencial de avaliação do risco: escala, bandas e nível aceitável, correção de células da matriz, limiares de decisão e aprovação prévia à apreciação. Inclui o catálogo de ameaças disponibilizado com a plataforma.
 
 ```{video} 323-criterios-de-risco
 ```
 
-Começa a fase do risco, que vimos em conceito em {doc}`/fundamentals/risk`. Antes de medir qualquer risco, é preciso a régua: os critérios. E a régua aprova-se antes de se usar — é o que a norma pede, e o que o auditor verifica.
+A fase do risco, cujo conceito é apresentado em {doc}`/fundamentals/risk`, começa pela definição dos critérios de avaliação. Os critérios devem ser aprovados antes da sua utilização, conforme exigido pela norma e verificado pelo auditor.
 
-## Onde fica no menu
+## Acesso
 
-**Menu:** Identificar › Risco › Critérios e apetite
+**Identificar** > **Risco** > **Critérios e apetite**
 
 ```{figure} /_static/capturas/criterios-risco/menu.jpg
-:alt: Menu lateral: Identificar › Risco › Critérios e apetite
+:alt: Menu lateral: Identificar > Risco > Critérios e apetite
 
-O caminho no menu lateral: Identificar › Risco › Critérios e apetite.
+Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ```
 
-1. No menu lateral, abra **Identificar**.
-2. Dentro dele, abra **Risco**.
-3. Clique em **Critérios e apetite**: abre o ecrã desta página.
+## Critérios
 
-## Os critérios
+Os critérios têm quatro componentes:
 
-A régua tem quatro peças. A escala, com o nome de cada nível. As bandas: que valores são baixos, moderados, elevados ou críticos, e qual a organização aceita sem mais nada.
+- **Escala:** Número de níveis e designação de cada um.
+- **Bandas:** Intervalos de valores baixos, moderados, elevados e críticos, e banda aceite sem tratamento adicional.
+- **Células:** Correção manual das células da matriz em que o cálculo aritmético não reflete a avaliação adequada (por exemplo, um risco raro mas catastrófico, que resulta num valor baixo), com o motivo registado.
+- **Limiares:** Valor a partir do qual a decisão deixa de caber a quem registou o risco e passa para um papel definido.
 
-As células: um risco raro mas catastrófico dá, por aritmética, um valor baixo — e toda a gente sabe que não é. Corrige-se a célula à mão, com a razão escrita. E os limiares: acima de certo valor, a decisão deixa de ser de quem registou o risco e passa para um papel definido.
+**Componentes dos critérios**
 
-**As quatro peças da régua**
-
-| Peça | O que decide |
+| Componente | Definição |
 |---|---|
-| Escala | 3, 4 ou 5 níveis, com o nome de cada nível de probabilidade e de impacto |
-| Bandas | que intervalo é Baixo, Moderado, Elevado, Crítico — e qual se aceita sem mais nada |
-| Células | corrigir à mão a célula que a aritmética erra, com a razão escrita |
-| Limiares | acima de que valor a decisão sobe, e para que papel |
+| Escala | 3, 4 ou 5 níveis, com a designação de cada nível de probabilidade e de impacto |
+| Bandas | intervalos Baixo, Moderado, Elevado e Crítico, e banda aceite sem tratamento adicional |
+| Células | correção manual das células em que o cálculo aritmético é inadequado, com o motivo registado |
+| Limiares | valor a partir do qual a decisão é escalada, e papel responsável |
 
-## O ecrã
+## Configuração do ecrã
 
-**Menu:** Identificar › Risco › Critérios e apetite
+No final, os critérios são aprovados, com a indicação do órgão, da referência da decisão e da data. Uma versão aprovada não pode ser alterada: é criada uma nova versão, e a anterior fica no histórico.
 
-No menu Identificar, Risco, Critérios e apetite. No fim aprova-se, com o órgão que aprovou, a referência da decisão e a data. Uma versão aprovada não se altera: cria-se uma nova, e a anterior fica no histórico.
-
-E enquanto não houver critérios aprovados, a plataforma calcula níveis mas não avalia nada — e di-lo no ecrã. Avaliar um risco é compará-lo com critérios aprovados; sem eles, há números, mas não há juízo.
+Enquanto não existirem critérios aprovados, a plataforma calcula os níveis mas não avalia os riscos, e indica-o no ecrã. A avaliação de um risco consiste na sua comparação com critérios aprovados.
 
 ```{figure} /_static/capturas/criterios-risco/abrir-1.jpg
-:alt: Identificar › Risco › Critérios e apetite
+:alt: Identificar > Risco > Critérios e apetite
 
-O ecrã em Identificar › Risco › Critérios e apetite (1 de 3).
+Ecrã **Identificar** > **Risco** > **Critérios e apetite** (1 de 3).
 ```
 
-1. Clique em **Bandas e matriz**.
+1. Separador **Bandas e matriz:** Define as bandas e as correções de células.
 
 ```{figure} /_static/capturas/criterios-risco/abrir-2.jpg
-:alt: Identificar › Risco › Critérios e apetite
+:alt: Identificar > Risco > Critérios e apetite
 
-O ecrã em Identificar › Risco › Critérios e apetite (2 de 3).
+Ecrã **Identificar** > **Risco** > **Critérios e apetite** (2 de 3).
 ```
 
-1. Clique em **Limiares de decisão**.
+1. Separador **Limiares de decisão:** Define os limiares e os papéis responsáveis.
 
 ```{figure} /_static/capturas/criterios-risco/abrir-3.jpg
-:alt: Identificar › Risco › Critérios e apetite
+:alt: Identificar > Risco > Critérios e apetite
 
-O ecrã em Identificar › Risco › Critérios e apetite (3 de 3).
+Ecrã **Identificar** > **Risco** > **Critérios e apetite** (3 de 3).
 ```
 
-1. **Uma versão aprovada não se altera**
+1. **Versão aprovada:** Não pode ser alterada; as alterações dão origem a uma nova versão.
 
-## O catálogo
+## Catálogo de ameaças
 
-**Menu:** Identificar › Risco › Catálogo de ameaças
+**Identificar** > **Risco** > **Catálogo de ameaças**
 
-O Catálogo de ameaças traz o vocabulário comum: tipos de ativo, ameaças, vulnerabilidades, e quase dois mil modelos de risco que os cruzam, do método público MONARC. Não é preciso mexer-lhe para começar.
+O Catálogo de ameaças disponibiliza um vocabulário comum: tipos de ativo, ameaças, vulnerabilidades e cerca de dois mil modelos de risco que os combinam, provenientes do método público MONARC. Não é necessário alterá-lo para começar.
 
-É daqui que vêm as propostas quando se aprecia o risco de um ativo: a plataforma sugere as combinações conhecidas para o tipo de ativo, e quem aprecia escolhe.
+Este catálogo é a origem das propostas apresentadas na apreciação do risco de um ativo: a plataforma sugere as combinações conhecidas para o tipo de ativo, e o responsável pela apreciação seleciona as aplicáveis.
 
 ```{figure} /_static/capturas/criterios-risco/catalogo-1.jpg
-:alt: Identificar › Risco › Catálogo de ameaças
+:alt: Identificar > Risco > Catálogo de ameaças
 
-O ecrã em Identificar › Risco › Catálogo de ameaças (1 de 2).
+Ecrã **Identificar** > **Risco** > **Catálogo de ameaças** (1 de 2).
 ```
 
-1. Clique em **Modelos de risco1938**.
+1. Separador **Modelos de risco** (1938): Apresenta os modelos de risco do catálogo.
 
 ```{figure} /_static/capturas/criterios-risco/catalogo-2.jpg
-:alt: Identificar › Risco › Catálogo de ameaças
+:alt: Identificar > Risco > Catálogo de ameaças
 
-O ecrã em Identificar › Risco › Catálogo de ameaças (2 de 2).
+Ecrã **Identificar** > **Risco** > **Catálogo de ameaças** (2 de 2).
 ```
 
 ## Resumo
 
-O apetite de risco é uma decisão da direção, e é ela que aprova os critérios. Aos donos dos serviços, pergunte o que é, para eles, um impacto grave — é isso que dá nome aos níveis.
+O apetite pelo risco é uma decisão da direção, que aprova os critérios. Os donos dos serviços definem o significado de um impacto grave no respetivo contexto, o que determina a designação dos níveis.
 
-**O que pedir a quem**
+**Informação a solicitar**
 
-- À direção: o apetite de risco — o que se aceita sem mais — e a aprovação dos critérios.
-- Aos donos dos serviços: o que significa, para eles, um impacto «grave».
-- O documento de critérios tem de ser aprovado e anterior às apreciações que o usam.
+- Direção: apetite pelo risco (nível aceite sem tratamento adicional) e aprovação dos critérios.
+- Donos dos serviços: significado de um impacto «grave» no respetivo contexto.
+- O documento de critérios tem de estar aprovado e ser anterior às apreciações que o utilizam.
