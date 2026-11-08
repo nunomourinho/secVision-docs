@@ -1,0 +1,92 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "OBRIGAÇÕES E TERCEIROS"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Partes interessadas e requisitos"
+   }
+  ]
+ },
+ {
+  "imagem": "parte-1.jpg",
+  "marca": "parte",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Regulador",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "parte-2.jpg",
+  "marca": "parte",
+  "itens": []
+ },
+ {
+  "imagem": "parte-3.jpg",
+  "marca": "parte",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Os serviços de que depende",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "O que exige da organização",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "requisitos-1.jpg",
+  "marca": "requisitos",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Requisitos",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "requisitos-2.jpg",
+  "marca": "requisitos",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "RQ-002",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "requisitos-3.jpg",
+  "marca": "requisitos",
+  "itens": []
+ },
+ {
+  "imagem": "requisitos-4.jpg",
+  "marca": "requisitos",
+  "itens": []
+ }
+]

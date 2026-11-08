@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Instalar em modo nativo</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="instalar-em-modo-nativo">
+<h1>Instalar em modo nativo</h1>
+<p>A instalação completa em modo nativo, num Ubuntu 24.04 acabado de instalar: obter o código, correr o instalador, responder às perguntas, esperar pelo fim e confirmar que a plataforma está a funcionar.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/w3rIUhviElo">https://youtu.be/w3rIUhviElo</a></p>
+<p>Nesta página instalamos o SecVision em modo nativo, numa máquina Ubuntu 24.04 acabada de instalar, sem nada lá dentro. Vai ver tudo o que acontece, tal como acontece.</p>
+<p>A gravação foi feita numa máquina de laboratório, um Ubuntu no WSL. No seu servidor, os comandos e as perguntas são exatamente os mesmos; muda só o endereço com que se chega à plataforma.</p>
+<section id="confirmar-a-maquina">
+<h2>Confirmar a máquina</h2>
+<p>Abrimos o terminal no servidor. Antes de mais, confirmamos onde estamos. O comando whoami diz-nos com que utilizador entrámos: secv, um utilizador normal, com permissão de sudo.</p>
+<p>E o lsb_release mostra o sistema: Ubuntu 24.04, a versão de suporte prolongado. É boa prática começar sempre assim — evita instalar na máquina errada.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>whoami
+lsb_release<span class="w"> </span>-d
+</pre></div>
+</div>
+<figure class="align-default" id="id1">
+<img alt="Onde estamos" src="../_images/0110.jpg" />
+<figcaption>
+<p><span class="caption-text">Onde estamos.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="obter-o-codigo">
+<h2>Obter o código</h2>
+<p>Agora trazemos o código do SecVision para o servidor, com o comando git clone. O git é a ferramenta que guarda o código e o histórico de todas as versões.</p>
+<p>O endereço depende de onde o repositório está alojado. Aqui é o do nosso laboratório; no seu caso, será o endereço que a sua organização lhe indicar. A cópia fica numa pasta chamada secvision.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;endereço-do-repositório&gt;<span class="w"> </span>secvision
+</pre></div>
+</div>
+<figure class="align-default" id="id2">
+<img alt="git clone" src="../_images/024.jpg" />
+<figcaption>
+<p><span class="caption-text">Git clone.</span></p>
+</figcaption>
+</figure>
+<p>Entramos na pasta com cd, e listamos o que lá está com ls. Não é preciso conhecer tudo: o backend e o frontend são as duas partes da aplicação, a pasta documentacao é o manual, e o setup.sh é o instalador. É ele que vamos correr.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>secvision
+ls
+</pre></div>
+</div>
+<figure class="align-default" id="id3">
+<img alt="A pasta do SecVision" src="../_images/034.jpg" />
+<figcaption>
+<p><span class="caption-text">A pasta do SecVision.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o-instalador">
+<h2>O instalador</h2>
+<p>Corremos o instalador com bash setup.sh. A primeira coisa que ele faz é pedir permissões de administrador — por isso aparece o pedido de palavra-passe do sudo. Escrevemos a palavra-passe do nosso utilizador; repare que não aparece nada enquanto escrevemos. Enter, e seguimos.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>setup.sh
+</pre></div>
+</div>
+<p>O que se respondeu a cada pergunta do instalador nesta instalação:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Pergunta do instalador</p></th>
+<th class="head"><p>Resposta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>[sudo] password for secv</p></td>
+<td><p>(a palavra-passe do seu utilizador)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Opção [1/2]</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Password root do MySQL</p></td>
+<td><p>(a palavra-passe root da base de dados que escolher)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Confirme a password root</p></td>
+<td><p>(a palavra-passe root da base de dados que escolher)</p></td>
+</tr>
+<tr class="row-even"><td><p>Utilizador da aplicação</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Password da aplicação</p></td>
+<td><p>(a palavra-passe da aplicação que escolher)</p></td>
+</tr>
+<tr class="row-even"><td><p>Confirme a password da aplicação</p></td>
+<td><p>(a palavra-passe da aplicação que escolher)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mostrar segredos</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">n</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>WebAuthn RP Name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SecVision</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Domínio / RP ID</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">localhost</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Origin URL completo</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Porto de acesso à aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8080</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Corrigir Origin</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tamanho máximo de upload</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-even"><td><p>Confirmar substituição do .env</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Gravar .env e continuar</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Prima Enter</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-odd"><td><p>(S/n)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>(s/N)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">n</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Modo de instalação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">menu-modo</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Passo 1/5 — Detecção do sistema</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deteccao</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Instalar MariaDB automaticamente</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-mariadb</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Instalar nginx automaticamente</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-nginx</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Instalar a base Docker aprovada</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-docker</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Instalar Node.js 22</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-node</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Instalar PM2 automaticamente</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-pm2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>A instalar semgrep</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ferramentas</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>A construir a imagem do Presidio</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">presidio</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Presidio a responder</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">presidio-ok</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Configuração segura da aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Configuração da Base de Dados</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-bd</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Segredos de Segurança</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-segredos</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Configuração da Aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-aplicacao</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Revisão e Confirmação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-revisao</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Construção da aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">construcao</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Configuração de serviços e lançamento</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">servicos</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Instalação concluída</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">concluida</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-default" id="id4">
+<img alt="bash setup.sh" src="../_images/044.jpg" />
+<figcaption>
+<p><span class="caption-text">Bash setup.sh.</span></p>
+</figcaption>
+</figure>
+<p>Surge a primeira pergunta: o modo de instalação. Escrevemos dois, para o modo nativo. Repare na nota do instalador: deteta que está num ambiente WSL e recomenda o modo nativo. Num servidor Ubuntu, essa nota não aparece.</p>
+<p>Se carregasse só em Enter, sem escrever nada, ficaria o modo Docker — é esse o que vemos na página seguinte.</p>
+<figure class="align-default" id="id5">
+<img alt="Escolher o modo — 2, nativo" src="../_images/054.jpg" />
+<figcaption>
+<p><span class="caption-text">Escolher o modo — 2, nativo.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="pre-requisitos">
+<h2>Pré-requisitos</h2>
+<p>O instalador verifica o que já existe na máquina e, para cada programa que falta, pede autorização antes de o instalar. Primeiro, a base de dados MariaDB, onde fica guardada toda a informação. Respondemos s, de sim.</p>
+<p>Depois, o nginx: o servidor web, que entrega as páginas ao browser. Também sim. Cada resposta lança a instalação desse programa a partir dos repositórios oficiais do Ubuntu.</p>
+<figure class="align-default" id="id6">
+<img alt="Instalar o que falta — MariaDB e nginx" src="../_images/064.jpg" />
+<figcaption>
+<p><span class="caption-text">Instalar o que falta — MariaDB e nginx.</span></p>
+</figcaption>
+</figure>
+<p>A seguir, o Docker. Mesmo no modo nativo, é preciso para uma peça: o Presidio, que protege os dados pessoais antes de qualquer texto seguir para uma inteligência artificial. O instalador põe a versão aprovada, a partir do repositório oficial do Docker.</p>
+<p>E o Node.js, na versão 22: é o motor que corre a aplicação. O instalador obtém-no do repositório NodeSource e, no fim, confirma a versão que ficou instalada.</p>
+<figure class="align-default" id="id7">
+<img alt="Docker e Node.js 22" src="../_images/074.jpg" />
+<figcaption>
+<p><span class="caption-text">Docker e Node.js 22.</span></p>
+</figcaption>
+</figure>
+<p>Por último, o PM2: é ele que mantém a aplicação sempre a correr, e a volta a arrancar se o servidor reiniciar. Depois, sem perguntar, o instalador acrescenta as ferramentas de análise que a plataforma usa — como o nmap e o semgrep.</p>
+<figure class="align-default" id="id8">
+<img alt="PM2 e ferramentas de análise" src="../_images/083.jpg" />
+<figcaption>
+<p><span class="caption-text">PM2 e ferramentas de análise.</span></p>
+</figcaption>
+</figure>
+<p>Agora vem a etapa mais demorada: preparar o Presidio, com o modelo de língua portuguesa. São perto de dois gigabytes a descarregar, e só acontece da primeira vez.</p>
+<p>Quando termina, o instalador não se fica pelo «arrancou»: pede-lhe que analise uma frase de ensaio, e só diz que está pronto quando o Presidio responde a sério.</p>
+<figure class="align-default" id="id9">
+<img alt="Presidio — o guardião dos dados pessoais" src="../_images/093.jpg" />
+<figcaption>
+<p><span class="caption-text">Presidio — o guardião dos dados pessoais.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o-assistente">
+<h2>O assistente</h2>
+<p>Os programas estão instalados. Entra agora o assistente de configuração, que faz cinco perguntas e escreve o ficheiro de configuração da plataforma. Primeiro, confirma os pré-requisitos.</p>
+<figure class="align-default" id="id10">
+<img alt="O assistente de configuração" src="../_images/102.jpg" />
+<figcaption>
+<p><span class="caption-text">O assistente de configuração.</span></p>
+</figcaption>
+</figure>
+<p>A base de dados. Pede a palavra-passe do administrador da base, duas vezes, para confirmar. Depois o nome do utilizador da aplicação — carregamos em Enter para aceitar o que propõe — e a palavra-passe dele, com pelo menos doze caracteres, também duas vezes.</p>
+<p>Nenhuma palavra-passe aparece no ecrã, e o assistente avisa disso antes de começar. Se as duas não coincidirem, volta a perguntar.</p>
+<figure class="align-default" id="id11">
+<img alt="Base de dados — duas palavras-passe" src="../_images/112.jpg" />
+<figcaption>
+<p><span class="caption-text">Base de dados — duas palavras-passe.</span></p>
+</figcaption>
+</figure>
+<p>Os segredos de segurança são as chaves que protegem as sessões de quem entra na plataforma. Não precisamos de inventar nenhum: o assistente gera-os ao acaso. Só pergunta se os queremos ver no ecrã — respondemos que não.</p>
+<figure class="align-default" id="id12">
+<img alt="Os segredos — gerados sozinhos" src="../_images/122.jpg" />
+<figcaption>
+<p><span class="caption-text">Os segredos — gerados sozinhos.</span></p>
+</figcaption>
+</figure>
+<p>Agora, a aplicação. Um nome, que aparece nas aplicações autenticadoras: SecVision. Depois o endereço pelo qual o browser vai chegar à plataforma. Aqui, nesta máquina de laboratório, é localhost; num servidor da sua rede, será o nome desse servidor.</p>
+<p>A porta fica em 8080. Como não é a porta habitual, o assistente propõe-se a acertar o endereço completo — respondemos que sim. O limite de tamanho dos ficheiros enviados fica nos cinquenta megabytes propostos.</p>
+<figure class="align-default" id="id13">
+<img alt="Endereço e porta" src="../_images/132.jpg" />
+<figcaption>
+<p><span class="caption-text">Endereço e porta.</span></p>
+</figcaption>
+</figure>
+<p>O assistente mostra o resumo do que vai gravar. Confirmamos, e ele escreve o ficheiro de configuração, só legível pelo nosso utilizador.</p>
+<figure class="align-default" id="id14">
+<img alt="Rever e gravar" src="../_images/142.jpg" />
+<figcaption>
+<p><span class="caption-text">Rever e gravar.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="construcao-e-arranque">
+<h2>Construção e arranque</h2>
+<p>O instalador constrói a aplicação: descarrega as bibliotecas de que ela depende e prepara as páginas que o browser vai mostrar. É outra espera.</p>
+<figure class="align-default" id="id15">
+<img alt="Construir a aplicação" src="../_images/152.jpg" />
+<figcaption>
+<p><span class="caption-text">Construir a aplicação.</span></p>
+</figcaption>
+</figure>
+<p>A última fase põe tudo a funcionar. Cria a base de dados e as suas tabelas — cada linha com um visto é uma parte da estrutura aplicada. Configura o nginx, arranca a aplicação com o PM2 e regista as tarefas que correm sozinhas todas as noites.</p>
+<p>No fim, espera que a aplicação responda, cria a conta de administrador inicial e confirma que a proteção dos dados pessoais ficou configurada.</p>
+<figure class="align-default" id="id16">
+<img alt="Base de dados, nginx, PM2 e tarefas agendadas" src="../_images/161.jpg" />
+<figcaption>
+<p><span class="caption-text">Base de dados, nginx, PM2 e tarefas agendadas.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<p>Instalação concluída. O resumo mostra o endereço da plataforma e a conta inicial: admin, com a palavra-passe ChangeMe123!. Anote-as — vamos usá-las já na página do primeiro acesso.</p>
+<p>E «normas carregadas: vinte e quatro» é o número certo: são as normas e a legislação que vêm com a plataforma. As normas ISO compram-se à parte, e quem as tiver instala-as depois.</p>
+<figure class="align-default" id="id17">
+<img alt="Instalação concluída" src="../_images/171.jpg" />
+<figcaption>
+<p><span class="caption-text">Instalação concluída.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="confirmar-que-funciona">
+<h2>Confirmar que funciona</h2>
+<p>Vamos confirmar com os nossos olhos. O pm2 status mostra a aplicação, secinventory-api, no estado online. Se aparecesse errored, ou a coluna dos reinícios estivesse sempre a subir, era sinal de problema.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pm2<span class="w"> </span>status
+</pre></div>
+</div>
+<figure class="align-default" id="id18">
+<img alt="pm2 status" src="../_images/181.jpg" />
+<figcaption>
+<p><span class="caption-text">Pm2 status.</span></p>
+</figcaption>
+</figure>
+<p>Por fim, perguntamos à própria aplicação se está bem: responde status ok, em ambiente de produção. E o nginx, na porta 8080, responde com o código 200 — quer dizer que a página está a ser servida.</p>
+<p>A instalação está feita e confirmada. Se algum passo tivesse falhado, o registo completo está no ficheiro setup-install.log, dentro da pasta do SecVision.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-s<span class="w"> </span>http://localhost:4000/api/health<span class="p">;</span><span class="w"> </span><span class="nb">echo</span>
+curl<span class="w"> </span>-sI<span class="w"> </span>http://localhost:8080<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-1
+</pre></div>
+</div>
+<figure class="align-default" id="id19">
+<img alt="A plataforma responde" src="../_images/191.jpg" />
+<figcaption>
+<p><span class="caption-text">A plataforma responde.</span></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

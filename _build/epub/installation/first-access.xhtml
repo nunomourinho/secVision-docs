@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>O primeiro acesso</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="o-primeiro-acesso">
+<h1>O primeiro acesso</h1>
+<p>Entrar pela primeira vez com a conta inicial, trocar a palavra-passe e ativar o segundo fator com uma aplicação autenticadora — e o que muda nas entradas seguintes.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/L-gOtKY4tFE">https://youtu.be/L-gOtKY4tFE</a></p>
+<p>A plataforma está instalada. Nesta página entramos pela primeira vez. Vamos trocar a palavra-passe inicial e ativar o segundo fator de autenticação — dois passos que a plataforma exige antes de mostrar o que quer que seja.</p>
+<section id="porque">
+<h2>Porquê</h2>
+<p>Porquê? A palavra-passe inicial é a mesma em todas as instalações, e está escrita no manual. Por isso a primeira coisa a fazer é trocá-la.</p>
+<p>E o segundo fator junta à palavra-passe uma coisa que só a pessoa tem: o telemóvel, ou uma chave de segurança. Assim, quem descobrir a palavra-passe, sozinha, não consegue entrar.</p>
+<p><strong>Porquê dois passos obrigatórios</strong></p>
+<ul class="simple">
+<li><p>A palavra-passe inicial, ChangeMe123!, é igual em todas as instalações — toda a gente a conhece.</p></li>
+<li><p>O segundo fator junta à palavra-passe algo que só o utilizador tem: o telemóvel ou uma chave de segurança.</p></li>
+<li><p>Quem descobrir a palavra-passe, sem o segundo fator, não entra.</p></li>
+</ul>
+</section>
+<section id="entrar-com-a-conta-inicial">
+<h2>Entrar com a conta inicial</h2>
+<p>No browser, abrimos o endereço que o instalador indicou — aqui, no laboratório, localhost, porta 8080; num servidor, é o nome ou o endereço dele, a partir de qualquer computador da rede. Aparece a página de entrada. Escrevemos o utilizador, admin, e a palavra-passe inicial.</p>
+<figure class="align-default" id="id1">
+<img alt="A página de entrada" src="../_images/017.jpg" />
+<figcaption>
+<p><span class="caption-text">A página de entrada.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="a-palavra-passe-nova">
+<h2>A palavra-passe nova</h2>
+<p>Em vez de entrar, a plataforma pede logo uma palavra-passe nova. Repare na lista de regras por baixo: pelo menos doze caracteres, maiúsculas e minúsculas, um número e um símbolo. Cada regra fica verde quando é cumprida.</p>
+<p>Escreve-se a palavra-passe duas vezes, para evitar enganos. Guarde-a já num cofre de palavras-passe. A plataforma também não deixa repetir as últimas três que usou.</p>
+<figure class="align-default" id="id2">
+<img alt="Definir a palavra-passe nova" src="../_images/021.jpg" />
+<figcaption>
+<p><span class="caption-text">Definir a palavra-passe nova.</span></p>
+</figcaption>
+</figure>
+<p>Com todas as regras a verde, o botão fica ativo. Definimos a palavra-passe e continuamos.</p>
+<figure class="align-default" id="id3">
+<img alt="Confirmar" src="../_images/031.jpg" />
+<figcaption>
+<p><span class="caption-text">Confirmar.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o-segundo-fator">
+<h2>O segundo fator</h2>
+<p>Agora o segundo fator. Há duas opções. Uma aplicação autenticadora no telemóvel — o Google Authenticator, o Microsoft Authenticator ou outra. Ou uma chave de segurança física, como uma YubiKey, ou o Windows Hello.</p>
+<p>A aplicação no telemóvel é a mais comum e não custa nada. É essa que escolhemos.</p>
+<figure class="align-default" id="id4">
+<img alt="Escolher o segundo fator" src="../_images/041.jpg" />
+<figcaption>
+<p><span class="caption-text">Escolher o segundo fator.</span></p>
+</figcaption>
+</figure>
+<p>Aparece um código QR. No telemóvel, abre-se a aplicação autenticadora, escolhe-se acrescentar uma conta, e aponta-se a câmara para este quadrado. Por baixo está o mesmo segredo em texto, para o caso de a câmara não o conseguir ler.</p>
+<p>Este segredo é o que liga o telemóvel à conta, por isso nunca se partilha. Mostramo-lo aqui sem receio porque esta instalação é de laboratório e vai ser apagada.</p>
+<figure class="align-default" id="id5">
+<img alt="Ler o código QR com o telemóvel" src="../_images/051.jpg" />
+<figcaption>
+<p><span class="caption-text">Ler o código QR com o telemóvel.</span></p>
+</figcaption>
+</figure>
+<p>A aplicação mostra agora um código de seis dígitos, que muda a cada trinta segundos. Escrevemos o código que estiver no ecrã nesse momento e confirmamos. Nesta gravação, o código foi calculado a partir do mesmo segredo, tal como a aplicação do telemóvel o calcula.</p>
+<p>Se o código for recusado, o mais provável é a hora do telemóvel estar errada — estes códigos dependem do relógio. Acerte a hora automaticamente, e tente o código seguinte.</p>
+<figure class="align-default" id="id6">
+<img alt="O código de seis dígitos" src="../_images/061.jpg" />
+<figcaption>
+<p><span class="caption-text">O código de seis dígitos.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="dentro">
+<h2>Dentro</h2>
+<p>Entrámos. Este é o painel da plataforma. Ainda está vazio — normal, numa instalação acabada de fazer: os dados chegam quando se importa o inventário e se configura a organização.</p>
+<figure class="align-default" id="id7">
+<img alt="Dentro da plataforma" src="../_images/071.jpg" />
+<figcaption>
+<p><span class="caption-text">Dentro da plataforma.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="as-entradas-seguintes">
+<h2>As entradas seguintes</h2>
+<p>Vejamos agora como é uma entrada normal. Saímos, no botão do canto, e voltamos a entrar, desta vez com a palavra-passe nova.</p>
+<figure class="align-default" id="id8">
+<img alt="Sair e voltar a entrar" src="../_images/081.jpg" />
+<figcaption>
+<p><span class="caption-text">Sair e voltar a entrar.</span></p>
+</figcaption>
+</figure>
+<p>Depois da palavra-passe, a plataforma pede o código da aplicação autenticadora. É assim em todas as entradas: palavra-passe, e logo a seguir o código do telemóvel.</p>
+<p>Se perder o telemóvel, não tente contornar: um administrador pode repor o segundo fator da sua conta, e da próxima vez que entrar ativa-o de novo.</p>
+<figure class="align-default" id="id9">
+<img alt="A palavra-passe e o código" src="../_images/091.jpg" />
+<figcaption>
+<p><span class="caption-text">A palavra-passe e o código.</span></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

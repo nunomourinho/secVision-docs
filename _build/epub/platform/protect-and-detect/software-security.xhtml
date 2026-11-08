@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Segurança do software e da configuração</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="seguranca-do-software-e-da-configuracao">
+<h1>Segurança do software e da configuração</h1>
+<p>O inventário de dependências e as suas vulnerabilidades, a análise estática do código com aceitações registadas, e a conformidade da configuração dos sistemas com perfis CIS ou STIG.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/H8cwm-OUPII">https://youtu.be/H8cwm-OUPII</a></p>
+<p>Três ferramentas técnicas fecham a fase de implementar: o inventário das dependências do software, a análise do código, e a conformidade da configuração dos sistemas.</p>
+<section id="onde-fica-no-menu">
+<h2>Onde fica no menu</h2>
+<p><strong>Menu:</strong> Proteger › Segurança do software › Análise SAST</p>
+<figure class="align-default" id="id1">
+<img alt="Menu lateral: Proteger › Segurança do software › Análise SAST" src="../../_images/menu40.jpg" />
+<figcaption>
+<p><span class="caption-text">O caminho no menu lateral: Proteger › Segurança do software › Análise SAST.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>No menu lateral, abra <strong>Proteger</strong>.</p></li>
+<li><p>Dentro dele, abra <strong>Segurança do software</strong>.</p></li>
+<li><p>Clique em <strong>Análise SAST</strong>: abre o ecrã desta página.</p></li>
+</ol>
+</section>
+<section id="as-ferramentas">
+<h2>As ferramentas</h2>
+<p>O relatório SBOM lista as dependências do software e as vulnerabilidades conhecidas de cada uma. A análise SAST lê o código à procura de falhas, todos os dias. E a conformidade do sistema operativo compara a configuração com perfis de referência, como os do CIS.</p>
+<p>No Anexo IV, servem as atualizações de segurança, os controlos nos sistemas, e — no Grupo A — a securização das configurações.</p>
+<p><strong>Três ferramentas</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ferramenta</p></th>
+<th class="head"><p>O que faz</p></th>
+<th class="head"><p>Anexo IV</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Relatório SBOM</p></td>
+<td><p>inventário das dependências e as suas vulnerabilidades conhecidas</p></td>
+<td><p>T.AS — atualizações</p></td>
+</tr>
+<tr class="row-odd"><td><p>Análise SAST</p></td>
+<td><p>análise estática do código e dos scripts, todos os dias</p></td>
+<td><p>T.GPT — controlos nos sistemas</p></td>
+</tr>
+<tr class="row-even"><td><p>Conformidade do sistema operativo (SCAP)</p></td>
+<td><p>configuração comparada com perfis CIS ou STIG</p></td>
+<td><p>T.SC — securização</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="o-ecra">
+<h2>O ecrã</h2>
+<p><strong>Menu:</strong> Proteger › Segurança do Software</p>
+<p>No menu Proteger, Segurança do Software. A análise SAST corre todos os dias; aqui não encontrou falhas. Quando encontra, uma falha que se decida não corrigir aceita-se explicitamente, com quem aceitou registado; não desaparece por se ignorar.</p>
+<figure class="align-default" id="id2">
+<img alt="Proteger › Segurança do Software" src="../../_images/abrir-121.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Proteger › Segurança do Software.</span></p>
+</figcaption>
+</figure>
+<p>Na conformidade do sistema operativo, este ambiente de testes não tem o leitor SCAP instalado, e o ecrã diz como o instalar. Com ele, as regras saem em passou, falhou, não aplicável e não verificado, e as aceites contam à parte.</p>
+<p>Um aviso que o próprio ecrã dá: a remediação automática não é reversível. Aplicar um perfil completo numa máquina que corre a base de dados pode apagá-la. Remedeie regra a regra, e nunca em produção sem salvaguarda feita.</p>
+<figure class="align-default" id="id3">
+<img alt="OS Compliance (SCAP)" src="../../_images/scap-1.jpg" />
+<figcaption>
+<p><span class="caption-text">OS Compliance (SCAP).</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<p>Além do efeito técnico, estas ferramentas dão prova automática: alimentam os recolectores da fase seguinte sem ninguém escrever nada. É a diferença entre um sistema que se prova todos os dias, e um que se prova na véspera da auditoria.</p>
+<p><strong>O que a plataforma faz</strong></p>
+<ul class="simple">
+<li><p>Estas ferramentas alimentam a prova automática da fase seguinte, sem ninguém escrever nada.</p></li>
+<li><p>É a diferença entre um sistema que se prova todos os dias e um que se prova na véspera da auditoria.</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

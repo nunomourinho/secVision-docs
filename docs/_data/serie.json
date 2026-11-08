@@ -1973,7 +1973,7 @@
   "titulo": "A anonimização dos pedidos de IA",
   "pagina": "platform/administration/ai-anonymisation",
   "grupo": "Formação C — A plataforma",
-  "duracao": 234.3,
+  "duracao": 300.9,
   "resumo": "Como a plataforma tira os dados pessoais e os dados da infraestrutura de tudo o que sai para um serviço de IA, onde fica a prova disso, e como se experimenta com um texto real antes de confiar.",
   "capitulos": [
    {
@@ -1998,10 +1998,26 @@
    },
    {
     "t": 160.32,
-    "titulo": "As exceções e a volta"
+    "titulo": "As exceções"
    },
    {
-    "t": 196.49,
+    "t": 175.58,
+    "titulo": "A ida"
+   },
+   {
+    "t": 186.78,
+    "titulo": "A ida"
+   },
+   {
+    "t": 217.15,
+    "titulo": "A ida"
+   },
+   {
+    "t": 234.98,
+    "titulo": "A volta"
+   },
+   {
+    "t": 263.12,
     "titulo": "Resumo"
    }
   ]
@@ -2084,6 +2100,67 @@
    },
    {
     "t": 204.0,
+    "titulo": "Resumo"
+   }
+  ]
+ },
+ "359-carrinho-e-documentos-com-ia": {
+  "titulo": "O carrinho de controlos e os documentos com IA",
+  "pagina": "platform/protect-and-detect/control-cart",
+  "grupo": "Formação C — A plataforma",
+  "duracao": 291.8,
+  "resumo": "Juntar ao carrinho os controlos que um documento tem de cobrir, e escrever com eles um procedimento com apoio de IA: o pedido sai pseudonimizado, a resposta volta com os valores repostos, entra no editor, e os controlos ficam ligados ao documento.",
+  "capitulos": [
+   {
+    "t": 0.0,
+    "titulo": "Introdução"
+   },
+   {
+    "t": 18.94,
+    "titulo": "O conceito"
+   },
+   {
+    "t": 46.01,
+    "titulo": "Encher o carrinho"
+   },
+   {
+    "t": 67.63,
+    "titulo": "Encher o carrinho"
+   },
+   {
+    "t": 97.83,
+    "titulo": "O documento"
+   },
+   {
+    "t": 116.52,
+    "titulo": "O pedido"
+   },
+   {
+    "t": 132.67,
+    "titulo": "O pedido"
+   },
+   {
+    "t": 161.98,
+    "titulo": "A IA"
+   },
+   {
+    "t": 177.69,
+    "titulo": "A IA"
+   },
+   {
+    "t": 199.41,
+    "titulo": "De volta"
+   },
+   {
+    "t": 227.28,
+    "titulo": "De volta"
+   },
+   {
+    "t": 244.08,
+    "titulo": "A cobertura"
+   },
+   {
+    "t": 258.74,
     "titulo": "Resumo"
    }
   ]
@@ -2561,7 +2638,7 @@
   "titulo": "Falsos positivos no Wazuh",
   "pagina": "wazuh/false-positives",
   "grupo": "Formação E — Wazuh",
-  "duracao": 373.0,
+  "duracao": 429.5,
   "resumo": "O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.",
   "capitulos": [
    {
@@ -2589,35 +2666,43 @@
     "titulo": "A IA"
    },
    {
-    "t": 176.91,
+    "t": 177.29,
+    "titulo": "A IA"
+   },
+   {
+    "t": 210.13,
+    "titulo": "A IA"
+   },
+   {
+    "t": 229.61,
     "titulo": "A regra"
    },
    {
-    "t": 206.75,
+    "t": 263.22,
     "titulo": "Aplicar"
    },
    {
-    "t": 217.91,
+    "t": 274.38,
     "titulo": "Aplicar"
    },
    {
-    "t": 244.4,
+    "t": 300.88,
     "titulo": "Aplicar"
    },
    {
-    "t": 262.98,
+    "t": 319.45,
     "titulo": "No Wazuh"
    },
    {
-    "t": 289.88,
+    "t": 346.38,
     "titulo": "O histórico"
    },
    {
-    "t": 316.91,
+    "t": 373.41,
     "titulo": "No Wazuh"
    },
    {
-    "t": 341.33,
+    "t": 397.83,
     "titulo": "Resumo"
    }
   ]
@@ -2626,7 +2711,7 @@
   "titulo": "Regras de deteção no Wazuh",
   "pagina": "wazuh/detection-rules",
   "grupo": "Formação E — Wazuh",
-  "duracao": 249.0,
+  "duracao": 300.0,
   "resumo": "O contrário de um falso positivo: um evento que o Wazuh não conhece e que devia ser alerta. O que são decoders e regras; a linha real de uma aplicação do ambiente de testes, o pedido à IA, a resposta separada em quatro blocos, a aplicação ao gestor; e, no Wazuh, a mesma linha antes (nenhum decoder) e depois (regra e alerta), e os alertas novos a chegar.",
   "capitulos": [
    {
@@ -2646,31 +2731,39 @@
     "titulo": "No SecVision"
    },
    {
-    "t": 99.72,
+    "t": 103.45,
+    "titulo": "A IA"
+   },
+   {
+    "t": 128.8,
+    "titulo": "A IA"
+   },
+   {
+    "t": 150.49,
     "titulo": "No SecVision"
    },
    {
-    "t": 133.28,
+    "t": 184.3,
     "titulo": "Aplicar"
    },
    {
-    "t": 140.72,
+    "t": 191.74,
     "titulo": "Aplicar"
    },
    {
-    "t": 164.84,
+    "t": 215.86,
     "titulo": "Aplicar"
    },
    {
-    "t": 174.36,
+    "t": 225.4,
     "titulo": "No Wazuh, depois"
    },
    {
-    "t": 194.41,
+    "t": 245.36,
     "titulo": "No Wazuh, depois"
    },
    {
-    "t": 220.39,
+    "t": 271.34,
     "titulo": "Resumo"
    }
   ]
@@ -2679,7 +2772,7 @@
   "titulo": "Classificar alertas e ensaiar regras",
   "pagina": "wazuh/ai-classification-and-studio",
   "grupo": "Formação E — Wazuh",
-  "duracao": 228.9,
+  "duracao": 277.8,
   "resumo": "Duas ferramentas para quem afina a deteção: a classificação de um alerta com IA — falso positivo ou alerta real, com confiança, impacto e prioridade, guardada — e o Wazuh Rule Studio, que importa as regras do gestor e as ensaia num Wazuh próprio, em Docker, sem tocar no de produção.",
   "capitulos": [
    {
@@ -2691,35 +2784,43 @@
     "titulo": "Classificar"
    },
    {
-    "t": 37.14,
+    "t": 37.17,
     "titulo": "Classificar"
    },
    {
-    "t": 66.54,
+    "t": 66.6,
     "titulo": "Classificar"
    },
    {
-    "t": 97.24,
+    "t": 89.27,
+    "titulo": "Classificar"
+   },
+   {
+    "t": 111.13,
+    "titulo": "Classificar"
+   },
+   {
+    "t": 141.19,
     "titulo": "O Rule Studio"
    },
    {
-    "t": 113.84,
+    "t": 157.79,
     "titulo": "O Rule Studio"
    },
    {
-    "t": 148.94,
+    "t": 192.91,
     "titulo": "Ensaiar"
    },
    {
-    "t": 158.84,
+    "t": 202.79,
     "titulo": "Ensaiar"
    },
    {
-    "t": 165.95,
+    "t": 209.91,
     "titulo": "Ensaiar"
    },
    {
-    "t": 197.65,
+    "t": 246.56,
     "titulo": "Resumo"
    }
   ]

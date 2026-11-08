@@ -1,0 +1,58 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "INVENTÁRIO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Ativos de informação"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Apreciar riscos",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Contenção",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "arvore-1.jpg",
+  "marca": "arvore",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Árvore de contenção",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "arvore-2.jpg",
+  "marca": "arvore",
+  "itens": []
+ }
+]

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Anonimização de IA</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="anonimizacao-de-ia">
+<h1>Anonimização de IA</h1>
+<p>O registo de tudo o que saiu da plataforma para um serviço de IA, e uma bancada para ver, antes de confiar, o que sairia de um texto real.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/F5lOyAt-qos">https://youtu.be/F5lOyAt-qos</a></p>
+<section id="onde-fica-no-menu">
+<h2>Onde fica no menu</h2>
+<p><strong>Menu:</strong> Governar › Administração do sistema › Anonimização de IA</p>
+<figure class="align-default" id="id1">
+<img alt="Menu lateral: Governar › Administração do sistema › Anonimização de IA" src="../../_images/menu1.jpg" />
+<figcaption>
+<p><span class="caption-text">O caminho no menu lateral: Governar › Administração do sistema › Anonimização de IA.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>No menu lateral, abra <strong>Governar</strong>.</p></li>
+<li><p>Dentro dele, abra <strong>Administração do sistema</strong>.</p></li>
+<li><p>Clique em <strong>Anonimização de IA</strong>: abre o ecrã desta página.</p></li>
+</ol>
+</section>
+<section id="porque">
+<h2>Porquê</h2>
+<p>Os assistentes de IA da plataforma (falsos positivos, regras de deteção, conformidade, documentos) montam um <em>prompt</em> que uma pessoa cola no serviço de IA que usa. À saída, endereços, nomes e identificadores são trocados por etiquetas (<code class="docutils literal notranslate"><span class="pre">[IP_1]</span></code>, <code class="docutils literal notranslate"><span class="pre">[PESSOA_1]</span></code>) e repostos na resposta. <strong>Não há interruptor para desligar isto</strong>, e não existe nenhum caminho na API que devolva o texto original. Este ecrã é a prova de que funciona.</p>
+</section>
+<section id="o-registo-de-saidas">
+<h2>O registo de saídas</h2>
+<figure class="align-default" id="id2">
+<img alt="O registo de saídas para IA, com os filtros e as contagens" src="../../_images/registo-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O registo de saídas para IA, com os filtros e as contagens.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Registo de saídas</strong></p></li>
+<li><p><strong>O período</strong></p></li>
+<li><p><strong>O fluxo de IA</strong></p></li>
+<li><p><strong>Exportar (CSV, XLSX, DOCX)</strong></p></li>
+<li><p><strong>Que categorias saíram</strong></p></li>
+</ol>
+<p>Cada linha é um <em>prompt</em> que saiu: quando, quem, por que fluxo, e quantos valores de cada categoria foram substituídos. Exporta-se para CSV, XLSX ou DOCX, e é isso que se mostra a um auditor.</p>
+</section>
+<section id="a-bancada-de-ensaio">
+<h2>A bancada de ensaio</h2>
+<figure class="align-default" id="id3">
+<img alt="A bancada de ensaio: o estado das camadas e o texto a experimentar" src="../../_images/bancada-2.jpg" />
+<figcaption>
+<p><span class="caption-text">A bancada de ensaio: o estado das camadas e o texto a experimentar.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>As quatro camadas, e se estão de pé</strong></p></li>
+<li><p><strong>Verificar camadas</strong></p></li>
+<li><p><strong>O texto a ensaiar</strong></p></li>
+<li><p><strong>Mascarar</strong></p></li>
+<li><p><strong>As minhas listas de termos</strong></p></li>
+</ol>
+<p>Cole um alerta real ou um excerto de um documento e clique em <strong>Mascarar</strong>. A bancada mostra exatamente o que sairia: a tabela de conversão (<code class="docutils literal notranslate"><span class="pre">[IP_1]</span></code> é aquele endereço), o que ficou em claro e porquê, e a camada que apanhou cada coisa. Nas listas de termos, cada pessoa decide o que deixa sempre em claro e o que mascara sempre, só para os seus <em>prompts</em>.</p>
+<p><strong>O painel das camadas é o que se verifica quando alguma coisa não funciona.</strong> Diz «as quatro camadas estão de pé» ou nomeia a que falta. Uma camada obrigatória em falta significa que <strong>não é produzido nenhum prompt</strong> em toda a plataforma: é esse o motivo de um erro 503 nos assistentes de IA, e não um simples aviso.</p>
+</section>
+<section id="ida-e-volta-um-pedido-real">
+<h2>Ida e volta: um pedido real</h2>
+<p>No vídeo, a bancada faz o percurso inteiro de um pedido, com um modelo de IA a sério do outro lado.</p>
+<figure class="align-default" id="id4">
+<img alt="Copiar o que sairia da plataforma" src="../../_images/056.jpg" />
+<figcaption>
+<p><span class="caption-text">Copiar o que sairia: o texto já pseudonimizado, e só esse.</span></p>
+</figcaption>
+</figure>
+<p>Cola-se o texto num assistente de IA. Máquinas, pessoa, telefones, endereço e contribuinte vão todos em etiquetas. Só o correio da pessoa vai em claro, porque é de um domínio de documentação e foi deixado assim de propósito, como a bancada já tinha avisado.</p>
+<figure class="align-default" id="id5">
+<img alt="O pedido pseudonimizado, colado no assistente de IA" src="../../_images/066.jpg" />
+<figcaption>
+<p><span class="caption-text">O pedido, colado no assistente de IA. A janela é desenhada para o vídeo; o pedido e a resposta são reais, processados por um modelo de IA.</span></p>
+</figcaption>
+</figure>
+<p>A resposta analisa o alerta e propõe passos, falando sempre pelas etiquetas: <code class="docutils literal notranslate"><span class="pre">[IP_1]</span></code>, <code class="docutils literal notranslate"><span class="pre">[PESSOA_1]</span></code>. E até repara no correio que foi em claro, e recomenda mascará-lo. Copia-se a resposta.</p>
+<figure class="align-default" id="id6">
+<img alt="A resposta do assistente, com as etiquetas" src="../../_images/076.jpg" />
+<figcaption>
+<p><span class="caption-text">A resposta real do modelo, ainda com as etiquetas.</span></p>
+</figcaption>
+</figure>
+<p>De volta à bancada, cola-se a resposta na <strong>reversão</strong>, ainda com as etiquetas, e clica-se em <strong>Reverter</strong>. A mesma resposta aparece com os valores reais no sítio: o endereço, as máquinas, a pessoa, o telefone. É o mesmo passo que os assistentes da plataforma (falsos positivos, regras de deteção, classificação de alertas, documentos do SGSI) fazem sozinhos quando se cola a resposta.</p>
+<figure class="align-default" id="id7">
+<img alt="A reversão da resposta, com os valores reais" src="../../_images/085.jpg" />
+<figcaption>
+<p><span class="caption-text">A reversão: a resposta com os valores reais repostos.</span></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><strong>Dois prazos diferentes.</strong> O mapa que permite repor os valores originais expira aos 30 dias. A linha do registo dura um ano, porque «4 endereços IP» mais uma data é prova de auditoria sem dado pessoal nenhum.</p>
+</div>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<ul class="simple">
+<li><p>O registo de saídas é a prova do que saiu para serviços de IA.</p></li>
+<li><p>A bancada mostra o que sairia, antes de confiar, e repõe os valores reais numa resposta.</p></li>
+<li><p>Sem as camadas obrigatórias, nenhum <em>prompt</em> é produzido.</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

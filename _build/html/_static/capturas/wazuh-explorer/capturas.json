@@ -1,0 +1,198 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "DETETAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "SOC"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Wazuh Explorer"
+   }
+  ]
+ },
+ {
+  "imagem": "agente-1.jpg",
+  "marca": "agente",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "escolher",
+    "rotulo": "agente-sem-sistema (ID: 004) — active — 172.20.0.7",
+    "valor": "003"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "Visão Geral",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "agente-2.jpg",
+  "marca": "agente",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "O sistema do catálogo",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "software-1.jpg",
+  "marca": "software",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Software",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "software-2.jpg",
+  "marca": "software",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "escrever",
+    "rotulo": "Pesquisar...",
+    "valor": "openssl"
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "openssl 3.0.9-1 — a versão instalada",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Pesquisar...",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "software-3.jpg",
+  "marca": "software",
+  "itens": []
+ },
+ {
+  "imagem": "software-4.jpg",
+  "marca": "software",
+  "itens": []
+ },
+ {
+  "imagem": "software-5.jpg",
+  "marca": "software",
+  "itens": []
+ },
+ {
+  "imagem": "maquina-1.jpg",
+  "marca": "maquina",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Processos",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "maquina-2.jpg",
+  "marca": "maquina",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Rede e Tráfego",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "maquina-3.jpg",
+  "marca": "maquina",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Utilizadores",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "maquina-4.jpg",
+  "marca": "maquina",
+  "itens": []
+ },
+ {
+  "imagem": "vulns-1.jpg",
+  "marca": "vulns",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Vulnerabilidades",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "vulns-2.jpg",
+  "marca": "vulns",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Por gravidade, do Indexer",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "wazuh_agente-1.jpg",
+  "marca": "wazuh_agente",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "O mesmo agente, no painel do Wazuh",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "wazuh_agente-2.jpg",
+  "marca": "wazuh_agente",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Os mesmos números",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "wazuh_vuln-1.jpg",
+  "marca": "wazuh_vuln",
+  "itens": []
+ }
+]

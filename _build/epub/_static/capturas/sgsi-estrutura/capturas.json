@@ -1,0 +1,127 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "SGSI"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Árvore do SGSI"
+   }
+  ]
+ },
+ {
+  "imagem": "arvore-1.jpg",
+  "marca": "arvore",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "A árvore de conformidade",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "arvore-2.jpg",
+  "marca": "arvore",
+  "itens": []
+ },
+ {
+  "imagem": "controlos-1.jpg",
+  "marca": "controlos",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Novo documento",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Arquivados",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "controlos-2.jpg",
+  "marca": "controlos",
+  "itens": []
+ },
+ {
+  "imagem": "cobertura-1.jpg",
+  "marca": "cobertura",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Só os que estão a descoberto",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Controlos aplicáveis sem documento",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Documentos que não cobrem controlo nenhum",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "cobertura-2.jpg",
+  "marca": "cobertura",
+  "itens": []
+ },
+ {
+  "imagem": "evidencias-1.jpg",
+  "marca": "evidencias",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Nova evidência",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "evidencias-2.jpg",
+  "marca": "evidencias",
+  "itens": []
+ },
+ {
+  "imagem": "arquivo-1.jpg",
+  "marca": "arquivo",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Restaurar",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Um documento arquivado",
+    "valor": null
+   }
+  ]
+ }
+]

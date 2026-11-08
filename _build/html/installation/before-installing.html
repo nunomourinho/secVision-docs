@@ -1,0 +1,560 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-PT" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antes de instalar &mdash; SecVision — Manual do utilizador</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css?v=0ce5403f" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8491d5b5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/translations.js?v=72787d97"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Obter o Ubuntu Server" href="get-ubuntu-server.html" />
+    <link rel="prev" title="Instalação" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0F172A" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" aria-label="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Instalação</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Instalação</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Antes de instalar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#o-que-vamos-instalar">O que vamos instalar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#o-minimo-de-terminal">O mínimo de terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#os-dois-modos">Os dois modos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preparar-a-maquina">Preparar a máquina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#as-perguntas-do-instalador">As perguntas do instalador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#antes-do-primeiro-acesso">Antes do primeiro acesso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="get-ubuntu-server.html">Obter o Ubuntu Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#porque">Porquê</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#descarregar">Descarregar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#confirmar-a-imagem">Confirmar a imagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#preparar-o-arranque">Preparar o arranque</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install-ubuntu-server.html">Instalar o Ubuntu Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#primeiros-ecras">Primeiros ecrãs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#rede">Rede</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#discos">Discos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#utilizador-e-acesso">Utilizador e acesso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#a-instalacao">A instalação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#primeiro-arranque">Primeiro arranque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="native-install.html">Instalar em modo nativo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#confirmar-a-maquina">Confirmar a máquina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#obter-o-codigo">Obter o código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#o-instalador">O instalador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#pre-requisitos">Pré-requisitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#o-assistente">O assistente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#construcao-e-arranque">Construção e arranque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#resumo">Resumo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#confirmar-que-funciona">Confirmar que funciona</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="docker-install.html">Instalar em modo Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#o-que-muda">O que muda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#obter-o-codigo">Obter o código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#o-instalador">O instalador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#o-assistente-de-configuracao">O assistente de configuração</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#construir-e-arrancar">Construir e arrancar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#confirmar">Confirmar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="first-access.html">O primeiro acesso</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#porque">Porquê</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#entrar-com-a-conta-inicial">Entrar com a conta inicial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#a-palavra-passe-nova">A palavra-passe nova</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#o-segundo-fator">O segundo fator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#dentro">Dentro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#as-entradas-seguintes">As entradas seguintes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test-environment.html">O ambiente de testes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#o-que-e">O que é</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#criar-o-ambiente">Criar o ambiente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#os-dados-de-teste">Os dados de teste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#como-entrar">Como entrar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#entrar-nos-testes">Entrar nos testes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#explorar">Explorar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="test-environment.html#resumo">Resumo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Formação</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fundamentals/index.html">Módulo A — Fundamentos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html">A cibersegurança é um tema de gestão</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html#o-que-mudou">O que mudou</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html#a-direcao-na-lei">A direção na lei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html#o-percurso">O percurso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/information-and-assets.html">Informação, ativos e as três propriedades</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#ativos">Ativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#c-i-a">C, I, A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#classificar">Classificar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/risk.html">O que é o risco</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#uma-sensacao-ou-uma-quantidade">Uma sensação ou uma quantidade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#as-pecas">As peças</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#medir">Medir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#inerente-e-residual">Inerente e residual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/controls-and-isms.html">Controlos, medidas e o sistema de gestão</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/controls-and-isms.html#controlos">Controlos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/controls-and-isms.html#o-sgsi">O SGSI</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html">Normas e quadros de referência</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html#os-referenciais">Os referenciais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html#conformidade-certificacao-acreditacao">Conformidade, certificação, acreditação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html#na-lei-portuguesa">Na lei portuguesa</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/iso-27001-inside.html">A ISO/IEC 27001 por dentro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#a-estrutura">A estrutura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#o-anexo-a">O Anexo A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#a-soa">A SoA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#certificar">Certificar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../law/index.html">Módulo B — A lei e o CNCS, passo a passo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../law/from-nis2-to-dl-125.html">Da NIS 2 ao DL 125/2025 e ao Regulamento 756/2026</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/from-nis2-to-dl-125.html#os-tres-elos">Os três elos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/from-nis2-to-dl-125.html#o-que-obriga">O que obriga</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/who-is-covered.html">Quem está abrangido</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/who-is-covered.html#o-ambito">O âmbito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/who-is-covered.html#as-qualificacoes">As qualificações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/who-is-covered.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/self-identification.html">Autoidentificação e qualificação</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#as-categorias">As categorias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#autoidentificacao">Autoidentificação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#o-formulario">O formulário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#a-qualificacao">A qualificação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/registration.html">O registo, e mantê-lo atualizado</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/registration.html#o-dever-de-registo">O dever de registo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/registration.html#atualizar">Atualizar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/registration.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/security-officer-and-contact-point.html">Responsável de cibersegurança e ponto de contacto</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#o-responsavel">O responsável</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#o-ponto-de-contacto">O ponto de contacto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#publicas-relevantes">Públicas relevantes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/management-duties.html">Os deveres dos órgãos de gestão</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/management-duties.html#o-artigo-25-o">O artigo 25.º</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/management-duties.html#a-responsabilidade">A responsabilidade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/management-duties.html#publicas-relevantes">Públicas relevantes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/risk-management-and-matrix.html">Gestão de riscos e a Matriz de Risco</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/risk-management-and-matrix.html#a-lei">A lei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/risk-management-and-matrix.html#a-matriz-de-risco">A Matriz de Risco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/risk-management-and-matrix.html#publicas-relevantes">Públicas relevantes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/public-entities-annex-iv.html">Entidades públicas relevantes — o Anexo IV</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#a-obrigacao">A obrigação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#a-estrutura">A estrutura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#ler-uma-medida">Ler uma medida</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annex-iv-organisational.html">Anexo IV — as medidas organizacionais</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-organisational.html#grupos-a-e-b">Grupos A e B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-organisational.html#so-grupo-a">Só Grupo A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-organisational.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annex-iv-technical-and-human.html">Anexo IV — as medidas tecnológicas e humanas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-technical-and-human.html#tecnologicas">Tecnológicas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-technical-and-human.html#humanas">Humanas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/essential-and-important-annex-iii.html">Entidades essenciais e importantes — o Anexo III</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/essential-and-important-annex-iii.html#o-nivel">O nível</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/essential-and-important-annex-iii.html#os-niveis">Os níveis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/essential-and-important-annex-iii.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annex-iii-by-function.html">Anexo III — medidas e critérios, função a função</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iii-by-function.html#as-seis-funcoes">As seis funções</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iii-by-function.html#o-criterio">O critério</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iii-by-function.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/qnrcs.html">O QNRCS — o Anexo I</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/qnrcs.html#o-que-e">O que é</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/qnrcs.html#a-estrutura">A estrutura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/qnrcs.html#para-que-serve">Para que serve</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/incident-notification.html">Incidentes — notificar a tempo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/incident-notification.html#significativo">Significativo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/incident-notification.html#os-prazos">Os prazos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/incident-notification.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html">Relatório anual, fornecedores e risco residual</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#o-relatorio-anual">O relatório anual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#fornecedores">Fornecedores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#risco-residual">Risco residual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/certification.html">A certificação</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#voluntaria-ou-exigida">Voluntária ou exigida</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#os-esquemas">Os esquemas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#depois-do-certificado">Depois do certificado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/supervision-and-penalties.html">Supervisão e sanções</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/supervision-and-penalties.html#as-infracoes">As infrações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/supervision-and-penalties.html#as-coimas">As coimas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/supervision-and-penalties.html#o-processo">O processo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../platform/index.html">Módulo C — A plataforma, passo a passo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../platform/index.html#como-ler-as-capturas-de-ecra">Como ler as capturas de ecrã</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../platform/getting-started/index.html">Primeiros passos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/administration/index.html">Administração do sistema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/organisation/index.html">A organização e as obrigações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/inventory/index.html">Inventário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/compliance/index.html">Normas e conformidade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/risk/index.html">Risco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/protect-and-detect/index.html">Proteger e detetar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/monitoring/index.html">Prova e acompanhamento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/audit/index.html">Auditoria e melhoria</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../journey/index.html">Módulo D — O percurso até à conformidade e à certificação</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../journey/first-year.html">O primeiro ano em sete passos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/first-year.html#os-sete-passos">Os sete passos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../journey/first-year.html#na-plataforma">Na plataforma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../journey/first-year.html#o-ciclo">O ciclo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../journey/self-assessment-to-plan.html">Da autoavaliação ao plano</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/self-assessment-to-plan.html#o-percurso">O percurso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../journey/what-counts-as-evidence.html">O que conta como prova</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/what-counts-as-evidence.html#a-prova">A prova</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../journey/what-the-platform-saves.html">O que a plataforma poupa — e o que não</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/what-the-platform-saves.html#o-balanco">O balanço</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../journey/what-the-platform-saves.html#para-terminar">Para terminar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../wazuh/index.html">Módulo E — Wazuh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html">O Wazuh e o SecVision</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#a-ligacao">A ligação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#os-agentes">Os agentes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-servidor">O servidor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-catalogo">O catálogo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-ambiente-de-testes">O ambiente de testes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/installing-agents.html">Instalar os agentes do Wazuh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#o-gerador">O gerador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#a-fila">A fila</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/explorer.html">O Explorer — uma máquina por dentro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/systems-and-agents.html">Ligar os sistemas aos agentes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#desassociar">Desassociar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#associar">Associar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/software-and-cve-search.html">Quem tem este software, ou esta CVE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#os-resultados">Os resultados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/false-positives.html">Falsos positivos no Wazuh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#antes-de-abrir-o-ecra">Antes de abrir o ecrã</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#o-alerta">O alerta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#a-ia">A IA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#a-regra">A regra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#aplicar">Aplicar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#id1">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#o-historico">O histórico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#id2">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/detection-rules.html">Regras de deteção no Wazuh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#no-wazuh-antes">No Wazuh, antes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#aplicar">Aplicar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#no-wazuh-depois">No Wazuh, depois</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html">Classificar alertas e ensaiar regras</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#classificar">Classificar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#o-rule-studio">O Rule Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#ensaiar">Ensaiar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#resumo">Resumo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projeto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/limitations.html">O que a plataforma não faz</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel"  style="background: #0F172A" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SecVision</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Instalação</a></li>
+      <li class="breadcrumb-item active">Antes de instalar</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="antes-de-instalar">
+<h1>Antes de instalar<a class="headerlink" href="#antes-de-instalar" title="Link to this heading"></a></h1>
+<p>O ponto de partida do manual: o que é o SecVision, o mínimo de terminal para acompanhar o manual, os dois modos de instalação e como escolher, o que preparar e o que o instalador vai perguntar.</p>
+<div class="sv-video"><iframe src="https://www.youtube-nocookie.com/embed/NfYNUjLoayI" title="SecVision — Antes de instalar" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>Olá. Neste manual vamos instalar o SecVision de raiz, passo a passo. Não é preciso ter experiência com Linux nem com cibersegurança: vou explicar o que fazemos, porque o fazemos e o que deve aparecer no ecrã em cada etapa.</p>
+<p>Esta primeira parte prepara o terreno. Os dois seguintes tratam do servidor: obter o Ubuntu Server e instalá-lo. Depois, as duas maneiras de instalar o SecVision, o primeiro acesso à plataforma e o ambiente de testes.</p>
+<section id="o-que-vamos-instalar">
+<h2>O que vamos instalar<a class="headerlink" href="#o-que-vamos-instalar" title="Link to this heading"></a></h2>
+<p>O SecVision é uma plataforma web. Junta, num só sítio, o inventário dos sistemas da organização e mostra quais estão a ser vigiados pelas ferramentas de segurança e quais estão a descoberto.</p>
+<p>Também apoia a gestão da segurança da informação — as normas a cumprir, os riscos, os controlos e as auditorias. Instala-se uma única vez, num servidor. Depois, cada pessoa usa-o a partir do browser, como qualquer site.</p>
+<p><strong>O que é o SecVision</strong></p>
+<ul class="simple">
+<li><p>Uma plataforma web que reúne o inventário dos sistemas — a partir do Active Directory, do DNS e do DHCP.</p></li>
+<li><p>Mostra que sistemas estão protegidos e quais estão a descoberto, por níveis de criticidade (N1 a N4).</p></li>
+<li><p>Ajuda a gerir a segurança da informação: normas, riscos, controlos, evidências e auditorias.</p></li>
+<li><p>Instala-se uma vez num servidor; quem o usa entra pelo browser, sem instalar nada no seu computador.</p></li>
+</ul>
+</section>
+<section id="o-minimo-de-terminal">
+<h2>O mínimo de terminal<a class="headerlink" href="#o-minimo-de-terminal" title="Link to this heading"></a></h2>
+<p>Vamos usar o terminal: uma janela onde damos ordens ao computador por escrito. Escrevemos um comando e carregamos em Enter. A linha que termina num cifrão diz quem somos, em que máquina estamos, e que o terminal está pronto para o próximo comando.</p>
+<p>Algumas tarefas precisam de permissões de administrador. Para isso existe o sudo: o sistema pede a palavra-passe do nosso próprio utilizador. Um pormenor que costuma assustar: enquanto se escreve a palavra-passe, não aparece nada no ecrã. É de propósito. Escreve-se, e carrega-se em Enter.</p>
+<p><strong>O terminal, em poucas palavras</strong></p>
+<ul class="simple">
+<li><p>O terminal é uma janela onde se dão ordens ao computador por escrito: um comando, e a tecla Enter.</p></li>
+<li><p>A linha «secv&#64;secvision:~$» diz quem somos (secv), em que máquina (secvision) e que o terminal espera um comando.</p></li>
+<li><p>«sudo» à frente de um comando pede permissão de administrador. O sistema pede a palavra-passe do nosso próprio utilizador.</p></li>
+<li><p>Ao escrever uma palavra-passe no terminal não aparece nada — nem asteriscos. É normal: escreve-se e carrega-se em Enter.</p></li>
+</ul>
+</section>
+<section id="os-dois-modos">
+<h2>Os dois modos<a class="headerlink" href="#os-dois-modos" title="Link to this heading"></a></h2>
+<p>O instalador oferece duas maneiras de instalar, e é a primeira pergunta que faz. No modo Docker, cada peça do SecVision corre no seu contentor: uma espécie de caixa isolada, que traz dentro tudo o que essa peça precisa. É o modo que o instalador propõe por omissão.</p>
+<p>No modo nativo, as peças instalam-se diretamente no sistema: a base de dados MariaDB, o Node.js que corre a aplicação, o nginx que entrega as páginas ao browser, e o PM2, que mantém a aplicação sempre a correr. O resultado, para quem usa, é o mesmo.</p>
+<p><strong>Duas maneiras de instalar</strong></p>
+<dl class="simple myst">
+<dt>Modo Docker</dt><dd><p>Cada peça corre no seu contentor — uma caixa isolada com tudo o que precisa</p>
+</dd>
+<dt>Modo nativo</dt><dd><p>As peças instalam-se no próprio sistema — base de dados, Node.js, nginx e PM2</p>
+</dd>
+</dl>
+<figure class="align-default" id="id1">
+<img alt="Duas maneiras de instalar" src="../_images/015.jpg" />
+<figcaption>
+<p><span class="caption-text">Duas maneiras de instalar.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Como escolher? O Docker é a escolha por omissão e mantém tudo arrumado. O modo nativo é indicado num PC com Windows, através do WSL, quando não há o Docker Desktop, ou para quem prefere ver cada peça instalada no sistema.</p>
+<p>Seja qual for o modo, o instalador instala também o Docker. Há uma peça que corre sempre num contentor: o Presidio. É ele que encontra e esconde os dados pessoais antes de algum texto seguir para uma inteligência artificial. Sem ele, essas funções ficam desligadas — por segurança.</p>
+<p><strong>Como escolher o modo</strong></p>
+<ul class="simple">
+<li><p>Docker: a escolha por omissão. Tudo fica arrumado em contentores; atualiza-se com um comando do Docker.</p></li>
+<li><p>Nativo: indicado para um PC com Windows (WSL2) sem Docker Desktop, ou para quem prefere as peças à vista.</p></li>
+<li><p>Nos dois casos o instalador põe o Docker: há uma peça que corre sempre num contentor — o Presidio.</p></li>
+<li><p>O Presidio protege os dados pessoais antes de qualquer texto seguir para uma inteligência artificial.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Se tiver dúvidas, siga o modo que a sua equipa de sistemas já usa noutros servidores.</p>
+</div>
+</section>
+<section id="preparar-a-maquina">
+<h2>Preparar a máquina<a class="headerlink" href="#preparar-a-maquina" title="Link to this heading"></a></h2>
+<p>O que é preciso? Um servidor dedicado, físico ou máquina virtual, com o Ubuntu Server 24.04. O SecVision é usado por várias pessoas ao mesmo tempo, pela rede: precisa de uma máquina sempre ligada e com um endereço fixo. Para experimentar num PC com Windows, também se instala através do WSL — e algumas destas gravações foram feitas assim, numa máquina de laboratório — mas isso é para testes, não para produção.</p>
+<p>Precisamos de um utilizador com permissão de sudo; não é preciso trabalhar como root, o administrador total do sistema, e é melhor não o fazer. A máquina tem de ter acesso à internet durante a instalação. E, para começar, quatro processadores, oito gigabytes de memória e uns quarenta livres em disco chegam.</p>
+<p><strong>O que é preciso</strong></p>
+<ul class="simple">
+<li><p>Um servidor dedicado — físico ou máquina virtual — com Ubuntu Server 24.04 LTS, sempre ligado e com endereço fixo.</p></li>
+<li><p>Para testes ou demonstrações, também serve um PC com Windows, através do WSL2 — mas não para produção.</p></li>
+<li><p>Um utilizador com permissão de sudo. Não é preciso, nem aconselhável, trabalhar como root.</p></li>
+<li><p>Acesso à internet durante a instalação: o instalador descarrega programas, bibliotecas e contentores.</p></li>
+<li><p>Para começar: 4 processadores, 8 GB de memória e uns 40 GB livres em disco.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Valores da máquina de laboratório destas páginas; em produção, conte com mais disco para as evidências e as cópias.</p>
+</div>
+</section>
+<section id="as-perguntas-do-instalador">
+<h2>As perguntas do instalador<a class="headerlink" href="#as-perguntas-do-instalador" title="Link to this heading"></a></h2>
+<p>Convém chegar à instalação com as respostas preparadas. O instalador pede duas palavras-passe para a base de dados — a do administrador e a da aplicação, com pelo menos doze caracteres. Guarde-as já num cofre de palavras-passe.</p>
+<p>Pede também o endereço pelo qual as pessoas vão chegar à plataforma. Isto importa para as chaves de segurança físicas, como a YubiKey, que só funcionam no endereço certo. E a porta: a 80, ou a 8080 se estiver ocupada. No fim, mostra a conta inicial: admin.</p>
+<p><strong>O que o instalador vai perguntar</strong></p>
+<ul class="simple">
+<li><p>Duas palavras-passe para a base de dados: a do administrador (root) e a da aplicação, com 12 caracteres ou mais.</p></li>
+<li><p>O endereço pelo qual as pessoas vão chegar à plataforma — por exemplo, o nome do servidor na rede.</p></li>
+<li><p>A porta: o instalador propõe a 80, ou a 8080 se a 80 estiver ocupada.</p></li>
+<li><p>No fim, mostra o endereço e a conta inicial: admin, com a palavra-passe ChangeMe123!.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Guarde as palavras-passe num cofre de palavras-passe antes de começar. Nenhuma aparece no ecrã enquanto a escreve.</p>
+</div>
+</section>
+<section id="antes-do-primeiro-acesso">
+<h2>Antes do primeiro acesso<a class="headerlink" href="#antes-do-primeiro-acesso" title="Link to this heading"></a></h2>
+<p>Um aviso para não ser apanhado de surpresa: no primeiro acesso, a plataforma obriga a trocar a palavra-passe inicial e a ativar o segundo fator de autenticação. Tenha à mão um telemóvel com uma aplicação autenticadora, ou uma chave de segurança.</p>
+<p>Não há forma de saltar este passo, e é de propósito: o SecVision guarda informação sensível sobre a segurança da organização, e uma palavra-passe sozinha não chega para a proteger.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<ul class="simple">
+<li><p>O primeiro acesso obriga a trocar a palavra-passe inicial e a ativar o segundo fator de autenticação.</p></li>
+<li><p>Tenha à mão um telemóvel com uma aplicação autenticadora — Google ou Microsoft Authenticator, por exemplo — ou uma chave FIDO2.</p></li>
+<li><p>Sem o segundo fator não se entra na plataforma. É assim de propósito: protege o acesso a informação sensível.</p></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="index.html" class="btn btn-neutral float-left" title="Instalação" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="get-ubuntu-server.html" class="btn btn-neutral float-right" title="Obter o Ubuntu Server" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nuno Mourinho e colaboradores.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

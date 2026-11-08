@@ -236,6 +236,30 @@ def legendas(yt, video_id, srt, L):
                                   media_body=MediaFileUpload(str(srt), mimetype='application/octet-stream')))
 
 
+def retirar_antigo(yt, pid, antigo):
+    """Uma versão substituída sai da playlist e fica privada, com «[substituído]» no título.
+
+    Não se apaga: apagar um vídeo do YouTube não tem volta, e o vídeo antigo pode ser preciso para
+    comparar. Privado, não aparece a ninguém; volta-se atrás no YouTube Studio."""
+    itens = executar(yt.playlistItems().list(part='id,snippet', playlistId=pid, maxResults=50))
+    while True:
+        for it in itens.get('items', []):
+            if it['snippet']['resourceId'].get('videoId') == antigo:
+                executar(yt.playlistItems().delete(id=it['id']))
+        if not itens.get('nextPageToken'):
+            break
+        itens = executar(yt.playlistItems().list(part='id,snippet', playlistId=pid, maxResults=50,
+                                                 pageToken=itens['nextPageToken']))
+    v = executar(yt.videos().list(part='snippet,status', id=antigo))
+    if v.get('items'):
+        sn = v['items'][0]['snippet']
+        titulo = sn['title'] if sn['title'].startswith('[substituído]') else f"[substituído] {sn['title']}"[:100]
+        executar(yt.videos().update(part='snippet,status', body={
+            'id': antigo,
+            'snippet': {'title': titulo, 'description': sn.get('description', ''), 'categoryId': sn['categoryId']},
+            'status': {'privacyStatus': 'private'}}))
+
+
 def playlist(yt, estado, raiz, L, privacidade):
     pid = estado.get('_playlist')
     if not pid:
@@ -255,6 +279,8 @@ def main():
     ap.add_argument('--canal', metavar='NOME', help='primeiro carregamento: nome do canal, para o fixar')
     ap.add_argument('--privacidade', choices=['public', 'unlisted', 'private'], default='unlisted')
     ap.add_argument('--apenas', nargs='+', metavar='ID', help='só estes vídeos')
+    ap.add_argument('--substituir', nargs='+', metavar='ID',
+                    help='voltar a carregar estes vídeos (versão nova); o antigo sai da playlist e fica privado')
     ap.add_argument('--simular', action='store_true', help='mostra os metadados sem usar a API')
     ap.add_argument('--auth-url', action='store_true', help='login, passo 1: imprime o endereço a abrir')
     ap.add_argument('--auth-code', metavar='URL', help='login, passo 2: endereço localhost:8765 colado')
@@ -277,6 +303,15 @@ def main():
     # pt fica na raiz (é o que a diretiva {video} lê); outras línguas, no futuro, numa secção própria
     raiz = carregar_estado()
     estado = raiz if args.lang == 'pt' else raiz.setdefault(args.lang, {})
+    substituir = {}
+    for vid in args.substituir or []:
+        if vid not in PAGINAS:
+            sys.exit(f'Id desconhecido: {vid}')
+        if estado.get(vid, {}).get('youtube'):
+            substituir[vid] = estado[vid]['youtube']
+            estado[vid] = {'titulo': estado[vid].get('titulo'), 'substitui': substituir[vid]}
+    if args.substituir:
+        ids = [i for i in ids if i in set(args.substituir) or not args.apenas] if args.apenas else list(args.substituir)
     pendentes = [i for i in ids if not estado.get(i, {}).get('youtube') or not estado[i].get('legendas')]
     print(f'{len(pendentes)} vídeo(s) por carregar ({args.lang}).')
 
@@ -308,6 +343,9 @@ def main():
                 executar(yt.playlistItems().insert(part='snippet', body={'snippet': {
                     'playlistId': pid, 'resourceId': {'kind': 'youtube#video', 'videoId': info['youtube']}}}))
                 print(f'  https://youtu.be/{info["youtube"]}  ({info["privacidade"]})')
+                if info.get('substitui'):
+                    retirar_antigo(yt, pid, info['substitui'])
+                    print(f'  a versão antiga ({info["substitui"]}) saiu da playlist e ficou privada')
                 if info['privacidade'] != args.privacidade and not aviso_bloqueio:
                     aviso_bloqueio = True
                     print(f'  AVISO: pedido {args.privacidade}, o YouTube devolveu {info["privacidade"]} — '

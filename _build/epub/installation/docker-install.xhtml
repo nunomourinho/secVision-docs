@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Instalar em modo Docker</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="instalar-em-modo-docker">
+<h1>Instalar em modo Docker</h1>
+<p>A instalação completa em modo Docker, num Ubuntu 24.04 acabado de instalar: o instalador põe o Docker, o assistente configura a aplicação e o docker compose arranca tudo em contentores.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/8hyo2c_6shA">https://youtu.be/8hyo2c_6shA</a></p>
+<p>Nesta página instalamos o SecVision em modo Docker, outra vez numa máquina Ubuntu 24.04 acabada de instalar. É o modo que o instalador propõe por omissão. Se já leu a página do modo nativo, vai reconhecer muitas perguntas: o assistente é o mesmo. Tal como esse, foi gravado numa máquina de laboratório; no seu servidor, os passos são os mesmos.</p>
+<section id="o-que-muda">
+<h2>O que muda</h2>
+<p>No modo Docker, cada peça do SecVision corre num contentor próprio: a base de dados, a aplicação, o servidor das páginas e o Presidio. Por isso não se instalam no sistema nem a MariaDB, nem o nginx, nem o PM2.</p>
+<p>Quem as junta é o Docker Compose: arranca as quatro peças pela ordem certa e volta a arrancá-las sozinho se o servidor reiniciar.</p>
+<p><strong>O que muda no modo Docker</strong></p>
+<ul class="simple">
+<li><p>Cada peça corre no seu contentor: a base de dados, a aplicação, as páginas e o Presidio.</p></li>
+<li><p>Não se instalam no sistema a MariaDB, o nginx nem o PM2 — vêm dentro dos contentores.</p></li>
+<li><p>O Docker Compose arranca as quatro peças juntas, pela ordem certa, e volta a arrancá-las se o servidor reiniciar.</p></li>
+</ul>
+</section>
+<section id="obter-o-codigo">
+<h2>Obter o código</h2>
+<p>Começamos por confirmar o ponto de partida: perguntamos a versão do Docker, e o sistema responde que o comando não existe. Esta máquina não tem Docker nenhum — é o instalador que o vai pôr.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>--version
+</pre></div>
+</div>
+<figure class="align-default" id="id1">
+<img alt="Uma máquina sem Docker" src="../_images/016.jpg" />
+<figcaption>
+<p><span class="caption-text">Uma máquina sem Docker.</span></p>
+</figcaption>
+</figure>
+<p>Trazemos o código para o servidor com git clone, como no modo nativo, e entramos na pasta secvision.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;endereço-do-repositório&gt;<span class="w"> </span>secvision
+</pre></div>
+</div>
+<figure class="align-default" id="id2">
+<img alt="git clone" src="../_images/02.jpg" />
+<figcaption>
+<p><span class="caption-text">Git clone.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o-instalador">
+<h2>O instalador</h2>
+<p>Corremos o instalador com bash setup.sh. Pede a palavra-passe do sudo, porque vai instalar programas no sistema. Escrevemos a do nosso utilizador — sem nada a aparecer no ecrã — e Enter.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bash<span class="w"> </span>setup.sh
+</pre></div>
+</div>
+<p>O que se respondeu a cada pergunta do instalador nesta instalação:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Pergunta do instalador</p></th>
+<th class="head"><p>Resposta</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>[sudo] password for secv</p></td>
+<td><p>(a palavra-passe do seu utilizador)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Opção [1/2]</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Password root do MySQL</p></td>
+<td><p>(a palavra-passe root da base de dados que escolher)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Confirme a password root</p></td>
+<td><p>(a palavra-passe root da base de dados que escolher)</p></td>
+</tr>
+<tr class="row-even"><td><p>Utilizador da aplicação</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Password da aplicação</p></td>
+<td><p>(a palavra-passe da aplicação que escolher)</p></td>
+</tr>
+<tr class="row-even"><td><p>Confirme a password da aplicação</p></td>
+<td><p>(a palavra-passe da aplicação que escolher)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mostrar segredos</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">n</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>WebAuthn RP Name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SecVision</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Domínio / RP ID</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">localhost</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Origin URL completo</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Porto de acesso à aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">8080</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Corrigir Origin</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tamanho máximo de upload</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-even"><td><p>Confirmar substituição do .env</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Gravar .env e continuar</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Prima Enter</p></td>
+<td><p>Enter (aceita o valor proposto)</p></td>
+</tr>
+<tr class="row-odd"><td><p>(S/n)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>(s/N)</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">n</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Modo de instalação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">menu-modo</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Passo 1/4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deteccao</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>base Docker desta máquina não é a aprovada</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">docker-falta</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Instalar a base Docker aprovada</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-docker</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Docker aprovada</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">docker-ok</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Instalar Node.js 22</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pergunta-node</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Configuração segura da aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Configuração da Base de Dados</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-bd</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Segredos de Segurança</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-segredos</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Configuração da Aplicação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-aplicacao</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Revisão e Confirmação</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">assistente-revisao</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Construção e lançamento</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">construcao</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Contentores iniciados</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">contentores</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>A aguardar que a API responda</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">espera-api</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>API a responder</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">api-ok</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>A criar utilizador administrador</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">seed</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Instalação concluída</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">concluida</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-default" id="id3">
+<img alt="bash setup.sh" src="../_images/03.jpg" />
+<figcaption>
+<p><span class="caption-text">Bash setup.sh.</span></p>
+</figcaption>
+</figure>
+<p>No menu do modo de instalação, escrevemos um: Docker. É também o que fica se carregar só em Enter.</p>
+<p>O instalador repara que está num WSL e lembra que, aí, o modo nativo é uma alternativa. Num servidor Linux normal esta nota não aparece.</p>
+<figure class="align-default" id="id4">
+<img alt="Escolher o modo — 1, Docker" src="../_images/04.jpg" />
+<figcaption>
+<p><span class="caption-text">Escolher o modo — 1, Docker.</span></p>
+</figcaption>
+</figure>
+<p>O instalador verifica o Docker e conclui que falta. Explica qual é a base aprovada — o Docker 24 ou mais recente, com o plugin Compose, do repositório oficial — e pede autorização para a instalar. Respondemos que sim.</p>
+<p>Numa máquina que já tivesse o Docker da distribuição, sem o Compose, o instalador também o trocaria — mas só depois de fazer uma cópia de segurança. Aqui não há nada para copiar, e ele di-lo. No fim, volta a medir: Docker e Compose nas versões aprovadas.</p>
+<figure class="align-default" id="id5">
+<img alt="A base Docker aprovada" src="../_images/05.jpg" />
+<figcaption>
+<p><span class="caption-text">A base Docker aprovada.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o-assistente-de-configuracao">
+<h2>O assistente de configuração</h2>
+<p>A seguir instala o Node.js 22, de que o assistente de configuração precisa, e lança o assistente. Primeiro confirma os pré-requisitos: o Node.js, o Docker, o daemon a correr e o Compose.</p>
+<p>Repare no aviso: a porta 80 está ocupada nesta máquina. Não é um erro — o assistente vai propor outra porta mais à frente.</p>
+<figure class="align-default" id="id6">
+<img alt="Node.js 22 e o assistente" src="../_images/06.jpg" />
+<figcaption>
+<p><span class="caption-text">Node.js 22 e o assistente.</span></p>
+</figcaption>
+</figure>
+<p>A base de dados: a palavra-passe do administrador, duas vezes, e a da aplicação, também duas vezes, com pelo menos doze caracteres. Para o nome do utilizador da aplicação, aceitamos o que propõe com Enter.</p>
+<figure class="align-default" id="id7">
+<img alt="Base de dados — duas palavras-passe" src="../_images/07.jpg" />
+<figcaption>
+<p><span class="caption-text">Base de dados — duas palavras-passe.</span></p>
+</figcaption>
+</figure>
+<p>Os segredos de segurança são gerados ao acaso pelo próprio assistente. Não os queremos ver no ecrã: respondemos que não.</p>
+<figure class="align-default" id="id8">
+<img alt="Os segredos — gerados sozinhos" src="../_images/08.jpg" />
+<figcaption>
+<p><span class="caption-text">Os segredos — gerados sozinhos.</span></p>
+</figcaption>
+</figure>
+<p>O nome da aplicação, SecVision, e o endereço pelo qual o browser vai chegar: localhost, nesta máquina de laboratório. A porta: 8080, já que a 80 está ocupada.</p>
+<p>No modo Docker, o assistente escreve esta porta também no ficheiro do Docker Compose, para o contentor das páginas ficar à escuta na porta certa.</p>
+<figure class="align-default" id="id9">
+<img alt="Endereço e porta 8080" src="../_images/09.jpg" />
+<figcaption>
+<p><span class="caption-text">Endereço e porta 8080.</span></p>
+</figcaption>
+</figure>
+<p>O resumo do que vai gravar. Confirmamos, e o ficheiro de configuração fica escrito.</p>
+<figure class="align-default" id="id10">
+<img alt="Rever e gravar" src="../_images/10.jpg" />
+<figcaption>
+<p><span class="caption-text">Rever e gravar.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="construir-e-arrancar">
+<h2>Construir e arrancar</h2>
+<p>Agora o Docker Compose constrói as imagens — uma espécie de molde de cada contentor — e descarrega o que falta: a base de dados, o Node.js, o modelo de língua portuguesa do Presidio. É a espera mais longa.</p>
+<p>Se o Docker Compose falhasse aqui, o instalador parava logo e mostrava as últimas linhas do registo. Esta gravação foi, aliás, a que ajudou a corrigir isso.</p>
+<figure class="align-default" id="id11">
+<img alt="Construir as imagens" src="../_images/11.jpg" />
+<figcaption>
+<p><span class="caption-text">Construir as imagens.</span></p>
+</figcaption>
+</figure>
+<p>Os contentores arrancaram. O instalador espera que a base de dados fique saudável e pergunta à própria aplicação se responde. Só depois cria a conta de administrador inicial.</p>
+<figure class="align-default" id="id12">
+<img alt="A API responde, e a conta inicial" src="../_images/12.jpg" />
+<figcaption>
+<p><span class="caption-text">A API responde, e a conta inicial.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="confirmar">
+<h2>Confirmar</h2>
+<p>Instalação concluída. O endereço, localhost na porta 8080, e a conta inicial: admin, com a palavra-passe ChangeMe123!. As mesmas vinte e quatro normas do modo nativo.</p>
+<p>Repare nos comandos úteis no fim: começam por sudo. O nosso utilizador entrou no grupo do Docker, mas isso só conta a partir da próxima sessão. Até lá, é com sudo.</p>
+<figure class="align-default" id="id13">
+<img alt="Instalação concluída" src="../_images/13.jpg" />
+<figcaption>
+<p><span class="caption-text">Instalação concluída.</span></p>
+</figcaption>
+</figure>
+<p>Confirmamos com sudo docker compose ps: quatro contentores, todos a correr. A base de dados e o Presidio dizem healthy — passaram a sua própria verificação de saúde.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>docker<span class="w"> </span>compose<span class="w"> </span>ps
+</pre></div>
+</div>
+<figure class="align-default" id="id14">
+<img alt="sudo docker compose ps" src="../_images/14.jpg" />
+<figcaption>
+<p><span class="caption-text">Sudo docker compose ps.</span></p>
+</figcaption>
+</figure>
+<p>E perguntamos à aplicação, pela porta 8080, se está bem: responde status ok, em ambiente de produção. A instalação em modo Docker está feita e confirmada.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-s<span class="w"> </span>http://localhost:8080/api/health<span class="p">;</span><span class="w"> </span><span class="nb">echo</span>
+</pre></div>
+</div>
+<figure class="align-default" id="id15">
+<img alt="A plataforma responde" src="../_images/15.jpg" />
+<figcaption>
+<p><span class="caption-text">A plataforma responde.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<p>Três comandos para guardar, sempre dentro da pasta do SecVision. O ps mostra que contentores estão a correr. O logs mostra o que a aplicação está a dizer — é por aí que se começa quando algo não abre. E o down e o up param e voltam a arrancar tudo.</p>
+<p><strong>Comandos para guardar</strong></p>
+<ul class="simple">
+<li><p>sudo docker compose ps — que contentores estão a correr</p></li>
+<li><p>sudo docker compose logs -f backend — o que a aplicação está a dizer</p></li>
+<li><p>sudo docker compose down e up -d — parar e voltar a arrancar tudo</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "GRC — CONFORMIDADE"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Âmbito do SGSI"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Anexo IV — em âmbito",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-2.jpg",
+  "marca": "abrir",
+  "itens": []
+ },
+ {
+  "imagem": "ficha-1.jpg",
+  "marca": "ficha",
+  "itens": []
+ },
+ {
+  "imagem": "ficha-2.jpg",
+  "marca": "ficha",
+  "itens": []
+ },
+ {
+  "imagem": "ficha-3.jpg",
+  "marca": "ficha",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Propor do texto escrito",
+    "valor": null
+   }
+  ]
+ }
+]

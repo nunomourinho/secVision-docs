@@ -1,0 +1,52 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "AUDITORIA E MELHORIA"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Auditorias internas"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Conformidade ou diagnóstico",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "auditoria-1.jpg",
+  "marca": "auditoria",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Auditoria interna às medidas do Anexo IV",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "auditoria-2.jpg",
+  "marca": "auditoria",
+  "itens": []
+ }
+]

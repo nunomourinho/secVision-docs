@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Primeiro acesso e segurança da plataforma</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="primeiro-acesso-e-seguranca-da-plataforma">
+<h1>Primeiro acesso e segurança da plataforma</h1>
+<p>O primeiro acesso em três tempos — senha inicial, senha nova, segundo fator — e as três decisões sobre a segurança da própria plataforma que se tomam antes de escrever a primeira política.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/ujyQCfKmW98">https://youtu.be/ujyQCfKmW98</a></p>
+<p>Começamos o módulo da plataforma pela porta de entrada: o primeiro acesso. E por uma pergunta que um auditor faz assim que percebe que o sistema de gestão vive aqui: e a segurança da própria ferramenta?</p>
+<section id="primeiro-acesso">
+<h2>Primeiro acesso</h2>
+<p>O primeiro acesso tem três tempos, e não se saltam. Entra-se com a senha inicial; a plataforma obriga a mudá-la, com regras de complexidade; e obriga a inscrever um segundo fator — uma aplicação autenticadora, ou uma chave física. Sem os dois passos, não se chega a página nenhuma.</p>
+<p>Faça isto primeiro, antes de criar o que quer que seja: a senha inicial está escrita na documentação pública do produto. <a class="reference internal" href="../../installation/first-access.xhtml"><span class="doc">O primeiro acesso</span></a> mostra estes três tempos, ecrã a ecrã.</p>
+<p><strong>O primeiro acesso, em três tempos</strong></p>
+<dl class="simple myst">
+<dt>1 — A senha inicial</dt><dd><p>admin e a senha de instalação — a plataforma responde que tem de mudar</p>
+</dd>
+<dt>2 — Uma senha nova</dt><dd><p>com política de complexidade, e sem repetir as três últimas</p>
+</dd>
+<dt>3 — O segundo fator</dt><dd><p>uma aplicação autenticadora, ou uma chave física ou biometria</p>
+</dd>
+</dl>
+<figure class="align-default" id="id1">
+<img alt="O primeiro acesso, em três tempos" src="../../_images/0117.jpg" />
+<figcaption>
+<p><span class="caption-text">O primeiro acesso, em três tempos.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="a-seguranca-da-plataforma">
+<h2>A segurança da plataforma</h2>
+<p>Antes de alguém escrever a primeira política, decidem-se três coisas, fora da aplicação. Se a plataforma fica atrás de HTTPS: o instalador serve HTTP, e sem cifra no transporte as chaves físicas não funcionam. Quem alcança a máquina na rede. E onde ficam as cópias de segurança, que levam segredos.</p>
+<p>O que a plataforma faz sozinha está descrito no guia do administrador: política de senhas, segundo fator obrigatório, bloqueio ao fim de cinco tentativas, trilha que não se apaga, e cifra das colunas sensíveis na base de dados.</p>
+<p><strong>A segurança da própria plataforma — três decisões</strong></p>
+<ul class="simple">
+<li><p>HTTPS: o instalador serve HTTP; sem cifra no transporte não há cookies seguros, e as chaves físicas não funcionam.</p></li>
+<li><p>Quem alcança a máquina: o porto da aplicação, e o porto das listas de indicadores, que não pede autenticação.</p></li>
+<li><p>Onde ficam as cópias de segurança — que levam segredos lá dentro.</p></li>
+</ul>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<p>Peça à informática o certificado, as regras de acesso na rede e o destino das cópias. E registe a decisão: é a primeira coisa que um auditor pergunta, e não ter resposta é um mau começo.</p>
+<p><strong>O que pedir a quem</strong></p>
+<ul class="simple">
+<li><p>À informática: o certificado HTTPS, as regras de firewall, e o destino das cópias de segurança.</p></li>
+<li><p>Ao responsável: registar a decisão sobre a segurança da plataforma — é a prova de que se pensou nela.</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

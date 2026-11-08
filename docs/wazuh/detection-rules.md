@@ -56,20 +56,42 @@ O ecrã em Wazuh › Ruleset Test.
 
 No SecVision, em Regras de Deteção, cola-se a linha. O botão da IA prepara o pedido, com as instruções de formato que o Wazuh exige, e anonimizado, como nos falsos positivos.
 
-```{figure} /_static/img/507-regras-de-detecao/02.jpg
+```{figure} /_static/img/507-regras-de-detecao/03.jpg
 :alt: Proteger › SOC › Regras de Deteção
 
 O ecrã em Proteger › SOC › Regras de Deteção.
 ```
 
-A resposta cola-se inteira. Esta foi escrita para esta página, no lugar da resposta da IA, no formato que o pedido exige: quatro blocos marcados. Separar componentes põe cada um na sua caixa.
+Copia-se o pedido.
 
-O pré-decoder reconhece o programa, o decoder tira a ação, a conta e a origem, a regra de agrupamento junta os eventos da aplicação, e a regra de deteção dispara no login falhado, com nível oito. Os números das regras ficam por preencher: atribui-os a plataforma.
+### No assistente de IA
 
-```{figure} /_static/img/507-regras-de-detecao/03.jpg
-:alt: Resposta escrita para este vídeo, no lugar da resposta da IA
+No assistente de inteligência artificial, cola-se o pedido e envia-se. A linha de registo vai com a máquina, a conta e o endereço trocados por etiquetas.
 
-Resposta escrita para este vídeo, no lugar da resposta da IA.
+```{figure} /_static/img/507-regras-de-detecao/04.jpg
+:alt: O pedido pseudonimizado, colado no assistente de IA
+
+O pedido, colado no assistente de IA. A janela é desenhada para o vídeo; o pedido e a resposta são reais, processados por um modelo de IA.
+```
+
+A resposta vem no formato que o pedido exige: quatro blocos marcados. Um decoder que reconhece o programa, outro que tira o evento, a conta e a origem, uma regra que agrupa os eventos da aplicação, e a regra de deteção, que dispara no login falhado. Copia-se tudo.
+
+```{figure} /_static/img/507-regras-de-detecao/05.jpg
+:alt: A resposta do assistente, em quatro blocos e ainda com as etiquetas
+
+A resposta real do modelo, em quatro blocos e ainda com as etiquetas.
+```
+
+### A resposta, de volta
+
+A resposta cola-se inteira, ainda com as etiquetas, e o ecrã avisa. **Separar componentes** faz primeiro a troca ao contrário, com o cofre do pedido, e só depois põe cada bloco na sua caixa, já com os valores reais.
+
+Sem esta troca, o decoder iria para o Wazuh com etiquetas lá dentro, e não reconheceria linha nenhuma. Por isso, se faltar o cofre — por exemplo, se a página foi recarregada depois de gerar o pedido —, ou se a resposta trouxer etiquetas que o pedido não tinha, o ecrã diz quais e recusa validar e aplicar. Os números das regras ficam por preencher: atribui-os a plataforma.
+
+```{figure} /_static/img/507-regras-de-detecao/06.jpg
+:alt: A resposta separada nos quatro blocos, com os valores reais
+
+A resposta separada nos quatro blocos, com as etiquetas repostas.
 ```
 
 ## Aplicar
@@ -78,7 +100,7 @@ Resposta escrita para este vídeo, no lugar da resposta da IA.
 
 Validados os quatro blocos, aplica-se ao gestor.
 
-```{figure} /_static/img/507-regras-de-detecao/04.jpg
+```{figure} /_static/img/507-regras-de-detecao/07.jpg
 :alt: Regras de Deteção › Aplicar ao Wazuh
 
 O ecrã em Regras de Deteção › Aplicar ao Wazuh.
@@ -90,7 +112,7 @@ O ecrã em Regras de Deteção › Aplicar ao Wazuh.
 
 E se o Wazuh recusar alguma coisa, a plataforma repõe os dois ficheiros e mostra a razão que o gestor deu, palavra por palavra.
 
-```{figure} /_static/img/507-regras-de-detecao/05.jpg
+```{figure} /_static/img/507-regras-de-detecao/08.jpg
 :alt: Regras de Deteção › Aplicar ao Wazuh
 
 O ecrã em Regras de Deteção › Aplicar ao Wazuh.
@@ -100,7 +122,7 @@ O ecrã em Regras de Deteção › Aplicar ao Wazuh.
 
 Aplicada, com o logtest a confirmar que a linha dispara a regra nova.
 
-```{figure} /_static/img/507-regras-de-detecao/06.jpg
+```{figure} /_static/img/507-regras-de-detecao/09.jpg
 :alt: Regras de Deteção › Aplicar ao Wazuh
 
 O ecrã em Regras de Deteção › Aplicar ao Wazuh.
@@ -112,7 +134,7 @@ O ecrã em Regras de Deteção › Aplicar ao Wazuh.
 
 De volta ao Wazuh, a mesma linha no Ruleset Test. Agora o decoder reconhece a aplicação, tira a conta e o endereço, e a regra nova dispara, com nível oito: vai ser gerado um alerta.
 
-```{figure} /_static/img/507-regras-de-detecao/07.jpg
+```{figure} /_static/img/507-regras-de-detecao/10.jpg
 :alt: Wazuh › Ruleset Test
 
 O ecrã em Wazuh › Ruleset Test.
@@ -124,7 +146,7 @@ Cinco minutos depois, nos eventos do Wazuh, os alertas da regra nova, de todas a
 
 E como qualquer alerta, conta para os indicadores, e pode ser classificado, ou calado com um falso positivo, se um dia se provar inofensivo.
 
-```{figure} /_static/img/507-regras-de-detecao/08.jpg
+```{figure} /_static/img/507-regras-de-detecao/11.jpg
 :alt: Wazuh › Threat Hunting › Events
 
 O ecrã em Wazuh › Threat Hunting › Events.

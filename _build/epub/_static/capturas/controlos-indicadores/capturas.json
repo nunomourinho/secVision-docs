@@ -1,0 +1,33 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "GRC — CONFORMIDADE"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Os meus controlos"
+   }
+  ]
+ },
+ {
+  "imagem": "indicadores-1.jpg",
+  "marca": "indicadores",
+  "itens": []
+ },
+ {
+  "imagem": "indicadores-2.jpg",
+  "marca": "indicadores",
+  "itens": []
+ }
+]

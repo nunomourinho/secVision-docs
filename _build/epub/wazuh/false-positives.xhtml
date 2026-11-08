@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Falsos positivos no Wazuh</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="falsos-positivos-no-wazuh">
+<h1>Falsos positivos no Wazuh</h1>
+<p>O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado e a resposta real com as etiquetas repostas, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/G8tv1S_xqC8">https://youtu.be/G8tv1S_xqC8</a></p>
+<p>Um centro de operações que recebe mil alertas por dia, e em que novecentos são sempre os mesmos e inofensivos, deixa de olhar para os alertas. Nesta página vemos como se cala esse ruído no Wazuh, sem esconder o que importa.</p>
+<section id="o-conceito">
+<h2>O conceito</h2>
+<p>Um falso positivo é um alerta certo sobre uma coisa inofensiva. A regra fez o que devia: viu uma tentativa de entrar com um utilizador que não existe. O contexto é que a desmente: é o scanner interno, a testar contas, todos os dias.</p>
+<p>A regra original não se apaga, porque apanha ataques verdadeiros. Cria-se uma regra-filha, que herda da mãe e que só se aplica àquele caso, com o nível baixo. O evento continua nos arquivos, para a auditoria, mas deixa de ser alerta. E quanto mais estreita, melhor: um endereço, uma conta, uma máquina, nunca a regra toda.</p>
+<p><strong>O que é um falso positivo</strong></p>
+<ul class="simple">
+<li><p>Um alerta certo sobre uma coisa inofensiva: a regra fez o que devia, o contexto é que a desmente.</p></li>
+<li><p>Não se apaga a regra original: cria-se uma regra-filha, só para aquele caso.</p></li>
+<li><p>A regra-filha herda da mãe (if_sid) e baixa o nível: o evento fica nos arquivos, mas deixa de ser alerta.</p></li>
+<li><p>Quanto mais estreita, melhor: um endereço, um utilizador, uma máquina — nunca a regra toda.</p></li>
+</ul>
+</section>
+<section id="antes-de-abrir-o-ecra">
+<h2>Antes de abrir o ecrã</h2>
+<p>Antes de abrir o ecrã, três coisas. O alerta, e a razão por que se acha que é falso, de quem os analisa. A confirmação de que aquela origem é legítima, do responsável pelo sistema. E a aprovação do responsável de cibersegurança: uma regra de falso positivo é uma decisão de não ver, e tem dono.</p>
+<p>A aplicação no gestor só a faz um administrador do SecVision, porque reinicia o Wazuh.</p>
+<p><strong>O que pedir a quem</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Informação</p></th>
+<th class="head"><p>Quem a tem</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>O alerta, em JSON, e porque se acha que é falso</p></td>
+<td><p>quem analisa os alertas</p></td>
+</tr>
+<tr class="row-odd"><td><p>A confirmação de que a origem é legítima (o scanner, o serviço)</p></td>
+<td><p>o responsável pelo sistema</p></td>
+</tr>
+<tr class="row-even"><td><p>A aprovação para mexer nas regras do gestor</p></td>
+<td><p>o responsável de cibersegurança</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aplicar no gestor</p></td>
+<td><p>um administrador do SecVision</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="no-wazuh">
+<h2>No Wazuh</h2>
+<p><strong>Menu:</strong> Wazuh › Threat Hunting › Events</p>
+<p>Tudo começa no Wazuh, no painel onde quem analisa os alertas trabalha. Em Threat Hunting, nos eventos, procura-se a regra 5710 numa máquina do ambiente de testes, a base de dados 003: alguém tenta entrar com uma conta que não existe, de dois em dois minutos, sempre do mesmo endereço.</p>
+<p>Abre-se o alerta, e no separador JSON está o documento inteiro, tal como o Wazuh o guarda. O botão de copiar põe-no na área de transferência. É isto que se leva para o SecVision.</p>
+<figure class="align-default" id="id3">
+<img alt="Wazuh › Threat Hunting › Events" src="../_images/wazuh-11.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Threat Hunting › Events (1 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>Escreva «rule.id : 5710 and agent.name : «base-de-dados-003»» no campo <strong>Start typing to search and filter the wazuh-discover-search-</strong>.</p></li>
+</ol>
+<figure class="align-default" id="id4">
+<img alt="Wazuh › Threat Hunting › Events" src="../_images/wazuh-21.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Threat Hunting › Events (2 de 3).</span></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id5">
+<img alt="Wazuh › Threat Hunting › Events" src="../_images/wazuh-3.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Threat Hunting › Events (3 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>De 2 em 2 minutos, sempre o mesmo</strong></p></li>
+</ol>
+</section>
+<section id="o-alerta">
+<h2>O alerta</h2>
+<p><strong>Menu:</strong> Proteger › SOC › Falsos Positivos</p>
+<p>No SecVision, em Falsos Positivos, cola-se o alerta na primeira caixa. É o mesmo documento, sem mexer em nada.</p>
+<p>O ecrã lê o alerta e mostra o essencial: a regra que disparou, a 5710, o nível, a máquina e a origem. E quantas vezes essa regra já disparou, contadas nos arquivos do Wazuh. Um número alto e sempre da mesma origem é o primeiro sinal de um falso positivo.</p>
+<figure class="align-default" id="id6">
+<img alt="Proteger › SOC › Falsos Positivos" src="../_images/027.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Proteger › SOC › Falsos Positivos.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="a-ia">
+<h2>A IA</h2>
+<p><strong>Menu:</strong> Falsos Positivos › Gerar prompt para IA</p>
+<p>Escrever a regra pode pedir-se a uma IA. O botão prepara o pedido com o alerta, e copia-se para o levar ao serviço de IA da organização.</p>
+<p>E o pedido sai anonimizado: os endereços, os nomes das máquinas e das contas são trocados por etiquetas antes de saírem daqui, e repostos quando a resposta volta. Este botão mostra o que foi trocado.</p>
+<figure class="align-default" id="id7">
+<img alt="Falsos Positivos › Gerar prompt para IA" src="../_images/038.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Falsos Positivos › Gerar prompt para IA.</span></p>
+</figcaption>
+</figure>
+<section id="no-assistente-de-ia">
+<h3>No assistente de IA</h3>
+<p>Agora, fora da plataforma: o assistente de inteligência artificial. Cola-se o pedido e envia-se. O que vai: o endereço de origem é <code class="docutils literal notranslate"><span class="pre">[IP_1]</span></code>, a máquina é <code class="docutils literal notranslate"><span class="pre">[SISTEMA_1]</span></code>, a conta é <code class="docutils literal notranslate"><span class="pre">[UTILIZADOR_1]</span></code>. Mais nada sai daqui.</p>
+<figure class="align-default" id="id8">
+<img alt="O pedido pseudonimizado, colado no assistente de IA" src="../_images/048.jpg" />
+<figcaption>
+<p><span class="caption-text">O pedido, colado no assistente de IA. A janela é desenhada para o vídeo; o pedido é o que a plataforma copiou, e foi processado de verdade por um modelo de IA.</span></p>
+</figcaption>
+</figure>
+<p>A resposta chega: uma regra XML, filha da regra que disparou, só para aquele sistema, aquela conta e aquela origem. E com as mesmas etiquetas: o modelo nunca soube o endereço verdadeiro. Copia-se a resposta.</p>
+<figure class="align-default" id="id9">
+<img alt="A resposta do assistente, ainda com as etiquetas" src="../_images/059.jpg" />
+<figcaption>
+<p><span class="caption-text">A resposta real do modelo, ainda com as etiquetas.</span></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="a-regra">
+<h2>A regra</h2>
+<p>De volta à plataforma, a resposta cola-se na segunda caixa, ainda com as etiquetas. Validar a sintaxe faz primeiro a troca ao contrário: com o cofre do pedido, cada etiqueta volta a ser o valor real, e o ecrã diz quantas foram repostas. Só depois se verifica o XML.</p>
+<p>É esta troca que torna a regra útil: uma regra com a etiqueta <code class="docutils literal notranslate"><span class="pre">[IP_1]</span></code> no lugar do endereço não corresponderia a tráfego nenhum. O número e o nível que a regra traz não importam: quem os atribui é a plataforma, ao aplicar.</p>
+<figure class="align-default" id="id10">
+<img alt="A resposta colada, com as etiquetas repostas e a sintaxe válida" src="../_images/069.jpg" />
+<figcaption>
+<p><span class="caption-text">A resposta colada: «10 etiqueta(s) reposta(s) com os valores reais», e a sintaxe válida.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="aplicar">
+<h2>Aplicar</h2>
+<p><strong>Menu:</strong> Falsos Positivos › Aplicar ao Wazuh</p>
+<p>Testar permissões confirma, antes de mexer em nada, que as credenciais podem ler e escrever regras e reiniciar o gestor.</p>
+<figure class="align-default" id="id11">
+<img alt="Falsos Positivos › Aplicar ao Wazuh" src="../_images/0710.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Falsos Positivos › Aplicar ao Wazuh.</span></p>
+</figcaption>
+</figure>
+<p><strong>Menu:</strong> Falsos Positivos › Aplicar ao Wazuh</p>
+<p>Aplicar faz tudo por ordem, e cada passo aparece no ecrã: uma cópia de segurança do ficheiro de regras, a escrita da regra, a validação da configuração pelo próprio gestor, o reinício, e a confirmação de que os serviços voltaram.</p>
+<p>Se o gestor recusar a regra, ou não voltar depois do reinício, a plataforma repõe o ficheiro como estava e diz porquê. Nunca deixa o gestor com uma regra a meio.</p>
+<figure class="align-default" id="id12">
+<img alt="Falsos Positivos › Aplicar ao Wazuh" src="../_images/088.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Falsos Positivos › Aplicar ao Wazuh.</span></p>
+</figcaption>
+</figure>
+<p><strong>Menu:</strong> Falsos Positivos › Aplicar ao Wazuh</p>
+<p>No fim, o passo que mais importa: o logtest. O gestor recebe a linha do alerta original e responde que regra dispara agora. Responde a nossa, com o nível baixo: o falso positivo deixou de ser alerta.</p>
+<figure class="align-default" id="id13">
+<img alt="Falsos Positivos › Aplicar ao Wazuh" src="../_images/097.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Falsos Positivos › Aplicar ao Wazuh.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h2>No Wazuh</h2>
+<p><strong>Menu:</strong> Wazuh › Server management › Rules</p>
+<p>E do lado do Wazuh? Nas regras do gestor, filtrando as regras personalizadas, aparece o ficheiro que o SecVision gere, com a regra nova, o número que lhe foi atribuído e o nível um.</p>
+<p>O SecVision escreve sempre no seu próprio ficheiro, e só nesse. As regras de origem do Wazuh e as regras locais da equipa ficam como estavam.</p>
+<figure class="align-default" id="id14">
+<img alt="Wazuh › Server management › Rules" src="../_images/107.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Server management › Rules.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="o-historico">
+<h2>O histórico</h2>
+<p><strong>Menu:</strong> Falsos Positivos › Histórico</p>
+<p>No histórico fica cada regra: quem a criou, quando foi aplicada, o número que recebeu e o estado. Daqui edita-se e volta a aplicar-se, ou remove-se do gestor.</p>
+<p>E a contagem de disparos de cada regra aplicada mostra se ela está a apanhar o que devia. Uma regra de falso positivo que nunca dispara é uma regra a mais; uma que dispara demasiado pode estar a esconder um ataque.</p>
+<figure class="align-default" id="id15">
+<img alt="Falsos Positivos › Histórico" src="../_images/115.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Falsos Positivos › Histórico.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="id2">
+<h2>No Wazuh</h2>
+<p><strong>Menu:</strong> Wazuh › Threat Hunting › Events</p>
+<p>Cinco minutos depois, a mesma pesquisa no Wazuh. A máquina continua a tentar entrar, de dois em dois minutos, mas o último alerta é de antes da regra: desde então, nenhum.</p>
+<p>Os eventos não se perderam: estão nos arquivos, com a regra nova. Só deixaram de ser alertas, que era o que se queria.</p>
+<figure class="align-default" id="id16">
+<img alt="Wazuh › Threat Hunting › Events" src="../_images/124.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Threat Hunting › Events.</span></p>
+</figcaption>
+</figure>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<p>A plataforma trata do trabalho delicado: o pedido anonimizado, a validação, a aplicação com cópia de segurança e reversão, e a confirmação pelo logtest.</p>
+<p>O que não faz é decidir que um alerta é falso. Essa decisão é de quem analisa os alertas, aprovada por quem responde pela cibersegurança, e fica escrita no histórico.</p>
+<p><strong>O que a plataforma faz — e o que não faz</strong></p>
+<ul class="simple">
+<li><p>Lê o alerta, prepara o pedido à IA anonimizado, valida, aplica com cópia de segurança e reverte se falhar.</p></li>
+<li><p>Confirma pelo logtest que a regra nova é a que dispara.</p></li>
+<li><p>Não decide se um alerta é falso: isso é de quem analisa, com a aprovação de quem responde.</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

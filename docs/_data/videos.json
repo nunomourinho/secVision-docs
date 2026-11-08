@@ -450,19 +450,22 @@
   },
   "506-falsos-positivos": {
     "titulo": "SecVision — Falsos positivos no Wazuh",
-    "youtube": "G8tv1S_xqC8",
+    "substitui": "G8tv1S_xqC8",
+    "youtube": "g-vf2CfW_r0",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
   "507-regras-de-detecao": {
     "titulo": "SecVision — Regras de deteção no Wazuh",
-    "youtube": "dLMvN0_X7To",
+    "substitui": "dLMvN0_X7To",
+    "youtube": "MZDwZU1j_yM",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
   "508-classificar-e-studio": {
     "titulo": "SecVision — Classificar alertas e ensaiar regras",
-    "youtube": "3ty5WyeiZy0",
+    "substitui": "3ty5WyeiZy0",
+    "youtube": "QHlsQj01Q6E",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -474,7 +477,8 @@
   },
   "352-anonimizacao-de-ia": {
     "titulo": "SecVision — A anonimização dos pedidos de IA",
-    "youtube": "F5lOyAt-qos",
+    "substitui": "F5lOyAt-qos",
+    "youtube": "tPCEKW3ehvM",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -511,6 +515,12 @@
   "358-wazuh-cheat-sheet": {
     "titulo": "SecVision — A Wazuh Cheat Sheet",
     "youtube": "YVSv-Ayfvns",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "359-carrinho-e-documentos-com-ia": {
+    "titulo": "SecVision — O carrinho de controlos e os documentos com IA",
+    "youtube": "u6jCRYoHU_w",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   }

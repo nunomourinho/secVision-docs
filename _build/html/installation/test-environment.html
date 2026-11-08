@@ -1,0 +1,590 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-PT" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O ambiente de testes &mdash; SecVision — Manual do utilizador</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css?v=0ce5403f" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8491d5b5"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/translations.js?v=72787d97"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Módulo A — Fundamentos" href="../fundamentals/index.html" />
+    <link rel="prev" title="O primeiro acesso" href="first-access.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0F172A" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar docs" aria-label="Pesquisar docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Instalação</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Instalação</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="before-installing.html">Antes de instalar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="before-installing.html#o-que-vamos-instalar">O que vamos instalar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="before-installing.html#o-minimo-de-terminal">O mínimo de terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="before-installing.html#os-dois-modos">Os dois modos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="before-installing.html#preparar-a-maquina">Preparar a máquina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="before-installing.html#as-perguntas-do-instalador">As perguntas do instalador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="before-installing.html#antes-do-primeiro-acesso">Antes do primeiro acesso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="get-ubuntu-server.html">Obter o Ubuntu Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#porque">Porquê</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#descarregar">Descarregar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#confirmar-a-imagem">Confirmar a imagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get-ubuntu-server.html#preparar-o-arranque">Preparar o arranque</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install-ubuntu-server.html">Instalar o Ubuntu Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#primeiros-ecras">Primeiros ecrãs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#rede">Rede</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#discos">Discos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#utilizador-e-acesso">Utilizador e acesso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#a-instalacao">A instalação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#primeiro-arranque">Primeiro arranque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install-ubuntu-server.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="native-install.html">Instalar em modo nativo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#confirmar-a-maquina">Confirmar a máquina</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#obter-o-codigo">Obter o código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#o-instalador">O instalador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#pre-requisitos">Pré-requisitos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#o-assistente">O assistente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#construcao-e-arranque">Construção e arranque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#resumo">Resumo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="native-install.html#confirmar-que-funciona">Confirmar que funciona</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="docker-install.html">Instalar em modo Docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#o-que-muda">O que muda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#obter-o-codigo">Obter o código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#o-instalador">O instalador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#o-assistente-de-configuracao">O assistente de configuração</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#construir-e-arrancar">Construir e arrancar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#confirmar">Confirmar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="docker-install.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="first-access.html">O primeiro acesso</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#porque">Porquê</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#entrar-com-a-conta-inicial">Entrar com a conta inicial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#a-palavra-passe-nova">A palavra-passe nova</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#o-segundo-fator">O segundo fator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#dentro">Dentro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-access.html#as-entradas-seguintes">As entradas seguintes</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">O ambiente de testes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#o-que-e">O que é</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#criar-o-ambiente">Criar o ambiente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#os-dados-de-teste">Os dados de teste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#como-entrar">Como entrar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#entrar-nos-testes">Entrar nos testes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#explorar">Explorar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resumo">Resumo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Formação</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../fundamentals/index.html">Módulo A — Fundamentos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html">A cibersegurança é um tema de gestão</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html#o-que-mudou">O que mudou</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html#a-direcao-na-lei">A direção na lei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/cybersecurity-and-management.html#o-percurso">O percurso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/information-and-assets.html">Informação, ativos e as três propriedades</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#ativos">Ativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#c-i-a">C, I, A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#classificar">Classificar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/information-and-assets.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/risk.html">O que é o risco</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#uma-sensacao-ou-uma-quantidade">Uma sensação ou uma quantidade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#as-pecas">As peças</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#medir">Medir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#inerente-e-residual">Inerente e residual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/risk.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/controls-and-isms.html">Controlos, medidas e o sistema de gestão</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/controls-and-isms.html#controlos">Controlos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/controls-and-isms.html#o-sgsi">O SGSI</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html">Normas e quadros de referência</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html#os-referenciais">Os referenciais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html#conformidade-certificacao-acreditacao">Conformidade, certificação, acreditação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/standards-and-frameworks.html#na-lei-portuguesa">Na lei portuguesa</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../fundamentals/iso-27001-inside.html">A ISO/IEC 27001 por dentro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#a-estrutura">A estrutura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#o-anexo-a">O Anexo A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#a-soa">A SoA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../fundamentals/iso-27001-inside.html#certificar">Certificar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../law/index.html">Módulo B — A lei e o CNCS, passo a passo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../law/from-nis2-to-dl-125.html">Da NIS 2 ao DL 125/2025 e ao Regulamento 756/2026</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/from-nis2-to-dl-125.html#os-tres-elos">Os três elos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/from-nis2-to-dl-125.html#o-que-obriga">O que obriga</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/who-is-covered.html">Quem está abrangido</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/who-is-covered.html#o-ambito">O âmbito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/who-is-covered.html#as-qualificacoes">As qualificações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/who-is-covered.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/self-identification.html">Autoidentificação e qualificação</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#as-categorias">As categorias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#autoidentificacao">Autoidentificação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#o-formulario">O formulário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#a-qualificacao">A qualificação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/self-identification.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/registration.html">O registo, e mantê-lo atualizado</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/registration.html#o-dever-de-registo">O dever de registo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/registration.html#atualizar">Atualizar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/registration.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/security-officer-and-contact-point.html">Responsável de cibersegurança e ponto de contacto</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#o-responsavel">O responsável</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#o-ponto-de-contacto">O ponto de contacto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#publicas-relevantes">Públicas relevantes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/security-officer-and-contact-point.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/management-duties.html">Os deveres dos órgãos de gestão</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/management-duties.html#o-artigo-25-o">O artigo 25.º</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/management-duties.html#a-responsabilidade">A responsabilidade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/management-duties.html#publicas-relevantes">Públicas relevantes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/risk-management-and-matrix.html">Gestão de riscos e a Matriz de Risco</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/risk-management-and-matrix.html#a-lei">A lei</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/risk-management-and-matrix.html#a-matriz-de-risco">A Matriz de Risco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/risk-management-and-matrix.html#publicas-relevantes">Públicas relevantes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/public-entities-annex-iv.html">Entidades públicas relevantes — o Anexo IV</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#a-obrigacao">A obrigação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#a-estrutura">A estrutura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#ler-uma-medida">Ler uma medida</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/public-entities-annex-iv.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annex-iv-organisational.html">Anexo IV — as medidas organizacionais</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-organisational.html#grupos-a-e-b">Grupos A e B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-organisational.html#so-grupo-a">Só Grupo A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-organisational.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annex-iv-technical-and-human.html">Anexo IV — as medidas tecnológicas e humanas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-technical-and-human.html#tecnologicas">Tecnológicas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iv-technical-and-human.html#humanas">Humanas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/essential-and-important-annex-iii.html">Entidades essenciais e importantes — o Anexo III</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/essential-and-important-annex-iii.html#o-nivel">O nível</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/essential-and-important-annex-iii.html#os-niveis">Os níveis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/essential-and-important-annex-iii.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annex-iii-by-function.html">Anexo III — medidas e critérios, função a função</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iii-by-function.html#as-seis-funcoes">As seis funções</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iii-by-function.html#o-criterio">O critério</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annex-iii-by-function.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/qnrcs.html">O QNRCS — o Anexo I</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/qnrcs.html#o-que-e">O que é</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/qnrcs.html#a-estrutura">A estrutura</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/qnrcs.html#para-que-serve">Para que serve</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/incident-notification.html">Incidentes — notificar a tempo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/incident-notification.html#significativo">Significativo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/incident-notification.html#os-prazos">Os prazos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/incident-notification.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html">Relatório anual, fornecedores e risco residual</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#o-relatorio-anual">O relatório anual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#fornecedores">Fornecedores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#risco-residual">Risco residual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/annual-report-suppliers-residual-risk.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/certification.html">A certificação</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#voluntaria-ou-exigida">Voluntária ou exigida</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#os-esquemas">Os esquemas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#depois-do-certificado">Depois do certificado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/certification.html#na-sua-organizacao">Na sua organização</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../law/supervision-and-penalties.html">Supervisão e sanções</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../law/supervision-and-penalties.html#as-infracoes">As infrações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/supervision-and-penalties.html#as-coimas">As coimas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../law/supervision-and-penalties.html#o-processo">O processo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../platform/index.html">Módulo C — A plataforma, passo a passo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../platform/index.html#como-ler-as-capturas-de-ecra">Como ler as capturas de ecrã</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../platform/getting-started/index.html">Primeiros passos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/administration/index.html">Administração do sistema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/organisation/index.html">A organização e as obrigações</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/inventory/index.html">Inventário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/compliance/index.html">Normas e conformidade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/risk/index.html">Risco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/protect-and-detect/index.html">Proteger e detetar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/monitoring/index.html">Prova e acompanhamento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../platform/audit/index.html">Auditoria e melhoria</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../journey/index.html">Módulo D — O percurso até à conformidade e à certificação</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../journey/first-year.html">O primeiro ano em sete passos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/first-year.html#os-sete-passos">Os sete passos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../journey/first-year.html#na-plataforma">Na plataforma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../journey/first-year.html#o-ciclo">O ciclo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../journey/self-assessment-to-plan.html">Da autoavaliação ao plano</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/self-assessment-to-plan.html#o-percurso">O percurso</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../journey/what-counts-as-evidence.html">O que conta como prova</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/what-counts-as-evidence.html#a-prova">A prova</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../journey/what-the-platform-saves.html">O que a plataforma poupa — e o que não</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../journey/what-the-platform-saves.html#o-balanco">O balanço</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../journey/what-the-platform-saves.html#para-terminar">Para terminar</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../wazuh/index.html">Módulo E — Wazuh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html">O Wazuh e o SecVision</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#a-ligacao">A ligação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#os-agentes">Os agentes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-servidor">O servidor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-catalogo">O catálogo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#o-ambiente-de-testes">O ambiente de testes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/wazuh-and-secvision.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/installing-agents.html">Instalar os agentes do Wazuh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#o-gerador">O gerador</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#a-fila">A fila</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/installing-agents.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/explorer.html">O Explorer — uma máquina por dentro</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/explorer.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/systems-and-agents.html">Ligar os sistemas aos agentes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#desassociar">Desassociar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#associar">Associar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/systems-and-agents.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/software-and-cve-search.html">Quem tem este software, ou esta CVE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#onde-fica-no-menu">Onde fica no menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#os-resultados">Os resultados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/software-and-cve-search.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/false-positives.html">Falsos positivos no Wazuh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#antes-de-abrir-o-ecra">Antes de abrir o ecrã</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#no-wazuh">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#o-alerta">O alerta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#a-ia">A IA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#a-regra">A regra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#aplicar">Aplicar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#id1">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#o-historico">O histórico</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#id2">No Wazuh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/false-positives.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/detection-rules.html">Regras de deteção no Wazuh</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#o-conceito">O conceito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#no-wazuh-antes">No Wazuh, antes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#no-secvision">No SecVision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#aplicar">Aplicar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#no-wazuh-depois">No Wazuh, depois</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/detection-rules.html#resumo">Resumo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html">Classificar alertas e ensaiar regras</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#classificar">Classificar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#o-rule-studio">O Rule Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#ensaiar">Ensaiar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../wazuh/ai-classification-and-studio.html#resumo">Resumo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projeto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../project/limitations.html">O que a plataforma não faz</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel"  style="background: #0F172A" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SecVision</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Instalação</a></li>
+      <li class="breadcrumb-item active">O ambiente de testes</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="o-ambiente-de-testes">
+<h1>O ambiente de testes<a class="headerlink" href="#o-ambiente-de-testes" title="Link to this heading"></a></h1>
+<p>Montar, ao lado da produção, uma segunda instalação cheia de dados inventados, para aprender e experimentar sem tocar em nada real — e entrar nela.</p>
+<div class="sv-video"><iframe src="https://www.youtube-nocookie.com/embed/uRrZ0TCpYQ8" title="SecVision — O ambiente de testes" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p>A plataforma está instalada e protegida, mas ainda vazia. Antes de lhe confiar dados reais, vale a pena ter um sítio onde se possa experimentar à vontade. É isso que montamos agora: o ambiente de testes.</p>
+<section id="o-que-e">
+<h2>O que é<a class="headerlink" href="#o-que-e" title="Link to this heading"></a></h2>
+<p>O ambiente de testes é uma segunda instalação, na mesma máquina, ao lado da produção. A produção continua na porta 8080; os testes ficam na 8090.</p>
+<p>E são mesmo separados: outra base de dados, outro serviço, outras pastas. Os dados são inventados — uma organização fictícia, com sistemas, riscos e cinquenta mil pessoas. Tudo o que tocaria num sistema externo, como o servidor Wazuh, é recusado aqui, de propósito.</p>
+<p><strong>Produção e testes, lado a lado</strong></p>
+<ul class="simple">
+<li><p>Produção: porta 8080, a base de dados verdadeira, os dados da organização.</p></li>
+<li><p>Testes: porta 8090, outra base de dados, outro serviço, outras pastas — nada é partilhado.</p></li>
+<li><p>Os dados de teste são inventados: uma organização fictícia, com sistemas, riscos e 50 000 pessoas.</p></li>
+<li><p>O que mexe em sistemas externos, como o Wazuh, fica recusado no ambiente de testes.</p></li>
+</ul>
+</section>
+<section id="criar-o-ambiente">
+<h2>Criar o ambiente<a class="headerlink" href="#criar-o-ambiente" title="Link to this heading"></a></h2>
+<p>Na pasta da instalação, basta um comando: sudo bash bin/ambiente-teste.sh criar. Pede o sudo porque cria uma base de dados e configura o servidor web.</p>
+<p>Escreva:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>bash<span class="w"> </span>bin/ambiente-teste.sh<span class="w"> </span>criar
+</pre></div>
+</div>
+<figure class="align-default" id="id1">
+<img alt="Um só comando" src="../_images/0111.jpg" />
+<figcaption>
+<p><span class="caption-text">Um só comando.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Primeiro, cria uma base de dados nova, com um utilizador que só tem acesso a ela, e escreve o ficheiro de configuração do ambiente de testes, com segredos próprios — diferentes dos da produção. Depois aplica as migrações, que são as instruções que criam as tabelas.</p>
+<p>São mais de cem migrações, aplicadas pela mesma ordem que numa atualização. Por isso este ambiente também serve para ensaiar uma atualização antes de a fazer a sério.</p>
+<figure class="align-default" id="id2">
+<img alt="Uma base de dados só para os testes" src="../_images/025.jpg" />
+<figcaption>
+<p><span class="caption-text">Uma base de dados só para os testes.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="os-dados-de-teste">
+<h2>Os dados de teste<a class="headerlink" href="#os-dados-de-teste" title="Link to this heading"></a></h2>
+<p>A seguir semeia a conta admin, tal como na produção, prepara pastas de ficheiros próprias — cópias separadas das da produção — e começa a gerar os dados.</p>
+<figure class="align-default" id="id3">
+<img alt="A conta inicial, as pastas e os dados" src="../_images/035.jpg" />
+<figcaption>
+<p><span class="caption-text">A conta inicial, as pastas e os dados.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Para se poder experimentar a ligação ao Active Directory, o script levanta um Samba de ensaio num contentor e semeia-o com cinquenta mil pessoas. É a etapa mais demorada.</p>
+<p>Aqui pode ir buscar um café. Depois, o gerador preenche a organização fictícia: sistemas, ativos, riscos, documentos, auditorias.</p>
+<figure class="align-default" id="id4">
+<img alt="Um Active Directory de ensaio com 50 000 pessoas" src="../_images/045.jpg" />
+<figcaption>
+<p><span class="caption-text">Um Active Directory de ensaio com 50 000 pessoas.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="como-entrar">
+<h2>Como entrar<a class="headerlink" href="#como-entrar" title="Link to this heading"></a></h2>
+<p>No fim, o script diz como se entra. A conta admin, com a palavra-passe inicial, passa pelos mesmos dois passos da página anterior. Os utilizadores gerados já estão prontos: todos com a palavra-passe Teste123!, e o mesmo segredo de segundo fator.</p>
+<p>Acrescenta-se esse segredo uma vez à aplicação autenticadora, e serve para todos. É prático, e só é aceitável porque estes utilizadores são inventados e o ambiente é de testes.</p>
+<figure class="align-default" id="id5">
+<img alt="Como entrar" src="../_images/055.jpg" />
+<figcaption>
+<p><span class="caption-text">Como entrar.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Por fim, arranca o serviço do ambiente de testes e configura o servidor web na porta 8090. Quando aparece «ambiente de teste pronto», está feito.</p>
+<figure class="align-default" id="id6">
+<img alt="Arrancar o serviço e o servidor web" src="../_images/065.jpg" />
+<figcaption>
+<p><span class="caption-text">Arrancar o serviço e o servidor web.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Para confirmar, o mesmo script tem a opção estado. Mostra a base de dados, quantos registos tem cada tabela, e se o serviço e o servidor web estão a responder.</p>
+<p>Este comando é útil mais tarde: se alguma coisa no ambiente de testes não abrir, é por aqui que se começa.</p>
+<figure class="align-default" id="id7">
+<img alt="Confirmar o que está de pé" src="../_images/075.jpg" />
+<figcaption>
+<p><span class="caption-text">Confirmar o que está de pé.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="entrar-nos-testes">
+<h2>Entrar nos testes<a class="headerlink" href="#entrar-nos-testes" title="Link to this heading"></a></h2>
+<p>No browser, abrimos o mesmo endereço, mas com a porta 8090. Repare na faixa amarela no topo, AMBIENTE DE TESTES, e na moldura amarela à volta da página. Aparecem em todas as páginas, incluindo esta de entrada, para nunca se confundir com a produção.</p>
+<p>Entramos com um dos utilizadores gerados, um operador, e a palavra-passe partilhada.</p>
+<figure class="align-default" id="id8">
+<img alt="A porta 8090 e a faixa amarela" src="../_images/084.jpg" />
+<figcaption>
+<p><span class="caption-text">A porta 8090 e a faixa amarela.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Pede o código de segundo fator, como sempre. Escrevemos o código que a aplicação mostra para o segredo partilhado.</p>
+<figure class="align-default" id="id9">
+<img alt="O código partilhado" src="../_images/094.jpg" />
+<figcaption>
+<p><span class="caption-text">O código partilhado.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="explorar">
+<h2>Explorar<a class="headerlink" href="#explorar" title="Link to this heading"></a></h2>
+<p>E aqui está a diferença: o painel já está cheio. Sistemas por nível, cobertura, sistemas sem monitorização. É assim que fica a plataforma quando está a ser usada a sério.</p>
+<figure class="align-default" id="id10">
+<img alt="Um painel cheio de dados" src="../_images/103.jpg" />
+<figcaption>
+<p><span class="caption-text">Um painel cheio de dados.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>O catálogo de segurança, com os sistemas da organização fictícia.</p>
+<p>Pode editar, apagar, importar ficheiros — nada disto toca na produção.</p>
+<figure class="align-default" id="id11">
+<img alt="O catálogo de segurança" src="../_images/113.jpg" />
+<figcaption>
+<p><span class="caption-text">O catálogo de segurança.</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>E a gestão de risco, já com riscos avaliados. É um bom sítio para aprender cada módulo antes de o usar com os dados reais.</p>
+<figure class="align-default" id="id12">
+<img alt="A gestão de risco" src="../_images/123.jpg" />
+<figcaption>
+<p><span class="caption-text">A gestão de risco.</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="resumo">
+<h2>Resumo<a class="headerlink" href="#resumo" title="Link to this heading"></a></h2>
+<p>Três comandos para guardar. Estado, para ver o que está de pé. Recriar, para deitar tudo abaixo e começar de novo com dados frescos — útil depois de muitas experiências. E apagar, para desmontar o ambiente de testes por completo.</p>
+<p>Em nenhum dos três a produção é tocada.</p>
+<p><strong>Comandos para guardar</strong></p>
+<ul class="simple">
+<li><p>sudo bash bin/ambiente-teste.sh estado — o que está de pé</p></li>
+<li><p>sudo bash bin/ambiente-teste.sh recriar — deita abaixo e cria de novo, com dados frescos</p></li>
+<li><p>sudo bash bin/ambiente-teste.sh apagar — desmonta tudo; a produção não é tocada</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="first-access.html" class="btn btn-neutral float-left" title="O primeiro acesso" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../fundamentals/index.html" class="btn btn-neutral float-right" title="Módulo A — Fundamentos" accesskey="n" rel="next">Seguinte <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nuno Mourinho e colaboradores.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

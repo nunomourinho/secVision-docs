@@ -1,0 +1,64 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "INVENTÁRIO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Catálogo de Segurança"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Nível",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Monitorizado ou GAP",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Com ou sem ativo de informação",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "dashboard-1.jpg",
+  "marca": "dashboard",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Direito ao instalador do agente",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "dashboard-2.jpg",
+  "marca": "dashboard",
+  "itens": []
+ }
+]

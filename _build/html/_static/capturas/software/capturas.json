@@ -1,0 +1,33 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "PROTEGER"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "SEGURANÇA DO SOFTWARE"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Análise SAST"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": []
+ },
+ {
+  "imagem": "scap-1.jpg",
+  "marca": "scap",
+  "itens": []
+ }
+]

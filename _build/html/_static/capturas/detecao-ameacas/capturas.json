@@ -1,0 +1,154 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "PROTEGER"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "SOC"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Regras de Deteção"
+   }
+  ]
+ },
+ {
+  "imagem": "abrir-1.jpg",
+  "marca": "abrir",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Passo 1 — o pedido à IA, pseudonimizado",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Passo 2 — separar a resposta",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Passo 3 — aplicar, com salvaguarda",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "ioc-1.jpg",
+  "marca": "ioc",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Gestão",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "ioc-2.jpg",
+  "marca": "ioc",
+  "itens": []
+ },
+ {
+  "imagem": "relatorios-1.jpg",
+  "marca": "relatorios",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Novo Relatório",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "relatorios-2.jpg",
+  "marca": "relatorios",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Associar sistemas",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "relatorios-3.jpg",
+  "marca": "relatorios",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Por software / CVE",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "relatorios-4.jpg",
+  "marca": "relatorios",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "escrever",
+    "rotulo": "openssl",
+    "valor": "openssl"
+   },
+   {
+    "n": 2,
+    "tipo": "escrever",
+    "rotulo": "versão (vazio = todas)",
+    "valor": "3.0.13"
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Pesquisar nos agentes Wazuh",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "clicar",
+    "rotulo": "Pesquisar",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "relatorios-5.jpg",
+  "marca": "relatorios",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Excluir versões com backport (só em software)",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "N1",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "N2",
+    "valor": null
+   }
+  ]
+ }
+]

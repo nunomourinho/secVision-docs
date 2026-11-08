@@ -47,7 +47,14 @@ Há dois tipos:
   Ao lado de cada pasta fica `capturas.json`, com o significado de cada número. As páginas trazem-no
   como lista numerada por baixo de cada imagem.
 - **`docs/_static/img/<id-do-vídeo>/`: fotogramas dos vídeos**, para os ecrãs que não são da
-  plataforma (instalação no terminal e na consola, diapositivos de conceitos).
+  plataforma (instalação no terminal e na consola, diapositivos de conceitos) e para o que só o vídeo
+  mostra, como a janela do assistente de IA. Saem do vídeo montado com `scripts/fotogramas.py`: um
+  por cena filmada, mais os diapositivos que são diagrama. Depois de voltar a montar um vídeo, refaça
+  os dele e confira os números das figuras na página, que mudam quando o guião ganha cenas:
+
+  ```bash
+  python -X utf8 scripts/fotogramas.py --videos ~/Documents/SecVision-videos/pt-PT       --guioes ../secVision/videos/guioes 506-falsos-positivos
+  ```
 
 Para refazer as capturas (com o ambiente de testes de pé em `:8090` e **nenhuma suite de testes a
 correr**):
@@ -158,6 +165,9 @@ O processo é o mesmo do manual do ForensicVM, com credenciais em `~/.config/sec
 
 6. **O resto:** `.venv/bin/python scripts/youtube_upload.py`, depois
    `git add docs/_data/videos.json && git commit -m "docs: vídeos do YouTube" && git push`.
+7. **Um vídeo refeito:** `--substituir <id> …` carrega a versão nova; a antiga sai da playlist e fica
+   privada, com «[substituído]» no título (nunca se apaga). Depois volte a exportar a ajuda do
+   SecVision, que guarda os IDs do YouTube.
 
 Os vídeos vêm de `~/Documents/SecVision-videos/pt-PT` (ou `SECVISION_VIDEOS`, ou `--videos`).
 

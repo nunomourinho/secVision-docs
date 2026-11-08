@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Instalar os agentes do Wazuh</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="instalar-os-agentes-do-wazuh">
+<h1>Instalar os agentes do Wazuh</h1>
+<p>O que o agente faz numa máquina e porque se instala endurecido; o gerador de scripts do SecVision (gestor, portas, versão, políticas de confiança zero), a fila dos sistemas em GAP, e o assistente do próprio Wazuh, lado a lado; e onde a máquina aparece depois de instalada.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/_urdmPk0qy0">https://youtu.be/_urdmPk0qy0</a></p>
+<p>No página anterior vimos máquinas monitorizadas e máquinas em GAP. Neste vemos como se fecha um GAP: instalando o agente do Wazuh, com o script que o SecVision gera, e o que o próprio Wazuh oferece.</p>
+<section id="onde-fica-no-menu">
+<h2>Onde fica no menu</h2>
+<p><strong>Menu:</strong> Proteger › Soc › Wazuh Agent Builder</p>
+<figure class="align-default" id="id1">
+<img alt="Menu lateral: Proteger › Soc › Wazuh Agent Builder" src="../_images/menu49.jpg" />
+<figcaption>
+<p><span class="caption-text">O caminho no menu lateral: Proteger › Soc › Wazuh Agent Builder.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>No menu lateral, abra <strong>Proteger</strong>.</p></li>
+<li><p>Dentro dele, abra <strong>Soc</strong>.</p></li>
+<li><p>Clique em <strong>Wazuh Agent Builder</strong>: abre o ecrã desta página.</p></li>
+</ol>
+</section>
+<section id="o-conceito">
+<h2>O conceito</h2>
+<p>O agente corre com privilégios elevados em todas as máquinas. É o que lhe permite ler os registos e o inventário, e é também o que o torna perigoso se estiver mal configurado.</p>
+<p>Por omissão, o gestor pode mandar o agente executar comandos, mudar a sua configuração, ou atualizá-lo sozinho. Quem tomar o gestor toma todas as máquinas. A instalação de confiança zero corta isso: o agente só envia dados, não recebe ordens, e só fala com o gestor.</p>
+<p><strong>Porque é que o agente se instala endurecido</strong></p>
+<ul class="simple">
+<li><p>O agente corre com privilégios elevados em cada máquina: é uma porta de entrada, se for mal configurado.</p></li>
+<li><p>Por omissão, o gestor pode mandar o agente executar comandos e atualizar-se sozinho.</p></li>
+<li><p>Confiança zero: o agente só envia dados, não recebe ordens, e só fala com o gestor.</p></li>
+</ul>
+</section>
+<section id="o-gerador">
+<h2>O gerador</h2>
+<p><strong>Menu:</strong> Proteger › SOC › Wazuh Agent Builder</p>
+<p>No Wazuh Agent Builder diz-se onde está o gestor: o endereço, aqui um de exemplo, e as duas portas, a 1514 para os eventos e a 1515 para o registo do agente.</p>
+<p>E a versão do agente. Tem de ser a do gestor, ou mais antiga: um agente mais novo do que o gestor não se liga. O gestor deste ambiente está na 4.14.10, e é essa que se escreve. A configuração fica guardada sozinha.</p>
+<figure class="align-default" id="id2">
+<img alt="Proteger › SOC › Wazuh Agent Builder" src="../_images/builder-11.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Proteger › SOC › Wazuh Agent Builder.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>O endereço do gestor</strong></p></li>
+<li><p><strong>1514 eventos · 1515 registo</strong></p></li>
+<li><p>Escreva «4.14.10» neste campo.</p></li>
+<li><p><strong>A versão do gestor, ou mais antiga</strong></p></li>
+</ol>
+<p><strong>Menu:</strong> Wazuh Agent Builder › Políticas Zero-Trust</p>
+<p>Em baixo, as políticas de confiança zero, cada uma com o efeito escrito ao lado: bloquear os comandos remotos, desligar as atualizações pelo gestor e as respostas ativas, blindar as permissões dos ficheiros do agente, e a firewall do agente, que só o deixa falar com o gestor.</p>
+<p>Sai um script por sistema operativo: Windows, as versões antigas de Windows Server, e Linux. O script descarrega o pacote oficial do Wazuh, instala-o, e aplica as políticas escolhidas.</p>
+<figure class="align-default" id="id3">
+<img alt="Wazuh Agent Builder › Políticas Zero-Trust" src="../_images/zerotrust-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh Agent Builder › Políticas Zero-Trust (1 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>O gestor não manda executar nada</strong></p></li>
+</ol>
+<figure class="align-default" id="id4">
+<img alt="Wazuh Agent Builder › Políticas Zero-Trust" src="../_images/zerotrust-2.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh Agent Builder › Políticas Zero-Trust (2 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Só fala com o gestor</strong></p></li>
+<li><p>Clique em <strong>Linux — Debian/Ubuntu/RHEL (.sh)</strong>.</p></li>
+</ol>
+<figure class="align-default" id="id5">
+<img alt="Wazuh Agent Builder › Políticas Zero-Trust" src="../_images/zerotrust-3.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh Agent Builder › Políticas Zero-Trust (3 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Um script por sistema operativo</strong></p></li>
+</ol>
+</section>
+<section id="a-fila">
+<h2>A fila</h2>
+<p><strong>Menu:</strong> Proteger › Instalar agente Wazuh</p>
+<p>A fila de integração mostra os sistemas em âmbito sem agente, por ordem: primeiro a criticidade, depois a exposição, depois os dias em GAP. Neste ambiente são três máquinas Windows.</p>
+<p>Iniciar Integração abre o script já escolhido para o sistema operativo que o catálogo diz, com os valores do gerador. É este que se entrega a quem administra a máquina, com as credenciais dela: a plataforma não instala nada sozinha.</p>
+<figure class="align-default" id="id6">
+<img alt="Proteger › Instalar agente Wazuh" src="../_images/fila-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Proteger › Instalar agente Wazuh (1 de 3).</span></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id7">
+<img alt="Proteger › Instalar agente Wazuh" src="../_images/fila-2.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Proteger › Instalar agente Wazuh (2 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Criticidade, exposição, dias em GAP</strong></p></li>
+<li><p>Clique em <strong>Iniciar Integração</strong>.</p></li>
+</ol>
+<figure class="align-default" id="id8">
+<img alt="Proteger › Instalar agente Wazuh" src="../_images/fila-3.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Proteger › Instalar agente Wazuh (3 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>O sistema operativo do catálogo</strong></p></li>
+</ol>
+</section>
+<section id="no-wazuh">
+<h2>No Wazuh</h2>
+<p><strong>Menu:</strong> Wazuh › Endpoints › Deploy new agent</p>
+<p>O próprio Wazuh também tem um assistente, no painel dele: escolhe-se o pacote, aqui Debian, e o endereço do gestor, e ele dá o comando de instalação, com a mesma versão.</p>
+<p>A diferença está no que vem depois. O comando do Wazuh instala o agente com a configuração de origem; o script do SecVision instala o mesmo pacote oficial e endurece-o. Os dois servem, mas só um fecha as portas que o agente abre por omissão.</p>
+<figure class="align-default" id="id9">
+<img alt="Wazuh › Endpoints › Deploy new agent" src="../_images/wazuh_deploy-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Endpoints › Deploy new agent (1 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>Clique em <strong>DEB amd64</strong>.</p></li>
+</ol>
+<figure class="align-default" id="id10">
+<img alt="Wazuh › Endpoints › Deploy new agent" src="../_images/wazuh_deploy-2.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Endpoints › Deploy new agent (2 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>Escreva «10.0.0.50» no campo <strong>Server address</strong>.</p></li>
+</ol>
+<figure class="align-default" id="id11">
+<img alt="Wazuh › Endpoints › Deploy new agent" src="../_images/wazuh_deploy-3.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Endpoints › Deploy new agent (3 de 3).</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>O comando do próprio Wazuh</strong></p></li>
+</ol>
+<p><strong>Menu:</strong> Wazuh › Endpoints › Agents</p>
+<p>Corrido o script, a máquina aparece aqui, na lista de agentes do Wazuh, ativa. Os agentes deste ambiente de testes foram instalados com o mesmo pacote oficial, um por máquina Linux do catálogo.</p>
+<p>Falta o último passo, que é do SecVision: associar o agente ao sistema do catálogo. É o que tira o sistema do GAP, e tem o seu próprio página.</p>
+<figure class="align-default" id="id12">
+<img alt="Wazuh › Endpoints › Agents" src="../_images/wazuh_agentes-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O ecrã em Wazuh › Endpoints › Agents.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Depois de instalado, aparece aqui</strong></p></li>
+</ol>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<p>A plataforma gera o script certo para cada máquina e diz por que ordem se instalam.</p>
+<p>E não instala nada sozinha. Uma ferramenta de gestão com credenciais de administrador em todas as máquinas seria, ela própria, o maior risco da organização.</p>
+<p><strong>O que a plataforma faz — e o que não faz</strong></p>
+<ul class="simple">
+<li><p>Gera o script de cada sistema operativo, com o gestor, a versão e as políticas de confiança zero.</p></li>
+<li><p>Ordena os sistemas em GAP pela criticidade, a exposição e os dias sem monitorização.</p></li>
+<li><p>Não instala nada: quem corre o script é uma pessoa, com as credenciais da máquina.</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

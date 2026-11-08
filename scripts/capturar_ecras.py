@@ -176,8 +176,14 @@ class Captura:
             h = max(VIEWPORT['height'], min(y1 - y0 + 160, 2400))
             topo = max(0, min(y0 - 80, altura_pag - h)) if y1 - y0 + 160 > VIEWPORT['height'] else \
                 max(0, min((y0 + y1) / 2 - h / 2, altura_pag - h))
-        png = self.page.screenshot(full_page=True, clip={'x': 0, 'y': topo, 'width': VIEWPORT['width'],
-                                                         'height': min(h, altura_pag)})
+        if altura_pag <= VIEWPORT['height'] + 1:
+            # A página não rola na janela: rola por dentro (a coluna do editor do SGSI). Uma captura
+            # `full_page` redimensiona a janela, e isso repõe o scroll dessas colunas — as molduras
+            # ficavam onde o elemento estava antes. Fotografa-se a janela tal como está.
+            png = self.page.screenshot(full_page=False)
+        else:
+            png = self.page.screenshot(full_page=True, clip={'x': 0, 'y': topo, 'width': VIEWPORT['width'],
+                                                             'height': min(h, altura_pag)})
         self.page.evaluate("document.querySelectorAll('[data-anotacao]').forEach(e => e.remove())")
         Image.open(io.BytesIO(png)).convert('RGB').save(self.destino / nome, quality=86, optimize=True)
         print(f'  {nome}: {len(itens)} anotações', flush=True)
@@ -195,6 +201,13 @@ class Captura:
         self.indice.insert(0, {'imagem': 'menu.jpg', 'marca': 'menu',
                                'itens': [{'n': i + 1, 'tipo': 'clicar', 'rotulo': c['texto']}
                                          for i, c in enumerate(caminho)]})
+
+    def _visivel(self, sel: str) -> bool:
+        try:
+            self.page.locator(sel).first.wait_for(state='visible', timeout=3000)
+            return True
+        except Exception:  # noqa: BLE001
+            return False
 
     # ── passos do roteiro ─────────────────────────────────────────────────
     def executar(self, p: dict):
@@ -219,6 +232,8 @@ class Captura:
             self.anotar(p['destacar'], 'ver', p.get('rotulo'))
         elif 'limpar' in p:
             pass
+        elif 'clicar' in p and p.get('opcional') and not self._visivel(p['clicar']):
+            print(f"  ↷ clique opcional sem alvo ({p['clicar']})", flush=True)
         elif 'clicar' in p:
             self.anotar(p['clicar'], 'clicar')
             self.foto()
@@ -262,6 +277,33 @@ class Captura:
             self.por_mostrar = True
         elif 'esperar' in p:
             pg.wait_for_selector(p['esperar'], timeout=float(p.get('segundos', 30)) * 1000)
+        elif 'ia_externa' in p:
+            # O assistente de IA externo dos vídeos (secVision/videos/roteiros/ia_externa.py): no
+            # manual não se desenha a janela simulada, só se leva para a área de transferência a
+            # resposta real que o modelo deu ao pedido pseudonimizado — o `Control+V` seguinte
+            # cola-a, e o que se captura a seguir é a plataforma a repor as etiquetas.
+            rel = f"ia/{p['ia_externa']}.resposta.txt"
+            f = next((d / rel for d in self.gravacoes if (d / rel).exists()), None)
+            if f is None:
+                raise FileNotFoundError(f'{rel}: falta a resposta da IA (ver roteiros/ia_externa.py)')
+            self.area_transferencia = f.read_text(encoding='utf-8')
+        elif 'copiar' in p:
+            # copiar o pedido: no manual basta mostrar o botão; a resposta já está preparada
+            self.anotar(p['copiar'], 'clicar')
+            self.foto()
+            pg.locator(p['copiar']).first.click(timeout=15000)
+            time.sleep(0.8)
+            self.por_mostrar = True
+        elif 'carregar' in p:
+            pasta = self.gravacoes[0]
+            nomes = p.get('ficheiros') or [p['ficheiro']]
+            pg.locator(p['carregar']).first.set_input_files([str(pasta / n) for n in nomes])
+            time.sleep(1.2)
+            self.por_mostrar = True
+        elif 'tecla' in p and p['tecla'] in ('Control+V', 'Meta+V') and getattr(self, 'area_transferencia', None):
+            pg.keyboard.insert_text(self.area_transferencia)
+            time.sleep(1.2)
+            self.por_mostrar = True
         elif 'tecla' in p:
             self.foto()
             pg.keyboard.press(p['tecla'])

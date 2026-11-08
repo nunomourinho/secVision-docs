@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Indicadores de compromisso (IOC)</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/epub.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/secvision.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="indicadores-de-compromisso-ioc">
+<h1>Indicadores de compromisso (IOC)</h1>
+<p>Os indicadores de compromisso (endereços IP, gamas e domínios maliciosos) que a organização bloqueia ou vigia, e os ficheiros que as firewalls e o SIEM vão buscar.</p>
+<p>Vídeo de formação: <a class="reference external" href="https://youtu.be/t5cSqkiB0ws">https://youtu.be/t5cSqkiB0ws</a></p>
+<section id="onde-fica-no-menu">
+<h2>Onde fica no menu</h2>
+<p><strong>Menu:</strong> Detetar › IOC &amp; Intelligence › Indicadores de Compromisso</p>
+<figure class="align-default" id="id1">
+<img alt="Menu lateral: Detetar › IOC &amp; Intelligence › Indicadores de Compromisso" src="../../_images/menu36.jpg" />
+<figcaption>
+<p><span class="caption-text">O caminho no menu lateral: Detetar › IOC &amp; Intelligence › Indicadores de Compromisso.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p>No menu lateral, abra <strong>Detetar</strong>.</p></li>
+<li><p>Dentro dele, abra <strong>IOC &amp; Intelligence</strong>.</p></li>
+<li><p>Clique em <strong>Indicadores de Compromisso</strong>: abre o ecrã desta página.</p></li>
+</ol>
+</section>
+<section id="porque">
+<h2>Porquê</h2>
+<p>Os indicadores chegam de onde vierem: um boletim do CERT.PT, um relatório de incidente, o MISP. Serve o controlo 5.7 da ISO/IEC 27001, inteligência de ameaças. O que importa é que cheguem às firewalls e ao SIEM, com uma validade, e que nunca bloqueiem um sistema da própria organização.</p>
+</section>
+<section id="os-cinco-separadores">
+<h2>Os cinco separadores</h2>
+<figure class="align-default" id="id2">
+<img alt="Os cinco separadores do ecrã, cada um uma tarefa diferente" src="../../_images/separadores-1.jpg" />
+<figcaption>
+<p><span class="caption-text">Os cinco separadores do ecrã, cada um uma tarefa diferente.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Importar</strong></p></li>
+<li><p><strong>Gestão</strong></p></li>
+<li><p><strong>Feeds</strong></p></li>
+<li><p><strong>Whitelist</strong></p></li>
+<li><p><strong>Configurações</strong></p></li>
+<li><p>Clique em <strong>Importar</strong>.</p></li>
+</ol>
+</section>
+<section id="importar">
+<h2>Importar</h2>
+<figure class="align-default" id="id3">
+<img alt="O separador Importar: os formatos, a descrição e os indicadores" src="../../_images/importar-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O separador Importar: os formatos, a descrição e os indicadores.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Os formatos aceites</strong></p></li>
+<li><p><strong>Descrição (obrigatória)</strong></p></li>
+<li><p><strong>Importar ficheiro</strong></p></li>
+<li><p><strong>Os indicadores, colados</strong></p></li>
+</ol>
+<p>Cole a lista ou carregue um ficheiro <code class="docutils literal notranslate"><span class="pre">.csv</span></code> ou <code class="docutils literal notranslate"><span class="pre">.txt</span></code>. São aceites o formato CSV (<code class="docutils literal notranslate"><span class="pre">valor,ação</span></code>), o formato relatório (as linhas com traço de um boletim) e a lista simples. Os valores podem vir em formato <em>defanged</em>, como <code class="docutils literal notranslate"><span class="pre">site[.]perigoso[.]pt</span></code>, que é como chegam nos boletins: a plataforma repõe os pontos. As ações válidas são <code class="docutils literal notranslate"><span class="pre">bloquear</span></code> e <code class="docutils literal notranslate"><span class="pre">monitorizar</span></code>; numa lista sem ação, a plataforma pergunta.</p>
+<p>A <strong>descrição</strong> é obrigatória e diz de onde vieram os indicadores. A validade de cada importação vem do prazo padrão (em <strong>Configurações</strong>) e pode mudar-se no momento.</p>
+<p>Reimportar não duplica: um indicador com a mesma ação é atualizado.</p>
+<figure class="align-default" id="id4">
+<img alt="O Bloqueio de Emergência, mais abaixo no mesmo separador" src="../../_images/emergencia-1.jpg" />
+<figcaption>
+<p><span class="caption-text">O Bloqueio de Emergência, mais abaixo no mesmo separador.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Bloqueio de Emergência</strong></p></li>
+<li><p><strong>Os indicadores de emergência</strong></p></li>
+</ol>
+<p>O <strong>Bloqueio de Emergência</strong> é para um incidente em curso, como um C2 confirmado: os indicadores entram como <strong>permanentes</strong>, sem validade, até alguém os desbloquear à mão.</p>
+</section>
+<section id="gestao">
+<h2>Gestão</h2>
+<figure class="align-default" id="id5">
+<img alt="O separador Gestão: as contagens, os filtros e a lista" src="../../_images/gestao-2.jpg" />
+<figcaption>
+<p><span class="caption-text">O separador Gestão: as contagens, os filtros e a lista.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>As contagens, por tipo e ação</strong></p></li>
+<li><p><strong>Os filtros</strong></p></li>
+<li><p><strong>Seleção em massa</strong></p></li>
+<li><p><strong>Emergência, editar, apagar</strong></p></li>
+</ol>
+<p>A lista viva, com a ação, a validade e a origem de cada indicador. As contagens de cima filtram a lista. Seleciona-se em massa para apagar ou mudar a data de expiração de vários de uma vez. Em cada linha, o escudo ativa a emergência, o lápis edita e o caixote apaga. A coluna da expiração mostra os dias que faltam, ou «há X dias» se já expirou: um indicador expirado sai dos feeds.</p>
+</section>
+<section id="feeds">
+<h2>Feeds</h2>
+<figure class="align-default" id="id6">
+<img alt="O separador Feeds: o endereço base e um ficheiro por tipo e ação" src="../../_images/feeds-2.jpg" />
+<figcaption>
+<p><span class="caption-text">O separador Feeds: o endereço base e um ficheiro por tipo e ação.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>O endereço base dos feeds</strong></p></li>
+<li><p><strong>Um ficheiro de feed</strong></p></li>
+<li><p><strong>Copiar o endereço</strong></p></li>
+</ol>
+<p>O que sai para fora: oito ficheiros de texto, um valor por linha. São os IPs e os domínios a bloquear e a monitorizar, mais as versões resolvidas por DNS e as consolidadas. São gerados todos os dias às 2h, ou à mão, e publicados no porto <strong>8081</strong> para as firewalls, o EDR e o SIEM os irem buscar. Cada cartão tem o endereço do ficheiro e os botões <strong>Abrir</strong> e <strong>Copiar URL</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p><strong>O porto 8081 não tem autenticação, de propósito:</strong> um equipamento de rede que vai buscar uma lista não faz <em>login</em>. Quem tem de o alcançar são as firewalls e mais ninguém. Restrinja-o na rede.</p>
+</div>
+</section>
+<section id="whitelist">
+<h2>Whitelist</h2>
+<figure class="align-default" id="id7">
+<img alt="A whitelist automática, derivada do catálogo de segurança" src="../../_images/whitelist-2.jpg" />
+<figcaption>
+<p><span class="caption-text">A whitelist automática, derivada do catálogo de segurança.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Do catálogo de segurança, automática</strong></p></li>
+<li><p><strong>Resolver domínios</strong></p></li>
+</ol>
+<p>O que nunca deve ser bloqueado, por muito que apareça num feed. A parte de cima é <strong>automática</strong>: os IPs e os domínios dos sistemas do catálogo de segurança, e os IPs resolvidos desses domínios. <strong>Resolver domínios</strong> volta a resolvê-los já.</p>
+<figure class="align-default" id="id8">
+<img alt="A whitelist manual, mais abaixo" src="../../_images/whitelist-manual-1.jpg" />
+<figcaption>
+<p><span class="caption-text">A whitelist manual, mais abaixo.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>A whitelist manual</strong></p></li>
+<li><p><strong>IP ou domínio</strong></p></li>
+</ol>
+<p>A <strong>whitelist manual</strong> é para o resto: um parceiro, um serviço na nuvem. Escreva o IP ou o domínio e uma nota a dizer porquê. Quando um indicador importado coincide com a whitelist, a plataforma mostra um aviso no topo de todos os ecrãs até alguém decidir.</p>
+</section>
+<section id="configuracoes">
+<h2>Configurações</h2>
+<figure class="align-default" id="id9">
+<img alt="O separador Configurações" src="../../_images/configuracoes-2.jpg" />
+<figcaption>
+<p><span class="caption-text">O separador Configurações.</span></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Prazo de validade padrão</strong></p></li>
+<li><p><strong>Validade dos IPs resolvidos por DNS</strong></p></li>
+<li><p><strong>URL base dos feeds</strong></p></li>
+</ol>
+</section>
+<section id="resumo">
+<h2>Resumo</h2>
+<ul class="simple">
+<li><p>Importa-se de qualquer origem, incluindo o formato <em>defanged</em> dos boletins.</p></li>
+<li><p>Os indicadores ativos saem em ficheiros de texto no porto 8081, para as firewalls e o SIEM.</p></li>
+<li><p>A whitelist protege os sistemas da própria organização de um bloqueio por engano.</p></li>
+<li><p>Ver também <a class="reference internal" href="detection-and-threats.xhtml"><span class="doc">Deteção e inteligência de ameaças</span></a> e <a class="reference internal" href="../administration/misp.xhtml"><span class="doc">Integração MISP</span></a>.</p></li>
+</ul>
+</section>
+</section>
+<p class="rubric">Footnotes</p>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

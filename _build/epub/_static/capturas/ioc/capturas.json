@@ -1,0 +1,290 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "DETETAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "IOC & INTELLIGENCE"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Indicadores de Compromisso"
+   }
+  ]
+ },
+ {
+  "imagem": "separadores-1.jpg",
+  "marca": "separadores",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Importar",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Gestão",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Feeds",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Whitelist",
+    "valor": null
+   },
+   {
+    "n": 5,
+    "tipo": "ver",
+    "rotulo": "Configurações",
+    "valor": null
+   },
+   {
+    "n": 6,
+    "tipo": "clicar",
+    "rotulo": "Importar",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "separadores-2.jpg",
+  "marca": "separadores",
+  "itens": []
+ },
+ {
+  "imagem": "importar-1.jpg",
+  "marca": "importar",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Os formatos aceites",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Descrição (obrigatória)",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Importar ficheiro",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Os indicadores, colados",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "importar-2.jpg",
+  "marca": "importar",
+  "itens": []
+ },
+ {
+  "imagem": "emergencia-1.jpg",
+  "marca": "emergencia",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Bloqueio de Emergência",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Os indicadores de emergência",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "gestao-1.jpg",
+  "marca": "gestao",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Gestão",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "gestao-2.jpg",
+  "marca": "gestao",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "As contagens, por tipo e ação",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Os filtros",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Seleção em massa",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Emergência, editar, apagar",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "feeds-1.jpg",
+  "marca": "feeds",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Feeds",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "feeds-2.jpg",
+  "marca": "feeds",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "O endereço base dos feeds",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Um ficheiro de feed",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Copiar o endereço",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "whitelist-1.jpg",
+  "marca": "whitelist",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Whitelist",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "whitelist-2.jpg",
+  "marca": "whitelist",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Do catálogo de segurança, automática",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Resolver domínios",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "whitelist-3.jpg",
+  "marca": "whitelist",
+  "itens": []
+ },
+ {
+  "imagem": "whitelist-manual-1.jpg",
+  "marca": "whitelist-manual",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "A whitelist manual",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "IP ou domínio",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "configuracoes-1.jpg",
+  "marca": "configuracoes",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Configurações",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "configuracoes-2.jpg",
+  "marca": "configuracoes",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Prazo de validade padrão",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Validade dos IPs resolvidos por DNS",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "URL base dos feeds",
+    "valor": null
+   }
+  ]
+ }
+]

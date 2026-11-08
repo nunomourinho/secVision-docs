@@ -1,6 +1,6 @@
 # Falsos positivos no Wazuh
 
-O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.
+O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado e a resposta real com as etiquetas repostas, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.
 
 ```{video} 506-falsos-positivos
 ```
@@ -73,7 +73,7 @@ No SecVision, em Falsos Positivos, cola-se o alerta na primeira caixa. É o mesm
 
 O ecrã lê o alerta e mostra o essencial: a regra que disparou, a 5710, o nível, a máquina e a origem. E quantas vezes essa regra já disparou, contadas nos arquivos do Wazuh. Um número alto e sempre da mesma origem é o primeiro sinal de um falso positivo.
 
-```{figure} /_static/img/506-falsos-positivos/01.jpg
+```{figure} /_static/img/506-falsos-positivos/02.jpg
 :alt: Proteger › SOC › Falsos Positivos
 
 O ecrã em Proteger › SOC › Falsos Positivos.
@@ -83,26 +83,44 @@ O ecrã em Proteger › SOC › Falsos Positivos.
 
 **Menu:** Falsos Positivos › Gerar prompt para IA
 
-Escrever a regra pode pedir-se a uma IA. O botão prepara o pedido com o alerta, para copiar para o serviço de IA da organização.
+Escrever a regra pode pedir-se a uma IA. O botão prepara o pedido com o alerta, e copia-se para o levar ao serviço de IA da organização.
 
 E o pedido sai anonimizado: os endereços, os nomes das máquinas e das contas são trocados por etiquetas antes de saírem daqui, e repostos quando a resposta volta. Este botão mostra o que foi trocado.
 
-```{figure} /_static/img/506-falsos-positivos/02.jpg
+```{figure} /_static/img/506-falsos-positivos/03.jpg
 :alt: Falsos Positivos › Gerar prompt para IA
 
 O ecrã em Falsos Positivos › Gerar prompt para IA.
 ```
 
+### No assistente de IA
+
+Agora, fora da plataforma: o assistente de inteligência artificial. Cola-se o pedido e envia-se. O que vai: o endereço de origem é `[IP_1]`, a máquina é `[SISTEMA_1]`, a conta é `[UTILIZADOR_1]`. Mais nada sai daqui.
+
+```{figure} /_static/img/506-falsos-positivos/04.jpg
+:alt: O pedido pseudonimizado, colado no assistente de IA
+
+O pedido, colado no assistente de IA. A janela é desenhada para o vídeo; o pedido é o que a plataforma copiou, e foi processado de verdade por um modelo de IA.
+```
+
+A resposta chega: uma regra XML, filha da regra que disparou, só para aquele sistema, aquela conta e aquela origem. E com as mesmas etiquetas: o modelo nunca soube o endereço verdadeiro. Copia-se a resposta.
+
+```{figure} /_static/img/506-falsos-positivos/05.jpg
+:alt: A resposta do assistente, ainda com as etiquetas
+
+A resposta real do modelo, ainda com as etiquetas.
+```
+
 ## A regra
 
-A resposta cola-se na segunda caixa. Esta regra foi escrita para esta página, no lugar da resposta da IA, e é o que uma boa resposta traz: herda da regra 5710, e só se aplica a este endereço de origem.
+De volta à plataforma, a resposta cola-se na segunda caixa, ainda com as etiquetas. Validar a sintaxe faz primeiro a troca ao contrário: com o cofre do pedido, cada etiqueta volta a ser o valor real, e o ecrã diz quantas foram repostas. Só depois se verifica o XML.
 
-Validar a sintaxe verifica o XML e a estrutura da regra antes de chegar perto do gestor. O número e o nível que a regra traz não importam: quem os atribui é a plataforma, ao aplicar.
+É esta troca que torna a regra útil: uma regra com a etiqueta `[IP_1]` no lugar do endereço não corresponderia a tráfego nenhum. O número e o nível que a regra traz não importam: quem os atribui é a plataforma, ao aplicar.
 
-```{figure} /_static/img/506-falsos-positivos/03.jpg
-:alt: Regra escrita para este vídeo, no lugar da resposta da IA
+```{figure} /_static/img/506-falsos-positivos/06.jpg
+:alt: A resposta colada, com as etiquetas repostas e a sintaxe válida
 
-Regra escrita para este vídeo, no lugar da resposta da IA.
+A resposta colada: «10 etiqueta(s) reposta(s) com os valores reais», e a sintaxe válida.
 ```
 
 ## Aplicar
@@ -111,7 +129,7 @@ Regra escrita para este vídeo, no lugar da resposta da IA.
 
 Testar permissões confirma, antes de mexer em nada, que as credenciais podem ler e escrever regras e reiniciar o gestor.
 
-```{figure} /_static/img/506-falsos-positivos/04.jpg
+```{figure} /_static/img/506-falsos-positivos/07.jpg
 :alt: Falsos Positivos › Aplicar ao Wazuh
 
 O ecrã em Falsos Positivos › Aplicar ao Wazuh.
@@ -123,7 +141,7 @@ Aplicar faz tudo por ordem, e cada passo aparece no ecrã: uma cópia de seguran
 
 Se o gestor recusar a regra, ou não voltar depois do reinício, a plataforma repõe o ficheiro como estava e diz porquê. Nunca deixa o gestor com uma regra a meio.
 
-```{figure} /_static/img/506-falsos-positivos/05.jpg
+```{figure} /_static/img/506-falsos-positivos/08.jpg
 :alt: Falsos Positivos › Aplicar ao Wazuh
 
 O ecrã em Falsos Positivos › Aplicar ao Wazuh.
@@ -133,7 +151,7 @@ O ecrã em Falsos Positivos › Aplicar ao Wazuh.
 
 No fim, o passo que mais importa: o logtest. O gestor recebe a linha do alerta original e responde que regra dispara agora. Responde a nossa, com o nível baixo: o falso positivo deixou de ser alerta.
 
-```{figure} /_static/img/506-falsos-positivos/06.jpg
+```{figure} /_static/img/506-falsos-positivos/09.jpg
 :alt: Falsos Positivos › Aplicar ao Wazuh
 
 O ecrã em Falsos Positivos › Aplicar ao Wazuh.
@@ -147,7 +165,7 @@ E do lado do Wazuh? Nas regras do gestor, filtrando as regras personalizadas, ap
 
 O SecVision escreve sempre no seu próprio ficheiro, e só nesse. As regras de origem do Wazuh e as regras locais da equipa ficam como estavam.
 
-```{figure} /_static/img/506-falsos-positivos/07.jpg
+```{figure} /_static/img/506-falsos-positivos/10.jpg
 :alt: Wazuh › Server management › Rules
 
 O ecrã em Wazuh › Server management › Rules.
@@ -161,7 +179,7 @@ No histórico fica cada regra: quem a criou, quando foi aplicada, o número que 
 
 E a contagem de disparos de cada regra aplicada mostra se ela está a apanhar o que devia. Uma regra de falso positivo que nunca dispara é uma regra a mais; uma que dispara demasiado pode estar a esconder um ataque.
 
-```{figure} /_static/img/506-falsos-positivos/08.jpg
+```{figure} /_static/img/506-falsos-positivos/11.jpg
 :alt: Falsos Positivos › Histórico
 
 O ecrã em Falsos Positivos › Histórico.
@@ -175,7 +193,7 @@ Cinco minutos depois, a mesma pesquisa no Wazuh. A máquina continua a tentar en
 
 Os eventos não se perderam: estão nos arquivos, com a regra nova. Só deixaram de ser alertas, que era o que se queria.
 
-```{figure} /_static/img/506-falsos-positivos/09.jpg
+```{figure} /_static/img/506-falsos-positivos/12.jpg
 :alt: Wazuh › Threat Hunting › Events
 
 O ecrã em Wazuh › Threat Hunting › Events.

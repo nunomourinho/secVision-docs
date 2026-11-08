@@ -1,0 +1,79 @@
+# Página platform/protect-and-detect/control-cart (vídeo 359): o carrinho de controlos e a escrita
+# de um documento do SGSI com IA. A resposta colada é a resposta real ao pedido do vídeo
+# (secVision/videos/gravacoes/ia/359-carrinho-e-documentos.resposta.txt): as etiquetas batem certo
+# porque o pedido desta corrida sai igual. Cria um procedimento na base de teste.
+passos:
+  - abrir: /grc/soa/qnrcs-2026-entidades-publicas
+    esperar: 'h1:has-text("Declaração de Aplicabilidade")'
+  - marca: soa
+  - escrever: 'input[placeholder^="Pesquisar por código, título"]'
+    texto: acesso
+  - destacar: 'button[title^="Juntar ao carrinho, para escrever"] >> nth=0'
+    rotulo: O botão do carrinho, em cada controlo
+  - clicar: 'button:has-text("Juntar ao carrinho (")'
+  - marca: carrinho
+  - clicar: 'header button[aria-label="Carrinho de conhecimento"]'
+  - destacar: 'text=/\d+ controlos/'
+    rotulo: O que está no carrinho
+  - destacar: 'text=ficha da organização'
+    rotulo: A ficha da organização vai sempre, sem NIF, morada nem telefone
+  - destacar: 'button:has-text("Perguntar à IA")'
+    rotulo: Perguntar à IA
+  - destacar: 'a:has-text("Escrever um documento")'
+    rotulo: Escrever um documento
+  - tecla: Escape
+  - abrir: /sgsi/procedures
+    esperar: 'button:has-text("NOVO")'
+  - marca: documento
+  - clicar: 'button:has-text("NOVO")'
+  - escrever: 'input[placeholder="Título do Documento…"]'
+    texto: Procedimento de gestão de acessos
+  - destacar: 'button:has-text("Escrever com IA")'
+    rotulo: Escrever com IA
+  - marca: escolher
+  - clicar: 'button:has-text("Escrever com IA")'
+  - destacar: 'label:has-text("Política de Controlo de Acessos")'
+    rotulo: A política de que o procedimento depende
+  - clicar: 'label:has-text("Política de Controlo de Acessos")'
+  - clicar: 'button:has-text("Continuar")'
+  - esperar: 'text=O prompt, tal como vai ser copiado'
+    segundos: 90
+  - marca: pedido
+  - escrever: 'input[placeholder^="ex.: cobrir o teletrabalho"]'
+    texto: um procedimento de gestão de acessos — pedido, aprovação, revisão periódica e revogação
+  - clicar: '.fixed button:has-text("Refazer o prompt") >> nth=0'
+  - esperar: 'text=O prompt, tal como vai ser copiado'
+    segundos: 90
+  - destacar: '.fixed textarea'
+    rotulo: O pedido, pseudonimizado — leia antes de copiar
+  - destacar: '.fixed button:text-is("Copiar")'
+    rotulo: Copiar
+  - destacar: 'button:has-text("Já tenho a resposta")'
+    rotulo: Já tenho a resposta
+  - marca: resposta
+  - clicar: 'button:has-text("Já tenho a resposta")'
+  - colar: '.fixed textarea'
+    ficheiro: ia/359-carrinho-e-documentos.resposta.txt
+  - clicar: 'button:has-text("Ler a resposta")'
+  - esperar: 'button:has-text("Substituir o corpo")'
+    segundos: 60
+  - destacar: 'text=/Ligar também/'
+    rotulo: Ligar também os controlos do carrinho
+  - destacar: 'button:has-text("Substituir o corpo")'
+    rotulo: Substituir o corpo
+  - destacar: 'button:has-text("Inserir no fim")'
+    rotulo: Inserir no fim
+  - destacar: 'button:has-text("Descartar")'
+    rotulo: Descartar
+  - marca: guardar
+  - clicar: 'button:has-text("Substituir o corpo")'
+  - clicar: 'button:has-text("Guardar"):not(:has-text("versão")) >> nth=0'
+  # depois de gravar, a lista dos controlos carrega e o painel do histórico abre, e os dois
+  # empurram a coluna: espera-se que assentem, ou a moldura fica onde o bloco estava antes
+  - esperar: 'text=Coberto por texto escrito com apoio de IA'
+    segundos: 30
+    pausa: 2
+  - rolar: 'text=Controlos que este documento governa'
+    pausa: 2
+  # sem moldura: nesta coluna, que rola por dentro de um ecrã de altura fixa, a moldura sai
+  # deslocada (−64, −120 px) em relação ao bloco — a captura mostra-o, e o texto da página aponta-o
