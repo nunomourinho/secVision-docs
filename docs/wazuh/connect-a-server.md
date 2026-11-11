@@ -1,202 +1,144 @@
-# Ligar um servidor da DMZ ao Wazuh
+# Adicionar um servidor da DMZ ao Wazuh
 
-O percurso completo de um servidor que não chega ao gestor do Wazuh: publicar os instaladores no depósito, registá-los no SecVision, gerar o comando de instalação, corrê-lo no servidor e confirmar que ele aparece na rede privada, no SecVision e no painel do Wazuh.
+O percurso de um servidor que não chega ao gestor do Wazuh, com um só comando: escrever o nome do servidor no SecVision, copiar o comando que ele gera, colá-lo no servidor e confirmar que o servidor aparece na rede privada, no SecVision e no painel do Wazuh.
 
-```{video} 510-ligar-um-servidor-da-dmz
+```{video} 510-adicionar-um-servidor
 ```
 
-Esta página liga um servidor de uma zona isolada ao Wazuh, do princípio ao fim. O servidor não tem Internet, não chega ao gestor, e ninguém vai abrir portas na firewall. Todos os passos foram feitos a sério, num laboratório, e o resultado vê-se no SecVision e no painel do Wazuh. Pressupõe a ligação do SecVision ao Headscale descrita em [A rede privada para os agentes do Wazuh](private-network.md).
+Esta página junta um servidor de uma zona isolada ao Wazuh, do princípio ao fim. O servidor não tem Internet, não chega ao gestor, e ninguém vai abrir portas na firewall. Todos os passos foram feitos a sério, num laboratório, e o resultado vê-se no SecVision e no painel do Wazuh. Pressupõe a rede montada, como descreve [Montar a rede privada para os agentes do Wazuh](private-network.md).
 
 ## Acesso
 
-**Proteger** > **Rede VPN** > **Convites**
+**Proteger** > **Rede VPN** > **Montar a rede** > **4. Adicionar um servidor**
 
-O operador vê a lista de ficheiros registados e as chaves de registo; registar ficheiros e gerar comandos de instalação é do administrador do SecVision.
+O passo é do administrador do SecVision: gera o comando, que depois é colado no servidor por quem o administra.
 
-```{figure} /_static/capturas/vpn-convites/menu.jpg
-:alt: Menu lateral: Proteger > Rede VPN > Convites
+## O que se faz, e o que se evita
 
-Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
-```
-
-## Os quatro passos
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/01.jpg
-:alt: Os quatro passos para ligar um servidor da DMZ
-
-Os quatro passos.
-```
-
-1. **Publicar:** o executável do agente e o pacote do Wazuh vão para o depósito, que o servidor alcança.
-2. **Registar:** no SecVision, declara-se onde estão os ficheiros e qual é a impressão digital de cada um.
-3. **Gerar:** o SecVision cria uma chave de registo de uso único e um comando para este servidor.
-4. **Instalar:** cola-se o comando no servidor; o agente junta-se à rede privada e instala o agente do Wazuh.
-
-O servidor só precisa de chegar ao Headscale e ao depósito, que estão na própria DMZ. Tudo o resto passa pela rede privada.
+- **No SecVision:** o nome do servidor e **Gerar o comando**.
+- **No servidor:** colar esse comando, e mais nada.
+- O comando já leva a rede, os instaladores e as chaves; nada disso se copia à mão.
+- O comando vale uma hora e serve para um só servidor.
 
 ## Informação a solicitar
-
-Antes de começar, são necessários o executável `secvision-agente` e o pacote oficial do agente do Wazuh, na mesma versão do gestor, e o acesso de um administrador ao servidor.
 
 **Responsáveis**
 
 | Elemento | A quem pedir |
 |---|---|
-| Token do depósito (para carregar ficheiros) | Administrador do Headscale |
-| Nome do servidor, tal como o Wazuh o vai mostrar | Responsável do servidor |
-| Sessão de administrador (com `sudo`) no servidor | Administrador do servidor |
+| Nome pelo qual o servidor aparece no Wazuh e no SecVision | Responsável do servidor |
+| Uma sessão de administrador no servidor (o comando usa `sudo`) | Administrador do servidor |
+| O servidor tem de alcançar o Headscale (443) e o depósito (8080), e mais nada | Administrador da firewall |
 
-## 1. Publicar no depósito
+## 1. Gerar o comando
 
-Na máquina do administrador, o executável do agente e o pacote do Wazuh estão prontos. Os dois ficheiros vão para o depósito do Headscale, um servidor de ficheiros pequeno, só com HTTPS, que a DMZ alcança. Para carregar ficheiros é preciso o token do depósito; para os descarregar, não.
+```{figure} /_static/img/510-adicionar-um-servidor/01.jpg
+:alt: Passo 4 do assistente: adicionar um servidor
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/02.jpg
-:alt: A máquina do administrador: o executável e o pacote do agente
-
-A máquina do administrador, com o executável e o pacote do agente do Wazuh.
+Passo 4 do assistente **Montar a rede**: adicionar um servidor.
 ```
 
-O guião `bin/vpn-publicar.sh` envia o ficheiro, volta a descarregá-lo e compara. Se o que está no depósito não for o que foi enviado, falha. No fim escreve três coisas: o nome, o endereço e a impressão digital (o sha256 do ficheiro), que se vão precisar no SecVision.
+```{figure} /_static/img/510-adicionar-um-servidor/02.jpg
+:alt: O nome do servidor
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/03.jpg
-:alt: bin/vpn-publicar.sh a publicar o executável do agente
-
-O guião `bin/vpn-publicar.sh` a publicar o executável.
+O único campo obrigatório: o nome do servidor.
 ```
 
-Repete-se para o pacote do Wazuh. O depósito não é de confiança absoluta: quem o alterasse não conseguiria que o servidor instalasse um ficheiro diferente, porque o agente confere a impressão digital antes de instalar.
+1. **Nome do servidor:** o nome que a máquina vai ter no Wazuh (por exemplo, `portal-dmz-01`). Se o servidor já estiver no catálogo de sistemas do SecVision, escolha-o em **Sistema do catálogo (opcional)** e a máquina fica associada a ele desde o início.
+2. Carregue em **Gerar o comando**. O SecVision cria uma chave de registo de uso único para este servidor e prepara, no depósito, o pequeno guião que o servidor vai correr.
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/04.jpg
-:alt: bin/vpn-publicar.sh a publicar o pacote do agente do Wazuh
+```{figure} /_static/img/510-adicionar-um-servidor/03.jpg
+:alt: Gerar o comando
 
-O mesmo guião a publicar o pacote do agente do Wazuh.
+Ecrã depois de **Gerar o comando**.
 ```
 
-## 2. Registar os ficheiros no SecVision
+```{figure} /_static/img/510-adicionar-um-servidor/04.jpg
+:alt: O comando único, pronto a copiar
 
-**Proteger** > **Rede VPN** > **Convites**
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/05.jpg
-:alt: Proteger > Rede VPN > Convites: registar o executável
-
-Ecrã **Proteger** > **Rede VPN** > **Convites**, secção **Registar um ficheiro do depósito**.
+O comando único. **Copiar** põe-no na área de transferência.
 ```
 
-1. Em **O que é**, escolha **Executável secvision-agente**.
-2. Em **URL no depósito**, indique o endereço pelo qual os servidores veem o ficheiro. É o nome do depósito dentro da DMZ, e não o endereço local do administrador.
-3. Em **sha256**, cole a impressão digital que o guião escreveu. É esta que o SecVision põe no comando e que o servidor vai exigir.
-4. Clique em **Registar**.
+O comando descarrega o guião de instalação do depósito e corre-o com o `sudo`, porque instalar serviços exige privilégios de administrador. A parte do meio, com o `sha256`, é a impressão digital do depósito: garante ao servidor que está a falar com o depósito certo, sem instalar nenhum certificado nele. O guião só se corre depois de essa identidade ser confirmada.
 
-O pacote do Wazuh regista-se da mesma maneira, escolhendo **Pacote do agente Wazuh (.deb)**: o sistema fica implícito e indica-se a arquitetura, **amd64**. Fica a lista com os dois ficheiros, cada um com a sua impressão digital.
+O comando é de uso único e vale uma hora. Quem o tiver nesse tempo consegue ligar um servidor com este nome: cole-o logo e não o guarde num documento.
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/06.jpg
-:alt: Registar o pacote do agente do Wazuh
+## 2. Colar no servidor
 
-Registo do pacote do agente do Wazuh.
+```{figure} /_static/img/510-adicionar-um-servidor/05.jpg
+:alt: O servidor da DMZ
+
+O servidor da DMZ, num terminal.
 ```
 
-## 3. Gerar o comando de instalação
+Abra uma sessão de administrador no servidor. Este está numa DMZ: não chega à Internet.
 
-Na secção **Instalar numa máquina**, indica-se o nome do servidor e, se necessário, a validade do acesso e o tempo que a chave de registo vive.
+```{figure} /_static/img/510-adicionar-um-servidor/06.jpg
+:alt: Sem Internet
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/07.jpg
-:alt: Instalar numa máquina: o nome do servidor
-
-Secção **Instalar numa máquina**.
+Sem Internet: o acesso ao exterior falha.
 ```
 
-1. **Nome da máquina:** `portal-dmz-01`. É o nome que o Wazuh vai mostrar.
-2. **Validade do acesso (dias, opcional):** vazio usa o valor por omissão do ecrã **Estado e ligação**.
-3. **O token vive (minutos):** a chave de registo vale 60 minutos e uma só vez.
-4. Clique em **Gerar o comando de instalação**.
+```{figure} /_static/img/510-adicionar-um-servidor/07.jpg
+:alt: Só chega ao Headscale
 
-Ao gerar, o SecVision pede ao Headscale uma chave de registo de uso único. Essa chave não fica guardada no SecVision: aparece agora, uma vez, dentro do comando.
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/08.jpg
-:alt: O comando de instalação gerado pelo SecVision
-
-O comando de instalação.
+O que o servidor alcança é o Headscale, na própria DMZ: responde que está bem.
 ```
 
-O comando descarrega o `secvision-agente` do depósito e executa-o com o token. O token leva tudo o que o agente precisa: onde está o Headscale, a autoridade certificadora, a chave de uso único, o endereço do ponto de entrada e os dois ficheiros com as suas impressões digitais. Quem tiver este comando durante uma hora pode ligar um servidor com este nome, por isso copia-se e cola-se logo, e não se guarda num documento.
+Cole o comando e carregue em Enter. É a única coisa que se faz neste servidor.
 
-## 4. Instalar no servidor
+```{figure} /_static/img/510-adicionar-um-servidor/08.jpg
+:alt: Colar o comando
 
-No servidor, o `portal-dmz-01` (um Debian 12), abre-se o terminal com a sessão de um administrador da máquina.
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/09.jpg
-:alt: O servidor portal-dmz-01, um Debian 12
-
-O servidor da DMZ.
+O comando colado.
 ```
 
-Este servidor não chega à Internet: o pedido a `packages.wazuh.com` falha, e o código de saída diferente de zero confirma-o. É por isso que os instaladores estão no depósito.
+```{figure} /_static/img/510-adicionar-um-servidor/09.jpg
+:alt: O agente junta-se à rede
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/10.jpg
-:alt: O servidor não resolve nomes da Internet
-
-Sem Internet: o pedido falha.
+O agente instala-se e entra na rede privada.
 ```
 
-O que o servidor alcança é o Headscale, na própria DMZ, que responde que está bem. É a única porta de saída deste servidor, e a única de que a instalação precisa.
+1. Primeiro, o agente instala-se como serviço e guarda a sua chave, só legível pelo administrador. Depois entra na rede privada, com a chave de uso único que o SecVision criou para este servidor.
+2. A partir daqui, nesta máquina, as portas 1514 e 1515, locais, levam ao ponto de entrada do Wazuh pela rede privada. O Wazuh não precisa de saber que existe uma rede privada: fala com o endereço local.
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/11.jpg
-:alt: O servidor alcança o Headscale
+```{figure} /_static/img/510-adicionar-um-servidor/10.jpg
+:alt: Confere a impressão digital e instala o pacote do Wazuh
 
-O Headscale responde.
+O pacote do Wazuh é descarregado do depósito e conferido.
 ```
 
-Cola-se o comando que o SecVision gerou. O comando descarrega o executável do depósito, torna-o executável e corre-o com o `sudo`, porque instalar serviços exige privilégios de administrador.
+3. O agente descarrega o pacote do Wazuh do depósito e confere a impressão digital. Só se for exatamente a que o SecVision declarou é que o instala.
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/12.jpg
-:alt: O comando colado no terminal do servidor
+```{figure} /_static/img/510-adicionar-um-servidor/11.jpg
+:alt: O agente do Wazuh, endurecido por omissão
 
-O comando colado no terminal.
+O agente do Wazuh fica endurecido.
 ```
 
-Primeiro, o agente instala-se como serviço e guarda o token, só legível pelo administrador. Depois entra na rede privada, usando a chave de uso único. A partir deste momento, as portas 1514 e 1515, locais a este servidor, levam ao ponto de entrada do Wazuh pela rede privada. O agente do Wazuh não precisa de saber que existe uma rede privada: fala com o endereço local.
+4. O agente do Wazuh fica configurado para falar só com o endereço local, com os comandos remotos bloqueados e a configuração protegida contra alterações.
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/13.jpg
-:alt: O agente junta-se à rede privada
+```{figure} /_static/img/510-adicionar-um-servidor/12.jpg
+:alt: Instalação concluída
 
-O agente junta-se à rede privada.
+Instalação concluída.
 ```
 
-Depois descarrega o pacote do Wazuh do depósito e confere a impressão digital. Só se for exatamente a que o SecVision declarou é que o instala.
+5. No fim, o instalador verifica que o agente está a correr e ligado ao gestor pela rede privada. Se alguma verificação falhar, diz qual.
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/14.jpg
-:alt: O pacote é conferido e instalado
+```{figure} /_static/img/510-adicionar-um-servidor/13.jpg
+:alt: Os dois serviços ativos
 
-O pacote é conferido e instalado.
+Os dois serviços ativos e as portas do Wazuh à escuta só no endereço local.
 ```
 
-O agente do Wazuh fica configurado para falar só com o endereço local, com os comandos remotos bloqueados e a configuração protegida contra alterações. É a instalação de confiança zero descrita em [Instalar os agentes do Wazuh](installing-agents.md). No fim, o instalador verifica que o agente está a correr e ligado ao gestor pela rede privada; se falhar alguma verificação, diz qual.
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/15.jpg
-:alt: A configuração endurecida do agente
-
-A configuração endurecida do agente.
-```
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/16.jpg
-:alt: A instalação terminou
-
-A instalação terminou.
-```
-
-Confirma-se no servidor: os dois serviços estão ativos, o da ligação e o do Wazuh, e as portas 1514 e 1515 estão à escuta apenas no endereço local.
-
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/17.jpg
-:alt: Os dois serviços ativos e as portas locais
-
-Os dois serviços ativos e as portas locais.
-```
+Para confirmar no servidor: `systemctl is-active secvision-agente wazuh-agent` responde `active` duas vezes, e as portas 1514 e 1515 estão à escuta apenas em `127.0.0.1`.
 
 ## O resultado no SecVision
 
 **Proteger** > **Rede VPN** > **Máquinas**
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/18.jpg
+```{figure} /_static/img/510-adicionar-um-servidor/14.jpg
 :alt: Proteger > Rede VPN > Máquinas
 
 Ecrã **Proteger** > **Rede VPN** > **Máquinas**.
@@ -212,7 +154,7 @@ A lista já mostra o `portal-dmz-01`:
 
 **Wazuh** > **Endpoints** > **Agents**
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/19.jpg
+```{figure} /_static/img/510-adicionar-um-servidor/15.jpg
 :alt: Wazuh > Endpoints > Agents
 
 Ecrã **Wazuh** > **Endpoints** > **Agents**.
@@ -224,7 +166,7 @@ No painel do Wazuh, o mesmo servidor aparece como agente ativo. Para o Wazuh é 
 
 **Proteger** > **Rede VPN** > **Política**
 
-```{figure} /_static/img/510-ligar-um-servidor-da-dmz/20.jpg
+```{figure} /_static/img/510-adicionar-um-servidor/16.jpg
 :alt: Proteger > Rede VPN > Política
 
 Ecrã **Proteger** > **Rede VPN** > **Política**.
@@ -234,13 +176,20 @@ Agora que há um servidor na rede, a política já pode correr os testes de isol
 
 ## Resumo
 
+```{figure} /_static/img/510-adicionar-um-servidor/17.jpg
+:alt: O que o servidor precisa de ter
+
+O que o servidor precisa de ter.
+```
+
 O SecVision gera um comando para cada servidor, com uma chave de registo de uso único. Quem o corre é uma pessoa, com a sessão de administrador do servidor.
 
-O SecVision não entra no servidor: não executa o comando por si.
+O SecVision não entra no servidor para instalar o agente: não executa o comando por si.
 
 **Funcionalidades e limitações**
 
 - O servidor precisa de um Linux com systemd e do pacote `lsb-release`, de que o pacote do Wazuh depende. Se faltar, o agente diz-o antes de instalar, porque sem Internet o servidor não o consegue ir buscar.
 - O servidor só precisa de alcançar o Headscale (443) e o depósito (8080).
 - O instalador para Windows existe mas ainda não foi provado numa máquina real: antes de o usar em produção, faça um piloto com um único servidor.
-- Os servidores antigos, que não correm o cliente da rede privada, ligam-se por uma ponte: uma máquina moderna da mesma rede, instalada com a opção **Esta máquina é uma ponte** da secção **Instalar numa máquina**. Não está coberta por um vídeo.
+- Os servidores antigos, que não correm o cliente da rede privada, ligam-se por uma ponte: uma máquina moderna da mesma rede, instalada com a opção **Esta máquina é uma ponte**. Não está coberta por um vídeo.
+- O comando curto exige o depósito que o assistente instala. Quem usa um Headscale e um depósito montados à mão continua com o comando longo, em **Proteger** > **Rede VPN** > **Convites** > **Avançado**.

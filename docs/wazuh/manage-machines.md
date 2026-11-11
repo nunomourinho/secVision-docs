@@ -5,7 +5,7 @@ Depois de um servidor estar ligado, o que o administrador pode decidir: bloquear
 ```{video} 511-gerir-as-maquinas-da-rede-vpn
 ```
 
-Com os servidores ligados, o trabalho do administrador é decidir quem continua na rede. Esta página descreve as quatro decisões que o SecVision oferece e, para cada uma, o efeito que se vê no Wazuh. Pressupõe um ou mais servidores ligados, como descreve [Ligar um servidor da DMZ ao Wazuh](connect-a-server.md).
+Com os servidores ligados, o trabalho do administrador é decidir quem continua na rede. Esta página descreve as quatro decisões que o SecVision oferece e, para cada uma, o efeito que se vê no Wazuh. Pressupõe um ou mais servidores ligados, como descreve [Adicionar um servidor da DMZ ao Wazuh](connect-a-server.md).
 
 ## Acesso
 
@@ -30,7 +30,7 @@ As quatro decisões.
 1. **Bloquear:** corta o caminho ao ponto de entrada. O servidor continua na lista e pode voltar.
 2. **Validade:** o acesso acaba numa data. Passada, o SecVision bloqueia sozinho, e avisa antes.
 3. **Provas:** lê do Wazuh o que ele já guarda daquele servidor, com impressão digital.
-4. **Revogar:** apaga o servidor da rede. Só volta com um convite novo.
+4. **Revogar:** apaga o servidor da rede. Só volta com um comando novo (**Montar a rede** > **Adicionar um servidor**).
 
 Em nenhum destes casos o SecVision entra no servidor. Tudo se decide na rede privada ou lê-se do Wazuh, e é por isso que funciona mesmo com os comandos remotos bloqueados.
 
@@ -153,7 +153,7 @@ Revogar a máquina.
 2. Escreva o nome da máquina para confirmar. É uma decisão definitiva.
 3. Clique em **Revogar**.
 
-Revogar apaga o servidor da rede. O servidor revogado só volta com um convite novo, e a chave de registo antiga já não serve. Na lista fica marcado como revogado, e o registo de quem o revogou, e quando, fica na trilha de auditoria.
+Revogar apaga o servidor da rede. O servidor revogado só volta com um comando novo (**Montar a rede** > **Adicionar um servidor**), e a chave de registo antiga já não serve. Na lista fica marcado como revogado, e o registo de quem o revogou, e quando, fica na trilha de auditoria.
 
 ## Resumo
 

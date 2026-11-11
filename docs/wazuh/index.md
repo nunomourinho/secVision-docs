@@ -18,4 +18,5 @@ ai-classification-and-studio
 private-network
 connect-a-server
 manage-machines
+network-health
 ```

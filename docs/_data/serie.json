@@ -2825,144 +2825,140 @@
       }
     ]
   },
-  "509-rede-vpn-ligar-o-headscale": {
-    "titulo": "A rede privada para os agentes do Wazuh",
+  "509-montar-a-rede-privada": {
+    "titulo": "Montar a rede privada para os agentes do Wazuh",
     "pagina": "wazuh/private-network",
     "grupo": "Formação E — Wazuh",
-    "duracao": 299.7,
-    "resumo": "Porque é que há servidores que o Wazuh não vê (zonas isoladas, DMZ), como uma rede privada gerida pelo Headscale lhes dá um caminho de saída sem abrir portas, e como o SecVision se liga a ela: o endereço, a autoridade certificadora, a chave de API, o ponto de entrada do Wazuh e a política da rede.",
+    "duracao": 400.2,
+    "resumo": "Porque é que há servidores que o Wazuh não vê (zonas isoladas, DMZ), e como o SecVision monta sozinho a rede privada que lhes dá um caminho de saída sem abrir portas: instala o Headscale e o ponto de entrada do Wazuh por SSH, gera os certificados e as chaves, e publica os instaladores. Só se escrevem endereços e uma palavra-passe, uma vez.",
     "capitulos": [
       {
         "t": 0.0,
         "titulo": "Introdução"
       },
       {
-        "t": 16.18,
+        "t": 21.75,
         "titulo": "O conceito"
       },
       {
-        "t": 53.84,
+        "t": 59.41,
         "titulo": "O conceito"
       },
       {
-        "t": 95.19,
-        "titulo": "A ligação"
+        "t": 96.92,
+        "titulo": "Os quatro passos"
       },
       {
-        "t": 150.82,
-        "titulo": "A ligação"
+        "t": 120.92,
+        "titulo": "O Headscale"
       },
       {
-        "t": 184.89,
-        "titulo": "O teste"
+        "t": 183.02,
+        "titulo": "O Headscale"
       },
       {
-        "t": 209.6,
-        "titulo": "A política"
+        "t": 229.54,
+        "titulo": "Os instaladores"
       },
       {
-        "t": 245.15,
-        "titulo": "A lista de máquinas"
+        "t": 262.34,
+        "titulo": "O ponto de entrada"
       },
       {
-        "t": 265.14,
+        "t": 280.89,
+        "titulo": "O ponto de entrada"
+      },
+      {
+        "t": 313.44,
+        "titulo": "O ponto de entrada"
+      },
+      {
+        "t": 365.13,
         "titulo": "Resumo"
       }
     ]
   },
-  "510-ligar-um-servidor-da-dmz": {
-    "titulo": "Ligar um servidor da DMZ ao Wazuh",
+  "510-adicionar-um-servidor": {
+    "titulo": "Adicionar um servidor da DMZ ao Wazuh",
     "pagina": "wazuh/connect-a-server",
     "grupo": "Formação E — Wazuh",
-    "duracao": 538.9,
-    "resumo": "O percurso completo de um servidor que não chega ao gestor do Wazuh: publicar os instaladores no depósito, registá-los no SecVision, gerar o comando de instalação, corrê-lo no servidor e confirmar que ele aparece na rede privada, no SecVision e no painel do Wazuh.",
+    "duracao": 377.8,
+    "resumo": "O percurso de um servidor que não chega ao gestor do Wazuh, agora com um só comando: escrever o nome do servidor no SecVision, copiar o comando que ele gera, colá-lo no servidor e confirmar que o servidor aparece na rede privada, no SecVision e no painel do Wazuh.",
     "capitulos": [
       {
         "t": 0.0,
         "titulo": "Introdução"
       },
       {
-        "t": 21.87,
-        "titulo": "O percurso"
+        "t": 17.7,
+        "titulo": "O conceito"
       },
       {
-        "t": 53.5,
-        "titulo": "1. Publicar"
+        "t": 43.28,
+        "titulo": "1. No SecVision"
       },
       {
-        "t": 82.95,
-        "titulo": "1. Publicar"
+        "t": 55.56,
+        "titulo": "1. No SecVision"
       },
       {
-        "t": 117.82,
-        "titulo": "1. Publicar"
+        "t": 73.51,
+        "titulo": "1. No SecVision"
       },
       {
-        "t": 153.46,
-        "titulo": "2. Registar"
+        "t": 86.63,
+        "titulo": "1. No SecVision"
       },
       {
-        "t": 184.38,
-        "titulo": "2. Registar"
-      },
-      {
-        "t": 210.42,
-        "titulo": "3. Gerar"
-      },
-      {
-        "t": 242.61,
-        "titulo": "3. Gerar"
-      },
-      {
-        "t": 274.42,
+        "t": 115.68,
         "titulo": "4. Instalar"
       },
       {
-        "t": 288.69,
+        "t": 129.94,
         "titulo": "4. Instalar"
       },
       {
-        "t": 304.35,
+        "t": 145.59,
         "titulo": "4. Instalar"
       },
       {
-        "t": 317.2,
+        "t": 158.44,
         "titulo": "4. Instalar"
       },
       {
-        "t": 331.89,
+        "t": 168.43,
         "titulo": "4. Instalar"
       },
       {
-        "t": 359.49,
+        "t": 198.36,
         "titulo": "4. Instalar"
       },
       {
-        "t": 371.55,
+        "t": 210.41,
         "titulo": "4. Instalar"
       },
       {
-        "t": 396.77,
+        "t": 235.64,
         "titulo": "4. Instalar"
       },
       {
-        "t": 407.65,
+        "t": 246.52,
         "titulo": "4. Instalar"
       },
       {
-        "t": 430.02,
+        "t": 268.87,
         "titulo": "O resultado"
       },
       {
-        "t": 456.67,
+        "t": 295.48,
         "titulo": "O resultado"
       },
       {
-        "t": 470.95,
+        "t": 309.79,
         "titulo": "O resultado"
       },
       {
-        "t": 502.12,
+        "t": 341.05,
         "titulo": "Resumo"
       }
     ]
@@ -2971,7 +2967,7 @@
     "titulo": "Gerir as máquinas da rede privada",
     "pagina": "wazuh/manage-machines",
     "grupo": "Formação E — Wazuh",
-    "duracao": 291.6,
+    "duracao": 295.9,
     "resumo": "Depois de um servidor estar ligado, o que o administrador pode decidir: bloquear (e desbloquear) o acesso, vendo o Wazuh perder e recuperar o agente, fixar a validade do acesso, recolher provas do que o Wazuh já guardou, e revogar um servidor da rede.",
     "capitulos": [
       {
@@ -2983,47 +2979,88 @@
         "titulo": "O conceito"
       },
       {
-        "t": 45.63,
+        "t": 47.17,
         "titulo": "A lista"
       },
       {
-        "t": 68.74,
+        "t": 70.28,
         "titulo": "Bloquear"
       },
       {
-        "t": 96.76,
+        "t": 98.3,
         "titulo": "Bloquear"
       },
       {
-        "t": 113.64,
+        "t": 115.18,
         "titulo": "Bloquear"
       },
       {
-        "t": 126.37,
+        "t": 129.41,
         "titulo": "Desbloquear"
       },
       {
-        "t": 139.78,
+        "t": 142.82,
         "titulo": "Desbloquear"
       },
       {
-        "t": 152.39,
+        "t": 155.43,
         "titulo": "Validade"
       },
       {
-        "t": 179.62,
+        "t": 182.66,
         "titulo": "Provas"
       },
       {
-        "t": 206.85,
+        "t": 209.89,
         "titulo": "Provas"
       },
       {
-        "t": 223.81,
+        "t": 226.85,
         "titulo": "Revogar"
       },
       {
-        "t": 252.12,
+        "t": 256.45,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "512-quando-algo-falha-na-rede-privada": {
+    "titulo": "Quando algo falha na rede privada",
+    "pagina": "wazuh/network-health",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 237.3,
+    "resumo": "Como saber, de relance, se a rede privada está bem, e o que fazer quando uma luz deixa de ser verde: rodar a chave de API do Headscale, renovar os certificados e levá-los ao servidor, sem copiar nenhuma chave nem correr nenhum comando.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.78,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 34.24,
+        "titulo": "O painel"
+      },
+      {
+        "t": 66.34,
+        "titulo": "A chave de API"
+      },
+      {
+        "t": 111.68,
+        "titulo": "Os certificados"
+      },
+      {
+        "t": 156.01,
+        "titulo": "Reparar"
+      },
+      {
+        "t": 199.51,
+        "titulo": "O resultado"
+      },
+      {
+        "t": 212.95,
         "titulo": "Resumo"
       }
     ]
