@@ -2971,7 +2971,7 @@
     "titulo": "Gerir as máquinas da rede privada",
     "pagina": "wazuh/manage-machines",
     "grupo": "Formação E — Wazuh",
-    "duracao": 289.7,
+    "duracao": 291.6,
     "resumo": "Depois de um servidor estar ligado, o que o administrador pode decidir: bloquear (e desbloquear) o acesso, vendo o Wazuh perder e recuperar o agente, fixar a validade do acesso, recolher provas do que o Wazuh já guardou, e revogar um servidor da rede.",
     "capitulos": [
       {
@@ -2995,31 +2995,35 @@
         "titulo": "Bloquear"
       },
       {
-        "t": 125.32,
+        "t": 113.64,
+        "titulo": "Bloquear"
+      },
+      {
+        "t": 126.37,
         "titulo": "Desbloquear"
       },
       {
-        "t": 138.73,
+        "t": 139.78,
         "titulo": "Desbloquear"
       },
       {
-        "t": 151.34,
+        "t": 152.39,
         "titulo": "Validade"
       },
       {
-        "t": 178.57,
+        "t": 179.62,
         "titulo": "Provas"
       },
       {
-        "t": 205.8,
+        "t": 206.85,
         "titulo": "Provas"
       },
       {
-        "t": 222.76,
+        "t": 223.81,
         "titulo": "Revogar"
       },
       {
-        "t": 250.27,
+        "t": 252.12,
         "titulo": "Resumo"
       }
     ]

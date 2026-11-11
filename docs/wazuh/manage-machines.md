@@ -73,16 +73,22 @@ Bloquear muda a etiqueta do servidor na rede para uma que não tem nenhuma regra
 **Wazuh** > **Endpoints** > **Agents**
 
 ```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/04.jpg
-:alt: Wazuh > Endpoints > Agents: o agente desligado
+:alt: Wazuh > Endpoints > Agents: o agente ainda ativo, com o tempo acelerado
 
-Ecrã **Wazuh** > **Endpoints** > **Agents**, com o agente desligado.
+Ecrã **Wazuh** > **Endpoints** > **Agents**, durante a espera (acelerada no vídeo).
 ```
 
 No painel do Wazuh o agente ainda aparece ativo logo a seguir ao bloqueio, porque o Wazuh só dá por falta de um agente quando deixa de receber os seus sinais de vida, e por omissão espera dez minutos (`agents_disconnection_time`). No vídeo, a espera é acelerada. Passado esse tempo, o agente passa a **Disconnected**. Do ponto de vista do Wazuh, o servidor deixou de existir; do ponto de vista do administrador, foi uma decisão, e não uma avaria.
 
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/05.jpg
+:alt: Wazuh > Endpoints > Agents: o agente portal-dmz-01 desligado
+
+O agente **portal-dmz-01** passou a **disconnected**.
+```
+
 ## Desbloquear
 
-```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/05.jpg
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/06.jpg
 :alt: O servidor desbloqueado na lista de máquinas
 
 O servidor desbloqueado.
@@ -90,7 +96,7 @@ O servidor desbloqueado.
 
 Para desfazer, clique em **Desbloquear**. A etiqueta volta ao que era e o caminho reabre. Ninguém tem de ir ao servidor.
 
-```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/06.jpg
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/07.jpg
 :alt: Wazuh > Endpoints > Agents: o agente ativo outra vez
 
 O Wazuh volta a ver o servidor.
@@ -100,7 +106,7 @@ O agente, que nunca deixou de tentar ligar-se, volta a ligar-se sozinho, e o pai
 
 ## Validade do acesso
 
-```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/07.jpg
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/08.jpg
 :alt: Validade do acesso do servidor
 
 A validade do acesso.
@@ -114,7 +120,7 @@ O Headscale não faz expirar as máquinas etiquetadas, e por isso é o SecVision
 
 ## Recolher provas
 
-```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/08.jpg
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/09.jpg
 :alt: Recolher provas do servidor
 
 Recolher provas.
@@ -127,7 +133,7 @@ Recolher provas.
 
 As provas servem para um incidente ou para uma auditoria: o que o Wazuh sabe deste servidor. O SecVision só lê: não corre nada no servidor, porque o agente foi instalado com os comandos remotos bloqueados. O que se recolhe é o que o Wazuh já tinha.
 
-```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/09.jpg
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/10.jpg
 :alt: Provas recolhidas, com a impressão digital
 
 As provas recolhidas.
@@ -137,7 +143,7 @@ Cada recolha fica guardada com a sua impressão digital (sha256), o nome do serv
 
 ## Revogar
 
-```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/10.jpg
+```{figure} /_static/img/511-gerir-as-maquinas-da-rede-vpn/11.jpg
 :alt: Revogar a máquina: confirmação com o nome
 
 Revogar a máquina.

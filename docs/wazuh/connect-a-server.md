@@ -11,6 +11,8 @@ Esta página liga um servidor de uma zona isolada ao Wazuh, do princípio ao fim
 
 **Proteger** > **Rede VPN** > **Convites**
 
+O operador vê a lista de ficheiros registados e as chaves de registo; registar ficheiros e gerar comandos de instalação é do administrador do SecVision.
+
 ```{figure} /_static/capturas/vpn-convites/menu.jpg
 :alt: Menu lateral: Proteger > Rede VPN > Convites
 
