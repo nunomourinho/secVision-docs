@@ -29,7 +29,7 @@ Segue a formação, módulo a módulo:
 | `law/` | Módulo B — A lei e o CNCS | 201–217 |
 | `platform/` | Módulo C — A plataforma, pela ordem dos menus (8 secções) | 301–346 |
 | `journey/` | Módulo D — O percurso até à certificação | 401–407 |
-| `wazuh/` | Módulo E — Wazuh | 501–508 |
+| `wazuh/` | Módulo E — Wazuh | 501–511 |
 | `project/` | O que a plataforma não faz | — |
 
 ## As imagens

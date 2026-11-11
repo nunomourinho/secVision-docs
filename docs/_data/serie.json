@@ -1,2828 +1,3027 @@
 {
- "01-antes-de-instalar": {
-  "titulo": "Antes de instalar",
-  "pagina": "installation/before-installing",
-  "grupo": "Instalação",
-  "duracao": 304.4,
-  "resumo": "O ponto de partida da série: o que é o SecVision, o mínimo de terminal para acompanhar os vídeos, os dois modos de instalação e como escolher, o que preparar e o que o instalador vai perguntar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 32.04,
-    "titulo": "O que vamos instalar"
-   },
-   {
-    "t": 63.26,
-    "titulo": "O mínimo de terminal"
-   },
-   {
-    "t": 101.61,
-    "titulo": "Os dois modos"
-   },
-   {
-    "t": 138.4,
-    "titulo": "Os dois modos"
-   },
-   {
-    "t": 174.9,
-    "titulo": "Preparar a máquina"
-   },
-   {
-    "t": 226.6,
-    "titulo": "As perguntas do instalador"
-   },
-   {
-    "t": 263.82,
-    "titulo": "Antes do primeiro acesso"
-   }
-  ]
- },
- "02-obter-ubuntu-server": {
-  "titulo": "Obter o Ubuntu Server",
-  "pagina": "installation/get-ubuntu-server",
-  "grupo": "Instalação",
-  "duracao": 259.3,
-  "resumo": "Descarregar o Ubuntu Server 24.04 LTS do site oficial, confirmar a imagem com o SHA256 e prepará-la para o servidor: uma pen de arranque, ou o ISO numa máquina virtual.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 19.21,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 53.21,
-    "titulo": "Descarregar"
-   },
-   {
-    "t": 138.28,
-    "titulo": "Confirmar a imagem"
-   },
-   {
-    "t": 218.2,
-    "titulo": "Preparar o arranque"
-   }
-  ]
- },
- "03-instalar-ubuntu-server": {
-  "titulo": "Instalar o Ubuntu Server",
-  "pagina": "installation/install-ubuntu-server",
-  "grupo": "Instalação",
-  "duracao": 396.9,
-  "resumo": "O instalador do Ubuntu Server 24.04 do princípio ao fim: idioma e teclado, rede, discos com LVM (e o espaço todo para o sistema), utilizador, servidor SSH, a instalação, o primeiro arranque e as primeiras tarefas de um servidor novo.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.63,
-    "titulo": "Primeiros ecrãs"
-   },
-   {
-    "t": 75.86,
-    "titulo": "Rede"
-   },
-   {
-    "t": 124.64,
-    "titulo": "Discos"
-   },
-   {
-    "t": 189.0,
-    "titulo": "Utilizador e acesso"
-   },
-   {
-    "t": 252.23,
-    "titulo": "A instalação"
-   },
-   {
-    "t": 294.75,
-    "titulo": "Primeiro arranque"
-   },
-   {
-    "t": 368.42,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "04-instalar-nativo": {
-  "titulo": "Instalar em modo nativo",
-  "pagina": "installation/native-install",
-  "grupo": "Instalação",
-  "duracao": 506.7,
-  "resumo": "A instalação completa em modo nativo, num Ubuntu 24.04 acabado de instalar: obter o código, correr o instalador, responder às perguntas, esperar pelo fim e confirmar que a plataforma está a funcionar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 31.85,
-    "titulo": "Confirmar a máquina"
-   },
-   {
-    "t": 60.4,
-    "titulo": "Obter o código"
-   },
-   {
-    "t": 105.29,
-    "titulo": "O instalador"
-   },
-   {
-    "t": 155.31,
-    "titulo": "Pré-requisitos"
-   },
-   {
-    "t": 262.55,
-    "titulo": "O assistente"
-   },
-   {
-    "t": 372.68,
-    "titulo": "Construção e arranque"
-   },
-   {
-    "t": 414.44,
-    "titulo": "Resumo"
-   },
-   {
-    "t": 444.66,
-    "titulo": "Confirmar que funciona"
-   }
-  ]
- },
- "05-instalar-docker": {
-  "titulo": "Instalar em modo Docker",
-  "pagina": "installation/docker-install",
-  "grupo": "Instalação",
-  "duracao": 378.1,
-  "resumo": "A instalação completa em modo Docker, num Ubuntu 24.04 acabado de instalar: o instalador põe o Docker, o assistente configura a aplicação e o docker compose arranca tudo em contentores.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 27.39,
-    "titulo": "O que muda"
-   },
-   {
-    "t": 53.69,
-    "titulo": "Obter o código"
-   },
-   {
-    "t": 85.7,
-    "titulo": "O instalador"
-   },
-   {
-    "t": 156.22,
-    "titulo": "O assistente de configuração"
-   },
-   {
-    "t": 246.04,
-    "titulo": "Construir e arrancar"
-   },
-   {
-    "t": 288.45,
-    "titulo": "Confirmar"
-   },
-   {
-    "t": 346.28,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "06-primeiro-acesso": {
-  "titulo": "O primeiro acesso",
-  "pagina": "installation/first-access",
-  "grupo": "Instalação",
-  "duracao": 255.3,
-  "resumo": "Entrar pela primeira vez com a conta inicial, trocar a palavra-passe e ativar o segundo fator com uma aplicação autenticadora — e o que muda nas entradas seguintes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.6,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 42.17,
-    "titulo": "Entrar com a conta inicial"
-   },
-   {
-    "t": 64.89,
-    "titulo": "A palavra-passe nova"
-   },
-   {
-    "t": 103.53,
-    "titulo": "O segundo fator"
-   },
-   {
-    "t": 190.6,
-    "titulo": "Dentro"
-   },
-   {
-    "t": 206.16,
-    "titulo": "As entradas seguintes"
-   }
-  ]
- },
- "07-ambiente-de-testes": {
-  "titulo": "O ambiente de testes",
-  "pagina": "installation/test-environment",
-  "grupo": "Instalação",
-  "duracao": 311.3,
-  "resumo": "Montar, ao lado da produção, uma segunda instalação cheia de dados inventados, para aprender e experimentar sem tocar em nada real — e entrar nela.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.07,
-    "titulo": "O que é"
-   },
-   {
-    "t": 49.64,
-    "titulo": "Criar o ambiente"
-   },
-   {
-    "t": 93.66,
-    "titulo": "Os dados de teste"
-   },
-   {
-    "t": 133.6,
-    "titulo": "Como entrar"
-   },
-   {
-    "t": 199.22,
-    "titulo": "Entrar nos testes"
-   },
-   {
-    "t": 235.56,
-    "titulo": "Explorar"
-   },
-   {
-    "t": 274.75,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "101-ciberseguranca-e-gestao": {
-  "titulo": "A cibersegurança é um tema de gestão",
-  "pagina": "fundamentals/cybersecurity-and-management",
-  "grupo": "Formação A — Fundamentos",
-  "duracao": 282.1,
-  "resumo": "Porque é que a lei põe a direção a responder pela cibersegurança, o que isso muda numa organização pública, e como está organizada esta formação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 30.62,
-    "titulo": "O que mudou"
-   },
-   {
-    "t": 121.77,
-    "titulo": "A direção na lei"
-   },
-   {
-    "t": 206.72,
-    "titulo": "O percurso"
-   }
-  ]
- },
- "102-informacao-e-ativos": {
-  "titulo": "Informação, ativos e as três propriedades",
-  "pagina": "fundamentals/information-and-assets",
-  "grupo": "Formação A — Fundamentos",
-  "duracao": 268.5,
-  "resumo": "O que é um ativo, porque é que a informação é o ativo principal, e o que significa protegê-la: confidencialidade, integridade e disponibilidade — com exemplos de uma organização pública.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.78,
-    "titulo": "Ativos"
-   },
-   {
-    "t": 99.65,
-    "titulo": "C, I, A"
-   },
-   {
-    "t": 145.36,
-    "titulo": "Classificar"
-   },
-   {
-    "t": 204.06,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "103-risco": {
-  "titulo": "O que é o risco",
-  "pagina": "fundamentals/risk",
-  "grupo": "Formação A — Fundamentos",
-  "duracao": 413.7,
-  "resumo": "Ameaça, vulnerabilidade, impacto e probabilidade; risco inerente e residual; o apetite pelo risco como decisão de gestão — e porque é que o risco nunca vai a zero.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 38.83,
-    "titulo": "Uma sensação ou uma quantidade"
-   },
-   {
-    "t": 70.63,
-    "titulo": "As peças"
-   },
-   {
-    "t": 164.3,
-    "titulo": "Medir"
-   },
-   {
-    "t": 237.3,
-    "titulo": "Inerente e residual"
-   },
-   {
-    "t": 322.01,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "104-controlos-e-sgsi": {
-  "titulo": "Controlos, medidas e o sistema de gestão",
-  "pagina": "fundamentals/controls-and-isms",
-  "grupo": "Formação A — Fundamentos",
-  "duracao": 260.3,
-  "resumo": "O que é um controlo, porque é que um controlo não é uma ferramenta, as três naturezas das medidas, e o sistema de gestão da segurança da informação com o ciclo planear, executar, verificar, agir.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.88,
-    "titulo": "Controlos"
-   },
-   {
-    "t": 148.9,
-    "titulo": "O SGSI"
-   }
-  ]
- },
- "105-normas-e-referenciais": {
-  "titulo": "Normas e quadros de referência",
-  "pagina": "fundamentals/standards-and-frameworks",
-  "grupo": "Formação A — Fundamentos",
-  "duracao": 226.8,
-  "resumo": "De onde vêm as listas de controlos: ISO/IEC 27001 e 27002, QNRCS, NIST CSF. E três palavras que se confundem — conformidade, certificação e acreditação — com o que a lei portuguesa faz com elas.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.37,
-    "titulo": "Os referenciais"
-   },
-   {
-    "t": 91.52,
-    "titulo": "Conformidade, certificação, acreditação"
-   },
-   {
-    "t": 129.75,
-    "titulo": "Na lei portuguesa"
-   }
-  ]
- },
- "106-iso-27001-por-dentro": {
-  "titulo": "A ISO/IEC 27001 por dentro",
-  "pagina": "fundamentals/iso-27001-inside",
-  "grupo": "Formação A — Fundamentos",
-  "duracao": 249.1,
-  "resumo": "Como está organizada a ISO/IEC 27001: as cláusulas 4 a 10 do sistema de gestão, os 93 controlos do Anexo A e a Declaração de Aplicabilidade — em conceitos, sem o texto da norma.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 22.11,
-    "titulo": "A estrutura"
-   },
-   {
-    "t": 90.08,
-    "titulo": "O Anexo A"
-   },
-   {
-    "t": 132.36,
-    "titulo": "A SoA"
-   },
-   {
-    "t": 167.81,
-    "titulo": "Certificar"
-   }
-  ]
- },
- "201-da-nis2-ao-dl-125": {
-  "titulo": "Da NIS 2 ao DL 125/2025 e ao Regulamento 756/2026",
-  "pagina": "law/from-nis2-to-dl-125",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 208.4,
-  "resumo": "A cadeia normativa da cibersegurança em Portugal: a diretiva europeia, o decreto-lei que a transpõe, e o regulamento do CNCS que diz como se cumpre — e porque é que uma diretiva não se audita.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 24.44,
-    "titulo": "Os três elos"
-   },
-   {
-    "t": 95.88,
-    "titulo": "O que obriga"
-   }
-  ]
- },
- "202-quem-esta-abrangido": {
-  "titulo": "Quem está abrangido",
-  "pagina": "law/who-is-covered",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 201.9,
-  "resumo": "As três perguntas para saber se a organização está abrangida, e em que qualificação: entidade essencial, importante ou pública relevante do Grupo A ou B.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.3,
-    "titulo": "O âmbito"
-   },
-   {
-    "t": 53.67,
-    "titulo": "As qualificações"
-   },
-   {
-    "t": 149.93,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "203-autoidentificacao-e-qualificacao": {
-  "titulo": "Autoidentificação e qualificação",
-  "pagina": "law/self-identification",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 492.4,
-  "resumo": "Como uma entidade entra no regime da cibersegurança: a autoidentificação na plataforma do CNCS, os prazos, o que o formulário pede, a audiência prévia, a decisão de qualificação e o que ela traz — com o caso de um politécnico público.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 32.52,
-    "titulo": "As categorias"
-   },
-   {
-    "t": 111.39,
-    "titulo": "Autoidentificação"
-   },
-   {
-    "t": 210.39,
-    "titulo": "O formulário"
-   },
-   {
-    "t": 305.6,
-    "titulo": "A qualificação"
-   },
-   {
-    "t": 409.23,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "204-registo-e-atualizacao": {
-  "titulo": "O registo, e mantê-lo atualizado",
-  "pagina": "law/registration",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 177.0,
-  "resumo": "O dever de registo do art. 35.º do DL, o que se entrega ao CNCS, o prazo de 30 dias úteis para comunicar alterações, e a lista de ativos acessíveis pela Internet.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.05,
-    "titulo": "O dever de registo"
-   },
-   {
-    "t": 51.58,
-    "titulo": "Atualizar"
-   },
-   {
-    "t": 119.16,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "205-responsavel-e-ponto-de-contacto": {
-  "titulo": "Responsável de cibersegurança e ponto de contacto",
-  "pagina": "law/security-officer-and-contact-point",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 219.1,
-  "resumo": "As duas pessoas que a lei pede: quem gere a cibersegurança e responde à direção, e quem atende o CNCS a qualquer hora — o que cada uma faz, os prazos para as comunicar, e o que vale para as entidades públicas relevantes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 19.74,
-    "titulo": "O responsável"
-   },
-   {
-    "t": 51.44,
-    "titulo": "O ponto de contacto"
-   },
-   {
-    "t": 115.08,
-    "titulo": "Públicas relevantes"
-   },
-   {
-    "t": 158.52,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "206-deveres-dos-orgaos-de-gestao": {
-  "titulo": "Os deveres dos órgãos de gestão",
-  "pagina": "law/management-duties",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 172.3,
-  "resumo": "O que o art. 25.º do DL pede à direção — aprovar, supervisionar, assegurar a formação — e porque é que a responsabilidade não se delega; e o que muda para as entidades públicas relevantes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.68,
-    "titulo": "O artigo 25.º"
-   },
-   {
-    "t": 47.29,
-    "titulo": "A responsabilidade"
-   },
-   {
-    "t": 76.16,
-    "titulo": "Públicas relevantes"
-   }
-  ]
- },
- "207-gestao-de-riscos-e-matriz": {
-  "titulo": "Gestão de riscos e a Matriz de Risco",
-  "pagina": "law/risk-management-and-matrix",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 195.5,
-  "resumo": "O que a lei pede sobre risco: medidas proporcionais, análise pelo menos anual e risco residual documentado; e como a Matriz de Risco do CNCS decide o nível de conformidade — Básico, Substancial ou Elevado — das entidades essenciais e importantes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.66,
-    "titulo": "A lei"
-   },
-   {
-    "t": 70.85,
-    "titulo": "A Matriz de Risco"
-   },
-   {
-    "t": 120.83,
-    "titulo": "Públicas relevantes"
-   }
-  ]
- },
- "208-publicas-relevantes-anexo-iv": {
-  "titulo": "Entidades públicas relevantes — o Anexo IV",
-  "pagina": "law/public-entities-annex-iv",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 187.4,
-  "resumo": "Como está organizado o Anexo IV do Regulamento: 31 medidas, quantas cabem a cada grupo, porque é que o Grupo A cumpre também as do Grupo B, e como se lê uma medida e o seu critério de verificação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 19.35,
-    "titulo": "A obrigação"
-   },
-   {
-    "t": 49.49,
-    "titulo": "A estrutura"
-   },
-   {
-    "t": 111.67,
-    "titulo": "Ler uma medida"
-   },
-   {
-    "t": 139.75,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "209-anexo-iv-medidas-organizacionais": {
-  "titulo": "Anexo IV — as medidas organizacionais",
-  "pagina": "law/annex-iv-organisational",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 194.8,
-  "resumo": "As doze medidas organizacionais do Anexo IV, uma a uma: o que pede cada uma, a quem, e que prova se espera — primeiro as do Grupo B, depois as que só o Grupo A cumpre.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.01,
-    "titulo": "Grupos A e B"
-   },
-   {
-    "t": 70.75,
-    "titulo": "Só Grupo A"
-   },
-   {
-    "t": 140.37,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "210-anexo-iv-medidas-tecnologicas-e-humanas": {
-  "titulo": "Anexo IV — as medidas tecnológicas e humanas",
-  "pagina": "law/annex-iv-technical-and-human",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 185.2,
-  "resumo": "As dezasseis medidas tecnológicas e as três humanas do Anexo IV: o que pede cada uma, o que o Grupo A acrescenta, e que prova técnica um auditor espera.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.56,
-    "titulo": "Tecnológicas"
-   },
-   {
-    "t": 103.61,
-    "titulo": "Humanas"
-   }
-  ]
- },
- "211-essenciais-e-importantes-anexo-iii": {
-  "titulo": "Entidades essenciais e importantes — o Anexo III",
-  "pagina": "law/essential-and-important-annex-iii",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 166.7,
-  "resumo": "As medidas mínimas das entidades essenciais e importantes: 87 controlos do QNRCS em três níveis cumulativos — Básico, Substancial e Elevado —, de onde vem o nível, e o prazo para se adaptar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.28,
-    "titulo": "O nível"
-   },
-   {
-    "t": 41.38,
-    "titulo": "Os níveis"
-   },
-   {
-    "t": 118.57,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "212-anexo-iii-por-funcao": {
-  "titulo": "Anexo III — medidas e critérios, função a função",
-  "pagina": "law/annex-iii-by-function",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 166.2,
-  "resumo": "Os 87 controlos do Anexo III pelas seis funções — governar, identificar, proteger, detetar, responder e recuperar —, com um exemplo de cada, e como se lê o critério de verificação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.32,
-    "titulo": "As seis funções"
-   },
-   {
-    "t": 80.84,
-    "titulo": "O critério"
-   },
-   {
-    "t": 110.04,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "213-o-qnrcs": {
-  "titulo": "O QNRCS — o Anexo I",
-  "pagina": "law/qnrcs",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 162.2,
-  "resumo": "O Quadro Nacional de Referência para a Cibersegurança: objetivos, categorias e controlos; para que serve se as medidas mínimas já existem, e como se usa para ir além delas.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.68,
-    "titulo": "O que é"
-   },
-   {
-    "t": 41.36,
-    "titulo": "A estrutura"
-   },
-   {
-    "t": 72.46,
-    "titulo": "Para que serve"
-   }
-  ]
- },
- "214-incidentes-notificar-a-tempo": {
-  "titulo": "Incidentes — notificar a tempo",
-  "pagina": "law/incident-notification",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 230.2,
-  "resumo": "Quando um incidente é significativo, as três notificações ao CNCS e os seus prazos — 24 horas, 24 horas após o fim do impacto, 30 dias úteis —, a regra das duas horas, e o relógio diferente da proteção de dados.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 21.1,
-    "titulo": "Significativo"
-   },
-   {
-    "t": 53.53,
-    "titulo": "Os prazos"
-   },
-   {
-    "t": 157.79,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "215-relatorio-fornecedores-risco-residual": {
-  "titulo": "Relatório anual, fornecedores e risco residual",
-  "pagina": "law/annual-report-suppliers-residual-risk",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 170.7,
-  "resumo": "Três deveres que vivem ao longo do ano: o relatório anual e o seu prazo de janeiro, a segurança da cadeia de abastecimento, e a gestão do risco residual — e o que vale para as entidades públicas.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.73,
-    "titulo": "O relatório anual"
-   },
-   {
-    "t": 60.23,
-    "titulo": "Fornecedores"
-   },
-   {
-    "t": 92.92,
-    "titulo": "Risco residual"
-   },
-   {
-    "t": 119.24,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "216-a-certificacao": {
-  "titulo": "A certificação",
-  "pagina": "law/certification",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 181.2,
-  "resumo": "A certificação na lei portuguesa: voluntária com presunção de cumprimento, exigível pelo CNCS com até 24 meses de adaptação; os esquemas reconhecidos, o que se entrega, e o que se comunica depois.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.82,
-    "titulo": "Voluntária ou exigida"
-   },
-   {
-    "t": 49.06,
-    "titulo": "Os esquemas"
-   },
-   {
-    "t": 78.92,
-    "titulo": "Depois do certificado"
-   },
-   {
-    "t": 129.24,
-    "titulo": "Na sua organização"
-   }
-  ]
- },
- "217-supervisao-e-sancoes": {
-  "titulo": "Supervisão e sanções",
-  "pagina": "law/supervision-and-penalties",
-  "grupo": "Formação B — A lei e o CNCS",
-  "duracao": 183.9,
-  "resumo": "O que acontece quando não se cumpre: contraordenações muito graves, graves e leves, as coimas por qualificação — com as das entidades públicas relevantes —, as sanções acessórias, e a advertência prévia.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.54,
-    "titulo": "As infrações"
-   },
-   {
-    "t": 46.06,
-    "titulo": "As coimas"
-   },
-   {
-    "t": 77.14,
-    "titulo": "O processo"
-   }
-  ]
- },
- "301-primeiro-acesso-e-seguranca": {
-  "titulo": "Primeiro acesso e segurança da plataforma",
-  "pagina": "platform/getting-started/first-access-and-security",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 109.2,
-  "resumo": "O primeiro acesso em três tempos — senha inicial, senha nova, segundo fator — e as três decisões sobre a segurança da própria plataforma que se tomam antes de escrever a primeira política.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.36,
-    "titulo": "Primeiro acesso"
-   },
-   {
-    "t": 48.17,
-    "titulo": "A segurança da plataforma"
-   },
-   {
-    "t": 85.59,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "302-contas-papeis-e-modo": {
-  "titulo": "Contas, papéis e modo do sistema",
-  "pagina": "platform/getting-started/accounts-roles-and-mode",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 140.6,
-  "resumo": "Uma conta por pessoa, com o papel certo — visualizador, operador, administrador —, a revisão periódica de acessos com finalidade declarada, e o modo que distingue produção de ensaio.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.17,
-    "titulo": "Os papéis"
-   },
-   {
-    "t": 40.16,
-    "titulo": "Os utilizadores"
-   },
-   {
-    "t": 80.15,
-    "titulo": "Permissões"
-   },
-   {
-    "t": 91.81,
-    "titulo": "O modo"
-   },
-   {
-    "t": 112.99,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "305-ficha-da-organizacao": {
-  "titulo": "A Ficha da organização",
-  "pagina": "platform/organisation/organisation-profile",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 486.2,
-  "resumo": "O primeiro registo a preencher: quem é a entidade, os contactos, a dimensão e o contexto — os dados que a lei manda inscrever na plataforma do CNCS, e o que a plataforma faz com eles.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 21.27,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 65.24,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 104.79,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 175.98,
-    "titulo": "Identificação"
-   },
-   {
-    "t": 261.2,
-    "titulo": "Contactos"
-   },
-   {
-    "t": 316.72,
-    "titulo": "Dimensão"
-   },
-   {
-    "t": 345.82,
-    "titulo": "Contexto"
-   },
-   {
-    "t": 383.95,
-    "titulo": "Manter atualizado"
-   },
-   {
-    "t": 438.76,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "306-papeis-e-pessoas": {
-  "titulo": "Papéis, responsabilidades e pessoas",
-  "pagina": "platform/organisation/roles-and-people",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 297.3,
-  "resumo": "Quem faz o quê, desde quando e por que ato: o catálogo de papéis, as designações datadas, as lacunas que a lei manda preencher, e o registo de pessoal com o sítio onde cada pessoa aparece.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.48,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 45.15,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 61.12,
-    "titulo": "Os papéis"
-   },
-   {
-    "t": 150.63,
-    "titulo": "Uma designação"
-   },
-   {
-    "t": 189.38,
-    "titulo": "As pessoas"
-   },
-   {
-    "t": 254.13,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "307-partes-interessadas": {
-  "titulo": "Partes interessadas e requisitos",
-  "pagina": "platform/organisation/interested-parties",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 189.9,
-  "resumo": "Quem tem expectativas sobre a organização, por que canal se fala com cada um, e o registo dos requisitos legais, regulamentares e contratuais — com os controlos que os cumprem.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.41,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 46.21,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 59.77,
-    "titulo": "As partes"
-   },
-   {
-    "t": 118.83,
-    "titulo": "Os requisitos"
-   },
-   {
-    "t": 152.34,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "308-autoridades-e-notificacoes": {
-  "titulo": "Autoridades, designações e notificações",
-  "pagina": "platform/organisation/authorities-and-notifications",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 229.4,
-  "resumo": "Onde se guarda o que se comunica às autoridades: as designações e a data em que foram comunicadas, as notificações de incidentes com o prazo contado, e os contactos autorizados.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.3,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 34.24,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 53.74,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 92.68,
-    "titulo": "Notificações"
-   },
-   {
-    "t": 129.6,
-    "titulo": "Designações"
-   },
-   {
-    "t": 148.82,
-    "titulo": "Contactos"
-   },
-   {
-    "t": 180.27,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "309-acordos-e-contratos": {
-  "titulo": "Acordos e contratos",
-  "pagina": "platform/organisation/agreements-and-contracts",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 175.0,
-  "resumo": "O registo centralizado dos contratos, NDA e acordos de subcontratação de dados, com as cláusulas de segurança como campos — para se poderem contar — e os prazos de denúncia à vista.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.43,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 38.61,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 56.59,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 94.88,
-    "titulo": "Um acordo"
-   },
-   {
-    "t": 131.63,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "310-protecao-de-dados": {
-  "titulo": "Proteção de dados pessoais",
-  "pagina": "platform/organisation/data-protection",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 221.5,
-  "resumo": "O registo de atividades de tratamento, as avaliações de impacto, os pedidos dos titulares, as violações com o relógio das 72 horas, e o expurgo pelos prazos de conservação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.9,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 44.68,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 62.16,
-    "titulo": "O registo"
-   },
-   {
-    "t": 119.72,
-    "titulo": "Avaliações e direitos"
-   },
-   {
-    "t": 152.92,
-    "titulo": "Violações"
-   },
-   {
-    "t": 183.03,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "311-importar-o-parque": {
-  "titulo": "Importar o parque",
-  "pagina": "platform/inventory/import",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 137.9,
-  "resumo": "O primeiro passo do inventário: trazer as exportações do Active Directory, do DNS e do DHCP, e deixar a plataforma correlacioná-las num inventário único do parque técnico.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.2,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 36.81,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 53.74,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 108.73,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "312-ver-o-parque": {
-  "titulo": "Ver o parque",
-  "pagina": "platform/inventory/view-the-estate",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 134.9,
-  "resumo": "O inventário de ativos e as suas fontes, os filtros, a baixa de um equipamento sem apagar nada, e o inventário de redes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.89,
-    "titulo": "O inventário"
-   },
-   {
-    "t": 87.13,
-    "titulo": "As redes"
-   },
-   {
-    "t": 107.19,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "313-catalogo-de-seguranca": {
-  "titulo": "O catálogo de segurança e a cobertura",
-  "pagina": "platform/inventory/security-catalogue",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 144.7,
-  "resumo": "Os sistemas que a instituição opera, com o nível de criticidade de N1 a N4, se estão em âmbito e se têm monitorização — e a taxa de cobertura que daí sai, no ponto de situação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.87,
-    "titulo": "Os níveis"
-   },
-   {
-    "t": 43.09,
-    "titulo": "O catálogo"
-   },
-   {
-    "t": 71.59,
-    "titulo": "O ponto de situação"
-   },
-   {
-    "t": 108.87,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "314-ativos-de-informacao": {
-  "titulo": "Ativos de informação",
-  "pagina": "platform/inventory/information-assets",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 135.1,
-  "resumo": "Do servidor à informação: cada ativo com tipo, classificação, confidencialidade, integridade e disponibilidade, dono e os sistemas em que assenta — e a árvore do que está dentro de quê.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.51,
-    "titulo": "Os campos"
-   },
-   {
-    "t": 46.64,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 72.4,
-    "titulo": "A árvore"
-   },
-   {
-    "t": 104.11,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "315-grupos-e-organograma": {
-  "titulo": "Grupos, unidades e organograma",
-  "pagina": "platform/inventory/groups-and-org-chart",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 144.4,
-  "resumo": "Como se arruma a organização: grupos de pessoas, bens e serviços, unidades orgânicas com governo central ou delegado, e o organograma que junta unidades, papéis e pessoas.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.28,
-    "titulo": "As famílias"
-   },
-   {
-    "t": 47.81,
-    "titulo": "Os grupos"
-   },
-   {
-    "t": 77.72,
-    "titulo": "O organograma"
-   },
-   {
-    "t": 112.05,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "317-processos-e-servicos": {
-  "titulo": "Processos e serviços",
-  "pagina": "platform/inventory/processes-and-services",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 150.7,
-  "resumo": "O que a organização faz: cada processo com dono, tipo e criticidade, os serviços críticos de que dependem partes externas, e as dependências de ativos, sistemas e fornecedores.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 13.93,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 42.89,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 59.1,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 78.56,
-    "titulo": "Um processo"
-   },
-   {
-    "t": 112.43,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "318-as-normas": {
-  "titulo": "As normas e os regulamentos",
-  "pagina": "platform/compliance/standards",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 149.0,
-  "resumo": "Onde se leem as normas e as leis que vêm com a plataforma: pesquisar, filtrar, abrir um artigo com as remissões — e a diferença entre o que se audita e o que só se consulta.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.95,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 53.03,
-    "titulo": "Ler um artigo"
-   },
-   {
-    "t": 82.54,
-    "titulo": "Só consulta"
-   },
-   {
-    "t": 118.43,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "319-ambito-do-sgsi": {
-  "titulo": "O âmbito do sistema de gestão",
-  "pagina": "platform/compliance/isms-scope",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 127.9,
-  "resumo": "A decisão que desbloqueia o resto: que normas entram no sistema de gestão, e a declaração de âmbito — unidades, localizações, processos, sistemas e exclusões.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 13.33,
-    "titulo": "O que escolher"
-   },
-   {
-    "t": 37.81,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 70.92,
-    "titulo": "A declaração"
-   },
-   {
-    "t": 107.6,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "320-declaracao-de-aplicabilidade": {
-  "titulo": "A Declaração de Aplicabilidade",
-  "pagina": "platform/compliance/statement-of-applicability",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 113.9,
-  "resumo": "Controlo a controlo: aplicável ou não, porquê, de onde vem, quem responde, em que estado está e quando se revê — e o número declarado de conformidade que daí sai.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.49,
-    "titulo": "Os campos"
-   },
-   {
-    "t": 37.71,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 54.43,
-    "titulo": "Uma declaração"
-   },
-   {
-    "t": 85.09,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "321-mapeamento-e-ferramentas": {
-  "titulo": "Mapeamento entre referenciais e cobertura por ferramenta",
-  "pagina": "platform/compliance/mapping-and-tools",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 132.0,
-  "resumo": "Como um controlo cumprido numa norma conta para outra — a herança pelo mapeamento confirmado — e que ferramentas cobrem que controlos, lido ao contrário das tabelas das normas.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.53,
-    "titulo": "A herança"
-   },
-   {
-    "t": 42.7,
-    "titulo": "O mapeamento"
-   },
-   {
-    "t": 72.88,
-    "titulo": "As ferramentas"
-   },
-   {
-    "t": 104.57,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "323-criterios-de-risco": {
-  "titulo": "Critérios de risco e catálogo de ameaças",
-  "pagina": "platform/risk/risk-criteria",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 136.7,
-  "resumo": "A régua do risco: a escala, as bandas e o que se aceita, as células que a aritmética erra, os limiares de decisão — aprovados antes de apreciar. E o catálogo de ameaças que vem com a plataforma.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.91,
-    "titulo": "Os critérios"
-   },
-   {
-    "t": 51.37,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 84.64,
-    "titulo": "O catálogo"
-   },
-   {
-    "t": 111.84,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "325-registo-de-risco": {
-  "titulo": "O registo de risco",
-  "pagina": "platform/risk/risk-register",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 135.5,
-  "resumo": "Cada risco sobre um ativo de informação: ameaça, vulnerabilidade, probabilidade, impacto por critério, tratamento, controlos e o eixo em que agem — e o risco inerente e o residual.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.34,
-    "titulo": "Os campos"
-   },
-   {
-    "t": 46.95,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 74.94,
-    "titulo": "Um risco"
-   },
-   {
-    "t": 107.88,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "326-tratamento-do-risco": {
-  "titulo": "Tratar o risco e relatar à direção",
-  "pagina": "platform/risk/risk-treatment",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 162.2,
-  "resumo": "O plano de tratamento e a sua aprovação pelo dono do risco, a revisão periódica, a retenção com prazo, o relatório de risco à direção que pede decisões, e os cenários estratégicos.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 13.35,
-    "titulo": "O ciclo"
-   },
-   {
-    "t": 44.89,
-    "titulo": "O plano"
-   },
-   {
-    "t": 68.13,
-    "titulo": "O relato"
-   },
-   {
-    "t": 102.48,
-    "titulo": "Cenários"
-   },
-   {
-    "t": 131.96,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "327-aceitacoes-e-projetos": {
-  "titulo": "Aceitações, exceções e projetos",
-  "pagina": "platform/risk/acceptances-and-projects",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 107.3,
-  "resumo": "Aceitar um risco com fundamento e prazo, que caduca sozinho; e apreciar o risco de um projeto ou de uma aquisição antes de decidir — com o anexo de requisitos de segurança para o procedimento.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.25,
-    "titulo": "Aceitações"
-   },
-   {
-    "t": 49.29,
-    "titulo": "Projetos"
-   },
-   {
-    "t": 82.06,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "329-fornecedores": {
-  "titulo": "Fornecedores e contratos públicos",
-  "pagina": "platform/risk/suppliers",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 134.8,
-  "resumo": "O registo de fornecedores com criticidade, acesso a dados e relação, o inquérito de avaliação respondido por quem não tem conta, e os contratos públicos do portal BASE.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.42,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 32.99,
-    "titulo": "O registo"
-   },
-   {
-    "t": 68.88,
-    "titulo": "Contratos públicos"
-   },
-   {
-    "t": 102.92,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "330-documentos-do-sgsi": {
-  "titulo": "As políticas e os procedimentos do SGSI",
-  "pagina": "platform/protect-and-detect/isms-documents",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 145.3,
-  "resumo": "Escrever as políticas e os procedimentos, ligá-los aos controlos que governam, aprová-los com versão assinada, exportá-los para Word com a imagem da casa, e arquivar em vez de apagar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.2,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 46.45,
-    "titulo": "Os documentos"
-   },
-   {
-    "t": 78.98,
-    "titulo": "Um documento"
-   },
-   {
-    "t": 115.54,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "331-formacao-e-sensibilizacao": {
-  "titulo": "Formação e sensibilização",
-  "pagina": "platform/protect-and-detect/training-and-awareness",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 97.2,
-  "resumo": "A formação registada por pessoa, e não por sessão: o acolhimento, as reciclagens com validade, e quem está em falta — com a lista nominal reservada a quem a pode ver.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.8,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 32.32,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 71.88,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "332-agentes-e-superficie": {
-  "titulo": "Fechar os GAP e ver o que está exposto",
-  "pagina": "platform/protect-and-detect/agents-and-surface",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 146.1,
-  "resumo": "A fila de integração dos sistemas em GAP e o gerador dos scripts do agente de monitorização; e a superfície exposta, por fora e por dentro, com as vulnerabilidades em exploração e os equipamentos fora do catálogo.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.1,
-    "titulo": "A fila"
-   },
-   {
-    "t": 39.3,
-    "titulo": "O script"
-   },
-   {
-    "t": 68.57,
-    "titulo": "A superfície"
-   },
-   {
-    "t": 110.68,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "334-detecao-e-ameacas": {
-  "titulo": "Deteção e inteligência de ameaças",
-  "pagina": "platform/protect-and-detect/detection-and-threats",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 200.5,
-  "resumo": "Afinar as regras de deteção e silenciar falsos positivos com registo de quem decidiu; e os indicadores de compromisso, as fontes de alertas de segurança e os relatórios de recomendações — com a pesquisa de que sistemas têm um software ou um CVE.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.99,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 32.46,
-    "titulo": "A deteção"
-   },
-   {
-    "t": 70.44,
-    "titulo": "As ameaças"
-   },
-   {
-    "t": 106.67,
-    "titulo": "Que sistemas são afetados"
-   },
-   {
-    "t": 167.3,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "336-seguranca-do-software": {
-  "titulo": "Segurança do software e da configuração",
-  "pagina": "platform/protect-and-detect/software-security",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 125.8,
-  "resumo": "O inventário de dependências e as suas vulnerabilidades, a análise estática do código com aceitações registadas, e a conformidade da configuração dos sistemas com perfis CIS ou STIG.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.39,
-    "titulo": "As ferramentas"
-   },
-   {
-    "t": 42.39,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 97.72,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "337-evidencias": {
-  "titulo": "Evidências e prova automática",
-  "pagina": "platform/monitoring/evidence",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 119.6,
-  "resumo": "A prova que o auditor vai olhar: evidências com âmbito e validade, que caducam sozinhas, e os dezassete recolectores que provam todos os dias o que a plataforma já sabe.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.14,
-    "titulo": "As evidências"
-   },
-   {
-    "t": 45.03,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 61.51,
-    "titulo": "A prova automática"
-   },
-   {
-    "t": 94.38,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "338-controlos-e-indicadores": {
-  "titulo": "Os meus controlos, indicadores e objetivos",
-  "pagina": "platform/monitoring/controls-and-indicators",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 91.8,
-  "resumo": "Cada responsável vê os seus controlos, a prova que falta e a revisão em atraso; e os objetivos mensuráveis, ligados aos catorze indicadores que a plataforma mede sozinha.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.73,
-    "titulo": "Os meus controlos"
-   },
-   {
-    "t": 32.28,
-    "titulo": "Indicadores"
-   },
-   {
-    "t": 70.38,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "340-painel-e-diagnosticos": {
-  "titulo": "O painel de conformidade e os diagnósticos",
-  "pagina": "platform/monitoring/dashboard-and-diagnostics",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 117.6,
-  "resumo": "A percentagem de conformidade, ponderada sobre os controlos aplicáveis e com o que não se consegue ler nomeado; e o diagnóstico que prioriza as lacunas para a direção.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 13.06,
-    "titulo": "O painel"
-   },
-   {
-    "t": 29.25,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 57.87,
-    "titulo": "Diagnósticos"
-   },
-   {
-    "t": 89.49,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "342-auditoria-interna": {
-  "titulo": "A auditoria interna",
-  "pagina": "platform/audit/internal-audit",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 131.2,
-  "resumo": "Planear, abrir a lista de verificação do guião da norma, responder pergunta a pergunta — no ecrã ou em papel, com um auditor sem conta — e fechar com conclusões; e a diferença para um diagnóstico.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.39,
-    "titulo": "Os passos"
-   },
-   {
-    "t": 53.17,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 73.66,
-    "titulo": "Uma auditoria"
-   },
-   {
-    "t": 103.57,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "343-nao-conformidades-e-trilha": {
-  "titulo": "Não conformidades e trilha de auditoria",
-  "pagina": "platform/audit/nonconformities-and-trail",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 101.9,
-  "resumo": "Do achado à não conformidade tratada — correção, causa raiz, ações corretivas e verificação da eficácia — e a trilha que diz quem alterou o quê, e quando, sem se poder editar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.31,
-    "titulo": "O ciclo"
-   },
-   {
-    "t": 31.82,
-    "titulo": "As não conformidades"
-   },
-   {
-    "t": 60.08,
-    "titulo": "A trilha"
-   },
-   {
-    "t": 81.79,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "344-revisao-pela-gestao": {
-  "titulo": "A revisão pela gestão",
-  "pagina": "platform/audit/management-review",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 105.5,
-  "resumo": "A direção revê o sistema de gestão: a plataforma monta oito das nove entradas que a norma exige, regista as decisões, e a ata fecha congelada, como estava no dia.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.43,
-    "titulo": "As entradas"
-   },
-   {
-    "t": 46.64,
-    "titulo": "O ecrã"
-   },
-   {
-    "t": 76.19,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "346-dossier-e-certificacao": {
-  "titulo": "O dossier de auditoria e a certificação",
-  "pagina": "platform/audit/audit-dossier-and-certification",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 125.1,
-  "resumo": "O dossier de doze secções que se entrega ao auditor, sem esconder os buracos; o que ele vai pedir e onde está; e as duas visitas da certificação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 11.72,
-    "titulo": "O dossier"
-   },
-   {
-    "t": 54.33,
-    "titulo": "O que se pede"
-   },
-   {
-    "t": 74.67,
-    "titulo": "As visitas"
-   }
-  ]
- },
- "351-administracao-da-plataforma": {
-  "titulo": "A administração da plataforma",
-  "pagina": "platform/administration/coverage-rules",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 250.1,
-  "resumo": "Três ecrãs de quem administra a plataforma: que níveis de sistemas contam para a cobertura, os tipos de documento e o modelo Word do SGSI, e onde se vê a versão instalada e o que mudou.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.0,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 41.57,
-    "titulo": "A cobertura"
-   },
-   {
-    "t": 95.39,
-    "titulo": "Os tipos de documento"
-   },
-   {
-    "t": 133.0,
-    "titulo": "O modelo Word"
-   },
-   {
-    "t": 183.63,
-    "titulo": "A versão"
-   },
-   {
-    "t": 214.84,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "352-anonimizacao-de-ia": {
-  "titulo": "A anonimização dos pedidos de IA",
-  "pagina": "platform/administration/ai-anonymisation",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 300.9,
-  "resumo": "Como a plataforma tira os dados pessoais e os dados da infraestrutura de tudo o que sai para um serviço de IA, onde fica a prova disso, e como se experimenta com um texto real antes de confiar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 21.3,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 63.21,
-    "titulo": "O registo de saídas"
-   },
-   {
-    "t": 96.46,
-    "titulo": "A bancada de ensaio"
-   },
-   {
-    "t": 129.81,
-    "titulo": "O resultado"
-   },
-   {
-    "t": 160.32,
-    "titulo": "As exceções"
-   },
-   {
-    "t": 175.58,
-    "titulo": "A ida"
-   },
-   {
-    "t": 186.78,
-    "titulo": "A ida"
-   },
-   {
-    "t": 217.15,
-    "titulo": "A ida"
-   },
-   {
-    "t": 234.98,
-    "titulo": "A volta"
-   },
-   {
-    "t": 263.12,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "353-integracoes": {
-  "titulo": "As integrações",
-  "pagina": "platform/administration/external-systems",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 261.3,
-  "resumo": "As ferramentas de fora com que a plataforma conversa: onde mais os sistemas estão registados, o MISP para enriquecer os indicadores de ameaça, as fontes de notícias de segurança e o diretório de onde se leem equipamentos e pessoas.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.47,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 41.56,
-    "titulo": "Sistemas externos"
-   },
-   {
-    "t": 72.34,
-    "titulo": "O MISP"
-   },
-   {
-    "t": 116.93,
-    "titulo": "Os feeds RSS"
-   },
-   {
-    "t": 152.34,
-    "titulo": "O diretório"
-   },
-   {
-    "t": 196.28,
-    "titulo": "Testar"
-   },
-   {
-    "t": 225.86,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "354-o-sgsi-por-inteiro": {
-  "titulo": "O SGSI por inteiro",
-  "pagina": "platform/protect-and-detect/isms-structure",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 237.1,
-  "resumo": "Os outros ecrãs do menu SGSI: a árvore que liga todos os documentos, as fichas de controlo, as evidências, a cobertura por controlo — o que está a descoberto — e o arquivo, com a diferença entre arquivar e apagar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.77,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 50.72,
-    "titulo": "A árvore"
-   },
-   {
-    "t": 80.75,
-    "titulo": "Os controlos"
-   },
-   {
-    "t": 111.5,
-    "titulo": "As evidências"
-   },
-   {
-    "t": 136.85,
-    "titulo": "A cobertura"
-   },
-   {
-    "t": 165.71,
-    "titulo": "O arquivo"
-   },
-   {
-    "t": 204.0,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "359-carrinho-e-documentos-com-ia": {
-  "titulo": "O carrinho de controlos e os documentos com IA",
-  "pagina": "platform/protect-and-detect/control-cart",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 291.8,
-  "resumo": "Juntar ao carrinho os controlos que um documento tem de cobrir, e escrever com eles um procedimento com apoio de IA: o pedido sai pseudonimizado, a resposta volta com os valores repostos, entra no editor, e os controlos ficam ligados ao documento.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.94,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 46.01,
-    "titulo": "Encher o carrinho"
-   },
-   {
-    "t": 67.63,
-    "titulo": "Encher o carrinho"
-   },
-   {
-    "t": 97.83,
-    "titulo": "O documento"
-   },
-   {
-    "t": 116.52,
-    "titulo": "O pedido"
-   },
-   {
-    "t": 132.67,
-    "titulo": "O pedido"
-   },
-   {
-    "t": 161.98,
-    "titulo": "A IA"
-   },
-   {
-    "t": 177.69,
-    "titulo": "A IA"
-   },
-   {
-    "t": 199.41,
-    "titulo": "De volta"
-   },
-   {
-    "t": 227.28,
-    "titulo": "De volta"
-   },
-   {
-    "t": 244.08,
-    "titulo": "A cobertura"
-   },
-   {
-    "t": 258.74,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "355-importar-contratos-publicos": {
-  "titulo": "Importar contratos públicos",
-  "pagina": "platform/risk/contract-explorer",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 253.6,
-  "resumo": "Os contratos públicos da organização, a partir dos ficheiros exportados do portal BASE: escolher a própria entidade, filtrar, marcar os que interessam e gravá-los — para depois os ligar aos sistemas e aos fornecedores.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.99,
-    "titulo": "Porquê"
-   },
-   {
-    "t": 37.02,
-    "titulo": "Antes de começar"
-   },
-   {
-    "t": 65.44,
-    "titulo": "As entidades"
-   },
-   {
-    "t": 84.71,
-    "titulo": "Escolher as nossas"
-   },
-   {
-    "t": 110.5,
-    "titulo": "Os contratos"
-   },
-   {
-    "t": 137.65,
-    "titulo": "Escolher os contratos"
-   },
-   {
-    "t": 173.66,
-    "titulo": "Gravar"
-   },
-   {
-    "t": 197.12,
-    "titulo": "Depois de importar"
-   },
-   {
-    "t": 215.79,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "356-indicadores-de-compromisso": {
-  "titulo": "Os indicadores de compromisso",
-  "pagina": "platform/protect-and-detect/ioc",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 273.9,
-  "resumo": "Os endereços e domínios maliciosos que a organização bloqueia ou vigia: importar um boletim, gerir a lista e a validade de cada um, publicar os ficheiros para as firewalls, e proteger os próprios sistemas de um bloqueio por engano.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.38,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 53.35,
-    "titulo": "Os cinco separadores"
-   },
-   {
-    "t": 72.59,
-    "titulo": "Importar"
-   },
-   {
-    "t": 109.25,
-    "titulo": "O resultado"
-   },
-   {
-    "t": 125.73,
-    "titulo": "Gerir a lista"
-   },
-   {
-    "t": 161.92,
-    "titulo": "Os ficheiros das firewalls"
-   },
-   {
-    "t": 189.39,
-    "titulo": "Proteger os nossos sistemas"
-   },
-   {
-    "t": 220.98,
-    "titulo": "As configurações"
-   },
-   {
-    "t": 236.46,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "357-feeds-de-seguranca": {
-  "titulo": "Os feeds de segurança",
-  "pagina": "platform/protect-and-detect/security-feeds",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 159.8,
-  "resumo": "Os alertas de segurança de todas as fontes num só sítio: pesquisar, filtrar por fonte, arquivar o que não interessa e passar a um relatório de recomendações o que pede ação.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.66,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 38.79,
-    "titulo": "Os artigos"
-   },
-   {
-    "t": 63.52,
-    "titulo": "O que fazer a um artigo"
-   },
-   {
-    "t": 93.64,
-    "titulo": "O relatório"
-   },
-   {
-    "t": 127.61,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "358-wazuh-cheat-sheet": {
-  "titulo": "A Wazuh Cheat Sheet",
-  "pagina": "platform/protect-and-detect/wazuh-cheat-sheet",
-  "grupo": "Formação C — A plataforma",
-  "duracao": 184.2,
-  "resumo": "A referência rápida do Wazuh dentro da plataforma: os comandos com botão de copiar, onde está cada ficheiro, como nasce um alerta, os sete passos para uma regra nova e o que fazer quando algo falha.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 18.44,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 41.26,
-    "titulo": "Os comandos"
-   },
-   {
-    "t": 72.88,
-    "titulo": "Regras e decoders"
-   },
-   {
-    "t": 125.22,
-    "titulo": "Quando algo falha"
-   },
-   {
-    "t": 140.07,
-    "titulo": "Procurar"
-   },
-   {
-    "t": 152.63,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "401-o-primeiro-ano": {
-  "titulo": "O primeiro ano em sete passos",
-  "pagina": "journey/first-year",
-  "grupo": "Formação D — O percurso",
-  "duracao": 108.0,
-  "resumo": "O percurso de uma entidade pública relevante, do primeiro dia à primeira revisão pela gestão: sete passos por ordem de urgência, com o que pedir a quem e onde cada um se faz.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 14.84,
-    "titulo": "Os sete passos"
-   },
-   {
-    "t": 63.45,
-    "titulo": "Na plataforma"
-   },
-   {
-    "t": 78.56,
-    "titulo": "O ciclo"
-   }
-  ]
- },
- "402-autoavaliacao-ao-plano": {
-  "titulo": "Da autoavaliação ao plano",
-  "pagina": "journey/self-assessment-to-plan",
-  "grupo": "Formação D — O percurso",
-  "duracao": 84.1,
-  "resumo": "Medir onde se está, medida a medida, com prova; transformar as lacunas num plano de tratamento com dono e prazo; e levar o que exige compras a projetos avaliados antes de comprar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.42,
-    "titulo": "O percurso"
-   }
-  ]
- },
- "404-o-que-conta-como-prova": {
-  "titulo": "O que conta como prova",
-  "pagina": "journey/what-counts-as-evidence",
-  "grupo": "Formação D — O percurso",
-  "duracao": 97.2,
-  "resumo": "O que um auditor aceita como prova — datada, verificável, ligada ao controlo e à data — e o que não aceita; com exemplos das medidas do Anexo IV.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 10.11,
-    "titulo": "A prova"
-   }
-  ]
- },
- "407-o-que-a-plataforma-poupa": {
-  "titulo": "O que a plataforma poupa — e o que não",
-  "pagina": "journey/what-the-platform-saves",
-  "grupo": "Formação D — O percurso",
-  "duracao": 110.6,
-  "resumo": "Um balanço honesto: o que a plataforma faz sozinha, o que organiza e conta, e o que continua a ser trabalho e decisão da organização — com os limites desta versão ditos em voz alta.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 12.1,
-    "titulo": "O balanço"
-   },
-   {
-    "t": 79.56,
-    "titulo": "Para terminar"
-   }
-  ]
- },
- "501-o-wazuh-e-o-secvision": {
-  "titulo": "O Wazuh e o SecVision",
-  "pagina": "wazuh/wazuh-and-secvision",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 355.8,
-  "resumo": "O que é o Wazuh — agentes, gestor, Indexer — e o que o SecVision faz com ele: as credenciais, a ligação, os agentes com os nomes das máquinas, o estado do servidor, e o catálogo de sistemas ligado à monitorização. Gravado num Wazuh a sério, o do ambiente de testes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 13.98,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 48.89,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 84.27,
-    "titulo": "A ligação"
-   },
-   {
-    "t": 121.24,
-    "titulo": "Os agentes"
-   },
-   {
-    "t": 190.07,
-    "titulo": "Os agentes"
-   },
-   {
-    "t": 218.04,
-    "titulo": "O servidor"
-   },
-   {
-    "t": 259.57,
-    "titulo": "O catálogo"
-   },
-   {
-    "t": 291.5,
-    "titulo": "O ambiente de testes"
-   },
-   {
-    "t": 322.84,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "502-instalar-os-agentes": {
-  "titulo": "Instalar os agentes do Wazuh",
-  "pagina": "wazuh/installing-agents",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 225.0,
-  "resumo": "O que o agente faz numa máquina e porque se instala endurecido; o gerador de scripts do SecVision (gestor, portas, versão, políticas de confiança zero), a fila dos sistemas em GAP, e o assistente do próprio Wazuh, lado a lado; e onde a máquina aparece depois de instalada.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.32,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 47.0,
-    "titulo": "O gerador"
-   },
-   {
-    "t": 77.66,
-    "titulo": "O gerador"
-   },
-   {
-    "t": 111.2,
-    "titulo": "A fila"
-   },
-   {
-    "t": 140.97,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 169.85,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 196.64,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "503-o-explorer": {
-  "titulo": "O Explorer — uma máquina por dentro",
-  "pagina": "wazuh/explorer",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 200.3,
-  "resumo": "O inventário que o agente recolhe — software, processos, rede, contas — e as vulnerabilidades do software instalado, vistos no Explorer do SecVision e no painel do Wazuh, lado a lado, para a mesma máquina do ambiente de testes.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.1,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 39.2,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 57.44,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 88.43,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 107.44,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 135.6,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 162.16,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 172.29,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "504-sistemas-e-agentes": {
-  "titulo": "Ligar os sistemas aos agentes",
-  "pagina": "wazuh/systems-and-agents",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 197.4,
-  "resumo": "Porque é que o catálogo e o Wazuh têm de estar ligados; associar e desassociar um agente a um sistema, o que isso faz ao estado (Monitorizado ou GAP) e à fila de integração; e o que o Wazuh vê do outro lado — os agentes não mudam, a ligação é do catálogo.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.54,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 42.73,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 55.18,
-    "titulo": "Desassociar"
-   },
-   {
-    "t": 80.22,
-    "titulo": "Desassociar"
-   },
-   {
-    "t": 95.3,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 127.05,
-    "titulo": "Associar"
-   },
-   {
-    "t": 150.19,
-    "titulo": "Associar"
-   },
-   {
-    "t": 166.86,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "505-pesquisa-software-e-cve": {
-  "titulo": "Quem tem este software, ou esta CVE",
-  "pagina": "wazuh/software-and-cve-search",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 217.1,
-  "resumo": "Quando sai um alerta de segurança sobre um programa, a primeira pergunta é quem o tem. A pesquisa por software (com versão) e por CVE nos relatórios de recomendações, os sistemas que devolve, os backports, os agentes sem sistema — e a mesma CVE no inventário de vulnerabilidades do Wazuh.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 17.89,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 54.2,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 70.06,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 101.25,
-    "titulo": "Os resultados"
-   },
-   {
-    "t": 131.09,
-    "titulo": "Os resultados"
-   },
-   {
-    "t": 157.81,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 187.25,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "506-falsos-positivos": {
-  "titulo": "Falsos positivos no Wazuh",
-  "pagina": "wazuh/false-positives",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 429.5,
-  "resumo": "O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 16.06,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 56.26,
-    "titulo": "Antes de abrir o ecrã"
-   },
-   {
-    "t": 85.66,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 121.21,
-    "titulo": "O alerta"
-   },
-   {
-    "t": 151.84,
-    "titulo": "A IA"
-   },
-   {
-    "t": 177.29,
-    "titulo": "A IA"
-   },
-   {
-    "t": 210.13,
-    "titulo": "A IA"
-   },
-   {
-    "t": 229.61,
-    "titulo": "A regra"
-   },
-   {
-    "t": 263.22,
-    "titulo": "Aplicar"
-   },
-   {
-    "t": 274.38,
-    "titulo": "Aplicar"
-   },
-   {
-    "t": 300.88,
-    "titulo": "Aplicar"
-   },
-   {
-    "t": 319.45,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 346.38,
-    "titulo": "O histórico"
-   },
-   {
-    "t": 373.41,
-    "titulo": "No Wazuh"
-   },
-   {
-    "t": 397.83,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "507-regras-de-detecao": {
-  "titulo": "Regras de deteção no Wazuh",
-  "pagina": "wazuh/detection-rules",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 300.0,
-  "resumo": "O contrário de um falso positivo: um evento que o Wazuh não conhece e que devia ser alerta. O que são decoders e regras; a linha real de uma aplicação do ambiente de testes, o pedido à IA, a resposta separada em quatro blocos, a aplicação ao gestor; e, no Wazuh, a mesma linha antes (nenhum decoder) e depois (regra e alerta), e os alertas novos a chegar.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 15.73,
-    "titulo": "O conceito"
-   },
-   {
-    "t": 46.57,
-    "titulo": "No Wazuh, antes"
-   },
-   {
-    "t": 78.0,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 103.45,
-    "titulo": "A IA"
-   },
-   {
-    "t": 128.8,
-    "titulo": "A IA"
-   },
-   {
-    "t": 150.49,
-    "titulo": "No SecVision"
-   },
-   {
-    "t": 184.3,
-    "titulo": "Aplicar"
-   },
-   {
-    "t": 191.74,
-    "titulo": "Aplicar"
-   },
-   {
-    "t": 215.86,
-    "titulo": "Aplicar"
-   },
-   {
-    "t": 225.4,
-    "titulo": "No Wazuh, depois"
-   },
-   {
-    "t": 245.36,
-    "titulo": "No Wazuh, depois"
-   },
-   {
-    "t": 271.34,
-    "titulo": "Resumo"
-   }
-  ]
- },
- "508-classificar-e-studio": {
-  "titulo": "Classificar alertas e ensaiar regras",
-  "pagina": "wazuh/ai-classification-and-studio",
-  "grupo": "Formação E — Wazuh",
-  "duracao": 277.8,
-  "resumo": "Duas ferramentas para quem afina a deteção: a classificação de um alerta com IA — falso positivo ou alerta real, com confiança, impacto e prioridade, guardada — e o Wazuh Rule Studio, que importa as regras do gestor e as ensaia num Wazuh próprio, em Docker, sem tocar no de produção.",
-  "capitulos": [
-   {
-    "t": 0.0,
-    "titulo": "Introdução"
-   },
-   {
-    "t": 13.74,
-    "titulo": "Classificar"
-   },
-   {
-    "t": 37.17,
-    "titulo": "Classificar"
-   },
-   {
-    "t": 66.6,
-    "titulo": "Classificar"
-   },
-   {
-    "t": 89.27,
-    "titulo": "Classificar"
-   },
-   {
-    "t": 111.13,
-    "titulo": "Classificar"
-   },
-   {
-    "t": 141.19,
-    "titulo": "O Rule Studio"
-   },
-   {
-    "t": 157.79,
-    "titulo": "O Rule Studio"
-   },
-   {
-    "t": 192.91,
-    "titulo": "Ensaiar"
-   },
-   {
-    "t": 202.79,
-    "titulo": "Ensaiar"
-   },
-   {
-    "t": 209.91,
-    "titulo": "Ensaiar"
-   },
-   {
-    "t": 246.56,
-    "titulo": "Resumo"
-   }
-  ]
- }
+  "01-antes-de-instalar": {
+    "titulo": "Antes de instalar",
+    "pagina": "installation/before-installing",
+    "grupo": "Instalação",
+    "duracao": 304.4,
+    "resumo": "O ponto de partida da série: o que é o SecVision, o mínimo de terminal para acompanhar os vídeos, os dois modos de instalação e como escolher, o que preparar e o que o instalador vai perguntar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 32.04,
+        "titulo": "O que vamos instalar"
+      },
+      {
+        "t": 63.26,
+        "titulo": "O mínimo de terminal"
+      },
+      {
+        "t": 101.61,
+        "titulo": "Os dois modos"
+      },
+      {
+        "t": 138.4,
+        "titulo": "Os dois modos"
+      },
+      {
+        "t": 174.9,
+        "titulo": "Preparar a máquina"
+      },
+      {
+        "t": 226.6,
+        "titulo": "As perguntas do instalador"
+      },
+      {
+        "t": 263.82,
+        "titulo": "Antes do primeiro acesso"
+      }
+    ]
+  },
+  "02-obter-ubuntu-server": {
+    "titulo": "Obter o Ubuntu Server",
+    "pagina": "installation/get-ubuntu-server",
+    "grupo": "Instalação",
+    "duracao": 259.3,
+    "resumo": "Descarregar o Ubuntu Server 24.04 LTS do site oficial, confirmar a imagem com o SHA256 e prepará-la para o servidor: uma pen de arranque, ou o ISO numa máquina virtual.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 19.21,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 53.21,
+        "titulo": "Descarregar"
+      },
+      {
+        "t": 138.28,
+        "titulo": "Confirmar a imagem"
+      },
+      {
+        "t": 218.2,
+        "titulo": "Preparar o arranque"
+      }
+    ]
+  },
+  "03-instalar-ubuntu-server": {
+    "titulo": "Instalar o Ubuntu Server",
+    "pagina": "installation/install-ubuntu-server",
+    "grupo": "Instalação",
+    "duracao": 396.9,
+    "resumo": "O instalador do Ubuntu Server 24.04 do princípio ao fim: idioma e teclado, rede, discos com LVM (e o espaço todo para o sistema), utilizador, servidor SSH, a instalação, o primeiro arranque e as primeiras tarefas de um servidor novo.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.63,
+        "titulo": "Primeiros ecrãs"
+      },
+      {
+        "t": 75.86,
+        "titulo": "Rede"
+      },
+      {
+        "t": 124.64,
+        "titulo": "Discos"
+      },
+      {
+        "t": 189.0,
+        "titulo": "Utilizador e acesso"
+      },
+      {
+        "t": 252.23,
+        "titulo": "A instalação"
+      },
+      {
+        "t": 294.75,
+        "titulo": "Primeiro arranque"
+      },
+      {
+        "t": 368.42,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "04-instalar-nativo": {
+    "titulo": "Instalar em modo nativo",
+    "pagina": "installation/native-install",
+    "grupo": "Instalação",
+    "duracao": 506.7,
+    "resumo": "A instalação completa em modo nativo, num Ubuntu 24.04 acabado de instalar: obter o código, correr o instalador, responder às perguntas, esperar pelo fim e confirmar que a plataforma está a funcionar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 31.85,
+        "titulo": "Confirmar a máquina"
+      },
+      {
+        "t": 60.4,
+        "titulo": "Obter o código"
+      },
+      {
+        "t": 105.29,
+        "titulo": "O instalador"
+      },
+      {
+        "t": 155.31,
+        "titulo": "Pré-requisitos"
+      },
+      {
+        "t": 262.55,
+        "titulo": "O assistente"
+      },
+      {
+        "t": 372.68,
+        "titulo": "Construção e arranque"
+      },
+      {
+        "t": 414.44,
+        "titulo": "Resumo"
+      },
+      {
+        "t": 444.66,
+        "titulo": "Confirmar que funciona"
+      }
+    ]
+  },
+  "05-instalar-docker": {
+    "titulo": "Instalar em modo Docker",
+    "pagina": "installation/docker-install",
+    "grupo": "Instalação",
+    "duracao": 378.1,
+    "resumo": "A instalação completa em modo Docker, num Ubuntu 24.04 acabado de instalar: o instalador põe o Docker, o assistente configura a aplicação e o docker compose arranca tudo em contentores.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 27.39,
+        "titulo": "O que muda"
+      },
+      {
+        "t": 53.69,
+        "titulo": "Obter o código"
+      },
+      {
+        "t": 85.7,
+        "titulo": "O instalador"
+      },
+      {
+        "t": 156.22,
+        "titulo": "O assistente de configuração"
+      },
+      {
+        "t": 246.04,
+        "titulo": "Construir e arrancar"
+      },
+      {
+        "t": 288.45,
+        "titulo": "Confirmar"
+      },
+      {
+        "t": 346.28,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "06-primeiro-acesso": {
+    "titulo": "O primeiro acesso",
+    "pagina": "installation/first-access",
+    "grupo": "Instalação",
+    "duracao": 255.3,
+    "resumo": "Entrar pela primeira vez com a conta inicial, trocar a palavra-passe e ativar o segundo fator com uma aplicação autenticadora — e o que muda nas entradas seguintes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.6,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 42.17,
+        "titulo": "Entrar com a conta inicial"
+      },
+      {
+        "t": 64.89,
+        "titulo": "A palavra-passe nova"
+      },
+      {
+        "t": 103.53,
+        "titulo": "O segundo fator"
+      },
+      {
+        "t": 190.6,
+        "titulo": "Dentro"
+      },
+      {
+        "t": 206.16,
+        "titulo": "As entradas seguintes"
+      }
+    ]
+  },
+  "07-ambiente-de-testes": {
+    "titulo": "O ambiente de testes",
+    "pagina": "installation/test-environment",
+    "grupo": "Instalação",
+    "duracao": 311.3,
+    "resumo": "Montar, ao lado da produção, uma segunda instalação cheia de dados inventados, para aprender e experimentar sem tocar em nada real — e entrar nela.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.07,
+        "titulo": "O que é"
+      },
+      {
+        "t": 49.64,
+        "titulo": "Criar o ambiente"
+      },
+      {
+        "t": 93.66,
+        "titulo": "Os dados de teste"
+      },
+      {
+        "t": 133.6,
+        "titulo": "Como entrar"
+      },
+      {
+        "t": 199.22,
+        "titulo": "Entrar nos testes"
+      },
+      {
+        "t": 235.56,
+        "titulo": "Explorar"
+      },
+      {
+        "t": 274.75,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "101-ciberseguranca-e-gestao": {
+    "titulo": "A cibersegurança é um tema de gestão",
+    "pagina": "fundamentals/cybersecurity-and-management",
+    "grupo": "Formação A — Fundamentos",
+    "duracao": 282.1,
+    "resumo": "Porque é que a lei põe a direção a responder pela cibersegurança, o que isso muda numa organização pública, e como está organizada esta formação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 30.62,
+        "titulo": "O que mudou"
+      },
+      {
+        "t": 121.77,
+        "titulo": "A direção na lei"
+      },
+      {
+        "t": 206.72,
+        "titulo": "O percurso"
+      }
+    ]
+  },
+  "102-informacao-e-ativos": {
+    "titulo": "Informação, ativos e as três propriedades",
+    "pagina": "fundamentals/information-and-assets",
+    "grupo": "Formação A — Fundamentos",
+    "duracao": 268.5,
+    "resumo": "O que é um ativo, porque é que a informação é o ativo principal, e o que significa protegê-la: confidencialidade, integridade e disponibilidade — com exemplos de uma organização pública.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.78,
+        "titulo": "Ativos"
+      },
+      {
+        "t": 99.65,
+        "titulo": "C, I, A"
+      },
+      {
+        "t": 145.36,
+        "titulo": "Classificar"
+      },
+      {
+        "t": 204.06,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "103-risco": {
+    "titulo": "O que é o risco",
+    "pagina": "fundamentals/risk",
+    "grupo": "Formação A — Fundamentos",
+    "duracao": 413.7,
+    "resumo": "Ameaça, vulnerabilidade, impacto e probabilidade; risco inerente e residual; o apetite pelo risco como decisão de gestão — e porque é que o risco nunca vai a zero.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 38.83,
+        "titulo": "Uma sensação ou uma quantidade"
+      },
+      {
+        "t": 70.63,
+        "titulo": "As peças"
+      },
+      {
+        "t": 164.3,
+        "titulo": "Medir"
+      },
+      {
+        "t": 237.3,
+        "titulo": "Inerente e residual"
+      },
+      {
+        "t": 322.01,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "104-controlos-e-sgsi": {
+    "titulo": "Controlos, medidas e o sistema de gestão",
+    "pagina": "fundamentals/controls-and-isms",
+    "grupo": "Formação A — Fundamentos",
+    "duracao": 260.3,
+    "resumo": "O que é um controlo, porque é que um controlo não é uma ferramenta, as três naturezas das medidas, e o sistema de gestão da segurança da informação com o ciclo planear, executar, verificar, agir.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.88,
+        "titulo": "Controlos"
+      },
+      {
+        "t": 148.9,
+        "titulo": "O SGSI"
+      }
+    ]
+  },
+  "105-normas-e-referenciais": {
+    "titulo": "Normas e quadros de referência",
+    "pagina": "fundamentals/standards-and-frameworks",
+    "grupo": "Formação A — Fundamentos",
+    "duracao": 226.8,
+    "resumo": "De onde vêm as listas de controlos: ISO/IEC 27001 e 27002, QNRCS, NIST CSF. E três palavras que se confundem — conformidade, certificação e acreditação — com o que a lei portuguesa faz com elas.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.37,
+        "titulo": "Os referenciais"
+      },
+      {
+        "t": 91.52,
+        "titulo": "Conformidade, certificação, acreditação"
+      },
+      {
+        "t": 129.75,
+        "titulo": "Na lei portuguesa"
+      }
+    ]
+  },
+  "106-iso-27001-por-dentro": {
+    "titulo": "A ISO/IEC 27001 por dentro",
+    "pagina": "fundamentals/iso-27001-inside",
+    "grupo": "Formação A — Fundamentos",
+    "duracao": 249.1,
+    "resumo": "Como está organizada a ISO/IEC 27001: as cláusulas 4 a 10 do sistema de gestão, os 93 controlos do Anexo A e a Declaração de Aplicabilidade — em conceitos, sem o texto da norma.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 22.11,
+        "titulo": "A estrutura"
+      },
+      {
+        "t": 90.08,
+        "titulo": "O Anexo A"
+      },
+      {
+        "t": 132.36,
+        "titulo": "A SoA"
+      },
+      {
+        "t": 167.81,
+        "titulo": "Certificar"
+      }
+    ]
+  },
+  "201-da-nis2-ao-dl-125": {
+    "titulo": "Da NIS 2 ao DL 125/2025 e ao Regulamento 756/2026",
+    "pagina": "law/from-nis2-to-dl-125",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 208.4,
+    "resumo": "A cadeia normativa da cibersegurança em Portugal: a diretiva europeia, o decreto-lei que a transpõe, e o regulamento do CNCS que diz como se cumpre — e porque é que uma diretiva não se audita.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 24.44,
+        "titulo": "Os três elos"
+      },
+      {
+        "t": 95.88,
+        "titulo": "O que obriga"
+      }
+    ]
+  },
+  "202-quem-esta-abrangido": {
+    "titulo": "Quem está abrangido",
+    "pagina": "law/who-is-covered",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 201.9,
+    "resumo": "As três perguntas para saber se a organização está abrangida, e em que qualificação: entidade essencial, importante ou pública relevante do Grupo A ou B.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.3,
+        "titulo": "O âmbito"
+      },
+      {
+        "t": 53.67,
+        "titulo": "As qualificações"
+      },
+      {
+        "t": 149.93,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "203-autoidentificacao-e-qualificacao": {
+    "titulo": "Autoidentificação e qualificação",
+    "pagina": "law/self-identification",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 492.4,
+    "resumo": "Como uma entidade entra no regime da cibersegurança: a autoidentificação na plataforma do CNCS, os prazos, o que o formulário pede, a audiência prévia, a decisão de qualificação e o que ela traz — com o caso de um politécnico público.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 32.52,
+        "titulo": "As categorias"
+      },
+      {
+        "t": 111.39,
+        "titulo": "Autoidentificação"
+      },
+      {
+        "t": 210.39,
+        "titulo": "O formulário"
+      },
+      {
+        "t": 305.6,
+        "titulo": "A qualificação"
+      },
+      {
+        "t": 409.23,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "204-registo-e-atualizacao": {
+    "titulo": "O registo, e mantê-lo atualizado",
+    "pagina": "law/registration",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 177.0,
+    "resumo": "O dever de registo do art. 35.º do DL, o que se entrega ao CNCS, o prazo de 30 dias úteis para comunicar alterações, e a lista de ativos acessíveis pela Internet.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.05,
+        "titulo": "O dever de registo"
+      },
+      {
+        "t": 51.58,
+        "titulo": "Atualizar"
+      },
+      {
+        "t": 119.16,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "205-responsavel-e-ponto-de-contacto": {
+    "titulo": "Responsável de cibersegurança e ponto de contacto",
+    "pagina": "law/security-officer-and-contact-point",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 219.1,
+    "resumo": "As duas pessoas que a lei pede: quem gere a cibersegurança e responde à direção, e quem atende o CNCS a qualquer hora — o que cada uma faz, os prazos para as comunicar, e o que vale para as entidades públicas relevantes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 19.74,
+        "titulo": "O responsável"
+      },
+      {
+        "t": 51.44,
+        "titulo": "O ponto de contacto"
+      },
+      {
+        "t": 115.08,
+        "titulo": "Públicas relevantes"
+      },
+      {
+        "t": 158.52,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "206-deveres-dos-orgaos-de-gestao": {
+    "titulo": "Os deveres dos órgãos de gestão",
+    "pagina": "law/management-duties",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 172.3,
+    "resumo": "O que o art. 25.º do DL pede à direção — aprovar, supervisionar, assegurar a formação — e porque é que a responsabilidade não se delega; e o que muda para as entidades públicas relevantes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.68,
+        "titulo": "O artigo 25.º"
+      },
+      {
+        "t": 47.29,
+        "titulo": "A responsabilidade"
+      },
+      {
+        "t": 76.16,
+        "titulo": "Públicas relevantes"
+      }
+    ]
+  },
+  "207-gestao-de-riscos-e-matriz": {
+    "titulo": "Gestão de riscos e a Matriz de Risco",
+    "pagina": "law/risk-management-and-matrix",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 195.5,
+    "resumo": "O que a lei pede sobre risco: medidas proporcionais, análise pelo menos anual e risco residual documentado; e como a Matriz de Risco do CNCS decide o nível de conformidade — Básico, Substancial ou Elevado — das entidades essenciais e importantes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.66,
+        "titulo": "A lei"
+      },
+      {
+        "t": 70.85,
+        "titulo": "A Matriz de Risco"
+      },
+      {
+        "t": 120.83,
+        "titulo": "Públicas relevantes"
+      }
+    ]
+  },
+  "208-publicas-relevantes-anexo-iv": {
+    "titulo": "Entidades públicas relevantes — o Anexo IV",
+    "pagina": "law/public-entities-annex-iv",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 187.4,
+    "resumo": "Como está organizado o Anexo IV do Regulamento: 31 medidas, quantas cabem a cada grupo, porque é que o Grupo A cumpre também as do Grupo B, e como se lê uma medida e o seu critério de verificação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 19.35,
+        "titulo": "A obrigação"
+      },
+      {
+        "t": 49.49,
+        "titulo": "A estrutura"
+      },
+      {
+        "t": 111.67,
+        "titulo": "Ler uma medida"
+      },
+      {
+        "t": 139.75,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "209-anexo-iv-medidas-organizacionais": {
+    "titulo": "Anexo IV — as medidas organizacionais",
+    "pagina": "law/annex-iv-organisational",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 194.8,
+    "resumo": "As doze medidas organizacionais do Anexo IV, uma a uma: o que pede cada uma, a quem, e que prova se espera — primeiro as do Grupo B, depois as que só o Grupo A cumpre.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.01,
+        "titulo": "Grupos A e B"
+      },
+      {
+        "t": 70.75,
+        "titulo": "Só Grupo A"
+      },
+      {
+        "t": 140.37,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "210-anexo-iv-medidas-tecnologicas-e-humanas": {
+    "titulo": "Anexo IV — as medidas tecnológicas e humanas",
+    "pagina": "law/annex-iv-technical-and-human",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 185.2,
+    "resumo": "As dezasseis medidas tecnológicas e as três humanas do Anexo IV: o que pede cada uma, o que o Grupo A acrescenta, e que prova técnica um auditor espera.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.56,
+        "titulo": "Tecnológicas"
+      },
+      {
+        "t": 103.61,
+        "titulo": "Humanas"
+      }
+    ]
+  },
+  "211-essenciais-e-importantes-anexo-iii": {
+    "titulo": "Entidades essenciais e importantes — o Anexo III",
+    "pagina": "law/essential-and-important-annex-iii",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 166.7,
+    "resumo": "As medidas mínimas das entidades essenciais e importantes: 87 controlos do QNRCS em três níveis cumulativos — Básico, Substancial e Elevado —, de onde vem o nível, e o prazo para se adaptar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.28,
+        "titulo": "O nível"
+      },
+      {
+        "t": 41.38,
+        "titulo": "Os níveis"
+      },
+      {
+        "t": 118.57,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "212-anexo-iii-por-funcao": {
+    "titulo": "Anexo III — medidas e critérios, função a função",
+    "pagina": "law/annex-iii-by-function",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 166.2,
+    "resumo": "Os 87 controlos do Anexo III pelas seis funções — governar, identificar, proteger, detetar, responder e recuperar —, com um exemplo de cada, e como se lê o critério de verificação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.32,
+        "titulo": "As seis funções"
+      },
+      {
+        "t": 80.84,
+        "titulo": "O critério"
+      },
+      {
+        "t": 110.04,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "213-o-qnrcs": {
+    "titulo": "O QNRCS — o Anexo I",
+    "pagina": "law/qnrcs",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 162.2,
+    "resumo": "O Quadro Nacional de Referência para a Cibersegurança: objetivos, categorias e controlos; para que serve se as medidas mínimas já existem, e como se usa para ir além delas.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.68,
+        "titulo": "O que é"
+      },
+      {
+        "t": 41.36,
+        "titulo": "A estrutura"
+      },
+      {
+        "t": 72.46,
+        "titulo": "Para que serve"
+      }
+    ]
+  },
+  "214-incidentes-notificar-a-tempo": {
+    "titulo": "Incidentes — notificar a tempo",
+    "pagina": "law/incident-notification",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 230.2,
+    "resumo": "Quando um incidente é significativo, as três notificações ao CNCS e os seus prazos — 24 horas, 24 horas após o fim do impacto, 30 dias úteis —, a regra das duas horas, e o relógio diferente da proteção de dados.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 21.1,
+        "titulo": "Significativo"
+      },
+      {
+        "t": 53.53,
+        "titulo": "Os prazos"
+      },
+      {
+        "t": 157.79,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "215-relatorio-fornecedores-risco-residual": {
+    "titulo": "Relatório anual, fornecedores e risco residual",
+    "pagina": "law/annual-report-suppliers-residual-risk",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 170.7,
+    "resumo": "Três deveres que vivem ao longo do ano: o relatório anual e o seu prazo de janeiro, a segurança da cadeia de abastecimento, e a gestão do risco residual — e o que vale para as entidades públicas.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.73,
+        "titulo": "O relatório anual"
+      },
+      {
+        "t": 60.23,
+        "titulo": "Fornecedores"
+      },
+      {
+        "t": 92.92,
+        "titulo": "Risco residual"
+      },
+      {
+        "t": 119.24,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "216-a-certificacao": {
+    "titulo": "A certificação",
+    "pagina": "law/certification",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 181.2,
+    "resumo": "A certificação na lei portuguesa: voluntária com presunção de cumprimento, exigível pelo CNCS com até 24 meses de adaptação; os esquemas reconhecidos, o que se entrega, e o que se comunica depois.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.82,
+        "titulo": "Voluntária ou exigida"
+      },
+      {
+        "t": 49.06,
+        "titulo": "Os esquemas"
+      },
+      {
+        "t": 78.92,
+        "titulo": "Depois do certificado"
+      },
+      {
+        "t": 129.24,
+        "titulo": "Na sua organização"
+      }
+    ]
+  },
+  "217-supervisao-e-sancoes": {
+    "titulo": "Supervisão e sanções",
+    "pagina": "law/supervision-and-penalties",
+    "grupo": "Formação B — A lei e o CNCS",
+    "duracao": 183.9,
+    "resumo": "O que acontece quando não se cumpre: contraordenações muito graves, graves e leves, as coimas por qualificação — com as das entidades públicas relevantes —, as sanções acessórias, e a advertência prévia.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.54,
+        "titulo": "As infrações"
+      },
+      {
+        "t": 46.06,
+        "titulo": "As coimas"
+      },
+      {
+        "t": 77.14,
+        "titulo": "O processo"
+      }
+    ]
+  },
+  "301-primeiro-acesso-e-seguranca": {
+    "titulo": "Primeiro acesso e segurança da plataforma",
+    "pagina": "platform/getting-started/first-access-and-security",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 109.2,
+    "resumo": "O primeiro acesso em três tempos — senha inicial, senha nova, segundo fator — e as três decisões sobre a segurança da própria plataforma que se tomam antes de escrever a primeira política.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.36,
+        "titulo": "Primeiro acesso"
+      },
+      {
+        "t": 48.17,
+        "titulo": "A segurança da plataforma"
+      },
+      {
+        "t": 85.59,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "302-contas-papeis-e-modo": {
+    "titulo": "Contas, papéis e modo do sistema",
+    "pagina": "platform/getting-started/accounts-roles-and-mode",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 140.6,
+    "resumo": "Uma conta por pessoa, com o papel certo — visualizador, operador, administrador —, a revisão periódica de acessos com finalidade declarada, e o modo que distingue produção de ensaio.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.17,
+        "titulo": "Os papéis"
+      },
+      {
+        "t": 40.16,
+        "titulo": "Os utilizadores"
+      },
+      {
+        "t": 80.15,
+        "titulo": "Permissões"
+      },
+      {
+        "t": 91.81,
+        "titulo": "O modo"
+      },
+      {
+        "t": 112.99,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "305-ficha-da-organizacao": {
+    "titulo": "A Ficha da organização",
+    "pagina": "platform/organisation/organisation-profile",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 486.2,
+    "resumo": "O primeiro registo a preencher: quem é a entidade, os contactos, a dimensão e o contexto — os dados que a lei manda inscrever na plataforma do CNCS, e o que a plataforma faz com eles.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 21.27,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 65.24,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 104.79,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 175.98,
+        "titulo": "Identificação"
+      },
+      {
+        "t": 261.2,
+        "titulo": "Contactos"
+      },
+      {
+        "t": 316.72,
+        "titulo": "Dimensão"
+      },
+      {
+        "t": 345.82,
+        "titulo": "Contexto"
+      },
+      {
+        "t": 383.95,
+        "titulo": "Manter atualizado"
+      },
+      {
+        "t": 438.76,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "306-papeis-e-pessoas": {
+    "titulo": "Papéis, responsabilidades e pessoas",
+    "pagina": "platform/organisation/roles-and-people",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 297.3,
+    "resumo": "Quem faz o quê, desde quando e por que ato: o catálogo de papéis, as designações datadas, as lacunas que a lei manda preencher, e o registo de pessoal com o sítio onde cada pessoa aparece.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.48,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 45.15,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 61.12,
+        "titulo": "Os papéis"
+      },
+      {
+        "t": 150.63,
+        "titulo": "Uma designação"
+      },
+      {
+        "t": 189.38,
+        "titulo": "As pessoas"
+      },
+      {
+        "t": 254.13,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "307-partes-interessadas": {
+    "titulo": "Partes interessadas e requisitos",
+    "pagina": "platform/organisation/interested-parties",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 189.9,
+    "resumo": "Quem tem expectativas sobre a organização, por que canal se fala com cada um, e o registo dos requisitos legais, regulamentares e contratuais — com os controlos que os cumprem.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.41,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 46.21,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 59.77,
+        "titulo": "As partes"
+      },
+      {
+        "t": 118.83,
+        "titulo": "Os requisitos"
+      },
+      {
+        "t": 152.34,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "308-autoridades-e-notificacoes": {
+    "titulo": "Autoridades, designações e notificações",
+    "pagina": "platform/organisation/authorities-and-notifications",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 229.4,
+    "resumo": "Onde se guarda o que se comunica às autoridades: as designações e a data em que foram comunicadas, as notificações de incidentes com o prazo contado, e os contactos autorizados.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.3,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 34.24,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 53.74,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 92.68,
+        "titulo": "Notificações"
+      },
+      {
+        "t": 129.6,
+        "titulo": "Designações"
+      },
+      {
+        "t": 148.82,
+        "titulo": "Contactos"
+      },
+      {
+        "t": 180.27,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "309-acordos-e-contratos": {
+    "titulo": "Acordos e contratos",
+    "pagina": "platform/organisation/agreements-and-contracts",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 175.0,
+    "resumo": "O registo centralizado dos contratos, NDA e acordos de subcontratação de dados, com as cláusulas de segurança como campos — para se poderem contar — e os prazos de denúncia à vista.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.43,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 38.61,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 56.59,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 94.88,
+        "titulo": "Um acordo"
+      },
+      {
+        "t": 131.63,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "310-protecao-de-dados": {
+    "titulo": "Proteção de dados pessoais",
+    "pagina": "platform/organisation/data-protection",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 221.5,
+    "resumo": "O registo de atividades de tratamento, as avaliações de impacto, os pedidos dos titulares, as violações com o relógio das 72 horas, e o expurgo pelos prazos de conservação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.9,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 44.68,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 62.16,
+        "titulo": "O registo"
+      },
+      {
+        "t": 119.72,
+        "titulo": "Avaliações e direitos"
+      },
+      {
+        "t": 152.92,
+        "titulo": "Violações"
+      },
+      {
+        "t": 183.03,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "311-importar-o-parque": {
+    "titulo": "Importar o parque",
+    "pagina": "platform/inventory/import",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 137.9,
+    "resumo": "O primeiro passo do inventário: trazer as exportações do Active Directory, do DNS e do DHCP, e deixar a plataforma correlacioná-las num inventário único do parque técnico.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.2,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 36.81,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 53.74,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 108.73,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "312-ver-o-parque": {
+    "titulo": "Ver o parque",
+    "pagina": "platform/inventory/view-the-estate",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 134.9,
+    "resumo": "O inventário de ativos e as suas fontes, os filtros, a baixa de um equipamento sem apagar nada, e o inventário de redes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.89,
+        "titulo": "O inventário"
+      },
+      {
+        "t": 87.13,
+        "titulo": "As redes"
+      },
+      {
+        "t": 107.19,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "313-catalogo-de-seguranca": {
+    "titulo": "O catálogo de segurança e a cobertura",
+    "pagina": "platform/inventory/security-catalogue",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 144.7,
+    "resumo": "Os sistemas que a instituição opera, com o nível de criticidade de N1 a N4, se estão em âmbito e se têm monitorização — e a taxa de cobertura que daí sai, no ponto de situação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.87,
+        "titulo": "Os níveis"
+      },
+      {
+        "t": 43.09,
+        "titulo": "O catálogo"
+      },
+      {
+        "t": 71.59,
+        "titulo": "O ponto de situação"
+      },
+      {
+        "t": 108.87,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "314-ativos-de-informacao": {
+    "titulo": "Ativos de informação",
+    "pagina": "platform/inventory/information-assets",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 135.1,
+    "resumo": "Do servidor à informação: cada ativo com tipo, classificação, confidencialidade, integridade e disponibilidade, dono e os sistemas em que assenta — e a árvore do que está dentro de quê.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.51,
+        "titulo": "Os campos"
+      },
+      {
+        "t": 46.64,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 72.4,
+        "titulo": "A árvore"
+      },
+      {
+        "t": 104.11,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "315-grupos-e-organograma": {
+    "titulo": "Grupos, unidades e organograma",
+    "pagina": "platform/inventory/groups-and-org-chart",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 144.4,
+    "resumo": "Como se arruma a organização: grupos de pessoas, bens e serviços, unidades orgânicas com governo central ou delegado, e o organograma que junta unidades, papéis e pessoas.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.28,
+        "titulo": "As famílias"
+      },
+      {
+        "t": 47.81,
+        "titulo": "Os grupos"
+      },
+      {
+        "t": 77.72,
+        "titulo": "O organograma"
+      },
+      {
+        "t": 112.05,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "317-processos-e-servicos": {
+    "titulo": "Processos e serviços",
+    "pagina": "platform/inventory/processes-and-services",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 150.7,
+    "resumo": "O que a organização faz: cada processo com dono, tipo e criticidade, os serviços críticos de que dependem partes externas, e as dependências de ativos, sistemas e fornecedores.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.93,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 42.89,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 59.1,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 78.56,
+        "titulo": "Um processo"
+      },
+      {
+        "t": 112.43,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "318-as-normas": {
+    "titulo": "As normas e os regulamentos",
+    "pagina": "platform/compliance/standards",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 149.0,
+    "resumo": "Onde se leem as normas e as leis que vêm com a plataforma: pesquisar, filtrar, abrir um artigo com as remissões — e a diferença entre o que se audita e o que só se consulta.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.95,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 53.03,
+        "titulo": "Ler um artigo"
+      },
+      {
+        "t": 82.54,
+        "titulo": "Só consulta"
+      },
+      {
+        "t": 118.43,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "319-ambito-do-sgsi": {
+    "titulo": "O âmbito do sistema de gestão",
+    "pagina": "platform/compliance/isms-scope",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 127.9,
+    "resumo": "A decisão que desbloqueia o resto: que normas entram no sistema de gestão, e a declaração de âmbito — unidades, localizações, processos, sistemas e exclusões.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.33,
+        "titulo": "O que escolher"
+      },
+      {
+        "t": 37.81,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 70.92,
+        "titulo": "A declaração"
+      },
+      {
+        "t": 107.6,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "320-declaracao-de-aplicabilidade": {
+    "titulo": "A Declaração de Aplicabilidade",
+    "pagina": "platform/compliance/statement-of-applicability",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 113.9,
+    "resumo": "Controlo a controlo: aplicável ou não, porquê, de onde vem, quem responde, em que estado está e quando se revê — e o número declarado de conformidade que daí sai.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.49,
+        "titulo": "Os campos"
+      },
+      {
+        "t": 37.71,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 54.43,
+        "titulo": "Uma declaração"
+      },
+      {
+        "t": 85.09,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "321-mapeamento-e-ferramentas": {
+    "titulo": "Mapeamento entre referenciais e cobertura por ferramenta",
+    "pagina": "platform/compliance/mapping-and-tools",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 132.0,
+    "resumo": "Como um controlo cumprido numa norma conta para outra — a herança pelo mapeamento confirmado — e que ferramentas cobrem que controlos, lido ao contrário das tabelas das normas.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.53,
+        "titulo": "A herança"
+      },
+      {
+        "t": 42.7,
+        "titulo": "O mapeamento"
+      },
+      {
+        "t": 72.88,
+        "titulo": "As ferramentas"
+      },
+      {
+        "t": 104.57,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "323-criterios-de-risco": {
+    "titulo": "Critérios de risco e catálogo de ameaças",
+    "pagina": "platform/risk/risk-criteria",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 136.7,
+    "resumo": "A régua do risco: a escala, as bandas e o que se aceita, as células que a aritmética erra, os limiares de decisão — aprovados antes de apreciar. E o catálogo de ameaças que vem com a plataforma.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.91,
+        "titulo": "Os critérios"
+      },
+      {
+        "t": 51.37,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 84.64,
+        "titulo": "O catálogo"
+      },
+      {
+        "t": 111.84,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "325-registo-de-risco": {
+    "titulo": "O registo de risco",
+    "pagina": "platform/risk/risk-register",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 135.5,
+    "resumo": "Cada risco sobre um ativo de informação: ameaça, vulnerabilidade, probabilidade, impacto por critério, tratamento, controlos e o eixo em que agem — e o risco inerente e o residual.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.34,
+        "titulo": "Os campos"
+      },
+      {
+        "t": 46.95,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 74.94,
+        "titulo": "Um risco"
+      },
+      {
+        "t": 107.88,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "326-tratamento-do-risco": {
+    "titulo": "Tratar o risco e relatar à direção",
+    "pagina": "platform/risk/risk-treatment",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 162.2,
+    "resumo": "O plano de tratamento e a sua aprovação pelo dono do risco, a revisão periódica, a retenção com prazo, o relatório de risco à direção que pede decisões, e os cenários estratégicos.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.35,
+        "titulo": "O ciclo"
+      },
+      {
+        "t": 44.89,
+        "titulo": "O plano"
+      },
+      {
+        "t": 68.13,
+        "titulo": "O relato"
+      },
+      {
+        "t": 102.48,
+        "titulo": "Cenários"
+      },
+      {
+        "t": 131.96,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "327-aceitacoes-e-projetos": {
+    "titulo": "Aceitações, exceções e projetos",
+    "pagina": "platform/risk/acceptances-and-projects",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 107.3,
+    "resumo": "Aceitar um risco com fundamento e prazo, que caduca sozinho; e apreciar o risco de um projeto ou de uma aquisição antes de decidir — com o anexo de requisitos de segurança para o procedimento.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.25,
+        "titulo": "Aceitações"
+      },
+      {
+        "t": 49.29,
+        "titulo": "Projetos"
+      },
+      {
+        "t": 82.06,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "329-fornecedores": {
+    "titulo": "Fornecedores e contratos públicos",
+    "pagina": "platform/risk/suppliers",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 134.8,
+    "resumo": "O registo de fornecedores com criticidade, acesso a dados e relação, o inquérito de avaliação respondido por quem não tem conta, e os contratos públicos do portal BASE.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.42,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 32.99,
+        "titulo": "O registo"
+      },
+      {
+        "t": 68.88,
+        "titulo": "Contratos públicos"
+      },
+      {
+        "t": 102.92,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "330-documentos-do-sgsi": {
+    "titulo": "As políticas e os procedimentos do SGSI",
+    "pagina": "platform/protect-and-detect/isms-documents",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 145.3,
+    "resumo": "Escrever as políticas e os procedimentos, ligá-los aos controlos que governam, aprová-los com versão assinada, exportá-los para Word com a imagem da casa, e arquivar em vez de apagar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.2,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 46.45,
+        "titulo": "Os documentos"
+      },
+      {
+        "t": 78.98,
+        "titulo": "Um documento"
+      },
+      {
+        "t": 115.54,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "331-formacao-e-sensibilizacao": {
+    "titulo": "Formação e sensibilização",
+    "pagina": "platform/protect-and-detect/training-and-awareness",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 97.2,
+    "resumo": "A formação registada por pessoa, e não por sessão: o acolhimento, as reciclagens com validade, e quem está em falta — com a lista nominal reservada a quem a pode ver.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.8,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 32.32,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 71.88,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "332-agentes-e-superficie": {
+    "titulo": "Fechar os GAP e ver o que está exposto",
+    "pagina": "platform/protect-and-detect/agents-and-surface",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 146.1,
+    "resumo": "A fila de integração dos sistemas em GAP e o gerador dos scripts do agente de monitorização; e a superfície exposta, por fora e por dentro, com as vulnerabilidades em exploração e os equipamentos fora do catálogo.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.1,
+        "titulo": "A fila"
+      },
+      {
+        "t": 39.3,
+        "titulo": "O script"
+      },
+      {
+        "t": 68.57,
+        "titulo": "A superfície"
+      },
+      {
+        "t": 110.68,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "334-detecao-e-ameacas": {
+    "titulo": "Deteção e inteligência de ameaças",
+    "pagina": "platform/protect-and-detect/detection-and-threats",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 200.5,
+    "resumo": "Afinar as regras de deteção e silenciar falsos positivos com registo de quem decidiu; e os indicadores de compromisso, as fontes de alertas de segurança e os relatórios de recomendações — com a pesquisa de que sistemas têm um software ou um CVE.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.99,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 32.46,
+        "titulo": "A deteção"
+      },
+      {
+        "t": 70.44,
+        "titulo": "As ameaças"
+      },
+      {
+        "t": 106.67,
+        "titulo": "Que sistemas são afetados"
+      },
+      {
+        "t": 167.3,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "336-seguranca-do-software": {
+    "titulo": "Segurança do software e da configuração",
+    "pagina": "platform/protect-and-detect/software-security",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 125.8,
+    "resumo": "O inventário de dependências e as suas vulnerabilidades, a análise estática do código com aceitações registadas, e a conformidade da configuração dos sistemas com perfis CIS ou STIG.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.39,
+        "titulo": "As ferramentas"
+      },
+      {
+        "t": 42.39,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 97.72,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "337-evidencias": {
+    "titulo": "Evidências e prova automática",
+    "pagina": "platform/monitoring/evidence",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 119.6,
+    "resumo": "A prova que o auditor vai olhar: evidências com âmbito e validade, que caducam sozinhas, e os dezassete recolectores que provam todos os dias o que a plataforma já sabe.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.14,
+        "titulo": "As evidências"
+      },
+      {
+        "t": 45.03,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 61.51,
+        "titulo": "A prova automática"
+      },
+      {
+        "t": 94.38,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "338-controlos-e-indicadores": {
+    "titulo": "Os meus controlos, indicadores e objetivos",
+    "pagina": "platform/monitoring/controls-and-indicators",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 91.8,
+    "resumo": "Cada responsável vê os seus controlos, a prova que falta e a revisão em atraso; e os objetivos mensuráveis, ligados aos catorze indicadores que a plataforma mede sozinha.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.73,
+        "titulo": "Os meus controlos"
+      },
+      {
+        "t": 32.28,
+        "titulo": "Indicadores"
+      },
+      {
+        "t": 70.38,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "340-painel-e-diagnosticos": {
+    "titulo": "O painel de conformidade e os diagnósticos",
+    "pagina": "platform/monitoring/dashboard-and-diagnostics",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 117.6,
+    "resumo": "A percentagem de conformidade, ponderada sobre os controlos aplicáveis e com o que não se consegue ler nomeado; e o diagnóstico que prioriza as lacunas para a direção.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.06,
+        "titulo": "O painel"
+      },
+      {
+        "t": 29.25,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 57.87,
+        "titulo": "Diagnósticos"
+      },
+      {
+        "t": 89.49,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "342-auditoria-interna": {
+    "titulo": "A auditoria interna",
+    "pagina": "platform/audit/internal-audit",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 131.2,
+    "resumo": "Planear, abrir a lista de verificação do guião da norma, responder pergunta a pergunta — no ecrã ou em papel, com um auditor sem conta — e fechar com conclusões; e a diferença para um diagnóstico.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.39,
+        "titulo": "Os passos"
+      },
+      {
+        "t": 53.17,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 73.66,
+        "titulo": "Uma auditoria"
+      },
+      {
+        "t": 103.57,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "343-nao-conformidades-e-trilha": {
+    "titulo": "Não conformidades e trilha de auditoria",
+    "pagina": "platform/audit/nonconformities-and-trail",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 101.9,
+    "resumo": "Do achado à não conformidade tratada — correção, causa raiz, ações corretivas e verificação da eficácia — e a trilha que diz quem alterou o quê, e quando, sem se poder editar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.31,
+        "titulo": "O ciclo"
+      },
+      {
+        "t": 31.82,
+        "titulo": "As não conformidades"
+      },
+      {
+        "t": 60.08,
+        "titulo": "A trilha"
+      },
+      {
+        "t": 81.79,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "344-revisao-pela-gestao": {
+    "titulo": "A revisão pela gestão",
+    "pagina": "platform/audit/management-review",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 105.5,
+    "resumo": "A direção revê o sistema de gestão: a plataforma monta oito das nove entradas que a norma exige, regista as decisões, e a ata fecha congelada, como estava no dia.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.43,
+        "titulo": "As entradas"
+      },
+      {
+        "t": 46.64,
+        "titulo": "O ecrã"
+      },
+      {
+        "t": 76.19,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "346-dossier-e-certificacao": {
+    "titulo": "O dossier de auditoria e a certificação",
+    "pagina": "platform/audit/audit-dossier-and-certification",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 125.1,
+    "resumo": "O dossier de doze secções que se entrega ao auditor, sem esconder os buracos; o que ele vai pedir e onde está; e as duas visitas da certificação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 11.72,
+        "titulo": "O dossier"
+      },
+      {
+        "t": 54.33,
+        "titulo": "O que se pede"
+      },
+      {
+        "t": 74.67,
+        "titulo": "As visitas"
+      }
+    ]
+  },
+  "351-administracao-da-plataforma": {
+    "titulo": "A administração da plataforma",
+    "pagina": "platform/administration/coverage-rules",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 250.1,
+    "resumo": "Três ecrãs de quem administra a plataforma: que níveis de sistemas contam para a cobertura, os tipos de documento e o modelo Word do SGSI, e onde se vê a versão instalada e o que mudou.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.0,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 41.57,
+        "titulo": "A cobertura"
+      },
+      {
+        "t": 95.39,
+        "titulo": "Os tipos de documento"
+      },
+      {
+        "t": 133.0,
+        "titulo": "O modelo Word"
+      },
+      {
+        "t": 183.63,
+        "titulo": "A versão"
+      },
+      {
+        "t": 214.84,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "352-anonimizacao-de-ia": {
+    "titulo": "A anonimização dos pedidos de IA",
+    "pagina": "platform/administration/ai-anonymisation",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 300.9,
+    "resumo": "Como a plataforma tira os dados pessoais e os dados da infraestrutura de tudo o que sai para um serviço de IA, onde fica a prova disso, e como se experimenta com um texto real antes de confiar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 21.3,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 63.21,
+        "titulo": "O registo de saídas"
+      },
+      {
+        "t": 96.46,
+        "titulo": "A bancada de ensaio"
+      },
+      {
+        "t": 129.81,
+        "titulo": "O resultado"
+      },
+      {
+        "t": 160.32,
+        "titulo": "As exceções"
+      },
+      {
+        "t": 175.58,
+        "titulo": "A ida"
+      },
+      {
+        "t": 186.78,
+        "titulo": "A ida"
+      },
+      {
+        "t": 217.15,
+        "titulo": "A ida"
+      },
+      {
+        "t": 234.98,
+        "titulo": "A volta"
+      },
+      {
+        "t": 263.12,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "353-integracoes": {
+    "titulo": "As integrações",
+    "pagina": "platform/administration/external-systems",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 261.3,
+    "resumo": "As ferramentas de fora com que a plataforma conversa: onde mais os sistemas estão registados, o MISP para enriquecer os indicadores de ameaça, as fontes de notícias de segurança e o diretório de onde se leem equipamentos e pessoas.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.47,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 41.56,
+        "titulo": "Sistemas externos"
+      },
+      {
+        "t": 72.34,
+        "titulo": "O MISP"
+      },
+      {
+        "t": 116.93,
+        "titulo": "Os feeds RSS"
+      },
+      {
+        "t": 152.34,
+        "titulo": "O diretório"
+      },
+      {
+        "t": 196.28,
+        "titulo": "Testar"
+      },
+      {
+        "t": 225.86,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "354-o-sgsi-por-inteiro": {
+    "titulo": "O SGSI por inteiro",
+    "pagina": "platform/protect-and-detect/isms-structure",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 237.1,
+    "resumo": "Os outros ecrãs do menu SGSI: a árvore que liga todos os documentos, as fichas de controlo, as evidências, a cobertura por controlo — o que está a descoberto — e o arquivo, com a diferença entre arquivar e apagar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.77,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 50.72,
+        "titulo": "A árvore"
+      },
+      {
+        "t": 80.75,
+        "titulo": "Os controlos"
+      },
+      {
+        "t": 111.5,
+        "titulo": "As evidências"
+      },
+      {
+        "t": 136.85,
+        "titulo": "A cobertura"
+      },
+      {
+        "t": 165.71,
+        "titulo": "O arquivo"
+      },
+      {
+        "t": 204.0,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "359-carrinho-e-documentos-com-ia": {
+    "titulo": "O carrinho de controlos e os documentos com IA",
+    "pagina": "platform/protect-and-detect/control-cart",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 291.8,
+    "resumo": "Juntar ao carrinho os controlos que um documento tem de cobrir, e escrever com eles um procedimento com apoio de IA: o pedido sai pseudonimizado, a resposta volta com os valores repostos, entra no editor, e os controlos ficam ligados ao documento.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.94,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 46.01,
+        "titulo": "Encher o carrinho"
+      },
+      {
+        "t": 67.63,
+        "titulo": "Encher o carrinho"
+      },
+      {
+        "t": 97.83,
+        "titulo": "O documento"
+      },
+      {
+        "t": 116.52,
+        "titulo": "O pedido"
+      },
+      {
+        "t": 132.67,
+        "titulo": "O pedido"
+      },
+      {
+        "t": 161.98,
+        "titulo": "A IA"
+      },
+      {
+        "t": 177.69,
+        "titulo": "A IA"
+      },
+      {
+        "t": 199.41,
+        "titulo": "De volta"
+      },
+      {
+        "t": 227.28,
+        "titulo": "De volta"
+      },
+      {
+        "t": 244.08,
+        "titulo": "A cobertura"
+      },
+      {
+        "t": 258.74,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "355-importar-contratos-publicos": {
+    "titulo": "Importar contratos públicos",
+    "pagina": "platform/risk/contract-explorer",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 253.6,
+    "resumo": "Os contratos públicos da organização, a partir dos ficheiros exportados do portal BASE: escolher a própria entidade, filtrar, marcar os que interessam e gravá-los — para depois os ligar aos sistemas e aos fornecedores.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.99,
+        "titulo": "Porquê"
+      },
+      {
+        "t": 37.02,
+        "titulo": "Antes de começar"
+      },
+      {
+        "t": 65.44,
+        "titulo": "As entidades"
+      },
+      {
+        "t": 84.71,
+        "titulo": "Escolher as nossas"
+      },
+      {
+        "t": 110.5,
+        "titulo": "Os contratos"
+      },
+      {
+        "t": 137.65,
+        "titulo": "Escolher os contratos"
+      },
+      {
+        "t": 173.66,
+        "titulo": "Gravar"
+      },
+      {
+        "t": 197.12,
+        "titulo": "Depois de importar"
+      },
+      {
+        "t": 215.79,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "356-indicadores-de-compromisso": {
+    "titulo": "Os indicadores de compromisso",
+    "pagina": "platform/protect-and-detect/ioc",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 273.9,
+    "resumo": "Os endereços e domínios maliciosos que a organização bloqueia ou vigia: importar um boletim, gerir a lista e a validade de cada um, publicar os ficheiros para as firewalls, e proteger os próprios sistemas de um bloqueio por engano.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.38,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 53.35,
+        "titulo": "Os cinco separadores"
+      },
+      {
+        "t": 72.59,
+        "titulo": "Importar"
+      },
+      {
+        "t": 109.25,
+        "titulo": "O resultado"
+      },
+      {
+        "t": 125.73,
+        "titulo": "Gerir a lista"
+      },
+      {
+        "t": 161.92,
+        "titulo": "Os ficheiros das firewalls"
+      },
+      {
+        "t": 189.39,
+        "titulo": "Proteger os nossos sistemas"
+      },
+      {
+        "t": 220.98,
+        "titulo": "As configurações"
+      },
+      {
+        "t": 236.46,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "357-feeds-de-seguranca": {
+    "titulo": "Os feeds de segurança",
+    "pagina": "platform/protect-and-detect/security-feeds",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 159.8,
+    "resumo": "Os alertas de segurança de todas as fontes num só sítio: pesquisar, filtrar por fonte, arquivar o que não interessa e passar a um relatório de recomendações o que pede ação.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.66,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 38.79,
+        "titulo": "Os artigos"
+      },
+      {
+        "t": 63.52,
+        "titulo": "O que fazer a um artigo"
+      },
+      {
+        "t": 93.64,
+        "titulo": "O relatório"
+      },
+      {
+        "t": 127.61,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "358-wazuh-cheat-sheet": {
+    "titulo": "A Wazuh Cheat Sheet",
+    "pagina": "platform/protect-and-detect/wazuh-cheat-sheet",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 184.2,
+    "resumo": "A referência rápida do Wazuh dentro da plataforma: os comandos com botão de copiar, onde está cada ficheiro, como nasce um alerta, os sete passos para uma regra nova e o que fazer quando algo falha.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.44,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 41.26,
+        "titulo": "Os comandos"
+      },
+      {
+        "t": 72.88,
+        "titulo": "Regras e decoders"
+      },
+      {
+        "t": 125.22,
+        "titulo": "Quando algo falha"
+      },
+      {
+        "t": 140.07,
+        "titulo": "Procurar"
+      },
+      {
+        "t": 152.63,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "401-o-primeiro-ano": {
+    "titulo": "O primeiro ano em sete passos",
+    "pagina": "journey/first-year",
+    "grupo": "Formação D — O percurso",
+    "duracao": 108.0,
+    "resumo": "O percurso de uma entidade pública relevante, do primeiro dia à primeira revisão pela gestão: sete passos por ordem de urgência, com o que pedir a quem e onde cada um se faz.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.84,
+        "titulo": "Os sete passos"
+      },
+      {
+        "t": 63.45,
+        "titulo": "Na plataforma"
+      },
+      {
+        "t": 78.56,
+        "titulo": "O ciclo"
+      }
+    ]
+  },
+  "402-autoavaliacao-ao-plano": {
+    "titulo": "Da autoavaliação ao plano",
+    "pagina": "journey/self-assessment-to-plan",
+    "grupo": "Formação D — O percurso",
+    "duracao": 84.1,
+    "resumo": "Medir onde se está, medida a medida, com prova; transformar as lacunas num plano de tratamento com dono e prazo; e levar o que exige compras a projetos avaliados antes de comprar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.42,
+        "titulo": "O percurso"
+      }
+    ]
+  },
+  "404-o-que-conta-como-prova": {
+    "titulo": "O que conta como prova",
+    "pagina": "journey/what-counts-as-evidence",
+    "grupo": "Formação D — O percurso",
+    "duracao": 97.2,
+    "resumo": "O que um auditor aceita como prova — datada, verificável, ligada ao controlo e à data — e o que não aceita; com exemplos das medidas do Anexo IV.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 10.11,
+        "titulo": "A prova"
+      }
+    ]
+  },
+  "407-o-que-a-plataforma-poupa": {
+    "titulo": "O que a plataforma poupa — e o que não",
+    "pagina": "journey/what-the-platform-saves",
+    "grupo": "Formação D — O percurso",
+    "duracao": 110.6,
+    "resumo": "Um balanço honesto: o que a plataforma faz sozinha, o que organiza e conta, e o que continua a ser trabalho e decisão da organização — com os limites desta versão ditos em voz alta.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 12.1,
+        "titulo": "O balanço"
+      },
+      {
+        "t": 79.56,
+        "titulo": "Para terminar"
+      }
+    ]
+  },
+  "501-o-wazuh-e-o-secvision": {
+    "titulo": "O Wazuh e o SecVision",
+    "pagina": "wazuh/wazuh-and-secvision",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 355.8,
+    "resumo": "O que é o Wazuh — agentes, gestor, Indexer — e o que o SecVision faz com ele: as credenciais, a ligação, os agentes com os nomes das máquinas, o estado do servidor, e o catálogo de sistemas ligado à monitorização. Gravado num Wazuh a sério, o do ambiente de testes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.98,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 48.89,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 84.27,
+        "titulo": "A ligação"
+      },
+      {
+        "t": 121.24,
+        "titulo": "Os agentes"
+      },
+      {
+        "t": 190.07,
+        "titulo": "Os agentes"
+      },
+      {
+        "t": 218.04,
+        "titulo": "O servidor"
+      },
+      {
+        "t": 259.57,
+        "titulo": "O catálogo"
+      },
+      {
+        "t": 291.5,
+        "titulo": "O ambiente de testes"
+      },
+      {
+        "t": 322.84,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "502-instalar-os-agentes": {
+    "titulo": "Instalar os agentes do Wazuh",
+    "pagina": "wazuh/installing-agents",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 225.0,
+    "resumo": "O que o agente faz numa máquina e porque se instala endurecido; o gerador de scripts do SecVision (gestor, portas, versão, políticas de confiança zero), a fila dos sistemas em GAP, e o assistente do próprio Wazuh, lado a lado; e onde a máquina aparece depois de instalada.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.32,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 47.0,
+        "titulo": "O gerador"
+      },
+      {
+        "t": 77.66,
+        "titulo": "O gerador"
+      },
+      {
+        "t": 111.2,
+        "titulo": "A fila"
+      },
+      {
+        "t": 140.97,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 169.85,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 196.64,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "503-o-explorer": {
+    "titulo": "O Explorer — uma máquina por dentro",
+    "pagina": "wazuh/explorer",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 200.3,
+    "resumo": "O inventário que o agente recolhe — software, processos, rede, contas — e as vulnerabilidades do software instalado, vistos no Explorer do SecVision e no painel do Wazuh, lado a lado, para a mesma máquina do ambiente de testes.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.1,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 39.2,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 57.44,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 88.43,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 107.44,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 135.6,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 162.16,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 172.29,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "504-sistemas-e-agentes": {
+    "titulo": "Ligar os sistemas aos agentes",
+    "pagina": "wazuh/systems-and-agents",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 197.4,
+    "resumo": "Porque é que o catálogo e o Wazuh têm de estar ligados; associar e desassociar um agente a um sistema, o que isso faz ao estado (Monitorizado ou GAP) e à fila de integração; e o que o Wazuh vê do outro lado — os agentes não mudam, a ligação é do catálogo.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.54,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 42.73,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 55.18,
+        "titulo": "Desassociar"
+      },
+      {
+        "t": 80.22,
+        "titulo": "Desassociar"
+      },
+      {
+        "t": 95.3,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 127.05,
+        "titulo": "Associar"
+      },
+      {
+        "t": 150.19,
+        "titulo": "Associar"
+      },
+      {
+        "t": 166.86,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "505-pesquisa-software-e-cve": {
+    "titulo": "Quem tem este software, ou esta CVE",
+    "pagina": "wazuh/software-and-cve-search",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 217.1,
+    "resumo": "Quando sai um alerta de segurança sobre um programa, a primeira pergunta é quem o tem. A pesquisa por software (com versão) e por CVE nos relatórios de recomendações, os sistemas que devolve, os backports, os agentes sem sistema — e a mesma CVE no inventário de vulnerabilidades do Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.89,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 54.2,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 70.06,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 101.25,
+        "titulo": "Os resultados"
+      },
+      {
+        "t": 131.09,
+        "titulo": "Os resultados"
+      },
+      {
+        "t": 157.81,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 187.25,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "506-falsos-positivos": {
+    "titulo": "Falsos positivos no Wazuh",
+    "pagina": "wazuh/false-positives",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 429.5,
+    "resumo": "O que é um falso positivo e porque se reclassifica em vez de se apagar; um alerta real do Wazuh de testes, o pedido à IA anonimizado, a regra-filha, a validação e a aplicação ao gestor com cópia de segurança, reinício e confirmação pelo logtest; e o histórico das regras.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.06,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 56.26,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 85.66,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 121.21,
+        "titulo": "O alerta"
+      },
+      {
+        "t": 151.84,
+        "titulo": "A IA"
+      },
+      {
+        "t": 177.29,
+        "titulo": "A IA"
+      },
+      {
+        "t": 210.13,
+        "titulo": "A IA"
+      },
+      {
+        "t": 229.61,
+        "titulo": "A regra"
+      },
+      {
+        "t": 263.22,
+        "titulo": "Aplicar"
+      },
+      {
+        "t": 274.38,
+        "titulo": "Aplicar"
+      },
+      {
+        "t": 300.88,
+        "titulo": "Aplicar"
+      },
+      {
+        "t": 319.45,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 346.38,
+        "titulo": "O histórico"
+      },
+      {
+        "t": 373.41,
+        "titulo": "No Wazuh"
+      },
+      {
+        "t": 397.83,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "507-regras-de-detecao": {
+    "titulo": "Regras de deteção no Wazuh",
+    "pagina": "wazuh/detection-rules",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 300.0,
+    "resumo": "O contrário de um falso positivo: um evento que o Wazuh não conhece e que devia ser alerta. O que são decoders e regras; a linha real de uma aplicação do ambiente de testes, o pedido à IA, a resposta separada em quatro blocos, a aplicação ao gestor; e, no Wazuh, a mesma linha antes (nenhum decoder) e depois (regra e alerta), e os alertas novos a chegar.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.73,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 46.57,
+        "titulo": "No Wazuh, antes"
+      },
+      {
+        "t": 78.0,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 103.45,
+        "titulo": "A IA"
+      },
+      {
+        "t": 128.8,
+        "titulo": "A IA"
+      },
+      {
+        "t": 150.49,
+        "titulo": "No SecVision"
+      },
+      {
+        "t": 184.3,
+        "titulo": "Aplicar"
+      },
+      {
+        "t": 191.74,
+        "titulo": "Aplicar"
+      },
+      {
+        "t": 215.86,
+        "titulo": "Aplicar"
+      },
+      {
+        "t": 225.4,
+        "titulo": "No Wazuh, depois"
+      },
+      {
+        "t": 245.36,
+        "titulo": "No Wazuh, depois"
+      },
+      {
+        "t": 271.34,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "508-classificar-e-studio": {
+    "titulo": "Classificar alertas e ensaiar regras",
+    "pagina": "wazuh/ai-classification-and-studio",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 277.8,
+    "resumo": "Duas ferramentas para quem afina a deteção: a classificação de um alerta com IA — falso positivo ou alerta real, com confiança, impacto e prioridade, guardada — e o Wazuh Rule Studio, que importa as regras do gestor e as ensaia num Wazuh próprio, em Docker, sem tocar no de produção.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.74,
+        "titulo": "Classificar"
+      },
+      {
+        "t": 37.17,
+        "titulo": "Classificar"
+      },
+      {
+        "t": 66.6,
+        "titulo": "Classificar"
+      },
+      {
+        "t": 89.27,
+        "titulo": "Classificar"
+      },
+      {
+        "t": 111.13,
+        "titulo": "Classificar"
+      },
+      {
+        "t": 141.19,
+        "titulo": "O Rule Studio"
+      },
+      {
+        "t": 157.79,
+        "titulo": "O Rule Studio"
+      },
+      {
+        "t": 192.91,
+        "titulo": "Ensaiar"
+      },
+      {
+        "t": 202.79,
+        "titulo": "Ensaiar"
+      },
+      {
+        "t": 209.91,
+        "titulo": "Ensaiar"
+      },
+      {
+        "t": 246.56,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "509-rede-vpn-ligar-o-headscale": {
+    "titulo": "A rede privada para os agentes do Wazuh",
+    "pagina": "wazuh/private-network",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 299.7,
+    "resumo": "Porque é que há servidores que o Wazuh não vê (zonas isoladas, DMZ), como uma rede privada gerida pelo Headscale lhes dá um caminho de saída sem abrir portas, e como o SecVision se liga a ela: o endereço, a autoridade certificadora, a chave de API, o ponto de entrada do Wazuh e a política da rede.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.18,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 53.84,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 95.19,
+        "titulo": "A ligação"
+      },
+      {
+        "t": 150.82,
+        "titulo": "A ligação"
+      },
+      {
+        "t": 184.89,
+        "titulo": "O teste"
+      },
+      {
+        "t": 209.6,
+        "titulo": "A política"
+      },
+      {
+        "t": 245.15,
+        "titulo": "A lista de máquinas"
+      },
+      {
+        "t": 265.14,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "510-ligar-um-servidor-da-dmz": {
+    "titulo": "Ligar um servidor da DMZ ao Wazuh",
+    "pagina": "wazuh/connect-a-server",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 538.9,
+    "resumo": "O percurso completo de um servidor que não chega ao gestor do Wazuh: publicar os instaladores no depósito, registá-los no SecVision, gerar o comando de instalação, corrê-lo no servidor e confirmar que ele aparece na rede privada, no SecVision e no painel do Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 21.87,
+        "titulo": "O percurso"
+      },
+      {
+        "t": 53.5,
+        "titulo": "1. Publicar"
+      },
+      {
+        "t": 82.95,
+        "titulo": "1. Publicar"
+      },
+      {
+        "t": 117.82,
+        "titulo": "1. Publicar"
+      },
+      {
+        "t": 153.46,
+        "titulo": "2. Registar"
+      },
+      {
+        "t": 184.38,
+        "titulo": "2. Registar"
+      },
+      {
+        "t": 210.42,
+        "titulo": "3. Gerar"
+      },
+      {
+        "t": 242.61,
+        "titulo": "3. Gerar"
+      },
+      {
+        "t": 274.42,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 288.69,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 304.35,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 317.2,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 331.89,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 359.49,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 371.55,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 396.77,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 407.65,
+        "titulo": "4. Instalar"
+      },
+      {
+        "t": 430.02,
+        "titulo": "O resultado"
+      },
+      {
+        "t": 456.67,
+        "titulo": "O resultado"
+      },
+      {
+        "t": 470.95,
+        "titulo": "O resultado"
+      },
+      {
+        "t": 502.12,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "511-gerir-as-maquinas-da-rede-vpn": {
+    "titulo": "Gerir as máquinas da rede privada",
+    "pagina": "wazuh/manage-machines",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 289.7,
+    "resumo": "Depois de um servidor estar ligado, o que o administrador pode decidir: bloquear (e desbloquear) o acesso, vendo o Wazuh perder e recuperar o agente, fixar a validade do acesso, recolher provas do que o Wazuh já guardou, e revogar um servidor da rede.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.18,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 45.63,
+        "titulo": "A lista"
+      },
+      {
+        "t": 68.74,
+        "titulo": "Bloquear"
+      },
+      {
+        "t": 96.76,
+        "titulo": "Bloquear"
+      },
+      {
+        "t": 125.32,
+        "titulo": "Desbloquear"
+      },
+      {
+        "t": 138.73,
+        "titulo": "Desbloquear"
+      },
+      {
+        "t": 151.34,
+        "titulo": "Validade"
+      },
+      {
+        "t": 178.57,
+        "titulo": "Provas"
+      },
+      {
+        "t": 205.8,
+        "titulo": "Provas"
+      },
+      {
+        "t": 222.76,
+        "titulo": "Revogar"
+      },
+      {
+        "t": 250.27,
+        "titulo": "Resumo"
+      }
+    ]
+  }
 }
