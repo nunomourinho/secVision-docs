@@ -519,5 +519,29 @@
     "youtube": "T-FbnUTmKxo",
     "privacidade": "unlisted",
     "legendas": "gravadas"
+  },
+  "509-montar-a-rede-privada": {
+    "titulo": "SecVision — Montar a rede privada para os agentes do Wazuh",
+    "youtube": "uiEl76PuBsY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "510-adicionar-um-servidor": {
+    "titulo": "SecVision — Adicionar um servidor da DMZ ao Wazuh",
+    "youtube": "vtXWxRFrCEQ",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "511-gerir-as-maquinas-da-rede-vpn": {
+    "titulo": "SecVision — Gerir as máquinas da rede privada",
+    "youtube": "liHqPsJZ_pI",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "512-quando-algo-falha-na-rede-privada": {
+    "titulo": "SecVision — Quando algo falha na rede privada",
+    "youtube": "TISKcvkVGqg",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   }
 }
