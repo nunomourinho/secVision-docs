@@ -1658,7 +1658,7 @@
     "titulo": "Fechar os GAP e ver o que está exposto",
     "pagina": "platform/protect-and-detect/agents-and-surface",
     "grupo": "Formação C — A plataforma",
-    "duracao": 146.1,
+    "duracao": 152.8,
     "resumo": "A fila de integração dos sistemas em GAP e o gerador dos scripts do agente de monitorização; e a superfície exposta, por fora e por dentro, com as vulnerabilidades em exploração e os equipamentos fora do catálogo.",
     "capitulos": [
       {
@@ -1666,19 +1666,19 @@
         "titulo": "Introdução"
       },
       {
-        "t": 14.1,
+        "t": 16.06,
         "titulo": "A fila"
       },
       {
-        "t": 39.3,
+        "t": 40.66,
         "titulo": "O script"
       },
       {
-        "t": 68.57,
+        "t": 72.94,
         "titulo": "A superfície"
       },
       {
-        "t": 110.68,
+        "t": 115.05,
         "titulo": "Resumo"
       }
     ]
@@ -2466,7 +2466,7 @@
     "titulo": "Instalar os agentes do Wazuh",
     "pagina": "wazuh/installing-agents",
     "grupo": "Formação E — Wazuh",
-    "duracao": 225.0,
+    "duracao": 305.5,
     "resumo": "O que o agente faz numa máquina e porque se instala endurecido; o gerador de scripts do SecVision (gestor, portas, versão, políticas de confiança zero), a fila dos sistemas em GAP, e o assistente do próprio Wazuh, lado a lado; e onde a máquina aparece depois de instalada.",
     "capitulos": [
       {
@@ -2474,31 +2474,39 @@
         "titulo": "Introdução"
       },
       {
-        "t": 15.32,
+        "t": 17.65,
         "titulo": "O conceito"
       },
       {
-        "t": 47.0,
+        "t": 50.55,
         "titulo": "O gerador"
       },
       {
-        "t": 77.66,
+        "t": 82.19,
         "titulo": "O gerador"
       },
       {
-        "t": 111.2,
+        "t": 117.05,
+        "titulo": "O gerador"
+      },
+      {
+        "t": 150.64,
         "titulo": "A fila"
       },
       {
-        "t": 140.97,
+        "t": 182.19,
+        "titulo": "A fila"
+      },
+      {
+        "t": 214.19,
         "titulo": "No Wazuh"
       },
       {
-        "t": 169.85,
+        "t": 244.55,
         "titulo": "No Wazuh"
       },
       {
-        "t": 196.64,
+        "t": 276.88,
         "titulo": "Resumo"
       }
     ]
@@ -2882,7 +2890,7 @@
     "titulo": "Adicionar um servidor da DMZ ao Wazuh",
     "pagina": "wazuh/connect-a-server",
     "grupo": "Formação E — Wazuh",
-    "duracao": 377.8,
+    "duracao": 422.2,
     "resumo": "O percurso de um servidor que não chega ao gestor do Wazuh, agora com um só comando: escrever o nome do servidor no SecVision, copiar o comando que ele gera, colá-lo no servidor e confirmar que o servidor aparece na rede privada, no SecVision e no painel do Wazuh.",
     "capitulos": [
       {
@@ -2906,59 +2914,67 @@
         "titulo": "1. No SecVision"
       },
       {
-        "t": 86.63,
+        "t": 101.26,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 115.68,
+        "t": 117.89,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 131.01,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 160.06,
         "titulo": "4. Instalar"
       },
       {
-        "t": 129.94,
+        "t": 174.33,
         "titulo": "4. Instalar"
       },
       {
-        "t": 145.59,
+        "t": 189.98,
         "titulo": "4. Instalar"
       },
       {
-        "t": 158.44,
+        "t": 202.82,
         "titulo": "4. Instalar"
       },
       {
-        "t": 168.43,
+        "t": 212.82,
         "titulo": "4. Instalar"
       },
       {
-        "t": 198.36,
+        "t": 242.74,
         "titulo": "4. Instalar"
       },
       {
-        "t": 210.41,
+        "t": 254.8,
         "titulo": "4. Instalar"
       },
       {
-        "t": 235.64,
+        "t": 280.02,
         "titulo": "4. Instalar"
       },
       {
-        "t": 246.52,
+        "t": 290.9,
         "titulo": "4. Instalar"
       },
       {
-        "t": 268.87,
+        "t": 313.25,
         "titulo": "O resultado"
       },
       {
-        "t": 295.48,
+        "t": 339.87,
         "titulo": "O resultado"
       },
       {
-        "t": 309.79,
+        "t": 354.17,
         "titulo": "O resultado"
       },
       {
-        "t": 341.05,
+        "t": 385.43,
         "titulo": "Resumo"
       }
     ]
@@ -3062,6 +3078,176 @@
       {
         "t": 212.95,
         "titulo": "Resumo"
+      }
+    ]
+  },
+  "513-instalar-o-agente-num-windows": {
+    "titulo": "Instalar o agente num Windows Server",
+    "pagina": "wazuh/install-on-windows",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 428.5,
+    "resumo": "O percurso de um Windows Server sem agente: escolher o sistema na fila de integração, deixar o SecVision propor o Windows e o perfil do agente, gerar uma linha de PowerShell, escrevê-la no servidor e ver o servidor ligado à rede privada, ao Wazuh e ao seu sistema do catálogo.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.98,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 64.37,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 82.22,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 99.47,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 113.79,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 135.05,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 166.09,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 179.09,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 206.51,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 240.66,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 260.39,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 281.17,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 290.25,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 305.72,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 323.82,
+        "titulo": "2. No servidor"
+      },
+      {
+        "t": 343.74,
+        "titulo": "3. De volta ao SecVision"
+      },
+      {
+        "t": 361.76,
+        "titulo": "3. De volta ao SecVision"
+      },
+      {
+        "t": 392.47,
+        "titulo": "Limites"
+      },
+      {
+        "t": 411.97,
+        "titulo": "Fecho"
+      }
+    ]
+  },
+  "514-servidores-windows-antigos-pela-ponte": {
+    "titulo": "Servidores Windows antigos pela ponte",
+    "pagina": "wazuh/legacy-servers",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 387.2,
+    "resumo": "Porque é que um Windows Server 2008 R2 ou 2012 R2 não usa o comando único, o que é a ponte, e a instalação do agente nestes dois sistemas com o script do catálogo: o script no SecVision, a consola de cada servidor e o agente a aparecer ligado no Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 20.94,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 58.06,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 84.51,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 101.91,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 135.76,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 151.72,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 169.91,
+        "titulo": "1. No SecVision"
+      },
+      {
+        "t": 211.75,
+        "titulo": "2. Windows Server 2008 R2"
+      },
+      {
+        "t": 233.97,
+        "titulo": "2. Windows Server 2008 R2"
+      },
+      {
+        "t": 254.12,
+        "titulo": "2. Windows Server 2008 R2"
+      },
+      {
+        "t": 260.37,
+        "titulo": "2. Windows Server 2008 R2"
+      },
+      {
+        "t": 271.63,
+        "titulo": "3. Windows Server 2012 R2"
+      },
+      {
+        "t": 284.98,
+        "titulo": "3. Windows Server 2012 R2"
+      },
+      {
+        "t": 300.04,
+        "titulo": "3. Windows Server 2012 R2"
+      },
+      {
+        "t": 307.63,
+        "titulo": "5. No gestor do Wazuh"
+      },
+      {
+        "t": 339.7,
+        "titulo": "Limites"
+      },
+      {
+        "t": 372.87,
+        "titulo": "Fecho"
       }
     ]
   }
