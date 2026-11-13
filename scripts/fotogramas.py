@@ -71,7 +71,7 @@ def main():
             t = round(a + args.fracao * (b - a), 2)
             nome = f'{n:02}.jpg'
             subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(t), '-i', str(args.videos / f'{vid}.mp4'),
-                            '-frames:v', '1', '-vf', 'scale=1280:720', '-q:v', '4', str(destino / nome)],
+                            '-frames:v', '1', '-vf', 'crop=iw:1080:0:ih-1080,scale=1280:720', '-q:v', '4', str(destino / nome)],
                            check=True)
             rotulo = c.get('rotulo') or c.get('titulo', '')
             entradas.append({'ficheiro': nome, 't': t, 'rotulo': rotulo})

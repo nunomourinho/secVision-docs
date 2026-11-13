@@ -262,8 +262,13 @@ class Captura:
                 time.sleep(1.2)
                 self.por_mostrar = True
         elif 'selecionar' in p:
-            pg.locator(p['selecionar']).first.select_option(str(p['valor']))
-            self.anotar(p['selecionar'], 'escolher', valor=str(p['valor']))
+            # `valor` é o value do <option>; `opcao` o texto que se vê (os roteiros da rede VPN)
+            visto = str(p['opcao']) if 'opcao' in p else str(p['valor'])
+            if 'opcao' in p:
+                pg.locator(p['selecionar']).first.select_option(label=visto)
+            else:
+                pg.locator(p['selecionar']).first.select_option(visto)
+            self.anotar(p['selecionar'], 'escolher', valor=visto)
         elif 'rolar' in p:
             self.foto()
             try:
