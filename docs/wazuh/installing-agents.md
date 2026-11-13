@@ -77,6 +77,20 @@ Ecrã **Wazuh Agent Builder** > **Políticas Zero-Trust** (3 de 3).
 
 1. **Script:** Um script por sistema operativo.
 
+## Perfis de agente
+
+As limitações do agente deixaram de ser um conjunto único para todas as máquinas: há **perfis**, escolhidos por máquina. Em **Proteger** > **SOC** > **Wazuh Agent Builder**, o seletor **Perfil do agente** escolhe o perfil que se edita, e **Novo perfil** e **Duplicar** criam outros.
+
+| Perfil | O que limita |
+|---|---|
+| **Predefinido** | O que o Agent Builder já tinha: comandos remotos, atualização pelo gestor, resposta ativa, permissões dos ficheiros e firewall do agente. |
+| **Desbloqueado** | Nada: o gestor pode dar ordens ao agente. É uma decisão a justificar. |
+| **Bloqueado (zero-trust)** | Tudo. |
+
+Cada perfil pode ter um **grupo** do Wazuh. O perfil de cada instalação fica registado, para se saber mais tarde porque é que uma máquina aceita ordens do gestor e outra não. Um perfil em uso não se elimina, e o predefinido também não.
+
+Na fila de integração e em **Rede VPN**, cada máquina escolhe o seu perfil, e **Personalizar só para esta máquina** muda as limitações dessa instalação sem mexer no perfil.
+
 ## Fila de integração
 
 **Proteger** > **Instalar agente Wazuh**
@@ -107,6 +121,14 @@ Ecrã **Proteger** > **Instalar agente Wazuh** (3 de 3).
 ```
 
 1. **Sistema operativo:** Selecionado a partir do catálogo.
+
+### O separador Rede VPN
+
+Quando a rede privada está montada (ver [a rede privada](private-network.md)), **Iniciar Integração** tem um terceiro separador, **Rede VPN**, que gera um comando único para o servidor, com o perfil escolhido, em vez de um script para correr à mão.
+
+O SecVision lê o sistema operativo que o catálogo conhece e propõe o **Sistema do servidor** certo: **Linux**, **Windows Server 2016 ou mais recente** ou **Antigo** (Windows Server 2012 R2 e anteriores, que vão pela ponte). É só uma sugestão, e a escolha é do administrador. Quando o agente aparece no Wazuh com o nome esperado, o SecVision liga-o sozinho ao sistema do catálogo (esta verificação corre de dez em dez minutos, e nunca substitui uma ligação feita por uma pessoa).
+
+Ver [Instalar o agente num Windows Server](install-on-windows.md) e [Servidores Windows antigos](legacy-servers.md).
 
 ## Assistente do Wazuh
 
@@ -162,6 +184,6 @@ A plataforma não instala agentes, uma vez que uma ferramenta de gestão com cre
 
 **Funcionalidades e limitações**
 
-- Gera o script de cada sistema operativo, com o gestor, a versão e as políticas de confiança zero.
+- Gera o script de cada sistema operativo, com o gestor, a versão e o perfil do agente, e o comando único da rede privada.
 - Ordena os sistemas em GAP pela criticidade, pela exposição e pelos dias sem monitorização.
 - Não instala agentes: o script é executado por um operador, com as credenciais da máquina.

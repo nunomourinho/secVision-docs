@@ -30,6 +30,16 @@ O passo é do administrador do SecVision: gera o comando, que depois é colado n
 | Uma sessão de administrador no servidor (o comando usa `sudo`) | Administrador do servidor |
 | O servidor tem de alcançar o Headscale (443) e o depósito (8080), e mais nada | Administrador da firewall |
 
+## O sistema do servidor e o perfil do agente
+
+Além do nome, o passo pede o **Sistema do servidor** e o **Perfil do agente**:
+
+- **Linux** (Debian, Ubuntu, RHEL, Rocky, Alma, SUSE; amd64 e arm64) é a opção por omissão e a deste exemplo.
+- **Windows Server 2016 ou mais recente** gera uma linha de PowerShell: ver [Instalar o agente num Windows Server](install-on-windows.md).
+- **Antigo** (Windows Server 2012 R2 e anteriores, Linux muito antigo) não gera comando: explica o caminho pela ponte, em [Servidores Windows antigos](legacy-servers.md).
+- Se o servidor já estiver no catálogo, o SecVision propõe a opção pelo sistema operativo que lá está.
+- O **perfil do agente** diz que limitações o agente leva (ver [Instalar os agentes](installing-agents.md)).
+
 ## 1. Gerar o comando
 
 ```{figure} /_static/img/510-adicionar-um-servidor/01.jpg

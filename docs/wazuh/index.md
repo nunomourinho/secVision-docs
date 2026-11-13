@@ -17,6 +17,8 @@ detection-rules
 ai-classification-and-studio
 private-network
 connect-a-server
+install-on-windows
+legacy-servers
 manage-machines
 network-health
 ```
