@@ -391,8 +391,8 @@
   },
   "332-agentes-e-superficie": {
     "titulo": "SecVision — Fechar os GAP e ver o que está exposto",
-    "substitui": "lJL0N9igRG0",
-    "youtube": "vpOz0dOKzjI",
+    "substitui": "vpOz0dOKzjI",
+    "youtube": "BPbsxf6RzpQ",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -496,8 +496,8 @@
   },
   "502-instalar-os-agentes": {
     "titulo": "SecVision — Instalar os agentes do Wazuh",
-    "substitui": "bV2mRO1DwO8",
-    "youtube": "xZLbwMfP8GY",
+    "substitui": "xZLbwMfP8GY",
+    "youtube": "uscEJTySHYI",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -615,8 +615,8 @@
   },
   "510-adicionar-um-servidor": {
     "titulo": "SecVision — Adicionar um servidor da DMZ ao Wazuh",
-    "substitui": "vtXWxRFrCEQ",
-    "youtube": "CYuNjdMTaV0",
+    "substitui": "CYuNjdMTaV0",
+    "youtube": "ukCEImBMHuQ",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -631,6 +631,18 @@
     "titulo": "SecVision — Quando algo falha na rede privada",
     "substitui": "TISKcvkVGqg",
     "youtube": "01CC0PbXG80",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "513-instalar-o-agente-num-windows": {
+    "titulo": "SecVision — Instalar o agente num Windows Server",
+    "youtube": "HxxRJj9IwXo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "514-servidores-windows-antigos-pela-ponte": {
+    "titulo": "SecVision — Servidores Windows antigos pela ponte",
+    "youtube": "sFLdtVcuj4A",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   }

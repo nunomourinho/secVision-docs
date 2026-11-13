@@ -2,6 +2,9 @@
 
 O agente moderno do SecVision não corre num Windows anterior ao Server 2016. O caminho é uma **ponte**.
 
+```{video} 514-servidores-windows-antigos-pela-ponte
+```
+
 ## Acesso
 
 **Proteger** > **Instalar agente Wazuh** > **Iniciar Integração**, e **Rede VPN** > **Convites** > **Avançado**

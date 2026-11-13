@@ -2,6 +2,9 @@
 
 O mesmo comando único do Linux, agora em PowerShell, a partir do catálogo de segurança.
 
+```{video} 513-instalar-o-agente-num-windows
+```
+
 ## Acesso
 
 **Proteger** > **Instalar agente Wazuh** > **Iniciar Integração** > **Rede VPN**
