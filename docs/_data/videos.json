@@ -461,51 +461,87 @@
   },
   "401-o-primeiro-ano": {
     "titulo": "SecVision — O primeiro ano em sete passos",
-    "substitui": "JQROTlrkSZI"
+    "substitui": "JQROTlrkSZI",
+    "youtube": "nCtF4ZFk3jc",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "402-autoavaliacao-ao-plano": {
     "titulo": "SecVision — Da autoavaliação ao plano",
-    "substitui": "-AAXoXCPU7A"
+    "substitui": "-AAXoXCPU7A",
+    "youtube": "hUin4z23lLE",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "404-o-que-conta-como-prova": {
     "titulo": "SecVision — O que conta como prova",
-    "substitui": "PRgobQFZcug"
+    "substitui": "PRgobQFZcug",
+    "youtube": "aN9YgZDsItM",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "407-o-que-a-plataforma-poupa": {
     "titulo": "SecVision — O que a plataforma poupa — e o que não",
-    "substitui": "78veoPIvGcA"
+    "substitui": "78veoPIvGcA",
+    "youtube": "_c5j40Upjw8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "501-o-wazuh-e-o-secvision": {
     "titulo": "SecVision — O Wazuh e o SecVision",
-    "substitui": "hBjECvwp5Vc"
+    "substitui": "hBjECvwp5Vc",
+    "youtube": "PUyz82JMCDo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "502-instalar-os-agentes": {
     "titulo": "SecVision — Instalar os agentes do Wazuh",
-    "substitui": "bV2mRO1DwO8"
+    "substitui": "bV2mRO1DwO8",
+    "youtube": "xZLbwMfP8GY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "503-o-explorer": {
     "titulo": "SecVision — O Explorer — uma máquina por dentro",
-    "substitui": "_Lt5wg5K24k"
+    "substitui": "_Lt5wg5K24k",
+    "youtube": "oL5XnRtgdpk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "504-sistemas-e-agentes": {
     "titulo": "SecVision — Ligar os sistemas aos agentes",
-    "substitui": "seTIaqPBUIU"
+    "substitui": "seTIaqPBUIU",
+    "youtube": "cXdtlfojNCY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "505-pesquisa-software-e-cve": {
     "titulo": "SecVision — Quem tem este software, ou esta CVE",
-    "substitui": "iYRBrrdBgDU"
+    "substitui": "iYRBrrdBgDU",
+    "youtube": "CNKuSdPgvnk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "506-falsos-positivos": {
     "titulo": "SecVision — Falsos positivos no Wazuh",
-    "substitui": "ZeCQ0SYn6M4"
+    "substitui": "ZeCQ0SYn6M4",
+    "youtube": "BhVmivIiHyk",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "507-regras-de-detecao": {
     "titulo": "SecVision — Regras de deteção no Wazuh",
-    "substitui": "PZXPImQ2v4w"
+    "substitui": "PZXPImQ2v4w",
+    "youtube": "aNiuJxHBsho",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "508-classificar-e-studio": {
     "titulo": "SecVision — Classificar alertas e ensaiar regras",
-    "substitui": "iFZdMir06AU"
+    "substitui": "iFZdMir06AU",
+    "youtube": "dFs6w_UGmbo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "351-administracao-da-plataforma": {
     "titulo": "SecVision — A administração da plataforma",
@@ -516,50 +552,86 @@
   },
   "352-anonimizacao-de-ia": {
     "titulo": "SecVision — A anonimização dos pedidos de IA",
-    "substitui": "uSQAwcSB3_w"
+    "substitui": "uSQAwcSB3_w",
+    "youtube": "_81hoM46BgE",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "353-integracoes": {
     "titulo": "SecVision — As integrações",
-    "substitui": "zP8dGbybJrs"
+    "substitui": "zP8dGbybJrs",
+    "youtube": "DHcBdsvCtn4",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "354-o-sgsi-por-inteiro": {
     "titulo": "SecVision — O SGSI por inteiro",
-    "substitui": "sI22PT6rV6o"
+    "substitui": "sI22PT6rV6o",
+    "youtube": "8vC-kBnkmMU",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "355-importar-contratos-publicos": {
     "titulo": "SecVision — Importar contratos públicos",
-    "substitui": "Ge5QGD6ce38"
+    "substitui": "Ge5QGD6ce38",
+    "youtube": "hM-BNyuYgEo",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "356-indicadores-de-compromisso": {
     "titulo": "SecVision — Os indicadores de compromisso",
-    "substitui": "rBoaZ2FE9vk"
+    "substitui": "rBoaZ2FE9vk",
+    "youtube": "a465--AQgbs",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "357-feeds-de-seguranca": {
     "titulo": "SecVision — Os feeds de segurança",
-    "substitui": "XyDG02pQ0P8"
+    "substitui": "XyDG02pQ0P8",
+    "youtube": "oE9s3hDKMtw",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "358-wazuh-cheat-sheet": {
     "titulo": "SecVision — A Wazuh Cheat Sheet",
-    "substitui": "_4ulo91RONA"
+    "substitui": "_4ulo91RONA",
+    "youtube": "hvlKoziCR4k",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "359-carrinho-e-documentos-com-ia": {
     "titulo": "SecVision — O carrinho de controlos e os documentos com IA",
-    "substitui": "T-FbnUTmKxo"
+    "substitui": "T-FbnUTmKxo",
+    "youtube": "IHIi7nyyH1o",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "509-montar-a-rede-privada": {
     "titulo": "SecVision — Montar a rede privada para os agentes do Wazuh",
-    "substitui": "uiEl76PuBsY"
+    "substitui": "uiEl76PuBsY",
+    "youtube": "UI0bEATw_oE",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "510-adicionar-um-servidor": {
     "titulo": "SecVision — Adicionar um servidor da DMZ ao Wazuh",
-    "substitui": "vtXWxRFrCEQ"
+    "substitui": "vtXWxRFrCEQ",
+    "youtube": "CYuNjdMTaV0",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "511-gerir-as-maquinas-da-rede-vpn": {
     "titulo": "SecVision — Gerir as máquinas da rede privada",
-    "substitui": "liHqPsJZ_pI"
+    "substitui": "liHqPsJZ_pI",
+    "youtube": "l2Kq0Zge2-8",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   },
   "512-quando-algo-falha-na-rede-privada": {
     "titulo": "SecVision — Quando algo falha na rede privada",
-    "substitui": "TISKcvkVGqg"
+    "substitui": "TISKcvkVGqg",
+    "youtube": "01CC0PbXG80",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   }
 }
