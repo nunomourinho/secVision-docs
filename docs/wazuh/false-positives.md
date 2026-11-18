@@ -123,6 +123,14 @@ Esta substituição é indispensável: uma regra com a etiqueta `[IP_1]` em vez 
 A resposta colada: «10 etiqueta(s) reposta(s) com os valores reais», e a sintaxe válida.
 ```
 
+### Modelos: os alertas FIM das atualizações
+
+Cada atualização de um servidor gera dezenas de alertas de integridade de ficheiros (FIM), um por ficheiro que o gestor de pacotes escreve. Os botões **FIM: dpkg pelo apt** e **FIM: dnf/yum** põem na caixa a regra que os baixa para o nível 1: deixam de aparecer como alertas, mas ficam registados e contados. Cola-se como prova um alerta FIM real dessa máquina, valida-se e aplica-se como qualquer outra regra.
+
+A regra só funciona em máquinas com o **whodata** ligado (a opção «Whodata no FIM» do perfil do agente), porque é o whodata que diz que processo alterou o ficheiro; um alerta FIM sem essa informação é assinalado no ecrã. Os alertas de scripts de instalação que criam utilizadores continuam a aparecer, de propósito. E o limite é conhecido: o que um pacote malicioso instalado pelo gestor de pacotes escreve também é silenciado; no Debian, os alertas de pacote instalado continuam a dizer o nome de cada pacote.
+
+O passo de confirmação por *logtest* diz **não se aplica** a estas regras: o *logtest* não reproduz eventos FIM, e a prova são os disparos da regra depois da próxima atualização.
+
 ## Aplicação
 
 **Falsos Positivos** > **Aplicar ao Wazuh**

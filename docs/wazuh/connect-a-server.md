@@ -184,6 +184,10 @@ Ecrã **Proteger** > **Rede VPN** > **Política**.
 
 Agora que há um servidor na rede, a política já pode correr os testes de isolamento. No ecrã **Política**, clique em **Aplicar a política desejada** e confirme: o Headscale só a aceita se os testes passarem.
 
+O ecrã mostra também o **mapa das ligações**: os servidores e a ponte chegam ao hub só nas portas 1514 e 1515; entre servidores, do hub para os servidores e a partir de uma máquina bloqueada, nada passa. Cada ligação diz em texto se é permitida ou negada, e «provado» quando um teste de isolamento a confirma. O mapa é calculado a partir da própria política, por isso muda com ela.
+
+**Verificar o isolamento agora** corre os testes contra a política que está em vigor nesse momento (mesmo que alguém a tenha alterado por fora) e contra as máquinas que existem, um a um, e mostra o resultado de cada: confirmado, ou **FALHOU** com a razão dada pelo Headscale. Não altera a política, mas fica registado na trilha, como prova da verificação. Prova a regra do Headscale, não a firewall da rede.
+
 ## Resumo
 
 ```{figure} /_static/img/510-adicionar-um-servidor/17.jpg

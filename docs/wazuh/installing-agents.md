@@ -48,7 +48,7 @@ No ecrã, encontra os seguintes elementos:
 
 **Wazuh Agent Builder** > **Políticas Zero-Trust**
 
-As políticas de confiança zero são apresentadas com o respetivo efeito: bloqueio dos comandos remotos, desativação das atualizações pelo gestor e das respostas ativas, restrição das permissões dos ficheiros do agente e firewall do agente, que restringe a comunicação ao gestor.
+As políticas de confiança zero são apresentadas com o respetivo efeito: bloqueio dos comandos remotos, desativação das atualizações pelo gestor e das respostas ativas, restrição das permissões dos ficheiros do agente. O **whodata do FIM** (o processo que alterou cada ficheiro) liga-se só se a máquina já tiver o necessário: nada se instala, e o agente nunca escreve regras de firewall.
 
 É gerado um script por sistema operativo: Windows, versões antigas do Windows Server e Linux. O script transfere o pacote oficial do Wazuh, instala-o e aplica as políticas selecionadas.
 
@@ -66,7 +66,7 @@ Ecrã **Wazuh Agent Builder** > **Políticas Zero-Trust** (1 de 3).
 Ecrã **Wazuh Agent Builder** > **Políticas Zero-Trust** (2 de 3).
 ```
 
-1. **Firewall do agente:** Restringe a comunicação ao gestor.
+1. **Whodata no FIM:** Diz que processo alterou cada ficheiro; liga-se só se a máquina já tiver o necessário.
 2. Clique em **Linux — Debian/Ubuntu/RHEL (.sh)**.
 
 ```{figure} /_static/capturas/wazuh-agentes/zerotrust-3.jpg
@@ -83,7 +83,7 @@ As limitações do agente deixaram de ser um conjunto único para todas as máqu
 
 | Perfil | O que limita |
 |---|---|
-| **Predefinido** | O que o Agent Builder já tinha: comandos remotos, atualização pelo gestor, resposta ativa, permissões dos ficheiros e firewall do agente. |
+| **Predefinido** | O que o Agent Builder já tinha: comandos remotos, atualização pelo gestor, resposta ativa e permissões dos ficheiros. |
 | **Desbloqueado** | Nada: o gestor pode dar ordens ao agente. É uma decisão a justificar. |
 | **Bloqueado (zero-trust)** | Tudo. |
 
