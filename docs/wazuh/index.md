@@ -13,6 +13,7 @@ explorer
 systems-and-agents
 software-and-cve-search
 false-positives
+whodata
 detection-rules
 ai-classification-and-studio
 private-network
@@ -21,4 +22,5 @@ install-on-windows
 legacy-servers
 manage-machines
 network-health
+policy-map
 ```

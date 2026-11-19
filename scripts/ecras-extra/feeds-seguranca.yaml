@@ -1,4 +1,5 @@
-# Página nova (sem vídeo): Detetar › IOC & Intelligence › Feeds de Segurança.
+# Página com vídeo (357): Detetar › IOC & Intelligence › Feeds de Segurança. Os números seguem a lista da página
+# (docs/platform/protect-and-detect/security-feeds.md). Só destaca: não arquiva nem cria relatórios.
 passos:
   - abrir: /feeds-seguranca
     esperar: 'text=Feeds de Segurança'
@@ -9,6 +10,10 @@ passos:
     rotulo: Filtrar por feed
   - destacar: 'label:has-text("Mostrar arquivados")'
     rotulo: Mostrar arquivados
+  - destacar: 'label:has-text("Só com data suspeita")'
+    rotulo: Só com data suspeita
+  - destacar: 'input[aria-label="Selecionar feed"]'
+    rotulo: Selecionar vários
   - destacar: '[title="Adicionar a um relatório de recomendações"]'
     rotulo: Adicionar a um relatório de recomendações
   - destacar: '[title^="Arquivar"]'

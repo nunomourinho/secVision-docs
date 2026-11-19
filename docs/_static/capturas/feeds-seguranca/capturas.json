@@ -45,11 +45,23 @@
    {
     "n": 4,
     "tipo": "ver",
-    "rotulo": "Adicionar a um relatório de recomendações",
+    "rotulo": "Só com data suspeita",
     "valor": null
    },
    {
     "n": 5,
+    "tipo": "ver",
+    "rotulo": "Selecionar vários",
+    "valor": null
+   },
+   {
+    "n": 6,
+    "tipo": "ver",
+    "rotulo": "Adicionar a um relatório de recomendações",
+    "valor": null
+   },
+   {
+    "n": 7,
     "tipo": "ver",
     "rotulo": "Arquivar",
     "valor": null

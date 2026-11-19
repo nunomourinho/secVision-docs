@@ -2267,31 +2267,43 @@
     "titulo": "Os feeds de segurança",
     "pagina": "platform/protect-and-detect/security-feeds",
     "grupo": "Formação C — A plataforma",
-    "duracao": 159.8,
-    "resumo": "Os alertas de segurança de todas as fontes num só sítio: pesquisar, filtrar por fonte, arquivar o que não interessa e passar a um relatório de recomendações o que pede ação.",
+    "duracao": 229.6,
+    "resumo": "Os alertas de segurança de todas as fontes num só sítio: pesquisar, filtrar por fonte, reconhecer um artigo com a data suspeita, passar vários feeds de uma vez a um relatório de recomendações, arquivar com motivo e ordenar os feeds dentro do relatório.",
     "capitulos": [
       {
         "t": 0.0,
         "titulo": "Introdução"
       },
       {
-        "t": 15.66,
+        "t": 16.42,
         "titulo": "O conceito"
       },
       {
-        "t": 38.79,
+        "t": 43.09,
         "titulo": "Os artigos"
       },
       {
-        "t": 63.52,
-        "titulo": "O que fazer a um artigo"
+        "t": 66.12,
+        "titulo": "Datas suspeitas"
       },
       {
-        "t": 93.64,
+        "t": 100.28,
+        "titulo": "O que fazer aos artigos"
+      },
+      {
+        "t": 117.44,
         "titulo": "O relatório"
       },
       {
-        "t": 127.61,
+        "t": 140.65,
+        "titulo": "Arquivar"
+      },
+      {
+        "t": 170.45,
+        "titulo": "O relatório"
+      },
+      {
+        "t": 193.93,
         "titulo": "Resumo"
       }
     ]
@@ -2466,7 +2478,7 @@
     "titulo": "Instalar os agentes do Wazuh",
     "pagina": "wazuh/installing-agents",
     "grupo": "Formação E — Wazuh",
-    "duracao": 305.5,
+    "duracao": 314.0,
     "resumo": "O que o agente faz numa máquina e porque se instala endurecido; o gerador de scripts do SecVision (gestor, portas, versão, políticas de confiança zero), a fila dos sistemas em GAP, e o assistente do próprio Wazuh, lado a lado; e onde a máquina aparece depois de instalada.",
     "capitulos": [
       {
@@ -2490,23 +2502,23 @@
         "titulo": "O gerador"
       },
       {
-        "t": 150.64,
+        "t": 153.78,
         "titulo": "A fila"
       },
       {
-        "t": 182.19,
+        "t": 185.33,
         "titulo": "A fila"
       },
       {
-        "t": 214.19,
+        "t": 217.33,
         "titulo": "No Wazuh"
       },
       {
-        "t": 244.55,
+        "t": 249.19,
         "titulo": "No Wazuh"
       },
       {
-        "t": 276.88,
+        "t": 285.38,
         "titulo": "Resumo"
       }
     ]
@@ -3248,6 +3260,120 @@
       {
         "t": 372.87,
         "titulo": "Fecho"
+      }
+    ]
+  },
+  "515-o-whodata-do-fim": {
+    "titulo": "O whodata do FIM",
+    "pagina": "wazuh/whodata",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 505.1,
+    "resumo": "Porque é que uma atualização gera centenas de alertas de integridade, o que o whodata acrescenta (o processo que escreveu cada ficheiro), porque é que o agente só o liga com o que a máquina já tem, o instalador interativo que prepara a máquina com autorização item a item, e o modelo de falso positivo que baixa a nível 1 o que o gestor de pacotes escreveu — visto no SecVision e no painel do Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 19.64,
+        "titulo": "O problema"
+      },
+      {
+        "t": 48.99,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 85.8,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 112.73,
+        "titulo": "1. O ruído"
+      },
+      {
+        "t": 147.22,
+        "titulo": "1. O ruído"
+      },
+      {
+        "t": 174.28,
+        "titulo": "2. O perfil"
+      },
+      {
+        "t": 203.82,
+        "titulo": "3. Preparar a máquina"
+      },
+      {
+        "t": 228.88,
+        "titulo": "3. Preparar a máquina"
+      },
+      {
+        "t": 257.64,
+        "titulo": "3. Preparar a máquina"
+      },
+      {
+        "t": 287.64,
+        "titulo": "3. Preparar a máquina"
+      },
+      {
+        "t": 312.75,
+        "titulo": "3. Preparar a máquina"
+      },
+      {
+        "t": 326.69,
+        "titulo": "4. O processo no alerta"
+      },
+      {
+        "t": 351.68,
+        "titulo": "5. Calar a atualização"
+      },
+      {
+        "t": 380.75,
+        "titulo": "5. Calar a atualização"
+      },
+      {
+        "t": 404.04,
+        "titulo": "6. No Wazuh"
+      },
+      {
+        "t": 431.43,
+        "titulo": "6. No Wazuh"
+      },
+      {
+        "t": 462.69,
+        "titulo": "Limites"
+      }
+    ]
+  },
+  "516-o-mapa-da-politica": {
+    "titulo": "A política da rede privada, em mapa",
+    "pagina": "wazuh/policy-map",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 181.5,
+    "resumo": "O mapa das ligações que a política da rede privada permite e nega, derivado da própria política; o botão «Verificar o isolamento agora», que prova a política em vigor contra as máquinas de hoje; e o que acontece quando alguém mexe na política diretamente no Headscale: a deriva, os testes a falhar e a reposição.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 17.17,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 44.38,
+        "titulo": "1. O mapa"
+      },
+      {
+        "t": 78.28,
+        "titulo": "2. A prova"
+      },
+      {
+        "t": 107.91,
+        "titulo": "3. Mexida por fora"
+      },
+      {
+        "t": 140.73,
+        "titulo": "3. Mexida por fora"
       }
     ]
   }

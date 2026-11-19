@@ -176,7 +176,14 @@ class Captura:
             h = max(VIEWPORT['height'], min(y1 - y0 + 160, 2400))
             topo = max(0, min(y0 - 80, altura_pag - h)) if y1 - y0 + 160 > VIEWPORT['height'] else \
                 max(0, min((y0 + y1) / 2 - h / 2, altura_pag - h))
-        if altura_pag <= VIEWPORT['height'] + 1:
+        # Uma coluna que rola por dentro (o painel esquerdo do Agent Builder) também perde o scroll numa captura
+        # `full_page`, mesmo que a página tenha um píxel a mais do que a janela: se alguma coluna está rolada e as
+        # molduras cabem todas na janela, fotografa-se a janela (a zerotrust-2 tinha a moldura no sítio errado).
+        rolou_dentro = self.page.evaluate(
+            "() => [...document.querySelectorAll('*')].some(e => e !== document.scrollingElement && e.scrollTop > 0)")
+        sy = self.page.evaluate('scrollY')
+        cabem = bool(itens) and y0 >= sy and y1 <= sy + VIEWPORT['height']
+        if altura_pag <= VIEWPORT['height'] + 1 or (rolou_dentro and cabem):
             # A página não rola na janela: rola por dentro (a coluna do editor do SGSI). Uma captura
             # `full_page` redimensiona a janela, e isso repõe o scroll dessas colunas — as molduras
             # ficavam onde o elemento estava antes. Fotografa-se a janela tal como está.
@@ -339,6 +346,8 @@ def main():
     ap.add_argument('--gravacoes', type=Path, action='append', default=[],
                     help='outra pasta com os ficheiros colados (p. ex. a de transferência)')
     ap.add_argument('--aplicar', action='store_true', help='executar também os cliques que alteram o Wazuh')
+    ap.add_argument('--painel', default='https://127.0.0.1:5610',
+                    help='o painel do Wazuh, para os roteiros que o pedem como {{PAINEL}} (como o ecra.py, PAINEL_WAZUH)')
     ap.add_argument('nomes', nargs='*')
     args = ap.parse_args()
     global APLICAR
@@ -357,7 +366,8 @@ def main():
         browser = pw.chromium.launch()
         for nome in nomes:
             print(nome, flush=True)
-            dados = yaml.safe_load(fontes[nome].read_text(encoding='utf-8'))
+            # os roteiros podem pedir o painel do Wazuh como {{PAINEL}} (videos/roteiros/ecra.py:valores_do_cenario)
+            dados = yaml.safe_load(fontes[nome].read_text(encoding='utf-8').replace('{{PAINEL}}', args.painel))
             ctx = browser.new_context(viewport=VIEWPORT, device_scale_factor=1, locale='pt-PT',
                                       ignore_https_errors=True)
             page = ctx.new_page()

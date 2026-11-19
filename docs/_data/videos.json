@@ -496,8 +496,8 @@
   },
   "502-instalar-os-agentes": {
     "titulo": "SecVision — Instalar os agentes do Wazuh",
-    "substitui": "xZLbwMfP8GY",
-    "youtube": "uscEJTySHYI",
+    "substitui": "uscEJTySHYI",
+    "youtube": "eNJ2HYEqd2g",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -587,8 +587,8 @@
   },
   "357-feeds-de-seguranca": {
     "titulo": "SecVision — Os feeds de segurança",
-    "substitui": "XyDG02pQ0P8",
-    "youtube": "oE9s3hDKMtw",
+    "substitui": "oE9s3hDKMtw",
+    "youtube": "jnoEbGVvB7M",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   },
@@ -643,6 +643,18 @@
   "514-servidores-windows-antigos-pela-ponte": {
     "titulo": "SecVision — Servidores Windows antigos pela ponte",
     "youtube": "sFLdtVcuj4A",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "515-o-whodata-do-fim": {
+    "titulo": "SecVision — O whodata do FIM",
+    "youtube": "cdNfyWFgp8I",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "516-o-mapa-da-politica": {
+    "titulo": "SecVision — A política da rede privada, em mapa",
+    "youtube": "-oedPZbsZlM",
     "privacidade": "unlisted",
     "legendas": "gravadas"
   }
