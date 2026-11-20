@@ -165,6 +165,35 @@ Ecrã **Identificar** > **Catálogo de Segurança**.
 
 1. **Estado:** Monitorizado.
 
+## Agentes fora do catálogo
+
+**Identificar** > **Inventário** > **Catálogo de Segurança** > **Agentes fora do catálogo**
+
+O botão **Agentes fora do catálogo**, na barra de filtros do catálogo, lista os agentes registados no Wazuh que não estão associados a nenhum sistema. O gestor (agente 000) não entra. Depois de aberto, o botão mostra quantos são.
+
+```{figure} /_static/capturas/agentes-fora-catalogo/botao-1.jpg
+:alt: O botão Agentes fora do catálogo na barra de filtros
+
+O botão **Agentes fora do catálogo**, na barra de filtros.
+```
+
+1. Botão **Agentes fora do catálogo:** Abre e fecha o painel; o número é o total de agentes por associar.
+
+```{figure} /_static/capturas/agentes-fora-catalogo/painel-1.jpg
+:alt: Identificar > Inventário > Catálogo de Segurança > Agentes fora do catálogo
+
+O painel **Agentes fora do catálogo**.
+```
+
+1. **Pesquisa:** Filtra a lista por nome, IP, sistema operativo ou estado.
+2. **Agente:** Nome, IP, sistema operativo, estado (ativo, desligado, pendente, nunca ligou) e data da última ligação ao gestor.
+3. **Associar a sistema existente:** Pesquisa um sistema do catálogo pelo nome ou IP. Só são propostos os sistemas que ainda não têm agente.
+4. **Criar sistema:** Cria o sistema a partir do agente, com o nome, o IP e o sistema operativo do agente, e o tipo e o nível escolhidos, e associa-o.
+
+Em ambos os casos o agente sai da lista e o sistema passa a Monitorizado. As duas ações exigem permissão de edição do catálogo; sem ela, o painel mostra apenas a lista. O painel não filtra a tabela do catálogo, porque os agentes não são sistemas.
+
+Os servidores instalados pela rede VPN com o sistema do catálogo escolhido no convite são associados automaticamente, de 10 em 10 minutos. Um agente instalado à mão, ou por um convite sem sistema, aparece aqui até ser associado.
+
 ## Resumo
 
 A associação determina o estado de cada sistema, os dias em GAP, a fila de integração e a cobertura de monitorização.
@@ -174,5 +203,5 @@ A associação não altera o Wazuh. Para retirar uma máquina da monitorização
 **Funcionalidades e limitações**
 
 - Associa cada sistema ao respetivo agente e determina o estado, os dias em GAP e a cobertura.
-- Apresenta os agentes por associar, que correspondem a máquinas fora do catálogo.
+- Apresenta os agentes por associar, que correspondem a máquinas fora do catálogo, no painel **Agentes fora do catálogo**.
 - Não altera os agentes: a associação e a desassociação afetam apenas o catálogo.

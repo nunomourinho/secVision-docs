@@ -1,0 +1,16 @@
+# Painel novo (sem vídeo): Identificar › Inventário › Catálogo de Segurança › Agentes fora do catálogo.
+utilizador: admin
+passos:
+  - abrir: /systems
+    esperar: 'text=Catálogo de Segurança'
+  - marca: botao
+  - clicar: 'button:has-text("Agentes fora do catálogo")'
+  - marca: painel
+  - destacar: 'input[aria-label="Pesquisar agentes fora do catálogo"]'
+    rotulo: Pesquisa
+  - destacar: 'li:has-text("Criar sistema") >> nth=0'
+    rotulo: Agente
+  - destacar: 'button:has-text("Associar a sistema existente") >> nth=0'
+    rotulo: Associar a sistema existente
+  - destacar: 'button:has-text("Criar sistema") >> nth=0'
+    rotulo: Criar sistema

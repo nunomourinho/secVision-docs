@@ -1,0 +1,65 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "INVENTÁRIO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Catálogo de Segurança"
+   }
+  ]
+ },
+ {
+  "imagem": "botao-1.jpg",
+  "marca": "botao",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Agentes fora do catálogo",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "painel-1.jpg",
+  "marca": "painel",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Pesquisa",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Agente",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Associar a sistema existente",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Criar sistema",
+    "valor": null
+   }
+  ]
+ }
+]
