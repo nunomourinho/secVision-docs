@@ -25,6 +25,8 @@ passos:
     rotulo: Correspondência local
   - destacar: 'button:has-text("Abrir no shodan.io")'
     rotulo: Abrir no shodan.io
+  - destacar: 'button:has-text("Colar resultados")'
+    rotulo: Colar resultados
   - destacar: 'label:has-text("Importar exportação")'
     rotulo: Importar exportação
   - clicar: 'button:has-text("Correspondência local")'

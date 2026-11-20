@@ -87,11 +87,17 @@
    {
     "n": 9,
     "tipo": "ver",
-    "rotulo": "Importar exportação",
+    "rotulo": "Colar resultados",
     "valor": null
    },
    {
     "n": 10,
+    "tipo": "ver",
+    "rotulo": "Importar exportação",
+    "valor": null
+   },
+   {
+    "n": 11,
     "tipo": "clicar",
     "rotulo": "Correspondência local",
     "valor": null

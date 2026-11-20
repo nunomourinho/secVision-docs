@@ -51,14 +51,15 @@ No painel, encontra os seguintes elementos:
 6. Botão **Pesquisar (API):** Pesquisa com a API do Shodan. Requer a chave configurada em {doc}`/platform/administration/shodan`.
 7. Botão **Correspondência local:** Cruza a tecnologia com os varrimentos InternetDB já feitos (**Verificar Shodan** nos sistemas e nas redes). Não gasta créditos.
 8. Botão **Abrir no shodan.io:** Abre a mesma pesquisa no site do Shodan, com a sessão que tiver lá aberta.
-9. Botão **Importar exportação:** Importa o ficheiro exportado do shodan.io.
-10. Neste exemplo, clique em **Correspondência local**.
+9. Botão **Colar resultados:** Recebe o texto copiado da página de resultados do shodan.io.
+10. Botão **Importar exportação:** Importa o ficheiro exportado do shodan.io.
+11. Neste exemplo, clique em **Correspondência local**.
 
 **Os três modos de pesquisar:**
 
 - **Pesquisar (API)** é o modo completo: devolve banners, componentes web e versões. Com a filtragem por gamas, cada página de 100 resultados gasta 1 crédito de pesquisa e requer um plano pago do Shodan. Se o administrador tiver definido um teto mensal, uma pesquisa que o ultrapassaria é recusada antes de gastar créditos.
 - **Correspondência local** é gratuita e imediata, mas vê menos: o InternetDB devolve apenas portas e CPE por endereço. Não identifica livrarias web, não traz banners e só conhece a versão quando ela vem no CPE. Os dados são os do último varrimento de cada endereço. O resultado indica esta limitação.
-- **Abrir no shodan.io** não usa a chave da plataforma. Para guardar o que encontrar no site, exporte os resultados («Download Results», formato JSON) e use **Importar exportação**.
+- **Abrir no shodan.io** não usa a chave da plataforma. Para guardar o que encontrar no site, copie a página de resultados e use **Colar resultados**, ou exporte os resultados («Download Results», formato JSON) e use **Importar exportação**.
 
 ## Resultado
 
@@ -76,13 +77,23 @@ No resultado, encontra os seguintes elementos:
 
 Quando o Shodan não indica a versão de um serviço, a linha mantém-se com a indicação «versão desconhecida»: não saber a versão não significa que o serviço não está exposto. As pesquisas anteriores ficam listadas por baixo do painel, para voltar a filtrar por elas.
 
-## Importar a exportação do shodan.io
+## Guardar o que encontrou no shodan.io
 
-1. Clique em **Abrir no shodan.io**. A pesquisa abre no site, com as gamas da instituição já incluídas.
-2. No site, exporte os resultados em **Download Results**, formato JSON.
-3. De volta ao painel, clique em **Importar exportação** e escolha o ficheiro (`.json.gz` ou `.json`).
-4. A pré-visualização mostra cada linha do ficheiro. As linhas fora das gamas e as repetidas não podem ser marcadas. As linhas fora da versão pedida aparecem desmarcadas.
-5. Clique em **Importar**. Só nesse momento a pesquisa é gravada.
+Depois de clicar em **Abrir no shodan.io**, a pesquisa abre no site com as gamas da instituição já incluídas. Há duas formas de trazer os resultados para a plataforma.
+
+**Colar os resultados da página:**
+
+1. Na página de resultados do shodan.io, selecione tudo (Ctrl+A) e copie (Ctrl+C).
+2. No painel, clique em **Colar resultados**, cole o texto e clique em **Pré-visualizar**.
+
+Cada resultado da página começa pelo título, a data e o endereço IP, e a plataforma lê também os nomes, o cabeçalho `Server:` (produto e versão) e o `X-Powered-By:` (por exemplo, a versão do PHP). A página não mostra a porta nem os CVE: a porta é deduzida do banner (443 quando há certificado, 80 quando não há) e aparece sempre marcada como **(deduzida)**; os CVE ficam vazios.
+
+**Importar a exportação:**
+
+1. No site, exporte os resultados em **Download Results**, formato JSON.
+2. No painel, clique em **Importar exportação** e escolha o ficheiro (`.json.gz` ou `.json`).
+
+Nos dois casos, a pré-visualização mostra cada resultado. Os que estão fora das gamas e os repetidos não podem ser marcados; os que estão fora da versão pedida aparecem desmarcados. Clique em **Importar**: só nesse momento a pesquisa é gravada.
 
 ## Na ficha do sistema
 

@@ -40,5 +40,5 @@ No ecrã, encontra os seguintes elementos:
 ## Resumo
 
 - A chave fica cifrada e não volta a ser apresentada depois de guardada.
-- Sem chave, a pesquisa de exposição continua possível: abrir a pesquisa no shodan.io, com a sessão de quem a abre, e importar o ficheiro exportado; ou a correspondência local, sem custo.
+- Sem chave, a pesquisa de exposição continua possível: abrir a pesquisa no shodan.io, com a sessão de quem a abre, e colar os resultados da página ou importar o ficheiro exportado; ou a correspondência local, sem custo.
 - Na instalação de teste, a ligação é recusada: o Shodan é um serviço externo e não há um segundo para onde a apontar.
