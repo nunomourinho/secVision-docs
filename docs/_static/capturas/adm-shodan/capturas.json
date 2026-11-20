@@ -1,0 +1,70 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "GOVERNAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "ADMINISTRAÇÃO DO SISTEMA"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Integrações"
+   },
+   {
+    "n": 4,
+    "tipo": "clicar",
+    "rotulo": "Shodan"
+   }
+  ]
+ },
+ {
+  "imagem": "chave-1.jpg",
+  "marca": "chave",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Integração activa",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Chave de API",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Teto de créditos por mês",
+    "valor": null
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Máximo de páginas por pesquisa",
+    "valor": null
+   },
+   {
+    "n": 5,
+    "tipo": "ver",
+    "rotulo": "Guardar",
+    "valor": null
+   },
+   {
+    "n": 6,
+    "tipo": "ver",
+    "rotulo": "Testar ligação",
+    "valor": null
+   }
+  ]
+ }
+]

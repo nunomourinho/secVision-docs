@@ -50,7 +50,9 @@ No ecrã, encontra os seguintes filtros, a par do filtro por rede:
 2. **Estado:** Monitorizado ou GAP.
 3. **Ativo de informação:** Sistemas com ou sem ativo de informação associado.
 
-Ao lado dos filtros, o botão **Agentes fora do catálogo** lista os agentes do Wazuh que não estão associados a nenhum sistema e permite associá-los ou criar o sistema a partir deles (ver {doc}`/wazuh/systems-and-agents`).
+Ao lado dos filtros, o botão **Exposição Shodan** pesquisa no Shodan onde, nas gamas públicas da instituição, está exposta uma tecnologia, e filtra a tabela pelos sistemas que a expõem (ver {doc}`shodan-exposure`).
+
+O botão **Agentes fora do catálogo** lista os agentes do Wazuh que não estão associados a nenhum sistema e permite associá-los ou criar o sistema a partir deles (ver {doc}`/wazuh/systems-and-agents`).
 
 Um sistema sem ativo de informação associado é apresentado a âmbar. Esta indicação não significa risco nulo, mas sim que o risco da informação que suporta ainda não foi apreciado. Este tema é descrito na página seguinte.
 

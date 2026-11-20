@@ -1,0 +1,26 @@
+# Separador novo (sem vídeo): Detetar › IOC & Intelligence › Relatórios de Recomendações ›
+# Associar sistemas › Por exposição (Shodan). Correspondência local sobre dados semeados no teste.
+utilizador: admin
+passos:
+  - abrir: /relatorios-recomendacoes
+    esperar: 'button:has-text("Novo Relatório")'
+  - clicar: 'button:has-text("Novo Relatório")'
+  - clicar: 'button:has-text("Associar sistemas")'
+  - marca: separador
+  - clicar: 'button:text-is("Por exposição (Shodan)")'
+  - esperar: 'text=/gamas? públicas?/'
+  - selecionar: 'div.fixed label:has-text("Modelo") select'
+    opcao: Apache httpd
+  - clicar: 'button:has-text("Correspondência local")'
+  - esperar: 'text=Sistemas vistos pelas pesquisas'
+  - marca: propostas
+  - destacar: 'table:has-text("IP:porta")'
+    rotulo: Resultados
+  - destacar: 'text=Sistemas vistos pelas pesquisas'
+    rotulo: Sistemas propostos
+  - destacar: 'li:has-text("Associar") >> nth=0'
+    rotulo: Associar
+  - destacar: 'summary:has-text("Pesquisas guardadas")'
+    rotulo: Pesquisas guardadas
+  - destacar: 'button:has-text("Associar todos os propostos")'
+    rotulo: Associar todos os propostos

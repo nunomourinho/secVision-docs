@@ -1,0 +1,38 @@
+# Painel novo (sem vídeo): Identificar › Inventário › Catálogo de Segurança › Exposição Shodan.
+# Os resultados vêm da correspondência local, sobre um varrimento InternetDB semeado na base de teste
+# (a API do Shodan é recusada no ambiente de teste).
+utilizador: admin
+passos:
+  - abrir: /systems
+    esperar: 'text=Catálogo de Segurança'
+  - marca: botao
+  - clicar: 'button:has-text("Exposição Shodan")'
+  - esperar: 'text=/gamas? públicas?/'
+  - marca: painel
+  - destacar: 'summary:has-text("pública")'
+    rotulo: Gamas públicas
+  - selecionar: 'label:has-text("Modelo") select'
+    opcao: Apache httpd
+  - escrever: 'input[placeholder="2.4.49 ou < 2.4.50"]'
+    texto: '< 2.4.50'
+  - destacar: 'label:has-text("Query do Shodan")'
+    rotulo: Query do Shodan
+  - destacar: 'button:has-text("Estimar")'
+    rotulo: Estimar
+  - destacar: 'button:has-text("Pesquisar (API)")'
+    rotulo: Pesquisar (API)
+  - destacar: 'button:has-text("Correspondência local")'
+    rotulo: Correspondência local
+  - destacar: 'button:has-text("Abrir no shodan.io")'
+    rotulo: Abrir no shodan.io
+  - destacar: 'label:has-text("Importar exportação")'
+    rotulo: Importar exportação
+  - clicar: 'button:has-text("Correspondência local")'
+  - esperar: 'text=Correspondência local (InternetDB)'
+  - marca: resultado
+  - destacar: 'text=Correspondência local (InternetDB)'
+    rotulo: A pesquisa guardada
+  - destacar: 'table:has-text("IP:porta")'
+    rotulo: Resultados
+  - destacar: 'button:has-text("Filtrar o catálogo por")'
+    rotulo: Filtrar o catálogo

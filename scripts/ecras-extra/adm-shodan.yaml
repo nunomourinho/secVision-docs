@@ -1,0 +1,18 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Integrações › Shodan.
+utilizador: admin
+passos:
+  - abrir: /admin/shodan
+    esperar: 'text=Integração Shodan'
+  - marca: chave
+  - destacar: 'text=Integração activa'
+    rotulo: Integração activa
+  - destacar: 'label:has-text("Chave de API")'
+    rotulo: Chave de API
+  - destacar: 'label:has-text("Teto de créditos por mês")'
+    rotulo: Teto de créditos por mês
+  - destacar: 'label:has-text("Máximo de páginas por pesquisa")'
+    rotulo: Máximo de páginas por pesquisa
+  - destacar: 'button:has-text("Guardar")'
+    rotulo: Guardar
+  - destacar: 'button:has-text("Testar ligação")'
+    rotulo: Testar ligação

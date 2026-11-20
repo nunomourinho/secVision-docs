@@ -1,0 +1,125 @@
+[
+ {
+  "imagem": "menu.jpg",
+  "marca": "menu",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "IDENTIFICAR"
+   },
+   {
+    "n": 2,
+    "tipo": "clicar",
+    "rotulo": "INVENTÁRIO"
+   },
+   {
+    "n": 3,
+    "tipo": "clicar",
+    "rotulo": "Catálogo de Segurança"
+   }
+  ]
+ },
+ {
+  "imagem": "botao-1.jpg",
+  "marca": "botao",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "clicar",
+    "rotulo": "Exposição Shodan",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "painel-1.jpg",
+  "marca": "painel",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "Gamas públicas",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "escolher",
+    "rotulo": "— nenhum (produto, componente ou query) —",
+    "valor": "Apache httpd"
+   },
+   {
+    "n": 3,
+    "tipo": "escrever",
+    "rotulo": "2.4.49 ou < 2.4.50",
+    "valor": "< 2.4.50"
+   },
+   {
+    "n": 4,
+    "tipo": "ver",
+    "rotulo": "Query do Shodan",
+    "valor": null
+   },
+   {
+    "n": 5,
+    "tipo": "ver",
+    "rotulo": "Estimar",
+    "valor": null
+   },
+   {
+    "n": 6,
+    "tipo": "ver",
+    "rotulo": "Pesquisar (API)",
+    "valor": null
+   },
+   {
+    "n": 7,
+    "tipo": "ver",
+    "rotulo": "Correspondência local",
+    "valor": null
+   },
+   {
+    "n": 8,
+    "tipo": "ver",
+    "rotulo": "Abrir no shodan.io",
+    "valor": null
+   },
+   {
+    "n": 9,
+    "tipo": "ver",
+    "rotulo": "Importar exportação",
+    "valor": null
+   },
+   {
+    "n": 10,
+    "tipo": "clicar",
+    "rotulo": "Correspondência local",
+    "valor": null
+   }
+  ]
+ },
+ {
+  "imagem": "resultado-1.jpg",
+  "marca": "resultado",
+  "itens": [
+   {
+    "n": 1,
+    "tipo": "ver",
+    "rotulo": "A pesquisa guardada",
+    "valor": null
+   },
+   {
+    "n": 2,
+    "tipo": "ver",
+    "rotulo": "Resultados",
+    "valor": null
+   },
+   {
+    "n": 3,
+    "tipo": "ver",
+    "rotulo": "Filtrar o catálogo",
+    "valor": null
+   }
+  ]
+ }
+]

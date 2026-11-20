@@ -77,6 +77,8 @@ As versões são comparadas segundo as regras do Debian ou do RPM, e não como t
 
 Na instância de teste, a pesquisa é recusada, com indicação do motivo: não existe um segundo Wazuh para consulta. Na instância real, com o Indexer configurado, o resultado é a lista dos sistemas afetados, pronta a associar ao relatório.
 
+O separador **Por exposição (Shodan)** responde à pergunta complementar: que sistemas estão expostos na Internet com uma tecnologia. A pesquisa percorre as gamas públicas da instituição, fica guardada no relatório e propõe os sistemas encontrados para associação (ver {doc}`/platform/inventory/shodan-exposure`).
+
 ```{figure} /_static/capturas/detecao-ameacas/relatorios-1.jpg
 :alt: Detetar > IOC & Intelligence > Relatórios de Recomendações
 

@@ -8,6 +8,7 @@ O parque informático e a informação que suporta: importação, consulta, cata
 import
 view-the-estate
 security-catalogue
+shodan-exposure
 information-assets
 groups-and-org-chart
 processes-and-services
