@@ -2345,6 +2345,182 @@
       }
     ]
   },
+  "360-exposicao-na-internet": {
+    "titulo": "A exposição na Internet",
+    "pagina": "platform/inventory/shodan-exposure",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 296.3,
+    "resumo": "Onde, nas gamas públicas da instituição, está exposta uma tecnologia: a integração com o Shodan, a pesquisa por modelo e versão, a correspondência local que não gasta créditos, filtrar o catálogo pelos sistemas encontrados e colar os resultados copiados da página do shodan.io.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.05,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 41.14,
+        "titulo": "O que pedir a quem"
+      },
+      {
+        "t": 58.74,
+        "titulo": "A integração"
+      },
+      {
+        "t": 82.22,
+        "titulo": "A pesquisa"
+      },
+      {
+        "t": 103.9,
+        "titulo": "A pesquisa"
+      },
+      {
+        "t": 136.91,
+        "titulo": "Os resultados"
+      },
+      {
+        "t": 166.56,
+        "titulo": "Os resultados"
+      },
+      {
+        "t": 187.94,
+        "titulo": "Sem a API"
+      },
+      {
+        "t": 213.85,
+        "titulo": "Sem a API"
+      },
+      {
+        "t": 240.08,
+        "titulo": "Sem a API"
+      },
+      {
+        "t": 256.86,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "361-virustotal-nos-instaladores": {
+    "titulo": "O VirusTotal nos instaladores",
+    "pagina": "platform/administration/virustotal",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 184.3,
+    "resumo": "Confirmar que nenhum antivírus dá como malicioso um instalador do agente antes de o distribuir: a chave do VirusTotal, a coluna VirusTotal nos convites, a pergunta só pela soma do ficheiro, e porque enviar um ficheiro desconhecido é divulgá-lo.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 15.54,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 46.13,
+        "titulo": "A chave"
+      },
+      {
+        "t": 75.48,
+        "titulo": "A coluna VirusTotal"
+      },
+      {
+        "t": 108.37,
+        "titulo": "Um ficheiro desconhecido"
+      },
+      {
+        "t": 122.19,
+        "titulo": "Um ficheiro desconhecido"
+      },
+      {
+        "t": 149.39,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "362-o-catalogo-e-os-agentes": {
+    "titulo": "O catálogo e os agentes do Wazuh",
+    "pagina": "platform/inventory/security-catalogue",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 201.6,
+    "resumo": "Pôr o catálogo em dia com o Wazuh: os agentes que não estão ligados a nenhum sistema, associá-los ou criar o sistema, e filtrar o catálogo pelos sistemas que têm um programa numa dada versão ou uma vulnerabilidade.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 18.56,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 41.02,
+        "titulo": "Agentes fora do catálogo"
+      },
+      {
+        "t": 59.7,
+        "titulo": "Agentes fora do catálogo"
+      },
+      {
+        "t": 91.58,
+        "titulo": "Software ou CVE"
+      },
+      {
+        "t": 118.73,
+        "titulo": "Software ou CVE"
+      },
+      {
+        "t": 140.99,
+        "titulo": "Agir"
+      },
+      {
+        "t": 161.97,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "363-os-tipos-dos-feeds": {
+    "titulo": "Os tipos dos feeds",
+    "pagina": "platform/protect-and-detect/security-feeds",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 155.9,
+    "resumo": "Separar os alertas que pedem ação das notícias e da informação geral: o administrador diz de que tipo é cada canal, e cada pessoa escolhe, em Feeds de Segurança, os tipos que quer ver. A escolha fica guardada na conta.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 14.48,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 43.78,
+        "titulo": "O administrador"
+      },
+      {
+        "t": 62.3,
+        "titulo": "O administrador"
+      },
+      {
+        "t": 80.09,
+        "titulo": "Cada pessoa"
+      },
+      {
+        "t": 94.77,
+        "titulo": "Cada pessoa"
+      },
+      {
+        "t": 112.81,
+        "titulo": "Cada pessoa"
+      },
+      {
+        "t": 124.33,
+        "titulo": "Resumo"
+      }
+    ]
+  },
   "401-o-primeiro-ano": {
     "titulo": "O primeiro ano em sete passos",
     "pagina": "journey/first-year",

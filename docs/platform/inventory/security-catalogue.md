@@ -5,6 +5,11 @@ Os sistemas operados pela instituição, com o nível de criticidade (N1 a N4), 
 ```{video} 313-catalogo-de-seguranca
 ```
 
+```{video} 362-o-catalogo-e-os-agentes
+```
+
+O segundo vídeo mostra os agentes fora do catálogo e o filtro **Software / CVE**.
+
 O inventário identifica os equipamentos existentes. O catálogo de segurança identifica os sistemas operados pela instituição, o respetivo nível de criticidade e o estado da monitorização de segurança, a partir dos quais é calculada a cobertura.
 
 ## Acesso
@@ -49,6 +54,8 @@ No ecrã, encontra os seguintes filtros, a par do filtro por rede:
 1. **Nível:** De N1 a N4.
 2. **Estado:** Monitorizado ou GAP.
 3. **Ativo de informação:** Sistemas com ou sem ativo de informação associado.
+
+O botão **Software / CVE** pergunta aos agentes Wazuh que sistemas têm um programa numa dada versão (com um operador: `<=`, `<`, `=`, `>=` ou `>`; sem versão, conta qualquer versão) ou um CVE. Só entram sistemas com agente Wazuh ligado. A resposta mostra, por termo, quantos sistemas e quantas ocorrências, e por baixo de cada sistema os pacotes e os CVE que o Wazuh reporta. As versões comparam-se pelas regras do Debian e do RPM; um pacote com **backport** (a distribuição aplicou a correção sem mudar o número da versão) vem marcado, e a opção **Excluir versões com backport** deixa-os de fora. Marcados os sistemas, **Filtrar o catálogo por estes N sistemas** reduz a tabela a esses, com o que foi encontrado por baixo de cada nome, e as ações em massa (nível, varreduras, mapear a ativos) aplicam-se a eles. A mesma pesquisa existe nos relatórios de recomendações, para associar os sistemas afetados ({doc}`/wazuh/software-and-cve-search`).
 
 Ao lado dos filtros, o botão **Exposição Shodan** pesquisa no Shodan onde, nas gamas públicas da instituição, está exposta uma tecnologia, e filtra a tabela pelos sistemas que a expõem (ver {doc}`shodan-exposure`).
 

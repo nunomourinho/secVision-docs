@@ -77,6 +77,12 @@ No ecrã, encontra os seguintes elementos:
 Ecrã **Governar** > **Organização** > **Organograma** (2 de 2).
 ```
 
+### A estrutura em JSON, sem pessoas
+
+O botão **Estrutura (.json)** descarrega as unidades (nome, espécie, governo central ou delegado, descrição, se estão ativas e de quem dependem) e nada mais: nem responsáveis, nem papéis, nem pessoas. Por isso, qualquer papel o pode descarregar. Serve para trabalhar a estrutura fora da plataforma e voltar a trazê-la.
+
+**Importar estrutura…** (papel operador) lê o ficheiro e mostra o que muda antes de gravar: o que é novo, o que altera e o que já está igual. Uma unidade identificada pelo `id` mas que na plataforma tem outro nome vem desmarcada, com os dois nomes lado a lado, porque sobrepor tem de ser deliberado. Para criar uma unidade no ficheiro, dê-lhe um `ref` à sua escolha e, em `pai`, o `ref` da unidade de que depende (que pode ser outra unidade nova). **Nada se apaga**: para retirar uma unidade, ponha `"ativo": false`.
+
 ## Resumo
 
 Solicite à secretaria-geral a estrutura orgânica, aos recursos humanos a composição de cada unidade e à direção a identificação das unidades com governo próprio.

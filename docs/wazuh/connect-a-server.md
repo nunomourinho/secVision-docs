@@ -190,6 +190,9 @@ O ecrã mostra também o **mapa das ligações**: os servidores e a ponte chegam
 
 ## Verificar os instaladores no VirusTotal
 
+```{video} 361-virustotal-nos-instaladores
+```
+
 Em **Proteger** > **Rede VPN** > **Convites**, a tabela dos ficheiros publicados no depósito tem uma coluna **VirusTotal**. Aparece quando a chave de API está configurada em **Governar** > **Administração do sistema** > **Integrações** > **VirusTotal** (ver {doc}`/platform/administration/virustotal`).
 
 1. **Consultar** pergunta ao VirusTotal pelo `sha256` do ficheiro. Nenhum ficheiro sai do servidor.

@@ -2,6 +2,9 @@
 
 Ligação à API do Shodan, para a pesquisa de exposição por tecnologia: onde, nas gamas públicas da instituição, está exposto um produto, uma versão ou uma livraria web. A pesquisa usa-se no Catálogo de Segurança e nos Relatórios de Recomendações (ver {doc}`/platform/inventory/shodan-exposure`).
 
+```{video} 360-exposicao-na-internet
+```
+
 ## Acesso
 
 **Governar** > **Administração do sistema** > **Integrações** > **Shodan**

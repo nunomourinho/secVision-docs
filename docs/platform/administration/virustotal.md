@@ -2,6 +2,9 @@
 
 Ligação ao VirusTotal, para verificar o que os motores antivírus dizem dos instaladores do agente publicados no depósito da rede privada. A consulta é feita só pelo `sha256` de cada ficheiro; o ficheiro só sai do servidor quando um administrador decide enviá-lo.
 
+```{video} 361-virustotal-nos-instaladores
+```
+
 ## Acesso
 
 **Governar** > **Administração do sistema** > **Integrações** > **VirusTotal**

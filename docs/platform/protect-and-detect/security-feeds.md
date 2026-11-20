@@ -5,6 +5,11 @@ Centralização das notícias e alertas de cibersegurança das fontes configurad
 ```{video} 357-feeds-de-seguranca
 ```
 
+```{video} 363-os-tipos-dos-feeds
+```
+
+O segundo vídeo mostra os tipos dos feeds e a escolha de cada pessoa.
+
 ## Acesso
 
 **Detetar** > **IOC & Intelligence** > **Feeds de Segurança**
@@ -18,6 +23,21 @@ Caminho de acesso no menu lateral. Os números indicam a ordem dos cliques.
 ## Fontes
 
 Os artigos provêm dos feeds RSS configurados pelo administrador em {doc}`/platform/administration/rss-feeds`, como o CERT.PT, a CISA, o SANS ISC e outras fontes adicionadas.
+
+## Tipos a mostrar
+
+Cada canal tem um ou mais tipos, definidos pelo administrador em {doc}`/platform/administration/rss-feeds`:
+
+| Tipo | Para quê |
+|---|---|
+| **Alertas** | avisos que pedem ação: falhas, correções urgentes |
+| **Notícias** | o que se passa no setor, sem ação imediata |
+| **Outbreak** | campanhas de ataque em curso |
+| **Informacionais** | boas práticas, guias e contexto |
+
+Por cima da lista, **Tipos a mostrar** escolhe os tipos que cada pessoa quer ver. Por omissão, só os **Alertas**. A escolha fica guardada na conta e acompanha a pessoa entre sessões e computadores; não muda o que os outros utilizadores veem. O filtro por feed também segue a escolha: só lista os canais com um tipo ligado. Sem nenhum tipo escolhido, a lista fica vazia e o ecrã diz porquê.
+
+O tipo é do canal, não de cada artigo: um canal de alertas pode publicar, de vez em quando, uma notícia.
 
 ## Configuração do ecrã
 

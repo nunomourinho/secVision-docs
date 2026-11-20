@@ -4,6 +4,9 @@ Pesquisa no Shodan onde, nas gamas de endereços IP públicos da instituição, 
 
 A mesma pesquisa existe em dois sítios: no **Catálogo de Segurança**, para filtrar a tabela pelos sistemas expostos, e nos **Relatórios de Recomendações**, onde fica guardada no relatório.
 
+```{video} 360-exposicao-na-internet
+```
+
 ## Acesso
 
 **Identificar** > **Inventário** > **Catálogo de Segurança** > **Exposição Shodan**

@@ -52,6 +52,8 @@ No ecrã, encontra os seguintes elementos:
 
 **Como importar:** Cole a lista ou carregue um ficheiro, preencha a descrição e confirme. Os valores podem estar em formato *defanged*, como `site[.]perigoso[.]pt`, habitual nos boletins; a plataforma repõe os pontos. As ações válidas são `bloquear` e `monitorizar`; numa lista sem ação, a plataforma solicita a sua indicação.
 
+**A tabela da FortiGuard.** A importação aceita também a tabela «Indicators of Compromise» de um alerta *Outbreak* da FortiGuard: copia-se a página inteira e cola-se. Entram só as linhas de IP e de domínio em estado ativo, e a ação é pedida no fim. As linhas de URL, de correio eletrónico e de ficheiros, e os indicadores inativos, aparecem no resultado como não importados, com o motivo. Uma linha cujo valor não tem forma de IP, de gama ou de domínio é recusada, nunca gravada.
+
 A validade de cada importação corresponde ao prazo padrão (definido em **Configurações**) e pode ser alterada no momento da importação. A reimportação não gera duplicados: um indicador com a mesma ação é atualizado.
 
 ```{figure} /_static/capturas/ioc/emergencia-1.jpg
@@ -95,6 +97,8 @@ No ecrã, encontra os seguintes elementos:
 3. Botão **Copiar URL:** Copia o endereço do ficheiro.
 
 São publicados oito ficheiros de texto, com um valor por linha: os IP e os domínios a bloquear e a monitorizar, as versões resolvidas por DNS e as versões consolidadas. Os ficheiros são gerados diariamente às 2h, ou manualmente, e publicados na porta **8081**, para consulta pelas firewalls, pelo EDR e pelo SIEM.
+
+O botão **Regenerar agora** mostra o progresso real, do clique até ao fim: quantos domínios já foram verificados no DNS e quantos dos oito ficheiros já foram gerados, e os erros que acontecerem (por exemplo, uma geração já em curso). Depois de uma importação grande, é aqui que se confirma que os feeds foram de facto regenerados.
 
 ```{important}
 **A porta 8081 não exige autenticação:** um equipamento de rede que obtém uma lista não suporta início de sessão. Apenas as firewalls devem ter acesso a esta porta; restrinja o acesso na rede.

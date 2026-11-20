@@ -141,8 +141,11 @@ No ecrã, encontra os seguintes elementos:
 As gamas de endereços IP (1 de 2).
 ```
 
-1. **Gamas de endereços IP (art. 35.º):** Blocos de endereços utilizados pela organização na Internet e na rede interna, um por linha.
-2. Botão **preencher a partir do inventário de redes:** Obtém as gamas do inventário e acrescenta apenas as que faltam. O botão apresenta uma proposta; para a registar, clique em **Guardar**.
+1. **Gamas de endereços IP públicas (art. 35.º):** Os blocos de endereços diretamente acessíveis pela Internet, um por linha (por exemplo, `192.0.2.0/24`). É esta a lista que o artigo 35.º do DL manda comunicar ao registo.
+2. **Gamas de endereços IP privadas:** Os blocos internos (`10.x`, `172.16–31.x`, `192.168.x`), um por linha. Servem o SGSI e não se comunicam ao regulador.
+3. Botão **preencher a partir do inventário de redes:** Obtém as gamas do inventário, põe cada rede na lista certa e acrescenta apenas as que faltam. O botão apresenta uma proposta; para a registar, clique em **Guardar**.
+
+Uma linha na lista errada (uma gama privada nas públicas, ou o contrário) é assinalada por baixo do campo, com um botão que a muda para a outra lista. As gamas públicas são também as que a pesquisa de exposição no Shodan percorre ({doc}`/platform/inventory/shodan-exposure`). Nenhuma das duas listas vai na exportação para Word: são o mapa da rede da organização.
 
 ```{figure} /_static/capturas/ficha-organizacao/gamas-2.jpg
 :alt: As gamas de endereços IP

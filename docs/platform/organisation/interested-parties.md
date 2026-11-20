@@ -118,6 +118,12 @@ Os requisitos e os controlos que os cumprem (3 de 4).
 Os requisitos e os controlos que os cumprem (4 de 4).
 ```
 
+## Exportar, importar e o que fica por preencher
+
+O ficheiro de exportação leva só a estrutura do registo: o nome, o tipo e a categoria de cada parte, as datas, a unidade orgânica, os serviços, o estado e as datas dos requisitos, e os controlos. Não leva o responsável, o fornecedor, a descrição, o canal, a frequência, a fonte nem a justificação, porque o texto livre é onde se escrevem nomes e contactos. A exportação é recusada, com o motivo, se o nome de uma parte ou o título de um requisito contiver uma pessoa conhecida, um endereço de correio eletrónico ou um telefone. Um ficheiro antigo que ainda traga esses campos é lido na mesma, e a pré-visualização diz quantas linhas os traziam: esses campos não entram.
+
+Depois de importar, a plataforma diz o que falta. Cada parte ou requisito com campos em branco leva o selo **por preencher**; o contador do topo soma-os, e a caixa **só os que têm campos por preencher** filtra a lista. Nada disto é obrigatório: a ficha grava na mesma.
+
 ## Resumo
 
 A plataforma associa cada requisito aos controlos que o cumprem e pode propor, com inteligência artificial, requisitos contratuais a partir dos contratos dos ativos. As propostas ficam sempre sujeitas a revisão e não são gravadas automaticamente.

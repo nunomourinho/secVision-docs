@@ -77,6 +77,10 @@ As versões são comparadas segundo as regras do Debian ou do RPM, e não como t
 
 Na instância de teste, a pesquisa é recusada, com indicação do motivo: não existe um segundo Wazuh para consulta. Na instância real, com o Indexer configurado, o resultado é a lista dos sistemas afetados, pronta a associar ao relatório.
 
+Cada sistema associado por esta pesquisa leva nas observações o que foi encontrado (pacote, versão, CVE), e as observações aparecem no relatório e na exportação para Word.
+
+**Arquivar e ações em massa.** O filtro ao lado do estado mostra os relatórios **Ativos** (por omissão), os **Arquivados** ou **Todos**. Marcados vários relatórios, a barra de seleção oferece **Arquivar**, **Desarquivar** e **Mudar estado**, para todos de uma vez. Arquivar pede sempre o motivo (trabalho concluído, substituído por outro relatório, duplicado, deixou de ser relevante, ou outro, descrito), que fica na trilha de auditoria e aparece na linha do relatório arquivado.
+
 O separador **Por exposição (Shodan)** responde à pergunta complementar: que sistemas estão expostos na Internet com uma tecnologia. A pesquisa percorre as gamas públicas da instituição, fica guardada no relatório e propõe os sistemas encontrados para associação (ver {doc}`/platform/inventory/shodan-exposure`).
 
 ```{figure} /_static/capturas/detecao-ameacas/relatorios-1.jpg

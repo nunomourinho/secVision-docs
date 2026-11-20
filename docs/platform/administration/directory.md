@@ -32,6 +32,8 @@ No ecrã, encontra os seguintes elementos:
 
 **Como consultar ou alterar:** Clique na ligação pretendida para abrir a respetiva ficha.
 
+Uma ligação desativada não se perde: a ficha mostra o botão **Reactivar**, que a repõe com a configuração que tinha, sem a criar de novo. A sincronização agendada não volta a ligar-se sozinha.
+
 ## Configuração da ligação
 
 ```{figure} /_static/capturas/adm-diretorio/ficha-2.jpg

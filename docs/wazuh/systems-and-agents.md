@@ -167,6 +167,9 @@ Ecrã **Identificar** > **Catálogo de Segurança**.
 
 ## Agentes fora do catálogo
 
+```{video} 362-o-catalogo-e-os-agentes
+```
+
 **Identificar** > **Inventário** > **Catálogo de Segurança** > **Agentes fora do catálogo**
 
 O botão **Agentes fora do catálogo**, na barra de filtros do catálogo, lista os agentes registados no Wazuh que não estão associados a nenhum sistema. O gestor (agente 000) não entra. Depois de aberto, o botão mostra quantos são.

@@ -7,6 +7,11 @@ Fontes de notícias e alertas de cibersegurança lidas pela plataforma e respeti
 
 O vídeo apresenta as quatro integrações: sistemas externos, MISP, feeds RSS e diretório.
 
+```{video} 363-os-tipos-dos-feeds
+```
+
+O segundo vídeo mostra os tipos de cada canal.
+
 ## Acesso
 
 **Governar** > **Administração do sistema** > **Integrações** > **Feeds RSS**
@@ -33,6 +38,12 @@ A interface apresenta os seguintes elementos:
 4. Botão **Adicionar um feed:** Permite configurar uma nova fonte.
 
 **Como configurar:** Selecione a frequência de atualização pretendida e clique em **Guardar**.
+
+## Tipos de cada canal
+
+Cada canal tem um ou mais tipos: **Alertas**, **Notícias**, **Outbreak** ou **Informacionais**. Ao adicionar um feed, escolhem-se os tipos por baixo dos campos (por omissão, **Alertas**). Num canal que já existe, os botões de tipo por baixo do nome ligam e desligam cada tipo, e a alteração grava-se logo, na trilha de auditoria. Um canal tem sempre pelo menos um tipo.
+
+Os canais que existiam antes desta funcionalidade ficaram como **Alertas**. Os tipos servem a escolha de cada pessoa em {doc}`/platform/protect-and-detect/security-feeds`, que por omissão só mostra os alertas.
 
 Não é possível eliminar feeds que já tenham artigos associados. Para deixar de receber notícias dessa fonte sem perder o histórico, deve desativar o feed.
 

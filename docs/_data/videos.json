@@ -663,5 +663,29 @@
     "youtube": "oIj6Iq0SxeE",
     "privacidade": "unlisted",
     "legendas": "gravadas"
+  },
+  "360-exposicao-na-internet": {
+    "titulo": "SecVision — A exposição na Internet",
+    "youtube": "4PflHyLca0k",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "361-virustotal-nos-instaladores": {
+    "titulo": "SecVision — O VirusTotal nos instaladores",
+    "youtube": "G2swCcUZ8Y0",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "362-o-catalogo-e-os-agentes": {
+    "titulo": "SecVision — O catálogo e os agentes do Wazuh",
+    "youtube": "iMCJHuJQxME",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
+  },
+  "363-os-tipos-dos-feeds": {
+    "titulo": "SecVision — Os tipos dos feeds",
+    "youtube": "03jFlCL_PeY",
+    "privacidade": "unlisted",
+    "legendas": "gravadas"
   }
 }
