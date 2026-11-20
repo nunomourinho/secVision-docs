@@ -188,6 +188,18 @@ O ecrã mostra também o **mapa das ligações**: os servidores e a ponte chegam
 
 **Verificar o isolamento agora** corre os testes contra a política que está em vigor nesse momento (mesmo que alguém a tenha alterado por fora) e contra as máquinas que existem, um a um, e mostra o resultado de cada: confirmado, ou **FALHOU** com a razão dada pelo Headscale. Não altera a política, mas fica registado na trilha, como prova da verificação. Prova a regra do Headscale, não a firewall da rede. O mapa, a verificação e o que acontece quando alguém mexe na política por fora estão em [A política da rede privada, em mapa](policy-map.md).
 
+## Verificar os instaladores no VirusTotal
+
+Em **Proteger** > **Rede VPN** > **Convites**, a tabela dos ficheiros publicados no depósito tem uma coluna **VirusTotal**. Aparece quando a chave de API está configurada em **Governar** > **Administração do sistema** > **Integrações** > **VirusTotal** (ver {doc}`/platform/administration/virustotal`).
+
+1. **Consultar** pergunta ao VirusTotal pelo `sha256` do ficheiro. Nenhum ficheiro sai do servidor.
+2. O resultado mostra quantos motores marcam o ficheiro como malicioso, de quantos responderam, com a ligação **abrir no VT** para o relatório completo. Verde quer dizer nenhum; âmbar, só suspeitos; vermelho, pelo menos um malicioso.
+3. **Consultar todos no VirusTotal** consulta os ficheiros um a um. Se a quota da chave se esgotar, para e indica quantos ficaram por consultar.
+4. Um ficheiro que o VirusTotal não conhece aparece como **Desconhecido do VirusTotal**. É o caso habitual do `secvision-agente`. Um administrador pode então clicar em **Enviar ficheiro…** e confirmar, depois de ler o aviso: o ficheiro enviado fica disponível aos subscritores do VirusTotal. Envia-se a cópia do servidor do SecVision, e só se o `sha256` dela coincidir com o registado.
+5. Enquanto o VirusTotal analisa o ficheiro enviado, a linha mostra **Enviado — em análise…** e atualiza-se sozinha quando o resultado chega.
+
+Um resultado vermelho não impede a instalação, mas deve ser investigado antes de se gerar um comando: abra o relatório e confirme que motores o marcam e porquê.
+
 ## Resumo
 
 ```{figure} /_static/img/510-adicionar-um-servidor/17.jpg

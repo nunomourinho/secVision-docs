@@ -1,0 +1,14 @@
+# Página nova (sem vídeo): Governar › Administração do sistema › Integrações › VirusTotal.
+utilizador: admin
+passos:
+  - abrir: /admin/virustotal
+    esperar: 'text=Integração VirusTotal'
+  - marca: chave
+  - destacar: 'text=Integração activa'
+    rotulo: Integração activa
+  - destacar: 'label:has-text("Chave de API")'
+    rotulo: Chave de API
+  - destacar: 'button:has-text("Guardar")'
+    rotulo: Guardar
+  - destacar: 'button:has-text("Testar ligação")'
+    rotulo: Testar ligação
