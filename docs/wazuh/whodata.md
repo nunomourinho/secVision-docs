@@ -172,4 +172,4 @@ O que fica a saber.
 - O nome do processo pode ser falsificado por quem já controla a máquina: uma cópia do `dash` chamada `dpkg` passa.
 - Com o `auditd`, o `dnf` aparece como o interpretador Python, e a regra do dnf não o cobre. A regra do apt com o `auditd` foi medida num Debian 12.
 - Num RHEL ou Rocky com SELinux em modo *enforcing*, o whodata pelo `auditd` não arrancou no laboratório; o eBPF, sim.
-- No Windows o whodata não se aplica: mudaria a política de auditoria do sistema, um efeito que não foi medido.
+- No Windows, o whodata é a auditoria do próprio sistema, e prepara-se de outra forma: ver {doc}`whodata-on-windows`.

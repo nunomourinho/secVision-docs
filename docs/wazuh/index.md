@@ -14,6 +14,7 @@ systems-and-agents
 software-and-cve-search
 false-positives
 whodata
+whodata-on-windows
 detection-rules
 ai-classification-and-studio
 private-network

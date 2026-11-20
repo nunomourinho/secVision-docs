@@ -3344,6 +3344,91 @@
       }
     ]
   },
+  "517-o-whodata-no-windows": {
+    "titulo": "O whodata no Windows",
+    "pagina": "wazuh/whodata-on-windows",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 425.7,
+    "resumo": "O whodata num Windows Server: o que é a auditoria do Windows, porque é que o agente do SecVision só o liga quando a política de auditoria já o permite, o instalador interativo que a prepara com autorização e cópia da anterior, e o alerta de integridade que passa a dizer que processo escreveu cada ficheiro — no SecVision, na consola do servidor e no painel do Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.62,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 51.32,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 81.53,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 111.75,
+        "titulo": "1. O comando"
+      },
+      {
+        "t": 132.22,
+        "titulo": "1. O comando"
+      },
+      {
+        "t": 145.34,
+        "titulo": "1. O comando"
+      },
+      {
+        "t": 171.22,
+        "titulo": "1. O comando"
+      },
+      {
+        "t": 188.65,
+        "titulo": "2. Instalar"
+      },
+      {
+        "t": 211.98,
+        "titulo": "2. Instalar"
+      },
+      {
+        "t": 234.28,
+        "titulo": "2. Instalar"
+      },
+      {
+        "t": 253.33,
+        "titulo": "3. Preparar a política"
+      },
+      {
+        "t": 287.86,
+        "titulo": "3. Preparar a política"
+      },
+      {
+        "t": 310.72,
+        "titulo": "3. Preparar a política"
+      },
+      {
+        "t": 325.01,
+        "titulo": "3. Preparar a política"
+      },
+      {
+        "t": 349.8,
+        "titulo": "4. O alerta"
+      },
+      {
+        "t": 363.9,
+        "titulo": "4. O alerta"
+      },
+      {
+        "t": 383.5,
+        "titulo": "4. O alerta"
+      },
+      {
+        "t": 403.69,
+        "titulo": "Resumo"
+      }
+    ]
+  },
   "516-o-mapa-da-politica": {
     "titulo": "A política da rede privada, em mapa",
     "pagina": "wazuh/policy-map",
