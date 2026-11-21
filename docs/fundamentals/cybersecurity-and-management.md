@@ -5,7 +5,7 @@ Fundamentos da responsabilidade da direção pela cibersegurança, impacto numa 
 ```{video} 101-ciberseguranca-e-gestao
 ```
 
-A formação do SecVision destina-se a profissionais de organizações com obrigações de cibersegurança que não são especialistas em informática, segurança ou direito. Os conceitos são explicados desde o início.
+A formação do SecVision destina-se a profissionais de organizações com obrigações de cibersegurança que não são especialistas em informática, segurança ou direito.
 
 O ponto de partida é o seguinte: a cibersegurança deixou de ser um assunto exclusivo da informática e passou a ser um tema de gestão, conforme estabelecido na lei.
 
