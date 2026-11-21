@@ -2521,6 +2521,51 @@
       }
     ]
   },
+  "364-os-responsaveis-de-cada-sistema": {
+    "titulo": "Os responsáveis de cada sistema",
+    "pagina": "platform/inventory/security-catalogue",
+    "grupo": "Formação C — A plataforma",
+    "duracao": 226.4,
+    "resumo": "Ligar cada sistema do catálogo a quem responde por ele: o proprietário, uma pessoa do registo de pessoal com o e-mail para lhe escrever; o fornecedor que o mantém; e o grupo ou unidade a que pertence. E ligar, de uma vez, os nomes que já estavam escritos à mão.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 11.48,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 37.3,
+        "titulo": "No catálogo"
+      },
+      {
+        "t": 52.08,
+        "titulo": "Escolher os responsáveis"
+      },
+      {
+        "t": 88.88,
+        "titulo": "Escrever ao proprietário"
+      },
+      {
+        "t": 117.07,
+        "titulo": "Os nomes que já estavam escritos"
+      },
+      {
+        "t": 144.16,
+        "titulo": "Filtrar e agir"
+      },
+      {
+        "t": 166.92,
+        "titulo": "Filtrar e agir"
+      },
+      {
+        "t": 190.67,
+        "titulo": "Resumo"
+      }
+    ]
+  },
   "401-o-primeiro-ano": {
     "titulo": "O primeiro ano em sete passos",
     "pagina": "journey/first-year",

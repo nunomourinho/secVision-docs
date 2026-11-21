@@ -61,6 +61,49 @@ Ao lado dos filtros, o botão **Exposição Shodan** pesquisa no Shodan onde, na
 
 O botão **Agentes fora do catálogo** lista os agentes do Wazuh que não estão associados a nenhum sistema e permite associá-los ou criar o sistema a partir deles (ver {doc}`/wazuh/systems-and-agents`).
 
+## Responsáveis
+
+```{video} 364-os-responsaveis-de-cada-sistema
+```
+
+**Identificar** > **Inventário** > **Catálogo de Segurança** > **Editar sistema** > **Responsáveis**
+
+Cada sistema liga-se a quem responde por ele, em três campos, cada um ao seu registo:
+
+1. **Proprietário:** Uma pessoa do registo de pessoal ({doc}`/platform/organisation/roles-and-people`), procurada pelo nome ou pelo e-mail. O e-mail é o do registo, que a sincronização com o Active Directory mantém. É a pessoa a quem se escreve quando o sistema tem um problema que ela resolve ou decide.
+2. **Fornecedor que o mantém:** Um fornecedor do registo de fornecedores. Uma empresa alojada ou uma entidade parceira não entra, porque não mantém sistemas.
+3. **Grupo ou unidade:** Um grupo ativo. Um grupo desativado não recebe sistemas novos.
+
+O campo **Ou descrever em texto** mantém-se para o que não é pessoa do registo, como um órgão ou um consultor externo. Uma pessoa que já saiu da organização não pode ser escolhida para uma ligação nova; a que já estava ligada continua, com a indicação **saiu**, até ser escolhida a pessoa que a substituiu.
+
+```{figure} /_static/img/364-os-responsaveis-de-cada-sistema/02.jpg
+:alt: Editar sistema > Responsáveis
+
+O bloco **Responsáveis** na edição do sistema.
+```
+
+Na tabela, a coluna **Proprietário** apresenta a pessoa e o e-mail. Um nome registado apenas em texto aparece em itálico, com a indicação «(não ligado)».
+
+Na ficha do sistema, **Escrever a…** abre uma janela onde se escreve o **assunto** da mensagem. O assunto vem preenchido com o nome do sistema, que pode ser apagado, e a mensagem não identifica nenhuma ferramenta. O botão **Abrir o correio** abre o programa de correio com o destinatário e esse assunto, e a mensagem é escrita aí. O mesmo está disponível para o fornecedor, quando o contacto registado inclui um e-mail.
+
+```{figure} /_static/img/364-os-responsaveis-de-cada-sistema/03.jpg
+:alt: Ficha do sistema > Escrever a
+
+A janela **Escrever a…**, com o assunto escolhido por quem escreve.
+```
+
+Os filtros **Proprietário**, **Fornecedor** e **Grupo** apresentam os sistemas de cada um. **Sem proprietário ligado** apresenta os sistemas que ainda não têm pessoa associada; um nome registado só em texto conta como sem proprietário, porque não permite o contacto. Com vários sistemas selecionados, **Definir responsáveis…** altera os três campos de uma vez, apenas nos que forem marcados.
+
+**Ligar proprietários escritos à mão…** compara cada nome do campo de texto com o registo de pessoal e não grava nada sem confirmação. Os nomes iguais vêm propostos; os parecidos e os que correspondem a duas pessoas com o mesmo nome ficam por escolher; uma pessoa que já saiu não é proposta. **Ligar os confirmados** grava apenas esses, e o texto mantém-se.
+
+```{figure} /_static/img/364-os-responsaveis-de-cada-sistema/04.jpg
+:alt: Ligar proprietários escritos à mão
+
+A ligação dos nomes escritos à mão às pessoas do registo.
+```
+
+Um fornecedor ou um grupo que ainda é responsável por sistemas não pode ser apagado: a plataforma indica quantos são. Apagar uma pessoa do registo retira-a dos sistemas, e o nome em texto, se existir, mantém-se.
+
 Um sistema sem ativo de informação associado é apresentado a âmbar. Esta indicação não significa risco nulo, mas sim que o risco da informação que suporta ainda não foi apreciado. Este tema é descrito na página seguinte.
 
 ## Ponto de situação
@@ -96,3 +139,4 @@ A taxa de cobertura indica sempre, em rodapé, os níveis excluídos, uma vez qu
 - Direção e donos dos serviços: nível de cada sistema, uma decisão de negócio e não técnica.
 - Equipa de informática: sistemas com monitorização de segurança ativa.
 - A taxa indica sempre os níveis excluídos: uma taxa sem o denominador visível não é adequada para apresentação.
+- Cada sistema liga-se ao proprietário (uma pessoa do registo, com o e-mail), ao fornecedor que o mantém e ao grupo a que pertence; a plataforma prepara o destinatário e o assunto, e a mensagem é escrita por quem a envia.
