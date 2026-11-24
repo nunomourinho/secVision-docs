@@ -3318,7 +3318,7 @@
     "titulo": "Instalar o agente num Windows Server",
     "pagina": "wazuh/install-on-windows",
     "grupo": "Formação E — Wazuh",
-    "duracao": 428.5,
+    "duracao": 431.7,
     "resumo": "O percurso de um Windows Server sem agente: escolher o sistema na fila de integração, deixar o SecVision propor o Windows e o perfil do agente, gerar uma linha de PowerShell, escrevê-la no servidor e ver o servidor ligado à rede privada, ao Wazuh e ao seu sistema do catálogo.",
     "capitulos": [
       {
@@ -3326,79 +3326,79 @@
         "titulo": "Introdução"
       },
       {
-        "t": 16.98,
+        "t": 14.84,
         "titulo": "O conceito"
       },
       {
-        "t": 64.37,
+        "t": 60.63,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 82.22,
+        "t": 78.48,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 99.47,
+        "t": 95.73,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 113.79,
+        "t": 110.05,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 135.05,
+        "t": 131.3,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 166.09,
+        "t": 162.34,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 179.09,
+        "t": 175.34,
         "titulo": "1. No SecVision"
       },
       {
-        "t": 206.51,
+        "t": 202.76,
         "titulo": "2. No servidor"
       },
       {
-        "t": 240.66,
+        "t": 236.91,
         "titulo": "2. No servidor"
       },
       {
-        "t": 260.39,
+        "t": 256.65,
         "titulo": "2. No servidor"
       },
       {
-        "t": 281.17,
+        "t": 277.42,
         "titulo": "2. No servidor"
       },
       {
-        "t": 290.25,
+        "t": 286.5,
         "titulo": "2. No servidor"
       },
       {
-        "t": 305.72,
+        "t": 301.97,
         "titulo": "2. No servidor"
       },
       {
-        "t": 323.82,
+        "t": 320.08,
         "titulo": "2. No servidor"
       },
       {
-        "t": 343.74,
+        "t": 340.0,
         "titulo": "3. De volta ao SecVision"
       },
       {
-        "t": 361.76,
+        "t": 358.02,
         "titulo": "3. De volta ao SecVision"
       },
       {
-        "t": 392.47,
+        "t": 388.73,
         "titulo": "Limites"
       },
       {
-        "t": 411.97,
+        "t": 419.16,
         "titulo": "Fecho"
       }
     ]
@@ -3569,7 +3569,7 @@
     "titulo": "O whodata no Windows",
     "pagina": "wazuh/whodata-on-windows",
     "grupo": "Formação E — Wazuh",
-    "duracao": 425.7,
+    "duracao": 464.7,
     "resumo": "O whodata num Windows Server: o que é a auditoria do Windows, porque é que o agente do SecVision só o liga quando a política de auditoria já o permite, o instalador interativo que a prepara com autorização e cópia da anterior, e o alerta de integridade que passa a dizer que processo escreveu cada ficheiro — no SecVision, na consola do servidor e no painel do Wazuh.",
     "capitulos": [
       {
@@ -3577,75 +3577,311 @@
         "titulo": "Introdução"
       },
       {
-        "t": 16.62,
+        "t": 15.03,
         "titulo": "O conceito"
       },
       {
-        "t": 51.32,
+        "t": 49.73,
         "titulo": "O conceito"
       },
       {
-        "t": 81.53,
+        "t": 79.95,
         "titulo": "Antes de abrir o ecrã"
       },
       {
-        "t": 111.75,
+        "t": 110.16,
         "titulo": "1. O comando"
       },
       {
-        "t": 132.22,
+        "t": 130.63,
         "titulo": "1. O comando"
       },
       {
-        "t": 145.34,
+        "t": 143.75,
         "titulo": "1. O comando"
       },
       {
-        "t": 171.22,
+        "t": 169.64,
         "titulo": "1. O comando"
       },
       {
-        "t": 188.65,
+        "t": 187.06,
         "titulo": "2. Instalar"
       },
       {
-        "t": 211.98,
+        "t": 210.4,
         "titulo": "2. Instalar"
       },
       {
-        "t": 234.28,
+        "t": 232.69,
         "titulo": "2. Instalar"
       },
       {
-        "t": 253.33,
+        "t": 251.75,
         "titulo": "3. Preparar a política"
       },
       {
-        "t": 287.86,
+        "t": 286.28,
         "titulo": "3. Preparar a política"
       },
       {
-        "t": 310.72,
+        "t": 309.14,
         "titulo": "3. Preparar a política"
       },
       {
-        "t": 325.01,
+        "t": 323.42,
         "titulo": "3. Preparar a política"
       },
       {
-        "t": 349.8,
+        "t": 348.21,
+        "titulo": "3. Preparar a política"
+      },
+      {
+        "t": 388.82,
         "titulo": "4. O alerta"
       },
       {
-        "t": 363.9,
+        "t": 402.92,
         "titulo": "4. O alerta"
       },
       {
-        "t": 383.5,
+        "t": 422.52,
         "titulo": "4. O alerta"
       },
       {
-        "t": 403.69,
+        "t": 442.71,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "518-a-evidencia-de-processos-no-windows": {
+    "titulo": "A evidência de processos no Windows",
+    "pagina": "wazuh/process-evidence-on-windows",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 295.3,
+    "resumo": "Quem executou cada processo, a partir de que processo e com que linha de comandos: o evento 4688 do próprio Windows, ligado pelo instalador interativo com autorização, e a cadeia de uma ação suspeita no painel do Wazuh — do ficheiro alterado ao processo que o lançou.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 13.52,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 41.38,
+        "titulo": "Antes de começar"
+      },
+      {
+        "t": 63.34,
+        "titulo": "1. Ligar a evidência"
+      },
+      {
+        "t": 85.08,
+        "titulo": "1. Ligar a evidência"
+      },
+      {
+        "t": 101.61,
+        "titulo": "1. Ligar a evidência"
+      },
+      {
+        "t": 124.79,
+        "titulo": "1. Ligar a evidência"
+      },
+      {
+        "t": 146.1,
+        "titulo": "1. Ligar a evidência"
+      },
+      {
+        "t": 155.16,
+        "titulo": "2. A cadeia, no Wazuh"
+      },
+      {
+        "t": 168.49,
+        "titulo": "2. A cadeia, no Wazuh"
+      },
+      {
+        "t": 188.17,
+        "titulo": "2. A cadeia, no Wazuh"
+      },
+      {
+        "t": 213.07,
+        "titulo": "2. A cadeia, no Wazuh"
+      },
+      {
+        "t": 243.86,
+        "titulo": "Limites"
+      },
+      {
+        "t": 272.63,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "519-o-sysmon-a-parte": {
+    "titulo": "O Sysmon, à parte",
+    "pagina": "wazuh/sysmon",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 291.9,
+    "resumo": "O Sysmon acrescenta ao evento 4688 o SHA256 do executável e uma cadeia de processos que não depende do número do processo. É software a mais na máquina, por isso fica num instalador à parte, opcional: descarrega-o da Microsoft, confere a assinatura, pergunta antes de cada passo e diz como se desfaz — no SecVision, na consola do Windows e no painel do Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.9,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 45.05,
+        "titulo": "Antes de começar"
+      },
+      {
+        "t": 62.86,
+        "titulo": "1. O instalador, no SecVision"
+      },
+      {
+        "t": 82.03,
+        "titulo": "2. Instalar, com autorização"
+      },
+      {
+        "t": 109.67,
+        "titulo": "2. Instalar, com autorização"
+      },
+      {
+        "t": 139.24,
+        "titulo": "2. Instalar, com autorização"
+      },
+      {
+        "t": 174.66,
+        "titulo": "2. Instalar, com autorização"
+      },
+      {
+        "t": 208.33,
+        "titulo": "3. O evento, no Wazuh"
+      },
+      {
+        "t": 250.08,
+        "titulo": "Limites"
+      },
+      {
+        "t": 272.35,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "520-os-modos-do-agente-no-windows": {
+    "titulo": "Os modos do agente no Windows",
+    "pagina": "wazuh/agent-modes-on-windows",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 268.8,
+    "resumo": "O que cada modo do agente deixa num Windows 10 ou 11 — Desbloqueado, Bloqueado, com o whodata e a evidência de processos, com o Sysmon —, o que sobrevive a um reinício e como se atualizam o agente e a configuração em cada um: o gestor Wazuh atualiza o agente Desbloqueado e não consegue atualizar o Bloqueado, que se atualiza pelo comando do SecVision.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.76,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 45.65,
+        "titulo": "Os ficheiros"
+      },
+      {
+        "t": 79.01,
+        "titulo": "Os reinícios"
+      },
+      {
+        "t": 108.63,
+        "titulo": "As atualizações"
+      },
+      {
+        "t": 137.64,
+        "titulo": "1. O gestor tenta atualizar"
+      },
+      {
+        "t": 167.72,
+        "titulo": "1. O gestor tenta atualizar"
+      },
+      {
+        "t": 194.1,
+        "titulo": "1. O gestor tenta atualizar"
+      },
+      {
+        "t": 217.54,
+        "titulo": "Recomendações"
+      },
+      {
+        "t": 246.92,
+        "titulo": "Resumo"
+      }
+    ]
+  },
+  "521-falsos-positivos-do-windows-update": {
+    "titulo": "Os falsos positivos do Windows Update",
+    "pagina": "wazuh/windows-update-false-positives",
+    "grupo": "Formação E — Wazuh",
+    "duracao": 268.7,
+    "resumo": "Uma atualização do Windows faz o Wazuh alertar nos binários do sistema que muda. Com o whodata, o alerta diz que foi o TiWorker do Windows Update; o modelo do ecrã de falsos positivos baixa esses alertas, ancorado ao caminho do TiWorker, e um programa falso com o mesmo nome continua a alertar — no painel do Wazuh, no SecVision e de novo no Wazuh.",
+    "capitulos": [
+      {
+        "t": 0.0,
+        "titulo": "Introdução"
+      },
+      {
+        "t": 16.21,
+        "titulo": "O conceito"
+      },
+      {
+        "t": 52.21,
+        "titulo": "Antes de abrir o ecrã"
+      },
+      {
+        "t": 71.6,
+        "titulo": "1. O alerta, no Wazuh"
+      },
+      {
+        "t": 92.35,
+        "titulo": "1. O alerta, no Wazuh"
+      },
+      {
+        "t": 110.94,
+        "titulo": "2. A regra, no SecVision"
+      },
+      {
+        "t": 125.26,
+        "titulo": "2. A regra, no SecVision"
+      },
+      {
+        "t": 151.96,
+        "titulo": "2. A regra, no SecVision"
+      },
+      {
+        "t": 160.96,
+        "titulo": "2. A regra, no SecVision"
+      },
+      {
+        "t": 168.6,
+        "titulo": "2. A regra, no SecVision"
+      },
+      {
+        "t": 176.19,
+        "titulo": "3. O efeito, no Wazuh"
+      },
+      {
+        "t": 199.0,
+        "titulo": "3. O efeito, no Wazuh"
+      },
+      {
+        "t": 225.42,
+        "titulo": "Limites"
+      },
+      {
+        "t": 248.72,
         "titulo": "Resumo"
       }
     ]

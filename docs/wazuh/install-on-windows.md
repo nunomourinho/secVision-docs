@@ -21,7 +21,8 @@ O mesmo comando único do Linux, agora em PowerShell, a partir do catálogo de s
 | Sistema | Estado |
 |---|---|
 | Windows Server 2019, 2022 e 2025 | Provado: o agente fica Active no gestor. |
-| Windows Server 2016, Windows 10 e Windows 11 | Mesmo comando, **não testado**. |
+| Windows 10 22H2 e Windows 11 26H2 | Provado com o agente 0.5.9 (24/11/2026): instalação, reinícios, reinstalação por cima e atualização, em cada modo. Ver {doc}`agent-modes-on-windows`. |
+| Windows Server 2016 | Mesmo comando, **não testado**. |
 | Windows anteriores ao Server 2016 | Não correm o agente: o guião recusa-os com a razão. Ver [Servidores Windows antigos](legacy-servers.md). |
 
 ## 1. Gerar o comando
@@ -44,5 +45,6 @@ O mesmo comando único do Linux, agora em PowerShell, a partir do catálogo de s
 
 ## Limites
 
-- Só um Windows Server 2016 ou mais recente corre o agente moderno.
+- Só um Windows Server 2016 ou mais recente, ou um Windows 10 ou 11, corre o agente moderno.
+- O que fica em cada máquina, em cada modo, e como se atualiza: {doc}`agent-modes-on-windows`.
 - Na Rede VPN, a ligação do agente ao sistema do catálogo é automática (corre de dez em dez minutos, e nunca substitui uma ligação feita por uma pessoa); nos servidores antigos faz-se à mão.

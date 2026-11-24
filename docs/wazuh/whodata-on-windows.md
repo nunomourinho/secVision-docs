@@ -142,6 +142,20 @@ auditpol /restore /file:"C:\ProgramData\SecVision\auditpol-antes-<data>.csv"
 
 Se o whodata não tivesse arrancado, o bloco saía do `ossec.conf` e o agente voltava ao que era. Uma reinstalação posterior com o perfil **Bloqueado + whodata** mantém o whodata, porque a política já o permite.
 
+## O que mudou desde esta gravação
+
+```{figure} /_static/img/517-o-whodata-no-windows/12.jpg
+:alt: O que mudou desde esta gravação
+
+O que mudou desde esta gravação.
+```
+
+Esta gravação foi feita num Windows Server 2022 com o agente 0.5.5. Desde então, medido em Windows 10 e 11 com o agente 0.5.9:
+
+- o instalador interativo tem uma segunda parte, a evidência de processos (o evento 4688): {doc}`process-evidence-on-windows`;
+- o instalador espera até **10 minutos** pela confirmação do whodata, porque nos Windows 10 e 11 o primeiro varrimento leva uns 4 minutos;
+- uma reinstalação por cima do whodata com um agente anterior ao 0.5.9 podia perder, sem aviso, as restrições do perfil Bloqueado: reinstale com o 0.5.9 ou mais recente ({doc}`agent-modes-on-windows`).
+
 ## 4. O processo no alerta
 
 Para ver o efeito, escreva um ficheiro numa das pastas que o agente vigia, por exemplo a pasta `drivers\etc` do Windows:
@@ -152,7 +166,7 @@ Set-Content C:\Windows\System32\drivers\etc\relatorio-mensal.txt "versao 2"
 
 **Wazuh** > **Threat Hunting** > **Events**
 
-```{figure} /_static/img/517-o-whodata-no-windows/13.jpg
+```{figure} /_static/img/517-o-whodata-no-windows/14.jpg
 :alt: O alerta de integridade do ficheiro escrito, no painel do Wazuh
 
 O alerta do ficheiro que se acabou de escrever.
@@ -164,7 +178,7 @@ No painel do Wazuh, procure os eventos de integridade deste servidor:
 rule.groups : syscheck and agent.name : "aplicacao-004" and syscheck.path : *relatorio-mensal*
 ```
 
-```{figure} /_static/img/517-o-whodata-no-windows/14.jpg
+```{figure} /_static/img/517-o-whodata-no-windows/15.jpg
 :alt: Os campos syscheck.audit.process.name e syscheck.audit.user.name no alerta
 
 O processo e o utilizador que escreveram o ficheiro.

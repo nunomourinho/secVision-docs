@@ -15,11 +15,15 @@ software-and-cve-search
 false-positives
 whodata
 whodata-on-windows
+process-evidence-on-windows
+sysmon
+windows-update-false-positives
 detection-rules
 ai-classification-and-studio
 private-network
 connect-a-server
 install-on-windows
+agent-modes-on-windows
 legacy-servers
 manage-machines
 network-health
